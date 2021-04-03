@@ -2,7 +2,7 @@
 module.exports = {
   title: 'Dodges Site',
   tagline: 'PUGs tonight?',
-  url: 'https://dodges-domain.netlify.app/',
+  url: 'https://www.dodgesdomain.com/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -14,7 +14,7 @@ module.exports = {
       title: 'Dodges Site',
       logo: {
         alt: 'Dodges Site Logo',
-        src: 'img/blueplate.svg',
+        src: 'img/blueplate.png',
       },
       items: [
         {
@@ -80,13 +80,13 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/ToddButler93/dodges-domain/edit/master/website/',
+            'https://github.com/ToddButler93/dodges-domain/tree/main/dodges-domain/docs/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/ToddButler93/dodges-domain/edit/master/website/blog/',
+            'https://github.com/ToddButler93/dodges-domain/tree/main/dodges-domain/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),

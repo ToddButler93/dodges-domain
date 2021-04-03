@@ -38,8 +38,8 @@ Download the latest version of the map and extract it to \Tribes\TribesGame\Cook
 
 Usually it's "C:\Program Files (x86)\Steam\SteamApps\Common\Tribes\Binaries\Win32\TribesAscend.exe". If you aren't sure and installed the game via steam, follow this video to get the correct directory.
 
-<video controls playsinline autoplay muted loop>
-  <source src="assets/Game_Install_Location.webm" type="video/webm"></source>Your browser does not support .webm video.
+<video width="670" height="600" controls playsinline autoplay muted loop preload="none">
+  <source src="/video/Game_Install_Location.webm" type="video/webm"></source>Your browser does not support .webm video.
 </video>
 
 ### I hear the inject sound, but nothing about my game changes
@@ -47,8 +47,8 @@ Microsoft Visual C++ redistributes must be installed, an easy all in one install
 ### I keep failing to join a server
 Probably in the wrong game mode for that server, community servers are labelled OOTB or GOTY to show their game mode. Go back to the main menu and select Switch to OOTB or Switch to GOTY like this video. 
 
-<video controls playsinline autoplay muted loop>
-  <source src="assets/Change-Game-Mode.webm" type="video/webm"></source>Your browser does not support .webm video.
+<video width="570" height="892" controls playsinline autoplay muted loop preload="none">
+  <source src="/video/Change-Game-Mode.webm" type="video/webm"></source>Your browser does not support .webm video.
 </video>
 
 ### Can't join a server with a custom map
