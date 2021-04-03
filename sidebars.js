@@ -1,5 +1,5 @@
 module.exports = {
-  docs: [
+  guides: [
     {
       type: 'category',
       label: 'Tribes Ascend',
@@ -39,14 +39,14 @@ module.exports = {
       type: 'category',
       label: 'Tribes Development Guides',
       items: [
-        'how-to-make-maps',
+        'development/how-to-make-maps',
       ],
     },
     {
       type: 'category',
       label: 'Tribes Information',
       items: [
-        'patch-notes',
+        'information/patch-notes',
       ],
     },
   ],

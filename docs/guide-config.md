@@ -12,25 +12,19 @@ Your Tribes.ini is the config file for your graphical settings.
 
 It is located under "Documents\My Games\Tribes Ascend\TribesGame\Config\"
 
-Just want a premade easy to download tribes.ini?
+[Dodge's Tribes.ini](/text/dodges-ini/Tribes.ini) 
 
-[Here is a download to my personal tribes.ini].
+This Tribes.ini is for people with weaker systems or who are after a competitive edge.
 
-TODO: Screenshots
+[![dodge-ini](/img/dodge-ini.png)](/text/dodges-ini/Tribes.ini)
 
-[Here is a download to my personal "pretty" tribes.ini].
+[Dodge's "pretty" Tribes.ini](/text/dodges-pretty-ini/Tribes.ini)
 
-TODO: Screenshots
+This Tribes.ini is for people with a super strong systems and prioritize looks over competitive edge. 
 
-[Here is an ini with just the required and recommended tweaks].
+[![](/img/dodge-pretty-ini.png)](/text/dodges-pretty-ini/Tribes.ini)
 
-TODO: Screenshots
-
-[Here is an ini for people with weaker computers and the ultra competitive].
-
-TODO: Screenshots
-
-Note: All ini's provided are for 1080p Resolution, you can manually alter this by changing ResX=1920 and ResY=1080 to your monitors native resolution.
+Note: All ini's provided are for 1080p Resolution, you can manually alter this by changing ResX=1920 and ResY=1080 to your monitors native resolution. HUD Elements can be enabled within the [in game settings](how-to-config#in-game-settings).
 
 ### Required Tweaks
 

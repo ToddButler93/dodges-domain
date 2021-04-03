@@ -70,23 +70,7 @@ export default function Home() {
                 styles.getStarted,
               )}
               to={useBaseUrl('docs/')}>
-              Tribes Guides
-            </Link>
-            <Link
-              className={clsx(
-                'button button--outline button--secondary button--lg',
-                styles.getStarted,
-              )}
-              to={useBaseUrl('docs/how-to-make-maps')}>
-              Development Guides
-            </Link>
-            <Link
-              className={clsx(
-                'button button--outline button--secondary button--lg',
-                styles.getStarted,
-              )}
-              to={useBaseUrl('blog/')}>
-              Blog
+              Enter
             </Link>
           </div>
         </div>

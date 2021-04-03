@@ -7,27 +7,28 @@ slug: /
 
 ## General Guides
 
-- [Installation](how-to-install)
-- [Configuration](how-to-config)
+[Installation Guide](how-to-install)
+
+[Configuration Guide](how-to-config)
 
 
 ## Tribes Development Guides
 
-- [Making Custom Maps](how-to-make-maps)
+[Making Custom Maps](development/how-to-make-maps)
 
 
 <!---
 ## Gameplay Guides
 
-- [Movement](how-to-move)
-- [Shooting](how-to-shoot)
-- [Spot Cappers](how-to-spot)
-- [Competitive Format](how-to-competitive)
+- [Movement](gameplay/how-to-move)
+- [Shooting](gameplay/how-to-shoot)
+- [Spot Cappers](gameplay/how-to-spot)
+- [Competitive Format](gameplay/how-to-competitive)
 
 ### Roles
-- [Offence](how-to-offend)
-- [Capping](how-to-cap)
-- [Heavy on Flag](how-to-hof)
-- [Defence](how-to-defend)
-- [Sniping](how-to-snipe)
+- [Offence](gameplay/how-to-offend)
+- [Capping](gameplay/how-to-cap)
+- [Heavy on Flag](gameplay/how-to-hof)
+- [Defence](gameplay/how-to-defend)
+- [Sniping](gameplay/how-to-snipe)
 -->

@@ -38,11 +38,11 @@ module.exports = {
             },
             {
               label: 'Tribes Development Guides',
-              to: 'docs/how-to-make-maps',
+              to: 'docs/development/how-to-make-maps',
             },
             {
               label: 'Tribes Information',
-              to: 'docs/patch-notes',
+              to: 'docs/information/patch-notes',
             },
           ],
         },
@@ -80,13 +80,13 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/ToddButler93/dodges-domain/tree/main/dodges-domain/docs/',
+            'https://github.com/ToddButler93/dodges-domain/tree/main/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/ToddButler93/dodges-domain/tree/main/dodges-domain/blog/',
+            'https://github.com/ToddButler93/dodges-domain/tree/main/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
