@@ -1,45 +1,48 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'My Site',
-  tagline: 'The tagline of my site',
-  url: 'https://your-docusaurus-test-site.com',
+  title: 'Dodges Site',
+  tagline: 'PUGs tonight?',
+  url: 'https://dodges-domain.netlify.app/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  favicon: 'img/blueplate.ico',
+  organizationName: 'Toddbutler93', // Usually your GitHub org/user name.
+  projectName: 'dodge-site', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'My Site',
+      title: 'Dodges Site',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: 'Dodges Site Logo',
+        src: 'img/blueplate.svg',
       },
       items: [
         {
           to: 'docs/',
           activeBasePath: 'docs',
-          label: 'Docs',
+          label: 'Guides',
           position: 'left',
         },
         {to: 'blog', label: 'Blog', position: 'left'},
-        {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
-          position: 'right',
-        },
       ],
     },
     footer: {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Tribes Ascend',
           items: [
             {
-              label: 'Getting Started',
+              label: 'Tribes Guides',
               to: 'docs/',
+            },
+            {
+              label: 'Tribes Development Guides',
+              to: 'docs/how-to-make-maps',
+            },
+            {
+              label: 'Tribes Information',
+              to: 'docs/patch-notes',
             },
           ],
         },
@@ -47,16 +50,12 @@ module.exports = {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'Youtube',
+              href: 'https://www.youtube.com/channel/UC06sxsfSsmjX8K3su-fNi_A',
             },
             {
               label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              href: 'https://discord.gg/MYdN9Xm5Bg',
             },
           ],
         },
@@ -67,14 +66,10 @@ module.exports = {
               label: 'Blog',
               to: 'blog',
             },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
-            },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Dodge.`,
     },
   },
   presets: [
@@ -85,13 +80,13 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+            'https://github.com/ToddButler93/dodges-domain/edit/master/website/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+            'https://github.com/ToddButler93/dodges-domain/edit/master/website/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),

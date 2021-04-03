@@ -8,28 +8,26 @@ import styles from './styles.module.css';
 
 const features = [
   {
-    title: 'Easy to Use',
-    imageUrl: 'img/undraw_docusaurus_mountain.svg',
+    title: 'Dodges Website',
+    imageUrl: 'img/blueplate.png',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Tribes Ascend isn't what it used to be.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    imageUrl: 'img/undraw_docusaurus_tree.svg',
+    title: 'Full of guides',
+    imageUrl: 'img/blueplate.png',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        I swear I'll write them eventually.
       </>
     ),
   },
   {
     title: 'Powered by React',
-    imageUrl: 'img/undraw_docusaurus_react.svg',
+    imageUrl: 'img/blueplate.png',
     description: (
       <>
         Extend or customize your website layout by reusing React. Docusaurus can
@@ -72,7 +70,23 @@ export default function Home() {
                 styles.getStarted,
               )}
               to={useBaseUrl('docs/')}>
-              Get Started
+              Tribes Guides
+            </Link>
+            <Link
+              className={clsx(
+                'button button--outline button--secondary button--lg',
+                styles.getStarted,
+              )}
+              to={useBaseUrl('docs/how-to-make-maps')}>
+              Development Guides
+            </Link>
+            <Link
+              className={clsx(
+                'button button--outline button--secondary button--lg',
+                styles.getStarted,
+              )}
+              to={useBaseUrl('blog/')}>
+              Blog
             </Link>
           </div>
         </div>
