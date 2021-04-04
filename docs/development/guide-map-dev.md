@@ -18,7 +18,7 @@ Note: You will need the Package Files to play and test the map on the [leaked de
 
 ### Step 2
 
-After UDK is installed, go to "\UDK\UDK-2011-01\UDKGame\Config\" and open "UDKEngine.ini" in a text editor, search for "UnrealEd.EditorEngine" and at the end of that section on a new line write "ModEditPackages=TribesGame". Save the file and close the editor.
+After UDK is installed, go to "\UDK\UDK-2011-01\UDKGame\Config\" and open "UDKEngine.ini" in a text editor. Search for "[UnrealEd.EditorEngine]" and at the end of that section on a new line write "ModEditPackages=TribesGame". Save the file and close the editor.
 
 ### Step 3
 
@@ -129,7 +129,24 @@ Copy the uncooked map from "\UDK\UDK-2011-01\UDKGame\Content\Maps\" to "\Tribes\
 
 [Join your server](how-to-install#playing-custom-maps-on-the-official-game).
 
+## External Resources
+
+Ex Hi-Rez Studios map developer Katelyn Pitstick has posted some information specifically about making Tribes Ascend maps on [Kate's website](https://katelyn-mp.com/wp/?cat=8). 
+
+thenewboston has an old [UDK Tutorial Playlist](https://youtube.com/playlist?list=PLFF967D7CA020E636) where he is using an old 2011 build of UDK. Tutorial 36 is where he begins work on terrain.
+
+Te-Krogoth's [Working With Packages Guide](http://wiki.theexiled.pwnageservers.com/Tribes:_Ascend/SDK/Working_With_Packages).
+
+[Khorrin](http://www.reddit.com/user/Khorrin)'s [SDK Mapping for the Lazy](http://wiki.theexiled.pwnageservers.com/Tribes:_Ascend/SDK_Mapping_for_the_Lazy).
+
+[dMidgard](http://www.reddit.com/user/dMidgard) wrote a [SDK Guide to Mapping](http://wiki.theexiled.pwnageservers.com/Tribes:_Ascend/SDK_Guide_to_Mapping).
+
+Te-Krogoth's [Mapping for Tribes: Ascend SDK](http://wiki.theexiled.pwnageservers.com/Mapping_for_the_Tribes:_Ascend_SDK).
+
+Te-Krogoth's [T1 Heightmaps](http://wiki.theexiled.pwnageservers.com/Tribes:_Ascend/SDK/T1_Heightmaps).
+
 ## Troubleshooting
+
 
 ### RefShaderCache Compiler Error
 
@@ -164,24 +181,6 @@ Run UnrealFrontEnd and cook the map. Copy "RefShaderCache-PC-D3D-SM3.upk" in "C:
 It looks like the shader compiler is missing some required shaders to properly compile.
 
 Cooking the map with the unedited RefShaderCache-PC-D3D-SM3.upk will fail due to license version checks, the license version is in the file’s header which we edit via our hex editor.
-
-## External Resources
-
-Ex Hi-Rez Studios map developer Katelyn Pitstick has posted some information specifically about making Tribes Ascend maps on [Kate's website](https://katelyn-mp.com/wp/?cat=8). 
-
-thenewboston has an old [UDK Tutorial Playlist](https://youtube.com/playlist?list=PLFF967D7CA020E636) where he is using an old 2011 build of UDK. Tutorial 36 is where he begins information on terrain.
-
-Te-Krogoth's [Working With Packages Guide](http://wiki.theexiled.pwnageservers.com/Tribes:_Ascend/SDK/Working_With_Packages).
-
-[Khorrin](http://www.reddit.com/user/Khorrin)'s [SDK Mapping for the Lazy](http://wiki.theexiled.pwnageservers.com/Tribes:_Ascend/SDK_Mapping_for_the_Lazy).
-
-[dMidgard](http://www.reddit.com/user/dMidgard) wrote a [SDK Guide to Mapping](http://wiki.theexiled.pwnageservers.com/Tribes:_Ascend/SDK_Guide_to_Mapping).
-
-Te-Krogoth's [Mapping for Tribes: Ascend SDK](http://wiki.theexiled.pwnageservers.com/Mapping_for_the_Tribes:_Ascend_SDK).
-
-Te-Krogoth's [T1 Heightmaps](http://wiki.theexiled.pwnageservers.com/Tribes:_Ascend/SDK/T1_Heightmaps).
-
-## Troubleshooting
 
 ### Where is UDK Installed?
 

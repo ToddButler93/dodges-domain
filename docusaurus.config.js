@@ -44,6 +44,10 @@ module.exports = {
               label: 'Tribes Information',
               to: 'docs/information/patch-notes',
             },
+            {
+              label: 'TA Mods',
+              to: 'https://www.tamods.org/',
+            },
           ],
         },
         {

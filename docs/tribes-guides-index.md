@@ -26,9 +26,9 @@ slug: /
 - [Competitive Format](gameplay/how-to-competitive)
 
 ### Roles
-- [Offence](gameplay/how-to-offend)
+- [Offense](gameplay/how-to-offend)
 - [Capping](gameplay/how-to-cap)
 - [Heavy on Flag](gameplay/how-to-hof)
-- [Defence](gameplay/how-to-defend)
+- [Defense](gameplay/how-to-defend)
 - [Sniping](gameplay/how-to-snipe)
 -->

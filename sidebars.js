@@ -40,6 +40,7 @@ module.exports = {
       label: 'Tribes Development Guides',
       items: [
         'development/how-to-make-maps',
+        'development/how-to-udk',
       ],
     },
     {
