@@ -50,3 +50,17 @@ Set Borderless=False to improve input lag on certain systems.
 
 
 ## TribesInput.ini
+
+Your TribesInput.ini is the config file for your key bindings.
+
+The main thing I'd make sure is that you have 
+
+bEnableMouseSmoothing set to false.
+
+It is located under "Documents\My Games\Tribes Ascend\TribesGame\Config\"
+
+[Dodge's TribesInput.ini](/text/Dodges-input-ini/TribesInput.ini) 
+
+This is my personal TribesInput.ini. Contains some of the autocompletes for official and custom server admins.
+
+You must set this to Read Only otherwise the game will overwrite the file. 

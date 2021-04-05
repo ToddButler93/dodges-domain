@@ -77,7 +77,9 @@ Open The Content Browser <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>F</kbd>
 
 Under the Actor Classes Tab use the search to find Skylight.
 
-Click <kbd>LMB</kbd> on the Skylight text and drag into the viewport.
+Click <kbd>LMB</kbd> on the Skylight text and drag it into the viewport.
+
+What is a viewport? TODO Add Link
 
 ![](\img\development\lighting-actor-skylight.png)
 

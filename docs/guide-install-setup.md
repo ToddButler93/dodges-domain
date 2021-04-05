@@ -14,16 +14,18 @@ Download the game from steam [here](https://store.steampowered.com/app/17080/Tri
 Download the latest Tribes Launcher [here](https://github.com/mcoot/TribesLauncherSharp/releases). TAMods has a website to help guide people [here](https://www.tamods.org/docs/doc_user_install.html).
 
 You need [Microsoft Visual C++ redistributes](https://github.com/abbodi1406/vcredist/releases/) if you don't have them already installed.
+
 ### Step 3
+
 In the launcher, select the Community login server, login and inject TAMods.
 
 Once injected, the Play Now button will show whether you are in OOTB or GOTY mode. There is a button on the main menu to switch. You need to be in GOTY mode to play on GOTY servers and OOTB mode to play on OOTB servers.
 
 [Still having issues?](how-to-install#troubleshooting)
 
-## Playing Custom Maps on the Official Game
+## Playing Community Maps
 
-You can only play custom maps on the community login server.
+You can only play community maps on the community login server.
 
 ### Step 1 
 
@@ -51,7 +53,7 @@ Probably in the wrong game mode for that server, community servers are labelled 
   <source src="/video/Change-Game-Mode.webm" type="video/webm"></source>Your browser does not support .webm video.
 </video>
 
-### Can't join a server with a custom map
-To play on a server hosting a custom map you only need the latest version of the map. Some of these you will have to contact the owner for. [Follow this section of the guide](how-to-install#playing-custom-maps-on-the-official-game) first.
+### Can't join a server with a community made map
+To play on a server hosting a community made map you only need the latest version of the map. Some of these you will have to contact the owner for. [Follow this section of the guide](how-to-install#playing-community-maps) first.
 
 
