@@ -69,48 +69,22 @@ The naming convention matters. Tr is always required, CTF refers to the map game
 
 ## Step 3 - Add Lighting
 
-### Skylight
-
-Now lets add an actor that will light the entire field and not draw shadows.
-
-Open The Content Browser <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>F</kbd>
-
-Under the Actor Classes Tab use the search to find Skylight.
-
-Click <kbd>LMB</kbd> on the Skylight text and drag it into the viewport.
-
-What is a viewport? TODO Add Link
-
-![](\img\development\lighting-actor-skylight.png)
-
-Lost where it went? TODO Add Link
-
-Open Actor Properties <kbd>F4</kbd> for the Skylight you just added. 
-
-- Set Draw Scale to 32
-- Set Brightness to 0.5
-- Set Group to "World"
-
-![](\img\development\lighting-skylight-properties.png)
-
-If you wish to add an overall tint to your world you can mess around with the Light Color R G B properties.
-
-### Dominant Directional Light
+### Lighting
 
 Now lets add an actor that will act as your Sun to light the entire field and generate shadows.
 
 Open The Content Browser <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>F</kbd>
 
-Under the Actor Classes Tab use the search to find DominantDirectionalLight.
+Under the Actor Classes Tab use the search to find DominantDirectionalLightMovable.
 
-Simply drag DominantDirectionalLight to your scene.
+Simply drag DominantDirectionalLightMovable to your scene.
 
 [Lost where it went?](how-to-udk#my-things-have-disapeared)
 
-Open Actor Properties <kbd>F4</kbd> for the DominantDirectionalLight you just added. 
+Open Actor Properties <kbd>F4</kbd> for the DominantDirectionalLightMovable you just added. 
 
 - Set Draw Scale to 32
-- Set Brightness to 0.5
+- Set Brightness to 1
 - Set Group to "World"
 
 ![](\img\development\lighting-dominant-direct-properties.png)
@@ -353,6 +327,10 @@ Remember to group these to their respective teams.
 [Save your level](how-to-udk#step-2---save-level).
 
 ## Step 10 - Add Fog
+
+Next, we want to grab a Exponential Height Fog asset from our Actor Classes search. 
+
+For this particular fog asset there are two light colors which reference our dominant directional light. Change these how you see fit.
 
 [Save your level](how-to-udk#step-2---save-level).
 ## Step 11 - Add Boundaries

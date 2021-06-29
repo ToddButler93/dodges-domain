@@ -29,13 +29,16 @@ Once injected, the Play Now button will show whether you are in OOTB or GOTY mod
 
 You can only play community maps on the community login server.
 
+Note: This may take a while as some of the assets required add up to a few gigabytes.
+
 ### Step 1 
 
-Download the [TA Package Files](https://drive.google.com/file/d/1u_nItIPxeA79Im8tXgg3Q41RS2iBAT_O/view?usp=sharing) and unzip it into your "\Tribes\TribesGame\CookedPC\Maps\" folder. [Not sure where tribes is installed?](how-to-install#launcher-doesnt-know-where-tribes-is-installed)
+Run the Tribes Launcher and click on the packages tab.
 
 ### Step 2
 
-Download the latest version of the map and extract it to \Tribes\TribesGame\CookedPC\ replacing "RefShaderCache-PC-D3D-SM3.upk".
+Select the map pack you want and hit install. This will automatically download all the required files so you can play.
+[Getting an error?](how-to-install#I-get-an-error-while-installing-the-map-packs)
 
 ## Troubleshooting
 ### Launcher doesn't know where Tribes is installed? 
@@ -48,6 +51,7 @@ Usually it's "C:\Program Files (x86)\Steam\SteamApps\Common\Tribes\Binaries\Win3
 
 ### I hear the inject sound, but nothing about my game changes
 Microsoft Visual C++ redistributes must be installed, an easy all in one installer is [here](https://github.com/abbodi1406/vcredist/releases/)
+
 ### I keep failing to join a server
 Probably in the wrong game mode for that server, community servers are labelled OOTB or GOTY to show their game mode. Go back to the main menu and select Switch to OOTB or Switch to GOTY like this video. 
 
@@ -58,4 +62,5 @@ Probably in the wrong game mode for that server, community servers are labelled 
 ### Can't join a server with a community made map
 To play on a server hosting a community made map you only need the latest version of the map. Some of these you will have to contact the owner for. [Follow this section of the guide](how-to-install#playing-community-maps) first.
 
-
+### I get an error while installing the map packs
+We've ran into a few issues with peoples files being set to read only. You need to go to where Tribes is installed and locate the file in the error message. Right click and select properties and de-select Read Only then close the launcher and try to install it again.
