@@ -59,7 +59,7 @@ bEnableMouseSmoothing set to false.
 
 It is located under "Documents\My Games\Tribes Ascend\TribesGame\Config\"
 
-[Dodge's TribesInput.ini](/text/Dodges-input-ini/TribesInput.ini) 
+[Dodge's TribesInput.ini](/text/dodges-input-ini/tribesinput.ini) 
 
 This is my personal TribesInput.ini. Contains some of the autocompletes for official and custom server admins.
 
