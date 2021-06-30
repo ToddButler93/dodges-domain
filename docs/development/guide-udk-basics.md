@@ -34,13 +34,13 @@ Middle Mouse button <kbd>MMB</kbd>
 
 Click Tools, click new Terrain... 
 
-![](\img\development\new-terrain.png)
+![](/img/development/new-terrain.png)
 
 Location is the location of the terrain. For this guide we will leave it default.
 
 Patches is the size of the terrain. For this guide we will put 1024 for both values.
 
-![](\img\development\new-terrain-patches.png)
+![](/img/development/new-terrain-patches.png)
 
 Hit finish.
 
@@ -57,7 +57,7 @@ To confirm a setting, make sure you hit enter after typing/pasting in the value.
 - Set Static Lighting Resolution to 1
 - Set Group to "Terrain"
 
-![](\img\development\new-terrain-properties.png)
+![](/img/development/new-terrain-properties.png)
 
 Note: Setting a group to all added actors will make your life a lot easier later down the track. I group them under Blood Eagle Base, Boundaries, Buildings, Rocks, ect.
 
@@ -87,7 +87,7 @@ Open Actor Properties <kbd>F4</kbd> for the DominantDirectionalLightMovable you 
 - Set Brightness to 1
 - Set Group to "World"
 
-![](\img\development\lighting-dominant-direct-properties.png)
+![](/img/development/lighting-dominant-direct-properties.png)
 
 To set the direction of the light source you need to adjust the rotation. Use the Rotation Wheel <kbd>Space</kbd> to set the direction of your lightsource. 
 
@@ -103,7 +103,7 @@ Now that our map is lit we can start adding some TribesAscend Base Assets.
 
 Under the Actor Classes Tab use the search "BloodEagle" to find Blood Eagle specific Actor Classes.
 
-![](\img\development\actor-class-search.png)
+![](/img/development/actor-class-search.png)
 
 #### Blood Eagle Flag
 
@@ -167,7 +167,7 @@ Next lets drag in TrVehiclePad. You will have to change your ActorClasses search
 
 We need the name of the vehicle pad actor we just added. This is in the Actor Properties <kbd>F4</kbd> under Object then the value for Name. It should be similar to "TrVehiclePad_0".
 
-![](\img\development\vehiclepad-name.png)
+![](/img/development/vehiclepad-name.png)
 
 Now that we know this, we need to set our TrVehicleStation_BloodEagle m_Vehicle property to the name of our TrVehiclePad actor.
 
@@ -177,7 +177,7 @@ Select our TrVehicleStation_BloodEagle actor and open Actor Properties <kbd>F4</
 
 - Set m_Vehicle Pad to our TrVehiclePad actors name.
 
-![](\img\development\vehiclestation-set-name.png)
+![](/img/development/vehiclestation-set-name.png)
 
 Once you hit enter the value will altar, this is normal.
 
@@ -185,7 +185,7 @@ Now you have setup the assets for Blood Eagle. Now for Diamond Sword!
 
 [Save your level](how-to-udk#step-2---save-level).
 
-![](\img\development\blood-eagle-base.png)
+![](/img/development/blood-eagle-base.png)
 
 ### Diamond Sword
 
@@ -264,7 +264,7 @@ Now we will add the group tag a little differently.
 
 In your Content Browser, go to the Scene Tab. Hit the R Button to refresh the actors in this tab.
 
-![](\img\development\scene-refresh-button.png)
+![](/img/development/scene-refresh-button.png)
 
 Under Filter Text type DiamondSword.
 
@@ -276,7 +276,7 @@ On the right hand side you should be able to see an actor properties area.
 
 - Set the Group value under Object to DiamondSword.
 
-![](\img\development\properties-multiple-actors.png)
+![](/img/development/properties-multiple-actors.png)
 
 Hit the R button again to refresh the actors and you should see they are all set to DiamondSword. Clear your Filter Text and hit the R Button to refresh before leaving.
 
