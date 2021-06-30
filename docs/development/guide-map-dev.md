@@ -160,7 +160,7 @@ Download a "RefShaderCache-PC-D3D-SM3.upk" which has been modified, paste it int
 
 ##### Step 2
 
-Run UnrealFrontEnd and cook the map. Copy "RefShaderCache-PC-D3D-SM3.upk" in "\UDK\UDK-2011-01\UDKGame\Content\Maps\" and paste it into "\Tribes\TribesGame\CookedPC\". This will need to be done every time you wish to test the map.
+Run UnrealFrontEnd and cook the map. Copy "RefShaderCache-PC-D3D-SM3.upk" in "\UDK\UDK-2011-01\UDKGame\CookedPC\" and paste it into "\Tribes\TribesGame\CookedPC\". This will need to be done every time you wish to test the map.
 
 #### Workaround (Advanced users)
 

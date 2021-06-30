@@ -50,5 +50,14 @@ module.exports = {
         'information/patch-notes',
       ],
     },
+    {
+      type: 'category',
+      label: 'Dodges Maps',
+      items: [
+        'custommaps/trctf-blues',
+        'custommaps/trctf-periculo',
+        'custommaps/trctf-incidamus',
+      ],
+    },
   ],
 };

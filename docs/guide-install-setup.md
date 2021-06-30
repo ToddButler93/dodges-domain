@@ -45,7 +45,7 @@ Select the map pack you want and hit install. This will automatically download a
 
 Usually it's "C:\Program Files (x86)\Steam\SteamApps\Common\Tribes\Binaries\Win32\TribesAscend.exe". If you aren't sure and installed the game via steam, follow this video to get the correct directory.
 
-<video width="670" height="600" autoplay="true" muted loop preload="metadata">
+<video width="100%" height="auto" autoplay="true" muted loop preload="metadata">
   <source src="/video/Game_Install_Location.webm" type="video/webm"></source>Your browser does not support .webm video.
 </video>
 
@@ -55,7 +55,7 @@ Microsoft Visual C++ redistributes must be installed, an easy all in one install
 ### I keep failing to join a server
 Probably in the wrong game mode for that server, community servers are labelled OOTB or GOTY to show their game mode. Go back to the main menu and select Switch to OOTB or Switch to GOTY like this video. 
 
-<video width="570" height="892" autoplay="true" muted loop preload="metadata">
+<video width="auto" height="100%" autoplay="true" muted loop preload="metadata">
   <source src="/video/Change-Game-Mode.webm" type="video/webm"></source>Your browser does not support .webm video.
 </video>
 
