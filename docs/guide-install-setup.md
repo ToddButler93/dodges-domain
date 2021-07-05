@@ -62,7 +62,7 @@ Probably in the wrong game mode for that server, community servers are labelled 
 ### Can't join a server with a community made map
 To play on a server hosting a community made map you only need the latest version of the map. In the server browsers current state, community made maps come up as Arx Novena.
 
-[Follow this section of the guide ](how-to-install#playing-community-maps) to install common community maps here first. 
+[Follow this section of the guide ](how-to-install#playing-community-maps) to install common community maps here first. Then try [reinstalling TAMods](how-to-install#im-having-issues-not-stated-here-with-the-launcher) and the packages. 
 
 On occasion you will have to contact the owner for the files. 
 
