@@ -17,7 +17,7 @@ You will need the [Microsoft Visual C++ Redistributes](https://github.com/abbodi
 
 ### Step 3
 
-Launch the `Tribes Launcher`
+Launch the `Tribes Launcher`.
 
 In the `Tribes Launcher`, select the `Community` for your login server, hit Login and inject TAMods.
 
@@ -33,7 +33,7 @@ Note: This may take a while as some of the assets required add up to a few gigab
 
 ### Step 1 
 
-Run the Tribes Launcher and click on the packages tab.
+Run the `Tribes Launcher` and click on the `Packages` tab.
 
 ### Step 2
 
@@ -43,7 +43,7 @@ Select the map pack you want and hit install. This will automatically download a
 ## Troubleshooting
 ### Launcher doesn't know where Tribes is installed? 
 
-Usually it's "C:\Program Files (x86)\Steam\SteamApps\Common\Tribes\Binaries\Win32\TribesAscend.exe". If you aren't sure and installed the game via steam, follow this video to get the correct directory.
+Usually it's "C:\Program Files (x86)\Steam\SteamApps\Common\Tribes\Binaries\Win32\TribesAscend.exe". If you aren't sure and installed the game via `Steam`, follow this video to get the correct directory.
 
 <video width="100%" height="auto" autoplay="true" muted loop preload="metadata">
   <source src="/video/Game_Install_Location.webm" type="video/webm"></source>Your browser does not support .webm video.
@@ -60,7 +60,32 @@ Probably in the wrong game mode for that server, community servers are labelled 
 </video>
 
 ### Can't join a server with a community made map
-To play on a server hosting a community made map you only need the latest version of the map. Some of these you will have to contact the owner for. [Follow this section of the guide](how-to-install#playing-community-maps) first.
+To play on a server hosting a community made map you only need the latest version of the map. In the server browsers current state, community made maps come up as Arx Novena.
 
-### I get an error while installing the map packs
-We've ran into a few issues with peoples files being set to read only. You need to go to where Tribes is installed and locate the file in the error message. Right click and select properties and de-select Read Only then close the launcher and try to install it again. This will be fixed in a future update.
+[Follow this section of the guide ](how-to-install#playing-community-maps) to install common community maps here first. 
+
+On occasion you will have to contact the owner for the files. 
+
+### I get a Package Install Error while installing the map packs
+We've ran into a few issues with peoples files being set to read only. You need to go to where [Tribes Ascend is installed](how-to-install#launcher-doesnt-know-where-tribes-is-installed) and locate the file in the error message. Right click and select `Properties` and de-select `Read Only` then close the launcher and try to install it again. This will be fixed by the next launcher update.
+
+### I get an error when I start the game after installing packages
+This should only occur when you have manually installed the maps previously. This fix will require some redownloading.
+
+#### Step 1 
+In your `Tribes Ascend` install folder, go to \TribesGame\CookedPC\Maps\ and delete all files.
+
+[Not sure where tribes is installed?](how-to-install#launcher-doesnt-know-where-tribes-is-installed)
+
+#### Step 2 
+Now, in `Steam`, you will need to verify your files.
+
+In your games library you need to right click on `Tribes Ascend` and hit `Properties`, select the `Local files` tab and click the `Verify integrity of game files...` button. This will redownload the missing files you just deleted from the base game via steam.
+
+#### Step 3
+Once complete, in your `Tribes Launcher` hit the `Advanced` tab and hit `Reinstall TAMods`. Hit `Yes` on the prompt and then hit `Update` to start the process.
+
+Now, under the `Packages` Tab you can install the custom packages that were removed earlier. This should just be the custom maps and assets packages.
+
+### I'm having issues not stated here with the launcher
+When in doubt, under the `Advanced` tab hit `Reinstall TAMods`. This should allow you to reinstall packages as well.
