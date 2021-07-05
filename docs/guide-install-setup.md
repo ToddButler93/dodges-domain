@@ -38,6 +38,9 @@ Run the `Tribes Launcher` and click on the `Packages` tab.
 ### Step 2
 
 Select the map pack you want and hit install. This will automatically download all the required files so you can play.
+
+![](/img/install/launcher-packages-tab.png)
+
 [Getting an error?](how-to-install#i-get-an-error-while-installing-the-map-packs)
 
 ## Troubleshooting
@@ -80,12 +83,24 @@ In your `Tribes Ascend` install folder, go to \TribesGame\CookedPC\Maps\ and del
 #### Step 2 
 Now, in `Steam`, you will need to verify your files.
 
-In your games library you need to right click on `Tribes Ascend` and hit `Properties`, select the `Local files` tab and click the `Verify integrity of game files...` button. This will redownload the missing files you just deleted from the base game via steam.
+In your games library you need to right click on `Tribes Ascend` and hit `Properties`.
+
+![](/img/install/steam-properties.png)
+
+Select the `Local files` tab and click the `Verify integrity of game files...` button. This will redownload the missing files you just deleted from the base game via steam.
+
+![](/img/install/steam-local-files.png)
 
 #### Step 3
 Once complete, in your `Tribes Launcher` hit the `Advanced` tab and hit `Reinstall TAMods`. Hit `Yes` on the prompt and then hit `Update` to start the process.
 
+![](/img/install/launcher-advanced-tab.png)
+
 Now, under the `Packages` Tab you can install the custom packages that were removed earlier. This should just be the custom maps and assets packages.
+
+![](/img/install/launcher-packages-tab.png)
 
 ### I'm having issues not stated here with the launcher
 When in doubt, under the `Advanced` tab hit `Reinstall TAMods`. This should allow you to reinstall packages as well.
+
+![](/img/install/launcher-advanced-tab.png)
