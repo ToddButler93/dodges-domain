@@ -10,6 +10,9 @@ module.exports = {
   organizationName: 'Toddbutler93', // Usually your GitHub org/user name.
   projectName: 'dodge-site', // Usually your repo name.
   themeConfig: {
+    colorMode: {
+      defaultMode: 'dark',
+    },
     navbar: {
       title: 'Dodges Site',
       logo: {

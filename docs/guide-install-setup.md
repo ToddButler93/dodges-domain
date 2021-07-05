@@ -38,7 +38,7 @@ Run the Tribes Launcher and click on the packages tab.
 ### Step 2
 
 Select the map pack you want and hit install. This will automatically download all the required files so you can play.
-[Getting an error?](how-to-install#I-get-an-error-while-installing-the-map-packs)
+[Getting an error?](how-to-install#i-get-an-error-while-installing-the-map-packs)
 
 ## Troubleshooting
 ### Launcher doesn't know where Tribes is installed? 
@@ -63,4 +63,4 @@ Probably in the wrong game mode for that server, community servers are labelled 
 To play on a server hosting a community made map you only need the latest version of the map. Some of these you will have to contact the owner for. [Follow this section of the guide](how-to-install#playing-community-maps) first.
 
 ### I get an error while installing the map packs
-We've ran into a few issues with peoples files being set to read only. You need to go to where Tribes is installed and locate the file in the error message. Right click and select properties and de-select Read Only then close the launcher and try to install it again.
+We've ran into a few issues with peoples files being set to read only. You need to go to where Tribes is installed and locate the file in the error message. Right click and select properties and de-select Read Only then close the launcher and try to install it again. This will be fixed in a future update.
