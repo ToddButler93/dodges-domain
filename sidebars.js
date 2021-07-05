@@ -37,6 +37,15 @@ module.exports = {
     },
     {
       type: 'category',
+      label: 'Dodges Maps',
+      items: [
+        'custommaps/trctf-blues',
+        'custommaps/trctf-periculo',
+        'custommaps/trctf-incidamus',
+      ],
+    },
+    {
+      type: 'category',
       label: 'Tribes Development Guides',
       items: [
         'development/how-to-make-maps',
@@ -48,15 +57,6 @@ module.exports = {
       label: 'Tribes Information',
       items: [
         'information/patch-notes',
-      ],
-    },
-    {
-      type: 'category',
-      label: 'Dodges Maps',
-      items: [
-        'custommaps/trctf-blues',
-        'custommaps/trctf-periculo',
-        'custommaps/trctf-incidamus',
       ],
     },
   ],

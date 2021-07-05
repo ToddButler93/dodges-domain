@@ -1,20 +1,33 @@
 ---
 id: guides
-title: Guides
-sidebar_label: Guides
+title: Dodes Domain
+sidebar_label: Site Index
 slug: /
 ---
 
-## General Guides
+## Setup Guides
 
 [Installation Guide](how-to-install)
 
 [Configuration Guide](how-to-config)
 
+## Tribes Ascend Maps
+### Community Made Maps
+[Blues - CTF Map](custommaps/trctf-blues)
+
+[Periculo - CTF Map](custommaps/trctf-periculo)
+
+[Incidamus - CTF Map](custommaps/trctf-incidamus)
 
 ## Tribes Development Guides
 
 [Making Custom Maps](development/how-to-make-maps)
+
+[Use UDK to make Tribes Maps from scratch](development/how-to-udk)
+
+## Tribes Information
+[Tribes Ascend Patch Notes](information/patch-notes)
+
 
 
 <!---

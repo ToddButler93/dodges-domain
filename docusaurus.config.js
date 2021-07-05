@@ -1,6 +1,6 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'Dodges Site',
+  title: 'Dodges Domain',
   tagline: 'PUGs tonight?',
   url: 'https://www.dodgesdomain.com/',
   baseUrl: '/',
@@ -14,7 +14,7 @@ module.exports = {
       defaultMode: 'dark',
     },
     navbar: {
-      title: 'Dodges Site',
+      title: 'Dodges Domain',
       logo: {
         alt: 'Dodges Site Logo',
         src: 'img/blueplate.png',

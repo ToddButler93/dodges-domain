@@ -9,29 +9,28 @@ import styles from './styles.module.css';
 const features = [
   {
     title: 'Dodges Website',
-    imageUrl: 'img/blueplate.png',
+    imageUrl: 'img/incidamus-pretty.png',
     description: (
       <>
-        Tribes Ascend isn't what it used to be.
+        Tribes Ascend now has some community made content to enjoy!
       </>
     ),
   },
   {
     title: 'Full of guides',
-    imageUrl: 'img/blueplate.png',
+    imageUrl: 'img/inferno-pretty.png',
     description: (
       <>
-        I swear I'll write them eventually.
+        I swear I'll write them all eventually.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    imageUrl: 'img/blueplate.png',
+    title: 'Playing Tribes in 2021!',
+    imageUrl: 'img/drydock-night-pretty.png',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Guides on how to setup the game and get you playing!
       </>
     ),
   },
