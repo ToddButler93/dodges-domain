@@ -1,6 +1,6 @@
 ---
 id: guides
-title: Dodes Domain
+title: Dodges Domain
 sidebar_label: Site Index
 slug: /
 ---

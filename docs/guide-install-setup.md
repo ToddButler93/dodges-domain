@@ -41,7 +41,7 @@ Select the map pack you want and hit install. This will automatically download a
 
 ![](/img/install/launcher-packages-tab.png)
 
-[Getting an error?](how-to-install#i-get-an-error-while-installing-the-map-packs)
+[Still having issues?](how-to-install#troubleshooting)
 
 ## Troubleshooting
 ### Launcher doesn't know where Tribes is installed? 

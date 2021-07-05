@@ -40,6 +40,10 @@ module.exports = {
               to: 'docs/',
             },
             {
+            label: 'Dodges Maps',
+            to: 'docs/custommaps/trctf-blues',
+            },
+            {
               label: 'Tribes Development Guides',
               to: 'docs/development/how-to-make-maps',
             },
