@@ -40,28 +40,58 @@ sidebar_label: Capping
 
 ### How to be the best capper ever
 - Learn consistent low visibility routes for all maps.
-- Learn how to duel.
 - Sync with other cappers and your offence.
-- Learn from someone who can cap rather than learning from sDodge.
+- Learn how to duel.
+- Learn from someone who can cap rather than learning from Dodge.
 
-## Communicate efficiently and effectively.
-Communication allows your teammates to clear the enemy defense allowing you to grab.
+## Communication
+Communicating your position and intention allows your teammates to clear the enemy defense allowing you to grab or work with you getting the flag home.
 
 Learning time calls for your routes is incredibly important. Calling times every 5 seconds is a good rule of thumb to make sure your teammates know when to hit the stand or snipe.
+
 ## Returning home
 - Minimizing return time is the best thing you can do to secure the cap.
 - Grabbing flags at 320+ sanics is optimal. 
 - Avoid self-damage here as that will impact your survivability. 
 - Going to wherever your teammates are may be more optimal than your stand if it is over-run.
-
+- Self clear can be very disruptive. Always shoot a heavy on flag if he see's you.
+- You can use a horizontal thrust to sometimes avoid the heavy on flag.
 ## Rock Bounces
+
+<video width="100%" height="auto" autoplay="true" muted loop preload="metadata">
+  <source src="/video/kata-ds-bounce.webm" type="video/webm"></source>Your browser does not support .webm video.
+</video>
+
 Endgame capping. This is where the boys become men and girls become women.
 
 - Again, don't jet before/while hitting the rock.
-- 
+- To bounce off a surface, you must not be able to walk on that face.
+- You also need to be hitting a face at an angle above 15 degrees.
+- Dodges maps contain some really easy rocks to bounce off. 
 
 ## Show me some routes
 This site has some map sepcific guides which contain information on specific maps. But many people have pushed out a lot of interesting routes on their respective channels. A lot of the pathfinder GOTY routes work for Parting Gifts/OOTB but may need adjusting.
+
+### Map Index
+- [Arx Novena](capping/how-to-cap-arx-novena)
+- [Bella Omega](capping/how-to-cap-bella-omega)
+- [Blueshift](capping/how-to-cap-blueshift)
+- [Crossfire](capping/how-to-cap-crossfire)
+- [Canyon Crusade Revival](capping/how-to-cap-canyon-crusade-revival)
+- [Dangerous Crossing](capping/how-to-cap-dangerous-crossing)
+- [Drydock](capping/how-to-cap-drydock)
+- [Hellfire](capping/how-to-cap-hellfire)
+- [Ice Coaster](capping/how-to-cap-ice-coaster)
+- [Katabatic](capping/how-to-cap-katabatic)
+- [Perdition](capping/how-to-cap-perdition)
+- [Permafrost](capping/how-to-cap-permafrost)
+- [Raindance](capping/how-to-cap-raindance)
+- [Stonehenge](capping/how-to-cap-stonehenge)
+- [Sunstar](capping/how-to-cap-sunstar)
+- [Tartarus](capping/how-to-cap-tartarus)
+- [Temple Ruins](capping/how-to-cap-temple-ruins)
+- [Terminus](capping/how-to-cap-terminus)
+
 ### Kigabit's Pathfinder GOTY
 - [Arx Novena](http://www.youtube.com/playlist?list=PLor2TDMmuFQwnmNLx9nuUsGSDmibNCCou)
 - [Drydock](http://www.youtube.com/playlist?list=PLor2TDMmuFQxmii8JNoFdInjV5i1HcBaW)
@@ -74,7 +104,8 @@ This site has some map sepcific guides which contain information on specific map
 - [Bella Omega](http://www.youtube.com/playlist?list=PLor2TDMmuFQx60qYp3XsqAPkTxEg3cOL3)
 - [Canyon Crusade Revival](http://www.youtube.com/playlist?list=PLor2TDMmuFQyTwG_3Vyby0sfdBOLeGu2r)
 - [Raindance](http://www.youtube.com/playlist?list=PLor2TDMmuFQzP3wBliilpmDv9rhKb6Uk0)
-### Soninova's Soldier GOTY
+
+### Soninova's Soldier/Raider GOTY
 - [Katabatic Blood Eagle](http://www.youtube.com/watch?v=pGia8sVounA)
 - [Katabatic Diamond Sword](http://www.youtube.com/watch?v=bvrvCprj7oo)
 - [Arx Novena](http://www.youtube.com/watch?v=9Mz8exyhBrs)
@@ -82,14 +113,20 @@ This site has some map sepcific guides which contain information on specific map
 - [Tartarus](http://www.youtube.com/watch?v=yEL3d1gN4iQ)
 - [Permafrost](http://www.youtube.com/watch?v=8EXJsaZPNeY)
 - [Bella Omega](https://youtu.be/_XGpuNuo6Zo)
+
 ### BeanZ's Light/Medium OOTB
 - [Arx Novena](https://youtu.be/CahvqJRwoWA)
-- [Terminus](https://youtu.be/07SAYWskQ6s)
 - [Hellfire](https://youtu.be/5NKH5JEvOoA)
-### JackTheBlack (GOTY)
+- [Terminus](https://youtu.be/07SAYWskQ6s)
+
+### JackTheBlack Pathfinder GOTY
 - [Incidamus](https://youtu.be/-SerjnmOvns)
+
+### Vikatikki Light OOTB
+- [Icecoaster](https://youtu.be/JShaimqA-MU)
+
 ### Other resources
-[Small Kiwi has a guide](https://youtu.be/5aoD0HuefiU) that is out of date but still useful.
+- [Small Kiwi has a guide](https://youtu.be/5aoD0HuefiU) that is out of date but still useful.
 
 ## TAMods to the rescue
 TAMods has a route library that will soon include routes for all maps. Currently missing quite a few and some are only for specific sides. Using the F1 menu and selecting routes for your team is the way to go. 
