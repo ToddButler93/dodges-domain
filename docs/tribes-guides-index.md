@@ -11,6 +11,10 @@ slug: /
 
 [Configuration Guide](how-to-config)
 
+## Tribes Ascend Gameplay Guides
+
+[Capping](gameplay/how-to-cap)
+
 ## Tribes Ascend Maps
 ### Community Made Maps
 [Blues - CTF Map](custommaps/trctf-blues)

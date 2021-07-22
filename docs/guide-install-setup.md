@@ -8,7 +8,7 @@ sidebar_label: Installation
 ### Step 1
 Download and install the game from steam [here](https://store.steampowered.com/app/17080/Tribes_Ascend/).
 
-<iframe src="https://store.steampowered.com/widget/17080/" frameborder="0" width="646" height="190"></iframe>
+<iframe src="https://store.steampowered.com/widget/17080/" frameborder="0" width="100%" height="190"></iframe>
 
 ### Step 2
 Download the latest release of the `Tribes Launcher` [here](https://github.com/mcoot/TribesLauncherSharp/releases). This will be used to launch our game. TAMods has a website to help guide people [here](https://www.tamods.org/docs/doc_user_install).
@@ -21,7 +21,7 @@ Launch the `Tribes Launcher`.
 
 In the `Tribes Launcher`, select the `Community` for your login server, hit Login and inject TAMods.
 
-Once injected, the Play Now button will show whether you are in OOTB or GOTY mode. There is a button on the main menu to switch. You need to be in GOTY mode to play on GOTY servers and OOTB mode to play on OOTB servers.
+Once injected, the Play Now button will show whether you are in `OOTB` or `GOTY` mode. There is a button on the main menu to switch. You need to be in `GOTY` mode to play on `GOTY` servers and `OOTB` mode to play on `OOTB` servers.
 
 [Still having issues?](how-to-install#troubleshooting)
 
@@ -56,7 +56,7 @@ Usually it's "C:\Program Files (x86)\Steam\SteamApps\Common\Tribes\Binaries\Win3
 Microsoft Visual C++ redistributes must be installed, an easy all in one installer is [here](https://github.com/abbodi1406/vcredist/releases/)
 
 ### I keep failing to join a server
-Probably in the wrong game mode for that server, community servers are labelled OOTB or GOTY to show their game mode. Go back to the main menu and select Switch to OOTB or Switch to GOTY like this video. 
+Probably in the wrong game mode for that server, community servers are labelled `OOTB` or `GOTY` to show their game mode. Go back to the main menu and select `Switch to OOTB` or `Switch to GOTY` like this video. 
 
 <video width="auto" height="100%" autoplay="true" muted loop preload="metadata">
   <source src="/video/Change-Game-Mode.webm" type="video/webm"></source>Your browser does not support .webm video.
@@ -87,7 +87,7 @@ In your games library you need to right click on `Tribes Ascend` and hit `Proper
 
 ![](/img/install/steam-properties.png)
 
-Select the `Local files` tab and click the `Verify integrity of game files...` button. This will redownload the missing files you just deleted from the base game via steam.
+Select the `Local files` tab and click the `Verify integrity of game files...` button. This will re-download the missing files you just deleted from the base game via steam.
 
 ![](/img/install/steam-local-files.png)
 

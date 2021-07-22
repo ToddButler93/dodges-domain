@@ -24,13 +24,13 @@ module.exports = {
       type: 'category',
       label: 'Gameplay Guides',
       items: [
+        'gameplay/how-to-cap',
         /*'how-to-move',
         'how-to-shoot',
         'how-to-competitive',
         'how-to-offend',
         'how-to-defend',
         'how-to-hof',
-        'how-to-cap',
         'how-to-spot',
         'how-to-snipe',*/
       ],
