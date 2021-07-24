@@ -308,6 +308,7 @@ Remember to group these to their respective teams.
 
 [Save your level](how-to-udk#step-2---save-level).
 
+<!--- TODO Commenting out as incomplete.
 ## Step 6 - Modify Terrain
 
 
@@ -334,10 +335,11 @@ For this particular fog asset there are two light colors which reference our dom
 
 [Save your level](how-to-udk#step-2---save-level).
 ## Step 11 - Add Boundaries
-
+-->
 <!--TODO Explain how to set WorldInfo KillZ-->
-
+<!--
 [Save your level](how-to-udk#step-2---save-level).
+-->
 ## FAQ
 
 ### Where can I find my actors?

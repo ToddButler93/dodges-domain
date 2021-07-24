@@ -11,7 +11,7 @@ sidebar_label: Capping
 
 ## Gaining Speed
 ### Real Basics
-
+<!-- TODO Move to guide-movement -->
 - Right-click makes you use your jetpack which sends you up.
 - Space lets you ski on the ground with no friction.
 - Shooting yourself can be useful to gain momentum. 
@@ -70,8 +70,9 @@ Endgame capping. This is where the boys become men and girls become women.
 - Dodges maps contain some really easy rocks to bounce off. 
 
 ## Show me some routes
-This site has some map sepcific guides which contain information on specific maps. But many people have pushed out a lot of interesting routes on their respective channels. A lot of the pathfinder GOTY routes work for Parting Gifts/OOTB but may need adjusting.
+Many people have pushed out a lot of interesting routes on their respective channels. A lot of the pathfinder GOTY routes work for Parting Gifts/OOTB but may need adjusting.
 
+<!--- TODO Commenting out as incomplete.
 ### Map Index
 - [Arx Novena](capping/how-to-cap-arx-novena)
 - [Bella Omega](capping/how-to-cap-bella-omega)
@@ -91,6 +92,7 @@ This site has some map sepcific guides which contain information on specific map
 - [Tartarus](capping/how-to-cap-tartarus)
 - [Temple Ruins](capping/how-to-cap-temple-ruins)
 - [Terminus](capping/how-to-cap-terminus)
+-->
 
 ### Kigabit's Pathfinder GOTY
 - [Arx Novena](http://www.youtube.com/playlist?list=PLor2TDMmuFQwnmNLx9nuUsGSDmibNCCou)
