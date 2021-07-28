@@ -7,7 +7,7 @@ sidebar_label: Capping Incidamus
 ## Layout
 ### Calls
 ## Routes
-- [JackTheBlack's Compendium for Incidamus](https://youtu.be/-SerjnmOvns)
+- [JackTheBlack's Compendium for Incidamus](https://youtu.be/-SerjnmOvns), [TAMods route files](/routes/jacktheblacks-blues-routes.zip)
 ### Backs
 ### Lefts
 ### Rights

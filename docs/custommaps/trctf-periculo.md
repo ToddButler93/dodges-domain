@@ -25,12 +25,22 @@ As competitive viability is important for this map, all assets and terrain shall
 
 ## Capping
 
-The #1 HOF Australian player JackTheBlack has a [capping video available](https://youtu.be/Tgp0AMbAGWw).
+The #1 HOF Australian player JackTheBlack has a [capping video available](https://youtu.be/izQGpW2qAc8). 
+
+<!--TODO TAMods route files can be downloaded [here](/routes/jacktheblacks-periculo-routes.zip). -->
 
 ## Gallery
 ![Periculo](/img/maps/periculo-bases.png)
 
 ## Changelog
+### TrCTF-Periculo v006
+
+[Download](https://drive.google.com/file/d/1gzeW_rplraKDo1tXjpLsAyujoesf2P1s/view?usp=sharing)
+
+This is a very minor update.
+
+- Fixed some mirroring issues on Periculo. 
+
 ### TrCTF-Periculo v005
 [Download](https://drive.google.com/file/d/1mNzh4lqcJGqVzWOkowzgzgqrDTZbsUfS/view?usp=sharing)
 - Can no longer disc jump off the creativity wall.

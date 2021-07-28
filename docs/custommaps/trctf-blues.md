@@ -25,13 +25,23 @@ As competitive viability is important for this map, all assets and terrain shall
 As this was my first map, I used a lot of assets in the base game as placeholders. The intention is to add completely custom assets to all my maps.
 
 ## Capping
+<!-- TODO Update with link to map specific capping guide. -->
+The #1 HOF Australian player JackTheBlack has a [capping video available](https://youtu.be/I_VKMFYgrgA).
 
-The #1 HOF Australian player JackTheBlack has a [capping video available](https://youtu.be/CigzEeTqEzE).
+TAMods route files can be downloaded [here](/routes/jacktheblacks-blues-routes.zip).
 
 ## Gallery
 ![Blues Flagstand](/img/maps/blues-flagstand.png)
 
 ## Changelog
+### TrCTF-Blues v013
+[Download](https://drive.google.com/file/d/1gzeW_rplraKDo1tXjpLsAyujoesf2P1s/view?usp=sharing)
+
+This is a very minor update. 
+
+- Fixed some mirroring issues on Blues. 
+- Added back the boxes on Blues stand. Will swap them eventually^TM
+
 ### TrCTF-Blues v012
 [Download](https://drive.google.com/file/d/1mNzh4lqcJGqVzWOkowzgzgqrDTZbsUfS/view?usp=sharing)
 

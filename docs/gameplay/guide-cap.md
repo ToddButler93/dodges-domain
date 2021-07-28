@@ -70,7 +70,7 @@ Endgame capping. This is where the boys become men and girls become women.
 - Dodges maps contain some really easy rocks to bounce off. 
 
 ## Show me some routes
-Many people have pushed out a lot of interesting routes on their respective channels. A lot of the pathfinder GOTY routes work for Parting Gifts/OOTB but may need adjusting.
+Many people have pushed out a lot of interesting route videos on their respective channels. A lot of the pathfinder GOTY routes work for Parting Gifts/OOTB but may need adjusting.
 
 <!--- TODO Commenting out as incomplete.
 ### Map Index
@@ -93,8 +93,8 @@ Many people have pushed out a lot of interesting routes on their respective chan
 - [Temple Ruins](capping/how-to-cap-temple-ruins)
 - [Terminus](capping/how-to-cap-terminus)
 -->
-
-### Kigabit's Pathfinder GOTY
+### Videos
+#### Kigabit's Pathfinder GOTY
 - [Arx Novena](http://www.youtube.com/playlist?list=PLor2TDMmuFQwnmNLx9nuUsGSDmibNCCou)
 - [Drydock](http://www.youtube.com/playlist?list=PLor2TDMmuFQxmii8JNoFdInjV5i1HcBaW)
 - [Dangerous Crossing](http://www.youtube.com/playlist?list=PLor2TDMmuFQzpmX0wu4jpE4Va6G8nkcjk)
@@ -107,7 +107,7 @@ Many people have pushed out a lot of interesting routes on their respective chan
 - [Canyon Crusade Revival](http://www.youtube.com/playlist?list=PLor2TDMmuFQyTwG_3Vyby0sfdBOLeGu2r)
 - [Raindance](http://www.youtube.com/playlist?list=PLor2TDMmuFQzP3wBliilpmDv9rhKb6Uk0)
 
-### Soninova's Soldier/Raider GOTY
+#### Soninova's Soldier/Raider GOTY
 - [Katabatic Blood Eagle](http://www.youtube.com/watch?v=pGia8sVounA)
 - [Katabatic Diamond Sword](http://www.youtube.com/watch?v=bvrvCprj7oo)
 - [Arx Novena](http://www.youtube.com/watch?v=9Mz8exyhBrs)
@@ -116,15 +116,17 @@ Many people have pushed out a lot of interesting routes on their respective chan
 - [Permafrost](http://www.youtube.com/watch?v=8EXJsaZPNeY)
 - [Bella Omega](https://youtu.be/_XGpuNuo6Zo)
 
-### BeanZ's Light/Medium OOTB
+#### BeanZ's Light/Medium OOTB
 - [Arx Novena](https://youtu.be/CahvqJRwoWA)
 - [Hellfire](https://youtu.be/5NKH5JEvOoA)
 - [Terminus](https://youtu.be/07SAYWskQ6s)
 
-### JackTheBlack Pathfinder GOTY
-- [Incidamus](https://youtu.be/-SerjnmOvns)
+#### JackTheBlack's Pathfinder GOTY
+- [Incidamus](https://youtu.be/-SerjnmOvns), [TAMods route files](/routes/jacktheblacks-blues-routes.zip)
+- [Periculo](https://youtu.be/izQGpW2qAc8) <!--TODO , [TAMods route files](/routes/jacktheblacks-periculo-routes.zip) -->
+- [Blues](https://youtu.be/I_VKMFYgrgA), [TAMods route files](/routes/jacktheblacks-blues-routes.zip)
 
-### Vikatikki Light OOTB
+#### Vikatikki's Light OOTB
 - [Icecoaster](https://youtu.be/JShaimqA-MU)
 
 ### Other resources
@@ -135,3 +137,14 @@ TAMods has a route library that will soon include routes for all maps. Currently
 
 - Any X spot is where you need a self impulse so you should start the throw of your nitron before the spot. 
 - You can cycle through the routes for your current map.
+
+### TAMods Route Files
+These all should be downloadable via the `TAMods Launcher` `Packages` section. A manual download is provided here. These `.route` files need to go in your `\Documents\My Games\Tribes Ascend\TribesGame\config\routes` directory.
+#### JPs
+Arx Novena, Dangerous Crossing, Drydock, Katabatic, Raindance, Sunstar, Tartarus.
+- [JPs Easy Pathfinder GOTY route files](/routes/jps-easy-pathfinder-goty-routes.zip) which contain no difficult rockbounces!
+- [JPs Pathfinder and Soldier GOTY route files](/routes/jps-pathfinder-soldier-goty-routes.zip)
+#### JackTheBlack's
+- [JackTheBlack's Incidamus route files](/routes/jacktheblacks-blues-routes.zip)
+<!--TODO , - [JackTheBlack's Periculo route files](/routes/jacktheblacks-periculo-routes.zip) -->
+- [JackTheBlack's Blues route files](/routes/jacktheblacks-blues-routes.zip)

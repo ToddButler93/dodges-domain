@@ -7,6 +7,7 @@ sidebar_label: Capping Blues
 ## Layout
 ### Calls
 ## Routes
+[JackTheBlack's Compendium for Blues](https://youtu.be/I_VKMFYgrgA), [TAMods route files](/routes/jacktheblacks-blues-routes.zip)
 ### Backs
 ### Lefts
 ### Rights
