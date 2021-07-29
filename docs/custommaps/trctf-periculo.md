@@ -27,7 +27,7 @@ As competitive viability is important for this map, all assets and terrain shall
 
 The #1 HOF Australian player JackTheBlack has a [capping video available](https://youtu.be/izQGpW2qAc8). 
 
-<!--TODO TAMods route files can be downloaded [here](/routes/jacktheblacks-periculo-routes.zip). -->
+TAMods route files can be downloaded [here](/routes/jacktheblacks-periculo-routes.zip).
 
 ## Gallery
 ![Periculo](/img/maps/periculo-bases.png)

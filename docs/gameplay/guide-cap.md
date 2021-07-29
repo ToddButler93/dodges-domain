@@ -123,7 +123,7 @@ Many people have pushed out a lot of interesting route videos on their respectiv
 
 #### JackTheBlack's Pathfinder GOTY
 - [Incidamus](https://youtu.be/-SerjnmOvns), [TAMods route files](/routes/jacktheblacks-blues-routes.zip)
-- [Periculo](https://youtu.be/izQGpW2qAc8) <!--TODO , [TAMods route files](/routes/jacktheblacks-periculo-routes.zip) -->
+- [Periculo](https://youtu.be/izQGpW2qAc8), [TAMods route files](/routes/jacktheblacks-periculo-routes.zip)
 - [Blues](https://youtu.be/I_VKMFYgrgA), [TAMods route files](/routes/jacktheblacks-blues-routes.zip)
 
 #### Vikatikki's Light OOTB
@@ -146,5 +146,5 @@ Arx Novena, Dangerous Crossing, Drydock, Katabatic, Raindance, Sunstar, Tartarus
 - [JPs Pathfinder and Soldier GOTY route files](/routes/jps-pathfinder-soldier-goty-routes.zip)
 #### JackTheBlack's
 - [JackTheBlack's Incidamus route files](/routes/jacktheblacks-blues-routes.zip)
-<!--TODO , - [JackTheBlack's Periculo route files](/routes/jacktheblacks-periculo-routes.zip) -->
+- [JackTheBlack's Periculo route files](/routes/jacktheblacks-periculo-routes.zip)
 - [JackTheBlack's Blues route files](/routes/jacktheblacks-blues-routes.zip)
