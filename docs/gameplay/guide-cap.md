@@ -56,6 +56,7 @@ Learning time calls for your routes is incredibly important. Calling times every
 - Going to wherever your teammates are may be more optimal than your stand if it is over-run.
 - Self clear can be very disruptive. Always shoot a heavy on flag if he see's you.
 - You can use a horizontal thrust to sometimes avoid the heavy on flag.
+
 ## Rock Bounces
 
 <video width="100%" height="auto" autoplay="true" muted loop preload="metadata">
@@ -145,6 +146,7 @@ Arx Novena, Dangerous Crossing, Drydock, Katabatic, Raindance, Sunstar, Tartarus
 - [JPs Easy Pathfinder GOTY route files](/routes/jps-easy-pathfinder-goty-routes.zip) which contain no difficult rockbounces!
 - [JPs Pathfinder and Soldier GOTY route files](/routes/jps-pathfinder-soldier-goty-routes.zip)
 #### JackTheBlack's
+GOTY Pathfinder.
 - [JackTheBlack's Incidamus route files](/routes/jacktheblacks-blues-routes.zip)
 - [JackTheBlack's Periculo route files](/routes/jacktheblacks-periculo-routes.zip)
 - [JackTheBlack's Blues route files](/routes/jacktheblacks-blues-routes.zip)

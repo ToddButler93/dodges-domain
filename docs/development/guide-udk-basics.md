@@ -30,7 +30,7 @@ Middle Mouse button <kbd>MMB</kbd>
 [Want controls used outside of this guide?](https://docs.unrealengine.com/udk/Three/EditorButtons.html)
 
 
-## Step 1 - Create Terrain
+## Step 1 - Create Terrain Actor
 
 Click Tools, click new Terrain... 
 
@@ -67,24 +67,45 @@ Hit File then Save Current Level. Call your map TrCTF-Basic.
 
 The naming convention matters. Tr is always required, CTF refers to the map game Mode and -Basic can be replaced with -WhateverMapNameYouDesire.
 
-## Step 3 - Add Lighting
+## Step 3 - Add Lighting Actors
 
-### Lighting
-
-Now lets add an actor that will act as your Sun to light the entire field and generate shadows.
+### Sky Light
+Let us add an actor that will light all areas of the map but not create shadows.
 
 Open The Content Browser <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>F</kbd>
 
-Under the Actor Classes Tab use the search to find DominantDirectionalLightMovable.
+Under the Actor Classes Tab use the search to find SkyLight.
 
-Simply drag DominantDirectionalLightMovable to your scene.
+![](/img/development/lighting-actor-skylight.png)
+
+Simply drag SkyLight to your scene.
 
 [Lost where it went?](how-to-udk#my-things-have-disapeared)
 
-Open Actor Properties <kbd>F4</kbd> for the DominantDirectionalLightMovable you just added. 
+Open Actor Properties <kbd>F4</kbd> for the SkyLight you just added. 
 
 - Set Draw Scale to 32
-- Set Brightness to 1
+- Set Brightness to 0.5
+- Set Group to "World"
+
+![](/img/development/lighting-skylight-properties.png)
+
+### Dominant Directional Light 
+
+Now let us add an actor that will act as your Sun to light the entire field and generate shadows.
+
+Open The Content Browser <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>F</kbd>
+
+Under the Actor Classes Tab use the search to find DominantDirectionalLight.
+
+Simply drag DominantDirectionalLight to your scene.
+
+[Lost where it went?](how-to-udk#my-things-have-disapeared)
+
+Open Actor Properties <kbd>F4</kbd> for the DominantDirectionalLight you just added. 
+
+- Set Draw Scale to 32
+- Set Brightness to 0.5
 - Set Group to "World"
 
 ![](/img/development/lighting-dominant-direct-properties.png)
