@@ -5,17 +5,33 @@ sidebar_label: Installation
 ---
 ## Installing Tribes Ascend
 
-### Step 1
+### Method 1
+
+#### Step 1
+
+Run the [Tribes Ascend Unofficial Installer](/apps/TribesAscendUnofficalInstaller.exe). Last updated 2021/09/30.
+
+#### Step 2
+
+In the `Tribes Launcher`, select the `Community` for your login server, hit Login and inject TAMods.
+
+Once injected, the Play Now button will show whether you are in `OOTB` or `GOTY` mode. There is a button on the main menu to switch. You need to be in `GOTY` mode to play on `GOTY` servers and `OOTB` mode to play on `OOTB` servers.
+
+[Still having issues?](how-to-install#troubleshooting)
+
+### Method 2
+
+#### Step 1
 Download and install the game from steam [here](https://store.steampowered.com/app/17080/Tribes_Ascend/).
 
 <iframe src="https://store.steampowered.com/widget/17080/" frameborder="0" width="100%" height="190"></iframe>
 
-### Step 2
+#### Step 2
 Download the latest release of the `Tribes Launcher` [here](https://github.com/mcoot/TribesLauncherSharp/releases). This will be used to launch our game. TAMods has a website to help guide people [here](https://www.tamods.org/docs/doc_user_install).
 
 You will need the [Microsoft Visual C++ Redistributes](https://github.com/abbodi1406/vcredist/releases/) if you don't have them already installed.
 
-### Step 3
+#### Step 3
 
 Launch the `Tribes Launcher`.
 

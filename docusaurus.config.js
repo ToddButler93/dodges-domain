@@ -55,17 +55,21 @@ module.exports = {
               label: 'TA Mods',
               to: 'https://www.tamods.org/',
             },
+            {
+              label: 'Wilderzone (Maintained by Giga)',
+              to: 'https://wilderzone.live/',
+            },
           ],
         },
         {
           title: 'Community',
           items: [
             {
-              label: 'Youtube',
+              label: 'Dodges Youtube',
               href: 'https://www.youtube.com/channel/UC06sxsfSsmjX8K3su-fNi_A',
             },
             {
-              label: 'Discord',
+              label: 'Australian Discord',
               href: 'https://discord.gg/MYdN9Xm5Bg',
             },
           ],
