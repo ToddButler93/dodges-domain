@@ -24,6 +24,7 @@ module.exports = {
       type: 'category',
       label: 'Gameplay Guides',
       items: [
+        'gameplay/guide-quick',
         'gameplay/how-to-cap',
         /*'how-to-move',
         'how-to-shoot',

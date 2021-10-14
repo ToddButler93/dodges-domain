@@ -25,17 +25,19 @@ These are PUG-specific recommendations to make the game more enjoyable for every
 
 ## Roles
 ### Offense
+<!--[Offense Guide](gameplay/how-to-offense)-->
 #### Major Responsibilities
 - Kill the enemy `Heavy on Flag` and enemy `Light Defense` 5 seconds before your `Capper` will grab.
-- Put pressure on the enemy `Sniper` to prevent them from killing your `Capper` pre-grab and post-grab. Generally only 1 `Offense` member does this and only if you are running 1 `Capper`
+- Put pressure on the enemy `Sniper` to prevent them from killing your `Capper` pre-grab and post-grab. Generally, only 1 `Offense` member does this, and only if you are running 1 `Capper`
 - `E-Grab` when the `Defense` calls for it.
 #### Minor Responsibilities
-- `K-Out` and meet your `Capper` after they grab.
+- <kbd>K</kbd>-Out and meet your `Capper` after they grab.
 - Hit the enemy stand at the same time as other `Offense` members, aim for when your `Capper` would be 15 seconds out. 
 - Spot enemy `Cappers` and enemy `Offense`, this assists your `Defense` better than you shooting the enemy `Offense`.
 - `Walk` flags with your other `Offense` members.
 
 ### Heavy on Flag
+<!--[Heavy on Flag Guide](gameplay/how-to-hof)-->
 #### Major Responsibilities
 - Stop the enemy `Capper`
 - Stop enemy `Walks`
@@ -46,6 +48,7 @@ These are PUG-specific recommendations to make the game more enjoyable for every
 - Avoid being shot if possible.
 
 ### Light/Medium Defense
+<!--[Light/Medium Defense Guide](gameplay/how-to-defense)-->
 #### Major Responsibilities
 - Kill enemy `Offense`
 - Return flags.
@@ -56,6 +59,7 @@ These are PUG-specific recommendations to make the game more enjoyable for every
 - If the enemy `Capper` has recently died, assist any walks your `Offense` may be doing or meet your `Capper`.
 
 ### Sniper
+<!--[Sniper Guide](gameplay/how-to-snipe)-->
 #### Major Responsibilities
 - Spot/kill the enemy `Capper` at all times.
 - Call out a time and direction the enemy cap will be.
@@ -68,6 +72,7 @@ These are PUG-specific recommendations to make the game more enjoyable for every
 - Snipe the enemy chaser if your `Capper` is out.
 
 ### Capper
+[Capper Guide](gameplay/how-to-cap)
 #### Major Responsibilities
 - Grab and capture the enemy flag.
 - Communicate times on your route for your `Offense` members.
@@ -76,7 +81,6 @@ These are PUG-specific recommendations to make the game more enjoyable for every
 - Wait in case your `Offense` needs more time to get to the stand.
 
 ## Stand-Offs
-`Stand-Offs` occur when both teams have the enemy flag secure at their side of the field.
 
 - Usually `Offense` is the `Offense` and `Defense` is the `Defense`
 
@@ -88,13 +92,13 @@ These are PUG-specific recommendations to make the game more enjoyable for every
 
 - `Offense` during `Stand-Offs` can benefit from a range of different setups. As long as you aren't running 3+ Light classes on `Offense` the enemy will have a hard time defending against 4 people hitting at the same time and shooting the same people.
 
-- `Offense` should co-ordinate times for hitting the enemy `Defense` together. Generally done off the game time or a every 5 second countdown.
+- `Offense` should coordinate times for hitting the enemy `Defense` together. Generally done off the game time or every 5-second countdown.
 
 ## Loadout Setup
 For all classes except for the `Sniper`, it is considered optimal to run at least one explosive/timed weapon and at least one chain/hit-scan weapon.
 
 For `Custom Servers`, you must be a verified user for your load-outs to save.
-<!-- TODO Add Suggestee Loadouts
+<!-- TODO Add Suggested Loadouts
 ### OOTB
 #### Offense
 
@@ -122,3 +126,21 @@ For `Custom Servers`, you must be a verified user for your load-outs to save.
 
 #### Stand Off
 -->
+
+## Glossary
+
+| Term | Meaning |
+| ----------- | ----------- |
+| PUG | Pick up Game |
+| E-Grab | Emergency Grab. This means the team is in need of any possible grab of the enemy flag to prevent the enemy from capturing your flag. Players should prioritize this action immediately. |
+| <kbd>K</kbd>-Out / Reset | Use the suicide key (<kbd>K</kbd>) to reset and respawn immediately. Usually used in an attempt to make a player's time up with their `Capper` and other `Offense` members. | 
+| Crash | Try to emergency grab/attack the enemy as soon as possible for a return |
+| Walk | This term is used for when an `Offense` member grabs the flag in an attempt to take it home rather than a `Capper` |
+| Return | Return the Flag |
+| HOF | Heavy on Flag |
+| LD | Light Defense |
+| MD | Medium Defense |
+| O | Offense |
+| Stand-Off | A `Stand-Off` game state occurs when both teams have the enemy flag secure at their side of the field |
+| D-Stack | Defensive Stack. When a team runs more than 3 `Defense` members |
+| Figit | When an `Offense` member chases and attempts to kill another `Offense` member when both flags are home.|

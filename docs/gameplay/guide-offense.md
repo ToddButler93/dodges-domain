@@ -1,5 +1,5 @@
 ---
-id: how-to-offend
-title: How to Offend
+id: how-to-offense
+title: How to Offense
 sidebar_label: Offense
 ---
