@@ -72,7 +72,7 @@ These are PUG-specific recommendations to make the game more enjoyable for every
 - Snipe the enemy chaser if your `Capper` is out.
 
 ### Capper
-[Capper Guide](how-to-cap)
+[Capper Guide](../gameplay/how-to-cap)
 #### Major Responsibilities
 - Grab and capture the enemy flag.
 - Communicate times on your route for your `Offense` members.
