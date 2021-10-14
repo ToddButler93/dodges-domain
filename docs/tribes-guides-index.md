@@ -13,6 +13,8 @@ slug: /
 
 ## Tribes Ascend Gameplay Guides
 
+[Quick PUG Guide](gameplay/guide-quick)
+
 [Capping](gameplay/how-to-cap)
 
 ## Tribes Ascend Maps
