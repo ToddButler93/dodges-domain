@@ -16,9 +16,9 @@ slug: /
 [Quick PUG Guide](gameplay/guide-quick)
 
 [Capping](gameplay/how-to-cap)
-<!--
-[Offense](gameplay/how-to-offense)
 
+[Offense Guide](gameplay/how-to-offense)
+<!--
 [Offense](gameplay/how-to-defend)
 
 [Offense](gameplay/how-to-hof)

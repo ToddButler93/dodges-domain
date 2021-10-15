@@ -25,7 +25,9 @@ These are PUG-specific recommendations to make the game more enjoyable for every
 
 ## Roles
 ### Offense
-<!--[Offense Guide](how-to-offense)-->
+
+[Offense Guide](how-to-offense)
+
 #### Major Responsibilities
 - Kill the enemy `Heavy on Flag` and enemy `Light Defense` `5 seconds` before your `Capper` will grab.
 - Put pressure on the enemy `Sniper` to prevent them from killing your `Capper` pre-grab and post-grab. Generally, only 1 `Offense` member does this, and only if you are running 1 `Capper`
@@ -63,7 +65,7 @@ These are PUG-specific recommendations to make the game more enjoyable for every
 #### Major Responsibilities
 - Spot/kill the enemy `Capper` at all times.
 - Call out a time and direction the enemy cap will be.
-- Call out for E grabs.
+- Call out for `E-Grabs`.
 - Snipe the enemy `Offense` which your `Light Defense` and `Heavy on Flag` are fighting or during any walk attempts. 
 #### Minor Responsibilities
 - Call out enemy `Offense` locations.
@@ -72,7 +74,9 @@ These are PUG-specific recommendations to make the game more enjoyable for every
 - Snipe the enemy chaser if your `Capper` is out.
 
 ### Capper
+
 [Capper Guide](how-to-cap)
+
 #### Major Responsibilities
 - Grab and capture the enemy flag.
 - Communicate times on your route for your `Offense` members.
@@ -90,7 +94,7 @@ These are PUG-specific recommendations to make the game more enjoyable for every
 
 - Staying near your spawns as `Defense` is very important. 
 
-- `Offense` during `Stand-Offs` can benefit from a range of different setups. As long as you aren't running 3+ Light classes on `Offense` the enemy will have a hard time defending against 4 people hitting at the same time and shooting the same people.
+- Various class compositions amongst `Offense` each have their own benefits and drawbacks. Running 3+ Light classes on `Offense` can easily be shut down whereas a broad spectrum of classes can be effective. 
 
 - `Offense` should coordinate times for hitting the enemy `Defense` together. Generally done off the game time or every 5-second countdown.
 
@@ -144,4 +148,4 @@ For `Custom Servers`, you must be a verified user for your load-outs to save.
 | Stand-Off | A `Stand-Off` game state occurs when both teams have the enemy flag secure at their side of the field |
 | D-Stack | Defensive Stack. When a team runs more than 3 `Defense` members |
 | Figit | When an `Offense` member chases and attempts to kill another `Offense` member when both flags are home.|
-| Spot | Spot is a term used to detect where an enemy was located. This is done using the left <kbd>Alt</kbd> key in game, adding a isual indicator for where they were for the rest of your team.|
+| Spot | Spot is a term used to detect where an enemy was located. This is done using the left <kbd>Alt</kbd> key in-game, adding a visual indicator for where they were for the rest of your team.|
