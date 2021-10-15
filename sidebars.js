@@ -26,10 +26,10 @@ module.exports = {
       items: [
         'gameplay/guide-quick',
         'gameplay/how-to-cap',
-        /*'how-to-move',
+        /*'how-to-offense',
+        'how-to-move',
         'how-to-shoot',
         'how-to-competitive',
-        'how-to-offend',
         'how-to-defend',
         'how-to-hof',
         'how-to-spot',

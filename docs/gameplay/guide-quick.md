@@ -25,19 +25,19 @@ These are PUG-specific recommendations to make the game more enjoyable for every
 
 ## Roles
 ### Offense
-<!--[Offense Guide](gameplay/how-to-offense)-->
+<!--[Offense Guide](how-to-offense)-->
 #### Major Responsibilities
-- Kill the enemy `Heavy on Flag` and enemy `Light Defense` 5 seconds before your `Capper` will grab.
+- Kill the enemy `Heavy on Flag` and enemy `Light Defense` `5 seconds` before your `Capper` will grab.
 - Put pressure on the enemy `Sniper` to prevent them from killing your `Capper` pre-grab and post-grab. Generally, only 1 `Offense` member does this, and only if you are running 1 `Capper`
 - `E-Grab` when the `Defense` calls for it.
 #### Minor Responsibilities
-- <kbd>K</kbd>-Out and meet your `Capper` after they grab.
-- Hit the enemy stand at the same time as other `Offense` members, aim for when your `Capper` would be 15 seconds out. 
+- <kbd>K</kbd>-Out and meet your Capper after they grab.
+- Hit the enemy stand at the same time as other `Offense` members, aim for when your `Capper` would be `15 seconds` out. 
 - Spot enemy `Cappers` and enemy `Offense`, this assists your `Defense` better than you shooting the enemy `Offense`.
 - `Walk` flags with your other `Offense` members.
 
 ### Heavy on Flag
-<!--[Heavy on Flag Guide](gameplay/how-to-hof)-->
+<!--[Heavy on Flag Guide](how-to-hof)-->
 #### Major Responsibilities
 - Stop the enemy `Capper`
 - Stop enemy `Walks`
@@ -48,7 +48,7 @@ These are PUG-specific recommendations to make the game more enjoyable for every
 - Avoid being shot if possible.
 
 ### Light/Medium Defense
-<!--[Light/Medium Defense Guide](gameplay/how-to-defense)-->
+<!--[Light/Medium Defense Guide](how-to-defense)-->
 #### Major Responsibilities
 - Kill enemy `Offense`
 - Return flags.
@@ -59,7 +59,7 @@ These are PUG-specific recommendations to make the game more enjoyable for every
 - If the enemy `Capper` has recently died, assist any walks your `Offense` may be doing or meet your `Capper`.
 
 ### Sniper
-<!--[Sniper Guide](gameplay/how-to-snipe)-->
+<!--[Sniper Guide](how-to-snipe)-->
 #### Major Responsibilities
 - Spot/kill the enemy `Capper` at all times.
 - Call out a time and direction the enemy cap will be.
@@ -72,7 +72,7 @@ These are PUG-specific recommendations to make the game more enjoyable for every
 - Snipe the enemy chaser if your `Capper` is out.
 
 ### Capper
-[Capper Guide](../gameplay/how-to-cap)
+[Capper Guide](how-to-cap)
 #### Major Responsibilities
 - Grab and capture the enemy flag.
 - Communicate times on your route for your `Offense` members.
@@ -144,3 +144,4 @@ For `Custom Servers`, you must be a verified user for your load-outs to save.
 | Stand-Off | A `Stand-Off` game state occurs when both teams have the enemy flag secure at their side of the field |
 | D-Stack | Defensive Stack. When a team runs more than 3 `Defense` members |
 | Figit | When an `Offense` member chases and attempts to kill another `Offense` member when both flags are home.|
+| Spot | Spot is a term used to detect where an enemy was located. This is done using the left <kbd>Alt</kbd> key in game, adding a isual indicator for where they were for the rest of your team.|

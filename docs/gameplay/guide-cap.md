@@ -5,6 +5,8 @@ sidebar_label: Capping
 ---
 # How to Capture the Flag
 
+[Glossary](guide-quick#glossary)
+
 <video width="100%" height="auto" autoplay="true" muted loop preload="metadata">
   <source src="/video/cap-arx-back.webm" type="video/webm"></source>Your browser does not support .webm video.
 </video>
