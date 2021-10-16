@@ -53,10 +53,22 @@ const config = {
         },
         items: [
           {
-            type: 'doc',
-            docId: 'tribes-guides-index',
-            position: 'left',
+            to: 'docs/',
+            activeBasePath: 'docs',
             label: 'Guides',
+            position: 'left',
+          },
+          {
+            to: 'docs/guide-install-setup',
+            activeBasePath: 'docs',
+            label: 'Tribes Installation',
+            position: 'left',
+          },
+          {
+            to: 'docs/gameplay/guide-quick',
+            activeBasePath: 'docs',
+            label: 'PUGs',
+            position: 'left',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {

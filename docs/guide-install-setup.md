@@ -1,7 +1,8 @@
 ---
 id: guide-install-setup
-title: Installation
-sidebar_label: Installation
+title: Installing Tribes
+sidebar_label: Installing Tribes
+sidebar_position: 2
 ---
 ## Installing Tribes Ascend
 
