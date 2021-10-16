@@ -2,6 +2,7 @@
 id: guide-cap
 title: How to Capture the Flag
 sidebar_label: Capping
+sidebar_position: 3
 ---
 # How to Capture the Flag
 

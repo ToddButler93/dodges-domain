@@ -2,6 +2,7 @@
 id: guide-quick
 title: Playing PUGs
 sidebar_label: Quick PUG Guide
+sidebar_position: 1
 ---
 # Quick PUG Guide
 ## 7v7 Format

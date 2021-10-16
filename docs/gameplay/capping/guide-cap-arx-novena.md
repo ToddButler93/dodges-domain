@@ -2,8 +2,12 @@
 id: guide-cap-arx-novena
 title: How to Cap Arx Novena
 sidebar_label: Capping Arx Novena
+sidebar_position: 1
 ---
 # Capping Arx Novena
+This page is currently unfinished.
+
+Go yell at Dodge.
 ## Layout
 ### Calls
 ## Routes

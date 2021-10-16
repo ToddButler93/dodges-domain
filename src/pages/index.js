@@ -3,89 +3,37 @@ import clsx from 'clsx';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import useBaseUrl from '@docusaurus/useBaseUrl';
-import styles from './styles.module.css';
+import styles from './index.module.css';
+import HomepageFeatures from '../components/HomepageFeatures';
 
-const features = [
-  {
-    title: 'Dodges Website',
-    imageUrl: 'img/incidamus-pretty.png',
-    description: (
-      <>
-        Tribes Ascend now has some community made content to enjoy!
-      </>
-    ),
-  },
-  {
-    title: 'Full of guides',
-    imageUrl: 'img/inferno-pretty.png',
-    description: (
-      <>
-        I swear I'll write them all eventually.
-      </>
-    ),
-  },
-  {
-    title: 'Playing Tribes in 2021!',
-    imageUrl: 'img/drydock-night-pretty.png',
-    description: (
-      <>
-        Guides on how to setup the game and get you playing!
-      </>
-    ),
-  },
-];
-
-function Feature({imageUrl, title, description}) {
-  const imgUrl = useBaseUrl(imageUrl);
+function HomepageHeader() {
+  const {siteConfig} = useDocusaurusContext();
   return (
-    <div className={clsx('col col--4', styles.feature)}>
-      {imgUrl && (
-        <div className="text--center">
-          <img className={styles.featureImage} src={imgUrl} alt={title} />
+    <header className={clsx('hero hero--primary', styles.heroBanner)}>
+      <div className="container">
+        <h1 className="hero__title">{siteConfig.title}</h1>
+        <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <div className={styles.buttons}>
+          <Link
+            className="button button--secondary button--lg"
+            to="/docs/">
+            Enter
+          </Link>
         </div>
-      )}
-      <h3>{title}</h3>
-      <p>{description}</p>
-    </div>
+      </div>
+    </header>
   );
 }
 
 export default function Home() {
-  const context = useDocusaurusContext();
-  const {siteConfig = {}} = context;
+  const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
       description="Description will go into a meta tag in <head />">
-      <header className={clsx('hero hero--primary', styles.heroBanner)}>
-        <div className="container">
-          <h1 className="hero__title">{siteConfig.title}</h1>
-          <p className="hero__subtitle">{siteConfig.tagline}</p>
-          <div className={styles.buttons}>
-            <Link
-              className={clsx(
-                'button button--outline button--secondary button--lg',
-                styles.getStarted,
-              )}
-              to={useBaseUrl('docs/')}>
-              Enter
-            </Link>
-          </div>
-        </div>
-      </header>
+      <HomepageHeader />
       <main>
-        {features && features.length > 0 && (
-          <section className={styles.features}>
-            <div className="container">
-              <div className="row">
-                {features.map((props, idx) => (
-                  <Feature key={idx} {...props} />
-                ))}
-              </div>
-            </div>
-          </section>
-        )}
+        <HomepageFeatures />
       </main>
     </Layout>
   );

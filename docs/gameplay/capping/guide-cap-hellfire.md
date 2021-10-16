@@ -4,6 +4,9 @@ title: How to Cap Hellfire
 sidebar_label: Capping Hellfire
 ---
 ## Capping Hellfire
+This page is currently unfinished.
+
+Go yell at Dodge.
 ## Layout
 ### Calls
 ## Routes

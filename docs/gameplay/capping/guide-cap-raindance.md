@@ -4,6 +4,9 @@ title: How to Cap Raindance
 sidebar_label: Capping Raindance
 ---
 ## Capping Raindance
+This page is currently unfinished.
+
+Go yell at Dodge.
 ## Layout
 ### Calls
 ## Routes

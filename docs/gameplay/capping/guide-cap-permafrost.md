@@ -4,6 +4,9 @@ title: How to Cap Permafrost
 sidebar_label: Capping Permafrost
 ---
 ## Capping Permafrost
+This page is currently unfinished.
+
+Go yell at Dodge.
 ## Layout
 ### Calls
 ## Routes

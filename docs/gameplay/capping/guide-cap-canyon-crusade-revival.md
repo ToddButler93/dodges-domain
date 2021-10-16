@@ -4,6 +4,9 @@ title: How to Cap Canyon Crusade Revival
 sidebar_label: Capping Canyon Crusade Revival
 ---
 ## Capping Incidamus
+This page is currently unfinished.
+
+Go yell at Dodge.
 ## Layout
 ### Calls
 ## Routes

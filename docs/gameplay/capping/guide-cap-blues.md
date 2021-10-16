@@ -4,6 +4,9 @@ title: How to Cap Blues
 sidebar_label: Capping Blues
 ---
 ## Capping Blues
+This page is currently unfinished.
+
+Go yell at Dodge.
 ## Layout
 ### Calls
 ## Routes

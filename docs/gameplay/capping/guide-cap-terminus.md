@@ -4,6 +4,9 @@ title: How to Cap Terminus
 sidebar_label: Capping Terminus
 ---
 ## Capping Terminus
+This page is currently unfinished.
+
+Go yell at Dodge.
 ## Layout
 ### Calls
 ## Routes

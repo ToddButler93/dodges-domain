@@ -1,5 +1,11 @@
-/** @type {import('@docusaurus/types').DocusaurusConfig} */
-module.exports = {
+// @ts-check
+// Note: type annotations allow type checking and IDEs autocompletion
+
+const lightCodeTheme = require('prism-react-renderer/themes/github');
+const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+
+/** @type {import('@docusaurus/types').Config} */
+const config = {
   title: 'Dodges Domain',
   tagline: 'PUGs tonight?',
   url: 'https://www.dodgesdomain.com/',
@@ -9,93 +15,16 @@ module.exports = {
   favicon: 'img/blueplate.ico',
   organizationName: 'Toddbutler93', // Usually your GitHub org/user name.
   projectName: 'dodge-site', // Usually your repo name.
-  themeConfig: {
-    colorMode: {
-      defaultMode: 'dark',
-    },
-    navbar: {
-      title: 'Dodges Domain',
-      logo: {
-        alt: 'Dodges Site Logo',
-        src: 'img/blueplate.png',
-      },
-      items: [
-        {
-          to: 'docs/',
-          activeBasePath: 'docs',
-          label: 'Guides',
-          position: 'left',
-        },
-        {to: 'blog', label: 'Blog', position: 'left'},
-      ],
-    },
-    footer: {
-      style: 'dark',
-      links: [
-        {
-          title: 'Tribes Ascend',
-          items: [
-            {
-              label: 'Tribes Guides',
-              to: 'docs/',
-            },
-            {
-            label: 'Dodges Maps',
-            to: 'docs/custommaps/trctf-blues',
-            },
-            {
-              label: 'Tribes Development Guides',
-              to: 'docs/development/guide-map-dev',
-            },
-            {
-              label: 'Tribes Information',
-              to: 'docs/information/patches',
-            },
-            {
-              label: 'TA Mods',
-              to: 'https://www.tamods.org/',
-            },
-            {
-              label: 'Wilderzone (Maintained by Giga)',
-              to: 'https://wilderzone.live/',
-            },
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'Dodges Youtube',
-              href: 'https://www.youtube.com/channel/UC06sxsfSsmjX8K3su-fNi_A',
-            },
-            {
-              label: 'Australian Discord',
-              href: 'https://discord.gg/MYdN9Xm5Bg',
-            },
-          ],
-        },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'Blog',
-              to: 'blog',
-            },
-          ],
-        },
-      ],
-      copyright: `Copyright © ${new Date().getFullYear()} Dodge.`,
-    },
-  },
+
   presets: [
     [
       '@docusaurus/preset-classic',
-      {
+      /** @type {import('@docusaurus/preset-classic').Options} */
+      ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl:
-            'https://github.com/ToddButler93/dodges-domain/tree/main/',
+          editUrl: 'https://github.com/ToddButler93/dodges-domain/tree/main/',
         },
         blog: {
           showReadingTime: true,
@@ -106,7 +35,103 @@ module.exports = {
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
-      },
+      }),
     ],
   ],
+
+  themeConfig:
+    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+    ({
+      colorMode: {
+        defaultMode: 'dark',
+      },
+      navbar: {
+        title: 'Dodges Domain',
+        logo: {
+          alt: 'Dodges Site Logo',
+          src: 'img/blueplate.png',
+        },
+        items: [
+          {
+            type: 'doc',
+            docId: 'tribes-guides-index',
+            position: 'left',
+            label: 'Guides',
+          },
+          {to: '/blog', label: 'Blog', position: 'left'},
+          {
+            href: 'https://github.com/ToddButler93/dodges-domain',
+            label: 'GitHub',
+            position: 'right',
+          },
+        ],
+      },
+      footer: {
+        style: 'dark',
+        links: [
+          {
+            title: 'Tribes Ascend',
+            items: [
+              {
+                label: 'Tribes Guides',
+                to: 'docs/',
+              },
+              {
+              label: 'Dodges Maps',
+              to: 'docs/custommaps/trctf-blues',
+              },
+              {
+                label: 'Tribes Development Guides',
+                to: 'docs/development/guide-map-dev',
+              },
+              {
+                label: 'Tribes Information',
+                to: 'docs/information/patches',
+              },
+              {
+                label: 'TA Mods',
+                to: 'https://www.tamods.org/',
+              },
+              {
+                label: 'Wilderzone (Maintained by Giga)',
+                to: 'https://wilderzone.live/',
+              },
+            ],
+          },
+          {
+            title: 'Community',
+            items: [
+              {
+                label: 'Dodges Youtube',
+                href: 'https://www.youtube.com/channel/UC06sxsfSsmjX8K3su-fNi_A',
+              },
+              {
+                label: 'Australian Discord',
+                href: 'https://discord.gg/MYdN9Xm5Bg',
+              },
+            ],
+          },
+          {
+            title: 'More',
+            items: [
+              {
+                label: 'Blog',
+                to: '/blog',
+              },
+              {
+                label: 'GitHub',
+                href: 'https://github.com/ToddButler93/dodges-domain',
+              },
+            ],
+          },
+        ],
+        copyright: `Copyright © ${new Date().getFullYear()}  Dodge.`,
+      },
+      prism: {
+        theme: lightCodeTheme,
+        darkTheme: darkCodeTheme,
+      },
+    }),
 };
+
+module.exports = config;

@@ -1,7 +1,8 @@
 ---
 id: guide-config
 title: Configuration
-sidebar_label: Configuration
+sidebar_label: Configuration Guide
+sidebar_position: 3
 ---
 
 ## In game settings

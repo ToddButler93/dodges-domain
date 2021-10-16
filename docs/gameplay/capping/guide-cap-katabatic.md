@@ -2,8 +2,12 @@
 id: guide-cap-katabatic
 title: How to Cap Katabatic
 sidebar_label: Capping Katabatic
+sidebar_position: 2
 ---
 ## Capping Katabatic
+This page is currently unfinished.
+
+Go yell at Dodge.
 ## Layout
 ### Calls
 ## Routes

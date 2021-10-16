@@ -2,6 +2,7 @@
 id: guide-offense
 title: How to Offense
 sidebar_label: Offense
+sidebar_position: 2
 ---
 # How to Play Offense
 

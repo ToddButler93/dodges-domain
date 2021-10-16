@@ -4,6 +4,9 @@ title: How to Cap Periculo
 sidebar_label: Capping Periculo
 ---
 ## Capping Periculo
+This page is currently unfinished.
+
+Go yell at Dodge.
 ## Layout
 ### Calls
 ## Routes
