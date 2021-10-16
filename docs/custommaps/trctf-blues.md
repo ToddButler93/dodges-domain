@@ -3,7 +3,7 @@ id: trctf-blues
 title: Blues - CTF Map
 sidebar_label: Blues
 ---
-[How do I play this?](/docs/guide-install-setup#playing-community-maps)
+[How do I play this?](/docs/guide-install-setup.md#playing-community-maps)
 
 ![Blues](/img/maps/blues-bases.png)
 

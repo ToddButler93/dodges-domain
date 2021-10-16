@@ -17,7 +17,7 @@ In the `Tribes Launcher`, select the `Community` for your login server, hit Logi
 
 Once injected, the Play Now button will show whether you are in `OOTB` or `GOTY` mode. There is a button on the main menu to switch. You need to be in `GOTY` mode to play on `GOTY` servers and `OOTB` mode to play on `OOTB` servers.
 
-[Still having issues?](guide-install-setup#troubleshooting)
+[Still having issues?](guide-install-setup.md#troubleshooting)
 
 ### Method 2
 
@@ -39,7 +39,7 @@ In the `Tribes Launcher`, select the `Community` for your login server, hit Logi
 
 Once injected, the Play Now button will show whether you are in `OOTB` or `GOTY` mode. There is a button on the main menu to switch. You need to be in `GOTY` mode to play on `GOTY` servers and `OOTB` mode to play on `OOTB` servers.
 
-[Still having issues?](guide-install-setup#troubleshooting)
+[Still having issues?](guide-install-setup.md#troubleshooting)
 
 ## Playing Community Maps
 
@@ -57,7 +57,7 @@ Select the map pack you want and hit install. This will automatically download a
 
 ![](/img/install/launcher-packages-tab.png)
 
-[Still having issues?](guide-install-setup#troubleshooting)
+[Still having issues?](guide-install-setup.md#troubleshooting)
 
 ## Troubleshooting
 ### Launcher doesn't know where Tribes is installed? 
@@ -81,12 +81,12 @@ Probably in the wrong game mode for that server, community servers are labelled 
 ### Can't join a server with a community made map
 To play on a server hosting a community made map you only need the latest version of the map. In the server browsers current state, community made maps come up as Arx Novena.
 
-[Follow this section of the guide ](guide-install-setup#playing-community-maps) to install common community maps here first. Then try [reinstalling TAMods](guide-install-setup#im-having-issues-not-stated-here-with-the-launcher) and the packages. 
+[Follow this section of the guide ](guide-install-setup.md#playing-community-maps) to install common community maps here first. Then try [reinstalling TAMods](guide-install-setup.md#im-having-issues-not-stated-here-with-the-launcher) and the packages. 
 
 On occasion you will have to contact the owner for the files. 
 
 ### I get a Package Install Error while installing the map packs
-We've ran into a few issues with peoples files being set to read only. You need to go to where [Tribes Ascend is installed](guide-install-setup#launcher-doesnt-know-where-tribes-is-installed) and locate the file in the error message. Right click and select `Properties` and de-select `Read Only` then close the launcher and try to install it again. This will be fixed by the next launcher update.
+We've ran into a few issues with peoples files being set to read only. You need to go to where [Tribes Ascend is installed](guide-install-setup.md#launcher-doesnt-know-where-tribes-is-installed) and locate the file in the error message. Right click and select `Properties` and de-select `Read Only` then close the launcher and try to install it again. This will be fixed by the next launcher update.
 
 ### I get an error when I start the game after installing packages
 This should only occur when you have manually installed the maps previously. This fix will require some redownloading.
@@ -94,7 +94,7 @@ This should only occur when you have manually installed the maps previously. Thi
 #### Step 1 
 In your `Tribes Ascend` install folder, go to \TribesGame\CookedPC\Maps\ and delete all files.
 
-[Not sure where tribes is installed?](guide-install-setup#launcher-doesnt-know-where-tribes-is-installed)
+[Not sure where tribes is installed?](guide-install-setup.md#launcher-doesnt-know-where-tribes-is-installed)
 
 #### Step 2 
 Now, in `Steam`, you will need to verify your files.

@@ -3,7 +3,7 @@ id: trctf-incidamus
 title: Incidamus - CTF Map
 sidebar_label: Incidamus
 ---
-[How do I play this?](/docs/guide-install-setup#playing-community-maps)
+[How do I play this?](/docs/guide-install-setup.md#playing-community-maps)
 
 ![Incidamus](/img/maps/incidamus-mid.png)
 

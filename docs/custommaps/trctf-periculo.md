@@ -3,7 +3,7 @@ id: trctf-periculo
 title: Periculo - CTF Map
 sidebar_label: Periculo
 ---
-[How do I play this?](/docs/guide-install-setup#playing-community-maps)
+[How do I play this?](/docs/guide-install-setup.md#playing-community-maps)
 
 ![Periculo](/img/maps/periculo-shot.png)
 
