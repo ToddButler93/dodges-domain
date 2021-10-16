@@ -15,15 +15,14 @@ slug: /
 
 [Quick PUG Guide](gameplay/guide-quick.md)
 
+### Roles
+[Offense](gameplay/guide-offense.md)
+
 [Capping](gameplay/guide-cap.md)
-
-[Offense Guide](gameplay/guide-offense.md)
 <!--
-[Offense](gameplay/how-to-defend.md)
-
-[Offense](gameplay/how-to-hof.md)
-
-[Offense](gameplay/how-to-snipe.md)
+[Heavy on Flag](gameplay/guide-hof.md)
+[Defense](gameplay/guide-defense.md)
+[Sniping](gameplay/guide-snipe.md)
 -->
 
 ## Tribes Ascend Maps
@@ -41,22 +40,4 @@ slug: /
 [Use UDK to make Tribes Maps from scratch](development/guide-udk-basics.md)
 
 ## Tribes Information
-[Tribes Ascend Patch Notes](information/patch-notes.md)
-
-
-
-<!---
-## Gameplay Guides
-
-- [Movement](gameplay/how-to-move.md)
-- [Shooting](gameplay/how-to-shoot.md)
-- [Spot Cappers](gameplay/how-to-spot.md)
-- [Competitive Format](gameplay/how-to-competitive.md)
-
-### Roles
-- [Offense](gameplay/how-to-offend.md)
-- [Capping](gameplay/guide-cap.md)
-- [Heavy on Flag](gameplay/how-to-hof.md)
-- [Defense](gameplay/how-to-defend.md)
-- [Sniping](gameplay/how-to-snipe.md)
--->
+[Tribes Ascend Patch Notes](information/patches.md)

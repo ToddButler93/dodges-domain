@@ -57,7 +57,7 @@ module.exports = {
       type: 'category',
       label: 'Tribes Information',
       items: [
-        'information/patch-notes',
+        'information/patches',
       ],
     },
   ],

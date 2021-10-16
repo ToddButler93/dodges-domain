@@ -1,5 +1,5 @@
 ---
-id: patch-notes
+id: patches
 title: Patch History
 sidebar_label: Patch History
 ---

@@ -49,7 +49,7 @@ module.exports = {
             },
             {
               label: 'Tribes Information',
-              to: 'docs/information/patch-notes',
+              to: 'docs/information/patches',
             },
             {
               label: 'TA Mods',
