@@ -4,18 +4,18 @@ module.exports = {
       type: 'category',
       label: 'Tribes Ascend',
       items: [
-        'guides',
-        'how-to-install',
-        'how-to-config',
+        'tribes-guides-index',
+        'guide-install-setup',
+        'guide-config',
 
 
-        /*'how-to-move',
+        /*'guide-movement',
         'how-to-shoot',
         'how-to-competitive',
         'how-to-offend',
         'how-to-defend',
         'how-to-hof',
-        'how-to-cap',
+        'guide-cap',
         'how-to-spot',
         'how-to-snipe',*/
       ],
@@ -25,8 +25,8 @@ module.exports = {
       label: 'Gameplay Guides',
       items: [
         'gameplay/guide-quick',
-        'gameplay/how-to-cap',
-        'gameplay/how-to-offense',
+        'gameplay/guide-cap',
+        'gameplay/guide-offense',
         /*'gameplay/how-to-move',
         'gameplay/how-to-shoot',
         'gameplay/how-to-competitive',
@@ -49,8 +49,8 @@ module.exports = {
       type: 'category',
       label: 'Tribes Development Guides',
       items: [
-        'development/how-to-make-maps',
-        'development/how-to-udk',
+        'development/guide-map-dev',
+        'development/guide-udk-basics',
       ],
     },
     {

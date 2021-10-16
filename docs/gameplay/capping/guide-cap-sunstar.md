@@ -1,5 +1,5 @@
 ---
-id: how-to-cap-sunstar
+id: guide-cap-sunstar
 title: How to Cap Sunstar
 sidebar_label: Capping Sunstar
 ---

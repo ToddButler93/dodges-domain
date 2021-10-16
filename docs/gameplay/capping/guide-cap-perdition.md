@@ -1,5 +1,5 @@
 ---
-id: how-to-cap-perdition
+id: guide-cap-perdition
 title: How to Cap Perdition
 sidebar_label: Capping Perdition
 ---

@@ -1,5 +1,5 @@
 ---
-id: how-to-cap-blueshift
+id: guide-cap-blueshift
 title: How to Cap Blueshift
 sidebar_label: Capping Blueshift
 ---

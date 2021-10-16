@@ -1,5 +1,5 @@
 ---
-id: how-to-cap-dangerous-crossing
+id: guide-cap-dangerous-crossing
 title: How to Cap Dangerous Crossing
 sidebar_label: Capping Dangerous Crossing
 ---

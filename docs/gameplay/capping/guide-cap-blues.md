@@ -1,5 +1,5 @@
 ---
-id: how-to-cap-blues
+id: guide-cap-blues
 title: How to Cap Blues
 sidebar_label: Capping Blues
 ---

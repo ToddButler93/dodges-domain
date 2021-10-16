@@ -1,5 +1,5 @@
 ---
-id: how-to-cap-tartarus
+id: guide-cap-tartarus
 title: How to Cap Tartarus
 sidebar_label: Capping Tartarus
 ---

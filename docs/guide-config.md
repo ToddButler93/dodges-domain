@@ -1,5 +1,5 @@
 ---
-id: how-to-config
+id: guide-config
 title: Configuration
 sidebar_label: Configuration
 ---
@@ -24,7 +24,7 @@ This Tribes.ini is for people with a super strong systems and prioritize looks o
 
 [![](/img/dodge-pretty-ini.png)](/text/dodges-pretty-ini/tribes.ini)
 
-Note: All ini's provided are for 1080p Resolution, you can manually alter this by changing ResX=1920 and ResY=1080 to your monitors native resolution. HUD Elements can be enabled within the [in game settings](how-to-config#in-game-settings).
+Note: All ini's provided are for 1080p Resolution, you can manually alter this by changing ResX=1920 and ResY=1080 to your monitors native resolution. HUD Elements can be enabled within the [in game settings](guide-config#in-game-settings).
 
 ### Required Tweaks
 

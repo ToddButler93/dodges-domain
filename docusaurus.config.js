@@ -45,7 +45,7 @@ module.exports = {
             },
             {
               label: 'Tribes Development Guides',
-              to: 'docs/development/how-to-make-maps',
+              to: 'docs/development/guide-map-dev',
             },
             {
               label: 'Tribes Information',

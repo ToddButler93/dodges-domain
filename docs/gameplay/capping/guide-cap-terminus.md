@@ -1,5 +1,5 @@
 ---
-id: how-to-cap-terminus
+id: guide-cap-terminus
 title: How to Cap Terminus
 sidebar_label: Capping Terminus
 ---

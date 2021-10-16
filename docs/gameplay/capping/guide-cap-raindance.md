@@ -1,5 +1,5 @@
 ---
-id: how-to-cap-raindance
+id: guide-cap-raindance
 title: How to Cap Raindance
 sidebar_label: Capping Raindance
 ---

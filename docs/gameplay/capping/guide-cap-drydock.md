@@ -1,5 +1,5 @@
 ---
-id: how-to-cap-drydock
+id: guide-cap-drydock
 title: How to Cap Drydock
 sidebar_label: Capping Drydock
 ---

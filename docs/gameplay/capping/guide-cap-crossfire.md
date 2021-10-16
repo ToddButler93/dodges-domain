@@ -1,5 +1,5 @@
 ---
-id: how-to-cap-crossfire
+id: guide-cap-crossfire
 title: How to Cap Crossfire
 sidebar_label: Capping Crossfire
 ---

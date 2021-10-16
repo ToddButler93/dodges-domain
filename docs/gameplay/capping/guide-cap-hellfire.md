@@ -1,5 +1,5 @@
 ---
-id: how-to-cap-hellfire
+id: guide-cap-hellfire
 title: How to Cap Hellfire
 sidebar_label: Capping Hellfire
 ---

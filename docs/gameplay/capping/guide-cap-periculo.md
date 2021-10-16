@@ -1,5 +1,5 @@
 ---
-id: how-to-cap-periculo
+id: guide-cap-periculo
 title: How to Cap Periculo
 sidebar_label: Capping Periculo
 ---

@@ -1,5 +1,5 @@
 ---
-id: how-to-cap-permafrost
+id: guide-cap-permafrost
 title: How to Cap Permafrost
 sidebar_label: Capping Permafrost
 ---

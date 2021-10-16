@@ -1,5 +1,5 @@
 ---
-id: how-to-cap-ice-coaster
+id: guide-cap-ice-coaster
 title: How to Cap Ice Coaster
 sidebar_label: Capping Ice Coaster
 ---

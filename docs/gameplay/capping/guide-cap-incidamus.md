@@ -1,5 +1,5 @@
 ---
-id: how-to-cap-incidamus
+id: guide-cap-incidamus
 title: How to Cap Incidamus
 sidebar_label: Capping Incidamus
 ---

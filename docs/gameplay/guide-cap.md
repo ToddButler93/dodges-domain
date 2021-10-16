@@ -1,11 +1,11 @@
 ---
-id: how-to-cap
+id: guide-cap
 title: How to Capture the Flag
 sidebar_label: Capping
 ---
 # How to Capture the Flag
 
-[Glossary](guide-quick#glossary)
+[Glossary](guide-quick.md#glossary)
 
 <video width="100%" height="auto" autoplay="true" muted loop preload="metadata">
   <source src="/video/cap-arx-back.webm" type="video/webm"></source>Your browser does not support .webm video.
@@ -32,7 +32,7 @@ sidebar_label: Capping
 - The faster you are, the harder it is to control where you go.
 
 ### How do cappers consistently grab the flag fast?
-- [Routes](how-to-cap#show-me-some-routes), learn them. 
+- [Routes](guide-cap.md#show-me-some-routes), learn them. 
 
 ### How do cappers change direction so abruptly? 
 - Rock bounces which can take many hours to learn to very little time to learn.
@@ -77,24 +77,24 @@ Many people have pushed out a lot of interesting route videos on their respectiv
 
 <!--- TODO Commenting out as incomplete.
 ### Map Index
-- [Arx Novena](capping/how-to-cap-arx-novena)
-- [Bella Omega](capping/how-to-cap-bella-omega)
-- [Blueshift](capping/how-to-cap-blueshift)
-- [Crossfire](capping/how-to-cap-crossfire)
-- [Canyon Crusade Revival](capping/how-to-cap-canyon-crusade-revival)
-- [Dangerous Crossing](capping/how-to-cap-dangerous-crossing)
-- [Drydock](capping/how-to-cap-drydock)
-- [Hellfire](capping/how-to-cap-hellfire)
-- [Ice Coaster](capping/how-to-cap-ice-coaster)
-- [Katabatic](capping/how-to-cap-katabatic)
-- [Perdition](capping/how-to-cap-perdition)
-- [Permafrost](capping/how-to-cap-permafrost)
-- [Raindance](capping/how-to-cap-raindance)
-- [Stonehenge](capping/how-to-cap-stonehenge)
-- [Sunstar](capping/how-to-cap-sunstar)
-- [Tartarus](capping/how-to-cap-tartarus)
-- [Temple Ruins](capping/how-to-cap-temple-ruins)
-- [Terminus](capping/how-to-cap-terminus)
+- [Arx Novena](capping/guide-cap-arx-novena.md)
+- [Bella Omega](capping/guide-cap-bella-omega.md)
+- [Blueshift](capping/guide-cap-blueshift.md)
+- [Crossfire](capping/guide-cap-crossfire.md)
+- [Canyon Crusade Revival](capping/guide-cap-canyon-crusade-revival.md)
+- [Dangerous Crossing](capping/guide-cap-dangerous-crossing.md)
+- [Drydock](capping/guide-cap-drydock.md)
+- [Hellfire](capping/guide-cap-hellfire.md)
+- [Ice Coaster](capping/guide-cap-ice-coaster.md)
+- [Katabatic](capping/guide-cap-katabatic.md)
+- [Perdition](capping/guide-cap-perdition.md)
+- [Permafrost](capping/guide-cap-permafrost.md)
+- [Raindance](capping/guide-cap-raindance.md)
+- [Stonehenge](capping/guide-cap-stonehenge.md)
+- [Sunstar](capping/guide-cap-sunstar.md)
+- [Tartarus](capping/guide-cap-tartarus.md)
+- [Temple Ruins](capping/guide-cap-temple-ruins.md)
+- [Terminus](capping/guide-cap-terminus.md)
 -->
 ### Videos
 #### Kigabit's Pathfinder GOTY

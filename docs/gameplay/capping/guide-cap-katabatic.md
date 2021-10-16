@@ -1,5 +1,5 @@
 ---
-id: how-to-cap-katabatic
+id: guide-cap-katabatic
 title: How to Cap Katabatic
 sidebar_label: Capping Katabatic
 ---

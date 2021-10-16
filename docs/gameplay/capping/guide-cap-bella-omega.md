@@ -1,5 +1,5 @@
 ---
-id: how-to-cap-bella-omega
+id: guide-cap-bella-omega
 title: How to Cap Bella Omega
 sidebar_label: Capping Bella Omega
 ---

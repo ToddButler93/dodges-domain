@@ -1,5 +1,5 @@
 ---
-id: how-to-cap-stonehenge
+id: guide-cap-stonehenge
 title: How to Cap Stonehenge
 sidebar_label: Capping Stonehenge
 ---

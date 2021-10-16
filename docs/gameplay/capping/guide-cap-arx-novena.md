@@ -1,5 +1,5 @@
 ---
-id: how-to-cap-arx-novena
+id: guide-cap-arx-novena
 title: How to Cap Arx Novena
 sidebar_label: Capping Arx Novena
 ---

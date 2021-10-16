@@ -1,5 +1,5 @@
 ---
-id: how-to-make-maps
+id: guide-map-dev
 title: How to Make Custom Maps
 sidebar_label: Making Custom Maps
 ---
@@ -14,7 +14,7 @@ You need to download the [TA actor classes](http://library.theexiled.pwnageserve
 
 You need to download all the [TA package files](https://drive.google.com/file/d/1u_nItIPxeA79Im8tXgg3Q41RS2iBAT_O/view?usp=sharing). Extract these to "\UDK\UDK-2011-01\Development\Src\".
 
-Note: You will need the Package Files to play and test the map on the [leaked dev build](how-to-make-maps#launching-custom-maps-on-leaked-dev-build) and [official client](../how-to-install#playing-custom-maps-on-the-official-game), it is best to copy these now before you delete the downloaded archive. 
+Note: You will need the Package Files to play and test the map on the [leaked dev build](guide-map-dev#launching-custom-maps-on-leaked-dev-build) and [official client](../guide-install-setup#playing-custom-maps-on-the-official-game), it is best to copy these now before you delete the downloaded archive. 
 
 ### Step 2
 
@@ -43,7 +43,7 @@ Now you are free to do editing however you see fit. I recommend modifying the te
 
 ### Step 3
 
-You will need to complete Step 1 of [the workaround to for the refshadercache](how-to-make-maps#refshadercache-compiler-error) before you build and test your map.
+You will need to complete Step 1 of [the workaround to for the refshadercache](guide-map-dev#refshadercache-compiler-error) before you build and test your map.
 
 Open "\UDK\UDK-2011-01\BinariesUnrealFrontend.exe"
 
@@ -127,7 +127,7 @@ Copy "RefShaderCache-PC-D3D-SM3.upk" in "C:\UDK\UDK-2011-01\UDKGame\CookedPC\" a
 
 Copy the uncooked map from "\UDK\UDK-2011-01\UDKGame\Content\Maps\" to "\Tribes\TribesGame\CookedPC\Maps\".
 
-[Join your server](../how-to-install#playing-custom-maps-on-the-official-game).
+[Join your server](../guide-install-setup#playing-custom-maps-on-the-official-game).
 
 ## External Resources
 

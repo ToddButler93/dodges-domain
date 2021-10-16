@@ -1,5 +1,5 @@
 ---
-id: how-to-snipe
+id: guide-snipe
 title: How to Snipe
 sidebar_label: Sniping
 ---

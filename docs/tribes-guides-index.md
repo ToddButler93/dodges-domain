@@ -1,5 +1,5 @@
 ---
-id: guides
+id: tribes-guides-index
 title: Dodges Domain
 sidebar_label: Site Index
 slug: /
@@ -7,17 +7,17 @@ slug: /
 
 ## Setup Guides
 
-[Installation Guide](how-to-install)
+[Installation Guide](guide-install-setup)
 
-[Configuration Guide](how-to-config)
+[Configuration Guide](guide-config)
 
 ## Tribes Ascend Gameplay Guides
 
 [Quick PUG Guide](gameplay/guide-quick)
 
-[Capping](gameplay/how-to-cap)
+[Capping](gameplay/guide-cap)
 
-[Offense Guide](gameplay/how-to-offense)
+[Offense Guide](gameplay/guide-offense)
 <!--
 [Offense](gameplay/how-to-defend)
 
@@ -36,9 +36,9 @@ slug: /
 
 ## Tribes Development Guides
 
-[Making Custom Maps](development/how-to-make-maps)
+[Making Custom Maps](development/guide-map-dev)
 
-[Use UDK to make Tribes Maps from scratch](development/how-to-udk)
+[Use UDK to make Tribes Maps from scratch](development/guide-udk-basics)
 
 ## Tribes Information
 [Tribes Ascend Patch Notes](information/patch-notes)
@@ -55,7 +55,7 @@ slug: /
 
 ### Roles
 - [Offense](gameplay/how-to-offend)
-- [Capping](gameplay/how-to-cap)
+- [Capping](gameplay/guide-cap)
 - [Heavy on Flag](gameplay/how-to-hof)
 - [Defense](gameplay/how-to-defend)
 - [Sniping](gameplay/how-to-snipe)
