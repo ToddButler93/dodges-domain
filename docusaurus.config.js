@@ -134,6 +134,10 @@ const config = {
                 label: 'GitHub',
                 href: 'https://github.com/ToddButler93/dodges-domain',
               },
+              {
+                label: 'Not Tribes Related Stuff',
+                href: '/docs/not-tribes/',
+              },
             ],
           },
         ],
