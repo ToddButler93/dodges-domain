@@ -8,9 +8,9 @@ sidebar_position: 3
 # Sensivity Calculation
 
 ## Global
-DPI: 400
-CM/360: 34.679382
-Inches/360: 13.6533
+- DPI: 400
+- CM/360: 34.679382
+- Inches/360: 13.6533
 
 ## Game Specific Settings
 ### Semi-competitive Multiplayer Games
