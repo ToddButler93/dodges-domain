@@ -63,9 +63,12 @@ Allows you to turn GPU lighting.
 These are scripts used for automatically installing as many applications listed on this page as possible.
 :::
 
-:::caution
-These scripts require [PowerShell](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows).
-:::
+### Winget
+
+```bat
+winget install --id=7zip.7zip.Alpha.msi -e  && winget install --id=SyncTrayzor.SyncTrayzor -e  && winget install --id=eloston.ungoogled-chromium -e  && winget install --id=IrfanSkiljan.IrfanView -e  && winget install --id=DuongDieuPhap.ImageGlass -e  && winget install --id=Radionomy.Winamp -e  && winget install --id=stax76.mpvdotnet -e  && winget install --id=PrestonN.FreeTube -e  && winget install --id=Streamlink.Streamlink.TwitchGui -e  && winget install --id=Jellyfin.JellyfinMediaPlayer -e  && winget install --id=Prusa3D.PrusaSlicer -e  && winget install --id=BlenderFoundation.Blender -e  && winget install --id=GIMP.GIMP -e  && winget install --id=Inkscape.Inkscape -e  && winget install --id=KDE.Krita -e  && winget install --id=HandBrake.HandBrake -e  && winget install --id=OBSProject.OBSStudio -e  && winget install --id=Discord.Discord -e  && winget install --id=Mumble.Mumble -e  && winget install --id=Microsoft.VisualStudioCode -e  && winget install --id=Microsoft.VisualStudio.2022.Community-Preview -e  && winget install --id=OpenJS.NodeJS -e  && winget install --id=Yarn.Yarn -e  && winget install --id=Python.Python.3 -e  && winget install --id=Oracle.JavaRuntimeEnvironment -e  && winget install --id=Microsoft.PowerShell -e  && winget install --id=GOG.Galaxy -e  && winget install --id=Valve.Steam -e  && winget install --id=Ubisoft.Connect -e  && winget install --id=ElectronicArts.EADesktop -e  && winget install --id=REALiX.HWiNFO -e  && winget install --id=CPUID.CPU-Z -e  && winget install --id=SumatraPDF.SumatraPDF -e  && winget install --id=GitHub.GitHubDesktop -e  && winget install --id=TechPowerUp.NVCleanstall -e  && winget install --id=Audacity.Audacity -e  && winget install --id=RuneLite.RuneLite -e  && winget install --id=Resplendence.LatencyMon -e  && winget install --id=TechPowerUp.GPU-Z -e  && winget install --id=Unigine.SuperpositionBenchmark -e  && winget install --id=Balena.Etcher -e  && winget install --id=EpicGames.EpicGamesLauncher -e  && winget install --id=JeffreyPfau.mGBA -e  && winget install --id=Cockos.REAPER -e  && winget install --id=Microsoft.WindowsTerminal -e 
+```
+
 ### Chocolatey
 :::info
 Run Get-ExecutionPolicy. If it returns Restricted, then run Set-ExecutionPolicy AllSigned or Set-ExecutionPolicy Bypass -Scope Process.
@@ -76,7 +79,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 ```
 #### Install Apps Script
 ```ps1
-$Packages = 'dotnet3.5', 'powertoys', 'youtube-dl','sketchup', 'quixelbridge', 'github-desktop', 'spacesniffer', 'ddu', 'sdio', 'cpu-z', 'sysinternals'
+$Packages = 'lossless-cut', 'youtube-dl', 'sketchup', 'quixelbridge', 'spacesniffer', 'ddu', 'sdio', 'sysinternals'
 
 ForEach ($PackageName in $Packages)
 {
@@ -84,19 +87,6 @@ ForEach ($PackageName in $Packages)
 }
 ```
 
-### Winget
-```ps1
-$Packages = , 'Microsoft.VC++2005Redist-x86', 'Microsoft.VC++2005Redist-x64', 'Microsoft.VC++2008Redist-x64', 'Microsoft.VC++2008Redist-x86', 'Microsoft.VC++2010Redist-x64', 'Microsoft.VC++2010Redist-x86', 'Microsoft.VC++2012Redist-x64', 'Microsoft.VC++2012Redist-x86', 'Microsoft.VC++2015-2019Redist-x64', 'Microsoft.VC++2015-2019Redist-x86', '7zip.7zip','SyncTrayzor.SyncTrayzor','eloston.ungoogled-chromium','DuongDieuPhap.ImageGlass','Radionomy.Winamp','stax76.mpvdotnet','PrestonN.FreeTube','Streamlink.StreamlinkTwitchGui','Jellyfin.JellyfinMediaPlayer','Prusa3D.PrusaSlicer','BlenderFoundation.Blender','GIMP.GIMP','Inkscape.Inkscape','KDE.Krita','HandBrake.HandBrake','Lowkey.LowkeyGG','OBSProject.OBSStudio','Discord.DiscordCanary','Mumble.Mumble','Mozilla.Thunderbird','Microsoft.VisualStudioCode','Microsoft.VisualStudio.2022.Community-Preview','OpenJS.NodeJS','Yarn.Yarn','Python.Python.3','Oracle.JavaRuntimeEnvironment','Microsoft.PowerShell','GOG.Galaxy','Valve.Steam','Ubisoft.Connect','ElectronicArts.EADesktop','REALiX.HWiNFO', 'Adobe.AdobeAcrobatReaderDC'
-
-ForEach ($PackageName in $Packages)
-{
-    winget install --id=$PackageName -e
-}
-```
-
-:::caution
-This script requires testing.
-:::
 ### Manual Install
 :::info
 Unfortunately, these apps currently aren't available via Winget or chocolatey. These require manual download and installation.
@@ -172,6 +162,7 @@ Set the player preset to MPV and the executable to mpvnet.exe.
 
 #### Jellyfin Media Player
 [Github releases page](https://github.com/jellyfin/jellyfin-media-player/releases)
+
 Jellyfin Desktop Client based on Plex Media Player. 
 
 Jellyfin Media Player works well for personal media.
@@ -326,8 +317,8 @@ Software client for Steam. PC games.
 
 Software client for Ubisoft. PC games.
 
-#### EA App
-[Download page](https://www.ea.com/ea-app-beta)
+#### Origin 
+[Download page](https://www.origin.com/aus/en-us/store/download)
 
 Software client for EA. PC games.
 
