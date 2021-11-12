@@ -21,21 +21,76 @@ Manual replacement of textures/models works correctly. [IMGDesk](https://github.
 
 [4GB Patch](https://ntcore.com/?page_id=371)
 
+### Setup
+
+#### Step 1
+
+- Insert discs and install Vice City.
+- Rename old exe to `backup.exe`.
+- Copy NOCD into root directory.
+
+#### Step 2
+
+- Download [Ultimate ASI Loader](https://github.com/ThirteenAG/Ultimate-ASI-Loader/releases/latest) and extract `dinput8.dll` into the root directory.
+
+Create a new foler caled `scripts`
+
+- Download [CLEO](https://github.com/cleolibrary/III.VC.CLEO/releases/) and put it in the root directory.
+
+- Download [ModLoader](https://github.com/thelink2012/modloader/releases/latest) and put it in the scripts directory.
+
+- Download [ModUpdater](https://github.com/ThirteenAG/modupdater/releases/latest) and place `modupdater.asi` it in the scripts directory.
+
+#### Step 3
+
+##### Silent Patch
+Extract SilentPatchVC.asi and .ini into the scripts folder.
+
+Inside ModLoader create a new folder called SilentPatchVC and extract the data folder into it.
+
+Download and extract the DDraw Component into the root directory.
+
+##### Widescreen Fixes
+Extract GTAVC.WidescreenFix.asi and .ini into the root folder. 
+Inside ModLoader create a new folder called WidescreenFrontEnd and extract WidescreenFrontEnd.zip into it.
+
+##### 2DFX & OpenLimitAdjuster
+Extract into Scripts Folder
+
+##### SkyGFX
+Extract  rwd3d9.dll into the root directory.
+
+Extract asi into scripts 
+Extract everything inside VC folder into scripts folder.
+
+##### GInput
+ASI into scripts
+models into models
+
+##### Classic Axis
+
+##### LCS Car Camera
+Add to scripts
+
+##### SaveLoader
+
+##### Vice City Neons
+Extract Modloader into modloader.
+
+Set dualPass=0 and disableBackfaceCulling=1 in skygfx.ini.
+
 ### Mod List
 
 #### Prerequisite Mods
 - [Ultimate ASI Loader](https://github.com/ThirteenAG/Ultimate-ASI-Loader/releases/latest)
-- [ModLoader](https://github.com/thelink2012/modloader/releases/latest)
 - [CLEO](https://github.com/cleolibrary/III.VC.CLEO/releases/)
+- [ModLoader](https://github.com/thelink2012/modloader/releases/latest)
 - [ModUpdater](https://github.com/ThirteenAG/modupdater/releases/latest)
-- [Portable GTA](http://gta.rockstarvision.com/workshop/portablegta.dll)
 
 #### Combination
 - [GTAVC WidescreenFix](https://github.com/ThirteenAG/WidescreenFixesPack/releases/tag/gtavc)
 - [GInput](https://silent.rockstarvision.com/uploads/GInputVC.zip)
-- [UpdatedSCM](https://github.com/niltwill/vc-updatedscm)
 - [SkyGFX](https://github.com/aap/skygfx_vc/releases)
-- [Vice City Neons](https://github.com/ThirteenAG/ViceCityNeons)
 - [Vice City - The Leftovers Fix](https://gtaforums.com/topic/750757-vice-city-the-leftovers-fix/)
 
 #### Scripts
@@ -43,7 +98,6 @@ Manual replacement of textures/models works correctly. [IMGDesk](https://github.
 - [DDraw Component](https://silent.rockstarvision.com/uploads/SilentPatchDDraw.zip)
 - [Open Limit Adjuster](https://github.com/ThirteenAG/III.VC.SA.LimitAdjuster/releases/tag/1.5.6)
 - [Project2DFX](https://github.com/ThirteenAG/III.VC.SA.IV.Project2DFX/releases/tag/gtavc)
-- [PS2 LoadScreens](https://github.com/CookiePLMonster/PS2Loadscreens/releases/latest)
 - [SaveLoader](https://github.com/ThirteenAG/III.VC.SA.SaveLoader/releases/latest)
 - [Vice City Sharp Trails](https://github.com/aap/sharptrails/releases/)
 - [SA/LCS Car Camera](https://github.com/erorcun/SACarCam/releases)
@@ -71,6 +125,8 @@ Manual replacement of textures/models works correctly. [IMGDesk](https://github.
 - [Buy Back Your Weapons](https://github.com/ThirteenAG/III.VC.SA.CLEOScripts/releases/tag/BuyBackYourWeapons)
 
 #### Models and Textures
+- [Vice City Neons](https://github.com/ThirteenAG/ViceCityNeons)
+- [UpdatedSCM](https://github.com/niltwill/vc-updatedscm)
 - [Improved Default Armoury](https://gtaforums.com/topic/933587-improved-default-armoury-reflections-positions-model-and-texture-improvements/)
 - [AI Enhanced Textures](https://www.moddb.com/mods/ai-enhanced-textures-for-vice-city/downloads)
 - [Collision Fix](https://gtaforums.com/topic/883252-reliiivc-collision-fix/)
@@ -85,37 +141,3 @@ Manual replacement of textures/models works correctly. [IMGDesk](https://github.
 #### More Optional Stuff
 - [Manual Aiming](https://github.com/ThirteenAG/III.VC.SA.CLEOScripts/releases/tag/ManualAiming)
 - [Climbing & Swimming](https://github.com/ThirteenAG/III.VC.SA.CLEOScripts/releases/tag/VC.ClimbingSwimming)
-
-#### modupdator.ini
-
-:::warning 
-This section is incomplete.
-:::
-
-```
-;Place modupdater.exe and modupdater.asi inside modloader directory. Run modupdater.exe to install mods.
-
-[MODS]
-d3d8.dll = https://github.com/ThirteenAG/Ultimate-ASI-Loader
-modloader.asi = https://github.com/thelink2012/modloader
-GTAVC.WidescreenFix.asi = https://github.com/ThirteenAG/WidescreenFixesPack/
-III.VC.SA.SaveLoader.asi = https://github.com/ThirteenAG/III.VC.SA.SaveLoader
-III.VC.SA.WindowedMode.asi = https://github.com/ThirteenAG/III.VC.SA.WindowedMode
-SilentPatchVC.asi = http://silent.rockstarvision.com/uploads/SilentPatchVC.zip
-skygfx.asi = https://github.com/aap/skygfx_vc/releases
-;don't forget to manually move skygfx's content appropriately, since the archive contains both versions for GTA3 and VC
-;specifically d3d8.dll should be deleted, content of VC folder should be moved to skygfx.asi location, III folder deleted
-
-;Don't forget to move preconfigured global.ini from widescreen fix to scripts folder, or manually enable d3d8to9 for Skygfx.
-[d3d8.dll]
-SourceName = Ultimate-ASI-Loader.zip
-PlaceToRoot
-ExtractSingleFile
-
-[MISC]
-SelfUpdate = 1
-
-[DATE]
-UpdateFrequencyInHours = 6
-WhenLastUpdateAttemptWas = 
-```

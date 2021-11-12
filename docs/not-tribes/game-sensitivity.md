@@ -14,24 +14,31 @@ sidebar_position: 3
 
 ## Game Specific Settings
 ### Semi-competitive Multiplayer Games
-- Tribes: MouseSensitivity = 12, bEnableFOVScaling = false
-- Payday 2: "camera_sensitivity_x", 0.439454
-- Splitgate: Horizontal Sensitivity 7.032, Vertical Sensitivity 7.032
-- Midair: Mouse Sens=13.183626
-- CS GO: sensitivity "2.996279"
-- War Thunder: mouseSens:r=0.53
-- Halo MCC: Mouse Sensitivity 3.0
-- Halo Infinite: Horizontal Sensitivity Scale 1, Mouse Sensitivity 3.2
-- GTA V: (3rd Person) Mouse Look Sensitivity: 6
-- Quake Live: set sensitivity "2.996279"
-- Battlefield 2042: GstInput.MouseSensitivity 0.042608
+- Tribes: `MouseSensitivity = 12`, `bEnableFOVScaling = false`
+- Payday 2: `"camera_sensitivity_x", 0.439454`
+- Splitgate: `Horizontal Sensitivity 7.032`, `Vertical Sensitivity 7.032`
+- Midair: `Mouse Sens=13.183626`
+- CS GO: `sensitivity "2.996279"`
+- War Thunder: `mouseSens:r=0.53`
+- Halo MCC: `Mouse Sensitivity 3.0`
+- Halo Infinite: `Horizontal Sensitivity Scale 1`, `Mouse Sensitivity 3.2`
+- GTA V: (3rd Person) `Mouse Look Sensitivity: 6`
+- Quake Live: `set sensitivity "2.996279"`
+- Battlefield 2042: `GstInput.MouseSensitivity 0.042608`
 
 ### Single Player Games
-- Overwatch: Sensitivity 9.99
-- Just Cause 3: Camera Sensitivity 4.4
-- Cyberpunk 2077: "name": "FPP_MouseX", "value": 6.591813,
-- Red Dead Redemption 2: Mouse Look Sensitivity: 6
-- Far Cry 6: MouseLookSensitivity="2.99628"
+- Overwatch: `Sensitivity 9.99`
+- Just Cause 3: `Camera Sensitivity 4.4`
+- Cyberpunk 2077: "name": `"FPP_MouseX", "value": 6.591813,`
+- Red Dead Redemption 2: `Mouse Look Sensitivity: 6`
+- Far Cry 6: `MouseLookSensitivity="2.99628"`
+- Vampire: The Masquerade - Bloodlines: `sensitivity "2.996279"` or `sensitivity "2.622378"` for `90 FOV`.
+- Destroy All Humans!: `Camera Sensitivity 21%`
+- Deus Ex: Human Revolution: `2`
+- Deus Ex: Mankind Divided: `X-Axis: 15803b3e`
+- Kingdom Come: Deliverance: `value="19.7952"`
+- Dishonored: 8
+- Dishonored 2: `"1.582"`
 - Mass Effect Legendary
 
 ## Tribes Ascend
