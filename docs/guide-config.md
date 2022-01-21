@@ -67,3 +67,10 @@ A sensitivity of approximately 4.501 at maximum zoom will cause issues with mous
 This is my personal `TribesInput.ini`. Contains some of the autocompletes for official and custom server admins.
 
 You must set this to `Read Only` otherwise the game will overwrite the file. 
+
+## TAMods
+
+It is recommended to delete the default crosshairs and either use the Tribes Ascend crosshairs or create your own. If you choose to create your own I'd recommend disabling the default crosshairs within ubermenu so you keep hitmarkers.
+
+[Dodge's TAMods Config.lua](/text/dodges-config-lua/config.lua)
+

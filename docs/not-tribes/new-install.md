@@ -65,8 +65,10 @@ These are scripts used for automatically installing as many applications listed 
 
 ### Winget
 
+Install the latest version of Winget from [here.](https://github.com/microsoft/winget-cli/releases/latest)
+
 ```bat
-winget install --id=7zip.7zip.Alpha.msi -e  && winget install --id=SyncTrayzor.SyncTrayzor -e  && winget install --id=eloston.ungoogled-chromium -e  && winget install --id=IrfanSkiljan.IrfanView -e  && winget install --id=DuongDieuPhap.ImageGlass -e  && winget install --id=Radionomy.Winamp -e  && winget install --id=stax76.mpvdotnet -e  && winget install --id=PrestonN.FreeTube -e  && winget install --id=Streamlink.Streamlink.TwitchGui -e  && winget install --id=Jellyfin.JellyfinMediaPlayer -e  && winget install --id=Prusa3D.PrusaSlicer -e  && winget install --id=BlenderFoundation.Blender -e  && winget install --id=GIMP.GIMP -e  && winget install --id=Inkscape.Inkscape -e  && winget install --id=KDE.Krita -e  && winget install --id=HandBrake.HandBrake -e  && winget install --id=OBSProject.OBSStudio -e  && winget install --id=Discord.Discord -e  && winget install --id=Mumble.Mumble -e  && winget install --id=Microsoft.VisualStudioCode -e  && winget install --id=Microsoft.VisualStudio.2022.Community-Preview -e  && winget install --id=OpenJS.NodeJS -e  && winget install --id=Yarn.Yarn -e  && winget install --id=Python.Python.3 -e  && winget install --id=Oracle.JavaRuntimeEnvironment -e  && winget install --id=Microsoft.PowerShell -e  && winget install --id=GOG.Galaxy -e  && winget install --id=Valve.Steam -e  && winget install --id=Ubisoft.Connect -e  && winget install --id=ElectronicArts.EADesktop -e  && winget install --id=REALiX.HWiNFO -e  && winget install --id=CPUID.CPU-Z -e  && winget install --id=SumatraPDF.SumatraPDF -e  && winget install --id=GitHub.GitHubDesktop -e  && winget install --id=TechPowerUp.NVCleanstall -e  && winget install --id=Audacity.Audacity -e  && winget install --id=RuneLite.RuneLite -e  && winget install --id=Resplendence.LatencyMon -e  && winget install --id=TechPowerUp.GPU-Z -e  && winget install --id=Unigine.SuperpositionBenchmark -e  && winget install --id=Balena.Etcher -e  && winget install --id=EpicGames.EpicGamesLauncher -e  && winget install --id=JeffreyPfau.mGBA -e  && winget install --id=Cockos.REAPER -e  && winget install --id=Microsoft.WindowsTerminal -e 
+winget install --id=7zip.7zip.Alpha.msi -e  && winget install --id=SyncTrayzor.SyncTrayzor -e  && winget install --id=eloston.ungoogled-chromium -e  && winget install --id=IrfanSkiljan.IrfanView -e  && winget install --id=DuongDieuPhap.ImageGlass -e  && winget install --id=Radionomy.Winamp -e  && winget install --id=stax76.mpvdotnet -e  && winget install --id=PrestonN.FreeTube -e && winget install -e --id Streamlink.Streamlink && winget install --id=Streamlink.Streamlink.TwitchGui -e  && winget install --id=Jellyfin.JellyfinMediaPlayer -e  && winget install --id=Prusa3D.PrusaSlicer -e  && winget install --id=BlenderFoundation.Blender -e  && winget install --id=GIMP.GIMP -e  && winget install --id=Inkscape.Inkscape -e  && winget install --id=KDE.Krita -e  && winget install --id=HandBrake.HandBrake -e  && winget install --id=OBSProject.OBSStudio -e  && winget install --id=Discord.Discord -e  && winget install --id=Mumble.Mumble -e  && winget install --id=Microsoft.VisualStudioCode -e  && winget install --id=Microsoft.VisualStudio.2022.Community-Preview -e  && winget install --id=OpenJS.NodeJS.LTS -e  && winget install --id=Yarn.Yarn -e  && winget install --id=Python.Python.3 -e  && winget install --id=Oracle.JavaRuntimeEnvironment -e  && winget install --id=Microsoft.PowerShell -e  && winget install --id=GOG.Galaxy -e  && winget install --id=Valve.Steam -e  && winget install --id=Ubisoft.Connect -e  && winget install --id=ElectronicArts.EADesktop -e && winget install --id=SumatraPDF.SumatraPDF -e  && winget install --id=GitHub.GitHubDesktop -e  && winget install --id=Audacity.Audacity -e  && winget install --id=RuneLite.RuneLite -e  && winget install --id=Resplendence.LatencyMon -e --force && winget install --id=TechPowerUp.GPU-Z -e  && winget install --id=Balena.Etcher -e  && winget install --id=EpicGames.EpicGamesLauncher -e  && winget install --id=JeffreyPfau.mGBA -e  && winget install --id=Cockos.REAPER -e  && winget install --id=Microsoft.WindowsTerminal -e && winget install --id=GitHub.GitHubDesktop -e  && winget install --id=CPUID.CPU-Z --force -e && winget install --id=REALiX.HWiNFO --force -e && winget install -e --id Git.Git
 ```
 
 ### Chocolatey
@@ -79,7 +81,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 ```
 #### Install Apps Script
 ```ps1
-$Packages = 'lossless-cut', 'youtube-dl', 'sketchup', 'quixelbridge', 'spacesniffer', 'ddu', 'sdio', 'sysinternals'
+$Packages = 'lossless-cut', 'youtube-dl', 'sketchup', 'quixelbridge', 'spacesniffer', 'ddu', 'sdio', 'sysinternals', 
 
 ForEach ($PackageName in $Packages)
 {
@@ -100,6 +102,32 @@ Unfortunately, these apps currently aren't available via Winget or chocolatey. T
 
 
 ## Step 3 - Configure Windows
+
+
+Registry File for Opening with VS Code.
+
+:::caution
+Replace each `*****USERNAME*****` with your local user account name.
+:::
+
+```
+Windows Registry Editor Version 5.00
+[HKEY_CLASSES_ROOT\*\shell\Open with VS Code]
+@="Edit with VS Code"
+"Icon"="C:\\Users\\*****USERNAME*****\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe,0"
+[HKEY_CLASSES_ROOT\*\shell\Open with VS Code\command]
+@="\"C:\\Users\\*****USERNAME*****\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe\" \"%1\""
+[HKEY_CLASSES_ROOT\Directory\shell\vscode]
+@="Open Folder as VS Code Project"
+"Icon"="\"C:\\Users\\*****USERNAME*****\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe\",0"
+[HKEY_CLASSES_ROOT\Directory\shell\vscode\command]
+@="\"C:\\Users\\*****USERNAME*****\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe\" \"%1\""
+[HKEY_CLASSES_ROOT\Directory\Background\shell\vscode]
+@="Open Folder as VS Code Project"
+"Icon"="\"C:\\Users\\*****USERNAME*****\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe\",0"
+[HKEY_CLASSES_ROOT\Directory\Background\shell\vscode\command]
+@="\"C:\\Users\\*****USERNAME*****\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe\" \"%V\""
+```
 
 ## Applications
 ### General
