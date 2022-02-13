@@ -7,7 +7,10 @@ sidebar_position: 1
 # Grand Theft Auto Vice City
 ## Definitive Edition
 
-Definitive Edition will possibly make a bunch of this stuff irrelevant. 
+### ModList
+Fix for impassable mission, might be patched at some point. 
+
+https://libertycity.net/files/gta-vice-city-the-definitive-edition/166079-ispravlenie-neprokhodimojj-missii-na-pk.html
 
 ## reVC
 reVC is a branch of the re3 Github specifically designed to work with the Vice City official game files.

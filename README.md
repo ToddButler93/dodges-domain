@@ -1,5 +1,7 @@
 # Dodges Domain
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0f8a6ff2-ba67-4972-b3b4-8fb7877a8e1a/deploy-status)](https://app.netlify.com/sites/dodges-domain/deploys)
+
 https://www.dodgesdomain.com/
 
 Tribes stuff.

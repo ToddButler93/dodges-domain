@@ -28,7 +28,7 @@ Download and install the game from steam [here](https://store.steampowered.com/a
 <iframe src="https://store.steampowered.com/widget/17080/" frameborder="0" width="100%" height="190"></iframe>
 
 #### Step 2
-Download the latest release of the `Tribes Launcher` [here](https://github.com/mcoot/TribesLauncherSharp/releases). This will be used to launch our game. TAMods has a website to help guide people [here](https://www.tamods.org/docs/doc_user_install).
+Download the latest release of the `Tribes Launcher` [here](https://github.com/mcoot/TribesLauncherSharp/releases). This will be used to launch our game. 
 
 You will need the [Microsoft Visual C++ Redistributes](https://github.com/abbodi1406/vcredist/releases/) if you don't have them already installed.
 
@@ -41,6 +41,10 @@ In the `Tribes Launcher`, select the `Community` for your login server, hit Logi
 Once injected, the Play Now button will show whether you are in `OOTB` or `GOTY` mode. There is a button on the main menu to switch. You need to be in `GOTY` mode to play on `GOTY` servers and `OOTB` mode to play on `OOTB` servers.
 
 [Still having issues?](guide-install-setup.md#troubleshooting)
+
+:::note
+TAMods has a website to help guide people [here](https://www.tamods.org/docs/user/doc_user_install).
+:::
 
 ## Playing Community Maps
 
