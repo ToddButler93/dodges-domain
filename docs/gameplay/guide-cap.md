@@ -31,6 +31,7 @@ sidebar_position: 3
 - Holding a directional key can adjust where you are going and help you slow down.
 - Jetting while holding a directional key can help you go higher.
 - The faster you are, the harder it is to control where you go.
+- While you have no energy, it is best to spam your jet key rather than hold it down.
 
 ### How do cappers consistently grab the flag fast?
 - [Routes](guide-cap.md#show-me-some-routes), learn them. 
@@ -137,19 +138,23 @@ Many people have pushed out a lot of interesting route videos on their respectiv
 - [Small Kiwi has a guide](https://youtu.be/5aoD0HuefiU) that is out of date but still useful.
 
 ## TAMods to the rescue
-TAMods has a route library that will soon include routes for all maps. Currently missing quite a few and some are only for specific sides. Using the F1 menu and selecting routes for your team is the way to go. 
+TAMods has some route libraries that includes routes for most competitive maps. Currently missing routes for maps that aren't played much. Using the F1 menu and selecting routes for your team is the way to go. 
 
 - Any X spot is where you need a self impulse so you should start the throw of your nitron before the spot. 
-- You can cycle through the routes for your current map.
+- You can cycle through the routes for your current map using page up and page down.
 
 ### TAMods Route Files
-These all should be downloadable via the `TAMods Launcher` `Packages` section. A manual download is provided here. These `.route` files need to go in your `\Documents\My Games\Tribes Ascend\TribesGame\config\routes` directory.
+These are downloadable via the `TAMods Launcher` `Packages` section.
+
+The `Recommended GOTY Routes Library` is recommended for most players.
+
+A manual download is provided here. These `.route` files need to go in your `\Documents\My Games\Tribes Ascend\TribesGame\config\routes` directory.
 #### JPs
 Arx Novena, Dangerous Crossing, Drydock, Katabatic, Raindance, Sunstar, Tartarus.
 - [JPs Easy Pathfinder GOTY route files](/routes/jps-easy-pathfinder-goty-routes.zip) which contain no difficult rockbounces!
 - [JPs Pathfinder and Soldier GOTY route files](/routes/jps-pathfinder-soldier-goty-routes.zip)
 #### JackTheBlack's
 GOTY Pathfinder.
-- [JackTheBlack's Incidamus route files](/routes/jacktheblacks-blues-routes.zip)
+- [JackTheBlack's Incidamus route files](/routes/jacktheblacks-incidamus-routes.zip)
 - [JackTheBlack's Periculo route files](/routes/jacktheblacks-periculo-routes.zip)
 - [JackTheBlack's Blues route files](/routes/jacktheblacks-blues-routes.zip)
