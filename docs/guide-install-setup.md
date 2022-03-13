@@ -6,31 +6,15 @@ sidebar_position: 2
 ---
 ## Installing Tribes Ascend
 
-### Method 1
-
-#### Step 1
-
-Run the [Tribes Ascend Unofficial Installer](/apps/TribesAscendUnofficalInstaller.exe). Last updated 2021/09/30.
-
-#### Step 2
-
-In the `Tribes Launcher`, select the `Community` for your login server, hit Login and inject TAMods.
-
-Once injected, the Play Now button will show whether you are in `OOTB` or `GOTY` mode. There is a button on the main menu to switch. You need to be in `GOTY` mode to play on `GOTY` servers and `OOTB` mode to play on `OOTB` servers.
-
-[Still having issues?](guide-install-setup.md#troubleshooting)
-
-### Method 2
-
 #### Step 1
 Download and install the game from steam [here](https://store.steampowered.com/app/17080/Tribes_Ascend/).
 
 <iframe src="https://store.steampowered.com/widget/17080/" frameborder="0" width="100%" height="190"></iframe>
 
 #### Step 2
-Download the latest release of the `Tribes Launcher` [here](https://github.com/mcoot/TribesLauncherSharp/releases). This will be used to launch our game. 
+Download the latest release of the `Tribes Launcher` [here](https://github.com/ToddButler93/TribesLauncherSharp/releases/latest). This will be used to launch our game. 
 
-You will need the [Microsoft Visual C++ Redistributes](https://github.com/abbodi1406/vcredist/releases/) if you don't have them already installed.
+You will need the [Microsoft Visual C++ Redistributes](https://github.com/abbodi1406/vcredist/releases/latest) if you don't have them already installed.
 
 #### Step 3
 
@@ -74,7 +58,7 @@ Usually it's "C:\Program Files (x86)\Steam\SteamApps\Common\Tribes\Binaries\Win3
 </video>
 
 ### I hear the inject sound, but nothing about my game changes
-Microsoft Visual C++ redistributes must be installed, an easy all in one installer is [here](https://github.com/abbodi1406/vcredist/releases/)
+Microsoft Visual C++ redistributes must be installed, an easy all in one installer is [here](https://github.com/abbodi1406/vcredist/releases/latest)
 
 ### I keep failing to join a server
 Probably in the wrong game mode for that server, community servers are labelled `OOTB` or `GOTY` to show their game mode. Go back to the main menu and select `Switch to OOTB` or `Switch to GOTY` like this video. 
