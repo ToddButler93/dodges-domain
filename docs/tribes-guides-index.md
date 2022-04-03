@@ -28,11 +28,20 @@ slug: /
 
 ## Tribes Ascend Maps
 ### Community Made Maps
+
+## Dodge
 [Blues - CTF Map](./custommaps/trctf-blues.md)
 
 [Periculo - CTF Map](./custommaps/trctf-periculo.md)
 
 [Incidamus - CTF Map](./custommaps/trctf-incidamus.md)
+
+## TE-Krogoth
+[Broadside - CTF Blitz Map](./custommaps/trctfblitz-broadside.md)
+<!--
+## Evil
+[Fracture - CTF Map](./custommaps/trctf-fracture.md)
+-->
 
 ## Tribes Development Guides
 
@@ -42,3 +51,5 @@ slug: /
 
 ## Tribes Information
 [Tribes Ascend Patch Notes](./information/patches.md)
+
+[Tribes Ascend Weapon Data](./information/weapon-data.md)
