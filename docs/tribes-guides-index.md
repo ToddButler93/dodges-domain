@@ -38,10 +38,9 @@ slug: /
 
 ## TE-Krogoth
 [Broadside - CTF Blitz Map](./custommaps/trctfblitz-broadside.md)
-<!--
+
 ## Evil
 [Fracture - CTF Map](./custommaps/trctf-fracture.md)
--->
 
 ## Tribes Development Guides
 

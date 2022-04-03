@@ -12,7 +12,7 @@ Download and install the game from steam [here](https://store.steampowered.com/a
 <iframe src="https://store.steampowered.com/widget/17080/" frameborder="0" width="100%" height="190"></iframe>
 
 #### Step 2
-Download the latest release of the `Tribes Launcher` [here](https://github.com/ToddButler93/TribesLauncherSharp/releases/latest). This will be used to launch our game. 
+Download the latest release of the `Tribes Launcher` [here](https://github.com/mcoot/TribesLauncherSharp/releases/latest). This will be used to launch our game. 
 
 You will need the [Microsoft Visual C++ Redistributes](https://github.com/abbodi1406/vcredist/releases/latest) if you don't have them already installed.
 
