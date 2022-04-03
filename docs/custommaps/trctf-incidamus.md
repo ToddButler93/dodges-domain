@@ -30,6 +30,12 @@ TAMods route files can be downloaded [here](/routes/jacktheblacks-incidamus-rout
 ![Incidamus](/img/maps/incidamus-bases.png)
 
 ## Changelog
+### TrCTF-Incidamus v004
+- Made the terrain near the stand to have more variation.
+- Decreased the level of variation in the mid sections of the map.
+- There is a bug with the conduit on this version of the map, will be fixed in the next release. 
+- Adjusted spawn points to be closer to the stand.
+
 ### TrCTF-Incidamus v003
 
 [Download](https://drive.google.com/file/d/1gzeW_rplraKDo1tXjpLsAyujoesf2P1s/view?usp=sharing)

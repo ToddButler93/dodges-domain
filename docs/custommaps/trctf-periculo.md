@@ -33,6 +33,13 @@ TAMods route files can be downloaded [here](/routes/jacktheblacks-periculo-route
 ![Periculo](/img/maps/periculo-bases.png)
 
 ## Changelog
+### TrCTF-Periculo v007
+- Smoothed the terrain on the edges of the center hill.
+- Altered the terrain behind the base for stand off play.
+- Added a sniper perch near the stand.
+- Adjusted spawn points to be closer to the stand.
+- Lowered spawn hill.
+
 ### TrCTF-Periculo v006
 
 [Download](https://drive.google.com/file/d/1gzeW_rplraKDo1tXjpLsAyujoesf2P1s/view?usp=sharing)

@@ -8,7 +8,7 @@ sidebar_label: Making Custom Maps
 
 ### Step 1
 
-You need to download and install `UDK build 7748 BETA January 2011` to create maps for Tribes Ascend. Ask `Dodge#3156` on Discord if you can't find a link.
+You need to download and install [UDK build 7748 BETA January 2011](http://library.theexiled.pwnageservers.com/file.php?id=2964) to create maps for Tribes Ascend. 
 
 You need to download the [TA actor classes](http://library.theexiled.pwnageservers.com/file.php?id=2948). Extract the `TribesGame` folder to `\UDK\UDK-2011-01\Development\Src\` and the `TA_BaseAssets.upk` to `\UDK\UDK-2011-01\UDKGame\Content\`.
 

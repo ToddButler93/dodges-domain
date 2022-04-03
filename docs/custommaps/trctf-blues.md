@@ -8,7 +8,7 @@ sidebar_label: Blues
 ![Blues](/img/maps/blues-bases.png)
 
 ## Description 
-Two hills, valley, long bounding hills, ultra smooth terrain. Very much a standard formula for a decent tribes map. Not too many bells or whistles but the rocks are easy to bounce off and the ground is dark. Set on a volcanic moon surrounded by pools of lava with remnants of the past Tribes structures.
+Two hills, valley, long bounding hills, ultra smooth terrain. Very much a standard formula for a decent tribes map. Not too many bells or whistles but the rocks are easy to bounce off. Set on a grassy moon surrounded by pools of water with remnants of the past Tribes structures.
 
 ## Features
 Line of site blocking. Shit should be in all tribes maps. Avoiding the spotting of spawns from the opposing stand and spawns.
@@ -34,6 +34,11 @@ TAMods route files can be downloaded [here](/routes/jacktheblacks-blues-routes.z
 ![Blues Flagstand](/img/maps/blues-flagstand.png)
 
 ## Changelog
+### TrCTF-Blues v014
+
+- Changed the art style so that the terrain isn't as dark allowing players to be more visibile. 
+- Altered some of the terrain and added rocks to assist offence.
+
 ### TrCTF-Blues v013
 [Download](https://drive.google.com/file/d/1gzeW_rplraKDo1tXjpLsAyujoesf2P1s/view?usp=sharing)
 
