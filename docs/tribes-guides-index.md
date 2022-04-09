@@ -36,6 +36,16 @@ slug: /
 
 [Incidamus - CTF Map](./custommaps/trctf-incidamus.md)
 
+[Acheron - CTF Map](./custommaps/trctf-acheron.md)
+
+[Phlegathon - CTF Map](./custommaps/trctf-phlegathon.md)
+
+[Deserted Valley - CTF Map](./custommaps/trctf-deserted-valley.md)
+
+[Styx - CTF Map](./custommaps/trctf-styx.md)
+
+[Elysian Battleground - Arena Map](./custommaps/trctf-styx.md)
+
 ## TE-Krogoth
 [Broadside - CTF Blitz Map](./custommaps/trctfblitz-broadside.md)
 
