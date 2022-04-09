@@ -44,7 +44,7 @@ slug: /
 
 [Styx - CTF Map](./custommaps/trctf-styx.md)
 
-[Elysian Battleground - Arena Map](./custommaps/trctf-styx.md)
+[Elysian Battleground - Arena Map](./custommaps/trarena-elysian-battleground.md)
 
 ## TE-Krogoth
 [Broadside - CTF Blitz Map](./custommaps/trctfblitz-broadside.md)
