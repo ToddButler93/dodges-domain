@@ -273,6 +273,9 @@ Free to use with UDK.
 [Download page](https://discord.com/download)
 
 VoIP and instant messaging platform. Closed source but extremely popular.
+##### OpenAsar
+[Download page](https://openasar.dev/)
+An open-source alternative of Discord desktop's app.asar. Makes Discord much faster to start with less tracking.
 
 #### Mumble
 [Github releases page](https://github.com/mumble-voip/mumble/releases)
