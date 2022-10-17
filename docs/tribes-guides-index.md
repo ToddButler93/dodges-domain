@@ -62,3 +62,7 @@ slug: /
 [Tribes Ascend Patch Notes](./information/patches.md)
 
 [Tribes Ascend Weapon Data](./information/weapon-data.md)
+
+## Servers
+
+[Server Hosting](./servers/guide-hosting.md)
