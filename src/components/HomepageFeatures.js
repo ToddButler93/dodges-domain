@@ -23,7 +23,7 @@ const FeatureList = [
     ),
   },
   {
-    title: 'Playing Tribes in 2021!',
+    title: 'Playing Tribes in 2022!',
     imageUrl: 'img/drydock-night-pretty.png',
     description: (
       <>

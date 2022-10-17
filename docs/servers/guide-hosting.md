@@ -17,37 +17,45 @@ This will be a basic run down on how to setup TA Server on an Ubunutu Server.
 
 #### Step 0: Prerequisites
 ##### 0.1 Setup ubuntu
-Ports that need opening: 7777-7877
-Ports that need opening: 9002-9102
+
+TCP/UDP Ports that need opening: 7777-7877
+
+UDP ports that need opening: 9002-9102
 
 Using UFW:
-sudo ufw allow 7777:7877/tcp
-sudo ufw allow 7777:7877/udp
-sudo ufw allow 9002:9102/udp
+
+`sudo ufw allow 7777:7877/tcp`
+
+`sudo ufw allow 7777:7877/udp`
+
+`sudo ufw allow 9002:9102/udp`
 
 ##### 0.2 Setup Docker
 [Install via the convenience script](https://docs.docker.com/engine/install/ubuntu/#install-using-the-convenience-script) 
 
-curl -fsSL https://get.docker.com -o get-docker.sh
-sudo sh get-docker.sh
+`curl -fsSL https://get.docker.com -o get-docker.sh`
+
+`sudo sh get-docker.sh`
 
 ###### 0.3 Setup current user
-sudo usermod -aG docker *username*
+`sudo usermod -aG docker *username*`
 
 Where '*username*' is the name of the user.
 
 ###### 0.4 Get TA Server Image
-docker pull public.ecr.aws/i2q9d4v7/taserver:latest
-docker tag public.ecr.aws/i2q9d4v7/taserver:latest taserver
+`docker pull public.ecr.aws/i2q9d4v7/taserver:latest`
+
+`docker tag public.ecr.aws/i2q9d4v7/taserver:latest taserver`
 
 ###### 0.5 Download Helper Script
-wget -O taserver.sh "https://raw.githubusercontent.com/JigglyJoogins/taserver-deploy/master/docker/taserver.sh"
-chmod +x taserver.sh
+`wget -O taserver.sh "https://raw.githubusercontent.com/JigglyJoogins/taserver-deploy/master/docker/taserver.sh"`
+
+`chmod +x taserver.sh`
 
 ##### 0.6 Setup Game Server
 To run the game server run the command:
 
-./taserver.sh -d gamesettings -p 0
+`./taserver.sh -d gamesettings -p 0`
 
 '-d gamesettings' will be a mounted folder for this particular docker container that lets you alter the game settings of the server.
 
