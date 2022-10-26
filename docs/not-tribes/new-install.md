@@ -45,19 +45,6 @@ Download the latest version of NVidia drivers and unplug the network cable.
 
 Remove GPU drivers installed by Windows. DDU has an option to prevent Windows from installing a new driver.
 
-#### NVCleanInstall
-[Download Page](https://www.techpowerup.com/download/techpowerup-nvcleanstall/)
-
-Select the latest driver package and install it with the recommended preset.
-
-#### Aorus RGB Fusion
-[Download Page](https://www.gigabyte.com/MicroSite/512/rgb2.html)
-Allows you to turn off motherboard lighting.
-
-#### EVGA Precision
-[Download Page](https://www.evga.com/precisionx1/)
-Allows you to turn GPU lighting.
-
 ## Step 3 - Install Apps
 :::info
 These are scripts used for automatically installing as many applications listed on this page as possible.
@@ -68,7 +55,7 @@ These are scripts used for automatically installing as many applications listed 
 Install the latest version of Winget from [here.](https://github.com/microsoft/winget-cli/releases/latest)
 
 ```bat
-winget install --id=7zip.7zip.Alpha.msi -e  && winget install --id=SyncTrayzor.SyncTrayzor -e  && winget install --id=eloston.ungoogled-chromium -e  && winget install --id=IrfanSkiljan.IrfanView -e  && winget install --id=DuongDieuPhap.ImageGlass -e  && winget install --id=Radionomy.Winamp -e  && winget install --id=stax76.mpvdotnet -e  && winget install --id=PrestonN.FreeTube -e && winget install -e --id Streamlink.Streamlink && winget install --id=Streamlink.Streamlink.TwitchGui -e  && winget install --id=Jellyfin.JellyfinMediaPlayer -e  && winget install --id=Prusa3D.PrusaSlicer -e  && winget install --id=BlenderFoundation.Blender -e  && winget install --id=GIMP.GIMP -e  && winget install --id=Inkscape.Inkscape -e  && winget install --id=KDE.Krita -e  && winget install --id=HandBrake.HandBrake -e  && winget install --id=OBSProject.OBSStudio -e  && winget install --id=Discord.Discord -e  && winget install --id=Mumble.Mumble -e  && winget install --id=Microsoft.VisualStudioCode -e  && winget install --id=Microsoft.VisualStudio.2022.Community-Preview -e  && winget install --id=OpenJS.NodeJS.LTS -e  && winget install --id=Yarn.Yarn -e  && winget install --id=Python.Python.3 -e  && winget install --id=Oracle.JavaRuntimeEnvironment -e  && winget install --id=Microsoft.PowerShell -e  && winget install --id=GOG.Galaxy -e  && winget install --id=Valve.Steam -e  && winget install --id=Ubisoft.Connect -e  && winget install --id=ElectronicArts.EADesktop -e && winget install --id=SumatraPDF.SumatraPDF -e  && winget install --id=GitHub.GitHubDesktop -e  && winget install --id=Audacity.Audacity -e  && winget install --id=RuneLite.RuneLite -e  && winget install --id=Resplendence.LatencyMon -e --force && winget install --id=TechPowerUp.GPU-Z -e  && winget install --id=Balena.Etcher -e  && winget install --id=EpicGames.EpicGamesLauncher -e  && winget install --id=JeffreyPfau.mGBA -e  && winget install --id=Cockos.REAPER -e  && winget install --id=Microsoft.WindowsTerminal -e && winget install --id=GitHub.GitHubDesktop -e  && winget install --id=CPUID.CPU-Z --force -e && winget install --id=REALiX.HWiNFO --force -e && winget install -e --id Git.Git
+winget install --id=7zip.7zip -e  && winget install --id=SyncTrayzor.SyncTrayzor -e  && winget install --id=eloston.ungoogled-chromium -e  && winget install --id=IrfanSkiljan.IrfanView -e  && winget install --id=DuongDieuPhap.ImageGlass -e  && winget install --id=Radionomy.Winamp -e  && winget install --id=stax76.mpvdotnet -e  && winget install --id=PrestonN.FreeTube -e && winget install -e --id Streamlink.Streamlink && winget install --id=Streamlink.Streamlink.TwitchGui -e  && winget install --id=plex.Plex -e  && winget install --id=Prusa3D.PrusaSlicer -e  && winget install --id=BlenderFoundation.Blender -e  && winget install --id=GIMP.GIMP -e  && winget install --id=Inkscape.Inkscape -e  && winget install --id=KDE.Krita -e  && winget install --id=HandBrake.HandBrake -e  && winget install --id=OBSProject.OBSStudio -e  && winget install --id=Discord.Discord -e  && winget install --id=Mumble.Mumble -e  && winget install --id=VSCodium.VSCodium -e  && winget install --id=Microsoft.VisualStudio.2022.Community-Preview -e  && winget install --id=OpenJS.NodeJS.LTS -e  && winget install --id=Yarn.Yarn -e  && winget install --id=Python.Python.3 -e  && winget install --id=ojdkbuild.openjdk.11.jre -e  && winget install --id=Microsoft.PowerShell -e  && winget install --id=GOG.Galaxy -e  && winget install --id=Valve.Steam -e  && winget install --id=Ubisoft.Connect -e  && winget install --id=ElectronicArts.EADesktop -e && winget install --id=SumatraPDF.SumatraPDF -e  && winget install --id=GitHub.GitHubDesktop -e  && winget install --id=Audacity.Audacity -e  && winget install --id=RuneLite.RuneLite -e  && winget install --id=Resplendence.LatencyMon -e --force && winget install --id=TechPowerUp.GPU-Z -e  && winget install --id=Balena.Etcher -e  && winget install --id=EpicGames.EpicGamesLauncher -e  && winget install --id=JeffreyPfau.mGBA -e  && winget install --id=Cockos.REAPER -e  && winget install --id=Microsoft.WindowsTerminal -e && winget install --id=GitHub.GitHubDesktop -e  && winget install --id=CPUID.CPU-Z --force -e && winget install --id=REALiX.HWiNFO --force -e && winget install -e --id Git.Git
 ```
 
 ### Chocolatey
@@ -81,7 +68,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 ```
 #### Install Apps Script
 ```ps1
-$Packages = 'lossless-cut', 'youtube-dl', 'sketchup', 'quixelbridge', 'spacesniffer', 'ddu', 'sdio', 'sysinternals', 
+$Packages = 'lossless-cut', 'youtube-dl', 'sketchup', 'quixelbridge', 'spacesniffer', 'ddu', 'sdio', 'sysinternals', 'rockstar-launcher',
 
 ForEach ($PackageName in $Packages)
 {
@@ -94,39 +81,29 @@ ForEach ($PackageName in $Packages)
 Unfortunately, these apps currently aren't available via Winget or chocolatey. These require manual download and installation.
 :::
 
-[Rust Desk](https://github.com/rustdesk/rustdesk/releases)
-
-[DaVinci Resolve 17](https://www.blackmagicdesign.com/products/davinciresolve/)
-
-[Rockstar Games Launcher](https://socialclub.rockstargames.com/rockstar-games-launcher)
-
+[DaVinci Resolve](https://www.blackmagicdesign.com/products/davinciresolve/)
 
 ## Step 3 - Configure Windows
 
-
-Registry File for Opening with VS Code.
-
-:::caution
-Replace each `*****USERNAME*****` with your local user account name.
-:::
+Registry File for Opening with VS Codium.
 
 ```
 Windows Registry Editor Version 5.00
-[HKEY_CLASSES_ROOT\*\shell\Open with VS Code]
-@="Edit with VS Code"
-"Icon"="C:\\Users\\*****USERNAME*****\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe,0"
-[HKEY_CLASSES_ROOT\*\shell\Open with VS Code\command]
-@="\"C:\\Users\\*****USERNAME*****\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe\" \"%1\""
+[HKEY_CLASSES_ROOT\*\shell\Open with VSCodium]
+@="Edit with VSCodium"
+"Icon"="C:\\Program Files\\VSCodium\\VSCodium.exe,0"
+[HKEY_CLASSES_ROOT\*\shell\Open with VSCodium\command]
+@="\"C:\\Program Files\\VSCodium\\VSCodium.exe\" \"%1\""
 [HKEY_CLASSES_ROOT\Directory\shell\vscode]
-@="Open Folder as VS Code Project"
-"Icon"="\"C:\\Users\\*****USERNAME*****\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe\",0"
+@="Open Folder as VSCodium Project"
+"Icon"="\"C:\\Program Files\\VSCodium\\VSCodium.exe\",0"
 [HKEY_CLASSES_ROOT\Directory\shell\vscode\command]
-@="\"C:\\Users\\*****USERNAME*****\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe\" \"%1\""
+@="\"C:\\Program Files\\VSCodium\\VSCodium.exe\" \"%1\""
 [HKEY_CLASSES_ROOT\Directory\Background\shell\vscode]
-@="Open Folder as VS Code Project"
-"Icon"="\"C:\\Users\\*****USERNAME*****\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe\",0"
+@="Open Folder as VSCodium Project"
+"Icon"="\"C:\\Program Files\\VSCodium\\VSCodium.exe\",0"
 [HKEY_CLASSES_ROOT\Directory\Background\shell\vscode\command]
-@="\"C:\\Users\\*****USERNAME*****\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe\" \"%V\""
+@="\"C:\\Program Files\\VSCodium\\VSCodium.exe\" \"%V\""
 ```
 
 ## Applications
@@ -140,11 +117,6 @@ File archiver that is open source.
 A system tray application that hosts and wraps [Syncthing](https://github.com/syncthing/syncthing).
 
 [Syncthing](https://github.com/syncthing/syncthing) is a continuous file synchronization application.
-
-#### Rust Desk
-[Github releases page](https://github.com/rustdesk/rustdesk/releases)
-
-Rust Desk is a remote desktop application that is open source.
 
 #### ungoogled-chrominium
 [Windows 64-bit Binaries](https://ungoogled-software.github.io/ungoogled-chromium-binaries/releases/windows/64bit/)
@@ -227,10 +199,10 @@ GIMP is an open-source free and open source graphic/image editor.
 [Open source](https://github.com/KDE/krita) painting program. Useful with a drawing tablet.
 
 ### Video Editing & Recording
-#### DaVinci Resolve 17
+#### DaVinci Resolve
 Video Editing software that is freemium. Do need to give some contact details to download. The studio variant has features such as GPU acceleration but isn't required. The best part about the paid variant is it is a lifetime license! The worst part is it currently costs $469. Free version it is then!
 
-[DaVinci Resolve 17](https://www.blackmagicdesign.com/au/products/davinciresolve/)
+[DaVinci Resolve](https://www.blackmagicdesign.com/au/products/davinciresolve/)
 
 #### Handbrake
 [Download page](https://handbrake.fr/downloads.php)
@@ -241,11 +213,6 @@ Open-source video transcoder.
 [Github releases page](https://github.com/mifi/lossless-cut/releases)
 
 Cut/Merge video without re-encoding. Open Source. Huge time saver when creating short clips. Accuracy depends on your encoding/recording settings as it uses keyframes. 
-
-#### Lowkey.gg
-[Download page](https://lowkey.gg/download)
-
-Lowkey is an automatic video game capture software. Push to talk doesn't support the mouse buttons. The application opens with random clips to watch.
 
 #### OBS Studio
 [Github releases page](https://github.com/obsproject/obs-studio/releases/)
@@ -288,10 +255,12 @@ Open source VoIP application.
 Open source email application.
 
 ### Development
-#### Visual Studio Code
-[Download Page](https://code.visualstudio.com/Download)
+#### VSCodium
+[Download Page](https://vscodium.com/#install)
 
-[Open source](https://github.com/Microsoft/vscode) code editor. Visual Studio Code supports extensions, in-built terminal, language support, git support. Fast to startup.
+[Open source](https://github.com/VSCodium/vscodium) code editor. VSCodium supports extensions, in-built terminal, language support, git support. Fast to startup.
+
+VSCodium is a free/libre open source software binaries of [VS Code](https://code.visualstudio.com).
 
 #### Github Desktop
 [https://desktop.github.com/](https://www.thunderbird.net/en-US/)
