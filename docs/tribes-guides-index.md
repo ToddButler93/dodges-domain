@@ -29,7 +29,7 @@ slug: /
 ## Tribes Ascend Maps
 ### Community Made Maps
 
-## Dodge
+#### Dodge
 [Blues - CTF Map](./custommaps/trctf-blues.md)
 
 [Periculo - CTF Map](./custommaps/trctf-periculo.md)
@@ -46,11 +46,12 @@ slug: /
 
 [Elysian Battleground - Arena Map](./custommaps/trarena-elysian-battleground.md)
 
-## TE-Krogoth
+#### Evil
+[Fracture - CTF Map](./custommaps/trctf-fracture.md)
+
+#### TE-Krogoth
 [Broadside - CTF Blitz Map](./custommaps/trctfblitz-broadside.md)
 
-## Evil
-[Fracture - CTF Map](./custommaps/trctf-fracture.md)
 
 ## Tribes Development Guides
 
