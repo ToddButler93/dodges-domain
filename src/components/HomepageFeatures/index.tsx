@@ -1,9 +1,16 @@
 import React from 'react';
 import clsx from 'clsx';
-import styles from './HomepageFeatures.module.css';
+import styles from './styles.module.css';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-const FeatureList = [
+type FeatureItem = {
+  title: string;
+  imageUrl: React.ComponentType<React.ComponentProps<'svg'>>;
+  description: JSX.Element;
+};
+
+const FeatureList: FeatureItem[] = [
+
   {
     title: 'Dodges Website',
     imageUrl: 'img/incidamus-pretty.png',
@@ -32,6 +39,7 @@ const FeatureList = [
     ),
   },
 ];
+
 function Feature({imageUrl, title, description}) {
   const imgUrl = useBaseUrl(imageUrl);
   return (
@@ -48,7 +56,8 @@ function Feature({imageUrl, title, description}) {
     </div>
   );
 }
-export default function HomepageFeatures() {
+
+export default function HomepageFeatures(): JSX.Element {
   return (
     <section className={styles.features}>
       <div className="container">

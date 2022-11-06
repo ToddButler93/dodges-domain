@@ -15,22 +15,27 @@ const config = {
   favicon: 'img/blueplate.ico',
   organizationName: 'Toddbutler93', // Usually your GitHub org/user name.
   projectName: 'dodge-site', // Usually your repo name.
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en'],
+  },
 
   presets: [
     [
-      '@docusaurus/preset-classic',
+      'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
+          // Remove this to remove the "edit this page" links.
           editUrl: 'https://github.com/ToddButler93/dodges-domain/tree/main/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
-          editUrl:
-            'https://github.com/ToddButler93/dodges-domain/tree/main/',
+          // Remove this to remove the "edit this page" links.
+          editUrl: 'https://github.com/ToddButler93/dodges-domain/tree/main/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -115,7 +120,7 @@ const config = {
             items: [
               {
                 label: 'Dodges Youtube',
-                href: 'https://www.youtube.com/channel/UC06sxsfSsmjX8K3su-fNi_A',
+                href: 'https://www.youtube.com/@Dodge-M8',
               },
               {
                 label: 'Australian Discord',
