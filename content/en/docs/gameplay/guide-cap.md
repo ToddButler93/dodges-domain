@@ -8,11 +8,11 @@ tags: [role-guides, pugs]
 
 [Glossary](/docs/gameplay/guide-quick#glossary)
 ### Real Basics
-<!-- 
+
 <video width="100%" height="auto" autoplay="true" muted loop preload="metadata">
   <source src="/video/cap-arx-back.webm" type="video/webm"></source>Your browser does not support .webm video.
 </video>
--->
+
 ## Gaining Speed
 ### Real Basics
 <!-- TODO Move to guide-movement -->
