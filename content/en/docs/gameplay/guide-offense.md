@@ -66,7 +66,7 @@ You will need to communicate the side an enemy is from your `Defenses` point of 
 
 As an example, if you are on the left side of the map and see an enemy `Capper` moving to your left, you can say "Enemy `Capper` is on the left side". Calling out the name of the player is beneficial to assist `Defense` at determining if the enemy is running multiple cappers or not.
 
-This is where learning routes as an `Offense` member can be advantageous because you can learn the specifics of recognizable routes. This knowledge provides the ability to give time estimates as well as give specific route descriptions. See the [Capper Guide](guide-cap) for more information.
+This is where learning routes as an `Offense` member can be advantageous because you can learn the specifics of recognizable routes. This knowledge provides the ability to give time estimates as well as give specific route descriptions. See the [Capper Guide](/docs/gameplay/guide-cap) for more information.
 
 Spotting enemy `Offense` members also assist `Defense`. Allowing your `LD` or `MD` to venture out and kill them before they reach your stand, ruining their timing. 
 

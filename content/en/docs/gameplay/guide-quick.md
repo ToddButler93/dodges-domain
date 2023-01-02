@@ -27,7 +27,7 @@ These are PUG-specific recommendations to make the game more enjoyable for every
 ## Roles
 ### Offense
 
-[Offense Guide](guide-offense)
+[Offense Guide](/docs/gameplay/guide-offense)
 
 #### Major Responsibilities
 - Kill the enemy `heavy on flag` and enemy `light defense` `5 seconds` before your `capper` will grab.
@@ -40,7 +40,7 @@ These are PUG-specific recommendations to make the game more enjoyable for every
 - `Walk` flags with your other `offense` members.
 
 ### Heavy on Flag
-<!--[Heavy on Flag Guide](guide-hof)-->
+<!--[Heavy on Flag Guide](/docs/gameplay/guide-hof)-->
 #### Major Responsibilities
 - Stop the enemy `capper.`
 - Stop enemy `walks.`
@@ -51,7 +51,7 @@ These are PUG-specific recommendations to make the game more enjoyable for every
 - Avoid being shot if possible.
 
 ### light/medium defense
-<!--[light/medium defense Guide](guide-defense)-->
+<!--[light/medium defense Guide](/docs/gameplay/guide-defense)-->
 #### Major Responsibilities
 - Kill enemy the `offense` members.
 - Return flags.
@@ -62,7 +62,7 @@ These are PUG-specific recommendations to make the game more enjoyable for every
 - If the enemy `capper` has recently died, assist any walks your `offense` may be doing or meet your `capper.`
 
 ### Sniper
-<!--[Sniper Guide](guide-snipe)-->
+<!--[Sniper Guide](/docs/gameplay/guide-snipe)-->
 #### Major Responsibilities
 - Spot/kill the enemy `capper` at all times.
 - Call out a time and direction the enemy cap will be.
@@ -76,7 +76,7 @@ These are PUG-specific recommendations to make the game more enjoyable for every
 
 ### Capper
 
-[Capper Guide](guide-cap)
+[Capper Guide](/docs/gameplay/guide-cap)
 
 #### Major Responsibilities
 - Grab and capture the enemy flag.
