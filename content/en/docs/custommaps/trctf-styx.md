@@ -4,7 +4,7 @@ title: Styx - CTF Map
 linkTitle: Styx
 tags: [dodges-maps, community-content]
 ---
-[How do I play this?](../../guide-install-setup#playing-community-maps)
+[How do I play this?](/docs/guide-install-setup#playing-community-maps)
 
 ![Styx Spawn](/img/maps/styx-spawn.png)
 

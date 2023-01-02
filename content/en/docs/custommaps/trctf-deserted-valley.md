@@ -4,7 +4,7 @@ title: Deserted Valley - CTF Map
 linkTitle: Deserted Valley
 tags: [dodges-maps, community-content]
 ---
-[How do I play this?](../../guide-install-setup#playing-community-maps)
+[How do I play this?](/docs/guide-install-setup#playing-community-maps)
 
 ![Deserted Valley Overview](/img/maps/deserted-valley-overview.png)
 

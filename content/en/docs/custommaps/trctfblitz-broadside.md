@@ -4,7 +4,7 @@ title: Broadside - CTF Blitz Map
 linkTitle: Broadside
 tags: [krogoth-maps, community-content]
 ---
-[How do I play this?](../../guide-install-setup#playing-community-maps)
+[How do I play this?](/docs/guide-install-setup#playing-community-maps)
 
 <iframe width="852" height="480" src="https://www.youtube.com/embed/bPO25lVe2tc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 

@@ -6,12 +6,13 @@ weight: 3
 tags: [role-guides, pugs]
 ---
 
-[Glossary](../guide-quick#glossary)
-
+[Glossary](/docs/gameplay/guide-quick#glossary)
+### Real Basics
+<!-- 
 <video width="100%" height="auto" autoplay="true" muted loop preload="metadata">
   <source src="/video/cap-arx-back.webm" type="video/webm"></source>Your browser does not support .webm video.
 </video>
-
+-->
 ## Gaining Speed
 ### Real Basics
 <!-- TODO Move to guide-movement -->
@@ -34,7 +35,7 @@ tags: [role-guides, pugs]
 - While you have no energy, it is best to spam your jet key rather than hold it down.
 
 ### How do cappers consistently grab the flag fast?
-- [Routes](guide-cap#show-me-some-routes), learn them. 
+- [Routes](#show-me-some-routes), learn them. 
 
 ### How do cappers change direction so abruptly? 
 - Rock bounces which can take many hours to learn to very little time to learn.

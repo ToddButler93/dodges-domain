@@ -4,7 +4,7 @@ title: Blues - CTF Map
 linkTitle: Blues
 tags: [dodges-maps, community-content]
 ---
-[How do I play this?](../../guide-install-setup#playing-community-maps)
+[How do I play this?](docs/guide-install-setup#playing-community-maps)
 
 ![Blues](/img/maps/blues-bases.png)
 

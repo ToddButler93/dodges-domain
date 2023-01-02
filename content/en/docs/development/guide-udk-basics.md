@@ -47,7 +47,7 @@ Hit finish.
 
 Right click the terrain and select Actor Properties <kbd>F4</kbd>. This can be found under View then Actor Properties. 
 
-[What is an actor in UDK?](guide-udk-basics#glossary)
+[What is an actor in UDK?](#glossary)
 
 To confirm a setting, make sure you hit enter after typing/pasting in the value.
 
@@ -81,7 +81,7 @@ Under the Actor Classes Tab use the search to find SkyLight.
 
 Simply drag SkyLight to your scene.
 
-[Lost where it went?](guide-udk-basics#my-things-have-disapeared)
+[Lost where it went?](#my-things-have-disapeared)
 
 Open Actor Properties <kbd>F4</kbd> for the SkyLight you just added. 
 
@@ -101,7 +101,7 @@ Under the Actor Classes Tab use the search to find DominantDirectionalLight.
 
 Simply drag DominantDirectionalLight to your scene.
 
-[Lost where it went?](guide-udk-basics#my-things-have-disapeared)
+[Lost where it went?](#my-things-have-disapeared)
 
 Open Actor Properties <kbd>F4</kbd> for the DominantDirectionalLight you just added. 
 
@@ -117,7 +117,7 @@ If you aren't sure on how to do this you can Set Rotation Pitch to -42.60° in t
 
 Now that our map is lit we can start adding some TribesAscend Base Assets.
 
-[Save your level](guide-udk-basics#step-2---save-level).
+[Save your level](#step-2---save-level).
 
 ## Step 4 - Add Base Assets
 
@@ -131,7 +131,7 @@ Under the Actor Classes Tab use the search "BloodEagle" to find Blood Eagle spec
 
 First lets drag in TrCTFBase_BloodEagle and open our frequent friend Actor Properties <kbd>F4</kbd>.
 
-[Lost where it went?](guide-udk-basics#my-things-have-disapeared)
+[Lost where it went?](#my-things-have-disapeared)
 
 - Set Location <span style="color:red">X</span> = 17750, <span style="color:green">Y</span> = 0 and <span style="color:blue">Z</span> = 59 for now. 
 - Set Group to "BloodEagle".
@@ -195,7 +195,7 @@ Now that we know this, we need to set our TrVehicleStation_BloodEagle m_Vehicle 
 
 Select our TrVehicleStation_BloodEagle actor and open Actor Properties <kbd>F4</kbd>.
 
-[Lost where it went?](guide-udk-basics#my-things-have-disapeared)
+[Lost where it went?](#my-things-have-disapeared)
 
 - Set m_Vehicle Pad to our TrVehiclePad actors name.
 
@@ -205,7 +205,7 @@ Once you hit enter the value will altar, this is normal.
 
 Now you have setup the assets for Blood Eagle. Now for Diamond Sword!
 
-[Save your level](guide-udk-basics#step-2---save-level).
+[Save your level](#step-2---save-level).
 
 ![](/img/development/blood-eagle-base.png)
 
@@ -219,7 +219,7 @@ This time we will do grouping a little differently. **Don't** set the group prop
 
 First lets drag in TrCTFBase_DiamondSword and open our frequent friend Actor Properties <kbd>F4</kbd>.
 
-[Lost where it went?](guide-udk-basics#my-things-have-disapeared)
+[Lost where it went?](#my-things-have-disapeared)
 
 - Set Location <span style="color:red">X</span> = -17750, <span style="color:green">Y</span> = 0 and <span style="color:blue">Z</span> = 59 for now. 
 
@@ -274,7 +274,7 @@ Now that we know this, we need to set our TrVehicleStation_DiamondSword m_Vehicl
 
 Select our TrVehicleStation_DiamondSword actor and open Actor Properties <kbd>F4</kbd>.
 
-[Lost where it went?](guide-udk-basics#my-things-have-disapeared)
+[Lost where it went?](#my-things-have-disapeared)
 
 - Set m_Vehicle Pad to our TrVehiclePad actors name.
 
@@ -302,7 +302,7 @@ On the right hand side you should be able to see an actor properties area.
 
 Hit the R button again to refresh the actors and you should see they are all set to DiamondSword. Clear your Filter Text and hit the R Button to refresh before leaving.
 
-[Save your level](guide-udk-basics#step-2---save-level).
+[Save your level](#step-2---save-level).
 
 ## Step 5 - Add Player Spawns
 
@@ -328,18 +328,18 @@ The location for this spawn for now will be
 
 Remember to group these to their respective teams.
 
-[Save your level](guide-udk-basics#step-2---save-level).
+[Save your level](#step-2---save-level).
 
 <!--- TODO Commenting out as incomplete.
 ## Step 6 - Modify Terrain
 
 
 
-[Save your level](guide-udk-basics#step-2---save-level).
+[Save your level](#step-2---save-level).
 
 ## Step 7 - Add Terrain Texture
 
-[Save your level](guide-udk-basics#step-2---save-level).
+[Save your level](#step-2---save-level).
 
 ## Step 8 - Add Static Mesh
 
@@ -347,7 +347,7 @@ Remember to group these to their respective teams.
 
 ## Step 9 - Fix Mesh Material(Textures)
 
-[Save your level](guide-udk-basics#step-2---save-level).
+[Save your level](#step-2---save-level).
 
 ## Step 10 - Add Fog
 
@@ -355,12 +355,12 @@ Next, we want to grab a Exponential Height Fog asset from our Actor Classes sear
 
 For this particular fog asset there are two light colors which reference our dominant directional light. Change these how you see fit.
 
-[Save your level](guide-udk-basics#step-2---save-level).
+[Save your level](#step-2---save-level).
 ## Step 11 - Add Boundaries
 -->
 <!--TODO Explain how to set WorldInfo KillZ-->
 <!--
-[Save your level](guide-udk-basics#step-2---save-level).
+[Save your level](#step-2---save-level).
 -->
 ## FAQ
 

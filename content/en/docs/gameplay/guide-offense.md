@@ -5,7 +5,7 @@ linkTitle: Offense
 weight: 2
 tags: [role-guides, pugs]
 ---
-[Glossary](../guide-quick#glossary)
+[Glossary]/docs/gameplay/guide-quick#glossary)
 
 Everything you do relies on timing with your `Capper`. Since the `Capper` looks to move the enemy flag, your goal is to kill everything that can prevent `Capper` from escaping successfully.
 
