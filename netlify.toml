@@ -1,5 +1,5 @@
 [build]
-    command = "hugo"
+    command = "cd themes/docsy && git submodule update -f --init && cd ../.. && hugo"
     publish = "public"
 [build.environment]
     HUGO_VERSION = "0.104.3"
