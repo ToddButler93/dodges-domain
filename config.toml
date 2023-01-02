@@ -1,6 +1,6 @@
 baseURL = "/"
 title = "Dodges Domain"
-theme = ["hugo-video", "docsy"]
+theme = ["hugo-video"]
 # Language settings
 contentDir = "content/en"
 defaultContentLanguage = "en"
