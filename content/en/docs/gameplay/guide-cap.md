@@ -7,6 +7,7 @@ tags: [role-guides, pugs]
 ---
 
 [Glossary](/docs/gameplay/guide-quick#glossary)
+
 ### Real Basics
 
 <video width="100%" height="auto" autoplay="true" muted loop preload="metadata">
