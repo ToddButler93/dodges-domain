@@ -17,10 +17,10 @@ Under Payday 2s launch options, add `-skip_intro` to skip intro videos.
 ### Required
 - [SuperBLT](https://superblt.znix.xyz/)
 - [Beardlib](https://modworkshop.net/mod/14924)
+- [HopLib](https://modworkshop.net/mod/21431)
 
 ### Weapons
 - [WeaponLib](https://modworkshop.net/mod/24177)
-- [WeaponLib Fixes](https://modworkshop.net/mod/29987#outstanding-issues)
 - [Vanilla Mod Pack Volume One](https://modworkshop.net/mod/24482)
 - [Vanilla Mod Pack Volume Two](https://modworkshop.net/mod/28248)
 - [Vanilla Mod Pack Melee Expansion](https://modworkshop.net/mod/26545)
@@ -34,7 +34,7 @@ Under Payday 2s launch options, add `-skip_intro` to skip intro videos.
 - [Optional Skin Attachments](https://modworkshop.net/mod/25474)
 - [Less inaccurate weapon laser](https://pd2mods.z77.fr/less_inaccurate_weapon_laser.html)
 - [Celer](https://pd2mods.z77.fr/celer.html)
-- [Map-Based Optimizations](https://modworkshop.net/mod/30521)
+- [Map-Based Optimizations](https://github.com/RedFlamer/Map-Based-Optimizations)
 - [Load steam inventory once](https://modworkshop.net/mod/24008)
 - [No duplicated bullets](https://pd2mods.z77.fr/no_duplicated_bullets.html)
 - [No Prints](https://modworkshop.net/mod/21549)
@@ -63,10 +63,7 @@ Under Payday 2s launch options, add `-skip_intro` to skip intro videos.
 
 ### Visual
 - [Intro Cinematics](https://modworkshop.net/mod/27164)
-- [No Dirt Camera](https://modworkshop.net/mod/833)
-- [Bag Carrying Tilt Removal](https://modworkshop.net/mod/16487)
 - [Switch Underbarrel In Steelsight](https://pd2mods.z77.fr/switch_underbarrel_in_steelsight.html)
-- [Unique loot](https://modworkshop.net/mod/27711)
 - [Bag Contour](https://pdmods-arc.berigora.net/paydaymods.com/mods/85/BC.html)
 - [Pager contour](https://pd2mods.z77.fr/pager_contour.html)
 - [Fading contour](https://pd2mods.z77.fr/fading_contour.html)
@@ -77,8 +74,25 @@ Under Payday 2s launch options, add `-skip_intro` to skip intro videos.
 
 #### UI
 - [VanillaHUD Plus](https://modworkshop.net/mod/25629)
+- [Rich Presence Definitive](https://modworkshop.net/mod/40647)
+
+{{% alert title="Note" %}}
+With using Rich Presence & VanillaHUD Plus
+Open Core.lua and replace this
+
+["lib/managers/platformmanager"] = { "RichPresence.lua" },
+["lib/managers/skirmishmanager"] = { "RichPresence.lua" },
+
+on this
+
+-- ["lib/managers/platformmanager"] = { "RichPresence.lua" },
+-- ["lib/managers/skirmishmanager"] = { "RichPresence.lua" },
+{{% /alert %}}
+
+- [Better Assault Indicator](https://modworkshop.net/mod/22712)
 - [Enhanced Hitmarkers](https://pd2mods.z77.fr/enhanced_hitmarkers.html)
 - [Drag and Drop Inventory](https://pd2mods.z77.fr/drag_and_drop_inventory.html)
+- [Multiple Weapon Mod Rows](https://modworkshop.net/mod/39375)
 - [Tailor Expansion](https://modworkshop.net/mod/29063)
 - [Alphasort Mods](https://pd2mods.z77.fr/alphasort_mods.html)
 - [Crime.net performance improvements](https://modworkshop.net/mod/23704)
@@ -124,7 +138,7 @@ Under Payday 2s launch options, add `-skip_intro` to skip intro videos.
 ### Game Changes
 - [Payday 2 Restoration](https://modworkshop.net/mod/428)
 
-{{% alert title="Caution" color="caution" %}}
+{{% alert title="Warning" color="warning" %}}
 Incompatible mods with `Payday 2 Restoration`:
 
 - Iter
