@@ -34,7 +34,7 @@ When Windows 11 asks for a network simply <kbd>Alt+F4</kbd>. A new window will a
 Once the operating system boots, you can plug the network cable back in.
 
 ### Step 2 - Drivers
-{{% alert title="Caution" color="caution" %}}
+{{% alert title="Warning" color="warning" %}}
 Make sure Windows is up to date before proceeding.
 {{%/alert%}}
 
@@ -44,7 +44,7 @@ Make sure Windows is up to date before proceeding.
 Download indexers. Download all drivers except GPU drivers.
 
 #### DDU
-{{% alert title="Caution" color="caution" %}}
+{{% alert title="Warning" color="warning" %}}
 Download the latest version of NVidia drivers and unplug the network cable.
 {{%/alert%}}
 
@@ -351,7 +351,7 @@ Useful for cleaning up old drivers.
 
 Snappy Driver Installer Origin is a decent open-source automatic driver installer. 
 
-{{% alert title="Caution" color="caution" %}}
+{{% alert title="Warning" color="warning" %}}
 A manufacturer's website is the best location to download drivers. 
 
 Some of the latest drivers might not be compatible with your particular configuration.

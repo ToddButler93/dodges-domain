@@ -19,11 +19,6 @@ sidebar_search_disable: true
 
 ## Re:LCS Beta 6.0 Build 15 by Ryadica926
 
-{{% alert title="Tip" %}}**Tip** is a text{{% /alert %}}
-{{% alert title="Caution" color="caution" %}}**Caution!** is a text{{% /alert %}}
-{{% alert title="Warning" color="warning" %}}**Warning!** is a text{{% /alert %}}
-{{% alert title="Danger" color="danger" %}}**Danger!** is a text{{% /alert %}}
-
 {{%alert title="Info" color="primary" %}}
 If you're creating a new diagram, be sure to File -> Export in either svg or png format (svg is usually the best choice) and ensure the "Include a copy of my diagram" is selected so it can be edited again later.
 {{%/alert%}}
@@ -48,7 +43,7 @@ Inside `ReLCS.ini` set `DebugMode=0` and `MultiSampling=8.`
 
 - [Framerate Vigilante](https://www.mixmods.com.br/2019/06/framerate-vigilante.html)
 
-{{% alert title="Caution" color="caution" %}}
+{{% alert title="Warning" color="warning" %}}
 Framerate Vigilante doesn't solve all FPS-related bugs. 
 {{%/alert%}}
 

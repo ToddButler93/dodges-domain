@@ -164,7 +164,7 @@ $$
 $$
 Distance = 40.98561601
 $$
-{{% alert title="Caution" color="caution" %}}
+{{% alert title="Warning" color="warning" %}}
 Slight integer cast rounding error. (1599.84 gets rounded to 1599)
 {{%/alert%}}
 {{%alert title="Info" color="primary" %}}
@@ -177,7 +177,7 @@ $$
 $$
 Distance = 82.0225281602
 $$
-{{% alert title="Caution" color="caution" %}}
+{{% alert title="Warning" color="warning" %}}
 Slight integer cast rounding error (799.92).
 {{%/alert%}}
 {{%alert title="Info" color="primary" %}}
