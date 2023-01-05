@@ -15,7 +15,7 @@ menu:
 <div class="row">
     {{< gridimage title="Acheron" src="/img/maps/acheron-spawn.png" url="/docs/custommaps/trctf-acheron/" >}}
     {{< gridimage title="Blues" src="/img/maps/blues-bases.png" url="/docs/custommaps/trctf-blues/" >}}
-    {{< gridimage title="Broadside" src="http://library.theexiled.pwnageservers.com/upload/Ascend/Maps/TrCTFBlitz-Broadside.jpg" url="/docs/custommaps/trctfblitz-broadside/" >}}
+    {{< gridimage title="Broadside" src="/img/maps/broadside-overview.png" url="/docs/custommaps/trctfblitz-broadside/" >}}
     {{< gridimage title="Deserted Valley" src="/img/maps/deserted-valley-overview.png" url="/docs/custommaps/trctf-deserted-valley/" >}}
     {{< gridimage title="Elysian Battleground" src="/img/maps/elysian-battleground-overview.png" url="/docs/custommaps/trarena-elysian-battleground/" >}}
     {{< gridimage title="Fracture" src="/img/maps/fracture-spawn.png" url="/docs/custommaps/trctf-fracture/" >}}
