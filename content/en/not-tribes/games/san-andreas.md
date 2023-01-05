@@ -3,13 +3,9 @@ id: san-andreas
 title: San Andreas Modding
 linkTitle: San Andreas Modding
 weight: 2
-menu:
-  not-tribes:
-    weight: 2
 type: docs
 sidebar_search_disable: true
 ---
-# Grand Theft Auto San Andreas
 
 ## Definitive Edition
 

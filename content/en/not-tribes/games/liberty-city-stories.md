@@ -3,9 +3,6 @@ id: liberty-city-stories
 title: Liberty City Stories
 linkTitle: Liberty City Stories
 weight: 3
-menu:
-  not-tribes:
-    weight: 3
 type: docs
 sidebar_search_disable: true
 ---

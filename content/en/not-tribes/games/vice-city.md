@@ -3,13 +3,9 @@ id: vice-city
 title: Vice City Modding
 linkTitle: Vice City Modding
 weight: 1
-menu:
-  not-tribes:
-    weight: 1
 type: docs
 sidebar_search_disable: true
 ---
-# Grand Theft Auto Vice City
 ## Definitive Edition
 
 ### ModList

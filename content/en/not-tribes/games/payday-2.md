@@ -3,13 +3,9 @@ id: payday-2
 title: Payday 2
 linkTitle: Payday 2
 weight: 5
-menu:
-  not-tribes:
-    weight: 5
 type: docs
 sidebar_search_disable: true
 ---
-# Payday 2
 Under Payday 2s launch options, add `-skip_intro` to skip intro videos.
 
 ## Mod List
