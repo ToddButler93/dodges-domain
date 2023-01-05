@@ -12,20 +12,15 @@ menu:
 	Install Community Maps<i class="fa-solid fa-download ml-2 "></i>
 </a>
 
-
-Acheron             |  Blues |  Broadside
-:-------------------------:|:-------------------------:|:-------------------------:
-[![Acheron](/img/maps/acheron-spawn.png)](/docs/custommaps/trctf-acheron/)  |  [![Blues](/img/maps/blues-bases.png)](/docs/custommaps/trctf-blues/) |  <iframe  src="https://www.youtube.com/embed/bPO25lVe2tc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-Deserted Valley             |  Elysian Battleground |  Fracture
-:-------------------------:|:-------------------------:|:-------------------------:
-[![Deserted Valley](/img/maps/deserted-valley-overview.png)](/docs/custommaps/trctf-deserted-valley/)  |  [![Elysian Battleground](/img/maps/elysian-battleground-overview.png)](/docs/custommaps/trarena-elysian-battleground/) |  [![Fracture](/img/maps/fracture-mid.png)](/docs/custommaps/trctf-fracture/)
-
-Incidamus             |  Periculo |  Phlegathon
-:-------------------------:|:-------------------------:|:-------------------------:
-[![Incidamus](/img/maps/incidamus-mid.png)](/docs/custommaps/trctf-incidamus/)  |  [![Periculo](/img/maps/periculo-shot.png)](/docs/custommaps/trctf-periculo/) |  [![Phlegathon](/img/maps/phlegathon-overview.png)](/docs/custommaps/trctf-phlegathon/)
-
-Styx             |   |  
-:-------------------------:|:-------------------------:|:-------------------------:
-[![Styx](/img/maps/styx-spawn.png)](/docs/custommaps/trctf-styx/)  |   |  
-
+<div class="row">
+    {{< gridimage title="Acheron" src="/img/maps/acheron-spawn.png" url="/docs/custommaps/trctf-acheron/" >}}
+    {{< gridimage title="Blues" src="/img/maps/blues-bases.png" url="/docs/custommaps/trctf-blues/" >}}
+    {{< gridimage title="Broadside" src="http://library.theexiled.pwnageservers.com/upload/Ascend/Maps/TrCTFBlitz-Broadside.jpg" url="/docs/custommaps/trctfblitz-broadside/" >}}
+    {{< gridimage title="Deserted Valley" src="/img/maps/deserted-valley-overview.png" url="/docs/custommaps/trctf-deserted-valley/" >}}
+    {{< gridimage title="Elysian Battleground" src="/img/maps/elysian-battleground-overview.png" url="/docs/custommaps/trarena-elysian-battleground/" >}}
+    {{< gridimage title="Fracture" src="/img/maps/fracture-spawn.png" url="/docs/custommaps/trctf-fracture/" >}}
+    {{< gridimage title="Incidamus" src="/img/maps/incidamus-mid.png" url="/docs/custommaps/trctf-incidamus/" >}}
+    {{< gridimage title="Periculo" src="/img/maps/periculo-shot.png" url="/docs/custommaps/trctf-periculo" >}}
+    {{< gridimage title="Phlegathon" src="/img/maps/phlegathon-river.png" url="/docs/custommaps/trctf-phlegathon/" >}}
+    {{< gridimage title="Styx" src="/img/maps/styx-spawn.png" url="/docs/custommaps/trctf-styx/" >}}
+</div>
