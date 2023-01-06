@@ -56,6 +56,7 @@ Under Payday 2s launch options, add `-skip_intro` to skip intro videos.
 - [Straight to Main Menu](https://pdmods-arc.berigora.net/paydaymods.com/mods/215/straighttomainmenu.html)
 - [The Fixes](https://modworkshop.net/mod/23732)
 - [Tweak Data fixed](https://modworkshop.net/mod/21098)
+- [Stop Wasting Updates](https://github.com/RedFlamer/Stop-Wasting-Updates)
 
 ### Visual
 - [Intro Cinematics](https://modworkshop.net/mod/27164)
@@ -67,6 +68,8 @@ Under Payday 2s launch options, add `-skip_intro` to skip intro videos.
 - [Civilian ! marker for drop-ins](https://pd2mods.z77.fr/civilian_marker_for_dropins.html)
 - [Less Clones More Faces](https://modworkshop.net/mod/25481)
 - [Yet Another Flashlight](https://pd2mods.z77.fr/yet_another_flashlight.html)
+- [Fading Ammobox Contours](https://modworkshop.net/mod/37310)
+- [Unique Loot REBOOT](https://modworkshop.net/mod/27711)
 
 #### UI
 - [VanillaHUD Plus](https://modworkshop.net/mod/25629)
@@ -98,6 +101,8 @@ on this
 - [Loading screen info](https://pdmods-arc.berigora.net/paydaymods.com/mods/224/loadingscreeninfo.html)
 - [Useful perk deck descriptions](https://modworkshop.net/mod/23905#description)
 - [Show remaining XP](https://modworkshop.net/mod/31702)
+- [Disable Quick Play](https://modworkshop.net/mod/34995)
+- [No more ads](https://modworkshop.net/mod/34268)
 
 ### Gameplay
 - [Reload then run](https://pd2mods.z77.fr/reload_then_run.html)
@@ -115,7 +120,8 @@ on this
 - [Graze doesn't kill civilians](https://modworkshop.net/mod/22987)
 - [Iter](https://pd2mods.z77.fr/iter.html)
 - [Make Technician Great Again!](https://pd2mods.z77.fr/make_technician_great_again.html)
-
+- [BerserkerBlocker](https://github.com/rockymoto517/BerserkerBlocker)
+- [Extended Continental Coin Shop Goonmod Standalone](https://modworkshop.net/mod/19109)
 ### Heists
 - [Enemy Spawner](https://modworkshop.net/mod/20663)
 - [Proving Grounds](https://modworkshop.net/mod/29905)
@@ -126,6 +132,11 @@ on this
 - [Better Loading Screens](https://modworkshop.net/mod/34237)
 - [Readable Clues for heists](https://modworkshop.net/mod/789)
 - [LemonCat MacroPack Smoke](https://modworkshop.net/mod/15173)
+- [Compressed MurkyHumvee](https://modworkshop.net/mod/25896)
+- [White House 'Optimization'](https://modworkshop.net/mod/29447)
+- [Visual Fixes](https://modworkshop.net/mod/37161)
+- [Stop Painting My Stuff (SPMS)](https://modworkshop.net/mod/36338)
+- [Correct/Fixed Normal maps](https://modworkshop.net/mod/24922)
 
 ### Other
 - [Game Crash Counter](https://modworkshop.net/mod/32737)
