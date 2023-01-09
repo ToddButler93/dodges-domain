@@ -64,6 +64,12 @@ Select the map pack you want and hit install. This will automatically download a
 
 [Still having issues?](#troubleshooting)
 
+## Linux Installation
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="/docs/linux-install">
+	Linux Guide<i class="fa-solid fa-download ml-2 "></i>
+</a>
+
 ## Troubleshooting
 ### Launcher doesn't know where Tribes is installed? 
 
