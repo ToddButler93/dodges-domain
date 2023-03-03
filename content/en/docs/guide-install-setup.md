@@ -15,6 +15,12 @@ tags: [tribes-information]
 
 <iframe src="https://store.steampowered.com/widget/17080/" frameborder="0" width="100%" height="190"></iframe>
 
+Or
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://f000.backblazeb2.com/file/tribes-zip/Tribes_Ascend_Parting_Gifts.zip">
+	Download Tribes Ascend Parting Gifts<i class="fa-solid fa-download ml-2 "></i>
+</a>
+
 #### Step 2 - Download the Tribes Launcher
 
 {{% alert title="Note" %}}
