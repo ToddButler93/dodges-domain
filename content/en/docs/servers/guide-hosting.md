@@ -44,9 +44,9 @@ Using UFW:
 Where '*username*' is the name of the user.
 
 ###### 0.4 Get TA Server Image
-`docker pull public.ecr.aws/i2q9d4v7/taserver:latest`
+`docker pull taserver:latest-maps`
 
-`docker tag public.ecr.aws/i2q9d4v7/taserver:latest taserver`
+`docker tag taserver:latest-maps taserver`
 
 ###### 0.5 Download Helper Script
 `wget -O taserver.sh "https://raw.githubusercontent.com/JigglyJoogins/taserver-deploy/master/docker/taserver.sh"`
