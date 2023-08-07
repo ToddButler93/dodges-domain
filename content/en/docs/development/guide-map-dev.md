@@ -8,6 +8,8 @@ menu:
     weight: 5
 ---
 
+If you are interested in map development I recommend joining the [Tribes Ascend Community Discord](https://discord.gg/dd8JgzJ) and asking for assistance. Either myself or others are excited to help out new developers.
+
 ## Setting up UDK
 
 ### Step 1
@@ -17,6 +19,23 @@ You need to download and install [UDK build 7748 BETA January 2011](http://libra
 You need to download the [TA actor classes](http://library.theexiled.pwnageservers.com/file.php?id=2948). Extract the `TribesGame` folder to `\UDK\UDK-2011-01\Development\Src\` and the `TA_BaseAssets.upk` to `\UDK\UDK-2011-01\UDKGame\Content\`.
 
 You need to download all the [TA package files](https://drive.google.com/file/d/1u_nItIPxeA79Im8tXgg3Q41RS2iBAT_O/view?usp=sharing). Extract these to `\UDK\UDK-2011-01\UDKGame\Content`.
+
+It is recommended to use the latest map file releases to give yourself a head start with assets:
+
+- [Dodge's Map Pack](https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/dodge-map-pack.zip)
+- [Dodge's Map Pack 2](https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/dodge-map-pack-2.zip)
+- [Dodge's Map Pack 3](https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/dodge-map-pack-3.zip)
+- [Dodge's Map Pack 4](https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/dodge-map-pack-4.zip)
+- [Dodge's Treacherous Series](https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/dodge-treacherous-series.zip)
+- [Evil's Map Pack](https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/evil-map-pack.zip)
+- [Evil's Map Pack 2](https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/evil-map-pack-2.zip)
+- [Krogoth's Map Pack](https://tamods-update.s3-ap-southeast-2.amazonaws.com/packages/krogoth-map-pack.zip)
+- [Nerve's Map Pack](https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/nerve-map-pack.zip)
+- [Kali's Map Pack](https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/kali-map-pack.zip)
+
+These zip files have a directory strcture which is `!TRIBESDIR\TribesGame\CookedPC\Maps\`.
+
+All .upk files will go into your `\UDK\UDK-2011-01\UDKGame\Content\` folder. Where as the maps can go into `\UDK\UDK-2011-01\UDKGame\Content\Maps`.
 
 Note: You will need the Package Files to play and test the map on the [leaked dev build](#launching-custom-maps-on-leaked-dev-build) and [official client](/docs/guide-install-setup#playing-custom-maps-on-the-official-game), it is best to copy these now before you delete the downloaded archive. 
 
@@ -38,8 +57,12 @@ Map files(.fmap) require specific file naming to work in Tribes Ascend. `TrGameM
 
 ### Step 1
 
-[Here is a download](https://drive.google.com/file/d/1-_lC6gJJP8DMcG3_TOGvT0xf0KApyAe-/view?usp=sharing) to a basic CTF map. This should be placed in `\UDK\UDK-2011-01\UDKGame\Content\Maps\`.
-Launch UDK and open the map you just placed in your Maps folder.
+- [Basic CTF Map Download](https://drive.google.com/file/d/1nZ1McI3DhilrHNxbm5a0KVFPkDy9WfA0/view?usp=sharing)
+- [Basic Arena Map Download](https://drive.google.com/file/d/1doKK3ycGZhN3tjQJ7khoXQPRP8pQjDZZ/view?usp=sharing)
+
+These should be placed in `\UDK\UDK-2011-01\UDKGame\Content\Maps\`.
+
+Launch UDK and open the map you wish to edit in your Maps folder.
 
 ### Step 2
 
@@ -160,7 +183,7 @@ In the official version of the game, the shader compiler crashes when attempting
 
 ##### Step 1
 
-Download a `RefShaderCache-PC-D3D-SM3.upk` which has been modified, paste it into `\UDK\UDK-2011-01\UDKGame\Content\`. If you've played on custom maps before, the one from your `\Tribes\TribesGame\CookedPC\` folder should work.
+Download the latest master [RefShaderCache-PC-D3D-SM3.upk](https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/master-refshadercache.zip), paste it into `\UDK\UDK-2011-01\UDKGame\Content\`. If you've played on custom maps before, the one from your `\Tribes\TribesGame\CookedPC\` folder should work.
 
 ##### Step 2
 
