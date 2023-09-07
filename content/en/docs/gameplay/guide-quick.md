@@ -50,7 +50,7 @@ These are PUG-specific recommendations to make the game more enjoyable for every
 - Only leave the stand during a `stand-off.`
 - Avoid being shot if possible.
 
-### light/medium defense
+### Light/Medium Defense
 <!--[light/medium defense Guide](/docs/gameplay/guide-defense)-->
 #### Major Responsibilities
 - Kill enemy the `offense` members.
