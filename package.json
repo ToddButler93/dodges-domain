@@ -1,6 +1,6 @@
 {
   "name": "dodges-domain",
-  "version": "0.1.0",
+  "version": "3.0.0-alpha",
   "private": true,
   "scripts": {
     "build": "next build",
