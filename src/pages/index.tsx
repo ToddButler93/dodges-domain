@@ -5,7 +5,11 @@ import Link from "next/link";
 import { api } from "~/utils/api";
 
 export default function Home() {
-  const hello = api.post.hello.useQuery({ text: "from tRPC" });
+  const {data} = api.post.getAll.useQuery();
+
+
+  console.log(data);
+
   return (
     <>
       <Head>
@@ -21,6 +25,11 @@ export default function Home() {
           <SignedOut>
             <SignInButton />
           </SignedOut>
+        </div>
+        <div>
+          {data?.map((post) => (
+          <div key={post.id}>{post.content}</div>
+          ))}
         </div>
       </main>
     </>

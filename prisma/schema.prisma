@@ -6,15 +6,16 @@ generator client {
 }
 
 datasource db {
-    provider = "sqlite"
+    provider = "mysql"
     url      = env("DATABASE_URL")
 }
 
 model Post {
     id        Int      @id @default(autoincrement())
-    name      String
     createdAt DateTime @default(now())
-    updatedAt DateTime @updatedAt
 
-    @@index([name])
+    content   String   @db.VarChar(255)
+    authorId  String
+
+    @@index([authorId])
 }
