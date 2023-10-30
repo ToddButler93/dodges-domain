@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Link from "next/link";
+import Link from "next/link";import { Card } from "@tremor/react";
 
 import { api } from "~/utils/api";
 
@@ -15,12 +15,11 @@ export default function Home() {
         <meta name="description" content="Dodges Domain, the output of his small brain." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="flex bg-zinc-900">
-        <div>
-          {data?.map((post) => (
-            <div key={post.id}>{post.content}</div>
-          ))}
-        </div>
+      
+      <div>
+        {data?.map((post) => (
+          <Card className="max-w-xs mx-auto" key={post.id}>{post.content}</Card>
+        ))}
       </div>
     </>
   );
