@@ -12,7 +12,7 @@ export default function Layout({ children }: Props) {
     <>
       <Flex className="flex flex-col justify-between">
         <Header />
-        <main className="flex items-center min-h-screen flex-col gap-6 py-4">
+        <main className="flex min-h-screen flex-col items-center gap-6 py-4">
           {children}
         </main>
         <Footer />

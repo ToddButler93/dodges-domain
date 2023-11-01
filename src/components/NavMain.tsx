@@ -1,8 +1,8 @@
 import Link from "next/link";
 
 export const NavMain = () => {
-    return (
-    <ul className="hidden items-end justify-center gap-6 sm:flex text-l font-medium">
+  return (
+    <ul className="text-l hidden items-end justify-center gap-6 font-medium sm:flex">
       <li>
         <Link
           href="/docs/guide-install-setup"
@@ -21,7 +21,7 @@ export const NavMain = () => {
           Gameplay Guides
         </Link>
       </li>
-      
+
       <li>
         <Link
           href="/docs/development/guide-map-dev"
@@ -31,7 +31,7 @@ export const NavMain = () => {
           Map Development
         </Link>
       </li>
-      
+
       <li>
         <Link
           href="/docs/custommaps"
@@ -41,7 +41,7 @@ export const NavMain = () => {
           Community Maps
         </Link>
       </li>
-      
+
       <li>
         <Link
           href="/docs/information"
@@ -51,7 +51,7 @@ export const NavMain = () => {
           Tribes Information
         </Link>
       </li>
-      
+
       <li>
         <Link
           href="/blog"
