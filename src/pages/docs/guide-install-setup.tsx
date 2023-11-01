@@ -44,7 +44,7 @@ export default function Home() {
               title="Info"
               color="teal"
             >
-              You will need the <Link href="https://aka.ms/vs/17/release/vc_redist.x86.exe">Microsoft Visual C++ x86 Redistributes</Link> if you don't have them already installed.
+              You will need the <Link href="https://aka.ms/vs/17/release/vc_redist.x86.exe">Microsoft Visual C++ x86 Redistributes</Link> if you don&apos;t have them already installed.
             </Callout>
         </div>
         <h2 className="text-4xl">Step 3 - Download the Tribes Launcher</h2>

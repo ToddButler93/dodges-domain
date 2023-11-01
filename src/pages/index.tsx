@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
-import Image from 'next/image'
+import Image from "next/image";
 import {   Card,
   Grid,
   Flex,
@@ -26,7 +26,7 @@ export default function Home() {
         ))}
       </Flex>
       <Card className="max-w-8xl text-center text-6xl py-12 bg-black" color="green">
-        <h1 className="py-6">Dodge's Domain</h1>            
+        <h1 className="py-6">Dodge&apos;s Domain</h1>            
           <Link href="/docs/guide-install-setup">
             <Button size="xl" color="teal">
             Install Tribes Ascend

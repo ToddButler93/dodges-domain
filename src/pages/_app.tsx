@@ -2,8 +2,6 @@
 import { type AppType } from "next/app";
 import { ClerkProvider } from "@clerk/nextjs";
 import { api } from "~/utils/api";
-import { Footer } from "../components/Footer";
-import { Header } from "../components/Header";
 
 import Layout from "../components/layout";
 
