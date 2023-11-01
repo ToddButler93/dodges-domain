@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 
 export const NavMain = () => {
     return (
-    <ul className="hidden items-end gap-10 sm:flex text-xl font-medium">
+    <ul className="hidden items-end justify-center gap-6 sm:flex text-l font-medium">
       <li>
         <Link
           href="/docs/guide-install-setup"
@@ -13,7 +13,7 @@ export const NavMain = () => {
           Installing Tribes
         </Link>
       </li>
-      <li className="w-max">
+      <li>
         <Link
           href="/docs/gameplay"
           className={`
