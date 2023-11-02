@@ -41,7 +41,7 @@ export default function Home() {
                 width={500}
                 height={500}
                 style={{ objectFit: "contain" }}
-                alt="Picture of the author"
+
               />
             </Card>
           </Link>
@@ -74,7 +74,7 @@ export default function Home() {
                 width={500}
                 height={500}
                 style={{ objectFit: "contain" }}
-                alt="Picture of the author"
+
               />
             </Card>
           </Link>
@@ -109,7 +109,7 @@ export default function Home() {
                 width={500}
                 height={500}
                 style={{ objectFit: "contain" }}
-                alt="Picture of the author"
+
               />
             </Card>
           </Link>

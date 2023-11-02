@@ -33,7 +33,7 @@ export default function Home() {
                   width={500}
                   height={500}
                   style={{ objectFit: "contain" }}
-                  alt="Picture of the author"
+  
                 />
               </Link>
               <Link className="w-full" href="steam://install/17080/">
