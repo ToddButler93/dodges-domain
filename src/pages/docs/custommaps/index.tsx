@@ -47,7 +47,7 @@ export default function Home() {
                 width={500}
                 height={500}
                 style={{ objectFit: "contain" }}
-
+                alt=""
               />
             </Link>
           </Card>
@@ -59,7 +59,7 @@ export default function Home() {
                 width={500}
                 height={500}
                 style={{ objectFit: "contain" }}
-
+                alt=""
               />
             </Link>
           </Card>
@@ -71,7 +71,7 @@ export default function Home() {
                 width={500}
                 height={500}
                 style={{ objectFit: "contain" }}
-
+                alt=""
               />
             </Link>
           </Card>
@@ -87,7 +87,7 @@ export default function Home() {
                 width={500}
                 height={500}
                 style={{ objectFit: "contain" }}
-
+                alt=""
               />
             </Link>
           </Card>
@@ -99,7 +99,7 @@ export default function Home() {
                 width={500}
                 height={500}
                 style={{ objectFit: "contain" }}
-
+                alt=""
               />
             </Link>
           </Card>
@@ -113,7 +113,7 @@ export default function Home() {
                 width={500}
                 height={500}
                 style={{ objectFit: "contain" }}
-
+                alt=""
               />
             </Link>
           </Card>
@@ -129,7 +129,7 @@ export default function Home() {
                 width={500}
                 height={500}
                 style={{ objectFit: "contain" }}
-
+                alt=""
               />
             </Link>
           </Card>
@@ -141,7 +141,7 @@ export default function Home() {
                 width={500}
                 height={500}
                 style={{ objectFit: "contain" }}
-
+                alt=""
               />
             </Link>
           </Card>
@@ -153,7 +153,7 @@ export default function Home() {
                 width={500}
                 height={500}
                 style={{ objectFit: "contain" }}
-
+                alt=""
               />
             </Link>
           </Card>
@@ -169,7 +169,7 @@ export default function Home() {
                 width={500}
                 height={500}
                 style={{ objectFit: "contain" }}
-
+                alt=""
               />
             </Link>
           </Card>
@@ -181,7 +181,7 @@ export default function Home() {
                 width={500}
                 height={500}
                 style={{ objectFit: "contain" }}
-
+                alt=""
               />
             </Link>
           </Card>
@@ -193,7 +193,7 @@ export default function Home() {
                 width={500}
                 height={500}
                 style={{ objectFit: "contain" }}
-
+                alt=""
               />
             </Link>
           </Card>
@@ -209,7 +209,7 @@ export default function Home() {
                 width={500}
                 height={500}
                 style={{ objectFit: "contain" }}
-
+                alt=""
               />
             </Link>
           </Card>
@@ -221,7 +221,7 @@ export default function Home() {
                 width={500}
                 height={500}
                 style={{ objectFit: "contain" }}
-
+                alt=""
               />
             </Link>
           </Card>
@@ -233,7 +233,7 @@ export default function Home() {
                 width={500}
                 height={500}
                 style={{ objectFit: "contain" }}
-
+                alt=""
               />
             </Link>
           </Card>
@@ -257,7 +257,7 @@ export default function Home() {
                 width={500}
                 height={500}
                 style={{ objectFit: "contain" }}
-
+                alt=""
               />
             </Link>
           </Card>
@@ -269,7 +269,7 @@ export default function Home() {
                 width={500}
                 height={500}
                 style={{ objectFit: "contain" }}
-
+                alt=""
               />
             </Link>
           </Card>
@@ -292,7 +292,7 @@ export default function Home() {
                 width={500}
                 height={500}
                 style={{ objectFit: "contain" }}
-
+                alt=""
               />
             </Link>
           </Card>
@@ -304,7 +304,7 @@ export default function Home() {
                 width={500}
                 height={500}
                 style={{ objectFit: "contain" }}
-
+                alt=""
               />
             </Link>
           </Card>
@@ -329,7 +329,7 @@ export default function Home() {
                 width={500}
                 height={500}
                 style={{ objectFit: "contain" }}
-
+                alt=""
               />
             </Link>
           </Card>
@@ -341,7 +341,7 @@ export default function Home() {
                 width={500}
                 height={500}
                 style={{ objectFit: "contain" }}
-
+                alt=""
               />
             </Link>
           </Card>
