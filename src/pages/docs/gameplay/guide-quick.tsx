@@ -2,7 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import { Button, Callout } from "@tremor/react";
 
-export default function Home() {
+export default function QuickPUGGuide() {
   return (
     <>
       <Head>
@@ -260,7 +260,7 @@ export default function Home() {
         </p>
         <p>
           In a <code>community server,</code> you must be a verified user for
-          your Loadouts to save. 
+          your Loadouts to save.
         </p>
         <h2 id="glossary">Glossary</h2>
         <table>

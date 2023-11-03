@@ -9,7 +9,7 @@ import {
   AccordionBody,
 } from "@tremor/react";
 
-export default function Home() {
+export default function GuideInstallSetup() {
   return (
     <>
       <Head>

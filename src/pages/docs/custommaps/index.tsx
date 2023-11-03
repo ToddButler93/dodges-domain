@@ -5,7 +5,7 @@ import { Card, Grid, Flex, Button } from "@tremor/react";
 
 import { api } from "~/utils/api";
 
-export default function Home() {
+export default function CustomMaps() {
   const { data } = api.post.getAll.useQuery();
 
   console.log(data);
