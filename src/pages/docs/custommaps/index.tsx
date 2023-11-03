@@ -41,9 +41,9 @@ export default function Home() {
         <Grid numItemsMd={1} numItemsLg={3} className="mx-auto gap-6">
           <Card className="mx-auto max-w-xl">
             <p className=" text-center text-3xl text-slate-50">Acheron</p>
-            <Link href="/docs/custommaps/trctf-offense">
+            <Link href="/docs/custommaps/trctf-acheron">
               <Image
-                src="/static/img/dodge-pretty-ini.png"
+                src="/static/img/maps/acheron-river.png"
                 width={500}
                 height={500}
                 style={{ objectFit: "contain" }}
@@ -53,9 +53,9 @@ export default function Home() {
           </Card>
           <Card className="mx-auto max-w-xl">
             <p className=" text-center text-3xl text-slate-50">Andromeda</p>
-            <Link href="/docs/custommaps/trctf-cap">
+            <Link href="/docs/custommaps/trctf-andromeda">
               <Image
-                src="/static/img/dodge-pretty-ini.png"
+                src="/static/img/maps/andromeda.png"
                 width={500}
                 height={500}
                 style={{ objectFit: "contain" }}
@@ -65,9 +65,9 @@ export default function Home() {
           </Card>
           <Card className="mx-auto max-w-xl">
             <p className=" text-center text-3xl text-slate-50">Ascent</p>
-            <Link href="/docs/custommaps/trctf-hof">
+            <Link href="/docs/custommaps/trctf-ascent">
               <Image
-                src="/static/img/maps/acheron-spawn.png"
+                src="/static/img/maps/ascent2.jpg"
                 width={500}
                 height={500}
                 style={{ objectFit: "contain" }}
@@ -81,9 +81,9 @@ export default function Home() {
         <Grid numItemsMd={1} numItemsLg={3} className=" mx-auto gap-6">
           <Card className="mx-auto max-w-xl">
             <p className=" text-center text-3xl text-slate-50">Blues</p>
-            <Link href="/docs/custommaps/trctf-defense">
+            <Link href="/docs/custommaps/trctf-blues">
               <Image
-                src="/static/img/dodge-pretty-ini.png"
+                src="/static/img/maps/blues-v011.jpeg"
                 width={500}
                 height={500}
                 style={{ objectFit: "contain" }}
@@ -93,9 +93,9 @@ export default function Home() {
           </Card>
           <Card className="mx-auto max-w-xl">
             <p className=" text-center text-3xl text-slate-50">Crash</p>
-            <Link href="/docs/custommaps/trctf-snipe">
+            <Link href="/docs/custommaps/trctf-crash">
               <Image
-                src="/static/img/dodge-pretty-ini.png"
+                src="/static/img/maps/ascent2.jpg"
                 width={500}
                 height={500}
                 style={{ objectFit: "contain" }}
@@ -107,9 +107,9 @@ export default function Home() {
             <p className=" text-center text-3xl text-slate-50">
               Deserted Valley
             </p>
-            <Link href="/docs/custommaps/trctf-snipe">
+            <Link href="/docs/custommaps/trctf-desertedvalley">
               <Image
-                src="/static/img/dodge-pretty-ini.png"
+                src="/static/img/maps/deserted-valley-overview.png"
                 width={500}
                 height={500}
                 style={{ objectFit: "contain" }}
@@ -123,9 +123,9 @@ export default function Home() {
         <Grid numItemsMd={1} numItemsLg={3} className=" mx-auto gap-6">
           <Card className="mx-auto max-w-xl">
             <p className=" text-center text-3xl text-slate-50">Eclipse</p>
-            <Link href="/docs/custommaps/trctf-defense">
+            <Link href="/docs/custommaps/trctf-eclipse">
               <Image
-                src="/static/img/dodge-pretty-ini.png"
+                src="/static/img/maps/eclipse.png"
                 width={500}
                 height={500}
                 style={{ objectFit: "contain" }}
@@ -135,9 +135,9 @@ export default function Home() {
           </Card>
           <Card className="mx-auto max-w-xl">
             <p className=" text-center text-3xl text-slate-50">Fracture</p>
-            <Link href="/docs/custommaps/trctf-snipe">
+            <Link href="/docs/custommaps/trctf-fracture">
               <Image
-                src="/static/img/dodge-pretty-ini.png"
+                src="/static/img/maps/fra.jpg"
                 width={500}
                 height={500}
                 style={{ objectFit: "contain" }}
@@ -147,9 +147,9 @@ export default function Home() {
           </Card>
           <Card className="mx-auto max-w-xl">
             <p className=" text-center text-3xl text-slate-50">Incidamus</p>
-            <Link href="/docs/custommaps/trctf-snipe">
+            <Link href="/docs/custommaps/trctf-incidamus">
               <Image
-                src="/static/img/dodge-pretty-ini.png"
+                src="/static/img/maps/incid.jpg"
                 width={500}
                 height={500}
                 style={{ objectFit: "contain" }}
@@ -163,9 +163,9 @@ export default function Home() {
         <Grid numItemsMd={1} numItemsLg={3} className=" mx-auto gap-6">
           <Card className="mx-auto max-w-xl">
             <p className=" text-center text-3xl text-slate-50">Meridian</p>
-            <Link href="/docs/custommaps/trctf-defense">
+            <Link href="/docs/custommaps/trctf-meridian">
               <Image
-                src="/static/img/dodge-pretty-ini.png"
+                src="/static/img/maps/ascent2.jpg"
                 width={500}
                 height={500}
                 style={{ objectFit: "contain" }}
@@ -175,9 +175,9 @@ export default function Home() {
           </Card>
           <Card className="mx-auto max-w-xl">
             <p className=" text-center text-3xl text-slate-50">Oceanus</p>
-            <Link href="/docs/custommaps/trctf-snipe">
+            <Link href="/docs/custommaps/trctf-oceanus">
               <Image
-                src="/static/img/dodge-pretty-ini.png"
+                src="/static/img/maps/oce.jpg"
                 width={500}
                 height={500}
                 style={{ objectFit: "contain" }}
@@ -187,9 +187,9 @@ export default function Home() {
           </Card>
           <Card className="mx-auto max-w-xl">
             <p className=" text-center text-3xl text-slate-50">Periculo</p>
-            <Link href="/docs/custommaps/trctf-snipe">
+            <Link href="/docs/custommaps/trctf-periculo">
               <Image
-                src="/static/img/dodge-pretty-ini.png"
+                src="/static/img/maps/periculo-features.png"
                 width={500}
                 height={500}
                 style={{ objectFit: "contain" }}
@@ -203,9 +203,9 @@ export default function Home() {
         <Grid numItemsMd={1} numItemsLg={3} className=" mx-auto gap-6">
           <Card className="mx-auto max-w-xl">
             <p className=" text-center text-3xl text-slate-50">Phlegethon</p>
-            <Link href="/docs/custommaps/trctf-defense">
+            <Link href="/docs/custommaps/trctf-phlegethon">
               <Image
-                src="/static/img/dodge-pretty-ini.png"
+                src="/static/img/maps/phlegathon-river.png"
                 width={500}
                 height={500}
                 style={{ objectFit: "contain" }}
@@ -215,9 +215,9 @@ export default function Home() {
           </Card>
           <Card className="mx-auto max-w-xl">
             <p className=" text-center text-3xl text-slate-50">Polaris</p>
-            <Link href="/docs/custommaps/trctf-snipe">
+            <Link href="/docs/custommaps/trctf-polaris">
               <Image
-                src="/static/img/dodge-pretty-ini.png"
+                src="/static/img/maps/polaris.png"
                 width={500}
                 height={500}
                 style={{ objectFit: "contain" }}
@@ -229,7 +229,7 @@ export default function Home() {
             <p className=" text-center text-3xl text-slate-50">Styx</p>
             <Link href="/docs/custommaps/trctf-styx/">
               <Image
-                src="/static/img/dodge-pretty-ini.png"
+                src="/static/img/maps/sty.jpg"
                 width={500}
                 height={500}
                 style={{ objectFit: "contain" }}
@@ -251,9 +251,9 @@ export default function Home() {
             <p className=" text-center text-3xl text-slate-50">
               Elysian Battleground
             </p>
-            <Link href="/docs/custommaps/trctf-defense">
+            <Link href="/docs/custommaps/trarena-elysianbattleground">
               <Image
-                src="/static/img/dodge-pretty-ini.png"
+                src="/static/img/maps/eb.jpg"
                 width={500}
                 height={500}
                 style={{ objectFit: "contain" }}
@@ -263,9 +263,9 @@ export default function Home() {
           </Card>
           <Card className="mx-auto max-w-xl">
             <p className=" text-center text-3xl text-slate-50">Ruins</p>
-            <Link href="/docs/custommaps/trctf-snipe">
+            <Link href="/docs/custommaps/trarena-ruins">
               <Image
-                src="/static/img/dodge-pretty-ini.png"
+                src="/static/img/maps/ruins.png"
                 width={500}
                 height={500}
                 style={{ objectFit: "contain" }}
@@ -286,9 +286,9 @@ export default function Home() {
         <Grid numItemsMd={1} numItemsLg={3} className=" mx-auto gap-6">
           <Card className="mx-auto max-w-xl">
             <p className=" text-center text-3xl text-slate-50">Broadside</p>
-            <Link href="/docs/custommaps/trctf-defense">
+            <Link href="/docs/custommaps/trctfblitz-broadside">
               <Image
-                src="/static/img/dodge-pretty-ini.png"
+                src="/static/img/maps/ascent2.jpg"
                 width={500}
                 height={500}
                 style={{ objectFit: "contain" }}
@@ -298,9 +298,9 @@ export default function Home() {
           </Card>
           <Card className="mx-auto max-w-xl">
             <p className=" text-center text-3xl text-slate-50">Air Arena</p>
-            <Link href="/docs/custommaps/trctf-snipe">
+            <Link href="/docs/custommaps/trctfblitz-airarena">
               <Image
-                src="/static/img/dodge-pretty-ini.png"
+                src="/static/img/maps/ascent2.jpg"
                 width={500}
                 height={500}
                 style={{ objectFit: "contain" }}
@@ -323,9 +323,9 @@ export default function Home() {
             <p className=" text-center text-3xl text-slate-50">
               Treacherous Pass
             </p>
-            <Link href="/docs/custommaps/trctf-defense">
+            <Link href="/docs/custommaps/trctf-treacherouspass">
               <Image
-                src="/static/img/dodge-pretty-ini.png"
+                src="/static/img/maps/ascent2.jpg"
                 width={500}
                 height={500}
                 style={{ objectFit: "contain" }}
@@ -335,9 +335,9 @@ export default function Home() {
           </Card>
           <Card className="mx-auto max-w-xl">
             <p className=" text-center text-3xl text-slate-50">Maze Runner</p>
-            <Link href="/docs/custommaps/trctf-snipe">
+            <Link href="/docs/custommaps/trctfblitz-mazerunner">
               <Image
-                src="/static/img/dodge-pretty-ini.png"
+                src="/static/img/maps/ascent2.jpg"
                 width={500}
                 height={500}
                 style={{ objectFit: "contain" }}
