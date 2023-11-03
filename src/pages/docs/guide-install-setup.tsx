@@ -7,6 +7,7 @@ import {
   Accordion,
   AccordionHeader,
   AccordionBody,
+  Divider,
 } from "@tremor/react";
 
 export default function GuideInstallSetup() {
@@ -22,7 +23,7 @@ export default function GuideInstallSetup() {
       </Head>
       <div className="flex max-w-6xl flex-col gap-3 bg-zinc-900">
         <h1 className="text-6xl">Installation</h1>
-        <h2 className="text-3xl">Step 1 - Download Tribes Ascend</h2>
+        <Divider>Step 1 - Download Tribes Ascend</Divider>
         <div className="flex flex-col gap-3">
           <div className="flex gap-3">
             <div className="flex flex-col gap-3">
@@ -60,7 +61,7 @@ export default function GuideInstallSetup() {
             </div>
           </div>
         </div>
-        <h2 className="text-3xl">Step 2 - Download the Tribes Launcher</h2>
+        <Divider>Step 2 - Download the Tribes Launcher</Divider>
         <div className="flex flex-col gap-3">
           <Callout title="Note" color="teal">
             Make sure to extract this before running!
@@ -80,9 +81,8 @@ export default function GuideInstallSetup() {
             if you don&apos;t have them already installed.
           </Callout>
         </div>
-        <h2 className="text-3xl">Step 3 - Download the Tribes Launcher</h2>
+        <Divider>Step 3 - Extract and Launch the Tribes Launcher</Divider>
         <div className="flex flex-col gap-3">
-          <p>Extract and Launch the Tribes Launcher.</p>
           <p>
             In the Tribes Launcher, select the Community for your login server,
             hit Login and inject TAMods.
