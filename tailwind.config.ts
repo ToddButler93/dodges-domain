@@ -48,21 +48,21 @@ export default {
             faint: "#0B1229", // custom
             muted: "#172554", // blue-950
             subtle: "#1e40af", // blue-800
-            DEFAULT: "#3b82f6", // blue-500
+            DEFAULT: "#29d5b0", // blue-500
             emphasis: "#60a5fa", // blue-400
             inverted: "#030712", // gray-950
           },
           background: {
             muted: "#131A2B", // custom
             subtle: "#1f2937", // gray-800
-            DEFAULT: "#111827", // gray-900
+            DEFAULT: "#212121", // gray-900
             emphasis: "#d1d5db", // gray-300
           },
           border: {
-            DEFAULT: "#1f2937", // gray-800
+            DEFAULT: "#00796B", // gray-800
           },
           ring: {
-            DEFAULT: "#1f2937", // gray-800
+            DEFAULT: "#212121", // gray-800
           },
           content: {
             subtle: "#4b5563", // gray-600
@@ -94,7 +94,7 @@ export default {
       },
       fontSize: {
         "tremor-label": ["0.75rem", { lineHeight: "1rem" }],
-        "tremor-default": ["0.875rem", { lineHeight: "1.25rem" }],
+        "tremor-default": ["1", { lineHeight: "1.25rem" }],
         "tremor-title": ["1.125rem", { lineHeight: "1.75rem" }],
         "tremor-metric": ["1.875rem", { lineHeight: "2.25rem" }],
       },
