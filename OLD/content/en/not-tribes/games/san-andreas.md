@@ -9,15 +9,18 @@ sidebar_search_disable: true
 
 ## Definitive Edition
 
-Definitive Edition will possibly make a bunch of this stuff irrelevant. 
+Definitive Edition will possibly make a bunch of this stuff irrelevant.
 
 ## Original Game Engine
+
 [Downgraders Link](https://gtaforums.com/topic/936600-iii-iv-various-gta-downgraders/)
 
 [4GB Patch](https://ntcore.com/?page_id=371)
 
 ### Mod List
+
 #### Prerequisite Mods
+
 - [Ultimate ASI Loader](https://github.com/ThirteenAG/Ultimate-ASI-Loader/releases/latest)
 - [ModLoader](https://github.com/thelink2012/modloader/releases/latest)
 - [CLEO4](https://github.com/cleolibrary/CLEO4/releases/latest)
@@ -27,11 +30,13 @@ Definitive Edition will possibly make a bunch of this stuff irrelevant.
 - [MoonLoader](https://gtaforums.com/topic/890987-moonloader/)
 
 #### Combination
+
 - [GTASA WidescreenFix](https://github.com/ThirteenAG/WidescreenFixesPack/releases/tag/gtasa)
 - [GInput](https://silent.rockstarvision.com/uploads/GInputSA.zip)
 - [SkyGFX](https://github.com/aap/skygfx/releases)
 
 #### Scripts
+
 - [SilentPatch](https://silent.rockstarvision.com/uploads/SilentPatchSA.zip)
 - [Open Limit Adjuster](https://github.com/ThirteenAG/III.VC.SA.LimitAdjuster/releases)
 - [Project2DFX](https://github.com/ThirteenAG/III.VC.SA.IV.Project2DFX/releases/tag/gtasa)
@@ -45,11 +50,13 @@ Definitive Edition will possibly make a bunch of this stuff irrelevant.
 - [Mix Sets](https://www.mixmods.com.br/2019/08/mod-mixsets.html)
 
 #### CLEO Scripts
+
 - [AutoSave](https://github.com/ThirteenAG/III.VC.SA.CLEOScripts/releases/tag/autosave)
 - [Car FOV](https://github.com/ThirteenAG/III.VC.SA.CLEOScripts/releases/tag/carfov)
 - [Buy Back Your Weapons](https://github.com/ThirteenAG/III.VC.SA.CLEOScripts/releases/tag/BuyBackYourWeapons)
 
 #### Models and Textures
+
 - [Mobile to PC research project](https://gtaforums.com/topic/661961-sa-mobile-to-pc-research-project/)
 - [Improved Default Armoury](https://gtaforums.com/topic/933587-improved-default-armoury-reflections-positions-model-and-texture-improvements/)
 - [Fixed Vehicles](https://gtaforums.com/topic/725635-gta-san-andreas-fixed-vanilla-vehicles/)
@@ -67,7 +74,6 @@ Definitive Edition will possibly make a bunch of this stuff irrelevant.
 {{% alert title="Warning" color="warning" %}}
 This section is incomplete.
 {{% /alert %}}
-
 
 ```
 ;Place modupdater.exe and modupdater.asi inside modloader directory. Run modupdater.exe to install mods.
@@ -93,5 +99,5 @@ ExtractSingleFile
 
 [DATE]
 UpdateFrequencyInHours = 6
-WhenLastUpdateAttemptWas = 
+WhenLastUpdateAttemptWas =
 ```

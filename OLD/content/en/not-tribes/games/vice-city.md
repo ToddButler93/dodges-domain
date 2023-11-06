@@ -6,14 +6,17 @@ weight: 1
 type: docs
 sidebar_search_disable: true
 ---
+
 ## Definitive Edition
 
 ### ModList
-Fix for impassable mission, might be patched at some point. 
+
+Fix for impassable mission, might be patched at some point.
 
 https://libertycity.net/files/gta-vice-city-the-definitive-edition/166079-ispravlenie-neprokhodimojj-missii-na-pk.html
 
 ## reVC
+
 reVC is a branch of the re3 Github specifically designed to work with the Vice City official game files.
 
 [Cleo-Redux](https://github.com/cleolibrary/CLEO-Redux) is compatible with reVC Windows D3D9 MSS 32bit. Requires reVC.pdb inside the reVC directory.
@@ -21,6 +24,7 @@ reVC is a branch of the re3 Github specifically designed to work with the Vice C
 Manual replacement of textures/models works correctly. [IMGDesk](https://github.com/MexUK/IMGDesk/releases).
 
 ## Original Game Engine
+
 [Downgraders Link](https://gtaforums.com/topic/936600-iii-iv-various-gta-downgraders/)
 
 [4GB Patch](https://ntcore.com/?page_id=371)
@@ -48,6 +52,7 @@ Create a new foler caled `scripts`
 #### Step 3
 
 ##### Silent Patch
+
 Extract SilentPatchVC.asi and .ini into the scripts folder.
 
 Inside ModLoader create a new folder called SilentPatchVC and extract the data folder into it.
@@ -55,30 +60,36 @@ Inside ModLoader create a new folder called SilentPatchVC and extract the data f
 Download and extract the DDraw Component into the root directory.
 
 ##### Widescreen Fixes
-Extract GTAVC.WidescreenFix.asi and .ini into the root folder. 
+
+Extract GTAVC.WidescreenFix.asi and .ini into the root folder.
 Inside ModLoader create a new folder called WidescreenFrontEnd and extract WidescreenFrontEnd.zip into it.
 
 ##### 2DFX & OpenLimitAdjuster
+
 Extract into Scripts Folder
 
 ##### SkyGFX
-Extract  rwd3d9.dll into the root directory.
 
-Extract asi into scripts 
+Extract rwd3d9.dll into the root directory.
+
+Extract asi into scripts
 Extract everything inside VC folder into scripts folder.
 
 ##### GInput
+
 ASI into scripts
 models into models
 
 ##### Classic Axis
 
 ##### LCS Car Camera
+
 Add to scripts
 
 ##### SaveLoader
 
 ##### Vice City Neons
+
 Extract Modloader into modloader.
 
 Set dualPass=0 and disableBackfaceCulling=1 in skygfx.ini.
@@ -86,18 +97,21 @@ Set dualPass=0 and disableBackfaceCulling=1 in skygfx.ini.
 ### Mod List
 
 #### Prerequisite Mods
+
 - [Ultimate ASI Loader](https://github.com/ThirteenAG/Ultimate-ASI-Loader/releases/latest)
 - [CLEO](https://github.com/cleolibrary/III.VC.CLEO/releases/)
 - [ModLoader](https://github.com/thelink2012/modloader/releases/latest)
 - [ModUpdater](https://github.com/ThirteenAG/modupdater/releases/latest)
 
 #### Combination
+
 - [GTAVC WidescreenFix](https://github.com/ThirteenAG/WidescreenFixesPack/releases/tag/gtavc)
 - [GInput](https://silent.rockstarvision.com/uploads/GInputVC.zip)
 - [SkyGFX](https://github.com/aap/skygfx_vc/releases)
 - [Vice City - The Leftovers Fix](https://gtaforums.com/topic/750757-vice-city-the-leftovers-fix/)
 
 #### Scripts
+
 - [SilentPatch](https://silent.rockstarvision.com/uploads/SilentPatchVC.zip)
 - [DDraw Component](https://silent.rockstarvision.com/uploads/SilentPatchDDraw.zip)
 - [Open Limit Adjuster](https://github.com/ThirteenAG/III.VC.SA.LimitAdjuster/releases/tag/1.5.6)
@@ -123,12 +137,14 @@ Set dualPass=0 and disableBackfaceCulling=1 in skygfx.ini.
 - [Classic Axis](https://gtaforums.com/topic/896122-classic-axis-feat-glitches/)
 
 #### CLEO Scripts
+
 - [AutoSave](https://github.com/ThirteenAG/III.VC.SA.CLEOScripts/releases/tag/autosave)
 - [Car FOV](https://github.com/ThirteenAG/III.VC.SA.CLEOScripts/releases/tag/carfov)
 - [Turn Indicators](https://github.com/ThirteenAG/III.VC.SA.CLEOScripts/releases/tag/TurnIndicators)
 - [Buy Back Your Weapons](https://github.com/ThirteenAG/III.VC.SA.CLEOScripts/releases/tag/BuyBackYourWeapons)
 
 #### Models and Textures
+
 - [Vice City Neons](https://github.com/ThirteenAG/ViceCityNeons)
 - [UpdatedSCM](https://github.com/niltwill/vc-updatedscm)
 - [Improved Default Armoury](https://gtaforums.com/topic/933587-improved-default-armoury-reflections-positions-model-and-texture-improvements/)
@@ -143,5 +159,6 @@ Set dualPass=0 and disableBackfaceCulling=1 in skygfx.ini.
 - [Xbox Vehicles](https://libertycity.net/files/gta-vice-city/135221-fiks-avtomobilejj-xbox-versii.html)
 
 #### More Optional Stuff
+
 - [Manual Aiming](https://github.com/ThirteenAG/III.VC.SA.CLEOScripts/releases/tag/ManualAiming)
 - [Climbing & Swimming](https://github.com/ThirteenAG/III.VC.SA.CLEOScripts/releases/tag/VC.ClimbingSwimming)

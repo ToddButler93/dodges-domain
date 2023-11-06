@@ -7,7 +7,7 @@ tags: [udk, map-dev]
 
 ## Starting from Scratch
 
-This guide is aimed at people who are new to using UDK 2011. 
+This guide is aimed at people who are new to using UDK 2011.
 
 <span style="color:red">X</span> and <span style="color:green">Y</span> are your horizontal axis and <span style="color:blue">Z</span> axis vertical.
 
@@ -17,23 +17,22 @@ Left Mouse button <kbd>LMB</kbd>
 Right Mouse button <kbd>RMB</kbd>
 Middle Mouse button <kbd>MMB</kbd>
 
-| Action | Default Binding |
-| ----------- | ----------- |
-| Change Camera Angle | <kbd>RMB</kbd> |
-| Camera Location | <kbd>RMB</kbd>+<kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> | 
-| Open Content Browser | <kbd>Ctrl</kbd>+<kbd>⇧ Shift</kbd>+<kbd>F</kbd> |
-| Select Actor | <kbd>LMB</kbd> |
-| Actor Properties | <kbd>F4</kbd> |
-| Use Terrain Tool | <kbd>Ctrl</kbd>+<kbd>RMB</kbd> |
-| Adjust Camera Move Speed | <kbd>RMB</kbd>+<kbd>Scroll</kbd> |
-| Swap Between Move, Rotate and Scale | <kbd>SpaceBar</kbd> |
+| Action                              | Default Binding                                                 |
+| ----------------------------------- | --------------------------------------------------------------- |
+| Change Camera Angle                 | <kbd>RMB</kbd>                                                  |
+| Camera Location                     | <kbd>RMB</kbd>+<kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> |
+| Open Content Browser                | <kbd>Ctrl</kbd>+<kbd>⇧ Shift</kbd>+<kbd>F</kbd>                 |
+| Select Actor                        | <kbd>LMB</kbd>                                                  |
+| Actor Properties                    | <kbd>F4</kbd>                                                   |
+| Use Terrain Tool                    | <kbd>Ctrl</kbd>+<kbd>RMB</kbd>                                  |
+| Adjust Camera Move Speed            | <kbd>RMB</kbd>+<kbd>Scroll</kbd>                                |
+| Swap Between Move, Rotate and Scale | <kbd>SpaceBar</kbd>                                             |
 
 [Want controls used outside of this guide?](https://docs.unrealengine.com/udk/Three/EditorButtons.html)
 
-
 ## Step 1 - Create Terrain Actor
 
-Click Tools, click new Terrain... 
+Click Tools, click new Terrain...
 
 ![](/img/development/new-terrain.png)
 
@@ -45,7 +44,7 @@ Patches is the size of the terrain. For this guide we will put 1024 for both val
 
 Hit finish.
 
-Right click the terrain and select Actor Properties <kbd>F4</kbd>. This can be found under View then Actor Properties. 
+Right click the terrain and select Actor Properties <kbd>F4</kbd>. This can be found under View then Actor Properties.
 
 [What is an actor in UDK?](#glossary)
 
@@ -71,6 +70,7 @@ The naming convention matters. Tr is always required, CTF refers to the map game
 ## Step 3 - Add Lighting Actors
 
 ### Sky Light
+
 Let us add an actor that will light all areas of the map but not create shadows.
 
 Open The Content Browser <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>F</kbd>
@@ -83,7 +83,7 @@ Simply drag SkyLight to your scene.
 
 [Lost where it went?](#my-things-have-disapeared)
 
-Open Actor Properties <kbd>F4</kbd> for the SkyLight you just added. 
+Open Actor Properties <kbd>F4</kbd> for the SkyLight you just added.
 
 - Set Draw Scale to 32
 - Set Brightness to 0.5
@@ -91,7 +91,7 @@ Open Actor Properties <kbd>F4</kbd> for the SkyLight you just added.
 
 ![](/img/development/lighting-skylight-properties.png)
 
-### Dominant Directional Light 
+### Dominant Directional Light
 
 Now let us add an actor that will act as your Sun to light the entire field and generate shadows.
 
@@ -103,7 +103,7 @@ Simply drag DominantDirectionalLight to your scene.
 
 [Lost where it went?](#my-things-have-disapeared)
 
-Open Actor Properties <kbd>F4</kbd> for the DominantDirectionalLight you just added. 
+Open Actor Properties <kbd>F4</kbd> for the DominantDirectionalLight you just added.
 
 - Set Draw Scale to 32
 - Set Brightness to 0.5
@@ -111,7 +111,7 @@ Open Actor Properties <kbd>F4</kbd> for the DominantDirectionalLight you just ad
 
 ![](/img/development/lighting-dominant-direct-properties.png)
 
-To set the direction of the light source you need to adjust the rotation. Use the Rotation Wheel <kbd>Space</kbd> to set the direction of your lightsource. 
+To set the direction of the light source you need to adjust the rotation. Use the Rotation Wheel <kbd>Space</kbd> to set the direction of your lightsource.
 
 If you aren't sure on how to do this you can Set Rotation Pitch to -42.60° in the Actor Properties <kbd>F4</kbd>.
 
@@ -133,42 +133,42 @@ First lets drag in TrCTFBase_BloodEagle and open our frequent friend Actor Prope
 
 [Lost where it went?](#my-things-have-disapeared)
 
-- Set Location <span style="color:red">X</span> = 17750, <span style="color:green">Y</span> = 0 and <span style="color:blue">Z</span> = 59 for now. 
+- Set Location <span style="color:red">X</span> = 17750, <span style="color:green">Y</span> = 0 and <span style="color:blue">Z</span> = 59 for now.
 - Set Group to "BloodEagle".
 
 #### Blood Eagle Generator
 
 Next lets drag in TrPowerGenerator_BloodEagle.
 
-- Set Location <span style="color:red">X</span> = 18500, <span style="color:green">Y</span> = -300 and <span style="color:blue">Z</span> = 49 for now. 
+- Set Location <span style="color:red">X</span> = 18500, <span style="color:green">Y</span> = -300 and <span style="color:blue">Z</span> = 49 for now.
 - Set Group to "BloodEagle".
 
 #### Blood Eagle Radar Station
 
 Next lets drag in TrRadarStation_BloodEagle.
 
-- Set Location <span style="color:red">X</span> = 19000, <span style="color:green">Y</span> = -300 and <span style="color:blue">Z</span> = 0 for now. 
+- Set Location <span style="color:red">X</span> = 19000, <span style="color:green">Y</span> = -300 and <span style="color:blue">Z</span> = 0 for now.
 - Set Group to "BloodEagle".
 
 #### Blood Eagle Inventory Station
 
 Next lets drag in TrInventoryStation_BloodEagle.
 
-- Set Location <span style="color:red">X</span> = 18500, <span style="color:green">Y</span> = 300 and <span style="color:blue">Z</span> = 46 for now. 
+- Set Location <span style="color:red">X</span> = 18500, <span style="color:green">Y</span> = 300 and <span style="color:blue">Z</span> = 46 for now.
 - Set Group to "BloodEagle".
 
 #### Blood Eagle Repair Station
 
 Next lets drag in TrRepairStation_BloodEagle
 
-- Set Location <span style="color:red">X</span> = 19000, <span style="color:green">Y</span> = 300 and <span style="color:blue">Z</span> = 60 for now. 
+- Set Location <span style="color:red">X</span> = 19000, <span style="color:green">Y</span> = 300 and <span style="color:blue">Z</span> = 60 for now.
 - Set Group to "BloodEagle".
 
 #### Blood Eagle Turrets
 
 Next lets drag in TrBaSeturret_BloodEagle
 
-- Set Location <span style="color:red">X</span> = -17000, <span style="color:green">Y</span> = 300 and <span style="color:blue">Z</span> = 0 for now. 
+- Set Location <span style="color:red">X</span> = -17000, <span style="color:green">Y</span> = 300 and <span style="color:blue">Z</span> = 0 for now.
 - Set Group to "BloodEagle".
 
 Turret facing the wrong way? Set Yaw to 180.
@@ -177,14 +177,14 @@ Turret facing the wrong way? Set Yaw to 180.
 
 Next lets drag in TrVehicleStation_BloodEagle
 
-- Set Location <span style="color:red">X</span> = 18500, <span style="color:green">Y</span> = -600 and <span style="color:blue">Z</span> = 50 for now. 
+- Set Location <span style="color:red">X</span> = 18500, <span style="color:green">Y</span> = -600 and <span style="color:blue">Z</span> = 50 for now.
 - Set Group to "BloodEagle".
 
 We need a vehicle pad for this station. This needs to be linked up.
 
 Next lets drag in TrVehiclePad. You will have to change your ActorClasses search for this as it wont be under BloodEagle.
 
-- Set Location <span style="color:red">X</span> = 19000, <span style="color:green">Y</span> = -1200 and <span style="color:blue">Z</span> = 0 for now. 
+- Set Location <span style="color:red">X</span> = 19000, <span style="color:green">Y</span> = -1200 and <span style="color:blue">Z</span> = 0 for now.
 - Set Group to "BloodEagle".
 
 We need the name of the vehicle pad actor we just added. This is in the Actor Properties <kbd>F4</kbd> under Object then the value for Name. It should be similar to "TrVehiclePad_0".
@@ -221,37 +221,37 @@ First lets drag in TrCTFBase_DiamondSword and open our frequent friend Actor Pro
 
 [Lost where it went?](#my-things-have-disapeared)
 
-- Set Location <span style="color:red">X</span> = -17750, <span style="color:green">Y</span> = 0 and <span style="color:blue">Z</span> = 59 for now. 
+- Set Location <span style="color:red">X</span> = -17750, <span style="color:green">Y</span> = 0 and <span style="color:blue">Z</span> = 59 for now.
 
 #### Diamond Sword Generator
 
 Next lets drag in TrPowerGenerator_DiamondSword.
 
-- Set Location <span style="color:red">X</span> = -18500, <span style="color:green">Y</span> = 300 and <span style="color:blue">Z</span> = 49 for now. 
+- Set Location <span style="color:red">X</span> = -18500, <span style="color:green">Y</span> = 300 and <span style="color:blue">Z</span> = 49 for now.
 
 #### Diamond Sword Radar Station
 
 Next lets drag in TrRadarStation_DiamondSword.
 
-- Set Location <span style="color:red">X</span> = -19000, <span style="color:green">Y</span> = 300 and <span style="color:blue">Z</span> = 0 for now. 
+- Set Location <span style="color:red">X</span> = -19000, <span style="color:green">Y</span> = 300 and <span style="color:blue">Z</span> = 0 for now.
 
 #### Diamond Sword Inventory Station
 
 Next lets drag in TrInventoryStation_DiamondSword.
 
-- Set Location <span style="color:red">X</span> = -18500, <span style="color:green">Y</span> = -300 and <span style="color:blue">Z</span> = 46 for now. 
+- Set Location <span style="color:red">X</span> = -18500, <span style="color:green">Y</span> = -300 and <span style="color:blue">Z</span> = 46 for now.
 
 #### Diamond Sword Repair Station
 
 Next lets drag in TrRepairStation_DiamondSword
 
-- Set Location <span style="color:red">X</span> = -19000, <span style="color:green">Y</span> = -300 and <span style="color:blue">Z</span> = 160 for now. 
+- Set Location <span style="color:red">X</span> = -19000, <span style="color:green">Y</span> = -300 and <span style="color:blue">Z</span> = 160 for now.
 
 #### Diamond Sword Turrets
 
 Next lets drag in TrBaseTurret_DiamondSword
 
-- Set Location <span style="color:red">X</span> = -17000, <span style="color:green">Y</span> = -300 and <span style="color:blue">Z</span> = 0 for now. 
+- Set Location <span style="color:red">X</span> = -17000, <span style="color:green">Y</span> = -300 and <span style="color:blue">Z</span> = 0 for now.
 
 Turret facing the wrong way? Set Yaw to 180.
 
@@ -259,14 +259,14 @@ Turret facing the wrong way? Set Yaw to 180.
 
 Next lets drag in TrVehicleStation_DiamondSword
 
-- Set Location <span style="color:red">X</span> = -18500, <span style="color:green">Y</span> = 600 and <span style="color:blue">Z</span> = 50 for now. 
+- Set Location <span style="color:red">X</span> = -18500, <span style="color:green">Y</span> = 600 and <span style="color:blue">Z</span> = 50 for now.
 
 We need a vehicle pad for this station. This needs to be linked up.
 
 Next lets drag in TrVehiclePad. You will have to change your ActorClasses search for this as it wont be under DiamondSword.
 
-- Set Location <span style="color:red">X</span> = -19000, <span style="color:green">Y</span> = 1200 and <span style="color:blue">Z</span> = 0 for now. 
-**Set** Group to "DiamondSword".
+- Set Location <span style="color:red">X</span> = -19000, <span style="color:green">Y</span> = 1200 and <span style="color:blue">Z</span> = 0 for now.
+  **Set** Group to "DiamondSword".
 
 We need the name of the vehicle pad actor we just added. This is in the Actor Properties <kbd>F4</kbd> under Object then the value for Name. It should be similar to "TrVehiclePad_1".
 
@@ -351,7 +351,7 @@ Remember to group these to their respective teams.
 
 ## Step 10 - Add Fog
 
-Next, we want to grab a Exponential Height Fog asset from our Actor Classes search. 
+Next, we want to grab a Exponential Height Fog asset from our Actor Classes search.
 
 For this particular fog asset there are two light colors which reference our dominant directional light. Change these how you see fit.
 
@@ -362,11 +362,12 @@ For this particular fog asset there are two light colors which reference our dom
 <!--
 [Save your level](#step-2---save-level).
 -->
+
 ## FAQ
 
 ### Where can I find my actors?
 
-Click View, Browser Windows, Scene. This shows a list of where all your placed actors are in the map. You can sort by Group and use the filter text to find certain items. 
+Click View, Browser Windows, Scene. This shows a list of where all your placed actors are in the map. You can sort by Group and use the filter text to find certain items.
 
 To select the actor in the Viewport simply double click the one you are after.
 
@@ -385,8 +386,3 @@ Click View, Browser Windows, Groups. On the left column make sure everything is 
 Actor
 
 Viewport
-
-
-
-
-

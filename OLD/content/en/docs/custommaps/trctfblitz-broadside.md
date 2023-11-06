@@ -4,17 +4,19 @@ title: Broadside - CTF Blitz Map
 linkTitle: Broadside
 tags: [krogoth-maps, community-content]
 ---
+
 [How do I play this?](/docs/guide-install-setup#playing-community-maps)
 
 <iframe width="852" height="480" src="https://www.youtube.com/embed/bPO25lVe2tc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## Description 
+## Description
+
 This is a remake of the classic Starsiege: Tribes map, Broadside.
 
 Created by TE-Krogoth.
 
-Special Thanks
-==============
+# Special Thanks
+
 TE-Noxwizard
 
 TE-Braveskin
@@ -38,12 +40,15 @@ HirezKate
 (C) Copyright Hi-Rez Studios 2005-2014.
 
 ## Features
+
 - Elevators which are powered by generators.
 - Close bases.
 - Intricate base design.
 
 ## Changelog
+
 ### TrCTFBlitz-Broadside
+
 [External Download](http://library.theexiled.pwnageservers.com/file.php?id=2959)
 
 - Initial Release.

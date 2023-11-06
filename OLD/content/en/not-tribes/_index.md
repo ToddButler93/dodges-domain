@@ -1,4 +1,3 @@
-
 ---
 title: "Not Tribes"
 linkTitle: "Not Tribes"
@@ -8,4 +7,3 @@ menu:
 type: docs
 sidebar_search_disable: true
 ---
-

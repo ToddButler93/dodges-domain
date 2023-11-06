@@ -1,4 +1,3 @@
-
 ---
 title: "Gameplay Guides"
 linkTitle: "Gameplay Guides"
@@ -7,4 +6,3 @@ menu:
   main:
     weight: 4
 ---
-

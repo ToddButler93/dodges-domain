@@ -1,4 +1,3 @@
-
 ---
 title: "Tribes Information"
 linkTitle: "Tribes Information"
@@ -7,5 +6,3 @@ menu:
   main:
     weight: 7
 ---
-
-

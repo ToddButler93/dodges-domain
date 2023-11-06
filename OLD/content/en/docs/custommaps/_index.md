@@ -1,4 +1,3 @@
-
 ---
 title: "Community Maps"
 linkTitle: "Community Maps"

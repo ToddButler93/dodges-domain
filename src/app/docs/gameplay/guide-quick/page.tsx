@@ -1,95 +1,79 @@
 import Head from "next/head";
 import Link from "next/link";
-import {
-  Divider,
-  Card,
-  Flex,
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableHeaderCell,
-  TableRow,
-  Text,
-  Title,
-} from "@tremor/react";
-const data = [
-  {
-    term: "PUG",
-    meaning: "Pick-up Game",
-  },
-  {
-    term: "E-Grab",
-    meaning: `E-Grab stands for an emergency grab. A player says this to communicate that the team requires a grab of the 
+import { Metadata } from "next";
+import { Divider, Card, Text, Grid, Table } from "@mantine/core";
+const tableData = {
+  caption: "Glossary",
+  head: ["Term", "Meaning"],
+  body: [[
+    "PUG",
+    "Pick-up Game",
+  ],
+  [
+    "E-Grab",
+    `E-Grab stands for an emergency grab. A player says this to communicate that the team requires a grab of the 
       enemy flag to prevent the enemy from capturing your flag. Players should prioritize this action immediately.`,
-  },
-  {
-    term: "K-Out/Reset",
-    meaning:
+  ],
+  [
+    "K-Out/Reset",
       "Use the suicide key K to reset and respawn immediately. Usually used to make an offense member time up with their capper and other offense members.",
-  },
-  {
-    term: "Crash",
-    meaning:
+  ],
+  [
+    "Crash",
       "Try to emergency grab/attack the enemy as soon as possible for a return",
-  },
-  {
-    term: "Walk",
-    meaning:
+  ],
+  [
+    "Walk",
       "This term is used for when an offense member grabs the flag in an attempt to take it home rather than a capper",
-  },
-  {
-    term: "Return",
-    meaning: "Return the Flag",
-  },
-  {
-    term: "HOF",
-    meaning: "Heavy on Flag",
-  },
-  {
-    term: "LD",
-    meaning: "Light Defense",
-  },
-  {
-    term: "MD",
-    meaning: "Medium Defense",
-  },
-  {
-    term: "O",
-    meaning: "Offense",
-  },
-  {
-    term: "Stand-Off",
-    meaning:
+  ],
+  [
+    "Return",
+    "Return the Flag",
+  ],
+  [
+    "HOF",
+    "Heavy on Flag",
+  ],
+  [
+    "LD",
+    "Light Defense",
+  ],
+  [
+    "MD",
+    "Medium Defense",
+  ],
+  [
+    "O",
+    "Offense",
+  ],
+  [
+    "Stand-Off",
       "A stand-Off game state occurs when both teams have the enemy flag secure at their side of the field",
-  },
-  {
-    term: "D-Stack",
-    meaning: "Defensive Stack. When a team runs more than 3 defense members",
-  },
-  {
-    term: "Figit",
-    meaning:
+  ],
+  [
+    "D-Stack",
+    "Defensive Stack. When a team runs more than 3 defense members",
+  ],
+  [
+    "Figit",
       "When an offense member chases and attempts to kill another offense member when both flags are home.",
-  },
-  {
-    term: "Spot",
-    meaning:
+  ],
+  [
+    "Spot",
       "Spot is a term used to mark where an enemy is. Use the left Alt key in-game adds a visual indicator where the player was for the rest of your team.",
-  },
-];
-export default function QuickPUGGuide() {
-  
+  ],]
+};
 
+export const metadata: Metadata = {
+  title: "Playing PUGs | Dodges Domain",
+  description: "Dodges Domain, the output of his small brain.",
+};
+
+export default function QuickPUGGuide() {
   return (
     <>
-      <Head>
-        <title>Playing PUGs | Dodges Domain</title>
-        <meta name="description" content="Playing PUGs | Dodges Domain" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <div className=" lg:2-24 mx-auto flex w-[100%] flex-col justify-center gap-12 p-8 md:p-16 xl:p-32">
-        <Divider>Playing PUGs - 7v7 Format</Divider>
+        <Divider size="sm" label="Playing PUGs - 7v7 Format"/>
         <Card>
           <p>
             <code>Pick-up Games</code> are a semi-competitive 7v7 format.
@@ -121,7 +105,7 @@ export default function QuickPUGGuide() {
             <code>stand-offs</code> and <code>offense</code> goes
             <code>offense</code> during <code>stand-offs.</code>
           </p>
-          <Divider>Recommendations</Divider>
+          <Divider size="sm" label="Recommendations"/>
           <p>
             These are PUG-specific recommendations to make the game more
             enjoyable for everyone involved. These are not rules but a list of
@@ -145,10 +129,10 @@ export default function QuickPUGGuide() {
             </li>
           </ul>
         </Card>
-        <Divider>Offense</Divider>
+        <Divider size="sm" label="Offense"/>
         <Card>
           <Link href="/docs/gameplay/guide-offense">Offense Guide</Link>
-          <Divider>Major Responsibilities</Divider>
+          <Divider size="sm" label="Major Responsibilities"/>
           <ul className="list-inside list-disc">
             <li>
               Kill the enemy <code>heavy on flag</code> and enemy
@@ -163,7 +147,7 @@ export default function QuickPUGGuide() {
             </li>
             <li>
               <code>E-Grab</code> when the <code>defense</code> calls for it.
-              <Divider>Minor Responsibilities</Divider>
+              <Divider size="sm" label="Minor Responsibilities"/>
             </li>
             <li>
               <kbd>K</kbd>-Out and meet your capper after they grab.
@@ -184,17 +168,17 @@ export default function QuickPUGGuide() {
             </li>
           </ul>
         </Card>
-        <Divider>Heavy on Flag</Divider>
+        <Divider size="sm" label="Heavy on Flag"/>
         <Card>
           <Link href="/docs/gameplay/guide-hof">Heavy on Flag Guide</Link>
-          <Divider>Major Responsibilities</Divider>
+          <Divider size="sm" label="Major Responsibilities"/>
           <ul className="list-inside list-disc">
             <li>
               Stop the enemy <code>capper.</code>
             </li>
             <li>
               Stop enemy <code>walks.</code>
-              <Divider>Minor Responsibilities</Divider>
+              <Divider size="sm" label="Minor Responsibilities"/>
             </li>
             <li>Be ready to stop unspotted/out of time grabs.</li>
             <li>
@@ -207,12 +191,12 @@ export default function QuickPUGGuide() {
             <li>Avoid being shot if possible.</li>
           </ul>
         </Card>
-        <Divider>Light/Medium Defense</Divider>
+        <Divider size="sm" label="Light/Medium Defense"/>
         <Card>
           <Link href="/docs/gameplay/guide-defense">
             Light/Medium Defense Guide
           </Link>
-          <Divider>Major Responsibilities</Divider>
+          <Divider size="sm" label="Major Responsibilities"/>
           <ul className="list-inside list-disc">
             <li>
               Kill enemy the <code>offense</code> members.
@@ -220,7 +204,7 @@ export default function QuickPUGGuide() {
             <li>Return flags.</li>
             <li>
               Call out for <code>E-Grabs</code>
-              <Divider>Minor Responsibilities</Divider>
+              <Divider size="sm" label="Minor Responsibilities"/>
             </li>
             <li>
               Work with the <code>Sniper</code>
@@ -237,9 +221,9 @@ export default function QuickPUGGuide() {
             </li>
           </ul>
         </Card>
-        <Divider>Sniper</Divider>
+        <Divider size="sm" label="Sniper"/>
         <Link href="/docs/gameplay/guide-snipe">Sniper Guide</Link>
-        <Divider>Major Responsibilities</Divider>
+        <Divider size="sm" label="Major Responsibilities"/>
         <ul className="list-inside list-disc">
           <li>
             Spot/kill the enemy <code>capper</code> at all times.
@@ -252,7 +236,7 @@ export default function QuickPUGGuide() {
             Snipe the enemy <code>offense</code> which your
             <code>light defense</code> and <code>heavy on flag</code> are
             fighting or during any walk attempts.
-            <Divider>Minor Responsibilities</Divider>
+            <Divider size="sm" label="Minor Responsibilities"/>
           </li>
           <li>
             Call out enemy <code>offense</code> locations.
@@ -268,16 +252,16 @@ export default function QuickPUGGuide() {
             Snipe the enemy chaser if your <code>capper</code> is out.
           </li>
         </ul>
-        <Divider>Capper</Divider>
+        <Divider size="sm" label="Capper"/>
         <p>
           <Link href="/docs/gameplay/guide-cap">Capper Guide</Link>
         </p>
-        <Divider>Major Responsibilities</Divider>
+        <Divider size="sm" label="Major Responsibilities"/>
         <ul className="list-inside list-disc">
           <li>Grab and capture the enemy flag.</li>
           <li>
             Communicate times on your route for your <code>offense</code>
-            members.<Divider>Minor Responsibilities</Divider>
+            members.<Divider size="sm" label="Minor Responsibilities"/>
           </li>
           <li>
             Meet your <code>offense</code> if they decide to <code>Walk</code>
@@ -288,7 +272,7 @@ export default function QuickPUGGuide() {
             stand.
           </li>
         </ul>
-        <Divider>Stand-Offs</Divider>
+        <Divider size="sm" label="Stand-Offs"/>
         <ul className="list-inside list-disc">
           <li>
             <code>Offense</code> stays on <code>offense.</code>
@@ -320,7 +304,7 @@ export default function QuickPUGGuide() {
             coordinating a time to attack.
           </li>
         </ul>
-        <Divider>Loadout Setup</Divider>
+        <Divider size="sm" label="Loadout Setup"/>
         <p>
           For all classes except for the <code>sniper,</code> it is considered
           optimal to run at least one explosive/timed weapon and at least one
@@ -330,27 +314,7 @@ export default function QuickPUGGuide() {
           In a <code>community server,</code> you must be a verified user for
           your Loadouts to save.
         </p>
-        <Divider>Glossary</Divider>
-        <Card>
-          <Table className="mt-5">
-            <TableHead>
-              <TableRow>
-                <TableHeaderCell>Term</TableHeaderCell>
-                <TableHeaderCell>Meaning</TableHeaderCell>
-              </TableRow>
-            </TableHead>
-            <TableBody>
-              {data.map((item) => (
-                <TableRow key={item.term}>
-                  <TableCell>{item.term}</TableCell>
-                  <TableCell>
-                    <Text>{item.meaning}</Text>
-                  </TableCell>
-                </TableRow>
-              ))}
-            </TableBody>
-          </Table>
-        </Card>
+        <Table cellPadding={6} data={tableData} />
       </div>
     </>
   );

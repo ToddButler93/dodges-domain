@@ -6,22 +6,26 @@ weight: 5
 type: docs
 sidebar_search_disable: true
 ---
+
 Under Payday 2s launch options, add `-skip_intro` to skip intro videos.
 
 ## Mod List
 
 ### Required
+
 - [SuperBLT](https://superblt.znix.xyz/)
 - [Beardlib](https://modworkshop.net/mod/14924)
 - [HopLib](https://modworkshop.net/mod/21431)
 
 ### Weapons
+
 - [WeaponLib](https://modworkshop.net/mod/24177)
 - [Vanilla Mod Pack Volume One](https://modworkshop.net/mod/24482)
 - [Vanilla Mod Pack Volume Two](https://modworkshop.net/mod/28248)
 - [Vanilla Mod Pack Melee Expansion](https://modworkshop.net/mod/26545)
 
 ### Quality of Life
+
 - [PD2 Set FOV Sensitivity](https://github.com/Skwuruhl/pd2-set-fov-sensitivity)
 - [PD2 ADS Normalization](https://github.com/Skwuruhl/pd2-ads-normalization)
 - [Auto-fire Sound Fix](https://modworkshop.net/mod/20403)
@@ -59,6 +63,7 @@ Under Payday 2s launch options, add `-skip_intro` to skip intro videos.
 - [Stop Wasting Updates](https://github.com/RedFlamer/Stop-Wasting-Updates)
 
 ### Visual
+
 - [Intro Cinematics](https://modworkshop.net/mod/27164)
 - [Switch Underbarrel In Steelsight](https://pd2mods.z77.fr/switch_underbarrel_in_steelsight.html)
 - [Bag Contour](https://pdmods-arc.berigora.net/paydaymods.com/mods/85/BC.html)
@@ -72,6 +77,7 @@ Under Payday 2s launch options, add `-skip_intro` to skip intro videos.
 - [Unique Loot REBOOT](https://modworkshop.net/mod/27711)
 
 #### UI
+
 - [VanillaHUD Plus](https://modworkshop.net/mod/25629)
 - [Rich Presence Definitive](https://modworkshop.net/mod/40647)
 
@@ -105,6 +111,7 @@ on this
 - [No more ads](https://modworkshop.net/mod/34268)
 
 ### Gameplay
+
 - [Reload then run](https://pd2mods.z77.fr/reload_then_run.html)
 - [Monkeepers](https://pd2mods.z77.fr/monkeepers.html)
 - [Moveable intimidated cop](https://pd2mods.z77.fr/moveable_intimidated_cop.html)
@@ -122,12 +129,15 @@ on this
 - [Make Technician Great Again!](https://pd2mods.z77.fr/make_technician_great_again.html)
 - [BerserkerBlocker](https://github.com/rockymoto517/BerserkerBlocker)
 - [Extended Continental Coin Shop Goonmod Standalone](https://modworkshop.net/mod/19109)
+
 ### Heists
+
 - [Enemy Spawner](https://modworkshop.net/mod/20663)
 - [Proving Grounds](https://modworkshop.net/mod/29905)
-- 
+-
 
 #### Mod Over_Rides
+
 - [Old Sydney Face](https://modworkshop.net/mod/27643)
 - [Better Loading Screens](https://modworkshop.net/mod/34237)
 - [Readable Clues for heists](https://modworkshop.net/mod/789)
@@ -139,10 +149,12 @@ on this
 - [Correct/Fixed Normal maps](https://modworkshop.net/mod/24922)
 
 ### Other
+
 - [Game Crash Counter](https://modworkshop.net/mod/32737)
 - [ReLUA](https://modworkshop.net/mod/20842)
 
 ### Game Changes
+
 - [Payday 2 Restoration](https://modworkshop.net/mod/428)
 
 {{% alert title="Warning" color="warning" %}}
@@ -153,4 +165,4 @@ Incompatible mods with `Payday 2 Restoration`:
 - Useful Bots
 - Vanilla Mod Pack Melee Expansion
 - Probably some other stuff
-{{%/alert%}}
+  {{%/alert%}}

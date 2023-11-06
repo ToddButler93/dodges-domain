@@ -4,14 +4,17 @@ title: Periculo - CTF Map
 linkTitle: Periculo
 tags: [dodges-maps, community-content]
 ---
+
 [How do I play this?](/docs/guide-install-setup#playing-community-maps)
 
 ![Periculo](/img/maps/periculo-shot.png)
 
-## Description 
-Caves, who knew you could use them for capping? Yeah probably no entry caps, but atleast exits are interesting. Much less of a worry about a sniper with that much cover. You can move fast but getting over the hill is a bit of a hurdle. A lot of the terrain is far less forgiving. 
+## Description
+
+Caves, who knew you could use them for capping? Yeah probably no entry caps, but atleast exits are interesting. Much less of a worry about a sniper with that much cover. You can move fast but getting over the hill is a bit of a hurdle. A lot of the terrain is far less forgiving.
 
 ## Features
+
 Caves!
 ![Periculo Features](/img/maps/periculo-features.png)
 
@@ -20,21 +23,25 @@ Caves!
 ![Periculo Cave Features](/img/maps/periculo-caves-features.png)
 
 ## Restrictions
+
 ![Periculo Birdseye](/img/maps/periculo-birdseye.png)
 This map is aimed primarily for organised play.
 As competitive viability is important for this map, all assets and terrain shall be mirrored to avoid advantage for either side.
 
 ## Capping
 
-The #1 HOF Australian player JackTheBlack has a [capping video available](https://youtu.be/izQGpW2qAc8). 
+The #1 HOF Australian player JackTheBlack has a [capping video available](https://youtu.be/izQGpW2qAc8).
 
 TAMods route files can be downloaded [here](/routes/jacktheblacks-periculo-routes.zip).
 
 ## Gallery
+
 ![Periculo](/img/maps/periculo-bases.png)
 
 ## Changelog
+
 ### TrCTF-Periculo v007
+
 - Smoothed the terrain on the edges of the center hill.
 - Altered the terrain behind the base for stand off play.
 - Added a sniper perch near the stand.
@@ -47,10 +54,12 @@ TAMods route files can be downloaded [here](/routes/jacktheblacks-periculo-route
 
 This is a very minor update.
 
-- Fixed some mirroring issues on Periculo. 
+- Fixed some mirroring issues on Periculo.
 
 ### TrCTF-Periculo v005
+
 [Download](https://drive.google.com/file/d/1mNzh4lqcJGqVzWOkowzgzgqrDTZbsUfS/view?usp=sharing)
+
 - Can no longer disc jump off the creativity wall.
 - Added a few ambient sounds
 - Replaced some of the rock meshes/collisions. 90% should be unchanged.
@@ -63,6 +72,7 @@ This is a very minor update.
 - More Rocks
 
 ### TrCTF-Periculo v004
+
 [Download](https://drive.google.com/file/d/1iOdO28uRDKi5UCNfz_FIhkorbWK83ZfJ/view?usp=sharing)
 
 ![Periculo v004](/img/maps/periculo-v004.jpeg)
@@ -81,6 +91,7 @@ This is a very minor update.
 - Minor changes to terrain.
 
 ### TrCTF-Periculo v003
+
 [Download](https://drive.google.com/file/d/1pBwrY_hEKQGklYoU__fd_gHmdFD308BQ/view?usp=sharing)
 
 - Added a few rocks.
@@ -90,6 +101,7 @@ This is a very minor update.
 - Changed skysphere to skydomb.
 
 ### TrCTF-Periculo v002
+
 [Download](https://drive.google.com/file/d/1lvU9RgR03h1CfLh5Z00ipA84i8Vp2d5Y/view?usp=sharing)
 
 ![Periculo v002](/img/maps/periculo-v002.png)
@@ -98,13 +110,14 @@ This is a very minor update.
 - Added boundaries
 - Adjusted fog and lighting
 - Added spawn locations
-Enlarged and modified flagstand. 
-- Basic textures added to flagstand, this and collisions will be polished once I'm happy with the stand mesh. 
+  Enlarged and modified flagstand.
+- Basic textures added to flagstand, this and collisions will be polished once I'm happy with the stand mesh.
 - Minor smoothing of terrain
 
-
 ### TrCTF-Periculo v001
+
 [Download](https://drive.google.com/file/d/1EVVhYbJNifpjH6mllB0kitl2XpQKN1xk/view?usp=sharing)
+
 - Map with custom assets
 
 ![Periculo v001](/img/maps/periculo-v001.png)
