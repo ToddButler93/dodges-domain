@@ -4,14 +4,12 @@ import Link from "next/link";
 import Image from "next/image";
 import { SignInButton, SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 import logo from "../../../public/static/img/blueplate.png";
-import { useRouter } from "next/navigation";
-import { useState } from "react";
 
-import { api } from "~/trpc/react";
-
+import { ColorSchemeScript } from "@mantine/core";
 export function NavBar() {
   return (
     <header className="drop-shadow-header sticky top-0 z-50 flex min-w-full justify-between bg-zinc-800 px-2 py-4 font-mono font-medium text-slate-50 backdrop-blur md:px-5">
+      <ColorSchemeScript />
       <div className="text-m flex min-w-full flex-col items-center justify-between gap-3 font-medium text-slate-50 md:flex-row">
         <div className="md:px-18 flex items-center justify-start px-2 sm:gap-6">
           <Link

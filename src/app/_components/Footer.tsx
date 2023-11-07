@@ -1,4 +1,5 @@
 //TODO Import Icons
+import { FaDiscord, FaGithub } from "react-icons/fa6";
 
 import Link from "next/link";
 
@@ -13,7 +14,7 @@ export const Footer = () => {
                 aria-label="NA Community Discord"
                 href="https://discord.gg/dd8JgzJ"
               >
-                NA Community Discord
+                <FaDiscord size={30} />
               </Link>
             </p>
           </strong>
@@ -24,7 +25,7 @@ export const Footer = () => {
                 aria-label="NA Community Discord"
                 href="https://github.com/toddbutler93/dodges-domain"
               >
-                Github
+                <FaGithub size={30} />
               </Link>
             </strong>
           </p>
