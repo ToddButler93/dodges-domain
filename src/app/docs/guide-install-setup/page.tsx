@@ -104,12 +104,12 @@ export default function GuideInstallSetup() {
           Linux Guide<i className="fa-solid fa-download ml-2 "></i>
         </a>
         <Divider>Troubleshooting</Divider>
-        <Divider>Launcher doesn't know where Tribes is installed?</Divider>
+        <Divider>Launcher doesn&apos;t know where Tribes is installed?</Divider>
         <p>
-          Usually it's "C:\Program Files
-          (x86)\Steam\SteamApps\Common\Tribes\Binaries\Win32\TribesAscend.exe".
-          If you aren't sure and installed the game via `Steam`, follow this
-          video to get the correct directory.
+          Usually it&apos;s &quot;C:\Program Files
+          (x86)\Steam\SteamApps\Common\Tribes\Binaries\Win32\TribesAscend.exe&quot;.
+          If you aren&apos;t sure and installed the game via &quot;Steam&quot;,
+          follow this video to get the correct directory.
         </p>
         <video
           width="auto"
@@ -136,8 +136,9 @@ export default function GuideInstallSetup() {
         <Divider>I keep failing to join a server</Divider>
         <p>
           Probably in the wrong game mode for that server, community servers are
-          labelled `OOTB` or `GOTY` to show their game mode. Go back to the main
-          menu and select `Switch to OOTB` or `Switch to GOTY` like this video.
+          labelled &quot;OOTB&quot; or &quot;GOTY&quot; to show their game mode.
+          Go back to the main menu and select &quot;Switch to OOTB&quot; or
+          &quot;Switch to GOTY&quot; like this video.
         </p>
         <video
           width="auto"
@@ -150,7 +151,7 @@ export default function GuideInstallSetup() {
           <source src="/static/video/game-mode.webm" type="video/webm"></source>
           Your browser does not support .webm video.
         </video>
-        <Divider>Can't join a server with a community made map</Divider>
+        <Divider>Can&apos;t join a server with a community made map</Divider>
         <p>
           To play on a server hosting a community made map you only need the
           latest version of the map. In the server browsers current state,
@@ -167,12 +168,13 @@ export default function GuideInstallSetup() {
           I get a Package Install Error while installing the map packs
         </Divider>
         <p>
-          We've ran into a few issues with peoples files being set to read only.
-          You need to go to where [Tribes Ascend is
+          We&apos;ve ran into a few issues with peoples files being set to read
+          only. You need to go to where [Tribes Ascend is
           installed](#launcher-doesnt-know-where-tribes-is-installed) and locate
-          the file in the error message. Right click and select `Properties` and
-          de-select `Read Only` then close the launcher and try to install it
-          again. This will be fixed by the next launcher update.
+          the file in the error message. Right click and select
+          &quot;Properties&quot; and de-select &quot;Read Only&quot; then close
+          the launcher and try to install it again. This will be fixed by the
+          next launcher update.
         </p>
         <Divider>
           I get an error when I start the game after installing packages
@@ -183,16 +185,16 @@ export default function GuideInstallSetup() {
         </p>
         <Divider>Step 1</Divider>
         <p>
-          In your `Tribes Ascend` install folder, go to
+          In your &quot;Tribes Ascend&quot; install folder, go to
           \TribesGame\CookedPC\Maps\ and delete all files.
         </p>
         [Not sure where Tribes is
         installed?](#launcher-doesnt-know-where-tribes-is-installed)
         <Divider>Step 2</Divider>
-        <p>Now, in `Steam`, you will need to verify your files.</p>
+        <p>Now, in &quot;Steam&quot;, you will need to verify your files.</p>
         <p>
-          In your games library you need to right click on `Tribes Ascend` and
-          hit `Properties`.
+          In your games library you need to right click on &quot;Tribes
+          Ascend&quot; and hit &quot;Properties&quot;.
         </p>
         <Image
           src="/static/img/install/steam-properties.png"
@@ -202,9 +204,9 @@ export default function GuideInstallSetup() {
           alt=""
         />
         <p>
-          Select the `Local files` tab and click the `Verify integrity of game
-          files...` button. This will re-download the missing files you just
-          deleted from the base game via steam.
+          Select the &quot;Local files&quot; tab and click the &quot;Verify
+          integrity of game files...&quot; button. This will re-download the
+          missing files you just deleted from the base game via steam.
         </p>
         <Image
           src="/static/img/install/steam-local-files.png"
@@ -215,9 +217,10 @@ export default function GuideInstallSetup() {
         />
         <Divider>Step 3</Divider>
         <p>
-          Once complete, in your `Tribes Launcher` hit the `Advanced` tab and
-          hit `Reinstall TAMods`. Hit `Yes` on the prompt and then hit `Update`
-          to start the process.
+          Once complete, in your &quot;Tribes Launcher&quot; hit the
+          &quot;Advanced&quot; tab and hit &quot;Reinstall TAMods&quot;. Hit
+          &quot;Yes&quot; on the prompt and then hit &quot;Update&quot; to start
+          the process.
         </p>
         <Image
           src="/static/img/install/launcher-advanced-tab.png"
@@ -227,9 +230,9 @@ export default function GuideInstallSetup() {
           alt=""
         />
         <p>
-          Now, under the `Packages` Tab you can install the custom packages that
-          were removed earlier. This should just be the custom maps and assets
-          packages.
+          Now, under the &quot;Packages&quot; Tab you can install the custom
+          packages that were removed earlier. This should just be the custom
+          maps and assets packages.
         </p>
         <Image
           src="/static/img/install/launcher-packages-tab.png"
@@ -238,10 +241,12 @@ export default function GuideInstallSetup() {
           style={{ objectFit: "contain" }}
           alt=""
         />
-        <Divider>I'm having issues not stated here with the launcher</Divider>
+        <Divider>
+          I&apos;m having issues not stated here with the launcher
+        </Divider>
         <p>
-          When in doubt, under the `Advanced` tab hit `Reinstall TAMods`. This
-          should allow you to reinstall packages as well.
+          When in doubt, under the &quot;Advanced&quot; tab hit &quot;Reinstall
+          TAMods&quot;. This should allow you to reinstall packages as well.
         </p>
         <Image
           src="/static/img/install/launcher-advanced-tab.png"

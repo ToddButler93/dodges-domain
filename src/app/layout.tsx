@@ -10,11 +10,9 @@ import { Footer } from "./_components/Footer";
 import { TRPCReactProvider } from "~/trpc/react";
 
 import { ClerkProvider } from "@clerk/nextjs";
-import {
-  MantineProvider,
-  createTheme,
-  MantineColorsTuple,
-} from "@mantine/core";
+import { MantineProvider } from "@mantine/core";
+
+import type { MantineColorsTuple } from "@mantine/core";
 
 const inter = Inter({
   subsets: ["latin"],

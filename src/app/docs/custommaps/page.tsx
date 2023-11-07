@@ -14,25 +14,23 @@ export default function CustomMaps() {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Card className="max-w-8xl py-12 text-center" color="green">
-        <h1 className="py-6 text-6xl">Community Maps</h1>
-        <Button
-          component={Link}
-          href="/docs/guide-install-setup"
-          size="xl"
-          radius="xl"
-          styles={{
-            root: { backgroundColor: "teal" },
-            label: { color: "white" },
-            inner: { fontSize: 24 },
-          }}
-        >
-          Install Community Maps
-        </Button>
-      </Card>
-      <Card className="max-w-8xl py-3 text-center text-6xl" color="green">
+      <h1 className="py-6 text-6xl">Community Maps</h1>
+      <Button
+        component={Link}
+        href="/docs/guide-install-setup"
+        size="xl"
+        radius="xl"
+        styles={{
+          root: { backgroundColor: "teal" },
+          label: { color: "white" },
+          inner: { fontSize: 24 },
+        }}
+      >
+        Install Community Maps
+      </Button>
+      <div className="max-w-8xl py-3 text-center text-6xl" color="green">
         <h1 className="py-6">CTF</h1>
-      </Card>
+      </div>
       <Flex className="max-w-8xl ">
         <div className="flex flex-col  gap-6 md:flex-row">
           <Card className="mx-auto max-w-xl">
@@ -163,9 +161,9 @@ export default function CustomMaps() {
           </Card>
         </div>
       </Flex>
-      <Card className="max-w-8xl py-3 text-center text-6xl" color="green">
+      <div className="max-w-8xl py-3 text-center text-6xl" color="green">
         <h1 className="py-6">Arena</h1>
-      </Card>
+      </div>
       <Flex className="max-w-8xl">
         <div className="flex flex-col  gap-6 md:flex-row">
           <Card className="mx-auto max-w-xl">
@@ -183,9 +181,9 @@ export default function CustomMaps() {
         </div>
       </Flex>
 
-      <Card className="max-w-8xl py-3 text-center text-6xl" color="green">
+      <div className="max-w-8xl py-3 text-center text-6xl" color="green">
         <h1 className="py-6">CTF Blitz</h1>
-      </Card>
+      </div>
       <Flex className="max-w-8xl">
         <div className="flex flex-col  gap-6 md:flex-row">
           <Card className="mx-auto max-w-xl">
@@ -203,9 +201,9 @@ export default function CustomMaps() {
         </div>
       </Flex>
 
-      <Card className="max-w-8xl py-3 text-center text-6xl" color="green">
+      <div className="max-w-8xl py-3 text-center text-6xl" color="green">
         <h1 className="py-6">Miscellaneous Maps</h1>
-      </Card>
+      </div>
       <Flex className="max-w-8xl">
         <div className="flex flex-col  gap-6 md:flex-row">
           <Card className="mx-auto max-w-xl">
