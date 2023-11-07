@@ -13,12 +13,15 @@ sidebar_search_disable: true
 # Sensivity Calculation
 
 ## Global
+
 - DPI: 400
 - CM/360: 34.679382
 - Inches/360: 13.6533
 
 ## Game Specific Settings
+
 ### Competitive Multiplayer Games
+
 - Tribes: `MouseSensitivity = 12`, `bEnableFOVScaling = false` / `MouseSensitivity = 9`, `bEnableFOVScaling = true`
 - Payday 2: `"camera_sensitivity_x", 0.439454`, `"camera_zoom_sensitivity_x", 0.424379`, `"camera_zoom_sensitivity_y", 0.424379`
 - Splitgate: `Horizontal Sensitivity 7.032`, `Vertical Sensitivity 7.032`
@@ -34,11 +37,12 @@ sidebar_search_disable: true
 - Escape from Tarkov: `Total "Change Turning Speed" 0%` `"MouseSensitivity": 0.527345,`, `"MouseAimingSensitivity": 0.196916, (ADS - No attachment)`, `"MouseAimingSensitivity": 0.150583, (Walther MRS reflex sight)`, `"MouseAimingSensitivity": 0.169016, (EOTech HHS-1 hybrid sight 1x)`, `"MouseAimingSensitivity": 0.182851, (1x42/Reflex/Holo)`, `"MouseAimingSensitivity": 0.182017, (Valday PS-320 1x)`, `"MouseAimingSensitivity": 0.116850, (EOtech Vudu 1x24)`, `"MouseAimingSensitivity": 0.175276, (Monstrum Compact prism scope 2x32)`, `"MouseAimingSensitivity": 0.200315, (EOTech HHS-1 hybrid sight 3x)`, `"MouseAimingSensitivity": 0.291227, (Leupold Mark 4 HAMR 4x24)`, `"MouseAimingSensitivity": 0.208020, (Zenit-Belomo PSO 1 4x24 / SIG Sauer BRAVO4 4X30 Scope)`, `"MouseAimingSensitivity": 0.173867, (ELCAN SpecterDR 4x)`, `"MouseAimingSensitivity": 0.193161, (VOMZ Pilad 4x32)`, `"MouseAimingSensitivity": 0.218488, (Valday PS-320 6x)`, `"MouseAimingSensitivity": 0.126199, (EOtech Vudu 6x24)`
 - Star Citizen: Sensitivity `Attr name="MouseSensitivity" value="19.7952"`, Multiplier(107 FOV) `Attr name="ADSMouseSensitivity" value="0.58"`
 - Squad: `GlobalSensitivity=1`, `SoldierSensitivity=0.376713`, `SoldierZoomSensitivities=((1.000000, 0.355612),(4.000000, X.XXXXXX),(8.000000, X.XXXXXX))`, `SoldierZoomSensitivities=((1.000000, X.XXXXXX),(4.000000, 0.307849),(8.000000, X.XXXXXX))`
-- Apex Legends: `mouse_sensitivity "2.996279"`, Scalar 0 - 6 `mouse_zoomed_sensitivity_scalar_0 "0.999107"` 
+- Apex Legends: `mouse_sensitivity "2.996279"`, Scalar 0 - 6 `mouse_zoomed_sensitivity_scalar_0 "0.999107"`
 - Titanfall 1/2: `mouse_sensitivity "2.996279"`, `mouse_sensitivity_zoomed "1.211291"`
 - VALORANT: `Sensitivity: Aim 0.942`
 
 ### Single Player Games
+
 - Just Cause 3: `Camera Sensitivity 4.4`
 - Cyberpunk 2077: "name": `"FPP_MouseX", "value": 6.591813,` , `"name": "TPP_MouseX", "value": 3.955088,`, `"name": "TPP_MouseY", "value": 3.955088,`
 - GTA IV(30cm 360): 0
@@ -96,7 +100,9 @@ sidebar_search_disable: true
 - Watch Dogs 2: `Look Sensitivity 55%`
 
 ## Tribes Ascend
+
 ### Game Engine
+
 $$
 Distance (inches) = 65536 / int(DPI * Sensitivity * FOVScale)
 $$
@@ -108,86 +114,111 @@ As this game uses an `int` cast, making sure it is a whole number and disabling 
 {{%alert title="Info" color="primary" %}}
 Inconsistent/low FPS makes any rounding errors worse.
 {{%/alert%}}
+
 ### FOVScale
+
 if ( bEnableFOVScaling )
 {
-    FOVScale = GetFOVAngle() * 0.01111; // 0.01111 = 1 / 90.0
+FOVScale = GetFOVAngle() \* 0.01111; // 0.01111 = 1 / 90.0
 }
 else
 {
-    FOVScale = 1.0;
+FOVScale = 1.0;
 }
 
 ### Calculation
+
 ### bEnableFOVScaling = false
+
 $$
 Distance (inches) = 65536 / int(DPI * Sensitivity * FOVScale)
 $$
+
 $$
-13.6533 = 65536 / \mathbb{Z}(400 * x * 1) 
+13.6533 = 65536 / \mathbb{Z}(400 * x * 1)
 $$
+
 $$
 Sensitivity = 12
 $$
 
 Not 100% accurate to inches per 360 value.
+
 #### Zoomed Sensitivity
 
 #### TribesInput.ini
+
 MouseSensitivity = 12
 bEnableFOVScaling = false
 
 ### bEnableFOVScaling = true
+
 {{%alert title="Info" color="primary" %}}
 Zoom with weapons lowers the FOV to 40, zoom further can lower the FOV towards 20.
 {{%/alert%}}
 {{% alert title="Danger" color="danger" %}}
 A sensitivity of approximately 4.501 at 20 will cause severe issues with mouse input. Moving the mouse a count per frame will result in 0 movement due to the integer cast.
 {{%/alert%}}
+
 #### 120 FOV
+
 $$
 Distance (inches) = 65536 / int(DPI * Sensitivity * 120 * 0.01111)
 $$
+
 $$
 13.6533 = 65536 / \mathbb{Z}(400 * Sensitivity * 120 * 0.01111)
 $$
+
 $$
 Sensitivity = 9
 $$
+
 {{%alert title="Info" color="primary" %}}
 Not 100% accurate to inches per 360 value.
 {{%/alert%}}
+
 #### 40 FOV
+
 $$
 Distance (inches) = 65536 / \mathbb{Z}(400 * 9 * 40 * 0.01111)
 $$
+
 $$
 Distance = 40.98561601
 $$
+
 {{% alert title="Warning" color="warning" %}}
 Slight integer cast rounding error. (1599.84 gets rounded to 1599)
 {{%/alert%}}
 {{%alert title="Info" color="primary" %}}
-Not 100% accurate to inches per 360 value. 
+Not 100% accurate to inches per 360 value.
 {{%/alert%}}
+
 #### 20 FOV
+
 $$
 Distance (inches) = 65536 / \mathbb{Z}(400 * 9 * 20 * 0.01111)
 $$
+
 $$
 Distance = 82.0225281602
 $$
+
 {{% alert title="Warning" color="warning" %}}
 Slight integer cast rounding error (799.92).
 {{%/alert%}}
 {{%alert title="Info" color="primary" %}}
 Not 100% accurate to inches per 360 value.
 {{%/alert%}}
+
 #### TribesInput.ini
+
 MouseSensitivity = 9
 bEnableFOVScaling = true
 
 ## Payday 2
+
 SuperBLT is required to load the following mods.
 
 "camera_sensitivity_x", 0.439454
@@ -199,6 +230,7 @@ This mod lets you set your sensitivity to an exact decimal within the .lua file.
 [PD2 ADS Normalization](https://github.com/Skwuruhl/pd2-ads-normalization)
 
 ## Mass Effect
+
 Unfortunately no fix for ME2 and ME3.
 
 [ME3Tweaks Mod Manager](https://www.nexusmods.com/masseffectlegendaryedition/mods/2) required to install the mod.

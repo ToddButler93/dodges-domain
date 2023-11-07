@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "username": "Dodge",
+    "map": "Arx Novena",
+    "time": "00:00:01",
+    "date": "22.11.4",
+    "videoUrl": "NA",
+    "routeUrl": "NA",
+    "gameMode": "GOTY"
+  },
+  {
+    "id": 2,
+    "username": "Slowni",
+    "map": "Arx Novena",
+    "time": "99:99:02",
+    "date": "22.11.2",
+    "videoUrl": "NA",
+    "routeUrl": "NA",
+    "gameMode": "GOTY"
+  },
+  {
+    "id": 3,
+    "username": "Slowerve",
+    "map": "Arx Novena",
+    "time": "99:99:03",
+    "date": "22.11.1",
+    "videoUrl": "NA",
+    "routeUrl": "NA",
+    "gameMode": "GOTY"
+  },
+  {
+    "id": 4,
+    "username": "Slowvil",
+    "map": "Arx Novena",
+    "time": "99:99:04",
+    "date": "22.11.8",
+    "videoUrl": "NA",
+    "routeUrl": "NA",
+    "gameMode": "GOTY"
+  },
+  {
+    "id": 5,
+    "username": "Slowredwa",
+    "map": "Arx Novena",
+    "time": "99:99:05",
+    "date": "22.11.2",
+    "videoUrl": "NA",
+    "routeUrl": "NA",
+    "gameMode": "Parting Gifts"
+  }
+]

@@ -22,45 +22,45 @@ tags: [tribes-information]
 
 - Sidearms and Automatics have been merged into the same category across all classes, renamed to Bullet.
 - Light Spinfusor and Light Blinksfusor
-    - Direct hit damage increased to 750 from 725.
-    - Splash damage increased to 600 from 580.
+  - Direct hit damage increased to 750 from 725.
+  - Splash damage increased to 600 from 580.
 - Sparrow, Eagle Pistol, and Nova Colt
-    - Damage decreased to 80 from 95.
+  - Damage decreased to 80 from 95.
 - NJ5 SMG
-    - Clip size reduced to 12 from 20.
+  - Clip size reduced to 12 from 20.
 - Honorfusor added to Medium armor.
-    - Provides direct hit damage only, no splash damage.
-    - Direct hit damage of 875.
-    - Located in the “Specialty” weapon category.
-    - Locks Advanced Repair Tool into the third slot.
-    - Has 50% inheritance.
+  - Provides direct hit damage only, no splash damage.
+  - Direct hit damage of 875.
+  - Located in the “Specialty” weapon category.
+  - Locks Advanced Repair Tool into the third slot.
+  - Has 50% inheritance.
 - Thumper DX returns to Medium armor.
-    - Base damage of 700 with rapid damage falloff to 140.
-    - Direct hit damage of 875.
-    - Ammo count increased to 26 from 10.
+  - Base damage of 700 with rapid damage falloff to 140.
+  - Direct hit damage of 875.
+  - Ammo count increased to 26 from 10.
 - Thrown Discs
-    - Removed from the game.
+  - Removed from the game.
 - Chaingun
-    - Damage decreased to 70 from 80.
+  - Damage decreased to 70 from 80.
 - Heavy Armor
-    - Weapon slots reduced to 3 from 4.
+  - Weapon slots reduced to 3 from 4.
 
 #### Vehicles
 
 - Grav Cycle
-    - Gravity scaling lowered to 1.0 from 1.2.
-    - Damage done to other players hit directly by the vehicle reverted to pre-OOTB values.
-    - Increased max movement speed to 2750 from 2500.
-    - Pilot weapon ammunition lowered to 12 from 24.
-    - Pilot weapon damage increased to 180 from 80.
-    - Pilot weapon damage radius increased to 200 from 150.
-    - Pilot weapon damage versus Beowulf increased to 1.6 from 1.0 (direct hit damage of 360).
+  - Gravity scaling lowered to 1.0 from 1.2.
+  - Damage done to other players hit directly by the vehicle reverted to pre-OOTB values.
+  - Increased max movement speed to 2750 from 2500.
+  - Pilot weapon ammunition lowered to 12 from 24.
+  - Pilot weapon damage increased to 180 from 80.
+  - Pilot weapon damage radius increased to 200 from 150.
+  - Pilot weapon damage versus Beowulf increased to 1.6 from 1.0 (direct hit damage of 360).
 - Beowulf
-    - Base damage lowered to 1000 from 1250.
-    - Minimum splash damage reduced to 25% from 50%.
-    - Damage multiplier against Beowulf increased to 3 from 2.
-    - Damage multiplier against Grav Cycle lowered to 1.5 from 3.
-    - Damage multiplier against base assets increased to 2.5 from 2.0.
+  - Base damage lowered to 1000 from 1250.
+  - Minimum splash damage reduced to 25% from 50%.
+  - Damage multiplier against Beowulf increased to 3 from 2.
+  - Damage multiplier against Grav Cycle lowered to 1.5 from 3.
+  - Damage multiplier against base assets increased to 2.5 from 2.0.
 
 #### Misc.
 
@@ -86,85 +86,82 @@ tags: [tribes-information]
 - Hellfire is now available to play for CTF and Blitz and has been added to all appropriate server map rotations.
 - Votekick percentage increased to 45%, up from 35%
 - Changed votekick message to include player who initiated the votekick.
-    - "Vote by [votekick_starter]: kick [kickable_player]?"
+  - "Vote by [votekick_starter]: kick [kickable_player]?"
 - Ammo pickups now yield the same 400 hp heal on all armor types when picked up.
-    - Light Heals for 400 HP, up from 300.
-    - Medium Heals for 400 hp, down from 462.
-    - Heavy Heals for 400 hp, down from 520.
+  - Light Heals for 400 HP, up from 300.
+  - Medium Heals for 400 hp, down from 462.
+  - Heavy Heals for 400 hp, down from 520.
 - Blueshift has been removed from map rotations by community request. This map will still be available to play on custom servers.
-
 
 #### Equipment Changes
 
 - Automatic Weapons
-    - All rapid fire weapons have had RNG based spread completed removed in favor for precise shots based on player skill only.
-    - The following weapons have had their damage falloff values adjusted to 80% damage at range. This is to normalize the falloff between other similar weapons.
-        - Falcon
-        - NJ4
-        - X1 LMG
+  - All rapid fire weapons have had RNG based spread completed removed in favor for precise shots based on player skill only.
+  - The following weapons have had their damage falloff values adjusted to 80% damage at range. This is to normalize the falloff between other similar weapons.
+    - Falcon
+    - NJ4
+    - X1 LMG
 - Saber Launcher
-    - May now fire without locking a target. This will result a dumbfire missile with no tracking ability, similar to the old Titan Launcher.
-    - Tracking Missile
-        - Target vehicle is locked with the same previous method and timing
-        - Damage increased to 1350, up from 1200
-        - Impulsed increased to 85000, up from 80000
-        - Range increased to 360, up from 220
-    - Dumbfire Missile
-        - Damage set to 375
-        - Direct impact damage multiplier set to 2.0
-        - Impulse set to 85000
-        - Range set to 300
-        - Speed set to 3000
-        - Inheritance set to 50%
-        - Size set to 15
+  - May now fire without locking a target. This will result a dumbfire missile with no tracking ability, similar to the old Titan Launcher.
+  - Tracking Missile
+    - Target vehicle is locked with the same previous method and timing
+    - Damage increased to 1350, up from 1200
+    - Impulsed increased to 85000, up from 80000
+    - Range increased to 360, up from 220
+  - Dumbfire Missile
+    - Damage set to 375
+    - Direct impact damage multiplier set to 2.0
+    - Impulse set to 85000
+    - Range set to 300
+    - Speed set to 3000
+    - Inheritance set to 50%
+    - Size set to 15
 - Mortar Launcher
-    - Mortar direct impact timer increased to 0.75 seconds, up from 0.5 seconds.
-    - When hitting a vehicle the shorter timer is now used.
-    - Damage lowered to 1300, down from 1400.
-    - Direct hit bonus increased to 1.154, up from 1.0. Now deals 1500 damage on direct impact.
-    - Minimum damage decreased to 600 damage at max range.
+  - Mortar direct impact timer increased to 0.75 seconds, up from 0.5 seconds.
+  - When hitting a vehicle the shorter timer is now used.
+  - Damage lowered to 1300, down from 1400.
+  - Direct hit bonus increased to 1.154, up from 1.0. Now deals 1500 damage on direct impact.
+  - Minimum damage decreased to 600 damage at max range.
 - Thrown Disks
-    - Decreased damage to 350, down from 600.
-    - Increased direct hit multiplier to 2.0, up from 1.5. Now deals 700 damage on direct impact.
+  - Decreased damage to 350, down from 600.
+  - Increased direct hit multiplier to 2.0, up from 1.5. Now deals 700 damage on direct impact.
 - Heavy weapons impulse reduction
-    - The following weapons have had their impulse values reduced to 85,000 down from 90,000.
-        - Heavy Spinfusor
-        - Heavy Bolt Launcher
-        - Heavy Blinksfusor
+  - The following weapons have had their impulse values reduced to 85,000 down from 90,000.
+    - Heavy Spinfusor
+    - Heavy Bolt Launcher
+    - Heavy Blinksfusor
 - Plasma Gun
-    - Fire interval reduced to 0.5, down from 0.6
-    - Damage reduced to 270, down from 280.
+  - Fire interval reduced to 0.5, down from 0.6
+  - Damage reduced to 270, down from 280.
 - NJ5 returns to Medium armor.
-    - Fire interval set to 0.2
-    - Damage set to 150
-    - Falls off to 80% damage at at max range of 6000.
+  - Fire interval set to 0.2
+  - Damage set to 150
+  - Falls off to 80% damage at at max range of 6000.
 - Impact Nitron
-    - Increased radius to 400, up from 350.
+  - Increased radius to 400, up from 350.
 - Shocklance
-    - Damage increased to 600, up from 500.
-    - No longer drains energy for up to 250 bonus damage.
-    - Damage dealt from behind remains at 2x.
-    - Removed impulse given to hit target.
+  - Damage increased to 600, up from 500.
+  - No longer drains energy for up to 250 bonus damage.
+  - Damage dealt from behind remains at 2x.
+  - Removed impulse given to hit target.
 - Fixed a long standing issue where beams from sniper rifles would not connect with a target when successfully hit at long distances.
 - Fixed an issue preventing players from equipping a repair tool at a repair station when they have the ELF gun equipped.
 - Fixed an issue where the Flak Cannon / EFG would not reload at various stages in its clip.
 - Fixed an issue where the Flak Cannon / EFG would award multiple kills on a single target.
 
-
 #### Vehicles
 
 - Vehicle ejection speeds have been increased.
-    - Light ejects at 50% vehicle speed, up from 40%
-    - Medium ejects at 40% vehicle speed, up from 35%
+  - Light ejects at 50% vehicle speed, up from 40%
+  - Medium ejects at 40% vehicle speed, up from 35%
 - GravCycle
-    - Health reduced to 1400, down from 2200.
+  - Health reduced to 1400, down from 2200.
 - Shrike
-    - Health reduced to 1400, down from 2800
-    - Energy regeneration per second reduced to 10, down from 20
-    - Reduced impulse from weapon to 2500, down from 10,000
-    - Explosion radius reduced to 200, down from 250
+  - Health reduced to 1400, down from 2800
+  - Energy regeneration per second reduced to 10, down from 20
+  - Reduced impulse from weapon to 2500, down from 10,000
+  - Explosion radius reduced to 200, down from 250
 - Fixed an issue where many projectiles were being killed on direct impact with a vehicle and not dealing damage to them, especially while stationary.
-
 
 #### Misc.
 
@@ -175,85 +172,85 @@ tags: [tribes-information]
 - Fixed an issue where the laser targeter target location wasn’t being properly set while in 3rd person camera mode.
 - Fixed an issue where empty perks were being shown in the spectator hud.
 
-### Tribes: Ascend Version 1.2.2866.1 
+### Tribes: Ascend Version 1.2.2866.1
 
 2016/1/28
 
 #### Equipment Changes
 
 - Heavy Armor
-    - Increased mass by 7%
-    - Decreased initial jetpack impulse by 25%
+  - Increased mass by 7%
+  - Decreased initial jetpack impulse by 25%
 - Most Impact class explosive weapons have received a reduction in radius size.
-    - Light Armor
-        - Light Spinfusor radius reduced to 360, down from 400
-        - Light Blinksfusor radius reduced to 360, down from 400
-        - Bolt Launcher radius reduced to 400, down from 500
-    - Medium Armor
-        - Spinfusor radius reduced to 360, down from 425
-        - Blinksfusor radius reduced to 360, down from 425
-        - Twinfusor radius reduced to 300, down from 320
-        - Thumper radius reduced to 400, down from 530
-    - Heavy Armor
-        - Heavy Spinfusor radius reduced to 360, down from 450
-        - Heavy Blinksfusor radius reduced to 360, down from 450
-        - Heavy Twinfusor radius reduced to 300, down from 340
-        - Heavy Bolt Launcher radius reduced to 400, down from 565
-        - Grenade Launcher explosion radius reduced to 500, down from 530.
+  - Light Armor
+    - Light Spinfusor radius reduced to 360, down from 400
+    - Light Blinksfusor radius reduced to 360, down from 400
+    - Bolt Launcher radius reduced to 400, down from 500
+  - Medium Armor
+    - Spinfusor radius reduced to 360, down from 425
+    - Blinksfusor radius reduced to 360, down from 425
+    - Twinfusor radius reduced to 300, down from 320
+    - Thumper radius reduced to 400, down from 530
+  - Heavy Armor
+    - Heavy Spinfusor radius reduced to 360, down from 450
+    - Heavy Blinksfusor radius reduced to 360, down from 450
+    - Heavy Twinfusor radius reduced to 300, down from 340
+    - Heavy Bolt Launcher radius reduced to 400, down from 565
+    - Grenade Launcher explosion radius reduced to 500, down from 530.
 - Fusion Mortar
-    - “The Deluxe Mortar Launcher was a fan favorite, so these changes are to bring the fusion mortar more in line with the feel of the DXML”
-    - Radius reduced to 650, down from 700.
-    - Increased bounce damping to 80%, up from 75% (DXML)
-    - Removed direct hit bonus.
-    - Now deals full damage (1400) on direct hit.
-    - Jackal radius increased to 400, up from 350
+  - “The Deluxe Mortar Launcher was a fan favorite, so these changes are to bring the fusion mortar more in line with the feel of the DXML”
+  - Radius reduced to 650, down from 700.
+  - Increased bounce damping to 80%, up from 75% (DXML)
+  - Removed direct hit bonus.
+  - Now deals full damage (1400) on direct hit.
+  - Jackal radius increased to 400, up from 350
 - Phase Rifle
-    - Locks an Energy pack in your pack slot.
-    - Phase Rifle sets your energy pool max to 75, 90 with Rage active.
-    - Damage per energy increased to 5.333 per energy consumed. Up from 3.
-    - Fully charged shot consuming 75 energy deals 400 damage. up from 375.
-    - Fully charged shot consuming 90 energy, after Rage buff, deals 480. up from 450.
-    - With a max energy of 75, time to regen to full charged shot reduced to 5.35 seconds, down from 8.9 seconds.
+  - Locks an Energy pack in your pack slot.
+  - Phase Rifle sets your energy pool max to 75, 90 with Rage active.
+  - Damage per energy increased to 5.333 per energy consumed. Up from 3.
+  - Fully charged shot consuming 75 energy deals 400 damage. up from 375.
+  - Fully charged shot consuming 90 energy, after Rage buff, deals 480. up from 450.
+  - With a max energy of 75, time to regen to full charged shot reduced to 5.35 seconds, down from 8.9 seconds.
 - BXT1
-    - Locks an Energy pack in your pack slot
-    - Charge mechanic removed
-    - Deals 250 damage in scope or out
-    - Range increased to 20,000, up from 10,000
-    - Falloff starts at 2,000 and falls off to 100 damage at max range
+  - Locks an Energy pack in your pack slot
+  - Charge mechanic removed
+  - Deals 250 damage in scope or out
+  - Range increased to 20,000, up from 10,000
+  - Falloff starts at 2,000 and falls off to 100 damage at max range
 - Saber Launcher
-    - No longer locks onto airborne players
-    - Projectile speed increased to 845, up from 650.
+  - No longer locks onto airborne players
+  - Projectile speed increased to 845, up from 650.
 - Sparrow, Eagle, and Nova Colt
-    - Damage increased to 95, up from 85
-    - Magazine size increased to 15, up from 12.
-        - Increased ammo carry numbers to support larger magazines.
+  - Damage increased to 95, up from 85
+  - Magazine size increased to 15, up from 12.
+    - Increased ammo carry numbers to support larger magazines.
 - Shock Lance
-    - Now deals 500 base damage, regardless of how much energy is available.
-    - Consumes up to 50 energy, or less depending how much energy is available.
-    - Damage is calculated as Energy Consumed x 5
-    - Total damage is doubled when target is struck in the back.
+  - Now deals 500 base damage, regardless of how much energy is available.
+  - Consumes up to 50 energy, or less depending how much energy is available.
+  - Damage is calculated as Energy Consumed x 5
+  - Total damage is doubled when target is struck in the back.
 - Flak Cannon
-    - Reduced projectile size to 25, down from 30.
-    - Lowered damage per connecting shot to 65, down from 75.
+  - Reduced projectile size to 25, down from 30.
+  - Lowered damage per connecting shot to 65, down from 75.
 - Plasma Gun
-    - Damage increased to 280, up from 230.
-    - Carried ammo increased to 54, up from 48.
+  - Damage increased to 280, up from 230.
+  - Carried ammo increased to 54, up from 48.
 - Chain Gun
-    - Damage increased to 80, up from 75.
+  - Damage increased to 80, up from 75.
 - Ammo adjustments
-    - Assault Rifle max ammo increased to 216, up from 192.
-    - NJ4 SMG max ammo increased to 270, up from 240
-    - Nova Blaster max ammo increased to 54, up from 48
-    - Sawed Off max ammo reduced to 24, down from 60.
+  - Assault Rifle max ammo increased to 216, up from 192.
+  - NJ4 SMG max ammo increased to 270, up from 240
+  - Nova Blaster max ammo increased to 54, up from 48
+  - Sawed Off max ammo reduced to 24, down from 60.
 - Belt Items
-    - T5 Grenade is now available to the Light Armor.
-        - Explodes after 2 seconds
-        - Damage is 800, falls off to 400 at max range
-        - Explosion radius is 600
-    - Blackout Grenade radius increased to 600, up from 550
-    - Cluster Grenade radius increased to 550, up from 500
-    - EMP Grenade radius increased to 600, up from 550.
-    - Sticky Grenade radius increased to 600, up from 550.
+  - T5 Grenade is now available to the Light Armor.
+    - Explodes after 2 seconds
+    - Damage is 800, falls off to 400 at max range
+    - Explosion radius is 600
+  - Blackout Grenade radius increased to 600, up from 550
+  - Cluster Grenade radius increased to 550, up from 500
+  - EMP Grenade radius increased to 600, up from 550.
+  - Sticky Grenade radius increased to 600, up from 550.
 - Drop Station deployables no longer require generators to be up to function.
 - Stealth pack reveal speed increased to 150, up from 100. This is the Tribes:Ascend 1.0 value.
 - Fixed an issue where Drop Stations were still functional after being destroyed.
@@ -261,37 +258,35 @@ tags: [tribes-information]
 - Fixed an issue where the Heavy Blinksfusor had incorrect reload speeds. It is now in line with the standard heavy spinfusor.
 - Fixed an issue where Nova Blaster MX could still have upgrades affecting various weapon stats.
 
-
 #### Vehicles
 
 - Vehicles are now generated on a team wide timer.
-    - “At the beginning of the round vehicle timers are started. Once each vehicle's timer has completed, 1 vehicle is generated, up to the limit per vehicle type. Once that vehicle is taken, it is moved from “Generated”, to in play. The vehicle in play still affects the ability to generate more vehicles of that type. For example: The server has limited shrikes to 1. Once generated, that shrike may be claimed by a player. Because the server has limited shrikes to 1, no additional shrikes will be generated until the shrike has been destroyed.”
-    - All of the following values are modifiable through custom server settings.
-    - Each vehicle type has:
-        - Max number in play.
-        - Length of time before each vehicle type is generated.
-        - Max of one Generated, or “On Deck”. If this vehicle is not claimed and the timer reaches zero, the timer resets to the max time and restarts.
-    - Default Values:
-        - Grav Cycle
-            - Max in play 4
-            - Max of 1 on deck
-            - Generation time 30 seconds
-        - Shrike
-            - Max in play 2
-            - Max of 1 on deck
-            - Generation time 90 seconds
-        - Beowulf
-            - Max in play 2
-            - Max of 1 on deck
-            - Generation time 60 seconds
-        - Grav Cycle
-            - Fire interval increased to 0.1 seconds, up from 0.08 seconds
-            - Damage multiplyer vs base assets reduced to 2, down from 4.
-        - Shrike
-            - Fire interval increased to 0.125 seconds, up from 0.1 seconds.
-            - Ammo pool reduced to 9, down from 12.
-            - Burst fire count reduced to 3 shots.
-
+  - “At the beginning of the round vehicle timers are started. Once each vehicle's timer has completed, 1 vehicle is generated, up to the limit per vehicle type. Once that vehicle is taken, it is moved from “Generated”, to in play. The vehicle in play still affects the ability to generate more vehicles of that type. For example: The server has limited shrikes to 1. Once generated, that shrike may be claimed by a player. Because the server has limited shrikes to 1, no additional shrikes will be generated until the shrike has been destroyed.”
+  - All of the following values are modifiable through custom server settings.
+  - Each vehicle type has:
+    - Max number in play.
+    - Length of time before each vehicle type is generated.
+    - Max of one Generated, or “On Deck”. If this vehicle is not claimed and the timer reaches zero, the timer resets to the max time and restarts.
+  - Default Values:
+    - Grav Cycle
+      - Max in play 4
+      - Max of 1 on deck
+      - Generation time 30 seconds
+    - Shrike
+      - Max in play 2
+      - Max of 1 on deck
+      - Generation time 90 seconds
+    - Beowulf
+      - Max in play 2
+      - Max of 1 on deck
+      - Generation time 60 seconds
+    - Grav Cycle
+      - Fire interval increased to 0.1 seconds, up from 0.08 seconds
+      - Damage multiplyer vs base assets reduced to 2, down from 4.
+    - Shrike
+      - Fire interval increased to 0.125 seconds, up from 0.1 seconds.
+      - Ammo pool reduced to 9, down from 12.
+      - Burst fire count reduced to 3 shots.
 
 #### Gameplay
 
@@ -304,7 +299,6 @@ tags: [tribes-information]
 - Fixed an issue where vehicle stations were not taking bonus damage from base asset damage modifiers.
 - Fixed an issue in blueshift where players could abuse the team blocker on the boosters.
 - Everyone may enter the booster, but only friendlies get the boost applied. This will allow an enemy to return his flag inside the booster.
-
 
 #### Misc.
 
@@ -333,7 +327,6 @@ Notes
 - Due to the dramatic changes to the underlying game, all in-game purchases have been reverted and all Tribes Gold and XP refunded to your account. If you have previously purchased the Ultimate Weapon Pack or Game of the Year it will be re-added to your account. If there is any Tribes Gold on your account you will be automatically gifted the Ultimate Weapon Pack.
 - All saved loadouts have be reset.
 
-
 #### New CTF Maps
 
 Ice Coaster
@@ -350,7 +343,6 @@ Terminus
 
 - “A brand new medium sized map inspired by Katabatic and Arx Novena.”
 - Supports CTF and Blitz game modes.
-
 
 #### Class Changes
 
@@ -416,7 +408,6 @@ Default Loadout:
 - Frag Grenade
 - Heavy Shield Pack
 
-
 There are now 9 custom loadouts per armor and they are no longer purchased.
 
 #### Equipment Changes
@@ -476,7 +467,6 @@ Drains energy away from target at a rate of 30% per second. Note: this does not 
 Drains health at a rate of 5% health per second on players.
 
 These rates are increased to 60% / 10% on vehicles and 90% / 20% on base assets.
-
 
 New Weapon Flak Cannon added to Medium Armor Short Range weapon class.
 
@@ -543,7 +533,7 @@ Laser targeter has returned, it can be selected by pressing L by default.
 
 Phase Rifle
 
-- “The new Phase Rifle works much like the Laser Rifle from previous Tribes titles. It charges slowly, but does not suffer from any falloff damage at range. Damage is linearly gained over time based on energy regeneration rate. The * Phase Rifle is also more powerful post flag grab due to the gained Rage buff. ”
+- “The new Phase Rifle works much like the Laser Rifle from previous Tribes titles. It charges slowly, but does not suffer from any falloff damage at range. Damage is linearly gained over time based on energy regeneration rate. The \* Phase Rifle is also more powerful post flag grab due to the gained Rage buff. ”
 - Damage per energy increased to 3 per energy consumed.
 - Fully charged shot consuming 125 energy deals 375 damage.
 - Fully charged shot consuming 150 energy, after Rage buff, deals 450.
@@ -613,31 +603,31 @@ Drop Station (Medium Armor)
 
 - 1 deployable light inventory station.
 - “The drop station deployable only has the ability to change weapons within your current armor class and refill ammo. It does not swap between armor classes, and it will not kick off health regeneration.”
-- + 25 Energy
-- + 50% Ammo
+- - 25 Energy
+- - 50% Ammo
 
 Heavy Energy Pack
 
-- + 25 Energy
+- - 25 Energy
 - Passive energy gain from damage taken.
 
 Heavy Shield Pack
 
 - Increased damage blocked by 120 energy to 750.
 - Health regen timer is now reset while being hit even if your shield pack is active.
-    -25% impulse while active.
+  -25% impulse while active.
 
 Heavy Utility Pack
 
 - +25% Energy Regen speed
 - +100% Ammo
-    -15% Mass
+  -15% Mass
 
 Light Energy Pack
 
 - “This pack is selected and locked in the pack slot when you have the BXT1 or the Phase rifle equipped. It is also available for any light armor to equip even if these weapons are not selected.”
-- + 25 Energy
-- + 15% Impulse
+- - 25 Energy
+- - 15% Impulse
 
 Shield Pack
 
@@ -653,14 +643,12 @@ Thrust Pack
 
 Utility Pack (Medium) \ Light Utility Pack
 
-- + 20% Energy Regen speed
-- + 50% More ammo
-
+- - 20% Energy Regen speed
+- - 50% More ammo
 
 Melee has been buffed to 1000 damage.
 
 Weapons that were purely statistical side-grades have been removed from the game. They may return in some form in the future.
-
 
 #### Vehicles
 
@@ -834,12 +822,11 @@ Damage to vehicles
 - “All damage to vehicles has been adjusted to normalize the playing field a little better. Weapons that specialize in killing vehicles now deal 25% - 50% more damage. Vehicle health values have been reduced to compensate. This makes weapons that previously did not specialize in killing vehicles somewhat stronger, and weapons that were super strong against vehicles somewhat weaker.”
 
 - Bullet based weapons now deal damage to vehicles/base assets
-    - vs Generators 80%
-    - vs Shrike 65%
-    - vs Beowulf 50%
-    - vs Grav Cycle 50%
-    - vs Base Turret/Sensors 100%
-
+  - vs Generators 80%
+  - vs Shrike 65%
+  - vs Beowulf 50%
+  - vs Grav Cycle 50%
+  - vs Base Turret/Sensors 100%
 
 Vehicles no longer require credits to purchase.
 
@@ -963,7 +950,6 @@ Fixed an issue where falloff damage was being applied even if the target was dir
 
 Fixed an issue where belt items were not canceling the spawn protection effect.
 
-
 Exploits and Cheats
 
 - Fixed various ways for players to showing collision (aka hitbox toggling).
@@ -1014,8 +1000,8 @@ New Weapon loadout bar is now enabled by default. It shows the following:
 - New Synthrall skin for the Soldier class.
 - Two new voice packs:
 
-    - TotalBiscuit
-    - Stowaway
+  - TotalBiscuit
+  - Stowaway
 
 - Settings for custom servers are persisted across logins.
 
@@ -1026,6 +1012,7 @@ New Weapon loadout bar is now enabled by default. It shows the following:
 - Fixed an issue where fractal grenades could timeout before they finished fractalling, resulting in a non-damaging explosion.
 
 #### Vehicles
+
 - Shocklance now has a small weapons model.
 - Fixed positioning of Shocklance on the main menu.
 - Shocklance is now bannable from a custom server.
@@ -1048,28 +1035,28 @@ New Weapon loadout bar is now enabled by default. It shows the following:
 - All weapons, classes, perks and loadouts can now be purchased for a single price. The “Tribes: Ascend Game of the Year” package can be purchased in-game, on Steam, or through the Tribes: Ascend Web Store, and will immediately unlock all gameplay impacting items, which includes over 100 weapons, all 9 classes and all 21 perks. As a special bonus, players that are current Tribes: Ascend VIP’s can purchase the Game of the Year package for 50% off by visiting the Tribes: Ascend Web Store and logging in with their VIP account credentials. (Note that VIP status will no longer be awarded to future players of the game, although current VIPs will remain VIPs and will keep the VIP XP and other bonuses).
 - Three new CTF and Blitz maps available!
 
-    - CTF Bella Omega
-    - CTF Blueshift
-    - CTF Canyon Crusade Revival
+  - CTF Bella Omega
+  - CTF Blueshift
+  - CTF Canyon Crusade Revival
 
 - Three new Arena maps available!
 
-    - Arena Fraytown
-    - Arena Undercroft
-    - Arena Whiteout
+  - Arena Fraytown
+  - Arena Undercroft
+  - Arena Whiteout
 
 - Four Rabbit maps have been added to the queue:
 
-    - Inferno
-    - Nightabatic
-    - Outskirts
-    - Sulfer Cove
+  - Inferno
+  - Nightabatic
+  - Outskirts
+  - Sulfer Cove
 
 - New weapon available on all classes: Shocklance
 - New Skins available:
 
-    - Juggernaut’s Forlorn skin.
-    - Doombringer’s Executioner skin.
+  - Juggernaut’s Forlorn skin.
+  - Doombringer’s Executioner skin.
 
 - Base Turrets and Radar Stations are now shielded. Shields will absorb damage and regenerate very quickly. Shields are powered by the generator, and will drop when the generator is down.
 - Grenades now have a glow around them to help with their visibility.
@@ -1096,27 +1083,27 @@ New Weapon loadout bar is now enabled by default. It shows the following:
 - Base Sensors stop spinning when blown up and resume spinning when they are functionally repaired.
 - Added the following player physics properties:
 
-    - ImpulseMassLight (Was simply ImpulseMass before)
-    - ImpulseMassMedium
-    - ImpulseMassHeavy
-    - JetpackEnergyCost
-    - FlagThrowSpeed
-    - FlagInheritSpeed
-    - FlagBounceDamping
-    - FlagFallingMomentumDamping
-    - FlagDamageMass
-    - FlagFriction
-    - FlagNumBouncesBeforeSlide
-    - RockBounceFullSpeedThreshold
-    - RockBounceGraceAngle
-    - RockBounceFalloffAngle
+  - ImpulseMassLight (Was simply ImpulseMass before)
+  - ImpulseMassMedium
+  - ImpulseMassHeavy
+  - JetpackEnergyCost
+  - FlagThrowSpeed
+  - FlagInheritSpeed
+  - FlagBounceDamping
+  - FlagFallingMomentumDamping
+  - FlagDamageMass
+  - FlagFriction
+  - FlagNumBouncesBeforeSlide
+  - RockBounceFullSpeedThreshold
+  - RockBounceGraceAngle
+  - RockBounceFalloffAngle
 
 - Added a shorthand command for setting player physics. /SetPhysicsProperty also works as /SPP.
 - Added log verification when a physics property successfully changes.
 - Added a batch entry solution for setting physics properties:
 
-    - /SetBatchPhysicsProperty PropertyName1=Value1,PropertyName2=Value2, etc. will parse bulk property changes for easy preset testing.
-    - /PrintPhysicsReport now places a batch command for the current state of all physics properties to the end of the clipboard copy so that players can easily re-enter a saved text profile.
+  - /SetBatchPhysicsProperty PropertyName1=Value1,PropertyName2=Value2, etc. will parse bulk property changes for easy preset testing.
+  - /PrintPhysicsReport now places a batch command for the current state of all physics properties to the end of the clipboard copy so that players can easily re-enter a saved text profile.
 
 - Fixed an issue where passenger meshes were being distance-culled after leaving a vehicle.
 - Fixed an issue where game would crash when switching between server browser tabs
@@ -1219,17 +1206,17 @@ New Weapon loadout bar is now enabled by default. It shows the following:
 
 - Three new weapons for Sentinel:
 
-    - Primary: SAP20 Sniper Rifle
-    - Secondary: Accurized Shotgun
-    - Belt: Motion Mine
+  - Primary: SAP20 Sniper Rifle
+  - Secondary: Accurized Shotgun
+  - Belt: Motion Mine
 
 - One new weapon for Soldier:
 
-    - Secondary: Spare Spinfusor
+  - Secondary: Spare Spinfusor
 
 - One new weapon for Pathfinder:
 
-    - Primary: Blinksfusor (100% Inheritance)
+  - Primary: Blinksfusor (100% Inheritance)
 
 - New CTF Blitz Map (Crossfire)
 - Reduced the amount of impact camera shake from rapid projectile weapons (such as Assault Rifles, SMGs, etc).
@@ -1242,19 +1229,19 @@ New Weapon loadout bar is now enabled by default. It shows the following:
 #### Weapon/Balance Items
 
 - Three new weapons for Sentinel:
-    - Primary: SAP20 Sniper Rifle
-    - Secondary: Accurized Shotgun
-    - Belt: Motion Mine
+  - Primary: SAP20 Sniper Rifle
+  - Secondary: Accurized Shotgun
+  - Belt: Motion Mine
 - One new weapon for Soldier:
-    - Secondary: Spare Spinfusor
+  - Secondary: Spare Spinfusor
 - One new weapon for Pathfinder:
-    - Primary: Blinksfusor (100% Inheritance)
+  - Primary: Blinksfusor (100% Inheritance)
 - The Rage perk has been overhauled.
-    - Rage activates if you are within 230m of your flag when it’s grabbed by an enemy.
-    - The flag must be taken from its flag stand for Rage to activate.
-    - When activated Rage instantly gives energy and health (when upgraded).
-    - For 15 seconds you have mass reduction and are immune to the next self-damage you take, which removes the Rage Effect.
-    - Flag carriers cannot be raged.
+  - Rage activates if you are within 230m of your flag when it’s grabbed by an enemy.
+  - The flag must be taken from its flag stand for Rage to activate.
+  - When activated Rage instantly gives energy and health (when upgraded).
+  - For 15 seconds you have mass reduction and are immune to the next self-damage you take, which removes the Rage Effect.
+  - Flag carriers cannot be raged.
 - The Technician's Repair Kit will no longer repair objectives through world geometry. Base turrets are an exception to this rule since they can be on platforms that don’t have enough room for the kit.
 - Reduced the amount of impact camera shake from rapid projectile weapons (such as Assault Rifles, SMGs, etc).
 - Reduced starting magazine size on Raider’s NJ5 to 20. Adjusted starting ammo to match.
@@ -1295,39 +1282,39 @@ New Weapon loadout bar is now enabled by default. It shows the following:
 - A new gametype, CTF Blitz, has been introduced. In Blitz, the enemy flag base moves location each time your team scores, changing routes and requiring varied tactics to win.CTF Blitz is initially played on Arx Novena, Katabatic and Drydock.
 - New Technician Weapons and Skin have been added:
 
-    - New Primary: TC24
-    - New Belt Item: Repair Kit
-    - New Pack: EXR Turret
-    - Specialist Skin
+  - New Primary: TC24
+  - New Belt Item: Repair Kit
+  - New Pack: EXR Turret
+  - Specialist Skin
 
 - New CTF Maps have been added to the Quick Play Rotation:
 
-    - Dangerous Crossing
-    - Permafrost
+  - Dangerous Crossing
+  - Permafrost
 
 - Classic Tribes 2 voice packs are now available, using the original Tribes 2 voices:
 
-    - 5 male voice packs:
+  - 5 male voice packs:
 
-        - Hero
-        - Iceman
-        - Rogue
-        - Hardcase
-        - Psycho
+    - Hero
+    - Iceman
+    - Rogue
+    - Hardcase
+    - Psycho
 
-    - 5 female voice packs:
+  - 5 female voice packs:
 
-        - Heroine
-        - Professional
-        - Cadet
-        - Veteran
-        - Amazon
+    - Heroine
+    - Professional
+    - Cadet
+    - Veteran
+    - Amazon
 
-    - 3 BioDerm voice packs
+  - 3 BioDerm voice packs
 
-        - Warrior
-        - Monster
-        - Predator
+    - Warrior
+    - Monster
+    - Predator
 
 - Custom servers can now be configured/purchased in the N. America – Central region, with servers located in Dallas, TX. Note that this region is for Custom Servers only and does not apply to Quick Play matches.
 - Improved language support for German and French.
@@ -1336,9 +1323,9 @@ New Weapon loadout bar is now enabled by default. It shows the following:
 
 - Added 3 new items for Technician:
 
-    - New Primary: The TC24 can fire four short-range explosive projectiles before having to relod.
-    - New Belt Item: The Repair Kit will automatically repair any damaged structures or targets around it.
-    - New Pack: The EXR Turret has a longer range than the Light Turret and fires a small explosive rocket. It deals less focused damage than the Light Turret, but makes up for it with flexibility.
+  - New Primary: The TC24 can fire four short-range explosive projectiles before having to relod.
+  - New Belt Item: The Repair Kit will automatically repair any damaged structures or targets around it.
+  - New Pack: The EXR Turret has a longer range than the Light Turret and fires a small explosive rocket. It deals less focused damage than the Light Turret, but makes up for it with flexibility.
 
 - Reduced reload time on Brutes Gladiator by 7%.
 - Increased damage on Pathfinder’s Light Twinfusor by 12%.
@@ -1382,16 +1369,16 @@ New Weapon loadout bar is now enabled by default. It shows the following:
 - Players are more likely to be grouped in matches with other players of their same level/rank.
 - Players may now create a party of their friends before joining the Quick Match queues.
 
-    - Access through the popout tab on the Play Now option.
-    - The Leader may send invites to friends and others by name.
-    - Members can chat together in and out of game, and are notified when the Leader joins or leaves a queue.
-    - Members are removed from the party automatically if they leave the queue or game.
+  - Access through the popout tab on the Play Now option.
+  - The Leader may send invites to friends and others by name.
+  - Members can chat together in and out of game, and are notified when the Leader joins or leaves a queue.
+  - Members are removed from the party automatically if they leave the queue or game.
 
 - Three new skins have been added:
 
-    - Pathfinder Freerunner
-    - Brute Crusher
-    - Sentinel Spectre
+  - Pathfinder Freerunner
+  - Brute Crusher
+  - Sentinel Spectre
 
 - Voicepacks are now available to purchase. Four are available, two female and two male.
 - Players may now add a Clan Tag in front of their player name. Tags may be purchased under the Store menu.
@@ -1480,9 +1467,9 @@ New Weapon loadout bar is now enabled by default. It shows the following:
 
 - With the help of community feedback, we have reworked some of the mechanics of the emergent gameplay of “rock-bouncing.” The mechanic is more lenient than the last major patch:
 
-    - Bouncing off a rock at an extreme angle is possible again, but the player will lose some of their speed.
-    - The “grace angle” for a bounce that loses no speed has been widened
-    - We will continue to adjust this feature as needed.
+  - Bouncing off a rock at an extreme angle is possible again, but the player will lose some of their speed.
+  - The “grace angle” for a bounce that loses no speed has been widened
+  - We will continue to adjust this feature as needed.
 
 - FIxed an issue where some Accolades were not being awarded with some of the new variant weapons.
 - Fixed an issue where the Determination Perk was not applying its health boost correctly.
@@ -1518,34 +1505,34 @@ New Weapon loadout bar is now enabled by default. It shows the following:
 - NEW SLOT 2 PERK: The perk Lightweight has been added. Lightweight reduces your mass by 30%, creating stronger disk jumps, but more than triples the delay before health regeneration takes effect. This perk is intended for advanced chasers.
 - Automatics, SMGs, and Pistols:
 
-    - Reduced reload time reduction upgrade from 30% to 15% on:
+  - Reduced reload time reduction upgrade from 30% to 15% on:
 
-        - Soldier’s Assault Rifle
-        - Pathfinder’s Light Assault Rifle
-        - Technician’s TCN4
-        - Infiltrator’s Rhino
-        - Raider’s NJ4 SMG
-        - Raider’s NJ5 SMG
-        - Sentinel’s Falcon Auto-Pistol
+    - Soldier’s Assault Rifle
+    - Pathfinder’s Light Assault Rifle
+    - Technician’s TCN4
+    - Infiltrator’s Rhino
+    - Raider’s NJ4 SMG
+    - Raider’s NJ5 SMG
+    - Sentinel’s Falcon Auto-Pistol
 
-    - Increased damage fall off by 5% and brought closer the range at which falloff starts on:
+  - Increased damage fall off by 5% and brought closer the range at which falloff starts on:
 
-        - Infiltrator’s Rhino SMG
-        - Technician’s TCN4 SMG
-        - Raider’s NJ4 SMG
-        - Raider’s NJ5 SMG
+    - Infiltrator’s Rhino SMG
+    - Technician’s TCN4 SMG
+    - Raider’s NJ4 SMG
+    - Raider’s NJ5 SMG
 
-    - Increased damage fall off on Sentinel’s Falcon Auto-Pistol by 5%.
-    - Reduced clip size by 2 on Sentinel’s Falcon Auto-Pistol. Adjusted starting ammo pool.
-    - Reduced clip size by 3 on Pathfinder’s Light Assault Rifle. Adjusted starting ammo pool.
-    - Reduced clip size by 4 on Soldier’s Assault Rifle. Adjusted starting ammo pool.
-    - Reduced clip size by 6 on Infiltrator’s Rhino SMG. Adjusted starting ammo pool.
-    - Reduced clip size by 8 on Raider’s NJ4 SMG. Adjusted starting ammo.
-    - Reduced clip size by 6 on Raider’s NJ5 SMG. Adjusted starting ammo.
-    - Reduced damage by roughly 6% on Juggernaut’s X1 LMG.
-    - Reduced damage by roughly 7% on Infiltrator’s Rhino SMG.
-    - Reduced damage by roughly 6% on Raider’s NJ4 SMG.
-    - Reduced damage by roughly 7% on Sentinel’s Falcon Auto-Pistol.
+  - Increased damage fall off on Sentinel’s Falcon Auto-Pistol by 5%.
+  - Reduced clip size by 2 on Sentinel’s Falcon Auto-Pistol. Adjusted starting ammo pool.
+  - Reduced clip size by 3 on Pathfinder’s Light Assault Rifle. Adjusted starting ammo pool.
+  - Reduced clip size by 4 on Soldier’s Assault Rifle. Adjusted starting ammo pool.
+  - Reduced clip size by 6 on Infiltrator’s Rhino SMG. Adjusted starting ammo pool.
+  - Reduced clip size by 8 on Raider’s NJ4 SMG. Adjusted starting ammo.
+  - Reduced clip size by 6 on Raider’s NJ5 SMG. Adjusted starting ammo.
+  - Reduced damage by roughly 6% on Juggernaut’s X1 LMG.
+  - Reduced damage by roughly 7% on Infiltrator’s Rhino SMG.
+  - Reduced damage by roughly 6% on Raider’s NJ4 SMG.
+  - Reduced damage by roughly 7% on Sentinel’s Falcon Auto-Pistol.
 
 - Decreased effectiveness of Raider’s Shield Pack. More energy is required to absorb each point of damage taken.
 - Decreased detonation time by 26% and increased radius by 3% on Brute’s Gladiator.
@@ -1559,7 +1546,7 @@ New Weapon loadout bar is now enabled by default. It shows the following:
 - Mass reduction while enraged on the Rage Perk has been reduced from 35% to 10%. Heath granted at the start of Rage increased from 25% to 50%. Note that Rage, a slot 1 perk, can stack with the new Lightweight perk.
 - Fixed an issue that was allowing players to flat impact walls at high speed, and instantly move 180 degrees in the opposite direction with no speed loss or damage taken. This allowed for some game breaking front-to-front routes, and created a number of other gameplay related issues.
 
-    - This fix will have a heavy effect on rock-bouncing, a skill and strategy emerging from competitive games. We built in some tolerances to this fix that allow free bouncing at certain angles, and bleed less speed depending on the angle of impact. We will continue to adjust as needed. Rock bouncing is a feature we love, but the bug needed to be fixed for other extreme cases that were not to the benefit of the game.
+  - This fix will have a heavy effect on rock-bouncing, a skill and strategy emerging from competitive games. We built in some tolerances to this fix that allow free bouncing at certain angles, and bleed less speed depending on the angle of impact. We will continue to adjust as needed. Rock bouncing is a feature we love, but the bug needed to be fixed for other extreme cases that were not to the benefit of the game.
 
 - Reduced inactive reload time from 5 to 3 seconds. Inactive reload time is how long it takes for a weapon to reload automatically when not in hand.
 - Slightly increased the default pickup radius for all flags.
@@ -1595,17 +1582,15 @@ The patch fixes an exploit.
 - A “Watch Now” option has been added to the main menu. From this menu, you can view Featured Live Streams of Tribes from TwitchTV, as well as watch Featured YouTube Videos from Hi-Rez and the Community.
 - Players that have an active booster will be awarded 1,200 XP daily (at approximately 10:00 GMT). This is on top of your booster’s regular rewards.
 
-
 NOTE: Upon installation of this patch, a small pre-requisite program will be run by the Tribes Launcher. This is an update to the game’s embedded browser in order to enable the “Watch Now” functionality.
-
 
 #### Weapon/Balance Items
 
 - Added 3 new weapons for the Brute class:
 
-    - The Gladiator fires a charged round that sticks to walls and releases multiple shockwaves. Detonates instantly in a focused blast if it hits an enemy.
-    - The Plasma Cannon is the big brother to the Plasma Gun, firing balls of energy that explode on contact.
-    - The Survival Pack increases maximum energy pool by 15, and can be modified for extra health and run speed, and energy regeneration.
+  - The Gladiator fires a charged round that sticks to walls and releases multiple shockwaves. Detonates instantly in a focused blast if it hits an enemy.
+  - The Plasma Cannon is the big brother to the Plasma Gun, firing balls of energy that explode on contact.
+  - The Survival Pack increases maximum energy pool by 15, and can be modified for extra health and run speed, and energy regeneration.
 
 - The Rage Perk now grants 35% mass reduction against knockback while the player is enraged. (More powerful disk jumping).
 - Increased the distance from the flag the Rage Perk will activate by 33%.
@@ -1655,9 +1640,9 @@ NOTE: Upon installation of this patch, a small pre-requisite program will be run
 - Reduced the amount of knockback the flag receives from explosions in air (reducing punting).
 - New Accolades have been added:
 
-    - Investor: Earned every 2 minutes that a Base Radar or Generator that you upgraded remains online.
-    - Turret Support: Earned if a Base Turret you upgraded gets a kill.
-    - Hot Air: Earned for getting a mid-air kill with the Plasma Gun. (Replaces Air-Mail).
+  - Investor: Earned every 2 minutes that a Base Radar or Generator that you upgraded remains online.
+  - Turret Support: Earned if a Base Turret you upgraded gets a kill.
+  - Hot Air: Earned for getting a mid-air kill with the Plasma Gun. (Replaces Air-Mail).
 
 - An exit speed cap of 200kph has been added to the Shrike.
 - Fixed an issue in which the Pathfinder’s Thrust Pack could sometimes not correctly thrust the player.
@@ -1729,9 +1714,9 @@ Bug Fixes
 
 - Added 3 new weapons for the Raider class:
 
-    - Plasma Gun: A flexible weapon, the Plasma Gun fires massive spheres of plasma that explode on contact, with excellent rate of fire.
-    - NJ5-B SMG: The NJ5-B has a slower rate of fire than its predecessor, but deals more damage per hit. It can also fire while in scope.
-    - Cluster Grenade: The cluster grenade breaks apart into several smaller bomblets on detonation, each exploding for additional damage.
+  - Plasma Gun: A flexible weapon, the Plasma Gun fires massive spheres of plasma that explode on contact, with excellent rate of fire.
+  - NJ5-B SMG: The NJ5-B has a slower rate of fire than its predecessor, but deals more damage per hit. It can also fire while in scope.
+  - Cluster Grenade: The cluster grenade breaks apart into several smaller bomblets on detonation, each exploding for additional damage.
 
 - Add two new skins to the Raider class (Griever and Mercenary).
 - Increased damage on the Infiltrator’s Prism Mines by roughly 14%.
@@ -1749,10 +1734,10 @@ Custom Server Notes
 - As the owner of a custom server, you may always administer your server. You may also set an ADMIN PASSWORD that other users can use to gain access to some (but not all) administrative features of your custom server.
 - XP and Badge Rewards
 
-    - Players earn their normal Base XP on non-password protected servers.
-    - Bonus XP is only awarded on Custom Servers when at least 6 players have been on the server at some point during a match.
-    - No XP is awarded on custom servers that require a password.
-    - Badges, Statistics and First Win of the Day are disabled on Custom Servers (so you do not earn progress toward badges while playing on Custom Servers).
+  - Players earn their normal Base XP on non-password protected servers.
+  - Bonus XP is only awarded on Custom Servers when at least 6 players have been on the server at some point during a match.
+  - No XP is awarded on custom servers that require a password.
+  - Badges, Statistics and First Win of the Day are disabled on Custom Servers (so you do not earn progress toward badges while playing on Custom Servers).
 
 #### Additional Items
 
@@ -1776,6 +1761,7 @@ Custom Server Notes
 - Resolved an issue on Sunstar where players could get outside the map boundary.
 
 ### Tribes: Ascend Version 1.0.905.0
+
 2012/4/12
 
 #### Tribes: Ascend Dev Diary - Raindance / Servers
@@ -1790,17 +1776,17 @@ Custom Server Notes
 - A new gametype, Capture and Hold, has been added with three initial maps (Katabatic, Raindance and Outskirts).
 - Significant additional functionality has been added under a "SOCIAL" menu. Among the changes:
 
-    - People that have friended you now appear on your Social menu as "Followers". Followers may be friended reciprocally, or blocked.
-    - You may now send a message to online Friends and Followers. When typing in the chat console, use the format "@playername message" to send a message to a specific player. Block a player to avoid receiving messages from them. You can universally block the hud notifications for new messages using the NOTIFICATIONS section under SETTINGS.
-    - A variety of other cleanups and feature enhancements to improve the friend functionality have been implemented.
+  - People that have friended you now appear on your Social menu as "Followers". Followers may be friended reciprocally, or blocked.
+  - You may now send a message to online Friends and Followers. When typing in the chat console, use the format "@playername message" to send a message to a specific player. Block a player to avoid receiving messages from them. You can universally block the hud notifications for new messages using the NOTIFICATIONS section under SETTINGS.
+  - A variety of other cleanups and feature enhancements to improve the friend functionality have been implemented.
 
 - Players can now test unowned weapons and classes in the Target Practice map under Training. Classes and Weapons will still appear locked on your menu, but if you select them, you can try them.
 - All gametypes have a warm-up timer lasting 20 seconds after a second player has joined the match.
 - The HUD now shows the status of player deployables.
 - An early Sneak Preview of upcoming Custom Server functionality has been included in this release. Additional functionality is expected in future releases. During the Sneak Preview:
 
-    - Hi-Rez will operate a limited number of Custom Servers that players may join that take advantage of customized game rules. You may browse the list of available Custom Servers from the PLAY menu. Note that this server browser includes only Custom Servers, and not regular public matches accessed through the Play menu. Some servers reserved for competition play or other purposes may only be accessed using a password. Additional servers will be added regularly during the Sneak Preview period to test various Custom Server functionality.
-    - Players will not yet be able to rent and configure their own servers. This functionality will be coming in an upcoming release.
+  - Hi-Rez will operate a limited number of Custom Servers that players may join that take advantage of customized game rules. You may browse the list of available Custom Servers from the PLAY menu. Note that this server browser includes only Custom Servers, and not regular public matches accessed through the Play menu. Some servers reserved for competition play or other purposes may only be accessed using a password. Additional servers will be added regularly during the Sneak Preview period to test various Custom Server functionality.
+  - Players will not yet be able to rent and configure their own servers. This functionality will be coming in an upcoming release.
 
 Capture and Hold Gametype
 
@@ -1881,9 +1867,10 @@ New VGS Commands
 
 2012/3/30
 
-Since going live with the Cloak and Dagger patch, we have received a lot of user feedback on the pricing for Skins. Based on that feedback, we have decided to adjust the pricing some on the Cloak & Dagger packages and skins. 
+Since going live with the Cloak and Dagger patch, we have received a lot of user feedback on the pricing for Skins. Based on that feedback, we have decided to adjust the pricing some on the Cloak & Dagger packages and skins.
 
 Specifically:
+
 - The Assassin Skin has been repriced from 1200 to 975 gold
 - The Mercenary Skin has been repriced from 800 to 675 gold
 - The Mercenary Pack (which includes the Mercenary skin plus the 3 Cloak & Dagger weapons) has been repriced from 1200 to 1132 gold)
@@ -1907,9 +1894,9 @@ Significant Items
 
 - Spinfusor projectiles now travel at the same velocity, though Spinfusor weapons still vary in damage, radius, and fire rate.
 
-    - Increased Juggernaut's SpinfusorD projectile velocity by roughly 5%.
-    - Increased Soldier's Spinfusor projectile velocity by roughly 3%.
-    - Increased Brute's Heavy Spinfusor projectile velocity by roughly 8%.
+  - Increased Juggernaut's SpinfusorD projectile velocity by roughly 5%.
+  - Increased Soldier's Spinfusor projectile velocity by roughly 3%.
+  - Increased Brute's Heavy Spinfusor projectile velocity by roughly 8%.
 
 - Brute's Light Sticky Grenade damage against Generators increased 125%, better matches the Infiltrator's Sticky Grenades.
 - Fixed an issue where Soldier's AP Grenade did too much damage against Shrikes (reduced by 75%).
@@ -1925,11 +1912,9 @@ Significant Items
 
 2012/3/27
 
-
 #### Tribes: Ascend Dev Update #1 - Cloak & Dagger
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/mNqaiUl27MQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 
 #### Major Highlights
 
@@ -1937,16 +1922,16 @@ Significant Items
 - A new Arena map, Walled In, has been added to the Quick Play rotation.
 - Several additional HUD features have been implemented, including:
 
-    - Flag status (who is carrying the flag and timer until flag reset).
-    - Friend Notifications when players come online/go offline.
+  - Flag status (who is carrying the flag and timer until flag reset).
+  - Friend Notifications when players come online/go offline.
 
 #### Weapon/Balance Items
 
 - Three new weapons added for Infiltrator
 
-    - Jackal: The Jackal fires up to three rounds that stick to any surface, and are remote triggered for detonation.
-    - Throwing Knives: Throwing Knives deal impressive damage on a direct hit, and have a small splash damage radius.
-    - Smoke Grenade: Instantly vanish without waiting the normal reveal time from taking damage or firing a weapon. In addition, remain in stealth for 2 seconds even if you take damage. Firing a weapon will still break stealth.
+  - Jackal: The Jackal fires up to three rounds that stick to any surface, and are remote triggered for detonation.
+  - Throwing Knives: Throwing Knives deal impressive damage on a direct hit, and have a small splash damage radius.
+  - Smoke Grenade: Instantly vanish without waiting the normal reveal time from taking damage or firing a weapon. In addition, remain in stealth for 2 seconds even if you take damage. Firing a weapon will still break stealth.
 
 - Adjusted visual style on Infiltrator's Prism Mines to be more in line with other mines and harder to detect at long range.
 - Fixed an issue where Shrike's were not taking damage from bullet projectiles at certain angles and locations.
@@ -2072,21 +2057,21 @@ Hot Fixes in 0.1.811.0
 - Mirv Launcher and Mortar Launcher now use standard 50% projectile inheritance.
 - Two new perks have been added - Rage and Sonic Punch.
 
-    - Rage is a defensive Perk that, fully unlocked, increases energy regeneration for a limited time and provides a 25% heal if nearby your flag when an enemy grabs it.
-    - Sonic Punch, fully unlocked, creates a shock wave with each melee swing that pushes back nearby players, and can force a flag fumble.
+  - Rage is a defensive Perk that, fully unlocked, increases energy regeneration for a limited time and provides a 25% heal if nearby your flag when an enemy grabs it.
+  - Sonic Punch, fully unlocked, creates a shock wave with each melee swing that pushes back nearby players, and can force a flag fumble.
 
 #### Additional Items
 
 - Fixed many scenarios where weapons could “dry fire.” This fix improves instances where the weapon would appear to fire but no projectile would spawn, improves instances where the weapon could falsely reload, and improves scenarios where a deployable would not properly deploy, even though it appears valid on the player’s client.
 - Arena Gamemode
 
-    - Arena now unlocks as a playable mode at Level 8.
-    - Fixed issue where players would spawn as the Soldier class upon first joining an Arena Deathmatch.
-    - Credit count resets after each new round in Arena Deathmatch (the total number of reported credits earned for the lifetime of the match is retained, however).
-    - To better indicate a player is in a warm-up round, the game goes grayscale during this period.
-    - The overhead caret for the last man standing on a team is now always visible to other players.
-    - Players who are benched during the finale of a round will no longer AFK timeout if the finale lasts more than three minutes.
-    - When a player runs out of respawns, the text next to the death counter now says, “Out of Respawns” and when the timer expires it says, “Fire to Spectate”
+  - Arena now unlocks as a playable mode at Level 8.
+  - Fixed issue where players would spawn as the Soldier class upon first joining an Arena Deathmatch.
+  - Credit count resets after each new round in Arena Deathmatch (the total number of reported credits earned for the lifetime of the match is retained, however).
+  - To better indicate a player is in a warm-up round, the game goes grayscale during this period.
+  - The overhead caret for the last man standing on a team is now always visible to other players.
+  - Players who are benched during the finale of a round will no longer AFK timeout if the finale lasts more than three minutes.
+  - When a player runs out of respawns, the text next to the death counter now says, “Out of Respawns” and when the timer expires it says, “Fire to Spectate”
 
 - The distance from the reticule to see the health and nameplates of other players and objectives is more lenient, especially when zoomed.
 - CTF Temple Ruins has been removed from the public queue pending technical and design improvements.
@@ -2139,7 +2124,7 @@ Known Issues
 
 2012/2/28
 
-Fixed a bug that was causing many players to lock up during launch. 
+Fixed a bug that was causing many players to lock up during launch.
 
 ### Tribes Open Beta Version 0.1.789.1
 
@@ -2237,7 +2222,7 @@ Patch Items
 - Improvements to Shrike handling at high FPS.
 - Fix for issue that was preventing some menu hotkeys from working in the match lobby.
 
-Note that a separate issue was hot-fixed yesterday afternoon: "Players would not see their XP bar update following a match until they relogged." 
+Note that a separate issue was hot-fixed yesterday afternoon: "Players would not see their XP bar update following a match until they relogged."
 
 ### Tribes Closed Beta Version 0.1.759.0
 
@@ -2249,15 +2234,15 @@ Note that a separate issue was hot-fixed yesterday afternoon: "Players would not
 - XP prices of many weapons have been lowered. Those that purchased the weapons at the older XP prices will be refunded XP as if they had purchased at the new prices. (Note: Gold prices have not been modified).
 - The front-end menu has undergone a significant number of usability improvements and bug fixes. Some of the changes include:
 
-    - Easier navigation to modify your class from the in-game class select screen.
-    - Several improvements to the Friends list layout and usability.
-    - Reduced clicks to join a quick match.
-    - Hot-keys to access some menu items.
-    - A number of additional bug fixes, cleanups and minor enhancements.
-    - Several maps have had adjustments for performance, playability and aesthetics. More is planned for future releases.
-    - Weapon/Balance Items
-    - Fixed a bug that prevented the Ultra Capacitor II Perk from being unlocked.
-    - Fixed a bug with the Sentinel’s Phase Rifle allowing users to fire faster than intended.
+  - Easier navigation to modify your class from the in-game class select screen.
+  - Several improvements to the Friends list layout and usability.
+  - Reduced clicks to join a quick match.
+  - Hot-keys to access some menu items.
+  - A number of additional bug fixes, cleanups and minor enhancements.
+  - Several maps have had adjustments for performance, playability and aesthetics. More is planned for future releases.
+  - Weapon/Balance Items
+  - Fixed a bug that prevented the Ultra Capacitor II Perk from being unlocked.
+  - Fixed a bug with the Sentinel’s Phase Rifle allowing users to fire faster than intended.
 
 - Added minor damage falloff to projectile-based automatic and semi-automatic weapons. This affects Soldier’s Assault Rifle, Doombringer’s ChainGun, Sentinel’s Falcon, Pathfinder’s LAR, Infiltrator’s NJ4,Rhino,
 - Infiltrator’s SN7, Technician’s TCN4, and Juggernaut’s X1LMG)
@@ -2316,12 +2301,12 @@ Known Issues
 - There is a new UI for all the front-end menus. Many aspects of the new UI are still a work in progress, so please forgive any issues or quirkiness.
 - The class and purchase systems have undergone a major overhaul. The new system allows greater customization within a given class. Among the highlights:
 
-    - There are now 9 classes instead of 12 (Pathfinder, Sentinel, Infiltrator, Suldier, Technician, Raider, Juggernaut, Doombringer, Brute).
-    - New players receive the Pathfinder, Suldier and Juggernaut classes for free.
-    - Each class has a default loadout associated with it that includes your Armor (Light/Medium/Heavy), a Primary Weapon, a Secondary Weapon, Belt item, a Pack, and two Perk Slots. You may unlock alternate weapons for each slot, using XP or Guld.
-    - The class specific skill trees have been removed and replaced by a weapon-centric and armor-centric upgrade system. Upgrades are still unlocked using XP.
-    - Perks have been overhauled. With this patch, there are 18 perks in the game nine assigned to Perk Slot 1 and nine assigned to Perk Slot 2. You now unlock Perks using XP or Guld. Once a perk is unlocked, it can be used on all classes.
-    - Perks now have upgrades that can be purchased with XP, and contain additional functionality. (Example: The Pilot Perk gives +10% vehicle health, and has upgrades that provide +10% more health, with a final upgrade giving Ejection Seat).
+  - There are now 9 classes instead of 12 (Pathfinder, Sentinel, Infiltrator, Suldier, Technician, Raider, Juggernaut, Doombringer, Brute).
+  - New players receive the Pathfinder, Suldier and Juggernaut classes for free.
+  - Each class has a default loadout associated with it that includes your Armor (Light/Medium/Heavy), a Primary Weapon, a Secondary Weapon, Belt item, a Pack, and two Perk Slots. You may unlock alternate weapons for each slot, using XP or Guld.
+  - The class specific skill trees have been removed and replaced by a weapon-centric and armor-centric upgrade system. Upgrades are still unlocked using XP.
+  - Perks have been overhauled. With this patch, there are 18 perks in the game nine assigned to Perk Slot 1 and nine assigned to Perk Slot 2. You now unlock Perks using XP or Guld. Once a perk is unlocked, it can be used on all classes.
+  - Perks now have upgrades that can be purchased with XP, and contain additional functionality. (Example: The Pilot Perk gives +10% vehicle health, and has upgrades that provide +10% more health, with a final upgrade giving Ejection Seat).
 
 - 16 new weapons have been added to the game.
 - A new Crossfire Team Deathmatch map has been added. This map is an early iteration and is not in its final intended artistic or design state.
@@ -2330,28 +2315,28 @@ Known Issues
 - Weapon/Balance Items
 - The following Classes have been condensed:
 
-    - Jumper has been removed, and most of Jumper’s weapons and gear are now available on Pathfinder. The Sawed-off Shotgun is now a Technician Secondary option.
-    - Ranger has been removed, and Ranger’s weapons and gear are now available on Suldier.
-    - Scrambler has been removed, and Scrambler’s weapons and gear are now available on Raider.
+  - Jumper has been removed, and most of Jumper’s weapons and gear are now available on Pathfinder. The Sawed-off Shotgun is now a Technician Secondary option.
+  - Ranger has been removed, and Ranger’s weapons and gear are now available on Suldier.
+  - Scrambler has been removed, and Scrambler’s weapons and gear are now available on Raider.
 
 - The following new weapons have been added:
 
-    - Light Assault Rifle (Pathfinder Secondary)
-    - Explosive Nitron (Pathfinder Belt)
-    - Phase Rifle (Sentinel Primary)
-    - Falcon Auto-Pistul (Sentinel Secondary)
-    - T5 Grenade (Sentinel Belt)
-    - Stealth Spinfusor (Infiltrator Primary)
-    - Prism Mines (Infiltrator Belt)
-    - Thumper (Large version) (Technician Primary)
-    - Sparrow Pistul (Technician Secondary)
-    - Motion Sensor (Technician Belt)
-    - MIRV Launcher (Juggernaut Primary)
-    - X1 LMG (Juggernaut Secondary)
-    - Disk Toss (Juggernaut Belt)
-    - Heavy Bult Launcher (Doombringer Primary)
-    - Mines (Doombringer Belt)
-    - Nova Cult (Brute Secondary)
+  - Light Assault Rifle (Pathfinder Secondary)
+  - Explosive Nitron (Pathfinder Belt)
+  - Phase Rifle (Sentinel Primary)
+  - Falcon Auto-Pistul (Sentinel Secondary)
+  - T5 Grenade (Sentinel Belt)
+  - Stealth Spinfusor (Infiltrator Primary)
+  - Prism Mines (Infiltrator Belt)
+  - Thumper (Large version) (Technician Primary)
+  - Sparrow Pistul (Technician Secondary)
+  - Motion Sensor (Technician Belt)
+  - MIRV Launcher (Juggernaut Primary)
+  - X1 LMG (Juggernaut Secondary)
+  - Disk Toss (Juggernaut Belt)
+  - Heavy Bult Launcher (Doombringer Primary)
+  - Mines (Doombringer Belt)
+  - Nova Cult (Brute Secondary)
 
 - All Perks have been significantly modified, and many have been combined together. Perks have upgrades that can be unlocked with XP, and the final upgrade usually provides new functionality.
 - Reduced damage by roughly 6% on Ranger’s Assault Rifle, Raider’s NJ4 SMG, and Infiltrator’s Rhino SMG. Reduced by 11% on Technician’s TCN4 SMG.
@@ -2439,7 +2424,7 @@ Known Issues
 
 2012/1/10
 
-The patch contains only backend changes meant to address stability issues in the current build. We have eliminated a couple issues causing connection and stability issues. We believe several issues will likely still remain and this patch adds additional logging and debug support so that we can hopefully address those remaining problems soon. 
+The patch contains only backend changes meant to address stability issues in the current build. We have eliminated a couple issues causing connection and stability issues. We believe several issues will likely still remain and this patch adds additional logging and debug support so that we can hopefully address those remaining problems soon.
 
 ### Tribes Closed Beta Version 0.1.669.0
 
@@ -2504,13 +2489,15 @@ Significant Changes
 - Fixed a bug in the First Win of the Day bonus.
 - Fixed a bug that would prevent players from getting their rewards at end of match under some conditions.
 - Fixed a bug with the gravcycle that could cause all players to disconnect from a match under some conditions.
+
 ### Tribes Closed Beta Version 0.1.636.0
 
 2011/12/23
 
 NOTE: THERE APPEARS TO BE AN ISSUE WITH THE PATCH. WE ARE INVESTIGATING. MOST LIKELY, THE PATCH WILL BE ROLLED BACK AND DELAYED UNTIL AFTER THE HOLIDAYS. PLEASE EXPECT A FEW MORE HOURS OF DOWNTIME.
 
-SORRY FOR THE ISSUES. 
+SORRY FOR THE ISSUES.
+
 ### Tribes Closed Beta Version 0.1.635.0
 
 2011/12/21
@@ -2526,12 +2513,12 @@ Balance Items
 
 - Several visual changes and general balance adjustments designed to help increase player accuracy with fully automatic projectile weapons. Damage adjustments also made to these weapons taking into account increased player hit rates. Affected weapons:
 
-    - Infiltrator’s Rhino SMG
-    - Infiltrator’s SN7
-    - Technician’s TCN4 SMG
-    - Ranger’s Assault Rifle
-    - Doombringer’s Chaingun
-    - Raider’s NJ4 SMG.
+  - Infiltrator’s Rhino SMG
+  - Infiltrator’s SN7
+  - Technician’s TCN4 SMG
+  - Ranger’s Assault Rifle
+  - Doombringer’s Chaingun
+  - Raider’s NJ4 SMG.
 
 Spectator Changes
 
@@ -2562,6 +2549,7 @@ Spectator Changes
 Known Issues
 
 - Stats for Kill Distance and Distance Traveled are not showing the correct values.
+
 ### Tribes Closed Beta Version 0.1.619.0
 
 2011/12/15
@@ -2633,6 +2621,7 @@ Known Issues
 
 - After being votekicked out of a match, some clients may experience a hang that requires a game restart.
 - Stealth players may show a small effect while skiing.
+
 ### Tribes Closed Beta Version 0.1.601.0 and Version 0.1.602.0
 
 2011/12/08
@@ -2659,21 +2648,21 @@ Balance Items
 - Modest increase to Projectile speeds on Soldier’s Spinfusor, Pathfinder’s Light Spinfusor, Brute’s Heavy Spinfusor, Juggernaut’s Spinfusor D, Scrambler’s Arx Buster, and Jumper’s Bolt Launcher.
 - Grav Cycle
 
-    - Uses a new rocket pod weapon.
-    - Can now be piloted by heavies, and carry heavies as passengers.
-    - Top speed and after-burner boost have been increased.
+  - Uses a new rocket pod weapon.
+  - Can now be piloted by heavies, and carry heavies as passengers.
+  - Top speed and after-burner boost have been increased.
 
 - Beowulf
 
-    - Increased damage and rate of fire of secondary gunner position.
-    - Gunner now has zoom, increased pitch limits, and increased firing rate.
-    - Increased run-over damage.
+  - Increased damage and rate of fire of secondary gunner position.
+  - Gunner now has zoom, increased pitch limits, and increased firing rate.
+  - Increased run-over damage.
 
 - Shrike
 
-    - Yaw sensitivity has been increased.
-    - Damage against ground and buildings is now more forgiving.
-    - Credits are now awarded for damaging players, as well as for earning accolades. Credits awarded for Kills and Assists have been adjusted accordingly.
+  - Yaw sensitivity has been increased.
+  - Damage against ground and buildings is now more forgiving.
+  - Credits are now awarded for damaging players, as well as for earning accolades. Credits awarded for Kills and Assists have been adjusted accordingly.
 
 - Tactical Strike and Orbital Strike now have a thirty second cooldown.
 - Tactical Strike Price Increased.
@@ -2690,41 +2679,41 @@ Spectator Early Preview
 - Keys may be changed in the Settings menu, at the bottom of the Keybindings list - Spectator keys are prefixed with “SPEC”
 - Default Keybindings:
 
-    - Z: Show/Hide basic controls
-    - X: Show/Hide HUD
-    - Q: Move Down
-    - E: Move Up
-    - W/A/S/D: Move Forward, Left, Back, Right
-    - Left Mouse: Next (default, next player)
-    - Right Mouse: Previous (default, previous player)
-    - Middle Mouse: Rove camera (free cam)
-    - MouseWheel:
+  - Z: Show/Hide basic controls
+  - X: Show/Hide HUD
+  - Q: Move Down
+  - E: Move Up
+  - W/A/S/D: Move Forward, Left, Back, Right
+  - Left Mouse: Next (default, next player)
+  - Right Mouse: Previous (default, previous player)
+  - Middle Mouse: Rove camera (free cam)
+  - MouseWheel:
 
-        - When in Rove Camera mode, move faster or slower
-        - When viewing a target, zooms in and out
+    - When in Rove Camera mode, move faster or slower
+    - When viewing a target, zooms in and out
 
-    - G: Hold and press Left Mouse or Right Mouse to view generators
-    - F: Hold and press Left Mouse or Right Mouse to view flags
-    - B: Hold and press Left Mouse or Right Mouse to view flag bases
-    - Tab: Scoreboard
+  - G: Hold and press Left Mouse or Right Mouse to view generators
+  - F: Hold and press Left Mouse or Right Mouse to view flags
+  - B: Hold and press Left Mouse or Right Mouse to view flag bases
+  - Tab: Scoreboard
 
 Muting and Reporting Players
 
 - Initial versions of these systems are now available. They are still in development, and currently can only be accessed via text entry. UI support is forthcoming.
 - Current Usage
 
-    - Open the “say” chat interface (default key = “T”)
-    - Enter a forward slash (“/”) followed by the command and the target player’s name.
+  - Open the “say” chat interface (default key = “T”)
+  - Enter a forward slash (“/”) followed by the command and the target player’s name.
 
 - Mute player: /mute playername (example: /mute Bob)
 
-    - This prevents the muted player’s chat from showing up on your HUD.
-    - The mute persists until you exit the game.
-    - Should you wish to unmute a player, the command is “/unmute playername”
+  - This prevents the muted player’s chat from showing up on your HUD.
+  - The mute persists until you exit the game.
+  - Should you wish to unmute a player, the command is “/unmute playername”
 
 - Report player: /report playername reason for report
 
-    - Allows you to log a complaint against a player; please specify a reason for the report!
+  - Allows you to log a complaint against a player; please specify a reason for the report!
 
 #### Additional Items
 
@@ -2751,6 +2740,7 @@ Muting and Reporting Players
 Known Issues
 
 - Beowulf’s secondary gunner particle effects are visible only to the player controlling the weapon.
+
 ### Tribes Closed Beta Version 0.1.583.0
 
 2011/12/01
@@ -2788,6 +2778,7 @@ Balance Changes
 - The Rabbit scoreboard has been improved.
 - The class screen now highlights the Pathfinder and Juggernaut classes (the least expensive) if you have not unlocked them.
 - Summary window may be closed at match end to allow for chatting and VGS use.
+
 ### Tribes Closed Beta Version 0.1.562.0
 
 2011/11/22
@@ -2841,6 +2832,7 @@ Known Issues
 - The abbreviation for Sentinel is not showing up on the Scoreboard under class (it will show blank).
 - Rabbit in-match scoreboard overlaps the Chat Log.
 - Perk items are not always selecting the 2nd item reliably from the Classes Screen.
+
 ### Tribes Closed Beta Version 0.1.549.0
 
 2011/11/17
@@ -2903,7 +2895,9 @@ Known Issues
 - The “you have the flag” message repeats at a rate that can be annoying in some situations. This will be fixed in a future patch.
 - Grav Cycle view for the riding passenger (1P & 3P) can still get in to a weird state under some conditions.
 - Accolades received before exiting and rejoining a match will not show in the Player Summary screen. They are being recorded but simply do not show at this time.
+
 ### Tribes Closed Beta Version 0.1.523
+
 2011/11/10
 
 Major Highlights since Version 0.1.504
@@ -2917,6 +2911,7 @@ Major Highlights since Version 0.1.504
 - Large number of bug fixes.
 
 #### Vehicles
+
 - Adjusted flag throwing physics to improve throwing in specific directions.
 - Players who leave or disconnect from a match will now receive XP and Tokens for their time in game, once that match has ended. [NOTE: Some issues remain if you are offline when the match you were in has ended. These are being researched and should be fixed in an upcoming patch].
 - VIP Experience now properly awarded to VIP players on Free Servers (while VIP Servers are not in function). Rank Experience is not increased by VIP or Boost anymore.

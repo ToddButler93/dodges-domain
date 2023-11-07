@@ -10,7 +10,7 @@ tags: [tribes-information]
 
 ## Tribes.ini
 
-Your `Tribes.ini` is the config file for your graphical settings. 
+Your `Tribes.ini` is the config file for your graphical settings.
 
 It is located under "Documents\My Games\Tribes Ascend\TribesGame\Config\"
 
@@ -26,7 +26,7 @@ This `Tribes.ini` is for people with weaker systems or who are after a competiti
 	Dodge's "Pretty" Tribes.ini<i class="fa-solid fa-download ml-2 "></i>
 </a>
 
-This `Tribes.ini` is for people with a super-strong system and prioritize looks over a competitive edge. 
+This `Tribes.ini` is for people with a super-strong system and prioritize looks over a competitive edge.
 
 [![](/img/dodge-pretty-ini.png)](/text/dodges-pretty-ini/tribes.ini)
 
@@ -56,7 +56,6 @@ Set `AllowRadialBlur=False` to remove some of the distortions from weapon impact
 
 Set `Borderless=False` to improve input lag on certain systems.
 
-
 ## TribesInput.ini
 
 Your `TribesInput.ini` is the config file for your key bindings.
@@ -73,7 +72,7 @@ A sensitivity of approximately 4.501 at maximum zoom will cause issues with mous
 
 This is my personal `TribesInput.ini`. Contains some of the autocompletes for official and custom server admins.
 
-You must set this to `Read Only` otherwise the game will overwrite the file. 
+You must set this to `Read Only` otherwise the game will overwrite the file.
 
 ## TAMods
 
@@ -82,4 +81,3 @@ It is recommended to delete the default crosshairs and either use the Tribes Asc
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="/text/dodges-config-lua/config.lua">
 	Dodge's TAMods Config.lua<i class="fa-solid fa-download ml-2 "></i>
 </a>
-

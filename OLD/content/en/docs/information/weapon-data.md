@@ -4,12 +4,14 @@ title: Weapon Data
 linkTitle: Weapon Data
 tags: [tribes-information]
 ---
+
 ## Parting Gifts (OOTB)
+
 <!-- TODO Fill out with searchable sheet -->
+
 [Google Spreadsheet link](http://web.archive.org/web/20190719215253/https://docs.google.com/spreadsheets/d/1-Iqej8_6WUQnEoRM4Yvj3LVSX8i87M2KLvqFVkXqc1w/pubhtml)
 
-
-|               |                            | Fuse         | Interval | Total | *     | Direct | Max  | Min   | Burst | Sust | Min   |        | Start | Range | Min  | Veh  | Base | Speed | Inherit | Size | Base | Per shot | TTR  | Mag | NoR | Pool | Per Mag | Per Pool | Until Empty |                                                             |
+|               |                            | Fuse         | Interval | Total | \*    | Direct | Max  | Min   | Burst | Sust | Min   |        | Start | Range | Min  | Veh  | Base | Speed | Inherit | Size | Base | Per shot | TTR  | Mag | NoR | Pool | Per Mag | Per Pool | Until Empty |                                                             |
 | ------------- | -------------------------- | ------------ | -------- | ----- | ----- | ------ | ---- | ----- | ----- | ---- | ----- | ------ | ----- | ----- | ---- | ---- | ---- | ----- | ------- | ---- | ---- | -------- | ---- | --- | --- | ---- | ------- | -------- | ----------- | ----------------------------------------------------------- |
 | Impact        | Light Spinfusor            | Impact       | 0.46     | 1.71  | 125%  | 750    | 600  | 120   | 750   | 439  | 261   | 85000  | 0     | 360   | 20%  | 100% | 100% | 3920  | 50%     | 15   | 1    | 0        | 1.25 | 1   | 20  | 20   | 600     | 12000    | 0.46        | Baseline Spinfusor                                          |
 | Impact        | Light Blinksfusor          | Impact       | 0.46     | 1.71  | 125%  | 750    | 600  | 120   | 750   | 439  | 261   | 85000  | 0     | 360   | 20%  | 100% | 100% | 3920  | 100%    | 15   | 1    | 0        | 1.25 | 1   | 20  | 20   | 600     | 12000    | 0.46        | 100% inhertance                                             |
@@ -48,7 +50,7 @@ tags: [tribes-information]
 | Short range   | Flak Cannon                | -            | 0.75     | 1.2   | 9     | 585    | 65   | 32.5  | 780   | 488  | 43    | -      | 50%   | 2500  | 50%  | 125% | 200% | 9000  | 50%     | 25   | 0.85 | 0        | 1.8  | 4   | 8   | 32   | 260     | 18720    | 3           | Close-mid range finisher, Great indoors.                    |
 | Short range   | Sawed Off Shotgun          | -            | 0.5      | 1.3   | 9     | 630    | 70   | 35    | 1260  | 485  | 70    | -      | 50%   | 2500  | 50%  | 50%  | 100% | -     | -       | -    | 0.85 | 0        | 1.6  | 2   | 12  | 24   | 140     | 15120    | 1           | Close-mid range finisher.                                   |
 | Specialty     | Advanced Repair Tool       | N/A          | N/A      | N/A   | N/A   | N/A    | N/A  | N/A   | N/A   | N/A  | N/A   | -      | -     | N/A   | N/A  | -    | 100% | N/A   | N/A     | -    | N/A  | N/A      | N/A  | N/A | 0   | N/A  | N/A     | N/A      | N/A         | Upgraded repair tool, Repairs faster.                       |
-| Specialty     | ELF Projector              | N/A          | 0.1      | N/A   | 30%   | 0.50%  | 10   | 0.50% | *     | *    | 0.50% | -      | 0     | 1250  |      | 200% | 300% | N/A   | N/A     | -    |      |          |      |     | N/A | N/A  | N/A     | N/A      | N/A         | 1% energy drain per second. 5% health drain per second.     |
+| Specialty     | ELF Projector              | N/A          | 0.1      | N/A   | 30%   | 0.50%  | 10   | 0.50% | \*    | \*   | 0.50% | -      | 0     | 1250  |      | 200% | 300% | N/A   | N/A     | -    |      |          |      |     | N/A | N/A  | N/A     | N/A      | N/A         | 1% energy drain per second. 5% health drain per second.     |
 | Specialty     | Honorfusor                 | Impact       | 0.46     | 1.71  | 100%  | 875    | 0    | 0     | 875   | 512  | -     | 85000  | 0     | 0     | 0%   | 0%   | 0%   | 3920  | 50%     | 15   | 1    | 0        | 1.25 | 1   | 24  | 24   | 0       | 0        | 0.46        | Honorfusor, 50% inheritance and direct hit damage only      |
 | Belt          | AP Grenade                 | 2            | 1.2      | -     | 100%  | 875    | 875  | 437.5 | 875   | -    |       | 85000  | 0     | 600   | 50%  | 150% | 100% | 1200  | 60%     | 20   | 1    | 0        | 0    | 2   | N/A | N/A  | N/A     | N/A      | N/A         | Standard timed grenade                                      |
 | Belt          | EMP Grenade                | 2            | 1.2      | -     | 100%  | 500    | 500  | 250   | 500   | -    |       | 85000  | 0     | 600   | 50%  | 300% | 300% | 1200  | 60%     | 20   | 1    | 0        | 0    | 2   | N/A | N/A  | N/A     | N/A      | N/A         | Drains up to 160 energ, Extra damage to veh and base assets |
@@ -80,10 +82,12 @@ tags: [tribes-information]
 | Belt          | Mines                      | -            | 1.2      | -     | 100%  | 300    | 300  | 300   | 300   | -    | -     | 85000  | -     | 300   | 100% | 200% | 200% | 300   | 60%     | -    | 1    | 0        | 0    | 1   | N/A | N/A  | N/A     | N/A      | N/A         | Stationary explosive, Max deployed 2                        |
 
 ## GOTY
+
 <!-- TODO Fill out with searchable sheet -->
+
 [Google Spreadsheet link](https://docs.google.com/spreadsheets/d/1C4KH1_lSX9VoxHXVCbs-1DXwMRnuqx1gCWD0Bj17CZc/edit#gid=1619274418)
 
-|                          | Stat | Real | Base | *    | Total | Min   | Chg/Del       | Range  | Max% | Min% | Min Dmg | Speed | Inherit | Time | Strength | Base | Per shot | Reload | Size | Max Dmg | Min Dmg | Empty |                               |                               |                |            |
+|                          | Stat | Real | Base | \*   | Total | Min   | Chg/Del       | Range  | Max% | Min% | Min Dmg | Speed | Inherit | Time | Strength | Base | Per shot | Reload | Size | Max Dmg | Min Dmg | Empty |                               |                               |                |            |
 | ------------------------ | ---- | ---- | ---- | ---- | ----- | ----- | ------------- | ------ | ---- | ---- | ------- | ----- | ------- | ---- | -------- | ---- | -------- | ------ | ---- | ------- | ------- | ----- | ----------------------------- | ----------------------------- | -------------- | ---------- |
 | Blinksfusor              | 0.46 | 1.7  | 550  | 1.6  | 880   | 275   | -             | 340    | 0.5  | 0.9  | 0.5     | 3920  | 100%    | 0    | 0        | 1    | 0        | 1.24   | 1    | 880     | 275     | 0     |                               |                               |                |            |
 | Dueling Spinfusor        | 0.46 | 1.7  | 550  | 1.6  | 880   | 275   | -             | 340    | 0.5  | 0.9  | 0.5     | 3920  | 50%     | 0    | 0        | 1    | 0        | 1.24   | 1    | 880     | 275     | 0     |                               |                               |                |            |
