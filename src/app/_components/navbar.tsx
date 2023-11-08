@@ -21,7 +21,7 @@ export function NavBar() {
           </Link>
         </div>
         <div className="md:px-18 flex items-center justify-between px-2 sm:gap-6">
-          <ul className="text-xl hidden items-end justify-center gap-6 font-medium sm:flex">
+          <ul className="hidden items-end justify-center gap-6 text-xl font-medium sm:flex">
             <li>
               <Menu
                 shadow="md"
@@ -29,7 +29,7 @@ export function NavBar() {
                 openDelay={0}
                 closeDelay={200}
                 position="bottom-start"
-                transitionProps={{ transition: 'scale-y', duration: 150 }}
+                transitionProps={{ transition: "scale-y", duration: 150 }}
               >
                 <Menu.Target>
                   <Link
@@ -59,21 +59,20 @@ export function NavBar() {
               </Menu>
             </li>
             <li>
-              
               <Menu
                 shadow="md"
                 trigger="hover"
                 openDelay={0}
                 closeDelay={200}
                 position="bottom-start"
-                transitionProps={{ transition: 'scale-y', duration: 150 }}
+                transitionProps={{ transition: "scale-y", duration: 150 }}
               >
                 <Menu.Target>
                   <Link
-                href="/docs/gameplay/guide-quick"
+                    href="/docs/gameplay/guide-quick"
                     className={`transition-all duration-300 hover:text-teal-500 active:text-teal-500 `}
                   >
-                  Gameplay Guides
+                    Gameplay Guides
                   </Link>
                 </Menu.Target>
 
@@ -134,14 +133,14 @@ export function NavBar() {
                 openDelay={0}
                 closeDelay={200}
                 position="bottom-start"
-                transitionProps={{ transition: 'scale-y', duration: 150 }}
+                transitionProps={{ transition: "scale-y", duration: 150 }}
               >
                 <Menu.Target>
                   <Link
                     href="/docs/development/guide-map-dev"
                     className={`transition-all duration-300 hover:text-teal-500 active:text-teal-500 `}
                   >
-                  Map Development
+                    Map Development
                   </Link>
                 </Menu.Target>
 
@@ -151,7 +150,7 @@ export function NavBar() {
                     href="/docs/development/guide-map-dev"
                     className={`transition-all duration-300 hover:text-teal-500 active:text-teal-500 `}
                   >
-                  Map Development
+                    Map Development
                   </Menu.Item>
                   <Menu.Item
                     component="a"
@@ -181,7 +180,7 @@ export function NavBar() {
                 openDelay={0}
                 closeDelay={200}
                 position="bottom-start"
-                transitionProps={{ transition: 'scale-y', duration: 150 }}
+                transitionProps={{ transition: "scale-y", duration: 150 }}
               >
                 <Menu.Target>
                   <Link
