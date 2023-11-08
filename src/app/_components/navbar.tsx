@@ -33,7 +33,7 @@ export function NavBar() {
             </li>
             <li>
               <Link
-                href="/docs/gameplay"
+                href="/docs/gameplay/guide-quick"
                 className={`
       transition-all duration-300 hover:text-teal-500 active:text-teal-500 `}
               >
