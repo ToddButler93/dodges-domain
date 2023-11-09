@@ -5,237 +5,610 @@ import Image from "next/image";
 import { SignInButton, SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 import logo from "../../../public/static/img/blueplate.png";
 
-import { ColorSchemeScript, Menu } from "@mantine/core";
+import {
+  ColorSchemeScript,
+  HoverCard,
+  Group,
+  Button,
+  UnstyledButton,
+  Text,
+  SimpleGrid,
+  ThemeIcon,
+  Anchor,
+  Divider,
+  Center,
+  Box,
+  Burger,
+  Drawer,
+  Collapse,
+  ScrollArea,
+  rem,
+  useMantineTheme,
+  Title,
+} from "@mantine/core";
+import { useDisclosure } from "@mantine/hooks";
+import {
+  FaDownload,
+  FaFlag,
+  FaGamepad,
+  FaGun,
+  FaPlus,
+  FaShield,
+  FaWeightHanging,
+} from "react-icons/fa6";
+import { FaEdit } from "react-icons/fa";
+import { RxCrosshair1 } from "react-icons/rx";
+import classes from "./NavBar.module.css";
+
+const installMenuData = [
+  {
+    icon: FaDownload,
+    title: "Installation Guide",
+    description: "TODO: Write description",
+    link: "/docs/guide-install-setup",
+  },
+  {
+    icon: FaEdit,
+    title: "Configuration Guide",
+    description: "TODO: Write description",
+    link: "/docs/guide-config",
+  },
+];
+
+const pugMenuData = [
+  {
+    icon: FaGamepad,
+    title: "PUG Guide",
+    description: "TODO: Write description",
+    link: "/docs/gameplay/guide-quick",
+  },
+];
+
+const gameplayMenuData = [
+  {
+    icon: FaGun,
+    title: "Offense",
+    description: "TODO: Write description",
+    link: "/docs/servers/guide-offense",
+  },
+  {
+    icon: FaFlag,
+    title: "Capping",
+    description: "TODO: Write description",
+    link: "/docs/servers/guide-cap",
+  },
+  {
+    icon: FaWeightHanging,
+    title: "Heavy on Flag",
+    description: "TODO: Write description",
+    link: "/docs/servers/guide-hof",
+  },
+  {
+    icon: FaShield,
+    title: "Defense",
+    description: "TODO: Write description",
+    link: "/docs/servers/guide-defense",
+  },
+  {
+    icon: RxCrosshair1,
+    title: "Sniping",
+    description: "TODO: Write description",
+    link: "/docs/servers/guide-snipe",
+  },
+];
+
+const mapDevelopmentMenuData = [
+  {
+    icon: FaGamepad,
+    title: "Map Development",
+    description: "TODO: Write description",
+    link: "/docs/development/guide-map-dev",
+  },
+  {
+    icon: FaGamepad,
+    title: "Using UDK",
+    description: "TODO: Write description",
+    link: "/docs/development/guide-udk-basics",
+  },
+];
+
+const tribesInfoMenuData = [
+  {
+    icon: FaGamepad,
+    title: "Patch History",
+    description: "TODO: Write description",
+    link: "/docs/information",
+  },
+  {
+    icon: FaGamepad,
+    title: "Weapon Data",
+    description: "TODO: Write description",
+    link: "/docs/information/weapon-data",
+  },
+  {
+    icon: FaGamepad,
+    title: "Game Server Hosting",
+    description: "TODO: Write description",
+    link: "/docs/servers/guide-hosting",
+  },
+];
+
 export function NavBar() {
+  const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] =
+    useDisclosure(false);
+  const [installLinksOpened, { toggle: toggleInstallLinks }] =
+    useDisclosure(false);
+  const [gameplayLinksOpened, { toggle: toggleGameplayLinks }] =
+    useDisclosure(false);
+  const [mapDevelopmentLinksOpened, { toggle: toggleMapDevelopmentLinks }] =
+    useDisclosure(false);
+  const [
+    tribesInformationLinksOpened,
+    { toggle: toggleTribesInformationLinks },
+  ] = useDisclosure(false);
+  const theme = useMantineTheme();
+
+  const installLinks = installMenuData.map((item) => (
+    <UnstyledButton
+      component={Link}
+      href={item.link}
+      className={classes.subLink}
+      key={item.title}
+    >
+      <Group
+        wrap="nowrap"
+        align="flex-start"
+        className="transition-all duration-300 hover:text-teal-500 active:text-teal-500"
+      >
+        <ThemeIcon size={34} variant="default" radius="md">
+          <item.icon
+            style={{ width: rem(22), height: rem(22) }}
+            color={theme.colors.blue[6]}
+          />
+        </ThemeIcon>
+        <div>
+          <Text size="sm" fw={500}>
+            {item.title}
+          </Text>
+          <Text size="xs" c="dimmed">
+            {item.description}
+          </Text>
+        </div>
+      </Group>
+    </UnstyledButton>
+  ));
+
+  const gameplayLinks = gameplayMenuData.map((item) => (
+    <UnstyledButton
+      component={Link}
+      href={item.link}
+      className={classes.subLink}
+      key={item.title}
+    >
+      <Group
+        wrap="nowrap"
+        align="flex-start"
+        className="transition-all duration-300 hover:text-teal-500 active:text-teal-500"
+      >
+        <ThemeIcon size={34} variant="default" radius="md">
+          <item.icon
+            style={{ width: rem(22), height: rem(22) }}
+            color={theme.colors.blue[6]}
+          />
+        </ThemeIcon>
+        <div>
+          <Text size="sm" fw={500}>
+            {item.title}
+          </Text>
+          <Text size="xs" c="dimmed">
+            {item.description}
+          </Text>
+        </div>
+      </Group>
+    </UnstyledButton>
+  ));
+
+  const pugLinks = pugMenuData.map((item) => (
+    <UnstyledButton
+      component={Link}
+      href={item.link}
+      className={classes.subLink}
+      key={item.title}
+    >
+      <Group
+        wrap="nowrap"
+        align="flex-start"
+        className="transition-all duration-300 hover:text-teal-500 active:text-teal-500"
+      >
+        <ThemeIcon size={34} variant="default" radius="md">
+          <item.icon
+            style={{ width: rem(22), height: rem(22) }}
+            color={theme.colors.blue[6]}
+          />
+        </ThemeIcon>
+        <div>
+          <Text size="sm" fw={500}>
+            {item.title}
+          </Text>
+          <Text size="xs" c="dimmed">
+            {item.description}
+          </Text>
+        </div>
+      </Group>
+    </UnstyledButton>
+  ));
+  const mapDevelopmentLinks = mapDevelopmentMenuData.map((item) => (
+    <UnstyledButton
+      component={Link}
+      href={item.link}
+      className={classes.subLink}
+      key={item.title}
+    >
+      <Group
+        wrap="nowrap"
+        align="flex-start"
+        className="transition-all duration-300 hover:text-teal-500 active:text-teal-500"
+      >
+        <ThemeIcon size={34} variant="default" radius="md">
+          <item.icon
+            style={{ width: rem(22), height: rem(22) }}
+            color={theme.colors.blue[6]}
+          />
+        </ThemeIcon>
+        <div>
+          <Text size="sm" fw={500}>
+            {item.title}
+          </Text>
+          <Text size="xs" c="dimmed">
+            {item.description}
+          </Text>
+        </div>
+      </Group>
+    </UnstyledButton>
+  ));
+  const tribesInformationLinks = tribesInfoMenuData.map((item) => (
+    <UnstyledButton
+      component={Link}
+      href={item.link}
+      className={classes.subLink}
+      key={item.title}
+    >
+      <Group
+        wrap="nowrap"
+        align="flex-start"
+        className="transition-all duration-300 hover:text-teal-500 active:text-teal-500"
+      >
+        <ThemeIcon size={34} variant="default" radius="md">
+          <item.icon
+            style={{ width: rem(22), height: rem(22) }}
+            color={theme.colors.blue[6]}
+          />
+        </ThemeIcon>
+        <div>
+          <Text size="sm" fw={500}>
+            {item.title}
+          </Text>
+          <Text size="xs" c="dimmed">
+            {item.description}
+          </Text>
+        </div>
+      </Group>
+    </UnstyledButton>
+  ));
+
   return (
-    <header className="drop-shadow-header sticky top-0 z-50 flex min-w-full justify-between bg-zinc-800 px-2 py-4 font-mono font-medium text-slate-50 backdrop-blur md:px-5">
-      <ColorSchemeScript />
-      <div className="text-m flex min-w-full flex-col items-center justify-between gap-3 font-medium text-slate-50 md:flex-row">
-        <div className="md:px-18 flex items-center justify-start px-2 sm:gap-6">
-          <Link
-            href="/"
-            className="flex items-center text-2xl font-bold text-slate-50"
-          >
-            <Image src={logo} alt="Dodges Domain" className="h-8 w-8" />
-            <p className="px-2 ">Dodges Domain</p>
+    <Box className="sticky top-0 z-50 w-full bg-zinc-800">
+      <header className={classes.header}>
+        <ColorSchemeScript />
+        <Group justify="space-between" w="100%" h="100%">
+          <Link href={"/"} className="flex flex-row items-center justify-start">
+            <Image src={logo} alt="" className="h-8 w-8" />
+            <Title className={classes.link}>Dodges Domain</Title>
           </Link>
-        </div>
-        <div className="md:px-18 flex items-center justify-between px-2 sm:gap-6">
-          <ul className="hidden items-end justify-center gap-6 text-xl font-medium sm:flex">
-            <li>
-              <Menu
-                shadow="md"
-                trigger="hover"
-                openDelay={0}
-                closeDelay={200}
-                position="bottom-start"
-                transitionProps={{ transition: "scale-y", duration: 150 }}
-              >
-                <Menu.Target>
-                  <Link
-                    href="/docs/guide-install-setup"
-                    className={`transition-all duration-300 hover:text-teal-500 active:text-teal-500 `}
-                  >
-                    Tribes Installation
-                  </Link>
-                </Menu.Target>
+          <Group h="100%" gap={0} visibleFrom="md">
+            <HoverCard
+              width={600}
+              position="bottom-start"
+              radius="md"
+              shadow="md"
+              withinPortal
+              openDelay={50}
+              closeDelay={50}
+              transitionProps={{ transition: "scale-y" }}
+            >
+              <HoverCard.Target className="transition-all duration-300 hover:text-teal-500 active:text-teal-500">
+                <Link href="/docs/guide-install-setup" className={classes.link}>
+                  <Center inline>
+                    <Box component="span" mr={5}>
+                      Tribes Installation
+                    </Box>
+                  </Center>
+                </Link>
+              </HoverCard.Target>
+              <HoverCard.Dropdown style={{ overflow: "hidden" }}>
+                <Group justify="space-between" px="md">
+                  <Text fw={500}>Tribes Installation</Text>
+                  <Anchor href="#" fz="xs">
+                    View all
+                  </Anchor>
+                </Group>
 
-                <Menu.Dropdown>
-                  <Menu.Item
-                    component={Link}
-                    href="/docs/guide-install-setup"
-                    className={`transition-all duration-300 hover:text-teal-500 active:text-teal-500 `}
-                  >
-                    Tribes Installation
-                  </Menu.Item>
-                  <Menu.Item
-                    component={Link}
-                    href="/docs/guide-config"
-                    className={`transition-all duration-300 hover:text-teal-500 active:text-teal-500 `}
-                  >
-                    Configuration
-                  </Menu.Item>
-                </Menu.Dropdown>
-              </Menu>
-            </li>
-            <li>
-              <Menu
-                shadow="md"
-                trigger="hover"
-                openDelay={0}
-                closeDelay={200}
-                position="bottom-start"
-                transitionProps={{ transition: "scale-y", duration: 150 }}
-              >
-                <Menu.Target>
-                  <Link
-                    href="/docs/gameplay/guide-quick"
-                    className={`transition-all duration-300 hover:text-teal-500 active:text-teal-500 `}
-                  >
-                    Gameplay Guides
-                  </Link>
-                </Menu.Target>
+                <Divider my="sm" />
 
-                <Menu.Dropdown>
-                  <Menu.Item
-                    component={Link}
-                    href="/docs/gameplay/guide-quick"
-                    className={`transition-all duration-300 hover:text-teal-500 active:text-teal-500 `}
-                  >
-                    PUG Guide
-                  </Menu.Item>
-                  <Menu.Divider />
-                  <Menu.Label>Roles</Menu.Label>
-                  <Menu.Item
-                    component={Link}
-                    href="/docs/servers/guide-offense"
-                    className={`transition-all duration-300 hover:text-teal-500 active:text-teal-500 `}
-                  >
-                    Offense
-                  </Menu.Item>
+                <SimpleGrid cols={2} spacing={0}>
+                  {installLinks}
+                </SimpleGrid>
 
-                  <Menu.Item
-                    component={Link}
-                    href="/docs/servers/guide-cap"
-                    className={`transition-all duration-300 hover:text-teal-500 active:text-teal-500 `}
-                  >
-                    Capping
-                  </Menu.Item>
-                  <Menu.Item
-                    component={Link}
-                    href="/docs/servers/guide-hof"
-                    className={`transition-all duration-300 hover:text-teal-500 active:text-teal-500 `}
-                  >
-                    Heavy on Flag
-                  </Menu.Item>
-                  <Menu.Item
-                    component={Link}
-                    href="/docs/servers/guide-defense"
-                    className={`transition-all duration-300 hover:text-teal-500 active:text-teal-500 `}
-                  >
-                    Defense
-                  </Menu.Item>
-                  <Menu.Item
-                    component={Link}
-                    href="/docs/servers/guide-snipe"
-                    className={`transition-all duration-300 hover:text-teal-500 active:text-teal-500 `}
-                  >
-                    Sniping
-                  </Menu.Item>
-                </Menu.Dropdown>
-              </Menu>
-            </li>
+                <div className={classes.dropdownFooter}>
+                  <Group justify="space-between">
+                    <div>
+                      <Text fw={500} fz="sm">
+                        Quick Setup:
+                      </Text>
+                    </div>
+                    <Button
+                      component={Link}
+                      href="steam://install/17080/"
+                      variant="default"
+                    >
+                      Steam Install
+                    </Button>
+                    <FaPlus />
+                    <Button
+                      component={Link}
+                      href="https://github.com/mcoot/TribesLauncherSharp/releases/latest"
+                      variant="default"
+                    >
+                      Download Tribes Launcher
+                    </Button>
+                  </Group>
+                </div>
+              </HoverCard.Dropdown>
+            </HoverCard>
+            <HoverCard
+              width={600}
+              position="bottom-start"
+              radius="md"
+              shadow="md"
+              withinPortal
+              openDelay={50}
+              closeDelay={50}
+              transitionProps={{ transition: "scale-y" }}
+            >
+              <HoverCard.Target className="transition-all duration-300 hover:text-teal-500 active:text-teal-500">
+                <Link href="#" className={classes.link}>
+                  <Center inline>
+                    <Box component="span" mr={5}>
+                      Gameplay Guides
+                    </Box>
+                  </Center>
+                </Link>
+              </HoverCard.Target>
 
-            <li>
-              <Menu
-                shadow="md"
-                trigger="hover"
-                openDelay={0}
-                closeDelay={200}
-                position="bottom-start"
-                transitionProps={{ transition: "scale-y", duration: 150 }}
-              >
-                <Menu.Target>
-                  <Link
-                    href="/docs/development/guide-map-dev"
-                    className={`transition-all duration-300 hover:text-teal-500 active:text-teal-500 `}
-                  >
-                    Map Development
-                  </Link>
-                </Menu.Target>
+              <HoverCard.Dropdown style={{ overflow: "hidden" }}>
+                <Group justify="space-between" px="md">
+                  <Text fw={500}>How to Play</Text>
+                  <Anchor href="#" fz="xs">
+                    View all
+                  </Anchor>
+                </Group>
+                <Divider my="sm" />
 
-                <Menu.Dropdown>
-                  <Menu.Item
-                    component={Link}
-                    href="/docs/development/guide-map-dev"
-                    className={`transition-all duration-300 hover:text-teal-500 active:text-teal-500 `}
-                  >
-                    Map Development
-                  </Menu.Item>
-                  <Menu.Item
-                    component={Link}
-                    href="/docs/development/guide-udk-basics"
-                    className={`transition-all duration-300 hover:text-teal-500 active:text-teal-500 `}
-                  >
-                    Using UDK
-                  </Menu.Item>
-                </Menu.Dropdown>
-              </Menu>
-            </li>
+                <SimpleGrid>{pugLinks}</SimpleGrid>
 
-            <li>
-              <Link
-                href="/docs/custommaps"
-                className={`
-      transition-all duration-300 hover:text-teal-500 active:text-teal-500 `}
-              >
-                Community Maps
-              </Link>
-            </li>
+                <Divider my="sm" label="Roles" />
 
-            <li>
-              <Menu
-                shadow="md"
-                trigger="hover"
-                openDelay={0}
-                closeDelay={200}
-                position="bottom-start"
-                transitionProps={{ transition: "scale-y", duration: 150 }}
-              >
-                <Menu.Target>
-                  <Link
-                    href="/docs/information"
-                    className={`transition-all duration-300 hover:text-teal-500 active:text-teal-500 `}
-                  >
-                    Tribes Information
-                  </Link>
-                </Menu.Target>
+                <SimpleGrid cols={2} spacing={0}>
+                  {gameplayLinks}
+                </SimpleGrid>
 
-                <Menu.Dropdown>
-                  <Menu.Item
-                    component={Link}
-                    href="/docs/information"
-                    className={`transition-all duration-300 hover:text-teal-500 active:text-teal-500 `}
-                  >
-                    Patch History
-                  </Menu.Item>
-                  <Menu.Item
-                    component={Link}
-                    href="/docs/information"
-                    className={`transition-all duration-300 hover:text-teal-500 active:text-teal-500 `}
-                  >
-                    Weapon Data
-                  </Menu.Item>
+                <div className={classes.dropdownFooter}>
+                  <Group justify="space-between"></Group>
+                </div>
+              </HoverCard.Dropdown>
+            </HoverCard>
+            <HoverCard
+              width={600}
+              position="bottom-start"
+              radius="md"
+              shadow="md"
+              withinPortal
+              openDelay={50}
+              closeDelay={50}
+              transitionProps={{ transition: "scale-y" }}
+            >
+              <HoverCard.Target className="transition-all duration-300 hover:text-teal-500 active:text-teal-500">
+                <Link href="#" className={classes.link}>
+                  <Center inline>
+                    <Box component="span" mr={5}>
+                      Map Development
+                    </Box>
+                  </Center>
+                </Link>
+              </HoverCard.Target>
 
-                  <Menu.Divider />
-                  <Menu.Item
-                    component={Link}
-                    href="/docs/servers/guide-hosting"
-                    className={`transition-all duration-300 hover:text-teal-500 active:text-teal-500 `}
-                  >
-                    Game Server Hosting
-                  </Menu.Item>
-                </Menu.Dropdown>
-              </Menu>
-            </li>
+              <HoverCard.Dropdown style={{ overflow: "hidden" }}>
+                <Group justify="space-between" px="md">
+                  <Text fw={500}>Developing Tribes Ascend Maps</Text>
+                  <Anchor href="#" fz="xs">
+                    View all
+                  </Anchor>
+                </Group>
+                <Divider my="sm" />
 
-            <li>
-              <Link
-                href="/blog"
-                className={`transition-all duration-300 hover:text-teal-500 active:text-teal-500 `}
-              >
-                Blog
-              </Link>
-            </li>
-          </ul>
-          <SignedIn>
-            <UserButton />
-          </SignedIn>
-          <SignedOut>
-            <SignInButton />
-          </SignedOut>
-        </div>
-      </div>
-    </header>
+                <SimpleGrid cols={2} spacing={0}>
+                  {mapDevelopmentLinks}
+                </SimpleGrid>
+
+                <div className={classes.dropdownFooter}>
+                  <Group justify="space-between">
+                    <div>
+                      <Text fw={500} fz="sm">
+                        UDK 2011
+                      </Text>
+                    </div>
+                    <Button
+                      component={Link}
+                      href="steam://install/17080/"
+                      variant="default"
+                    >
+                      Download UDK
+                    </Button>
+                  </Group>
+                </div>
+              </HoverCard.Dropdown>
+            </HoverCard>
+            <Link
+              href="/docs/custommaps"
+              className={`transition-all duration-300 hover:text-teal-500 active:text-teal-500 `}
+            >
+              Community Maps
+            </Link>
+            <HoverCard
+              width={600}
+              position="bottom-start"
+              radius="md"
+              shadow="md"
+              withinPortal
+              openDelay={50}
+              closeDelay={50}
+              transitionProps={{ transition: "scale-y" }}
+            >
+              <HoverCard.Target className="transition-all duration-300 hover:text-teal-500 active:text-teal-500">
+                <Link href="/docs/information" className={classes.link}>
+                  <Center inline>
+                    <Box component="span" mr={5}>
+                      Tribes Information
+                    </Box>
+                  </Center>
+                </Link>
+              </HoverCard.Target>
+
+              <HoverCard.Dropdown style={{ overflow: "hidden" }}>
+                <Group justify="space-between" px="md">
+                  <Text fw={500}>General Tribes Information</Text>
+                  <Anchor href="#" fz="xs">
+                    View all
+                  </Anchor>
+                </Group>
+                <Divider my="sm" />
+
+                <SimpleGrid cols={2} spacing={0}>
+                  {tribesInformationLinks}
+                </SimpleGrid>
+
+                <div className={classes.dropdownFooter}>
+                  <Group justify="space-between">
+                    <div>
+                      <Text fw={500} fz="sm">
+                        UDK 2011
+                      </Text>
+                    </div>
+                    <Button
+                      component={Link}
+                      href="steam://install/17080/"
+                      variant="default"
+                    >
+                      Download UDK
+                    </Button>
+                  </Group>
+                </div>
+              </HoverCard.Dropdown>
+            </HoverCard>
+          </Group>
+
+          <Group visibleFrom="lg">
+            <SignedIn>
+              <UserButton />
+            </SignedIn>
+            <SignedOut>
+              <SignInButton />
+            </SignedOut>
+          </Group>
+
+          <Burger
+            opened={drawerOpened}
+            onClick={toggleDrawer}
+            hiddenFrom="md"
+          />
+        </Group>
+      </header>
+
+      <Drawer
+        opened={drawerOpened}
+        onClose={closeDrawer}
+        size="100%"
+        padding="md"
+        title="Navigation"
+        hiddenFrom="md"
+        zIndex={50}
+      >
+        <ScrollArea h={`calc(100vh - ${rem(80)})`} mx="-md">
+          <Divider my="sm" />
+
+          <UnstyledButton className={classes.link} onClick={toggleInstallLinks}>
+            <Center inline>
+              <Box component="span" mr={5}>
+                Installation
+              </Box>
+            </Center>
+          </UnstyledButton>
+          <Collapse in={installLinksOpened}>{installLinks}</Collapse>
+          <UnstyledButton
+            className={classes.link}
+            onClick={toggleGameplayLinks}
+          >
+            <Center inline>
+              <Box component="span" mr={5}>
+                Gameplay Guides
+              </Box>
+            </Center>
+          </UnstyledButton>
+          <Collapse in={gameplayLinksOpened}>
+            {pugLinks}
+            {gameplayLinks}
+          </Collapse>
+          <UnstyledButton
+            className={classes.link}
+            onClick={toggleMapDevelopmentLinks}
+          >
+            <Center inline>
+              <Box component="span" mr={5}>
+                Map Development
+              </Box>
+            </Center>
+          </UnstyledButton>
+          <Collapse in={mapDevelopmentLinksOpened}>
+            {mapDevelopmentLinks}
+          </Collapse>
+          <Link href="/docs/custommaps" className={classes.link}>
+            Community Maps
+          </Link>
+          <UnstyledButton
+            className={classes.link}
+            onClick={toggleTribesInformationLinks}
+          >
+            <Center inline>
+              <Box component="span" mr={5}>
+                Tribes Information
+              </Box>
+            </Center>
+          </UnstyledButton>
+          <Collapse in={tribesInformationLinksOpened}>
+            {tribesInformationLinks}
+          </Collapse>
+          <Divider my="sm" />
+
+          <Group justify="center" grow pb="xl" px="md">
+            <SignedIn>
+              <UserButton />
+            </SignedIn>
+            <SignedOut>
+              <SignInButton />
+            </SignedOut>
+          </Group>
+        </ScrollArea>
+      </Drawer>
+    </Box>
   );
 }

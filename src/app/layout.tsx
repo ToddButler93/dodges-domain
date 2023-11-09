@@ -56,8 +56,8 @@ export default async function RootLayout({
               }}
               defaultColorScheme="dark"
             >
-              <main className="flex flex-col items-center min-h-screen w-full gap-6 pb-6">
-              <NavBar />
+              <main className="flex min-h-screen w-full flex-col items-center gap-6 pb-6">
+                <NavBar />
                 {children}
               </main>
               <Footer />
