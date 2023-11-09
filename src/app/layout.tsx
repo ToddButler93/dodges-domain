@@ -37,8 +37,8 @@ const myColor: MantineColorsTuple = [
   "#0cae82",
   "#00976e",
 ];
-
-export default function RootLayout({
+// eslint-disable-next-line
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode;
@@ -46,7 +46,7 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en">
-        <body className={`font-sans ${inter.variable}`}>
+        <body className={`font-sans ${inter.variable} relative`}>
           <TRPCReactProvider cookies={cookies().toString()}>
             <MantineProvider
               theme={{
@@ -56,8 +56,8 @@ export default function RootLayout({
               }}
               defaultColorScheme="dark"
             >
+              <main className="flex flex-col items-center min-h-screen w-full gap-6 pb-6">
               <NavBar />
-              <main className="flex h-fit min-h-screen w-full flex-col items-center gap-6 py-6">
                 {children}
               </main>
               <Footer />

@@ -1,4 +1,3 @@
-//TODO Import Icons
 import { FaDiscord, FaGithub } from "react-icons/fa6";
 
 import Link from "next/link";
