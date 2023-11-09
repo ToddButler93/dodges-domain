@@ -42,14 +42,14 @@ export function NavBar() {
 
                 <Menu.Dropdown>
                   <Menu.Item
-                    component="a"
+                    component={Link}
                     href="/docs/guide-install-setup"
                     className={`transition-all duration-300 hover:text-teal-500 active:text-teal-500 `}
                   >
                     Tribes Installation
                   </Menu.Item>
                   <Menu.Item
-                    component="a"
+                    component={Link}
                     href="/docs/guide-config"
                     className={`transition-all duration-300 hover:text-teal-500 active:text-teal-500 `}
                   >
@@ -78,7 +78,7 @@ export function NavBar() {
 
                 <Menu.Dropdown>
                   <Menu.Item
-                    component="a"
+                    component={Link}
                     href="/docs/gameplay/guide-quick"
                     className={`transition-all duration-300 hover:text-teal-500 active:text-teal-500 `}
                   >
@@ -87,7 +87,7 @@ export function NavBar() {
                   <Menu.Divider />
                   <Menu.Label>Roles</Menu.Label>
                   <Menu.Item
-                    component="a"
+                    component={Link}
                     href="/docs/servers/guide-offense"
                     className={`transition-all duration-300 hover:text-teal-500 active:text-teal-500 `}
                   >
@@ -95,28 +95,28 @@ export function NavBar() {
                   </Menu.Item>
 
                   <Menu.Item
-                    component="a"
+                    component={Link}
                     href="/docs/servers/guide-cap"
                     className={`transition-all duration-300 hover:text-teal-500 active:text-teal-500 `}
                   >
                     Capping
                   </Menu.Item>
                   <Menu.Item
-                    component="a"
+                    component={Link}
                     href="/docs/servers/guide-hof"
                     className={`transition-all duration-300 hover:text-teal-500 active:text-teal-500 `}
                   >
                     Heavy on Flag
                   </Menu.Item>
                   <Menu.Item
-                    component="a"
+                    component={Link}
                     href="/docs/servers/guide-defense"
                     className={`transition-all duration-300 hover:text-teal-500 active:text-teal-500 `}
                   >
                     Defense
                   </Menu.Item>
                   <Menu.Item
-                    component="a"
+                    component={Link}
                     href="/docs/servers/guide-snipe"
                     className={`transition-all duration-300 hover:text-teal-500 active:text-teal-500 `}
                   >
@@ -146,14 +146,14 @@ export function NavBar() {
 
                 <Menu.Dropdown>
                   <Menu.Item
-                    component="a"
+                    component={Link}
                     href="/docs/development/guide-map-dev"
                     className={`transition-all duration-300 hover:text-teal-500 active:text-teal-500 `}
                   >
                     Map Development
                   </Menu.Item>
                   <Menu.Item
-                    component="a"
+                    component={Link}
                     href="/docs/development/guide-udk-basics"
                     className={`transition-all duration-300 hover:text-teal-500 active:text-teal-500 `}
                   >
@@ -193,14 +193,14 @@ export function NavBar() {
 
                 <Menu.Dropdown>
                   <Menu.Item
-                    component="a"
+                    component={Link}
                     href="/docs/information"
                     className={`transition-all duration-300 hover:text-teal-500 active:text-teal-500 `}
                   >
                     Patch History
                   </Menu.Item>
                   <Menu.Item
-                    component="a"
+                    component={Link}
                     href="/docs/information"
                     className={`transition-all duration-300 hover:text-teal-500 active:text-teal-500 `}
                   >
@@ -209,7 +209,7 @@ export function NavBar() {
 
                   <Menu.Divider />
                   <Menu.Item
-                    component="a"
+                    component={Link}
                     href="/docs/servers/guide-hosting"
                     className={`transition-all duration-300 hover:text-teal-500 active:text-teal-500 `}
                   >
