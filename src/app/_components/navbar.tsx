@@ -524,9 +524,7 @@ export function NavBar() {
                 </SimpleGrid>
 
                 <div className={classes.dropdownFooter}>
-                  <Group justify="space-between">
-
-                  </Group>
+                  <Group justify="space-between"></Group>
                 </div>
               </HoverCard.Dropdown>
             </HoverCard>
