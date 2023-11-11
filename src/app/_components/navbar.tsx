@@ -23,7 +23,6 @@ import {
   Collapse,
   ScrollArea,
   rem,
-  useMantineTheme,
   Title,
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
@@ -161,10 +160,7 @@ export function NavBar() {
         className="transition-all duration-300 hover:text-teal-500 active:text-teal-500"
       >
         <ThemeIcon size={34} variant="default" radius="md">
-          <item.icon
-            style={{ width: rem(22), height: rem(22) }}
-            color="teal"
-          />
+          <item.icon style={{ width: rem(22), height: rem(22) }} color="teal" />
         </ThemeIcon>
         <div>
           <Text size="sm" fw={500}>
@@ -191,10 +187,7 @@ export function NavBar() {
         className="transition-all duration-300 hover:text-teal-500 active:text-teal-500"
       >
         <ThemeIcon size={34} variant="default" radius="md">
-          <item.icon
-            style={{ width: rem(22), height: rem(22) }}
-            color="teal"
-          />
+          <item.icon style={{ width: rem(22), height: rem(22) }} color="teal" />
         </ThemeIcon>
         <div>
           <Text size="sm" fw={500}>
@@ -221,10 +214,7 @@ export function NavBar() {
         className="transition-all duration-300 hover:text-teal-500 active:text-teal-500"
       >
         <ThemeIcon size={34} variant="default" radius="md">
-          <item.icon
-            style={{ width: rem(22), height: rem(22) }}
-            color="teal"
-          />
+          <item.icon style={{ width: rem(22), height: rem(22) }} color="teal" />
         </ThemeIcon>
         <div>
           <Text size="sm" fw={500}>
@@ -250,10 +240,7 @@ export function NavBar() {
         className="transition-all duration-300 hover:text-teal-500 active:text-teal-500"
       >
         <ThemeIcon size={34} variant="default" radius="md">
-          <item.icon
-            style={{ width: rem(22), height: rem(22) }}
-            color="teal"
-          />
+          <item.icon style={{ width: rem(22), height: rem(22) }} color="teal" />
         </ThemeIcon>
         <div>
           <Text size="sm" fw={500}>
@@ -279,10 +266,7 @@ export function NavBar() {
         className="transition-all duration-300 hover:text-teal-500 active:text-teal-500"
       >
         <ThemeIcon size={34} variant="default" radius="md">
-          <item.icon
-            style={{ width: rem(22), height: rem(22) }}
-            color="teal"
-          />
+          <item.icon style={{ width: rem(22), height: rem(22) }} color="teal" />
         </ThemeIcon>
         <div>
           <Text size="sm" fw={500}>
@@ -458,10 +442,7 @@ export function NavBar() {
                 </div>
               </HoverCard.Dropdown>
             </HoverCard>
-            <Link
-              href="/docs/custommaps"
-              className={classes.link}
-            >
+            <Link href="/docs/custommaps" className={classes.link}>
               Community Maps
             </Link>
             <HoverCard
@@ -517,7 +498,7 @@ export function NavBar() {
             </HoverCard>
           </Group>
           <Group visibleFrom="lg">
-          <ColorSchemeToggle/>
+            <ColorSchemeToggle />
             <SignedIn>
               <UserButton />
             </SignedIn>
@@ -600,7 +581,7 @@ export function NavBar() {
           <Divider my="sm" />
 
           <Group justify="center" grow pb="xl" px="md">
-          <ColorSchemeToggle/>
+            <ColorSchemeToggle />
             <SignedIn>
               <UserButton />
             </SignedIn>

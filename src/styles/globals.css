@@ -1,51 +1,35 @@
-@import "mantine-css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --text-color:           #09090b;  /* Zinc-950*/
-  --primary-color:        #14b8a6;
-  --body-color:           #fafafa;  /* Zinc-900*/
-  --footer-color:         #3f3f46;  /* Zinc-700*/
+  --text-color: #09090b; /* Zinc-950*/
+  --primary-color: #14b8a6;
+  --body-color: #fafafa; /* Zinc-900*/
+  --footer-color: #3f3f46; /* Zinc-700*/
 
-  --text-color-dark:      #fafafa;  /* Zinc-50*/
-  --header-color-dark:    #27272a;  /* Zinc-800*/
-  --body-color-dark:      #18181b;  /* Zinc-900*/
-  --footer-color-dark:    #3f3f46;  /* Zinc-700*/
+  --text-color-dark: #fafafa; /* Zinc-50*/
+  --header-color-dark: #27272a; /* Zinc-800*/
+  --body-color-dark: #18181b; /* Zinc-900*/
+  --footer-color-dark: #3f3f46; /* Zinc-700*/
 }
 
 header {
   height: rem(60px);
   padding-left: var(--mantine-spacing-md);
   padding-right: var(--mantine-spacing-md);
-  background-color: light-dark(
-    var(--primary-color),
-    var(--header-color-dark)
-  );
-  color: light-dark(
-    var(--text-color),
-    var(--text-color-dark)
-  );
+  background-color: light-dark(var(--primary-color), var(--header-color-dark));
+  color: light-dark(var(--text-color), var(--text-color-dark));
   .mantine-Button-root {
     @mixin hover {
-      background-color: light-dark(
-        var(--primary-color),
-        var(--primary-color)
-      );
+      background-color: light-dark(var(--primary-color), var(--primary-color));
     }
   }
 }
 
 body {
-  background-color: light-dark(
-    var(--body-color),
-    var(--body-color-dark)
-  );
-  color: light-dark(
-    var(--text-color),
-    var(--text-color-dark)
-  );
+  background-color: light-dark(var(--body-color), var(--body-color-dark));
+  color: light-dark(var(--text-color), var(--text-color-dark));
 }
 
 footer {
@@ -53,49 +37,23 @@ footer {
 }
 
 a:hover {
-  color: light-dark(
-    var(--primary-color),
-    var(--primary-color)
-  ); 
+  color: light-dark(var(--primary-color), var(--primary-color));
 }
 
 .mantine-Button-root {
-  background-color: light-dark(
-    var(--primary-color),
-    var(--primary-color)
-  );
-  color: light-dark(
-    var(--text-color),
-    var(--text-color)
-  );
-} 
+  background-color: light-dark(var(--primary-color), var(--primary-color));
+  color: light-dark(var(--text-color), var(--text-color));
+}
 .mantine-Button-root:hover {
-  background-color: light-dark(
-    var(--primary-color),
-    var(--primary-color)
-  );
-  color: light-dark(
-    var(--text-color-dark),
-    var(--text-color-dark)
-  ); 
-} 
-
-.mantine-Text-root {
-  color: light-dark(
-    var(--text-color),
-    var(--text-color-dark)
-  );
-
+  background-color: light-dark(var(--primary-color), var(--primary-color));
+  color: light-dark(var(--text-color-dark), var(--text-color-dark));
 }
 
-.mantine-HoverCard-dropdown{
-  background-color: light-dark(
-    var(--body-color),
-    var(--header-color-dark)
-  );
-  color: light-dark(
-    var(--text-color),
-    var(--text-color-dark)
-  );
-  
+.mantine-Text-root {
+  color: light-dark(var(--text-color), var(--text-color-dark));
+}
+
+.mantine-HoverCard-dropdown {
+  background-color: light-dark(var(--body-color), var(--header-color-dark));
+  color: light-dark(var(--text-color), var(--text-color-dark));
 }

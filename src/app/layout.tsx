@@ -12,7 +12,7 @@ import "@mantine/core/styles.css";
 import { ClerkProvider } from "@clerk/nextjs";
 import { MantineProvider } from "@mantine/core";
 
-import { DEFAULT_THEME } from '@mantine/core';
+import { DEFAULT_THEME } from "@mantine/core";
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-sans",
@@ -34,10 +34,7 @@ export default async function RootLayout({
       <html lang="en">
         <body className={`font-sans ${inter.variable} relative`}>
           <TRPCReactProvider cookies={cookies().toString()}>
-            <MantineProvider
-              theme={DEFAULT_THEME}
-              defaultColorScheme="dark"
-            >
+            <MantineProvider theme={DEFAULT_THEME} defaultColorScheme="dark">
               <main className="flex min-h-screen w-full flex-col items-center gap-6 pb-6">
                 <NavBar />
                 {children}
