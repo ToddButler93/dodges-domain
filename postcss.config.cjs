@@ -10,6 +10,7 @@ const config = {
         "mantine-breakpoint-xl": "88em",
       },
     },
+    "tailwindcss/nesting": {},
     tailwindcss: {},
     autoprefixer: {},
   },
