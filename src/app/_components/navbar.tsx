@@ -38,7 +38,8 @@ import {
 } from "react-icons/fa6";
 import { FaEdit } from "react-icons/fa";
 import { RxCrosshair1 } from "react-icons/rx";
-import classes from "./NavBar.module.css";
+import classes from "./navbar.module.css";
+import { ColorSchemeToggle } from "./themeToggle";
 
 const installMenuData = [
   {
@@ -163,7 +164,7 @@ export function NavBar() {
         <ThemeIcon size={34} variant="default" radius="md">
           <item.icon
             style={{ width: rem(22), height: rem(22) }}
-            color={theme.colors.blue[6]}
+            color="teal"
           />
         </ThemeIcon>
         <div>
@@ -193,7 +194,7 @@ export function NavBar() {
         <ThemeIcon size={34} variant="default" radius="md">
           <item.icon
             style={{ width: rem(22), height: rem(22) }}
-            color={theme.colors.blue[6]}
+            color="teal"
           />
         </ThemeIcon>
         <div>
@@ -223,7 +224,7 @@ export function NavBar() {
         <ThemeIcon size={34} variant="default" radius="md">
           <item.icon
             style={{ width: rem(22), height: rem(22) }}
-            color={theme.colors.blue[6]}
+            color="teal"
           />
         </ThemeIcon>
         <div>
@@ -252,7 +253,7 @@ export function NavBar() {
         <ThemeIcon size={34} variant="default" radius="md">
           <item.icon
             style={{ width: rem(22), height: rem(22) }}
-            color={theme.colors.blue[6]}
+            color="teal"
           />
         </ThemeIcon>
         <div>
@@ -281,7 +282,7 @@ export function NavBar() {
         <ThemeIcon size={34} variant="default" radius="md">
           <item.icon
             style={{ width: rem(22), height: rem(22) }}
-            color={theme.colors.blue[6]}
+            color="teal"
           />
         </ThemeIcon>
         <div>
@@ -297,7 +298,7 @@ export function NavBar() {
   ));
 
   return (
-    <Box className="sticky top-0 z-50 w-full bg-zinc-800">
+    <Box className="sticky top-0 z-50 w-full">
       <header className={classes.header}>
         <ColorSchemeScript />
         <Group justify="space-between" w="100%" h="100%">
@@ -316,7 +317,7 @@ export function NavBar() {
               closeDelay={50}
               transitionProps={{ transition: "scale-y" }}
             >
-              <HoverCard.Target className="transition-all duration-300 hover:text-teal-500 active:text-teal-500">
+              <HoverCard.Target>
                 <Link href="/docs/guide-install-setup" className={classes.link}>
                   <Center inline>
                     <Box component="span" mr={5}>
@@ -375,7 +376,7 @@ export function NavBar() {
               closeDelay={50}
               transitionProps={{ transition: "scale-y" }}
             >
-              <HoverCard.Target className="transition-all duration-300 hover:text-teal-500 active:text-teal-500">
+              <HoverCard.Target>
                 <Link href="#" className={classes.link}>
                   <Center inline>
                     <Box component="span" mr={5}>
@@ -417,7 +418,7 @@ export function NavBar() {
               closeDelay={50}
               transitionProps={{ transition: "scale-y" }}
             >
-              <HoverCard.Target className="transition-all duration-300 hover:text-teal-500 active:text-teal-500">
+              <HoverCard.Target>
                 <Link href="#" className={classes.link}>
                   <Center inline>
                     <Box component="span" mr={5}>
@@ -460,7 +461,7 @@ export function NavBar() {
             </HoverCard>
             <Link
               href="/docs/custommaps"
-              className={`transition-all duration-300 hover:text-teal-500 active:text-teal-500 `}
+              className={classes.link}
             >
               Community Maps
             </Link>
@@ -474,7 +475,7 @@ export function NavBar() {
               closeDelay={50}
               transitionProps={{ transition: "scale-y" }}
             >
-              <HoverCard.Target className="transition-all duration-300 hover:text-teal-500 active:text-teal-500">
+              <HoverCard.Target>
                 <Link href="/docs/information" className={classes.link}>
                   <Center inline>
                     <Box component="span" mr={5}>
@@ -516,8 +517,8 @@ export function NavBar() {
               </HoverCard.Dropdown>
             </HoverCard>
           </Group>
-
           <Group visibleFrom="lg">
+          <ColorSchemeToggle/>
             <SignedIn>
               <UserButton />
             </SignedIn>
@@ -600,6 +601,7 @@ export function NavBar() {
           <Divider my="sm" />
 
           <Group justify="center" grow pb="xl" px="md">
+          <ColorSchemeToggle/>
             <SignedIn>
               <UserButton />
             </SignedIn>

@@ -12,7 +12,7 @@ export default async function Home() {
 
   return (
     <>
-      <div className="max-w-8xl flex flex-col py-12 text-center " color="green">
+      <div className="max-w-8xl flex flex-col py-12 text-center ">
         <div className="max-w-8xl div div-col gap-6 px-32 text-center text-6xl">
           {data?.map((post) => (
             <div className="py-6 text-center" key={post.id}>
@@ -26,11 +26,6 @@ export default async function Home() {
           href="/docs/guide-install-setup"
           size="xl"
           radius="xl"
-          styles={{
-            root: { backgroundColor: "teal" },
-            label: { color: "white" },
-            inner: { fontSize: 24 },
-          }}
         >
           Install Tribes Ascend
         </Button>

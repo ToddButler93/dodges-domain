@@ -4,9 +4,9 @@ import Link from "next/link";
 
 export const Footer = () => {
   return (
-    <footer className="mb-0 w-full bg-zinc-700 px-8 font-mono md:mb-0 ">
+    <footer className="mb-0 w-full px-8 font-mono md:mb-0 ">
       <div className="mx-auto max-w-7xl py-6">
-        <div className="text-m flex flex-col items-center justify-between gap-3 font-medium text-slate-50 md:flex-row">
+        <div className="text-m flex flex-col items-center justify-between gap-3 font-medium md:flex-row">
           <strong>
             <p className="flex flex-col items-center justify-between md:flex-row">
               <Link
