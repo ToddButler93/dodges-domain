@@ -112,6 +112,21 @@ const mapDevelopmentMenuData = [
   },
 ];
 
+const tribesLiveInfoMenuData = [
+  {
+    icon: FaGamepad,
+    title: "Server Browser",
+    description: "TODO: Write description",
+    link: "/server-browser",
+  },
+  {
+    icon: FaGamepad,
+    title: "Match History",
+    description: "TODO: Write description",
+    link: "/match-history",
+  },
+];
+
 const tribesInfoMenuData = [
   {
     icon: FaGamepad,
@@ -254,6 +269,32 @@ export function NavBar() {
     </UnstyledButton>
   ));
   const tribesInformationLinks = tribesInfoMenuData.map((item) => (
+    <UnstyledButton
+      component={Link}
+      href={item.link}
+      className={classes.subLink}
+      key={item.title}
+    >
+      <Group
+        wrap="nowrap"
+        align="flex-start"
+        className="transition-all duration-300 hover:text-teal-500 active:text-teal-500"
+      >
+        <ThemeIcon size={34} variant="default" radius="md">
+          <item.icon style={{ width: rem(22), height: rem(22) }} color="teal" />
+        </ThemeIcon>
+        <div>
+          <Text size="sm" fw={500}>
+            {item.title}
+          </Text>
+          <Text size="xs" c="dimmed">
+            {item.description}
+          </Text>
+        </div>
+      </Group>
+    </UnstyledButton>
+  ));
+  const tribesLiveInformationLinks = tribesLiveInfoMenuData.map((item) => (
     <UnstyledButton
       component={Link}
       href={item.link}
@@ -473,6 +514,10 @@ export function NavBar() {
                   </Anchor>
                 </Group>
                 <Divider my="sm" />
+                <SimpleGrid cols={2} spacing={0}>
+                  {tribesLiveInformationLinks}
+                </SimpleGrid>
+                <Divider my="sm" />
 
                 <SimpleGrid cols={2} spacing={0}>
                   {tribesInformationLinks}
@@ -480,18 +525,7 @@ export function NavBar() {
 
                 <div className={classes.dropdownFooter}>
                   <Group justify="space-between">
-                    <div>
-                      <Text fw={500} fz="sm">
-                        UDK 2011
-                      </Text>
-                    </div>
-                    <Button
-                      component={Link}
-                      href="steam://install/17080/"
-                      variant="default"
-                    >
-                      Download UDK
-                    </Button>
+
                   </Group>
                 </div>
               </HoverCard.Dropdown>
@@ -576,6 +610,7 @@ export function NavBar() {
             </Center>
           </UnstyledButton>
           <Collapse in={tribesInformationLinksOpened}>
+            {tribesLiveInformationLinks}
             {tribesInformationLinks}
           </Collapse>
           <Divider my="sm" />
