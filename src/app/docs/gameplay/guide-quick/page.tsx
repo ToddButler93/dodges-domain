@@ -1,9 +1,8 @@
 "use client";
 import Link from "next/link";
-import { Divider, Card, Table } from "@mantine/core";
+import { Table, Title, Button } from "@mantine/core";
 
 const tableData = {
-  caption: "Glossary",
   head: ["Term", "Meaning"],
   body: [
     ["PUG", "Pick-up Game"],
@@ -51,9 +50,9 @@ const tableData = {
 export default function QuickPUGGuide() {
   return (
     <>
-      <div className=" lg:2-24 mx-auto flex w-[100%] flex-col justify-center gap-12 p-8 md:p-16 xl:p-32">
-        <Divider size="sm" label="Playing PUGs - 7v7 Format" />
-        <Card>
+      <div className=" lg:2-24 mx-auto flex max-w-6xl flex-col justify-center gap-12 p-8 md:p-16 xl:p-32">
+        <Title>Playing PUGs - 7v7 Format</Title>
+        <div>
           <p>
             <code>Pick-up Games</code> are a semi-competitive 7v7 format.
             Pick-up games will use VoIP software such as Mumble or Discord.
@@ -84,7 +83,7 @@ export default function QuickPUGGuide() {
             <code>stand-offs</code> and <code>offense</code> goes
             <code>offense</code> during <code>stand-offs.</code>
           </p>
-          <Divider size="sm" label="Recommendations" />
+          <Title order={3}>Recommendations</Title>
           <p>
             These are PUG-specific recommendations to make the game more
             enjoyable for everyone involved. These are not rules but a list of
@@ -107,11 +106,13 @@ export default function QuickPUGGuide() {
               Try to run a <code>capper</code> that does not warp.
             </li>
           </ul>
-        </Card>
-        <Divider size="sm" label="Offense" />
-        <Card>
-          <Link href="/docs/gameplay/guide-offense">Offense Guide</Link>
-          <Divider size="sm" label="Major Responsibilities" />
+        </div>
+        <Title order={2}>Offense</Title>
+        <div>
+          <Button component={Link} href="/docs/gameplay/guide-offense">
+            Offense Guide
+          </Button>
+          <Title order={3}>Major Responsibilities</Title>
           <ul className="list-inside list-disc">
             <li>
               Kill the enemy <code>heavy on flag</code> and enemy
@@ -126,7 +127,7 @@ export default function QuickPUGGuide() {
             </li>
             <li>
               <code>E-Grab</code> when the <code>defense</code> calls for it.
-              <Divider size="sm" label="Minor Responsibilities" />
+              <Title order={3}>Minor Responsibilities</Title>
             </li>
             <li>
               <kbd>K</kbd>-Out and meet your capper after they grab.
@@ -146,18 +147,20 @@ export default function QuickPUGGuide() {
               members.
             </li>
           </ul>
-        </Card>
-        <Divider size="sm" label="Heavy on Flag" />
-        <Card>
-          <Link href="/docs/gameplay/guide-hof">Heavy on Flag Guide</Link>
-          <Divider size="sm" label="Major Responsibilities" />
+        </div>
+        <Title order={2}>Heavy on Flag</Title>
+        <div>
+          <Button component={Link} href="/docs/gameplay/guide-hof">
+            Heavy on Flag Guide
+          </Button>
+          <Title order={3}>Major Responsibilities</Title>
           <ul className="list-inside list-disc">
             <li>
               Stop the enemy <code>capper.</code>
             </li>
             <li>
               Stop enemy <code>walks.</code>
-              <Divider size="sm" label="Minor Responsibilities" />
+              <Title order={3}>Minor Responsibilities</Title>
             </li>
             <li>Be ready to stop unspotted/out of time grabs.</li>
             <li>
@@ -169,13 +172,13 @@ export default function QuickPUGGuide() {
             </li>
             <li>Avoid being shot if possible.</li>
           </ul>
-        </Card>
-        <Divider size="sm" label="Light/Medium Defense" />
-        <Card>
-          <Link href="/docs/gameplay/guide-defense">
+        </div>
+        <Title order={2}>Light/Medium Defense</Title>
+        <div>
+          <Button component={Link} href="/docs/gameplay/guide-defense">
             Light/Medium Defense Guide
-          </Link>
-          <Divider size="sm" label="Major Responsibilities" />
+          </Button>
+          <Title order={3}>Major Responsibilities</Title>
           <ul className="list-inside list-disc">
             <li>
               Kill enemy the <code>offense</code> members.
@@ -183,7 +186,7 @@ export default function QuickPUGGuide() {
             <li>Return flags.</li>
             <li>
               Call out for <code>E-Grabs</code>
-              <Divider size="sm" label="Minor Responsibilities" />
+              <Title order={3}>Minor Responsibilities</Title>
             </li>
             <li>
               Work with the <code>Sniper</code>
@@ -199,49 +202,55 @@ export default function QuickPUGGuide() {
               <code>capper.</code>
             </li>
           </ul>
-        </Card>
-        <Divider size="sm" label="Sniper" />
-        <Link href="/docs/gameplay/guide-snipe">Sniper Guide</Link>
-        <Divider size="sm" label="Major Responsibilities" />
-        <ul className="list-inside list-disc">
-          <li>
-            Spot/kill the enemy <code>capper</code> at all times.
-          </li>
-          <li>Call out a time and direction the enemy cap will be.</li>
-          <li>
-            Call out for <code>E-Grabs</code>
-          </li>
-          <li>
-            Snipe the enemy <code>offense</code> which your
-            <code>light defense</code> and <code>heavy on flag</code> are
-            fighting or during any walk attempts.
-            <Divider size="sm" label="Minor Responsibilities" />
-          </li>
-          <li>
-            Call out enemy <code>offense</code> locations.
-          </li>
-          <li>
-            Assist <code>heavy on flag</code> with clearing your base if
-            over-run after an enemy has grabbed.
-          </li>
-          <li>
-            Avoid enemy <code>offense</code> members.
-          </li>
-          <li>
-            Snipe the enemy chaser if your <code>capper</code> is out.
-          </li>
-        </ul>
-        <Divider size="sm" label="Capper" />
+        </div>
+        <Title order={2}>Sniper</Title>
+        <div>
+          <Button component={Link} href="/docs/gameplay/guide-snipe">
+            Sniper Guide
+          </Button>
+          <Title order={3}>Major Responsibilities</Title>
+          <ul className="list-inside list-disc">
+            <li>
+              Spot/kill the enemy <code>capper</code> at all times.
+            </li>
+            <li>Call out a time and direction the enemy cap will be.</li>
+            <li>
+              Call out for <code>E-Grabs</code>
+            </li>
+            <li>
+              Snipe the enemy <code>offense</code> which your
+              <code>light defense</code> and <code>heavy on flag</code> are
+              fighting or during any walk attempts.
+              <Title order={3}>Minor Responsibilities</Title>
+            </li>
+            <li>
+              Call out enemy <code>offense</code> locations.
+            </li>
+            <li>
+              Assist <code>heavy on flag</code> with clearing your base if
+              over-run after an enemy has grabbed.
+            </li>
+            <li>
+              Avoid enemy <code>offense</code> members.
+            </li>
+            <li>
+              Snipe the enemy chaser if your <code>capper</code> is out.
+            </li>
+          </ul>
+        </div>
+        <Title order={2}>Capper</Title>
         <p>
-          <Link href="/docs/gameplay/guide-cap">Capper Guide</Link>
+          <Button component={Link} href="/docs/gameplay/guide-cap">
+            Capper Guide
+          </Button>
         </p>
-        <Divider size="sm" label="Major Responsibilities" />
+        <Title order={3}>Major Responsibilities</Title>
         <ul className="list-inside list-disc">
           <li>Grab and capture the enemy flag.</li>
           <li>
             Communicate times on your route for your <code>offense</code>
             members.
-            <Divider size="sm" label="Minor Responsibilities" />
+            <Title order={3}>Minor Responsibilities</Title>
           </li>
           <li>
             Meet your <code>offense</code> if they decide to <code>Walk</code>
@@ -252,7 +261,7 @@ export default function QuickPUGGuide() {
             stand.
           </li>
         </ul>
-        <Divider size="sm" label="Stand-Offs" />
+        <Title order={2}>Stand-Offs</Title>
         <ul className="list-inside list-disc">
           <li>
             <code>Offense</code> stays on <code>offense.</code>
@@ -284,7 +293,7 @@ export default function QuickPUGGuide() {
             coordinating a time to attack.
           </li>
         </ul>
-        <Divider size="sm" label="Loadout Setup" />
+        <Title order={2}>Loadout Setup</Title>
         <p>
           For all classes except for the <code>sniper,</code> it is considered
           optimal to run at least one explosive/timed weapon and at least one
@@ -294,6 +303,7 @@ export default function QuickPUGGuide() {
           In a <code>community server,</code> you must be a verified user for
           your Loadouts to save.
         </p>
+        <Title order={2}>Glossary</Title>
         <Table cellPadding={6} data={tableData} />
       </div>
     </>
