@@ -147,7 +147,6 @@ export function NavBar() {
     tribesInformationLinksOpened,
     { toggle: toggleTribesInformationLinks },
   ] = useDisclosure(false);
-  const theme = useMantineTheme();
 
   const installLinks = installMenuData.map((item) => (
     <UnstyledButton

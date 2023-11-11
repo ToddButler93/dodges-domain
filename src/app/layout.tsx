@@ -12,7 +12,6 @@ import "@mantine/core/styles.css";
 import { ClerkProvider } from "@clerk/nextjs";
 import { MantineProvider } from "@mantine/core";
 
-import type { MantineColorsTuple } from "@mantine/core";
 import { DEFAULT_THEME } from '@mantine/core';
 const inter = Inter({
   subsets: ["latin"],
