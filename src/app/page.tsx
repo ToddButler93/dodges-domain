@@ -14,15 +14,15 @@ export default async function Home() {
   return (
     <>
       <div className="relative">
-        <div className="bg-hero-section flex max-h-[50] w-screen items-center bg-cover bg-center bg-no-repeat">
+        <Group mah={720} className="bg-hero-section flex overflow-y-clip w-screen items-center bg-cover bg-center bg-no-repeat">
           <video
-            inset-0
-            object-cover
             width="100%"
+            height="100%"
             autoPlay={true}
             muted
             loop
             preload="metadata"
+            playsInline
           >
             <source
               src="/static/video/kata-ds-bounce.webm"
@@ -36,7 +36,7 @@ export default async function Home() {
               src="/static/img/tribes-ascend-logo.png"
               width={500}
               height={500}
-              className=" max-w-md"
+              style={{ objectFit: "contain" }}
             />
             <Button
               component={Link}
@@ -47,18 +47,9 @@ export default async function Home() {
               Install Tribes Ascend
             </Button>
           </Group>
-        </div>
+        </Group>
       </div>
-      <div className="max-w-8xl flex flex-col py-12 text-center ">
-        <div className="max-w-8xl div div-col gap-6 px-32 text-center text-6xl">
-          {data?.map((post) => (
-            <div className="py-6 text-center" key={post.id}>
-              {post.content}
-            </div>
-          ))}
-        </div>
-      </div>
-      <div className="max-w-8xl ">
+      <div className="max-w-8xl py-12">
         <div className="flex flex-col gap-12 md:flex-row">
           <div className="mx-auto max-w-4xl">
             <p className=" text-center text-3xl">Gameplay Guides</p>
@@ -104,6 +95,15 @@ export default async function Home() {
             </Link>
           </div>
         </div>
+      <div className="max-w-8xl flex flex-col py-6 pt-12 text-center ">
+        <div className="max-w-8xl div div-col gap-6 px-32 text-center text-6xl">
+          {data?.map((post) => (
+            <div className="py-6 text-center" key={post.id}>
+              {post.content}
+            </div>
+          ))}
+        </div>
+      </div>
       </div>
     </>
   );
