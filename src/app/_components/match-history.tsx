@@ -113,12 +113,14 @@ export default async function MatchHistoryComponent() {
                           2v2
                         </Badge>
                       )}
+                      <Badge bg={"black"} variant="dark">
+                        {new Date(match.completionTimestamp).toLocaleString()}
+                      </Badge>
                     </>
                   </Group>
 
                   <Grid>
                     <>
-                      {" "}
                       {match.winningTeam !== 0 ? (
                         <>
                           <GridCol
@@ -133,7 +135,9 @@ export default async function MatchHistoryComponent() {
                                       <Text variant="dark" key={index}>
                                         <>
                                           {player.captain === 1 && (
-                                            <span>{player.user.name} (c)</span>
+                                            <strong>
+                                              {player.user.name} (c)
+                                            </strong>
                                           )}
                                           {player.captain !== 1 && (
                                             <span>{player.user.name}</span>
@@ -161,7 +165,9 @@ export default async function MatchHistoryComponent() {
                                       <Text variant="dark" key={index}>
                                         <>
                                           {player.captain === 1 && (
-                                            <span>{player.user.name} (c)</span>
+                                            <strong>
+                                              {player.user.name} (c)
+                                            </strong>
                                           )}
                                           {player.captain !== 1 && (
                                             <span>{player.user.name}</span>
@@ -188,7 +194,9 @@ export default async function MatchHistoryComponent() {
                                       <Text variant="dark" key={index}>
                                         <>
                                           {player.captain === 1 && (
-                                            <span>{player.user.name} (c)</span>
+                                            <strong>
+                                              {player.user.name} (c)
+                                            </strong>
                                           )}
                                           {player.captain !== 1 && (
                                             <span>{player.user.name}</span>
@@ -216,7 +224,9 @@ export default async function MatchHistoryComponent() {
                                       <Text variant="dark" key={index}>
                                         <>
                                           {player.captain === 1 && (
-                                            <span>{player.user.name} (c)</span>
+                                            <strong>
+                                              {player.user.name} (c)
+                                            </strong>
                                           )}
                                           {player.captain !== 1 && (
                                             <span>{player.user.name}</span>
