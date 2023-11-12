@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { Button, Group } from "@mantine/core";
+import { Button, Group, Text } from "@mantine/core";
 
 import Image from "next/image";
 
@@ -14,15 +14,19 @@ export default async function Home() {
   return (
     <>
       <div className="relative">
-        <Group mah={720} className="bg-hero-section flex overflow-y-clip w-screen items-center bg-cover bg-center bg-no-repeat">
+        <Group
+          mah={720}
+          className="bg-hero-section flex w-screen items-center overflow-y-clip bg-cover bg-center bg-no-repeat"
+        >
           <video
             width="100%"
             height="100%"
             autoPlay={true}
             muted
             loop
-            preload="metadata"
+            preload="auto"
             playsInline
+            className="content-center"
           >
             <source
               src="/static/video/kata-ds-bounce.webm"
@@ -52,7 +56,7 @@ export default async function Home() {
       <div className="max-w-8xl py-12">
         <div className="flex flex-col gap-12 md:flex-row">
           <div className="mx-auto max-w-4xl">
-            <p className=" text-center text-3xl">Gameplay Guides</p>
+            <Text className=" text-center text-3xl">Gameplay Guides</Text>
             <Link href="/docs/gameplay/guide-quick">
               <video
                 width="500px"
@@ -60,7 +64,7 @@ export default async function Home() {
                 autoPlay={true}
                 muted
                 loop
-                preload="metadata"
+                preload="auto"
               >
                 <source
                   src="/static/video/kata-ds-bounce.webm"
@@ -71,7 +75,7 @@ export default async function Home() {
             </Link>
           </div>
           <div className="mx-auto max-w-xl">
-            <p className=" text-center text-3xl">Play Tribes Ascend</p>
+            <Text className=" text-center text-3xl">Play Tribes Ascend</Text>
             <Link href="/docs/guide-install-setup">
               <Image
                 src="/static/img/dodge-pretty-ini.png"
@@ -83,7 +87,7 @@ export default async function Home() {
             </Link>
           </div>
           <div className="mx-auto max-w-xl">
-            <p className=" text-center text-3xl">Community Maps</p>
+            <Text className=" text-center text-3xl">Community Maps</Text>
             <Link href="/docs/custommaps/">
               <Image
                 src="/static/img/maps/acheron-spawn.png"
@@ -95,15 +99,15 @@ export default async function Home() {
             </Link>
           </div>
         </div>
-      <div className="max-w-8xl flex flex-col py-6 pt-12 text-center ">
-        <div className="max-w-8xl div div-col gap-6 px-32 text-center text-6xl">
-          {data?.map((post) => (
-            <div className="py-6 text-center" key={post.id}>
-              {post.content}
-            </div>
-          ))}
+        <div className="max-w-8xl flex flex-col py-6 pt-12 text-center ">
+          <div className="max-w-8xl div div-col gap-6 px-32 text-center text-6xl">
+            {data?.map((post) => (
+              <div className="py-6 text-center" key={post.id}>
+                {post.content}
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
       </div>
     </>
   );
