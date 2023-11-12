@@ -303,7 +303,9 @@ export default function QuickPUGGuide() {
           In a <Code>community server,</Code> you must be a verified user for
           your Loadouts to save.
         </p>
-        <Title order={2}>Glossary</Title>
+        <Title id="glossary" order={2}>
+          Glossary
+        </Title>
         <Table cellPadding={6} data={tableData} />
       </div>
     </>

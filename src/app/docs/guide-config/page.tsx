@@ -70,8 +70,8 @@ export default function GuideConfig() {
         <Text>
           Note: All ini&quot;s provided are for 1080p resolution. Manually alter
           this by changing ResX=1920 and ResY=1080 to your native monitor
-          resolution. HUD Elements can be enabled within the [in game
-          settings](#in-game-settings).
+          resolution. HUD Elements can be enabled within the{" "}
+          <Link href={"#in-game-settings"}>in game settings</Link>.
         </Text>
         <Title order={3}>Required Tweaks</Title>
 

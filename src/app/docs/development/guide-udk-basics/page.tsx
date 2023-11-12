@@ -1,4 +1,5 @@
 import { Image, Title, Text, Kbd, Table } from "@mantine/core";
+import Link from "next/link";
 
 const tableData = {
   head: ["Action", "Default Binding "],
@@ -115,7 +116,7 @@ export default function GuideUDKBasics() {
           Right click the terrain and select Actor Properties <Kbd>F4</Kbd>.
           This can be found under View then Actor Properties.
         </Text>
-        [What is an actor in UDK?](#glossary)
+        <Link href="#glossary">What is an actor in UDK?</Link>
         <Text>
           To confirm a setting, make sure you hit enter after typing/pasting in
           the value.
@@ -578,7 +579,10 @@ For this particular fog asset there are two light colors which reference our dom
           Click View, Browser Windows, Groups. On the left column make sure
           everything is ticked.
         </Text>
-        <Title order={2}> Glossary</Title>
+        <Title id="glossary" order={2}>
+          {" "}
+          Glossary
+        </Title>
         <Text>Actor</Text>
         <Text>Viewport</Text>
       </div>
