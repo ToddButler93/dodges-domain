@@ -69,31 +69,31 @@ const gameplayMenuData = [
     icon: FaGun,
     title: "Offense",
     description: "TODO: Write description",
-    link: "/docs/servers/guide-offense",
+    link: "/docs/gameplay/guide-offense",
   },
   {
     icon: FaFlag,
     title: "Capping",
     description: "TODO: Write description",
-    link: "/docs/servers/guide-cap",
+    link: "/docs/gameplay/guide-cap",
   },
   {
     icon: FaWeightHanging,
     title: "Heavy on Flag",
     description: "TODO: Write description",
-    link: "/docs/servers/guide-hof",
+    link: "/docs/gameplay/guide-hof",
   },
   {
     icon: FaShield,
     title: "Defense",
     description: "TODO: Write description",
-    link: "/docs/servers/guide-defense",
+    link: "/docs/gameplay/guide-defense",
   },
   {
     icon: RxCrosshair1,
     title: "Sniping",
     description: "TODO: Write description",
-    link: "/docs/servers/guide-snipe",
+    link: "/docs/gameplay/guide-snipe",
   },
 ];
 
@@ -144,7 +144,7 @@ const tribesInfoMenuData = [
     icon: FaGamepad,
     title: "Game Server Hosting",
     description: "TODO: Write description",
-    link: "/docs/servers/guide-hosting",
+    link: "/docs/gameplay/guide-hosting",
   },
 ];
 
