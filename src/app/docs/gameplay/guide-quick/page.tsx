@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { Table, Title, Button } from "@mantine/core";
+import { Table, Title, Button, Code } from "@mantine/core";
 
 const tableData = {
   head: ["Term", "Meaning"],
@@ -54,34 +54,34 @@ export default function QuickPUGGuide() {
         <Title>Playing PUGs - 7v7 Format</Title>
         <div>
           <p>
-            <code>Pick-up Games</code> are a semi-competitive 7v7 format.
+            <Code>Pick-up Games</Code> are a semi-competitive 7v7 format.
             Pick-up games will use VoIP software such as Mumble or Discord.
           </p>
           <p>
-            Each team runs 4 <code>offense</code> and 3 <code>defense</code>.
+            Each team runs 4 <Code>offense</Code> and 3 <Code>defense</Code>.
           </p>
           <p>
-            Generally speaking, the <code>defense</code> consists of a
-            <code>HOF,</code> a <code>light defense</code>/
-            <code>medium defense,</code> and a <code>sniper.</code>
+            Generally speaking, the <Code>defense</Code> consists of a
+            <Code>HOF,</Code> a <Code>light defense</Code>/
+            <Code>medium defense,</Code> and a <Code>sniper.</Code>
           </p>
           <p>
-            <code>Offense</code> have two recommended setups:
+            <Code>Offense</Code> have two recommended setups:
           </p>
           <ul className="list-inside list-disc">
             <li>
-              3 <code>offense</code> members and a <code>capper</code> with one
-              <code>offense</code> member going after the enemy
-              <code>Sniper</code>
+              3 <Code>offense</Code> members and a <Code>capper</Code> with one
+              <Code>offense</Code> member going after the enemy
+              <Code>Sniper</Code>
             </li>
             <li>
-              2 <code>offense</code> members and 2 <code>cappers</code>
+              2 <Code>offense</Code> members and 2 <Code>cappers</Code>
             </li>
           </ul>
           <p>
-            <code>Defense</code> goes <code>defense</code> during
-            <code>stand-offs</code> and <code>offense</code> goes
-            <code>offense</code> during <code>stand-offs.</code>
+            <Code>Defense</Code> goes <Code>defense</Code> during
+            <Code>stand-offs</Code> and <Code>offense</Code> goes
+            <Code>offense</Code> during <Code>stand-offs.</Code>
           </p>
           <Title order={3}>Recommendations</Title>
           <p>
@@ -92,18 +92,18 @@ export default function QuickPUGGuide() {
           </p>
           <ul className="list-inside list-disc">
             <li>
-              If both flags are home, if you are an <code>offense</code> member
-              or a <code>capper,</code> there is little to no gain in
-              killing/shooting enemy <code>offense.</code> If
-              <code>defense</code> is struggling, spotting enemy
-              <code>capper</code> is substantially more beneficial.
+              If both flags are home, if you are an <Code>offense</Code> member
+              or a <Code>capper,</Code> there is little to no gain in
+              killing/shooting enemy <Code>offense.</Code> If
+              <Code>defense</Code> is struggling, spotting enemy
+              <Code>capper</Code> is substantially more beneficial.
             </li>
             <li>
-              Running 4+ <code>defense</code> members generally makes games slow
+              Running 4+ <Code>defense</Code> members generally makes games slow
               for both teams.
             </li>
             <li>
-              Try to run a <code>capper</code> that does not warp.
+              Try to run a <Code>capper</Code> that does not warp.
             </li>
           </ul>
         </div>
@@ -115,18 +115,18 @@ export default function QuickPUGGuide() {
           <Title order={3}>Major Responsibilities</Title>
           <ul className="list-inside list-disc">
             <li>
-              Kill the enemy <code>heavy on flag</code> and enemy
-              <code>light defense</code> <code>5 seconds</code> before your
-              <code>capper</code> will grab.
+              Kill the enemy <Code>heavy on flag</Code> and enemy
+              <Code>light defense</Code> <Code>5 seconds</Code> before your
+              <Code>capper</Code> will grab.
             </li>
             <li>
-              Put pressure on the enemy <code>Sniper</code> to prevent them from
-              killing your <code>capper</code> pre-grab and post-grab.
-              Generally, only 1 <code>offense</code> member does this only if
-              your team is running 1 <code>capper.</code>
+              Put pressure on the enemy <Code>Sniper</Code> to prevent them from
+              killing your <Code>capper</Code> pre-grab and post-grab.
+              Generally, only 1 <Code>offense</Code> member does this only if
+              your team is running 1 <Code>capper.</Code>
             </li>
             <li>
-              <code>E-Grab</code> when the <code>defense</code> calls for it.
+              <Code>E-Grab</Code> when the <Code>defense</Code> calls for it.
               <Title order={3}>Minor Responsibilities</Title>
             </li>
             <li>
@@ -134,16 +134,16 @@ export default function QuickPUGGuide() {
             </li>
             <li>
               Hit the enemy stand at the same time as other
-              <code>offense</code> members, aim for when your
-              <code>capper</code> would be <code>15 seconds</code> out.
+              <Code>offense</Code> members, aim for when your
+              <Code>capper</Code> would be <Code>15 seconds</Code> out.
             </li>
             <li>
-              Spot enemy <code>cappers</code> and enemy <code>offense.</code>
-              This assists your <code>defense</code> better than you shooting
+              Spot enemy <Code>cappers</Code> and enemy <Code>offense.</Code>
+              This assists your <Code>defense</Code> better than you shooting
               the enemy `offense.
             </li>
             <li>
-              <code>Walk</code> flags with your other <code>offense</code>
+              <Code>Walk</Code> flags with your other <Code>offense</Code>
               members.
             </li>
           </ul>
@@ -156,19 +156,19 @@ export default function QuickPUGGuide() {
           <Title order={3}>Major Responsibilities</Title>
           <ul className="list-inside list-disc">
             <li>
-              Stop the enemy <code>capper.</code>
+              Stop the enemy <Code>capper.</Code>
             </li>
             <li>
-              Stop enemy <code>walks.</code>
+              Stop enemy <Code>walks.</Code>
               <Title order={3}>Minor Responsibilities</Title>
             </li>
             <li>Be ready to stop unspotted/out of time grabs.</li>
             <li>
-              Work with the <code>light defense</code> to get kills on enemy
-              <code>offense</code> without overextending yourself.
+              Work with the <Code>light defense</Code> to get kills on enemy
+              <Code>offense</Code> without overextending yourself.
             </li>
             <li>
-              Only leave the stand during a <code>stand-off.</code>
+              Only leave the stand during a <Code>stand-off.</Code>
             </li>
             <li>Avoid being shot if possible.</li>
           </ul>
@@ -181,25 +181,25 @@ export default function QuickPUGGuide() {
           <Title order={3}>Major Responsibilities</Title>
           <ul className="list-inside list-disc">
             <li>
-              Kill enemy the <code>offense</code> members.
+              Kill enemy the <Code>offense</Code> members.
             </li>
             <li>Return flags.</li>
             <li>
-              Call out for <code>E-Grabs</code>
+              Call out for <Code>E-Grabs</Code>
               <Title order={3}>Minor Responsibilities</Title>
             </li>
             <li>
-              Work with the <code>Sniper</code>
+              Work with the <Code>Sniper</Code>
             </li>
             <li>
-              Call out enemy <code>offense</code> you are shooting so the
-              <code>Sniper</code> and <code>heavy on flag</code> know who to
+              Call out enemy <Code>offense</Code> you are shooting so the
+              <Code>Sniper</Code> and <Code>heavy on flag</Code> know who to
               shoot.
             </li>
             <li>
-              If the enemy <code>capper</code> has recently died, assist any
-              walks your <code>offense</code> may be doing or meet your
-              <code>capper.</code>
+              If the enemy <Code>capper</Code> has recently died, assist any
+              walks your <Code>offense</Code> may be doing or meet your
+              <Code>capper.</Code>
             </li>
           </ul>
         </div>
@@ -211,30 +211,30 @@ export default function QuickPUGGuide() {
           <Title order={3}>Major Responsibilities</Title>
           <ul className="list-inside list-disc">
             <li>
-              Spot/kill the enemy <code>capper</code> at all times.
+              Spot/kill the enemy <Code>capper</Code> at all times.
             </li>
             <li>Call out a time and direction the enemy cap will be.</li>
             <li>
-              Call out for <code>E-Grabs</code>
+              Call out for <Code>E-Grabs</Code>
             </li>
             <li>
-              Snipe the enemy <code>offense</code> which your
-              <code>light defense</code> and <code>heavy on flag</code> are
+              Snipe the enemy <Code>offense</Code> which your
+              <Code>light defense</Code> and <Code>heavy on flag</Code> are
               fighting or during any walk attempts.
               <Title order={3}>Minor Responsibilities</Title>
             </li>
             <li>
-              Call out enemy <code>offense</code> locations.
+              Call out enemy <Code>offense</Code> locations.
             </li>
             <li>
-              Assist <code>heavy on flag</code> with clearing your base if
+              Assist <Code>heavy on flag</Code> with clearing your base if
               over-run after an enemy has grabbed.
             </li>
             <li>
-              Avoid enemy <code>offense</code> members.
+              Avoid enemy <Code>offense</Code> members.
             </li>
             <li>
-              Snipe the enemy chaser if your <code>capper</code> is out.
+              Snipe the enemy chaser if your <Code>capper</Code> is out.
             </li>
           </ul>
         </div>
@@ -248,59 +248,59 @@ export default function QuickPUGGuide() {
         <ul className="list-inside list-disc">
           <li>Grab and capture the enemy flag.</li>
           <li>
-            Communicate times on your route for your <code>offense</code>
+            Communicate times on your route for your <Code>offense</Code>
             members.
             <Title order={3}>Minor Responsibilities</Title>
           </li>
           <li>
-            Meet your <code>offense</code> if they decide to <code>Walk</code>
+            Meet your <Code>offense</Code> if they decide to <Code>Walk</Code>
             the flag.
           </li>
           <li>
-            Wait in case your <code>offense</code> needs more time to get to the
+            Wait in case your <Code>offense</Code> needs more time to get to the
             stand.
           </li>
         </ul>
         <Title order={2}>Stand-Offs</Title>
         <ul className="list-inside list-disc">
           <li>
-            <code>Offense</code> stays on <code>offense.</code>
+            <Code>Offense</Code> stays on <Code>offense.</Code>
           </li>
           <li>
-            <code>Defense</code> stays on <code>defense.</code>
+            <Code>Defense</Code> stays on <Code>defense.</Code>
           </li>
           <li>
             It is more beneficial for your team to promptly go
-            <code>offense</code> while your team has three members already on
-            <code>defense.</code>
+            <Code>offense</Code> while your team has three members already on
+            <Code>defense.</Code>
           </li>
           <li>
-            <code>Defense</code> generally picks the medium class for
+            <Code>Defense</Code> generally picks the medium class for
             maneuverability. Having a heavy can be effective as well.
           </li>
           <li>
-            Stay near your spawns as <code>defense.</code>
+            Stay near your spawns as <Code>defense.</Code>
           </li>
           <li>
-            Various class compositions amongst <code>offense</code> each have
+            Various class compositions amongst <Code>offense</Code> each have
             their benefits and drawbacks. Running 3+ light classes on
-            <code>offense</code> can be shut down while a broad spectrum of
+            <Code>offense</Code> can be shut down while a broad spectrum of
             classes can be effective.
           </li>
           <li>
-            <code>Offense</code> should coordinate times for hitting the enemy
-            <code>defense</code> together. The game timer is effective at
+            <Code>Offense</Code> should coordinate times for hitting the enemy
+            <Code>defense</Code> together. The game timer is effective at
             coordinating a time to attack.
           </li>
         </ul>
         <Title order={2}>Loadout Setup</Title>
         <p>
-          For all classes except for the <code>sniper,</code> it is considered
+          For all classes except for the <Code>sniper,</Code> it is considered
           optimal to run at least one explosive/timed weapon and at least one
           chain/hit-scan weapon.
         </p>
         <p>
-          In a <code>community server,</code> you must be a verified user for
+          In a <Code>community server,</Code> you must be a verified user for
           your Loadouts to save.
         </p>
         <Title order={2}>Glossary</Title>
