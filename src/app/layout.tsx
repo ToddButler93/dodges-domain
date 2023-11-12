@@ -35,7 +35,7 @@ export default async function RootLayout({
         <body className={`font-sans ${inter.variable} relative`}>
           <TRPCReactProvider cookies={cookies().toString()}>
             <MantineProvider theme={DEFAULT_THEME} defaultColorScheme="dark">
-              <main className="flex min-h-screen w-full flex-col items-center gap-6 pb-6">
+              <main className="flex min-h-screen w-full flex-col items-center pb-6">
                 <NavBar />
                 {children}
               </main>
