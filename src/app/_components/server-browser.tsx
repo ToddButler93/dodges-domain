@@ -12,21 +12,21 @@ import {
 
 import type { Key } from "react";
 
-interface ServerInfo {
+type ServerInfo = {
   locked: boolean;
   map: string;
   mode: string;
   name: string;
   players: string[];
   type: string;
-}
+};
 
-interface LoginServerInfo {
+type LoginServerInfo = {
   online_players_list: string[];
   online_servers_list: ServerInfo[];
-}
+};
 
-async function getData(url: string) {
+async function getData<T>(url: string) {
   const res = await fetch(url, {
     next: { revalidate: 15 },
   });
@@ -39,7 +39,7 @@ async function getData(url: string) {
     return null;
   }
 
-  return res.json();
+  return res.json() as T;
 }
 
 function sortByPlayers(serverList: ServerInfo[]): ServerInfo[] {
@@ -49,11 +49,11 @@ function sortByPlayers(serverList: ServerInfo[]): ServerInfo[] {
 }
 
 export default async function ServerBrowserComponent() {
-  const pugLoginData: LoginServerInfo | null = await getData(
+  const pugLoginData = await getData<LoginServerInfo>(
     "http://ta.dodgesdomain.com:9080/detailed_status",
   );
 
-  const communityLoginData: LoginServerInfo | null = await getData(
+  const communityLoginData = await getData<LoginServerInfo>(
     "http://ta.kfk4ever.com:9080/detailed_status",
   );
 
