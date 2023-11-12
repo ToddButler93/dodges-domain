@@ -123,7 +123,7 @@ export default async function MatchHistoryComponent() {
                         <>
                           <GridCol
                             span={6}
-                            className="bg-green-800 bg-opacity-25 p-3"
+                            className="bg-green-800 bg-opacity-50 p-3 backdrop-blur-sm"
                           >
                             <>
                               {match.players.map(
@@ -149,7 +149,7 @@ export default async function MatchHistoryComponent() {
                           </GridCol>
                           <GridCol
                             span={6}
-                            className="bg-red-800 bg-opacity-25 p-3"
+                            className="bg-red-800 bg-opacity-50 p-3 backdrop-blur-sm"
                           >
                             <>
                               {match.players.map(
@@ -178,7 +178,7 @@ export default async function MatchHistoryComponent() {
                         <>
                           <GridCol
                             span={6}
-                            className="bg-yellow-800 bg-opacity-25 p-3"
+                            className="bg-yellow-800 bg-opacity-50 p-3 backdrop-blur-sm"
                           >
                             <>
                               {match.players.map(
@@ -204,7 +204,7 @@ export default async function MatchHistoryComponent() {
                           </GridCol>
                           <GridCol
                             span={6}
-                            className="bg-yellow-800 bg-opacity-25 p-3"
+                            className="bg-yellow-800 bg-opacity-50 p-3 backdrop-blur-sm"
                           >
                             <>
                               {match.players.map(
