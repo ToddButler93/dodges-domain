@@ -1,83 +1,182 @@
----
-id: guide-config
-title: Configuration
-linkTitle: Configuration Guide
-weight: 3
-tags: [tribes-information]
----
+import { Button, Code, Title, Image, Text } from "@mantine/core";
+import Link from "next/link";
 
-## In game settings
+export default function GuideConfig() {
+  return (
+    <>
+      <div className="flex max-w-6xl flex-col gap-3">
+        <Title>Configuration Guide</Title>
+        <Title order={2}>In game settings</Title>
 
-## Tribes.ini
+        <Title order={2}>Tribes.ini</Title>
 
-Your `Tribes.ini` is the config file for your graphical settings.
+        <Text>
+          Your <Code>Tribes.ini</Code> is the config file for your graphical
+          settings.
+        </Text>
 
-It is located under "Documents\My Games\Tribes Ascend\TribesGame\Config\"
+        <Text>
+          It is located under &quot;Documents\My Games\Tribes
+          Ascend\TribesGame\Config\&quot;
+        </Text>
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="/text/dodges-ini/tribes.ini">
-	Dodge's Tribes.ini<i class="fa-solid fa-download ml-2 "></i>
-</a>
+        <Button
+          component={Link}
+          href="/static/text/dodges-ini/tribes.ini"
+          size="xl"
+          radius="xl"
+          styles={{
+            root: { backgroundColor: "teal" },
+            label: { color: "white" },
+            inner: { fontSize: 24 },
+          }}
+        >
+          Dodge&quot;s Tribes.ini
+        </Button>
 
-This `Tribes.ini` is for people with weaker systems or who are after a competitive edge.
+        <Text>
+          This <Code>Tribes.ini</Code> is for people with weaker systems or who
+          are after a competitive edge.
+        </Text>
+        <Link href="/static/text/dodges-ini/tribes.ini">
+          <Image src="/static/img/dodge-ini.png" alt='Dodge"s tribes.ini' />
+        </Link>
 
-[![dodge-ini](/img/dodge-ini.png)](/text/dodges-ini/tribes.ini)
+        <Button
+          component={Link}
+          href="/static/text/dodges-pretty-ini/tribes.ini"
+          size="xl"
+          radius="xl"
+          styles={{
+            root: { backgroundColor: "teal" },
+            label: { color: "white" },
+            inner: { fontSize: 24 },
+          }}
+        >
+          <Text>Dodge&quot;s &quot;Pretty&quot; Tribes.ini</Text>
+        </Button>
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="/text/dodges-pretty-ini/tribes.ini">
-	Dodge's "Pretty" Tribes.ini<i class="fa-solid fa-download ml-2 "></i>
-</a>
+        <Text>
+          This <Code>Tribes.ini</Code> is for people with a super-strong system
+          and prioritize looks over a competitive edge.
+        </Text>
+        <Link href="/static/text/dodges-pretty-ini/tribes.ini">
+          <Image
+            src="/static/img/dodge-pretty-ini.png"
+            alt='Dodge"s pretty tribes.ini'
+          />
+        </Link>
 
-This `Tribes.ini` is for people with a super-strong system and prioritize looks over a competitive edge.
+        <Text>
+          Note: All ini&quot;s provided are for 1080p resolution. Manually alter
+          this by changing ResX=1920 and ResY=1080 to your native monitor
+          resolution. HUD Elements can be enabled within the [in game
+          settings](#in-game-settings).
+        </Text>
+        <Title order={3}>Required Tweaks</Title>
 
-[![](/img/dodge-pretty-ini.png)](/text/dodges-pretty-ini/tribes.ini)
+        <Text>
+          Set all instances of <Code>bForceStaticTerrain=False</Code> to
+          <Code>bForceStaticTerrain=True</Code>. This will stop terrain from
+          popping in.
+        </Text>
+        <Text>
+          Set <Code>OneFrameThreadLag=False</Code>. This can help with mouse
+          responsiveness.
+        </Text>
+        <Text>
+          Set <Code>m_bTinyWeaponsEnabled=True</Code>. This will make your
+          weapons take up less screen space.
+        </Text>
+        <Title order={3}>Recommended Tweaks</Title>
 
-Note: All ini's provided are for 1080p resolution. Manually alter this by changing ResX=1920 and ResY=1080 to your native monitor resolution. HUD Elements can be enabled within the [in game settings](#in-game-settings).
+        <Text>
+          Set <Code>Bloom=True</Code> to <Code>Bloom=False</Code>
+        </Text>
+        <Text>
+          Set <Code>MotionBlur=True</Code> to <Code>MotionBlur=False</Code>
+        </Text>
+        <Text>
+          To set a frame rate cap, set <Code>bSmoothFrameRate=true</Code> and
+          <Code>MaxSmoothedFrameRate=X</Code> where X is the frame rate your
+          wish to cap your game at.
+        </Text>
+        <Text>Set FogVolumes=False to make smoke clouds smaller.</Text>
+        <Text>
+          Set <Code>SpeedTreeLeaves=False</Code> and
+          <Code>SpeedTreeFronds=False</Code> to hide tree leaves and some
+          branches.
+        </Text>
+        <Text>
+          Set <Code>AllowRadialBlur=False</Code> to remove some of the
+          distortions from weapon impacts.
+        </Text>
+        <Text>
+          Set <Code>Borderless=False</Code> to improve input lag on certain
+          systems.
+        </Text>
+        <Title order={2}>TribesInput.ini</Title>
 
-### Required Tweaks
+        <Text>
+          Your <Code>TribesInput.ini</Code> is the config file for your key
+          bindings.
+        </Text>
+        <Text>
+          The main thing I&quot;d make sure is that you have
+          <Code>bEnableMouseSmoothing</Code> set to <Code>false</Code>.
+        </Text>
+        <Text>
+          It is located under &quot;Documents\My Games\Tribes
+          Ascend\TribesGame\Config\&quot;
+        </Text>
+        <Text>
+          A sensitivity of approximately 4.501 at maximum zoom will cause issues
+          with mouse input. 5+ sensitivity is recommended.
+        </Text>
+        <Button
+          component={Link}
+          href="/static/text/dodges-input-ini/tribesinput.ini"
+          size="xl"
+          radius="xl"
+          styles={{
+            root: { backgroundColor: "teal" },
+            label: { color: "white" },
+            inner: { fontSize: 24 },
+          }}
+        >
+          Dodge&quot;s TribesInput.ini
+        </Button>
 
-Set all instances of `bForceStaticTerrain=False` to `bForceStaticTerrain=True`. This will stop terrain from popping in.
+        <Text>
+          This is my personal <Code>TribesInput.ini</Code>. Contains some of the
+          autocompletes for official and custom server admins.
+        </Text>
+        <Text>
+          You must set this to <Code>Read Only</Code> otherwise the game will
+          overwrite the file.
+        </Text>
+        <Title order={2}>TAMods</Title>
 
-Set `OneFrameThreadLag=False`. This can help with mouse responsiveness.
-
-Set `m_bTinyWeaponsEnabled=True`. This will make your weapons take up less screen space.
-
-### Recommended Tweaks
-
-Set `Bloom=True` to `Bloom=False`
-
-Set `MotionBlur=True` to `MotionBlur=False`
-
-To set a frame rate cap, set `bSmoothFrameRate=true` and `MaxSmoothedFrameRate=X` where X is the frame rate your wish to cap your game at.
-
-Set FogVolumes=False to make smoke clouds smaller.
-
-Set `SpeedTreeLeaves=False` and `SpeedTreeFronds=False` to hide tree leaves and some branches.
-
-Set `AllowRadialBlur=False` to remove some of the distortions from weapon impacts.
-
-Set `Borderless=False` to improve input lag on certain systems.
-
-## TribesInput.ini
-
-Your `TribesInput.ini` is the config file for your key bindings.
-
-The main thing I'd make sure is that you have `bEnableMouseSmoothing` set to `false`.
-
-It is located under "Documents\My Games\Tribes Ascend\TribesGame\Config\"
-
-A sensitivity of approximately 4.501 at maximum zoom will cause issues with mouse input. 5+ sensitivity is recommended.
-
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="/text/dodges-input-ini/tribesinput.ini">
-	Dodge's TribesInput.ini<i class="fa-solid fa-download ml-2 "></i>
-</a>
-
-This is my personal `TribesInput.ini`. Contains some of the autocompletes for official and custom server admins.
-
-You must set this to `Read Only` otherwise the game will overwrite the file.
-
-## TAMods
-
-It is recommended to delete the default crosshairs and either use the Tribes Ascend crosshairs or create your own. If you choose to create your own I'd recommend disabling the default crosshairs within ubermenu so you keep hitmarkers.
-
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="/text/dodges-config-lua/config.lua">
-	Dodge's TAMods Config.lua<i class="fa-solid fa-download ml-2 "></i>
-</a>
+        <Text>
+          It is recommended to delete the default crosshairs and either use the
+          Tribes Ascend crosshairs or create your own. If you choose to create
+          your own I&quot;d recommend disabling the default crosshairs within
+          ubermenu so you keep hitmarkers.
+        </Text>
+        <Button
+          component={Link}
+          href="/static/text/dodges-config-lua/config.lua"
+          size="xl"
+          radius="xl"
+          styles={{
+            root: { backgroundColor: "teal" },
+            label: { color: "white" },
+            inner: { fontSize: 24 },
+          }}
+        >
+          <Text>Dodge&quot;s TAMods Config.lua</Text>
+        </Button>
+      </div>
+    </>
+  );
+}
