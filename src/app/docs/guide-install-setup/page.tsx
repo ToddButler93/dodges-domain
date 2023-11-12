@@ -111,14 +111,7 @@ export default function GuideInstallSetup() {
           If you aren&apos;t sure and installed the game via &quot;Steam&quot;,
           follow this video to get the correct directory.
         </p>
-        <video
-          width="auto"
-          height="100%"
-          autoPlay
-          muted
-          loop
-          preload="metadata"
-        >
+        <video autoPlay muted loop preload="metadata" className=" h-1/3">
           <source
             src="/static/video/install-location.webm"
             type="video/webm"
@@ -140,14 +133,7 @@ export default function GuideInstallSetup() {
           Go back to the main menu and select &quot;Switch to OOTB&quot; or
           &quot;Switch to GOTY&quot; like this video.
         </p>
-        <video
-          width="auto"
-          height="100%"
-          autoPlay
-          muted
-          loop
-          preload="metadata"
-        >
+        <video autoPlay muted loop preload="metadata" className="max-h-screen">
           <source src="/static/video/game-mode.webm" type="video/webm"></source>
           Your browser does not support .webm video.
         </video>
@@ -198,10 +184,10 @@ export default function GuideInstallSetup() {
         </p>
         <Image
           src="/static/img/install/steam-properties.png"
-          width={500}
-          height={500}
-          style={{ objectFit: "contain" }}
           alt=""
+          h={200}
+          w="auto"
+          fit="contain"
         />
         <p>
           Select the &quot;Local files&quot; tab and click the &quot;Verify
@@ -210,10 +196,10 @@ export default function GuideInstallSetup() {
         </p>
         <Image
           src="/static/img/install/steam-local-files.png"
-          width={500}
-          height={500}
-          style={{ objectFit: "contain" }}
           alt=""
+          h={200}
+          w="auto"
+          fit="contain"
         />
         <Divider>Step 3</Divider>
         <p>
@@ -224,10 +210,10 @@ export default function GuideInstallSetup() {
         </p>
         <Image
           src="/static/img/install/launcher-advanced-tab.png"
-          width={500}
-          height={500}
-          style={{ objectFit: "contain" }}
           alt=""
+          h={200}
+          w="auto"
+          fit="contain"
         />
         <p>
           Now, under the &quot;Packages&quot; Tab you can install the custom
@@ -236,10 +222,10 @@ export default function GuideInstallSetup() {
         </p>
         <Image
           src="/static/img/install/launcher-packages-tab.png"
-          width={500}
-          height={500}
-          style={{ objectFit: "contain" }}
           alt=""
+          h={200}
+          w="auto"
+          fit="contain"
         />
         <Divider>
           I&apos;m having issues not stated here with the launcher
@@ -250,10 +236,10 @@ export default function GuideInstallSetup() {
         </p>
         <Image
           src="/static/img/install/launcher-advanced-tab.png"
-          width={500}
-          height={500}
-          style={{ objectFit: "contain" }}
           alt=""
+          h={200}
+          w="auto"
+          fit="contain"
         />
       </div>
     </>
