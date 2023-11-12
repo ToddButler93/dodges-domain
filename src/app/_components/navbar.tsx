@@ -44,13 +44,13 @@ const installMenuData = [
   {
     icon: FaDownload,
     title: "Installation Guide",
-    description: "TODO: Write description",
+    description: "Get Tribes Ascend running!",
     link: "/docs/guide-install-setup",
   },
   {
     icon: FaEdit,
     title: "Configuration Guide",
-    description: "TODO: Write description",
+    description: "Configuring Tribes Ascend!",
     link: "/docs/guide-config",
   },
 ];
@@ -59,7 +59,7 @@ const pugMenuData = [
   {
     icon: FaGamepad,
     title: "PUG Guide",
-    description: "TODO: Write description",
+    description: "[VGCG]",
     link: "/docs/gameplay/guide-quick",
   },
 ];
@@ -68,32 +68,32 @@ const gameplayMenuData = [
   {
     icon: FaGun,
     title: "Offense",
-    description: "TODO: Write description",
+    description: "[VSAA]",
     link: "/docs/gameplay/guide-offense",
   },
   {
     icon: FaFlag,
     title: "Capping",
-    description: "TODO: Write description",
+    description: "[VSAF]",
     link: "/docs/gameplay/guide-cap",
   },
   {
     icon: FaWeightHanging,
     title: "Heavy on Flag",
-    description: "TODO: Write description",
-    link: "/docs/gameplay/guide-hof",
+    description: "Unavailable - Needs writing.", // [VSDF]
+    link: "", // /docs/gameplay/guide-hof
   },
   {
     icon: FaShield,
     title: "Defense",
-    description: "TODO: Write description",
-    link: "/docs/gameplay/guide-defense",
+    description: "Unavailable - Needs writing.", // [VSDB]
+    link: "", // /docs/gameplay/guide-defense
   },
   {
     icon: RxCrosshair1,
     title: "Sniping",
-    description: "TODO: Write description",
-    link: "/docs/gameplay/guide-snipe",
+    description: "Unavailable - Needs writing.", // [VSDD]
+    link: "", // /docs/gameplay/guide-snipe
   },
 ];
 
@@ -101,13 +101,13 @@ const mapDevelopmentMenuData = [
   {
     icon: FaGamepad,
     title: "Map Development",
-    description: "TODO: Write description",
+    description: "Setting up UDK for Tribes Ascend map development.",
     link: "/docs/development/guide-map-dev",
   },
   {
     icon: FaGamepad,
     title: "Using UDK",
-    description: "TODO: Write description",
+    description: "How to use UDK to make Tribes Ascend maps.",
     link: "/docs/development/guide-udk-basics",
   },
 ];
@@ -116,13 +116,13 @@ const tribesLiveInfoMenuData = [
   {
     icon: FaGamepad,
     title: "Server Browser",
-    description: "TODO: Write description",
+    description: "Work in Progress",
     link: "/server-browser",
   },
   {
     icon: FaGamepad,
     title: "Match History",
-    description: "TODO: Write description",
+    description: "Work in Progress",
     link: "/match-history",
   },
 ];
@@ -131,19 +131,19 @@ const tribesInfoMenuData = [
   {
     icon: FaGamepad,
     title: "Patch History",
-    description: "TODO: Write description",
+    description: "Patch History for Tribes Ascend.",
     link: "/docs/information",
   },
   {
     icon: FaGamepad,
     title: "Weapon Data",
-    description: "TODO: Write description",
+    description: "Weapon Data for Tribes Ascend.",
     link: "/docs/information/weapon-data",
   },
   {
     icon: FaGamepad,
     title: "Game Server Hosting",
-    description: "TODO: Write description",
+    description: "How to host Tribes Ascend servers, powered by TAServer.",
     link: "/docs/gameplay/guide-hosting",
   },
 ];
