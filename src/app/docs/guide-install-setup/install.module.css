@@ -1,0 +1,12 @@
+.dropdownFooter {
+  background-color: light-dark(
+    var(--mantine-color-gray-3),
+    var(--mantine-color-dark-7)
+  );
+  margin: calc(var(--mantine-spacing-md) * -1);
+  margin-top: var(--mantine-spacing-sm);
+  padding: var(--mantine-spacing-md) calc(var(--mantine-spacing-md) * 2);
+  padding-bottom: var(--mantine-spacing-xl);
+  border-top: rem(1px) solid
+    light-dark(var(--mantine-color-gray-1), var(--mantine-color-dark-5));
+}
