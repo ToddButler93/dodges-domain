@@ -1,10 +1,11 @@
-import { Button, Code, Title, Image, Text } from "@mantine/core";
+import { Button, Code, Title, Image, Text, Card } from "@mantine/core";
 import Link from "next/link";
 
 export default function GuideConfig() {
   return (
     <>
-      <div className="flex max-w-6xl flex-col gap-3">
+    <div className="flex max-w-6xl flex-col gap-6 px-6">
+      <div className="flex flex-col gap-6 pt-6">
         <Title>Configuration Guide</Title>
         <Title order={2}>In game settings</Title>
 
@@ -19,6 +20,10 @@ export default function GuideConfig() {
           It is located under &quot;Documents\My Games\Tribes
           Ascend\TribesGame\Config\&quot;
         </Text>
+<Card className="flex flex-col gap-6">
+        <Link href="/static/text/dodges-ini/tribes.ini">
+          <Image src="/static/img/dodge-ini.png" alt='Dodge"s tribes.ini' />
+        </Link>
 
         <Button
           component={Link}
@@ -33,15 +38,19 @@ export default function GuideConfig() {
         >
           Dodge&quot;s Tribes.ini
         </Button>
-
         <Text>
           This <Code>Tribes.ini</Code> is for people with weaker systems or who
           are after a competitive edge.
         </Text>
-        <Link href="/static/text/dodges-ini/tribes.ini">
-          <Image src="/static/img/dodge-ini.png" alt='Dodge"s tribes.ini' />
-        </Link>
+        </Card>
+<Card className="flex flex-col gap-6">
 
+        <Link href="/static/text/dodges-pretty-ini/tribes.ini">
+          <Image
+            src="/static/img/dodge-pretty-ini.png"
+            alt='Dodge"s pretty tribes.ini'
+          />
+        </Link>
         <Button
           component={Link}
           href="/static/text/dodges-pretty-ini/tribes.ini"
@@ -55,17 +64,11 @@ export default function GuideConfig() {
         >
           <Text>Dodge&quot;s &quot;Pretty&quot; Tribes.ini</Text>
         </Button>
-
         <Text>
           This <Code>Tribes.ini</Code> is for people with a super-strong system
           and prioritize looks over a competitive edge.
         </Text>
-        <Link href="/static/text/dodges-pretty-ini/tribes.ini">
-          <Image
-            src="/static/img/dodge-pretty-ini.png"
-            alt='Dodge"s pretty tribes.ini'
-          />
-        </Link>
+        </Card>
 
         <Text>
           Note: All ini&quot;s provided are for 1080p resolution. Manually alter
@@ -176,6 +179,7 @@ export default function GuideConfig() {
         >
           <Text>Dodge&quot;s TAMods Config.lua</Text>
         </Button>
+      </div>
       </div>
     </>
   );
