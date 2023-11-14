@@ -132,7 +132,7 @@ const tribesInfoMenuData = [
     icon: FaGamepad,
     title: "Patch History",
     description: "Patch History for Tribes Ascend.",
-    link: "/docs/information",
+    link: "/docs/information/patch-history",
   },
   {
     icon: FaGamepad,
