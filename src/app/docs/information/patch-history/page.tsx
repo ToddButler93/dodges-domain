@@ -1,5 +1,4 @@
-import { Image, Title, Text, Kbd, Table, List, Divider } from "@mantine/core";
-import Link from "next/link";
+import { Title, List, Divider } from "@mantine/core";
 
 export default function PatchHistory() {
   return (
@@ -87,7 +86,7 @@ export default function PatchHistory() {
 <List.Item>Hellfire is now available to play for CTF and Blitz and has been added to all appropriate server map rotations.</List.Item>
 <List.Item>Votekick percentage increased to 45%, up from 35%</List.Item>
 <List.Item>Changed votekick message to include player who initiated the votekick.</List.Item>
-  - "Vote by [votekick_starter]: kick [kickable_player]?"
+  - &apos;Vote by [votekick_starter]: kick [kickable_player]?&apos;
 <List.Item>Ammo pickups now yield the same 400 hp heal on all armor types when picked up.</List.Item>
   - Light Heals for 400 HP, up from 300.
   - Medium Heals for 400 hp, down from 462.
@@ -262,7 +261,7 @@ export default function PatchHistory() {
 <Title order={4}> Vehicles</Title>
 
 <List.Item>Vehicles are now generated on a team wide timer.</List.Item>
-  - “At the beginning of the round vehicle timers are started. Once each vehicle's timer has completed, 1 vehicle is generated, up to the limit per vehicle type. Once that vehicle is taken, it is moved from “Generated”, to in play. The vehicle in play still affects the ability to generate more vehicles of that type. For example: The server has limited shrikes to 1. Once generated, that shrike may be claimed by a player. Because the server has limited shrikes to 1, no additional shrikes will be generated until the shrike has been destroyed.”
+  - “At the beginning of the round vehicle timers are started. Once each vehicle&apos;s timer has completed, 1 vehicle is generated, up to the limit per vehicle type. Once that vehicle is taken, it is moved from “Generated”, to in play. The vehicle in play still affects the ability to generate more vehicles of that type. For example: The server has limited shrikes to 1. Once generated, that shrike may be claimed by a player. Because the server has limited shrikes to 1, no additional shrikes will be generated until the shrike has been destroyed.”
   - All of the following values are modifiable through custom server settings.
   - Each vehicle type has:
     - Max number in play.
@@ -439,7 +438,7 @@ Behavior
 <List.Item>Magazine contains 8 shots.</List.Item>
 <List.Item>Projectile size set to 30.</List.Item>
 <List.Item>Speed set to 9000.</List.Item>
-<List.Item>Inherits 50% of the player's velocity.</List.Item>
+<List.Item>Inherits 50% of the player&apos;s velocity.</List.Item>
 
 Damage
 
@@ -463,7 +462,7 @@ Behavior
 
 Damage
 
-Drains energy away from target at a rate of 30% per second. Note: this does not pause the enemy's energy regeneration rate.
+Drains energy away from target at a rate of 30% per second. Note: this does not pause the enemy&apos;s energy regeneration rate.
 
 Drains health at a rate of 5% health per second on players.
 
@@ -848,10 +847,10 @@ Fixed an issue where projectiles didn’t inherit any vehicle velocity when shoo
 
 +25% self impulse on all explosive weapons.
 
-Self impulse will not knock you up off the ground unless the angle of the explosion is that it should knock you up. This allows well placed explosives to add impulse in the player's intended direction.
+Self impulse will not knock you up off the ground unless the angle of the explosion is that it should knock you up. This allows well placed explosives to add impulse in the player&apos;s intended direction.
 Automatic weapons projectile flight distance/lifetime is now shorter.
 
-<List.Item>Automatic projectile's flight time reduced to 0.5 seconds, down from 1 second.</List.Item>
+<List.Item>Automatic projectile&apos;s flight time reduced to 0.5 seconds, down from 1 second.</List.Item>
 <List.Item>This results in a flight distance of 10500 units, down from 21000.</List.Item>
 
 Ammo drops now give health when picked up.
@@ -1018,7 +1017,7 @@ New Weapon loadout bar is now enabled by default. It shows the following:
 <List.Item>Fixed positioning of Shocklance on the main menu.</List.Item>
 <List.Item>Shocklance is now bannable from a custom server.</List.Item>
 <List.Item>Rock bouncing custom physics preset has been changed to be index based. RockBounceIndex is the property 0=full rock bounce, 1=standard rock bounce, 2=no rock bounce</List.Item>
-<List.Item>Fixed an issue where returning a flag could prevent grabbing an enemy flag or grabbing an enemy flag could prevent returning your team's flag.</List.Item>
+<List.Item>Fixed an issue where returning a flag could prevent grabbing an enemy flag or grabbing an enemy flag could prevent returning your team&apos;s flag.</List.Item>
 <List.Item>Laser targeter no longer can deploy call-ins during the warmup phase of a match.</List.Item>
 <List.Item>Fixed an issue where the passenger from a gravcycle could get launched off at a high speed when exiting.</List.Item>
 <List.Item>Fixed an issue where certain types of fog could be disabled in custom .ini settings.</List.Item>
@@ -1071,7 +1070,7 @@ New Weapon loadout bar is now enabled by default. It shows the following:
 <List.Item>Mortars now explode on contact with shielded base assets (base turrets and base radar). This change affects the Juggernaut’s Mortar Launcher and the Juggernaut’s LR1 Mortar Launcher.</List.Item>
 <List.Item>With the Mechanic perk equipped, Repair tools will damage enemy base turrets and sensors “through” their shielding.</List.Item>
 <List.Item>Mines now have a soft “edge glow” around them, to make them more visible.</List.Item>
-<List.Item>Sentinel's BXT rifles have been made more effective when not in scope, damage raised to 125. (Scope still charges for higher damage).</List.Item>
+<List.Item>Sentinel&apos;s BXT rifles have been made more effective when not in scope, damage raised to 125. (Scope still charges for higher damage).</List.Item>
 
 <Title order={4}> Additional Items</Title>
 
@@ -1223,7 +1222,7 @@ New Weapon loadout bar is now enabled by default. It shows the following:
 <List.Item>Reduced the amount of impact camera shake from rapid projectile weapons (such as Assault Rifles, SMGs, etc).</List.Item>
 <List.Item>Decoupling of texture quality in graphics settings</List.Item>
 <List.Item>Introduced “flag drag” to limit the amount of speed a flag carrier can maintain at very high speeds. The drag is introduced at 300, 275, and 250 km/h for lights, mediums, and heavies, respectively. For custom servers, these speeds and the deceleration rate for when a player is over the top speed are customizable. Setting the value to 0 will turn off the feature.</List.Item>
-<List.Item>There is a new option under Settings->Gameplay called Simulated Projectiles (enabled by default). If disabled, projectiles from fast firing guns will no longer be simulated client-side, resulting in projectiles that are accurate to what the server plays at the cost of a delay from when you see them.</List.Item>
+<List.Item>There is a new option under Settings-&gt;Gameplay called Simulated Projectiles (enabled by default). If disabled, projectiles from fast firing guns will no longer be simulated client-side, resulting in projectiles that are accurate to what the server plays at the cost of a delay from when you see them.</List.Item>
 <List.Item>Additional improvements to German and French translated versions.</List.Item>
 <List.Item>Additional server capacity has been added in the Amsterdam data center. London servers are now available for Custom Servers, but not quick play matches.</List.Item>
 
@@ -1243,7 +1242,7 @@ New Weapon loadout bar is now enabled by default. It shows the following:
   - When activated Rage instantly gives energy and health (when upgraded).
   - For 15 seconds you have mass reduction and are immune to the next self-damage you take, which removes the Rage Effect.
   - Flag carriers cannot be raged.
-<List.Item>The Technician's Repair Kit will no longer repair objectives through world geometry. Base turrets are an exception to this rule since they can be on platforms that don’t have enough room for the kit.</List.Item>
+<List.Item>The Technician&apos;s Repair Kit will no longer repair objectives through world geometry. Base turrets are an exception to this rule since they can be on platforms that don’t have enough room for the kit.</List.Item>
 <List.Item>Reduced the amount of impact camera shake from rapid projectile weapons (such as Assault Rifles, SMGs, etc).</List.Item>
 <List.Item>Reduced starting magazine size on Raider’s NJ5 to 20. Adjusted starting ammo to match.</List.Item>
 <List.Item>Reduced damage on Technician’s Quick-Fuse grenade by 11%.</List.Item>
@@ -1628,7 +1627,7 @@ NOTE: Upon installation of this patch, a small pre-requisite program will be run
 <List.Item>A new CTF map has been added, Tartarus.</List.Item>
 <List.Item>A new Arena map has been added, Hinterlands.</List.Item>
 <List.Item>Users may now configure up to four pre-established loadouts per class. These can be used to more quickly switch between favored configurations for each class. Loadout slots are purchasable using XP or Gold.</List.Item>
-<List.Item>Users may now QUICK SWITCH between classes and loadouts while in a match using the “NUMPAD ENTER” key (default). This is an alternate way to change classes/loadouts versus using the Class Select menu ("I" Screen) that does not require you to open the game menu and is much faster.</List.Item>
+<List.Item>Users may now QUICK SWITCH between classes and loadouts while in a match using the “NUMPAD ENTER” key (default). This is an alternate way to change classes/loadouts versus using the Class Select menu (&apos;I&apos; Screen) that does not require you to open the game menu and is much faster.</List.Item>
 <List.Item>Users will now be presented with a customized “DEAL OF THE DAY.” This is a deal tailored to the individual and presents special pricing on an item that the user does not already own. The timer for the deal of the day resets at the same time as the timer for the First Win of the Day.</List.Item>
 <List.Item>The gold packages have been changed. The $30 and $50 packages now give significantly more bonus gold than previous, but do not include an XP booster. Users continue to earn permanent VIP status (which increases XP gain by 50% after their first real-money purchase).</List.Item>
 <List.Item>IMPORTANT USABILITY NOTE: With this release, you always close the console window using the ESCAPE key. You can no longer close the console window using the same key that launches the console (default “tilde”). This is necessary to solve issues when people rebind that key, as well as on some countries’ keyboard layouts.</List.Item>
@@ -1685,7 +1684,7 @@ Custom Server Notes
 <Title order={4}> Weapon/Balance Items</Title>
 
 <List.Item>Increased damage on Brute’s Heavy Spinfusor by roughly 7%.</List.Item>
-<List.Item>Modified the Pathfinder's Light Assault Rifle so that it has an increased projectile speed and fall-off begins at a greater distance (buffed). Projectile speed now matches that of the Soldier’s Assault Rifle.</List.Item>
+<List.Item>Modified the Pathfinder&apos;s Light Assault Rifle so that it has an increased projectile speed and fall-off begins at a greater distance (buffed). Projectile speed now matches that of the Soldier’s Assault Rifle.</List.Item>
 <List.Item>Reduced the collision size of Raider’s Plasma Gun projectile by roughly 40%. The weapon’s damage and rate of fire remain the same.</List.Item>
 
 Bug Fixes
@@ -1750,7 +1749,7 @@ Custom Server Notes
 <List.Item>Fixed an issue where the first-person weapon and body and mesh could jolt and pop while jetpacking.</List.Item>
 <List.Item>Fixed issues with the Determination perk not working properly.</List.Item>
 <List.Item>Fixed an issue where mines were being activated by friendlies in custom servers with friendly fire enabled.</List.Item>
-<List.Item>Fixed an issue where the Brute's Nova Colt and Sentinel's Nova Blaster could fire an extra shot if the clip was emptied rapidly.</List.Item>
+<List.Item>Fixed an issue where the Brute&apos;s Nova Colt and Sentinel&apos;s Nova Blaster could fire an extra shot if the clip was emptied rapidly.</List.Item>
 <List.Item>Reworked a bit of the spawn point rotation logic by fixing an issue where players would not respawn at certain spawn points.</List.Item>
 <List.Item>Fixed an issue where the announcer voices would sometimes abruptly cut out.</List.Item>
 <List.Item>Reworked spawn locations for Capture and Hold maps so that base-owned spawn locations are slightly further away from the captured base.</List.Item>
@@ -1769,16 +1768,16 @@ Custom Server Notes
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/9MUht_nYc2Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<Title order={4}> Major Highlights
+<Title order={4}> Major Highlights</Title>
 
-<List.Item>With this patch, Tribes Ascend has dropped the "Open Beta" moniker. The game will continue to evolve and improve with regular updates after this patch, but we now have moved to Version 1.0! Progress made by players during the beta period is preserved.</List.Item>
-<List.Item>Players who reach at least Level 10 in Beta will earn the "Veteran" Badge with an XP reward upon their first login following the official game launch time (Thursday, April 12, at 2:00 PM US Eastern).</List.Item>
+<List.Item>With this patch, Tribes Ascend has dropped the &apos;Open Beta&apos; moniker. The game will continue to evolve and improve with regular updates after this patch, but we now have moved to Version 1.0! Progress made by players during the beta period is preserved.</List.Item>
+<List.Item>Players who reach at least Level 10 in Beta will earn the &apos;Veteran&apos; Badge with an XP reward upon their first login following the official game launch time (Thursday, April 12, at 2:00 PM US Eastern).</List.Item>
 <List.Item>A new CTF map, Raindance, has been added to the Quick Play rotation.</List.Item>
 <List.Item>A new gametype, Capture and Hold, has been added with three initial maps (Katabatic, Raindance and Outskirts).</List.Item>
-<List.Item>Significant additional functionality has been added under a "SOCIAL" menu. Among the changes:</List.Item>
+<List.Item>Significant additional functionality has been added under a &apos;SOCIAL&apos; menu. Among the changes:</List.Item>
 
-  - People that have friended you now appear on your Social menu as "Followers". Followers may be friended reciprocally, or blocked.
-  - You may now send a message to online Friends and Followers. When typing in the chat console, use the format "@playername message" to send a message to a specific player. Block a player to avoid receiving messages from them. You can universally block the hud notifications for new messages using the NOTIFICATIONS section under SETTINGS.
+  - People that have friended you now appear on your Social menu as &apos;Followers&apos;. Followers may be friended reciprocally, or blocked.
+  - You may now send a message to online Friends and Followers. When typing in the chat console, use the format &apos;@playername message&apos; to send a message to a specific player. Block a player to avoid receiving messages from them. You can universally block the hud notifications for new messages using the NOTIFICATIONS section under SETTINGS.
   - A variety of other cleanups and feature enhancements to improve the friend functionality have been implemented.
 
 <List.Item>Players can now test unowned weapons and classes in the Target Practice map under Training. Classes and Weapons will still appear locked on your menu, but if you select them, you can try them.</List.Item>
@@ -1792,7 +1791,7 @@ Custom Server Notes
 Capture and Hold Gametype
 
 <List.Item>Capture and hold the various Control Points. Each Control Point is labeled A, B, C, etc.</List.Item>
-<List.Item>A Control Point is captured by touching a Control Point's switch. A successful capture will result in your Tribe's icon hologram switching and the switch's HUD marker will blink blue as it becomes "held."</List.Item>
+<List.Item>A Control Point is captured by touching a Control Point&apos;s switch. A successful capture will result in your Tribe&apos;s icon hologram switching and the switch&apos;s HUD marker will blink blue as it becomes &apos;held.&apos;</List.Item>
 <List.Item>Once a Control Point is been held for five seconds, the owning team gains a score. Any Control Point defenses, such as Inventory Stations, Repair Stations, Base Turrets, and Radar Sensors also become owned by your team when a point is considered held.</List.Item>
 <List.Item>Damaged defenses will return up to half-health when a point is successfully held by a team.</List.Item>
 <List.Item>Held Control Points generate a score every 5 seconds.</List.Item>
@@ -1800,7 +1799,7 @@ Capture and Hold Gametype
 
 <Title order={4}> Weapon/Balance Items</Title>
 
-<List.Item>Increased Doombringer's Heavy Bolt Launcher Projectile speed by roughly 3%.</List.Item>
+<List.Item>Increased Doombringer&apos;s Heavy Bolt Launcher Projectile speed by roughly 3%.</List.Item>
 <List.Item>Added a 6% base increase to energy regeneration for equipping Pathfinder or Sentinel Energy Regeneration Packs. Reduced each upgrade on the packs to +4%. Still the same maximum bonus fully unlocked.</List.Item>
 <List.Item>Thrown flags now only bounce once, then slide on second contact with the ground. This helps players predict where a dropped flag will go and allow for easier pickups and team passes.</List.Item>
 <List.Item>Increased the distance a player throws a flag.</List.Item>
@@ -1811,44 +1810,44 @@ Capture and Hold Gametype
 New VGS Commands
 
 <List.Item>VGS commands are now filtered depending on the game mode.</List.Item>
-<List.Item>[VFQ]: "I'll retrieve our flag!"</List.Item>
-<List.Item>[VUG] (CTF only): "Upgrade our generator!"</List.Item>
-<List.Item>[VUS] (CTF only): "Upgrade our sensors!"</List.Item>
-<List.Item>[VUT] (CTF only): "Upgrade our base turrets!"</List.Item>
-<List.Item>[VSUG] (CTF only): "I'll upgrade our generator."</List.Item>
-<List.Item>[VSUS] (CTF only): "I'll upgrade our sensors."</List.Item>
-<List.Item>[VSUT] (CTF only): "I'll upgrade our base turrets."</List.Item>
-<List.Item>[VA1] (C&H only): "Attack point A!"</List.Item>
-<List.Item>[VA2] (C&H only): "Attack point B!"</List.Item>
-<List.Item>[VA3] (C&H only): "Attack point C!"</List.Item>
-<List.Item>[VA4] (C&H only): "Attack point D!"</List.Item>
-<List.Item>[VA5] (C&H only): "Attack point E!"</List.Item>
-<List.Item>[VD1] (C&H only): "Defend point A!"</List.Item>
-<List.Item>[VD2] (C&H only): "Defend point B!"</List.Item>
-<List.Item>[VD3] (C&H only): "Defend point C!"</List.Item>
-<List.Item>[VD4] (C&H only): "Defend point D!"</List.Item>
-<List.Item>[VD5] (C&H only): "Defend point E!"</List.Item>
-<List.Item>[VSA1] (C&H only): "I'll attack point A."</List.Item>
-<List.Item>[VSA2] (C&H only): "I'll attack point B."</List.Item>
-<List.Item>[VSA3] (C&H only): "I'll attack point C."</List.Item>
-<List.Item>[VSA4] (C&H only): "I'll attack point D."</List.Item>
-<List.Item>[VSA5] (C&H only): "I'll attack point E."</List.Item>
-<List.Item>[VSD1] (C&H only): "I'll defend point A."</List.Item>
-<List.Item>[VSD2] (C&H only): "I'll defend point B."</List.Item>
-<List.Item>[VSD3] (C&H only): "I'll defend point C."</List.Item>
-<List.Item>[VSD4] (C&H only): "I'll defend point D."</List.Item>
-<List.Item>[VSD5] (C&H only): "I'll defend point E."</List.Item>
+<List.Item>[VFQ]: &apos;I&apos;ll retrieve our flag!&apos;</List.Item>
+<List.Item>[VUG] (CTF only): &apos;Upgrade our generator!&apos;</List.Item>
+<List.Item>[VUS] (CTF only): &apos;Upgrade our sensors!&apos;</List.Item>
+<List.Item>[VUT] (CTF only): &apos;Upgrade our base turrets!&apos;</List.Item>
+<List.Item>[VSUG] (CTF only): &apos;I&apos;ll upgrade our generator.&apos;</List.Item>
+<List.Item>[VSUS] (CTF only): &apos;I&apos;ll upgrade our sensors.&apos;</List.Item>
+<List.Item>[VSUT] (CTF only): &apos;I&apos;ll upgrade our base turrets.&apos;</List.Item>
+<List.Item>[VA1] (C&H only): &apos;Attack point A!&apos;</List.Item>
+<List.Item>[VA2] (C&H only): &apos;Attack point B!&apos;</List.Item>
+<List.Item>[VA3] (C&H only): &apos;Attack point C!&apos;</List.Item>
+<List.Item>[VA4] (C&H only): &apos;Attack point D!&apos;</List.Item>
+<List.Item>[VA5] (C&H only): &apos;Attack point E!&apos;</List.Item>
+<List.Item>[VD1] (C&H only): &apos;Defend point A!&apos;</List.Item>
+<List.Item>[VD2] (C&H only): &apos;Defend point B!&apos;</List.Item>
+<List.Item>[VD3] (C&H only): &apos;Defend point C!&apos;</List.Item>
+<List.Item>[VD4] (C&H only): &apos;Defend point D!&apos;</List.Item>
+<List.Item>[VD5] (C&H only): &apos;Defend point E!&apos;</List.Item>
+<List.Item>[VSA1] (C&H only): &apos;I&apos;ll attack point A.&apos;</List.Item>
+<List.Item>[VSA2] (C&H only): &apos;I&apos;ll attack point B.&apos;</List.Item>
+<List.Item>[VSA3] (C&H only): &apos;I&apos;ll attack point C.&apos;</List.Item>
+<List.Item>[VSA4] (C&H only): &apos;I&apos;ll attack point D.&apos;</List.Item>
+<List.Item>[VSA5] (C&H only): &apos;I&apos;ll attack point E.&apos;</List.Item>
+<List.Item>[VSD1] (C&H only): &apos;I&apos;ll defend point A.&apos;</List.Item>
+<List.Item>[VSD2] (C&H only): &apos;I&apos;ll defend point B.&apos;</List.Item>
+<List.Item>[VSD3] (C&H only): &apos;I&apos;ll defend point C.&apos;</List.Item>
+<List.Item>[VSD4] (C&H only): &apos;I&apos;ll defend point D.&apos;</List.Item>
+<List.Item>[VSD5] (C&H only): &apos;I&apos;ll defend point E.&apos;</List.Item>
 
 <Title order={4}> Additional Items</Title>
 
-<List.Item>Players who are referred by another player through the friend referral system will now earn the "Pay it Forward" badge when they reach Level 6 (includes an XP reward).</List.Item>
+<List.Item>Players who are referred by another player through the friend referral system will now earn the &apos;Pay it Forward&apos; badge when they reach Level 6 (includes an XP reward).</List.Item>
 <List.Item>A number of cleanups and fixes have been made to several maps.</List.Item>
 <List.Item>Enemy stations no longer draw to the HUD, unless it is spawned from a Supply Drop call-in.</List.Item>
 <List.Item>Fixed an issue in which the # of players playing each class would not show correctly on first spawn into a match.</List.Item>
-<List.Item>Fixed an issue where the Infiltrator's Jackal was stacking the damage numbers for damaged targets directly on top of each other, making it seem like only one of the projectiles was damaging the target. Now each projectile's damage number on a target is represented.</List.Item>
-<List.Item>Fixed an issue where players could interrupt a melee attack or belt throw with a weapon switch using the direct switch keys (i.e., '1', '2', etc.), allowing for an exploit of quick weapon switching.</List.Item>
+<List.Item>Fixed an issue where the Infiltrator&apos;s Jackal was stacking the damage numbers for damaged targets directly on top of each other, making it seem like only one of the projectiles was damaging the target. Now each projectile&apos;s damage number on a target is represented.</List.Item>
+<List.Item>Fixed an issue where players could interrupt a melee attack or belt throw with a weapon switch using the direct switch keys (i.e., &apos;1&apos;, &apos;2&apos;, etc.), allowing for an exploit of quick weapon switching.</List.Item>
 <List.Item>Fixed an issue where if all the players from a team left an Arena match, during a round transition, the game would not autobalance, leaving the other team stuck in the round transition indefinitely.</List.Item>
-<List.Item>The whiteout effect from the Raider's Whiteout Grenade no longer persists when a victim respawns.</List.Item>
+<List.Item>The whiteout effect from the Raider&apos;s Whiteout Grenade no longer persists when a victim respawns.</List.Item>
 <List.Item>Projectiles that can stick to surfaces no longer can stick directly to the flag.</List.Item>
 <List.Item>Adjusted the position of the first person flag model (it was facing sideways in first person view).</List.Item>
 <List.Item>Fixed a bug in which the game client would crash if you attempted to change your name to a 15-character name.</List.Item>
@@ -1860,8 +1859,8 @@ New VGS Commands
 <List.Item>Fixed an issue where Jackal rounds were not properly sticking to players.</List.Item>
 <List.Item>Fixed an issue where placing a deployable in Training would cause you to lose weapons.</List.Item>
 <List.Item>Stealthed friendlies will now have their player model rendered and pulsed for better visibility.</List.Item>
-<List.Item>Fixed an issue where fast-switching weapons using the default bind of "1" and "2" would break the zoom effect.</List.Item>
-<List.Item>Fixed an issue where fast-switching weapons using the default bind of "1" and "2" would cause the BXT1 to charge even without being scoped.</List.Item>
+<List.Item>Fixed an issue where fast-switching weapons using the default bind of &apos;1&apos; and &apos;2&apos; would break the zoom effect.</List.Item>
+<List.Item>Fixed an issue where fast-switching weapons using the default bind of &apos;1&apos; and &apos;2&apos; would cause the BXT1 to charge even without being scoped.</List.Item>
 <List.Item>Fixed an issue where a Supply Drop called in on a friendly would cause them to get stuck.</List.Item>
 
 <Title order={3}> March 30, 2012: Price Adjustments to Cloak and Dagger Skins</Title>
@@ -1895,18 +1894,18 @@ Significant Items
 
 <List.Item>Spinfusor projectiles now travel at the same velocity, though Spinfusor weapons still vary in damage, radius, and fire rate.</List.Item>
 
-  - Increased Juggernaut's SpinfusorD projectile velocity by roughly 5%.
-  - Increased Soldier's Spinfusor projectile velocity by roughly 3%.
-  - Increased Brute's Heavy Spinfusor projectile velocity by roughly 8%.
+  - Increased Juggernaut&apos;s SpinfusorD projectile velocity by roughly 5%.
+  - Increased Soldier&apos;s Spinfusor projectile velocity by roughly 3%.
+  - Increased Brute&apos;s Heavy Spinfusor projectile velocity by roughly 8%.
 
-<List.Item>Brute's Light Sticky Grenade damage against Generators increased 125%, better matches the Infiltrator's Sticky Grenades.</List.Item>
-<List.Item>Fixed an issue where Soldier's AP Grenade did too much damage against Shrikes (reduced by 75%).</List.Item>
-<List.Item>Damage increased on Brute's Nova Colt by roughly 5%.</List.Item>
+<List.Item>Brute&apos;s Light Sticky Grenade damage against Generators increased 125%, better matches the Infiltrator&apos;s Sticky Grenades.</List.Item>
+<List.Item>Fixed an issue where Soldier&apos;s AP Grenade did too much damage against Shrikes (reduced by 75%).</List.Item>
+<List.Item>Damage increased on Brute&apos;s Nova Colt by roughly 5%.</List.Item>
 <List.Item>Time for inactive reload reduced from 6s to 5s.</List.Item>
 <List.Item>Increased the distance from the flag the Rage Perk will activate by 50%.</List.Item>
-<List.Item>Damaged caused by early in-air detonation of Infiltrator's Jackal rounds reduced by 50%. Knockback from in-air detonation also decreased by 50%.</List.Item>
-<List.Item>Damage against armored targets with Infiltrator's Jackal rounds increased 20% (Fixed an issue where full damage was not being applied).</List.Item>
-<List.Item>Fixed an issue where the sticky explosives from the Infiltrator's Jackal could not be destroyed with bullet based weapons.</List.Item>
+<List.Item>Damaged caused by early in-air detonation of Infiltrator&apos;s Jackal rounds reduced by 50%. Knockback from in-air detonation also decreased by 50%.</List.Item>
+<List.Item>Damage against armored targets with Infiltrator&apos;s Jackal rounds increased 20% (Fixed an issue where full damage was not being applied).</List.Item>
+<List.Item>Fixed an issue where the sticky explosives from the Infiltrator&apos;s Jackal could not be destroyed with bullet based weapons.</List.Item>
 <List.Item>A variety of backend changes preparing for the introduction of future functionality.</List.Item>
 
 <Title order={3}> Tribes Open Beta Version 0.1.865.0 (Cloak and Dagger Update)</Title>
@@ -1934,24 +1933,24 @@ Significant Items
   - Throwing Knives: Throwing Knives deal impressive damage on a direct hit, and have a small splash damage radius.
   - Smoke Grenade: Instantly vanish without waiting the normal reveal time from taking damage or firing a weapon. In addition, remain in stealth for 2 seconds even if you take damage. Firing a weapon will still break stealth.
 
-<List.Item>Adjusted visual style on Infiltrator's Prism Mines to be more in line with other mines and harder to detect at long range.</List.Item>
-<List.Item>Fixed an issue where Shrike's were not taking damage from bullet projectiles at certain angles and locations.</List.Item>
-<List.Item>Added improved proximity checking for deployables to prevent the Doombringer's force field from covering the flag when placed at certain angles and locations.</List.Item>
-<List.Item>Pathfinder's Bolt Launcher projectile now detonates after 6 seconds of flight, reduced to match that of the Heavy Bolt Launcher and Spinfusor type weapons.</List.Item>
-<List.Item>Direct-hit damage bonus reduced by roughly 4% on Pathfinder's Bolt launcher.</List.Item>
-<List.Item>Increased knock-back from Pathfinder's Light Spinfusor by approx. 10% (now matches the Bolt Launcher).</List.Item>
-<List.Item>Increased damage fall-off on Sentinel's BXT1 Sniper Rifle. Falloff range is 33% more aggressive, and the maximum falloff amount was increased 5%.</List.Item>
-<List.Item>Improved the targeting of Call-In's when targeting terrain.</List.Item>
+<List.Item>Adjusted visual style on Infiltrator&apos;s Prism Mines to be more in line with other mines and harder to detect at long range.</List.Item>
+<List.Item>Fixed an issue where Shrike&apos;s were not taking damage from bullet projectiles at certain angles and locations.</List.Item>
+<List.Item>Added improved proximity checking for deployables to prevent the Doombringer&apos;s force field from covering the flag when placed at certain angles and locations.</List.Item>
+<List.Item>Pathfinder&apos;s Bolt Launcher projectile now detonates after 6 seconds of flight, reduced to match that of the Heavy Bolt Launcher and Spinfusor type weapons.</List.Item>
+<List.Item>Direct-hit damage bonus reduced by roughly 4% on Pathfinder&apos;s Bolt launcher.</List.Item>
+<List.Item>Increased knock-back from Pathfinder&apos;s Light Spinfusor by approx. 10% (now matches the Bolt Launcher).</List.Item>
+<List.Item>Increased damage fall-off on Sentinel&apos;s BXT1 Sniper Rifle. Falloff range is 33% more aggressive, and the maximum falloff amount was increased 5%.</List.Item>
+<List.Item>Improved the targeting of Call-In&apos;s when targeting terrain.</List.Item>
 
 <Title order={4}> Additional Items</Title>
 
 <List.Item>If a player jump/jets while already going faster in the Z axis than the jump would set, the jump no longer resets the Z-axis velocity. This fixes an issue in which a jump/jet could slow your momentum unintentionally.</List.Item>
-<List.Item>Additional work has been done to eliminate some "deadstops" while skiing/jetting. Please report any remaining situations in which you stop movement suddenly and unexpectedly while skiing.</List.Item>
+<List.Item>Additional work has been done to eliminate some &apos;deadstops&apos; while skiing/jetting. Please report any remaining situations in which you stop movement suddenly and unexpectedly while skiing.</List.Item>
 <List.Item>The current match is now hidden from the scoreboard when players are at the Team Selection screen. A future patch will hide additional information.</List.Item>
 <List.Item>A variety of cleanups have been made to several maps.</List.Item>
 <List.Item>Implemented a change intended to fix a situation in which hit/damage numbers would be delayed in appearing. Please report if you still see this issue..</List.Item>
 <List.Item>Fixed an issue that would cause the flag to fall through the world in some conditions.</List.Item>
-<List.Item>Fixed an issue where the Brute's Nova Colt could lose texture resolution at high speeds</List.Item>
+<List.Item>Fixed an issue where the Brute&apos;s Nova Colt could lose texture resolution at high speeds</List.Item>
 <List.Item>A variety of backend server work has been done in preparation for future functionality.</List.Item>
 
 <Divider my="xs" label="Known Issues" labelPosition="center" />
@@ -2041,7 +2040,7 @@ Hot Fixes in 0.1.811.0
 
 <List.Item>Fixed a bug in which the turret rate of fire was inadvertently increased.</List.Item>
 <List.Item>Fixed a bug in team joining that allowed for imbalanced team sizes in matches.</List.Item>
-<List.Item>Fixed a bug that treated "Kill Credit For ... " kills as a negative score on the scoreboard.</List.Item>
+<List.Item>Fixed a bug that treated &apos;Kill Credit For ... &apos; kills as a negative score on the scoreboard.</List.Item>
 
 <Title order={3}> Tribes Open Beta Version 0.1.809.0 and 0.1.811.0</Title>
 
@@ -2112,7 +2111,7 @@ Hot Fixes in 0.1.811.0
 
 <List.Item>Fixed a bug in which the turret rate of fire was inadvertently increased.</List.Item>
 <List.Item>Fixed a bug in team joining that allowed for imbalanced team sizes in matches.</List.Item>
-<List.Item>Fixed a bug that treated "Kill Credit For ... " kills as a negative score on the scoreboard.</List.Item>
+<List.Item>Fixed a bug that treated &apos;Kill Credit For ... &apos; kills as a negative score on the scoreboard.</List.Item>
 
 <Divider my="xs" label="Known Issues" labelPosition="center" />
 
@@ -2134,7 +2133,7 @@ Fixed a bug that was causing many players to lock up during launch.
 <Title order={4}> Major Highlights</Title>
 
 <List.Item>The game no longer requires a key in order to play. Anyone can join the beta program by simply creating an account on http://www.tribesascend.com and then downloading the game. Players are reminded that their progression in the game will be kept once the beta ends and the game officially launches so time spent playing now will be rewarded at launch.</List.Item>
-<List.Item>A new gametype, Arena, has been added with two initial maps, Air Arena and Lava Arena. The Arena gametype features five-on-five matches fought on small hazardous maps. The team that wins two rounds wins the match. During the course of a round, each team has 25 respawns. After a team's respawns are depleted, players on that team each get one more life before the round ends. The team with the last man standing wins the round.</List.Item>
+<List.Item>A new gametype, Arena, has been added with two initial maps, Air Arena and Lava Arena. The Arena gametype features five-on-five matches fought on small hazardous maps. The team that wins two rounds wins the match. During the course of a round, each team has 25 respawns. After a team&apos;s respawns are depleted, players on that team each get one more life before the round ends. The team with the last man standing wins the round.</List.Item>
 <List.Item>A new Capture the Flag map has been added to the quick match rotation (Temple Ruins).</List.Item>
 <List.Item>A new Team Deathmatch map has been added to the quick match rotation (Inferno).</List.Item>
 <List.Item>Two new unlockable items have been added on the Soldier class: Proximity Grenade and Utility Pack.</List.Item>
@@ -2147,25 +2146,25 @@ Fixed a bug that was causing many players to lock up during launch.
 
 <Title order={4}> Weapon/Balance Items</Title>
 
-<List.Item>Fixed an issue with the Sentinel's Phase Rifle not properly applying damage.</List.Item>
+<List.Item>Fixed an issue with the Sentinel&apos;s Phase Rifle not properly applying damage.</List.Item>
 <List.Item>Motion sensors that are automatically destroyed for placing too many no longer trigger the notification.</List.Item>
-<List.Item>Reduced initial clip size on Sentinel's Falcon Auto Pistol from 24 to 22. Reduced and adjusted starting ammo pool to match.</List.Item>
-<List.Item>Infiltrators using the Stealth pack now fade in and become "visible" at speeds over 173kph.</List.Item>
+<List.Item>Reduced initial clip size on Sentinel&apos;s Falcon Auto Pistol from 24 to 22. Reduced and adjusted starting ammo pool to match.</List.Item>
+<List.Item>Infiltrators using the Stealth pack now fade in and become &apos;visible&apos; at speeds over 173kph.</List.Item>
 <List.Item>Increased the activation delay on newly placed Light Turrets (Technician) from 1 to 2 seconds.</List.Item>
-<List.Item>The following weapons projectiles now spawn center cross-hairs, rather than offset to the right: Soldier's Assault Rifle, Doombringer's Chaingun, Soldier's Eagle, Sentinel's Falcon, Pathfinder's Light Assault Rifle, Raider's NJ4, Brute's Nova Colt, Infiltrator's Rhino, Infiltrator's SN7, Technician's Sparrow, Technician's TCN4, Juggernaut's X1LMG.</List.Item>
-<List.Item>Damage falloff range on Pathfinder's Light Assault Rifle increased (improved) by roughly 16%.</List.Item>
+<List.Item>The following weapons projectiles now spawn center cross-hairs, rather than offset to the right: Soldier&apos;s Assault Rifle, Doombringer&apos;s Chaingun, Soldier&apos;s Eagle, Sentinel&apos;s Falcon, Pathfinder&apos;s Light Assault Rifle, Raider&apos;s NJ4, Brute&apos;s Nova Colt, Infiltrator&apos;s Rhino, Infiltrator&apos;s SN7, Technician&apos;s Sparrow, Technician&apos;s TCN4, Juggernaut&apos;s X1LMG.</List.Item>
+<List.Item>Damage falloff range on Pathfinder&apos;s Light Assault Rifle increased (improved) by roughly 16%.</List.Item>
 <List.Item>Two new unlockable items have been added for Soldier: Proximity Grenade and Utility Pack.</List.Item>
 
 <Title order={4}> Additional Items</Title>
 
 <List.Item>You may now add a player as a friend directly from the scoreboard. You may also mute players (turn off chat and VGS).</List.Item>
-<List.Item>Eliminated several issues that were causing "hitches" in matches. (Some other issues may still exist optimization still in progress).</List.Item>
+<List.Item>Eliminated several issues that were causing &apos;hitches&apos; in matches. (Some other issues may still exist optimization still in progress).</List.Item>
 <List.Item>Several bug fixes and cleanups to the main menu UI.</List.Item>
 <List.Item>The Target Practice map has been improved. There are now Light, Medium and Heavy bots in the maps, in addition to both enemy and friendly vehicles, along with other improvements.</List.Item>
 <List.Item>The Rabbit gamemode has been removed from the Quick Match rotation. It will be available through Custom Servers at a later date.</List.Item>
 <List.Item>Added the ability to view both Blood Eagle and Diamond Sword skins from within the Class menu.</List.Item>
 <List.Item>The ability to add Tribes Gold to your account is now available from all menu screens.</List.Item>
-<List.Item>Under Gameplay Settings, you may now set "Default Objectives On/Off". This controls whether you see the objective markers by default in a match. (To toggle them inside of a match, press the "O" key).</List.Item>
+<List.Item>Under Gameplay Settings, you may now set &apos;Default Objectives On/Off&apos;. This controls whether you see the objective markers by default in a match. (To toggle them inside of a match, press the &apos;O&apos; key).</List.Item>
 <List.Item>VGS and Announcer volumes are now independent settings</List.Item>
 <List.Item>Revisited Blood Eagle variant class visuals based on user feedback.</List.Item>
 <List.Item>Various minor cleanups have been made to the Ski Tutorial.</List.Item>
@@ -2184,23 +2183,23 @@ Fixed a bug that was causing many players to lock up during launch.
 <List.Item>Fixed an issue where if a player died while falling in a deep pit, footstep sounds could begin playing.</List.Item>
 <List.Item>Fixed the chat filter, and added an option to disable it in the Settings menu.</List.Item>
 <List.Item>Fixed an issue where if a player died while falling in a deep pit, the previous damager could get a blue plate or air mail accolade.</List.Item>
-<List.Item>Fixed an issue where AoE wasn't properly being applied to players and surrounding objects when a generator or inventory station was in the way. This includes Technician's turrets being placed in inventory stations not taking AoE damage.</List.Item>
+<List.Item>Fixed an issue where AoE wasn&apos;t properly being applied to players and surrounding objects when a generator or inventory station was in the way. This includes Technician&apos;s turrets being placed in inventory stations not taking AoE damage.</List.Item>
 <List.Item>Fixed an issue where Bass Boost in the Audio Settings was not properly being saved. The frequency ranges that are boosted (or suppressed) have also been tweaked to prevent audio popping.</List.Item>
 <List.Item>Fixed an issue where zooming while attempting to deploy an object could cause a second object to appear at the top of the screen.</List.Item>
 <List.Item>Fixed an issue where a player could fire a projectile (or call-in) and suicide, which would result in teammates taking damage.</List.Item>
-<List.Item>Fixed an issue where players were able to place deployables in volumes that were not permitted, this is most noticeable with the Doombringer's Force Field being placed near the flag stand at certain rotations.</List.Item>
+<List.Item>Fixed an issue where players were able to place deployables in volumes that were not permitted, this is most noticeable with the Doombringer&apos;s Force Field being placed near the flag stand at certain rotations.</List.Item>
 <List.Item>Fixed an issue where dying players were not dropping ammo nuggets and ammo nuggets could get lost inside generators or base deployables.</List.Item>
-<List.Item>Fixed an issue where users binding 'Enter' to chat would have the chat window immediately close.</List.Item>
-<List.Item>Fixed an issue where a player dying before the MIRV launcher's secondary split would not be properly credited for the kills.</List.Item>
-<List.Item>Fixed an issue where the Doombringer's Chaingun spin-up sound would be stuck playing if you died while spinning up.</List.Item>
+<List.Item>Fixed an issue where users binding &apos;Enter&apos; to chat would have the chat window immediately close.</List.Item>
+<List.Item>Fixed an issue where a player dying before the MIRV launcher&apos;s secondary split would not be properly credited for the kills.</List.Item>
+<List.Item>Fixed an issue where the Doombringer&apos;s Chaingun spin-up sound would be stuck playing if you died while spinning up.</List.Item>
 <List.Item>Fixed an issue on Drydock where no-deploy zones around the flags were to large relative to other maps.</List.Item>
 <List.Item>Fixed LOD popping on all new class variant visuals.</List.Item>
 <List.Item>Fixed some other situations where UI sounds played multiple times for the same event</List.Item>
 <List.Item>Fixed an issue where users with certain graphics settings were able to see fully stealthed Infiltrators.</List.Item>
-<List.Item>Fixed an issue with Doombringer's forcefields not being able to be destroyed at certain angles.</List.Item>
-<List.Item>Fixed incorrect description on Soldier's Energy pack.</List.Item>
+<List.Item>Fixed an issue with Doombringer&apos;s forcefields not being able to be destroyed at certain angles.</List.Item>
+<List.Item>Fixed incorrect description on Soldier&apos;s Energy pack.</List.Item>
 <List.Item>Fixed an exploit where users with specific graphics settings were able to see a fully stealthed Infiltrator.</List.Item>
-<List.Item>Fixed an issue where Radar Sensors weren't properly detected being hit.</List.Item>
+<List.Item>Fixed an issue where Radar Sensors weren&apos;t properly detected being hit.</List.Item>
 <List.Item>Fixed an issue where Base Turrets and Light Turrets were unable to target enemy players through friendly base force fields on Bella Omega.</List.Item>
 <List.Item>The enemy generator icon will always display if you are showing all objective markers.</List.Item>
 <List.Item>Fixed an issue where players were losing their invulnerability when spawning a vehicle. They will now remain fully invulnerable until they are teleported into the vehicle.</List.Item>
@@ -2223,7 +2222,7 @@ Patch Items
 <List.Item>Improvements to Shrike handling at high FPS.</List.Item>
 <List.Item>Fix for issue that was preventing some menu hotkeys from working in the match lobby.</List.Item>
 
-Note that a separate issue was hot-fixed yesterday afternoon: "Players would not see their XP bar update following a match until they relogged."
+Note that a separate issue was hot-fixed yesterday afternoon: &apos;Players would not see their XP bar update following a match until they relogged.&apos;
 
 <Title order={3}> Tribes Closed Beta Version 0.1.759.0</Title>
 
@@ -2247,9 +2246,9 @@ Note that a separate issue was hot-fixed yesterday afternoon: "Players would not
 
 <List.Item>Added minor damage falloff to projectile-based automatic and semi-automatic weapons. This affects Soldier’s Assault Rifle, Doombringer’s ChainGun, Sentinel’s Falcon, Pathfinder’s LAR, Infiltrator’s NJ4,Rhino,</List.Item>
 <List.Item>Infiltrator’s SN7, Technician’s TCN4, and Juggernaut’s X1LMG)</List.Item>
-<List.Item>Damage reduced by roughly 4% on Technician's Thumper.</List.Item>
-<List.Item>Reduced Falloff on Brute's Nova Colt, increasing its damage at range.</List.Item>
-<List.Item>Reduced Pathfinder's Light Assault Rifle clip upgrade from +4 to +3 size, to fit with it's 3-round-burst.</List.Item>
+<List.Item>Damage reduced by roughly 4% on Technician&apos;s Thumper.</List.Item>
+<List.Item>Reduced Falloff on Brute&apos;s Nova Colt, increasing its damage at range.</List.Item>
+<List.Item>Reduced Pathfinder&apos;s Light Assault Rifle clip upgrade from +4 to +3 size, to fit with it&apos;s 3-round-burst.</List.Item>
 <List.Item>Increased reload time on Juggernaut’s X1 LMG from 1.8s to 2.75s.</List.Item>
 <List.Item>Raider’s White Out Grenade no longer requires the player to be looking at the grenade for the affect to apply. Radius on the Whiteout Grenade has been substantially reduced (roughly 50%) to account for this, and is now more in line with other grenades. Note the Egocentric Perk makes the thrower immune to this effect.</List.Item>
 <List.Item>Brute’s Fractal Grenade is no longer effective against Armored Targets (Vehicles, Base Assets) or Generators. Reduced damage by roughly 9% on Brute’s Fractal Grenade.</List.Item>
@@ -2443,7 +2442,7 @@ The patch contains only backend changes meant to address stability issues in the
 
 Balance Items
 
-<List.Item>Lowered the damage on the Sentinel's BXT1 Rifle when the rifle is not fully charged (damage is the same as previous at full charge).</List.Item>
+<List.Item>Lowered the damage on the Sentinel&apos;s BXT1 Rifle when the rifle is not fully charged (damage is the same as previous at full charge).</List.Item>
 <List.Item>Slightly reduced damage on the Ranger’s Thumper D.</List.Item>
 <List.Item>Increased damage on the Technician’s TCN4 SMG.</List.Item>
 <List.Item>Increased fire rate modestly on the Infiltrator’s Rhino SMG.</List.Item>
@@ -2734,7 +2733,7 @@ Muting and Reporting Players
 <List.Item>Various new accolades, including vehicle assists and last kill in Team Deathmatch.</List.Item>
 <List.Item>Fixed some keybind issues, including keys used by left handed players.</List.Item>
 <List.Item>Keys ‘1’ and ‘2’ now switch to primary and secondary weapons, respectively. ‘3’, ‘4’, and ‘5’ are defaulted to the current call-ins available.</List.Item>
-<List.Item>Fixes the FOV bug introduced with this morning's patch.</List.Item>
+<List.Item>Fixes the FOV bug introduced with this morning&apos;s patch.</List.Item>
 <List.Item>Lowers the token price of Juggernaut, Pathfinder, Infiltrator and Technician.</List.Item>
 <List.Item>Issues token credits to those that purchased at earlier rates.</List.Item>
 
@@ -2749,13 +2748,13 @@ Muting and Reporting Players
 Major Highlights since Version 0.1.562
 
 <List.Item>The Team Deathmatch gametype is now available for play on two maps (Drydock Night and Crossfire). Upon the first death in the match, a flag will spawn. Your team earns a bonus for each kill made while the team holds the flag.</List.Item>
-<List.Item>Added a “First Win of the Day” Challenge that rewards additional XP and tokens upon your first victory in a day. The "day" begins at 09:00 UTC time.</List.Item>
-<List.Item>Added the “Orbital Strike” call-in (default bound to "3"). It is similar to the Tactical Strike, with a much wider radius and higher credit cost.</List.Item>
+<List.Item>Added a “First Win of the Day” Challenge that rewards additional XP and tokens upon your first victory in a day. The &apos;day&apos; begins at 09:00 UTC time.</List.Item>
+<List.Item>Added the “Orbital Strike” call-in (default bound to &apos;3&apos;). It is similar to the Tactical Strike, with a much wider radius and higher credit cost.</List.Item>
 <List.Item>Reduced the token amounts required to unlock classes.</List.Item>
 <List.Item>Settings: “Reduce Weapon Size” option has been added along with many others, including an option to disable help messages and an option to disable framerate smoothing.</List.Item>
 <List.Item>Matchmaking: Very basic match-making segmentation to help lower ranked players play with lower-ranked players.</List.Item>
 <List.Item>Fixed a number of bugs that caused sudden speed drops when skiing or jetting uphill. Other issues may remain. Please report as you find them.</List.Item>
-<List.Item>By default, objective icons for all major elements on a map (generators, vehicle stations, equipment stations, etc) are now shown when you first enter a map. Hit "O" to turn off the markers.</List.Item>
+<List.Item>By default, objective icons for all major elements on a map (generators, vehicle stations, equipment stations, etc) are now shown when you first enter a map. Hit &apos;O&apos; to turn off the markers.</List.Item>
 
 Balance Changes
 
@@ -2806,12 +2805,12 @@ Major Highlights since Version 0.1.549
 <List.Item>End of Game results in a “your team won/lost” message with your team icon.</List.Item>
 <List.Item>Variety of audio/sound improvements and bug fixes</List.Item>
 <List.Item>XP Summary screen has been sped up significantly and sound cues have been added.</List.Item>
-<List.Item>"Take the flag to your flag stand" message now only appears when your team's flag is in the stand.</List.Item>
-<List.Item>"Take the flag to your flag stand" message frequency has been moved from every nine seconds to every twenty seconds.</List.Item>
+<List.Item>&apos;Take the flag to your flag stand&apos; message now only appears when your team&apos;s flag is in the stand.</List.Item>
+<List.Item>&apos;Take the flag to your flag stand&apos; message frequency has been moved from every nine seconds to every twenty seconds.</List.Item>
 <List.Item>The Doombringer’s Force Field will no longer block shots when the generator is offline.</List.Item>
 <List.Item>The legs in first-person are now hidden when zoomed.</List.Item>
 <List.Item>Fixed issue in which team chat would persist for a user after they left a map instance.</List.Item>
-<List.Item>Fixed issues with Doombringer's Saber Launcher not properly displaying missile notifications to vehicle passengers.</List.Item>
+<List.Item>Fixed issues with Doombringer&apos;s Saber Launcher not properly displaying missile notifications to vehicle passengers.</List.Item>
 <List.Item>Fixed prompt text not showing for repair station. The location of some repair stations has been altered (across all maps).</List.Item>
 <List.Item>Health effect sounds now stop playing when a match has ended.</List.Item>
 <List.Item>The Jumper’s Thrust Pack contributes a lower amount of speed when used as the player’s speed increases.</List.Item>
@@ -2828,7 +2827,7 @@ Major Highlights since Version 0.1.549
 
 <Divider my="xs" label="Known Issues" labelPosition="center" />
 
-<List.Item>The N. America - East region is still shown as simply "North America".</List.Item>
+<List.Item>The N. America - East region is still shown as simply &apos;North America&apos;.</List.Item>
 <List.Item>New settings options for Frame Rate Smoothing, Disable Help on Hud, Gamma and Bass Boost have been added to the settings screen, but are not yet functional.</List.Item>
 <List.Item>The abbreviation for Sentinel is not showing up on the Scoreboard under class (it will show blank).</List.Item>
 <List.Item>Rabbit in-match scoreboard overlaps the Chat Log.</List.Item>
@@ -2879,9 +2878,9 @@ Major Highlights since Version 0.1.523
 <List.Item>Reduced Doombringer’s Chaingun damage by 13%.</List.Item>
 <List.Item>Doombringer’s Saber Launcher now requires a full lock-on routine (targeting, then lock-on) even for the same target.</List.Item>
 <List.Item>Doombringer’s Saber Launcher missile will lose the ability to perform tight turns when close enough to a victim and if it has passed the victim.</List.Item>
-<List.Item>Fix for Doombringer's Chaingun not calculating ammo correctly if player picks up a dropped ammo nugget.</List.Item>
-<List.Item>Fix for Doombringer's Chaingun not calculating ammo correctly if the ammo skill is applied to the class.</List.Item>
-<List.Item>Fix for Doombringer's Chaingun not spinning up the barrel of the gun faster when the buildup time skill is applied.</List.Item>
+<List.Item>Fix for Doombringer&apos;s Chaingun not calculating ammo correctly if player picks up a dropped ammo nugget.</List.Item>
+<List.Item>Fix for Doombringer&apos;s Chaingun not calculating ammo correctly if the ammo skill is applied to the class.</List.Item>
+<List.Item>Fix for Doombringer&apos;s Chaingun not spinning up the barrel of the gun faster when the buildup time skill is applied.</List.Item>
 <List.Item>AFK timeout at the team-select screen changed from 60 seconds to 180 seconds.</List.Item>
 <List.Item>Fixed a bug with Juggernaut’s health regeneration rate and skills creating faster than desired regeneration.</List.Item>
 <List.Item>Sentinel’s BXT1 rifle now has a new and improved scope (visual change only).</List.Item>
@@ -2923,7 +2922,7 @@ Major Highlights since Version 0.1.504
 <List.Item>Help text ignores are now properly saved.</List.Item>
 <List.Item>Fix for zoom breaking if zoom was enabled while a player died (this only happened when the Toggle Zoom feature was enabled).</List.Item>
 <List.Item>Support for “Borderless Window” option. Removes border from window (best use is to run at monitor’s full-screen resolution allows for faster Alt-Tabbing in and out of the game).</List.Item>
-<List.Item>Picking up a repair tool from a repair station now replaces the player's currently equipped weapon rather than always replacing the secondary weapon.</List.Item>
+<List.Item>Picking up a repair tool from a repair station now replaces the player&apos;s currently equipped weapon rather than always replacing the secondary weapon.</List.Item>
 <List.Item>When a player enters an inventory station, they begin health regen immediately.</List.Item>
 <List.Item>Fixed hit indicator being on the opposite side for the back side hits.</List.Item>
 <List.Item>Fixed mipping issues on many hand models as well as the spinfusor and sniper rifle</List.Item>
@@ -2938,7 +2937,7 @@ Major Highlights since Version 0.1.504
 <List.Item>Fixed an issue where certain spots in certain maps would catapult a player at incredible speeds if the player flew into it a specific place.</List.Item>
 <List.Item>Pressing weapon swap when the current weapon is the Laser Targeter will revert to the previously used weapon rather than always choosing the secondary weapon.</List.Item>
 <List.Item>Fixed an issue where turrets could be deployed off the ground and float in air in certain circumstances.</List.Item>
-<List.Item>Fixed an issue where a turret's rotation could be incorrect after being deployed.</List.Item>
+<List.Item>Fixed an issue where a turret&apos;s rotation could be incorrect after being deployed.</List.Item>
 <List.Item>Fixed an issue where the death camera would not reset its view target and would keep showing the last killer even if the player suicided.</List.Item>
 <List.Item>Added third person animation set to better represent SMG weapons.</List.Item>
 <List.Item>Update to death camera for turrets and suicide.</List.Item>

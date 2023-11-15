@@ -1,13 +1,9 @@
----
-id: weapon-data
-title: Weapon Data
-linkTitle: Weapon Data
-tags: [tribes-information]
----
 
+export default function WeaponData() {
+    return (
+      <>
+        <div className="flex max-w-6xl flex-col gap-3">
 ## Parting Gifts (OOTB)
-
-<!-- TODO Fill out with searchable sheet -->
 
 [Google Spreadsheet link](http://web.archive.org/web/20190719215253/https://docs.google.com/spreadsheets/d/1-Iqej8_6WUQnEoRM4Yvj3LVSX8i87M2KLvqFVkXqc1w/pubhtml)
 
@@ -83,7 +79,6 @@ tags: [tribes-information]
 
 ## GOTY
 
-<!-- TODO Fill out with searchable sheet -->
 
 [Google Spreadsheet link](https://docs.google.com/spreadsheets/d/1C4KH1_lSX9VoxHXVCbs-1DXwMRnuqx1gCWD0Bj17CZc/edit#gid=1619274418)
 
@@ -133,7 +128,7 @@ tags: [tribes-information]
 | Spinfusor                | 0.46 | 2    | 650  | 1.4  | 910   | 325   | -             | 360    | 0.5  | 0.9  | 0.5     | 3920  | 50%     | 0    | 0        | 1    | 0        | 1.5    | 1    | 910     | 325     | 0     |                               |                               |                |            |
 | Thumper                  | 0.46 | 2    | 650  | 1.4  | 910   | 325   | 2             | 360    | 0.5  | 0.9  | 0.5     | 3520  | 50%     | 0    | 0        | 1    | 0        | 1.5    | 1    | 910     | 325     | 0     |                               |                               |                |            |
 | TC24                     | 0.6  | 1    | 340  | 1.25 | 425   | 170   | -             | 280    | 0.5  | 0.9  | 0.5     | 3520  | 50%     | 0    | 0        | 1    | 0        | 1.5    | 4    | 1700    | 680     | 2.4   |                               |                               |                |            |
-| Gast's Rifle             | 0.11 | 0.2  | 85   | 1    | 85    | 63.75 | -             | 6000   | 0.75 | 1    | 0.75    | 21000 | 0%      | 0.2  | 40       | 0.98 | 0        | 1.53   | 24   | 2040    | 1530    | 2.64  |                               |                               |                |            |
+| Gasts Rifle             | 0.11 | 0.2  | 85   | 1    | 85    | 63.75 | -             | 6000   | 0.75 | 1    | 0.75    | 21000 | 0%      | 0.2  | 40       | 0.98 | 0        | 1.53   | 24   | 2040    | 1530    | 2.64  |                               |                               |                |            |
 | TCN4 SMG                 | 0.1  | 0.1  | 80   | 1    | 80    | 56    | -             | 6000   | 0.5  | 1    | 0.7     | 21000 | 0%      | 0.3  | 15       | 0.98 | 0        | 1.53   | 32   | 2560    | 1792    | 3.2   |                               |                               |                |            |
 | Assault Rifle            | 0.11 | 0.2  | 80   | 1    | 80    | 60    | -             | 6000   | 0.75 | 1    | 0.75    | 21000 | 0%      | 0.2  | 40       | 0.98 | 0        | 1.53   | 28   | 2240    | 1680    | 3.08  |                               |                               |                |            |
 | Shocklance               | 0.5  | 2.5  | 700  | 2    | 1400  | 700   | -             | 512    | 0.1  | 0.2  | 1       | -     | -       | -    | -        | -    | -        | 2      | 1    | 1400    | 700     | 0     | Backstab                      |                               |                |            |
@@ -157,7 +152,7 @@ tags: [tribes-information]
 | TCNG Quickfuse           | 1.2  | 1.2  | 700  | 1    | 700   | 210   | 1.2           | 528    | 0.5  | 0.9  | 0.3     | 1400  | 60%     | 0    | 0        | 1    | 0        | 0      | 2    | N/A     | N/A     | N/A   |                               |                               |                |            |
 | EMP Grenade              | 1.2  | 1.2  | 600  | 1    | 600   | 180   | 2             | 682    | 0.5  | 0.9  | 0.3     | 1200  | 60%     | 0    | 0        | 1    | 0        | 0      | 2    | N/A     | N/A     | N/A   | 160 energy drain              | ? includes 20% bonus?         |                |            |
 | EMP XL Grenade           | 1.2  | 1.2  | 500  | 1    | 500   | 150   | 2             | 858    | 0.5  | 0.9  | 0.3     | 1200  | 60%     | 0    | 0        | 1    | 0        | 0      | 2    | N/A     | N/A     | N/A   | 160 energy drain              | ? includes 20% bonus?         |                |            |
-| Blackout Grenade         | 1.2  | 1.2  | 50   | 1    | 50    | 15    | 1.5           | 715    | 0.5  | 0.9  | 0.3     | 1600  | 60%     | 0    | 0        | 1    | 0        | 0      | 2    | N/A     | N/A     | N/A   | 5 seconds of "blackout"       | #ERROR!                       |                |            |
+| Blackout Grenade         | 1.2  | 1.2  | 50   | 1    | 50    | 15    | 1.5           | 715    | 0.5  | 0.9  | 0.3     | 1600  | 60%     | 0    | 0        | 1    | 0        | 0      | 2    | N/A     | N/A     | N/A   | 5 seconds of blackout       | #ERROR!                       |                |            |
 | Motion Sensor            | 1.2  | 1.2  | 10   | 1    | 10    | 3     | -             | 572    | 0.5  | 0.9  | 0.3     | 300   | 60%     | 0    | 0        | 1    | 0        | 0      | 3    | N/A     | N/A     | N/A   | Alarm when triggered          |                               |                |            |
 | Repair Kit               | 1.2  | 1.2  | 10   | 1    | 10    | 3     | -             | 520    | 0.5  | 0.9  | 0.3     | 300   | 60%     | 0    | 0        | 1    | 0        | 0      | 2    | N/A     | N/A     | N/A   | Repairs nearby deployed items | #ERROR!                       |                |            |
 | Chain Cannon             | 0.14 | 0.1  | 115  | 1    | 115   | 86.25 | 1.05          | 6000   | 0.5  | 1    | 0.75    | 21000 | 0%      | 0.2  | 40       | 0.98 | 0        | 0      | 200  | 23000   | 17250   | 28    | 1.2 sec Spinup                |                               |                |            |
@@ -189,3 +184,8 @@ tags: [tribes-information]
 | Heavy Sticky Grenade     | 1.2  | 1.2  | 1100 | 1    | 1100  | 330   | 1.5           | 660    | 0.5  | 0.9  | 0.3     | 1200  | 60%     | 0    | 0        | 1    | 0        | 0      | 3    | N/A     | N/A     | N/A   |                               |                               |                |            |
 | Fractal Grenade          | 1.2  | 1.2  | 370  | 22   | 8140  | 185   | 2             | 330    | 0.5  | 0.9  | 0.5     | 1200  | 60%     | 0    | 0        | 1    | 0        | 0      | 3    | N/A     | N/A     | N/A   | 22 shots over 4.5 seconds     | fractal also does 1500 damage |                |            |
 | Extended Fractal Grenade | 1.2  | 1.2  | 350  | 27   | 9450  | 175   | 2             | 330    | 0.5  | 0.9  | 0.5     | 1200  | 60%     | 0    | 0        | 1    | 0        | 0      | 3    | N/A     | N/A     | N/A   | 27 shots over 5.5 seconds     | fractal also does 1500 damage |                |            |
+
+</div>
+    </>
+  );
+}

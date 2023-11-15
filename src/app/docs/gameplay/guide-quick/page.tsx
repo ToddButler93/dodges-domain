@@ -5,7 +5,6 @@ import {
   Title,
   Button,
   Code,
-  Divider,
   List,
   ListItem,
   MenuItem,
