@@ -144,7 +144,7 @@ const tribesInfoMenuData = [
     icon: FaGamepad,
     title: "Game Server Hosting",
     description: "How to host Tribes Ascend servers, powered by TAServer.",
-    link: "/docs/gameplay/guide-hosting",
+    link: "/docs/servers/guide-hosting",
   },
 ];
 
