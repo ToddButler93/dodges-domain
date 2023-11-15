@@ -316,7 +316,7 @@ export default function PatchHistory() {
 
 <Title order={4}> Tribes: Ascend Out of the Blue Patch Overview</Title>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/dt9NGBCME9g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dt9NGBCME9g" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 
 Notes
 
@@ -1028,7 +1028,7 @@ New Weapon loadout bar is now enabled by default. It shows the following:
 
 <Title order={4}> Tribes: Ascend Dev Update #11 - Game of The Year Update</Title>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/RdnOxW7sPA0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/RdnOxW7sPA0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 
 <Title order={4}> Major Highlights</Title>
 
@@ -1158,7 +1158,7 @@ New Weapon loadout bar is now enabled by default. It shows the following:
 
 2012/10/29
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Xh5cN0zoKQ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Xh5cN0zoKQ8" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 
 <Title order={4}> Tribes: Ascend Dev Update #10 - Revolution</Title>
 
@@ -1200,7 +1200,7 @@ New Weapon loadout bar is now enabled by default. It shows the following:
 
 <Title order={4}> Tribes: Ascend Dev Update #9 - Marksman</Title>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ZkfWK3Z-Hrk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZkfWK3Z-Hrk" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 
 <Title order={4}> Major Highlights</Title>
 
@@ -1275,7 +1275,7 @@ New Weapon loadout bar is now enabled by default. It shows the following:
 
 <Title order={4}> Tribes: Ascend Dev Update #8 - Blitz</Title>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/cSqyJJpUBaA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/cSqyJJpUBaA" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 
 <Title order={4}> Major Highlights</Title>
 
@@ -1357,7 +1357,7 @@ New Weapon loadout bar is now enabled by default. It shows the following:
 
 <Title order={4}> Tribes: Ascend Dev Update #7 - Twinfusor</Title>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/URjuA4XGBnc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/URjuA4XGBnc" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 
 <Title order={4}> Major Highlights</Title>
 
@@ -1441,7 +1441,7 @@ New Weapon loadout bar is now enabled by default. It shows the following:
 
 <Title order={4}> Tribes: Ascend Dev Update #6 - Stonehenge</Title>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/yRa60VGZeDU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yRa60VGZeDU" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 
 <Title order={4}> Major Highlights</Title>
 
@@ -1490,7 +1490,7 @@ New Weapon loadout bar is now enabled by default. It shows the following:
 
 <Title order={4}> Tribes: Ascend Dev Update #5 - Accelerate</Title>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/mfsmv8qizzE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mfsmv8qizzE" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 
 <Title order={4}> Major Highlights</Title>
 
@@ -1574,7 +1574,7 @@ The patch fixes an exploit.
 
 <Title order={4}> Tribes: Ascend Dev Update #4 - Staying Alive</Title>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/vJXIzoIZ6UY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vJXIzoIZ6UY" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 
 <Title order={4}> Major Highlights</Title>
 
@@ -1620,7 +1620,7 @@ NOTE: Upon installation of this patch, a small pre-requisite program will be run
 
 <Title order={4}> Tribes: Ascend Dev Update #3 - Tartarus</Title>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/8Wi1BSBNxAg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8Wi1BSBNxAg" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 
 <Title order={4}> Major Highlights</Title>
 
@@ -1701,7 +1701,7 @@ Bug Fixes
 
 <Title order={4}> Tribes: Ascend Dev Update #2 - Raid And Pillage Update</Title>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/nmCjcwESC70" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nmCjcwESC70" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 
 <Title order={4}> Major Highlights</Title>
 
@@ -1766,7 +1766,7 @@ Custom Server Notes
 
 <Title order={4}> Tribes: Ascend Dev Diary - Raindance / Servers</Title>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/9MUht_nYc2Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9MUht_nYc2Q" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 
 <Title order={4}> Major Highlights</Title>
 
@@ -1914,7 +1914,7 @@ Significant Items
 
 <Title order={4}> Tribes: Ascend Dev Update #1 - Cloak & Dagger</Title>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/mNqaiUl27MQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mNqaiUl27MQ" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 
 <Title order={4}> Major Highlights</Title>
 
