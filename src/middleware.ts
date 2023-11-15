@@ -7,6 +7,9 @@ export default authMiddleware({
   publicRoutes: [
     "/",
     "/api/trpc/post.getAll",
+    "/api/trpc/matches.getMatches",
+    "/api/trpc/pugLoginData.getPUGLoginData",
+    "/api/trpc/communityLoginData.getCommunityLoginData",
     "/docs/guide-install-setup",
     "/docs/custommaps",
   ],
