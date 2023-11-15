@@ -10,7 +10,7 @@ import { TRPCReactProvider } from "~/trpc/react";
 
 import "@mantine/core/styles.css";
 import { ClerkProvider } from "@clerk/nextjs";
-import { MantineProvider, TypographyStylesProvider } from "@mantine/core";
+import { MantineProvider } from "@mantine/core";
 
 import { DEFAULT_THEME } from "@mantine/core";
 const inter = Inter({
@@ -37,9 +37,7 @@ export default async function RootLayout({
             <MantineProvider theme={DEFAULT_THEME} defaultColorScheme="dark">
               <main className="flex min-h-screen w-full flex-col items-center pb-6">
                 <NavBar />
-                <TypographyStylesProvider>
                 {children}
-                </TypographyStylesProvider>
               </main>
               <Footer />
             </MantineProvider>
