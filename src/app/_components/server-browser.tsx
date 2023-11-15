@@ -11,62 +11,17 @@ import {
 } from "@mantine/core";
 
 import type { Key } from "react";
-
-type ServerInfo = {
-  locked: boolean;
-  map: string;
-  mode: string;
-  name: string;
-  players: string[];
-  type: string;
-};
-
-type LoginServerInfo = {
-  online_players_list: string[];
-  online_servers_list: ServerInfo[];
-};
-
-async function getData<T>(url: string) {
-  const res = await fetch(url, {
-    next: { revalidate: 15 },
-  });
-  // The return value is *not* serialized
-  // You can return Date, Map, Set, etc.
-
-  if (!res.ok) {
-    // Handle non-2xx responses gracefully
-    console.error(url + " is down");
-    return null;
-  }
-
-  return res.json() as T;
-}
-
-function sortByPlayers(serverList: ServerInfo[]): ServerInfo[] {
-  return [...serverList].sort(
-    (a, b) => (b.players?.length || 0) - (a.players?.length || 0),
-  );
-}
+import type {ServerInfo} from "~/server/api/routers/loginServers"
+import { api } from "~/trpc/server";
 
 export default async function ServerBrowserComponent() {
-  const pugLoginData = await getData<LoginServerInfo>(
-    "http://ta.dodgesdomain.com:9080/detailed_status",
-  );
+  const sortedPugServers = await api.pugLoginData.getPUGLoginData.query();
 
-  const communityLoginData = await getData<LoginServerInfo>(
-    "http://ta.kfk4ever.com:9080/detailed_status",
-  );
+  const sortedCommunityServers = await api.communityLoginData.getCommunityLoginData.query();
 
-  if (pugLoginData == null && communityLoginData == null)
+  if (sortedPugServers == null && sortedCommunityServers == null)
     return <div>The PUG login server is currently unavailable.</div>;
 
-  const sortedPugServers = sortByPlayers(
-    pugLoginData?.online_servers_list ?? [],
-  );
-
-  const sortedCommunityServers = sortByPlayers(
-    communityLoginData?.online_servers_list ?? [],
-  );
   return (
     <>
       {sortedPugServers || sortedCommunityServers ? (

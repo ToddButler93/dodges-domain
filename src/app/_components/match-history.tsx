@@ -12,48 +12,8 @@ import {
 } from "@mantine/core";
 
 import type { Key } from "react";
-
-type Player = {
-  user: User;
-  team: number;
-  captain: number;
-  pickOrder: number;
-};
-
-type Queue = {
-  id: number;
-  name: string;
-};
-
-type User = {
-  id: number;
-  name: string;
-};
-
-type MatchInfo = {
-  timestamp: number;
-  completionTimestamp: number;
-  winningTeam: number;
-  name: string;
-  queue: Queue;
-  players: Player[];
-};
-
-async function getData<T>(url: string) {
-  const res = await fetch(url, {
-    next: { revalidate: 900 },
-  });
-  // The return value is *not* serialized
-  // You can return Date, Map, Set, etc.
-
-  if (!res.ok) {
-    // Handle non-2xx responses gracefully
-    console.error(url + " is down");
-    return null;
-  }
-
-  return res.json() as T;
-}
+import type { MatchInfo, Player } from "~/server/api/routers/matchHistory";
+import { api } from "~/trpc/server";
 
 export default async function MatchHistoryComponent() {
   const currentUnixTimeSeconds =
@@ -61,9 +21,7 @@ export default async function MatchHistoryComponent() {
 
   console.log(currentUnixTimeSeconds);
 
-  const matchHistory = await getData<MatchInfo[]>(
-    `http://50.116.36.119/api/server/631438713183797258/games/${currentUnixTimeSeconds}`,
-  );
+  const matchHistory = await api.matches.getMatches.query();
 
   if (matchHistory == null)
     return <div>Match History currently unavailable.</div>;
