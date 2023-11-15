@@ -32,7 +32,7 @@ export default function CustomMaps() {
         <h1 className="py-6">CTF</h1>
       </div>
 
-      <SimpleGrid cols={{ base: 1, sm:2, md: 3, xl:4 }} className="gap-6 p-6">
+      <SimpleGrid cols={{ base: 1, sm: 2, md: 3, xl: 4 }} className="gap-6 p-6">
         <Card className="mx-auto max-w-xl">
           <p className=" text-center text-3xl">Acheron</p>
           <Image alt="" radius="md" src="/static/img/maps/acheron-river.png" />

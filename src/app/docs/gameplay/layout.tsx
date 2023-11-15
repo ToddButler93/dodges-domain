@@ -8,7 +8,7 @@ export default async function GuidesLayout({
 }) {
   return (
     <TypographyStylesProvider className="max-w-3xl pe-10">
-    {children}
+      {children}
     </TypographyStylesProvider>
   );
 }

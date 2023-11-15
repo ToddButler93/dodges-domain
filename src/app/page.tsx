@@ -53,8 +53,12 @@ export default async function Home() {
           </Group>
         </Group>
       </div>
-      <SimpleGrid cols={{ base: 1, md: 3 }} className=" p-6 gap-6">
-        <Card shadow="md" radius="md" className="grid grid-col items-center justify-center gap-3">
+      <SimpleGrid cols={{ base: 1, md: 3 }} className=" gap-6 p-6">
+        <Card
+          shadow="md"
+          radius="md"
+          className="grid-col grid items-center justify-center gap-3"
+        >
           <Text className=" text-center text-3xl">Gameplay Guides</Text>
           <Link href="/docs/gameplay/guide-quick">
             <video
@@ -73,7 +77,11 @@ export default async function Home() {
             </video>
           </Link>
         </Card>
-        <Card shadow="md" radius="md" className="grid grid-col items-center justify-center gap-3">
+        <Card
+          shadow="md"
+          radius="md"
+          className="grid-col grid items-center justify-center gap-3"
+        >
           <Text className=" text-center text-3xl">Map Development</Text>
           <Link href="/docs/development/guide-map-dev">
             <Image
@@ -85,7 +93,11 @@ export default async function Home() {
             />
           </Link>
         </Card>
-        <Card shadow="md" radius="md" className="grid grid-col items-center justify-center gap-3">
+        <Card
+          shadow="md"
+          radius="md"
+          className="grid-col grid items-center justify-center gap-3"
+        >
           <Text className=" text-center text-3xl">Community Maps</Text>
           <Link href="/docs/custommaps/">
             <Image

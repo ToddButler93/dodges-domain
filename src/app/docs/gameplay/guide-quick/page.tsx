@@ -119,27 +119,28 @@ export default function QuickPUGGuide() {
           </List>
         </div>
         <Card>
-        <Menu>
-<MenuItem>
-  <div className="relative m-auto flex h-20 w-full overflow-hidden">
-    <Title order={3}>Modify Classes</Title>
-    <div className="-top-14 absolute z-20 m-auto h-80 w-80 rotate-45 bg-blue-200"></div>
-    <div className="relative right-3 top-3 z-30 mx-6 my-auto h-16 w-full rounded-lg overflow-hidden">
-      <Card
-        className="absolute h-full w-full bg-yellow-300"
-        style={{
-          clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0% 80%)', // Adjust the clip path as needed
-        }}
-      >
-        Offense
-      </Card>
-    </div>
-  </div>
-</MenuItem>
+          <Menu>
+            <MenuItem>
+              <div className="relative m-auto flex h-20 w-full overflow-hidden">
+                <Title order={3}>Modify Classes</Title>
+                <div className="absolute -top-14 z-20 m-auto h-80 w-80 rotate-45 bg-blue-200"></div>
+                <div className="relative right-3 top-3 z-30 mx-6 my-auto h-16 w-full overflow-hidden rounded-lg">
+                  <Card
+                    className="absolute h-full w-full bg-yellow-300"
+                    style={{
+                      clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 80%)", // Adjust the clip path as needed
+                    }}
+                  >
+                    Offense
+                  </Card>
+                </div>
+              </div>
+            </MenuItem>
 
-
-          <MenuItem><Card>Heavy on Flag</Card></MenuItem>
-        </Menu>
+            <MenuItem>
+              <Card>Heavy on Flag</Card>
+            </MenuItem>
+          </Menu>
         </Card>
         <Title order={2}>Offense</Title>
         <div>
@@ -196,7 +197,7 @@ export default function QuickPUGGuide() {
             </ListItem>
             <ListItem>
               Stop enemy <Code>walks.</Code>
-              </ListItem>
+            </ListItem>
           </List>
           <Title order={3}>Minor Responsibilities</Title>
           <List withPadding listStyleType="disc">
@@ -224,7 +225,7 @@ export default function QuickPUGGuide() {
             <ListItem>Return flags.</ListItem>
             <ListItem>
               Call out for <Code>E-Grabs</Code>
-              </ListItem>
+            </ListItem>
           </List>
           <Title order={3}>Minor Responsibilities</Title>
           <List withPadding listStyleType="disc">
@@ -263,7 +264,7 @@ export default function QuickPUGGuide() {
               Snipe the enemy <Code>offense</Code> which your
               <Code>light defense</Code> and <Code>heavy on flag</Code> are
               fighting or during any walk attempts.
-              </ListItem>
+            </ListItem>
           </List>
           <Title order={3}>Minor Responsibilities</Title>
           <List withPadding listStyleType="disc">
@@ -296,7 +297,7 @@ export default function QuickPUGGuide() {
             members.
           </ListItem>
         </List>
-            <Title order={3}>Minor Responsibilities</Title>
+        <Title order={3}>Minor Responsibilities</Title>
         <List withPadding listStyleType="disc">
           <ListItem>
             Meet your <Code>offense</Code> if they decide to <Code>Walk</Code>

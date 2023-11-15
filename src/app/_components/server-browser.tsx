@@ -11,13 +11,14 @@ import {
 } from "@mantine/core";
 
 import type { Key } from "react";
-import type {ServerInfo} from "~/server/api/routers/loginServers"
+import type { ServerInfo } from "~/server/api/routers/loginServers";
 import { api } from "~/trpc/server";
 
 export default async function ServerBrowserComponent() {
   const sortedPugServers = await api.pugLoginData.getPUGLoginData.query();
 
-  const sortedCommunityServers = await api.communityLoginData.getCommunityLoginData.query();
+  const sortedCommunityServers =
+    await api.communityLoginData.getCommunityLoginData.query();
 
   if (sortedPugServers == null && sortedCommunityServers == null)
     return <div>The PUG login server is currently unavailable.</div>;
