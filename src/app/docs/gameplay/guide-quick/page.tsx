@@ -1,6 +1,17 @@
 "use client";
 import Link from "next/link";
-import { Table, Title, Button, Code } from "@mantine/core";
+import {
+  Table,
+  Title,
+  Button,
+  Code,
+  Divider,
+  List,
+  ListItem,
+  MenuItem,
+  Menu,
+  Card,
+} from "@mantine/core";
 
 const tableData = {
   head: ["Term", "Meaning"],
@@ -50,7 +61,7 @@ const tableData = {
 export default function QuickPUGGuide() {
   return (
     <>
-      <div className=" lg:2-24 mx-auto flex max-w-6xl flex-col justify-center gap-12 p-8 md:p-16 xl:p-32">
+      <div>
         <Title>Playing PUGs - 7v7 Format</Title>
         <div>
           <p>
@@ -68,16 +79,16 @@ export default function QuickPUGGuide() {
           <p>
             <Code>Offense</Code> have two recommended setups:
           </p>
-          <ul className="list-inside list-disc">
-            <li>
+          <List withPadding listStyleType="disc">
+            <ListItem>
               3 <Code>offense</Code> members and a <Code>capper</Code> with one
               <Code>offense</Code> member going after the enemy
               <Code>Sniper</Code>
-            </li>
-            <li>
+            </ListItem>
+            <ListItem>
               2 <Code>offense</Code> members and 2 <Code>cappers</Code>
-            </li>
-          </ul>
+            </ListItem>
+          </List>
           <p>
             <Code>Defense</Code> goes <Code>defense</Code> during
             <Code>stand-offs</Code> and <Code>offense</Code> goes
@@ -90,63 +101,88 @@ export default function QuickPUGGuide() {
             recommendations to improve the flow and make you a more effective
             member of your team.
           </p>
-          <ul className="list-inside list-disc">
-            <li>
+          <List withPadding listStyleType="disc">
+            <ListItem>
               If both flags are home, if you are an <Code>offense</Code> member
               or a <Code>capper,</Code> there is little to no gain in
               killing/shooting enemy <Code>offense.</Code> If
               <Code>defense</Code> is struggling, spotting enemy
               <Code>capper</Code> is substantially more beneficial.
-            </li>
-            <li>
+            </ListItem>
+            <ListItem>
               Running 4+ <Code>defense</Code> members generally makes games slow
               for both teams.
-            </li>
-            <li>
+            </ListItem>
+            <ListItem>
               Try to run a <Code>capper</Code> that does not warp.
-            </li>
-          </ul>
+            </ListItem>
+          </List>
         </div>
+        <Card>
+        <Menu>
+<MenuItem>
+  <div className="relative m-auto flex h-20 w-full overflow-hidden">
+    <Title order={3}>Modify Classes</Title>
+    <div className="-top-14 absolute z-20 m-auto h-80 w-80 rotate-45 bg-blue-200"></div>
+    <div className="relative right-3 top-3 z-30 mx-6 my-auto h-16 w-full rounded-lg overflow-hidden">
+      <Card
+        className="absolute h-full w-full bg-yellow-300"
+        style={{
+          clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0% 80%)', // Adjust the clip path as needed
+        }}
+      >
+        Offense
+      </Card>
+    </div>
+  </div>
+</MenuItem>
+
+
+          <MenuItem><Card>Heavy on Flag</Card></MenuItem>
+        </Menu>
+        </Card>
         <Title order={2}>Offense</Title>
         <div>
           <Button component={Link} href="/docs/gameplay/guide-offense">
             Offense Guide
           </Button>
           <Title order={3}>Major Responsibilities</Title>
-          <ul className="list-inside list-disc">
-            <li>
+          <List withPadding listStyleType="disc">
+            <ListItem>
               Kill the enemy <Code>heavy on flag</Code> and enemy
               <Code>light defense</Code> <Code>5 seconds</Code> before your
               <Code>capper</Code> will grab.
-            </li>
-            <li>
+            </ListItem>
+            <ListItem>
               Put pressure on the enemy <Code>Sniper</Code> to prevent them from
               killing your <Code>capper</Code> pre-grab and post-grab.
               Generally, only 1 <Code>offense</Code> member does this only if
               your team is running 1 <Code>capper.</Code>
-            </li>
-            <li>
+            </ListItem>
+            <ListItem>
               <Code>E-Grab</Code> when the <Code>defense</Code> calls for it.
-              <Title order={3}>Minor Responsibilities</Title>
-            </li>
-            <li>
+            </ListItem>
+          </List>
+          <Title order={3}>Minor Responsibilities</Title>
+          <List withPadding listStyleType="disc">
+            <ListItem>
               <kbd>K</kbd>-Out and meet your capper after they grab.
-            </li>
-            <li>
+            </ListItem>
+            <ListItem>
               Hit the enemy stand at the same time as other
               <Code>offense</Code> members, aim for when your
               <Code>capper</Code> would be <Code>15 seconds</Code> out.
-            </li>
-            <li>
+            </ListItem>
+            <ListItem>
               Spot enemy <Code>cappers</Code> and enemy <Code>offense.</Code>
               This assists your <Code>defense</Code> better than you shooting
               the enemy `offense.
-            </li>
-            <li>
+            </ListItem>
+            <ListItem>
               <Code>Walk</Code> flags with your other <Code>offense</Code>
               members.
-            </li>
-          </ul>
+            </ListItem>
+          </List>
         </div>
         <Title order={2}>Heavy on Flag</Title>
         <div>
@@ -154,24 +190,26 @@ export default function QuickPUGGuide() {
             Heavy on Flag Guide
           </Button>
           <Title order={3}>Major Responsibilities</Title>
-          <ul className="list-inside list-disc">
-            <li>
+          <List withPadding listStyleType="disc">
+            <ListItem>
               Stop the enemy <Code>capper.</Code>
-            </li>
-            <li>
+            </ListItem>
+            <ListItem>
               Stop enemy <Code>walks.</Code>
-              <Title order={3}>Minor Responsibilities</Title>
-            </li>
-            <li>Be ready to stop unspotted/out of time grabs.</li>
-            <li>
+              </ListItem>
+          </List>
+          <Title order={3}>Minor Responsibilities</Title>
+          <List withPadding listStyleType="disc">
+            <ListItem>Be ready to stop unspotted/out of time grabs.</ListItem>
+            <ListItem>
               Work with the <Code>light defense</Code> to get kills on enemy
               <Code>offense</Code> without overextending yourself.
-            </li>
-            <li>
+            </ListItem>
+            <ListItem>
               Only leave the stand during a <Code>stand-off.</Code>
-            </li>
-            <li>Avoid being shot if possible.</li>
-          </ul>
+            </ListItem>
+            <ListItem>Avoid being shot if possible.</ListItem>
+          </List>
         </div>
         <Title order={2}>Light/Medium Defense</Title>
         <div>
@@ -179,29 +217,31 @@ export default function QuickPUGGuide() {
             Light/Medium Defense Guide
           </Button>
           <Title order={3}>Major Responsibilities</Title>
-          <ul className="list-inside list-disc">
-            <li>
+          <List withPadding listStyleType="disc">
+            <ListItem>
               Kill enemy the <Code>offense</Code> members.
-            </li>
-            <li>Return flags.</li>
-            <li>
+            </ListItem>
+            <ListItem>Return flags.</ListItem>
+            <ListItem>
               Call out for <Code>E-Grabs</Code>
-              <Title order={3}>Minor Responsibilities</Title>
-            </li>
-            <li>
+              </ListItem>
+          </List>
+          <Title order={3}>Minor Responsibilities</Title>
+          <List withPadding listStyleType="disc">
+            <ListItem>
               Work with the <Code>Sniper</Code>
-            </li>
-            <li>
+            </ListItem>
+            <ListItem>
               Call out enemy <Code>offense</Code> you are shooting so the
               <Code>Sniper</Code> and <Code>heavy on flag</Code> know who to
               shoot.
-            </li>
-            <li>
+            </ListItem>
+            <ListItem>
               If the enemy <Code>capper</Code> has recently died, assist any
               walks your <Code>offense</Code> may be doing or meet your
               <Code>capper.</Code>
-            </li>
-          </ul>
+            </ListItem>
+          </List>
         </div>
         <Title order={2}>Sniper</Title>
         <div>
@@ -209,34 +249,38 @@ export default function QuickPUGGuide() {
             Sniper Guide
           </Button>
           <Title order={3}>Major Responsibilities</Title>
-          <ul className="list-inside list-disc">
-            <li>
+          <List withPadding listStyleType="disc">
+            <ListItem>
               Spot/kill the enemy <Code>capper</Code> at all times.
-            </li>
-            <li>Call out a time and direction the enemy cap will be.</li>
-            <li>
+            </ListItem>
+            <ListItem>
+              Call out a time and direction the enemy cap will be.
+            </ListItem>
+            <ListItem>
               Call out for <Code>E-Grabs</Code>
-            </li>
-            <li>
+            </ListItem>
+            <ListItem>
               Snipe the enemy <Code>offense</Code> which your
               <Code>light defense</Code> and <Code>heavy on flag</Code> are
               fighting or during any walk attempts.
-              <Title order={3}>Minor Responsibilities</Title>
-            </li>
-            <li>
+              </ListItem>
+          </List>
+          <Title order={3}>Minor Responsibilities</Title>
+          <List withPadding listStyleType="disc">
+            <ListItem>
               Call out enemy <Code>offense</Code> locations.
-            </li>
-            <li>
+            </ListItem>
+            <ListItem>
               Assist <Code>heavy on flag</Code> with clearing your base if
               over-run after an enemy has grabbed.
-            </li>
-            <li>
+            </ListItem>
+            <ListItem>
               Avoid enemy <Code>offense</Code> members.
-            </li>
-            <li>
+            </ListItem>
+            <ListItem>
               Snipe the enemy chaser if your <Code>capper</Code> is out.
-            </li>
-          </ul>
+            </ListItem>
+          </List>
         </div>
         <Title order={2}>Capper</Title>
         <p>
@@ -245,54 +289,56 @@ export default function QuickPUGGuide() {
           </Button>
         </p>
         <Title order={3}>Major Responsibilities</Title>
-        <ul className="list-inside list-disc">
-          <li>Grab and capture the enemy flag.</li>
-          <li>
+        <List withPadding listStyleType="disc">
+          <ListItem>Grab and capture the enemy flag.</ListItem>
+          <ListItem>
             Communicate times on your route for your <Code>offense</Code>
             members.
+          </ListItem>
+        </List>
             <Title order={3}>Minor Responsibilities</Title>
-          </li>
-          <li>
+        <List withPadding listStyleType="disc">
+          <ListItem>
             Meet your <Code>offense</Code> if they decide to <Code>Walk</Code>
             the flag.
-          </li>
-          <li>
+          </ListItem>
+          <ListItem>
             Wait in case your <Code>offense</Code> needs more time to get to the
             stand.
-          </li>
-        </ul>
+          </ListItem>
+        </List>
         <Title order={2}>Stand-Offs</Title>
-        <ul className="list-inside list-disc">
-          <li>
+        <List withPadding listStyleType="disc">
+          <ListItem>
             <Code>Offense</Code> stays on <Code>offense.</Code>
-          </li>
-          <li>
+          </ListItem>
+          <ListItem>
             <Code>Defense</Code> stays on <Code>defense.</Code>
-          </li>
-          <li>
+          </ListItem>
+          <ListItem>
             It is more beneficial for your team to promptly go
             <Code>offense</Code> while your team has three members already on
             <Code>defense.</Code>
-          </li>
-          <li>
+          </ListItem>
+          <ListItem>
             <Code>Defense</Code> generally picks the medium class for
             maneuverability. Having a heavy can be effective as well.
-          </li>
-          <li>
+          </ListItem>
+          <ListItem>
             Stay near your spawns as <Code>defense.</Code>
-          </li>
-          <li>
+          </ListItem>
+          <ListItem>
             Various class compositions amongst <Code>offense</Code> each have
             their benefits and drawbacks. Running 3+ light classes on
             <Code>offense</Code> can be shut down while a broad spectrum of
             classes can be effective.
-          </li>
-          <li>
+          </ListItem>
+          <ListItem>
             <Code>Offense</Code> should coordinate times for hitting the enemy
             <Code>defense</Code> together. The game timer is effective at
             coordinating a time to attack.
-          </li>
-        </ul>
+          </ListItem>
+        </List>
         <Title order={2}>Loadout Setup</Title>
         <p>
           For all classes except for the <Code>sniper,</Code> it is considered
