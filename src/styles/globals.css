@@ -3,12 +3,12 @@
 @tailwind utilities;
 
 :root {
-  --text-color: #09090b; /* Zinc-950*/
+  --text-color: #404040; /* Neutral-700*/
   --primary-color: #14b8a6;
-  --body-color: #fafafa; /* Zinc-900*/
+  --body-color: #f5f5f5; /* Neutral-100*/
   --footer-color: #3f3f46; /* Zinc-700*/
 
-  --text-color-dark: #fafafa; /* Zinc-50*/
+  --text-color-dark: #f5f5f5; /* Zinc-50*/
   --header-color-dark: #27272a; /* Zinc-800*/
   --body-color-dark: #18181b; /* Zinc-900*/
   --footer-color-dark: #3f3f46; /* Zinc-700*/
