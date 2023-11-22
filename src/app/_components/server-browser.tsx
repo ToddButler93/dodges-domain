@@ -5,6 +5,7 @@ import {
   Flex,
   Group,
   Image,
+  Paper,
   SimpleGrid,
   Text,
   Title,
@@ -26,25 +27,25 @@ export default async function ServerBrowserComponent() {
   return (
     <>
       {sortedPugServers || sortedCommunityServers ? (
-        <Flex className="flex max-w-6xl flex-col">
-          <Title className="p-6 text-center">PUG Login Server</Title>
+        <Flex className="flex max-w-7xl flex-col gap-6 py-6">
+          <Paper shadow="md" className="gap-3 p-3">
+          <Title className=" pb-6 text-center">PUG Login Server</Title>
           <SimpleGrid
             cols={{ base: 1, sm: 2, lg: 3 }}
-            spacing={{ base: 10, sm: "xl" }}
-            verticalSpacing={{ base: "md", sm: "xl" }}
+            spacing={{ base: 10, sm: "md" }}
+            verticalSpacing={{ base: 10, sm: "md" }}
           >
             {sortedPugServers
               .filter((server: ServerInfo) => server.name && server.map)
               .map((server: ServerInfo, index: Key) => (
-                <Card key={index}>
+                <Card shadow="md" key={index}>
                   <CardSection>
                     <Image
                       alt=""
-                      radius="md"
                       src="/static/img/maps/acheron-river.png"
                     />
                   </CardSection>
-                  <Text fw={500} size="lg" mt="md">
+                  <Text fw={500} size="xl" mt="md">
                     {server.name}
                   </Text>
                   <Text fw={500}>
@@ -68,21 +69,21 @@ export default async function ServerBrowserComponent() {
                   </Group>
                 </Card>
               ))}
-          </SimpleGrid>
-          <Title className="p-6 text-center">Community Login Server</Title>
+          </SimpleGrid></Paper>
+          <Paper shadow="md" className="gap-3 p-6">
+          <Title className="pb-6 text-center">Community Login Server</Title>
           <SimpleGrid
             cols={{ base: 1, sm: 2, lg: 3 }}
-            spacing={{ base: 10, sm: "xl" }}
-            verticalSpacing={{ base: "md", sm: "xl" }}
+            spacing={{ base: 10, sm: "md" }}
+            verticalSpacing={{ base: 10, sm: "md" }}
           >
             {sortedCommunityServers
               .filter((server: ServerInfo) => server.name && server.map)
               .map((server: ServerInfo, index: Key) => (
-                <Card key={index}>
+                <Card shadow="md" key={index}>
                   <CardSection>
                     <Image
                       alt=""
-                      radius="md"
                       src="/static/img/maps/acheron-river.png"
                     />
                   </CardSection>
@@ -115,7 +116,7 @@ export default async function ServerBrowserComponent() {
                   </Group>
                 </Card>
               ))}
-          </SimpleGrid>
+          </SimpleGrid></Paper>
         </Flex>
       ) : (
         <Card>Loading...</Card>
