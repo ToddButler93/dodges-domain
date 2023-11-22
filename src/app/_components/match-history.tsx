@@ -6,6 +6,7 @@ import {
   Grid,
   GridCol,
   Group,
+  Paper,
   SimpleGrid,
   Text,
   Title,
@@ -30,19 +31,20 @@ export default async function MatchHistoryComponent() {
   return (
     <>
       {matchHistory ? (
-        <Flex className="flex max-w-6xl flex-col">
-          <Title className="p-6 text-center">Match History</Title>
+        <Flex className="flex max-w-8xl flex-col gap-6 py-6">
+          <Paper shadow="md" className="gap-3 p-6">
+          <Title className="pb-6 text-center">Match History</Title>
           <SimpleGrid
-            cols={{ base: 1, sm: 1, lg: 1 }}
-            spacing={{ base: 10, sm: "xl" }}
-            verticalSpacing={{ base: "md", sm: "xl" }}
+            cols={{ base: 1, sm: 2, lg: 3 }}
+            spacing={{ base: 10, sm: "md" }}
+            verticalSpacing={{ base: 10, sm: "md" }}
           >
             {matchHistory.reverse().map((match: MatchInfo, index: Key) => (
-              <Card key={index}>
+              <Card shadow="md" key={index}>
                 <BackgroundImage
                   radius="md"
                   src="/static/img/maps/acheron-river.png"
-                  className="p-3"
+                  className="p-3 grow"
                 >
                   <Group
                     className="grid grid-flow-col justify-between"
@@ -93,12 +95,12 @@ export default async function MatchHistoryComponent() {
                                       <Text variant="dark" key={index}>
                                         <>
                                           {player.captain === 1 && (
-                                            <strong>
+                                            <strong className=" text-slate-50">
                                               {player.user.name} (c)
                                             </strong>
                                           )}
                                           {player.captain !== 1 && (
-                                            <span>{player.user.name}</span>
+                                            <span className=" text-slate-50">{player.user.name}</span>
                                           )}
                                         </>
                                       </Text>
@@ -123,12 +125,12 @@ export default async function MatchHistoryComponent() {
                                       <Text variant="dark" key={index}>
                                         <>
                                           {player.captain === 1 && (
-                                            <strong>
+                                            <strong  className=" text-slate-50">
                                               {player.user.name} (c)
                                             </strong>
                                           )}
                                           {player.captain !== 1 && (
-                                            <span>{player.user.name}</span>
+                                            <span className=" text-slate-50">{player.user.name}</span>
                                           )}
                                         </>
                                       </Text>
@@ -152,12 +154,12 @@ export default async function MatchHistoryComponent() {
                                       <Text variant="dark" key={index}>
                                         <>
                                           {player.captain === 1 && (
-                                            <strong>
+                                            <strong className=" text-slate-50">
                                               {player.user.name} (c)
                                             </strong>
                                           )}
                                           {player.captain !== 1 && (
-                                            <span>{player.user.name}</span>
+                                            <span className=" text-slate-50">{player.user.name}</span>
                                           )}
                                         </>
                                       </Text>
@@ -182,12 +184,12 @@ export default async function MatchHistoryComponent() {
                                       <Text variant="dark" key={index}>
                                         <>
                                           {player.captain === 1 && (
-                                            <strong>
+                                            <strong className=" text-slate-50">
                                               {player.user.name} (c)
                                             </strong>
                                           )}
                                           {player.captain !== 1 && (
-                                            <span>{player.user.name}</span>
+                                            <span className=" text-slate-50">{player.user.name}</span>
                                           )}
                                         </>
                                       </Text>
@@ -204,7 +206,7 @@ export default async function MatchHistoryComponent() {
               </Card>
             ))}
           </SimpleGrid>
-        </Flex>
+        </Paper></Flex>
       ) : (
         <Card>Loading...</Card>
       )}
