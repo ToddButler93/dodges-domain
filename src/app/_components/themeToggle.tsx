@@ -15,9 +15,9 @@ export function ColorSchemeToggle() {
   return (
     <ActionIcon onClick={handleToggleScheme}>
       {colorScheme === "dark" ? (
-        <FaSun color="teal" size={18} />
+        <FaSun color="white" size={18} />
       ) : (
-        <FaMoon color="teal" size={18} />
+        <FaMoon color="black" size={18} />
       )}
     </ActionIcon>
   );
