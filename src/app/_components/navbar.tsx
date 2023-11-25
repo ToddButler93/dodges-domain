@@ -168,6 +168,7 @@ export function NavBar() {
       href={item.link}
       className={classes.subLink}
       key={item.title}
+      onClick={closeDrawer}
     >
       <Group
         wrap="nowrap"
@@ -195,6 +196,7 @@ export function NavBar() {
       href={item.link}
       className={classes.subLink}
       key={item.title}
+      onClick={closeDrawer}
     >
       <Group
         wrap="nowrap"
@@ -222,6 +224,7 @@ export function NavBar() {
       href={item.link}
       className={classes.subLink}
       key={item.title}
+      onClick={closeDrawer}
     >
       <Group
         wrap="nowrap"
@@ -248,6 +251,7 @@ export function NavBar() {
       href={item.link}
       className={classes.subLink}
       key={item.title}
+      onClick={closeDrawer}
     >
       <Group
         wrap="nowrap"
@@ -274,6 +278,7 @@ export function NavBar() {
       href={item.link}
       className={classes.subLink}
       key={item.title}
+      onClick={closeDrawer}
     >
       <Group
         wrap="nowrap"
@@ -300,6 +305,7 @@ export function NavBar() {
       href={item.link}
       className={classes.subLink}
       key={item.title}
+      onClick={closeDrawer}
     >
       <Group
         wrap="nowrap"
@@ -497,7 +503,7 @@ export function NavBar() {
               transitionProps={{ transition: "scale-y" }}
             >
               <HoverCard.Target>
-                <Link href="/docs/information" className={classes.link}>
+                <Link href="/docs/information" className={classes.link} onClick={closeDrawer}>
                   <Center inline>
                     <Box component="span" mr={5}>
                       Tribes Information
@@ -559,7 +565,7 @@ export function NavBar() {
         <ScrollArea h={`calc(100vh - ${rem(80)})`} mx="-md">
           <Divider my="sm" />
 
-          <UnstyledButton className={classes.link} onClick={toggleInstallLinks}>
+          <UnstyledButton className={classes.link}  onClick={toggleInstallLinks}>
             <Center inline>
               <Box component="span" mr={5}>
                 Installation
@@ -594,7 +600,7 @@ export function NavBar() {
           <Collapse in={mapDevelopmentLinksOpened}>
             {mapDevelopmentLinks}
           </Collapse>
-          <Link href="/docs/custommaps" className={classes.link}>
+          <Link href="/docs/custommaps" className={classes.link} onClick={closeDrawer}>
             Community Maps
           </Link>
           <UnstyledButton
