@@ -62,8 +62,6 @@ export default function GuideInstallSetup() {
                       size="xl"
                       radius="xl"
                       styles={{
-                        root: { backgroundColor: "teal" },
-                        label: { color: "white" },
                         inner: { fontSize: 24 },
                       }}
                     >
@@ -83,7 +81,7 @@ export default function GuideInstallSetup() {
                           Manual Download
                         </Button>
                         <Button
-                          component="a"
+                          component={Link}
                           href="/docs/linux-install"
                           variant="default"
                         >
@@ -134,8 +132,6 @@ export default function GuideInstallSetup() {
                       size="xl"
                       radius="xl"
                       styles={{
-                        root: { backgroundColor: "teal" },
-                        label: { color: "white" },
                         inner: { fontSize: 24 },
                       }}
                     >
