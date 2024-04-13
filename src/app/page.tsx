@@ -4,12 +4,17 @@ import { Button, Card, Group, SimpleGrid, Text } from "@mantine/core";
 
 import Image from "next/image";
 
-import { api } from "~/trpc/server";
+// TODO: Uncomment for DB testing
+// import { api } from "~/trpc/server";
 
-export default async function Home() {
-  const data = await api.post.getAll.query();
+// TODO: Replace for DB Testing
+// export default async function Home() {
+export default function Home() {
 
-  console.log(data);
+  // TODO: Uncomment for DB testing
+  // const data = await api.post.getAll.query();
+
+  // console.log(data);
 
   return (
     <>
@@ -112,11 +117,12 @@ export default async function Home() {
       </SimpleGrid>
       <div className="max-w-8xl flex flex-col py-6 pt-12 text-center ">
         <div className="max-w-8xl div div-col gap-6 px-32 text-center text-6xl">
-          {data?.map((post) => (
+          {/* TODO: Uncomment for DB testing */}
+          {/* {data?.map((post) => (
             <div className="py-6 text-center" key={post.id}>
               {post.content}
             </div>
-          ))}
+          ))} */}
         </div>
       </div>
     </>
