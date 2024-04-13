@@ -4,22 +4,42 @@ Branch for migrating site to a new host with backend services.
 
 https://www.dodgesdomain.com/
 
-Tribes stuff.
+Tribes Ascend stuff (T3 soon).
 
 Made using the [T3 Stack](https://create.t3.gg/).
 
-## What's next? How do I make an app with this?
+## Scripts
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
+npm run build - Build site
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+### Dev
 
-- [Next.js](https://nextjs.org)
-- [Clerk](https://clerk.com/)
-- [Drizzle](https://orm.drizzle.team/)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
+npm install
+npm run dev - Live development
+npm run lint - Run linter
+
+### Drizzle
+
+npm run db:push - Drizzle push (mysql db)
+npm run db:studio - Drizzle Studio
+
+## What's here?
+
+### Important
+
+- [Next.js](https://nextjs.org) framework.
+- [Clerk](https://clerk.com/) for authentication (future stuff).
+- [Drizzle](https://orm.drizzle.team/) object relation mapping.
+- [tRPC](https://trpc.io) for typesafe APIs.
+
+- [Planetscale](https://planetscale.com/) $${\color{red}to be removed. (no free tier)}$$
+
+### Pretty stuff
+
+- [Tailwind CSS](https://tailwindcss.com) css for dummies.
+- [Mantine](https://mantine.dev/) component library.
+- [React Icons](https://react-icons.github.io/react-icons/) for icons.
 
 ## How do I deploy this?
 
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel).
+Follow the deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel).
