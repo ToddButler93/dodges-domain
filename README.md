@@ -32,7 +32,7 @@ npm run db:studio - Drizzle Studio
 - [Drizzle](https://orm.drizzle.team/) object relation mapping.
 - [tRPC](https://trpc.io) for typesafe APIs.
 
-- [Planetscale](https://planetscale.com/) $${\color{red}to be removed. (no free tier)}$$
+- [Planetscale](https://planetscale.com/) to be replaced. (hobby tier has been removed).
 
 ### Pretty stuff
 
