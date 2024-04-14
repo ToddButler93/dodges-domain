@@ -14,6 +14,7 @@ import {
   Paper,
   Space,
   Card,
+  Text,
 } from "@mantine/core";
 
 const tableData = {
@@ -94,23 +95,23 @@ export default function QuickPUGGuide() {
               <TabsPanel value="pugs">
                 <Title>Playing PUGs - 7v7 Format</Title>
                 <div>
-                  <p>
+                  <Text className="text-lg">
                     <Code>Pick-up Games</Code> are a semi-competitive 7v7
                     format. Pick-up games will use VoIP software such as Mumble
                     or Discord.
-                  </p>
-                  <p>
+                  </Text>
+                  <Text className="text-lg">
                     Each team runs 4 <Code>offense</Code> and 3{" "}
                     <Code>defense</Code>.
-                  </p>
-                  <p>
+                  </Text>
+                  <Text className="text-lg">
                     Generally speaking, the <Code>defense</Code> consists of a
                     <Code>HOF,</Code> a <Code>light defense</Code>/
                     <Code>medium defense,</Code> and a <Code>sniper.</Code>
-                  </p>
-                  <p>
+                  </Text>
+                  <Text className="text-lg">
                     <Code>Offense</Code> have two recommended setups:
-                  </p>
+                  </Text>
                   <List withPadding listStyleType="disc">
                     <ListItem>
                       3 <Code>offense</Code> members and a <Code>capper</Code>{" "}
@@ -122,18 +123,18 @@ export default function QuickPUGGuide() {
                       2 <Code>offense</Code> members and 2 <Code>cappers</Code>
                     </ListItem>
                   </List>
-                  <p>
+                  <Text className="text-lg">
                     <Code>Defense</Code> goes <Code>defense</Code> during
                     <Code>stand-offs</Code> and <Code>offense</Code> goes
                     <Code>offense</Code> during <Code>stand-offs.</Code>
-                  </p>
+                  </Text>
                   <Title order={3}>Recommendations</Title>
-                  <p>
+                  <Text className="text-lg">
                     These are PUG-specific recommendations to make the game more
                     enjoyable for everyone involved. These are not rules but a
                     list of recommendations to improve the flow and make you a
                     more effective member of your team.
-                  </p>
+                  </Text>
                   <List withPadding listStyleType="disc">
                     <ListItem>
                       If both flags are home, if you are an <Code>offense</Code>{" "}
@@ -313,11 +314,11 @@ export default function QuickPUGGuide() {
               </TabsPanel>
               <TabsPanel value="capping">
                 <Title order={2}>Capper</Title>
-                <p>
+                <Text className="text-lg">
                   <Button component={Link} href="/docs/gameplay/guide-cap">
                     Capper Guide
                   </Button>
-                </p>
+                </Text>
                 <Title order={3}>Major Responsibilities</Title>
                 <List withPadding listStyleType="disc">
                   <ListItem>Grab and capture the enemy flag.</ListItem>
