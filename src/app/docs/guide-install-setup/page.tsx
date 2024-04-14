@@ -27,8 +27,11 @@ import classes from "./install.module.css";
 export default function GuideInstallSetup() {
   return (
     <>
-      <div className="flex max-w-6xl flex-col gap-6 pe-8 pt-6">
-        <Paper className="flex flex-col gap-6 shadow-xl">
+      <div className="flex max-w-6xl flex-col gap-6 p-6">
+        <Paper className="flex flex-col shadow-xl">
+          <Card className="grow px-6 py-6 text-center shadow-xl px-3">
+            <Title>Tribes Ascend Installation</Title>
+          </Card>
           <Grid justify="center" align="stretch">
             <GridCol
               span={{ base: 12, sm: 5.5 }}
@@ -167,10 +170,10 @@ export default function GuideInstallSetup() {
           </Grid>
         </Paper>
         <Divider>Extract and Launch the Tribes Launcher</Divider>
-        <Paper className="flex flex-grow justify-center pe-6 shadow-xl">
+        <Paper className="flex flex-grow justify-center py-6 shadow-xl">
           <List
             listStyleType="ordered"
-            className="flex max-w-xl flex-col gap-3 pe-6"
+            className="flex max-w-xl flex-col gap-3 pe-6 text-lg"
           >
             <Title className="text-center">Instructions</Title>
             <ListItem>Launch the Tribes Launcher.</ListItem>
@@ -188,7 +191,7 @@ export default function GuideInstallSetup() {
           </List>
         </Paper>
         <Divider />
-        <Paper className="max-w-6xl pb-6">
+        <Paper className="max-w-6xl py-6 shadow-xl">
           <Container size="sm">
             <Title ta="center">Troubleshooting</Title>
 
@@ -316,7 +319,7 @@ export default function GuideInstallSetup() {
                       <Image
                         src="/static/img/install/steam-properties.png"
                         alt=""
-                        h={200}
+                        h={400}
                         w="auto"
                         fit="contain"
                       />
