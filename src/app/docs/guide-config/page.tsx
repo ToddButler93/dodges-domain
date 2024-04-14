@@ -18,11 +18,13 @@ import Link from "next/link";
 export default function GuideConfig() {
   return (
     <>
-      <div className="flex max-w-6xl flex-col gap-6 pe-6 pt-6">
+      <div className="flex max-w-6xl flex-col gap-6 p-6">
         <Paper className="flex flex-col gap-6 shadow-xl">
+          <Card className="grow py-6 text-center shadow-xl">
+            <Title>Tribes Ascend Configuration</Title>
+          </Card>
           <Container size="xl">
             <Container size="sm">
-              <Title>Configuration Guide</Title>
               <Text className="text-xl">
                 Your <Code className=" text-xl">Tribes.ini</Code> is the config
                 file for your graphical settings. It is located under{" "}
@@ -147,7 +149,7 @@ export default function GuideConfig() {
             </SimpleGrid>
           </Container>
         </Paper>
-        <Paper className="flex flex-col px-6 text-xl shadow-xl">
+        <Paper className="flex flex-col p-6 text-xl shadow-xl">
           <Container size="sm">
             <div>
               <Title order={2}>TribesInput.ini</Title>
@@ -192,7 +194,7 @@ export default function GuideConfig() {
             </div>
           </Container>
         </Paper>
-        <Paper className="flex flex-col px-6 pb-6 text-xl shadow-xl">
+        <Paper className="flex flex-col p-6 text-xl shadow-xl">
           <Container size="sm">
             <Title order={2}>TAMods</Title>
 
@@ -213,8 +215,8 @@ export default function GuideConfig() {
             <Text className="text-xl">
               It is recommended to delete the default crosshair and either use
               the Tribes Ascend crosshair or create your own. If you choose to
-              create your own I&quot;d recommend disabling the default
-              crosshair within ubermenu so you keep hit markers.
+              create your own I&quot;d recommend disabling the default crosshair
+              within ubermenu so you keep hit markers.
             </Text>
           </Container>
         </Paper>
