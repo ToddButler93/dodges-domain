@@ -7,7 +7,7 @@ export default async function DevelopmentGuidesLayout({
   children: React.ReactNode;
 }) {
   return (
-    <TypographyStylesProvider className="max-w-3xl pe-10">
+    <TypographyStylesProvider className="text-lg">
       {children}
     </TypographyStylesProvider>
   );
