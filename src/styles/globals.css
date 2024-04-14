@@ -8,6 +8,11 @@
   --body-color: #f5f5f5; /* Neutral-100*/
   --footer-color: #3f3f46; /* Zinc-700*/
 
+  --paper-color:  #f5f5f5; /* Neutral-100*/
+  --paper-color-dark: #1a1b1e;
+  --card-color:  #f5f5f5; /* Neutral-100*/
+  --card-color-dark: #27272a; /* Zinc-800*/
+
   --text-color-dark: #f5f5f5; /* Zinc-50*/
   --header-color-dark: #27272a; /* Zinc-800*/
   --body-color-dark: #18181b; /* Zinc-900*/
@@ -36,6 +41,16 @@ footer {
   @apply bg-zinc-700 text-zinc-100;
 }
 
+
+.mantine-Paper-root {
+  background-color: light-dark(var(--paper-color), var(--paper-color-dark));
+  color: light-dark(var(--text-color), var(--text-color-dark));
+}
+
+.mantine-Card-root {
+  background-color: light-dark(var(--card-color), var(--card-color-dark));
+  color: light-dark(var(--text-color), var(--text-color-dark));
+}
 .mantine-Button-root {
   background-color: light-dark(var(--primary-color), var(--primary-color));
   color: light-dark(var(--text-color-dark), var(--text-color-dark));
