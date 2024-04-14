@@ -7,7 +7,7 @@ export default async function GuidesLayout({
   children: React.ReactNode;
 }) {
   return (
-    <TypographyStylesProvider>
+    <TypographyStylesProvider className=" text-lg">
       {children}
     </TypographyStylesProvider>
   );
