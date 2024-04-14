@@ -13,6 +13,7 @@ import {
   TabsPanel,
   Paper,
   Space,
+  Card,
 } from "@mantine/core";
 
 const tableData = {
@@ -63,10 +64,10 @@ const tableData = {
 export default function QuickPUGGuide() {
   return (
     <>
-      <div className="flex flex-col gap-6 py-6">
-        <Paper className="grow px-6 pb-6 text-center shadow-xl">
-          <Title>Quick PUG Guide</Title>
-        </Paper>
+      <div className="flex max-w-6xl flex-col gap-6 p-6">
+        <Card className="grow px-6 py-6 text-center shadow-xl">
+          <Title>Tribes Ascend Quick PUG Guide</Title>
+        </Card>
         <div className="flex flex-row gap-6 shadow-xl">
           <Tabs
             color="cyan"
@@ -89,8 +90,7 @@ export default function QuickPUGGuide() {
               </TabsList>
             </Paper>
             <Space w="md" />
-            <div className="flex flex-row"></div>
-            <Paper className="max-w-xl grow  px-6">
+            <Paper className="max-w-4xl grow px-6 py-6">
               <TabsPanel value="pugs">
                 <Title>Playing PUGs - 7v7 Format</Title>
                 <div>
