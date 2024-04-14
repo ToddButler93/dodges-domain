@@ -39,7 +39,8 @@ export default function Home() {
             ></source>
             Your browser does not support .webm video.
           </video>
-          <Group className="absolute inset-0 flex flex-col items-center justify-center">
+          <Group className="absolute inset-0 items-center justify-center">
+            <Group className=" flex flex-col m-auto">
             <Image
               alt=""
               src="/static/img/tribes-ascend-logo.png"
@@ -55,6 +56,7 @@ export default function Home() {
             >
               Install Tribes Ascend
             </Button>
+            </Group>
           </Group>
         </Group>
       </div>
@@ -115,16 +117,16 @@ export default function Home() {
           </Link>
         </Card>
       </SimpleGrid>
-      <div className="max-w-8xl flex flex-col py-6 pt-12 text-center ">
+      {/* TODO: Uncomment for DB testing
+       <div className="max-w-8xl flex flex-col py-6 pt-12 text-center ">
         <div className="max-w-8xl div div-col gap-6 px-32 text-center text-6xl">
-          {/* TODO: Uncomment for DB testing */}
-          {/* {data?.map((post) => (
+          { {data?.map((post) => (
             <div className="py-6 text-center" key={post.id}>
               {post.content}
             </div>
-          ))} */}
+          ))} }
         </div>
-      </div>
+      </div> */}
     </>
   );
 }
