@@ -14,8 +14,8 @@ export default function GuideCapping() {
   return (
     <>
       {" "}
-      <div className="flex max-w-6xl flex-col gap-6 p-6">
-        <Card className="grow px-3 px-6 py-6 text-center shadow-xl">
+      <div className="flex max-w-6xl flex-col gap-6 py-6">
+        <Card className="grow px-3 py-6 text-center shadow-xl">
           <Title>Playing Offense - Tribes Ascend</Title>
         </Card>
 

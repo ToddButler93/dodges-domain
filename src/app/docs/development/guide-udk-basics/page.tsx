@@ -63,10 +63,10 @@ export default function GuideUDKBasics() {
   return (
     <>
       <div className="flex max-w-6xl flex-col gap-6 p-6">
-        <Card className="grow px-3 px-6 py-6 text-center shadow-xl">
+        <Card className="grow px-3 py-6 text-center shadow-xl">
           <Title>UDK Basics</Title>
         </Card>
-        <Paper className="flex flex-col  p-6 shadow-xl">
+        <Paper className="flex flex-col p-6 shadow-xl">
           <Title>How to use UDK to make Tribes Maps</Title>
           <Title order={2}> Starting from Scratch</Title>
           <Text>
@@ -101,8 +101,8 @@ export default function GuideUDKBasics() {
             fit="contain"
           />
           <Text>
-            Location is the location of the terrain. For this guide we will leave
-            it default.
+            Location is the location of the terrain. For this guide we will
+            leave it default.
           </Text>
           <Text>
             Patches is the size of the terrain. For this guide we will put 1024
@@ -122,8 +122,8 @@ export default function GuideUDKBasics() {
           </Text>
           <Link href="#glossary">What is an actor in UDK?</Link>
           <Text>
-            To confirm a setting, make sure you hit enter after typing/pasting in
-            the value.
+            To confirm a setting, make sure you hit enter after typing/pasting
+            in the value.
           </Text>
           <Text>- Set Max Tesselation Level to 8</Text>
           <Text>- Set Max Component Size to 14</Text>
@@ -166,7 +166,8 @@ export default function GuideUDKBasics() {
             create shadows.
           </Text>
           <Text>
-            Open The Content Browser <Kbd>Ctrl</Kbd>+<Kbd>Shift</Kbd>+<Kbd>F</Kbd>
+            Open The Content Browser <Kbd>Ctrl</Kbd>+<Kbd>Shift</Kbd>+
+            <Kbd>F</Kbd>
           </Text>
           <Text>
             Under the Actor Classes Tab use the search to find SkyLight.
@@ -195,11 +196,12 @@ export default function GuideUDKBasics() {
           />
           <Title order={3}> Dominant Directional Light</Title>
           <Text>
-            Now let us add an actor that will act as your Sun to light the entire
-            field and generate shadows.
+            Now let us add an actor that will act as your Sun to light the
+            entire field and generate shadows.
           </Text>
           <Text>
-            Open The Content Browser <Kbd>Ctrl</Kbd>+<Kbd>Shift</Kbd>+<Kbd>F</Kbd>
+            Open The Content Browser <Kbd>Ctrl</Kbd>+<Kbd>Shift</Kbd>+
+            <Kbd>F</Kbd>
           </Text>
           <Text>
             Under the Actor Classes Tab use the search to find
@@ -223,8 +225,8 @@ export default function GuideUDKBasics() {
           />
           <Text>
             To set the direction of the light source you need to adjust the
-            rotation. Use the Rotation Wheel <Kbd>Space</Kbd> to set the direction
-            of your lightsource.
+            rotation. Use the Rotation Wheel <Kbd>Space</Kbd> to set the
+            direction of your lightsource.
           </Text>
           <Text>
             If you aren&quot;t sure on how to do this you can Set Rotation Pitch
@@ -335,11 +337,13 @@ export default function GuideUDKBasics() {
             fit="contain"
           />
           <Text>
-            Now that we know this, we need to set our TrVehicleStation_BloodEagle
-            m_Vehicle property to the name of our TrVehiclePad actor.
+            Now that we know this, we need to set our
+            TrVehicleStation_BloodEagle m_Vehicle property to the name of our
+            TrVehiclePad actor.
           </Text>
           <Text>
-            Select our TrVehicleStation_BloodEagle actor and open Actor Properties
+            Select our TrVehicleStation_BloodEagle actor and open Actor
+            Properties
             <Kbd>F4</Kbd>.
           </Text>
           <Text>[Lost where it went?](#my-things-have-disapeared)</Text>
@@ -353,7 +357,8 @@ export default function GuideUDKBasics() {
           />
           <Text>Once you hit enter the value will altar, this is normal.</Text>
           <Text>
-            Now you have setup the assets for Blood Eagle. Now for Diamond Sword!
+            Now you have setup the assets for Blood Eagle. Now for Diamond
+            Sword!
           </Text>
           [Save your level](#step-2---save-level).
           <Image
@@ -365,8 +370,8 @@ export default function GuideUDKBasics() {
           />
           <Title order={3}> Diamond Sword</Title>
           <Text>
-            Under the Actor Classes Tab use the search &quot;DiamondSword&quot; to
-            find Diamond Sword specific Actor Classes.
+            Under the Actor Classes Tab use the search &quot;DiamondSword&quot;
+            to find Diamond Sword specific Actor Classes.
           </Text>
           <Text>
             This time we will do grouping a little differently.
@@ -375,8 +380,8 @@ export default function GuideUDKBasics() {
           </Text>
           <Title order={4}> Diamond Sword Flag</Title>
           <Text>
-            First lets drag in TrCTFBase_DiamondSword and open our frequent friend
-            Actor Properties <Kbd>F4</Kbd>.
+            First lets drag in TrCTFBase_DiamondSword and open our frequent
+            friend Actor Properties <Kbd>F4</Kbd>.
           </Text>
           [Lost where it went?](#my-things-have-disapeared)
           <Text>
@@ -502,8 +507,8 @@ export default function GuideUDKBasics() {
             these into your map.
           </Text>
           <Text>
-            To set the team for your spawn you need to set the TeamNumber property
-            of the UTTeamPlayerStart Actors to 0 or 1.
+            To set the team for your spawn you need to set the TeamNumber
+            property of the UTTeamPlayerStart Actors to 0 or 1.
           </Text>
           <Text>Blood Eagle is Team 0</Text>
           <Text>The location for this spawn for now will be</Text>
@@ -575,8 +580,8 @@ export default function GuideUDKBasics() {
           <Title order={2}> Troubleshooting</Title>
           <Title order={3}> My things have disapeared!</Title>
           <Text>
-            You may have just hit <Kbd>W</Kbd>, try hitting <Kbd>W</Kbd> again in
-            the Unreal Editor Viewport.
+            You may have just hit <Kbd>W</Kbd>, try hitting <Kbd>W</Kbd> again
+            in the Unreal Editor Viewport.
           </Text>
           <Text>If that doesn&quot;t work</Text>
           <Text>
@@ -589,7 +594,7 @@ export default function GuideUDKBasics() {
           </Title>
           <Text>Actor</Text>
           <Text>Viewport</Text>
-          </Paper>
+        </Paper>
       </div>
     </>
   );

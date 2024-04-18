@@ -18,8 +18,8 @@ import Link from "next/link";
 export default function GuideConfig() {
   return (
     <>
-      <div className="flex max-w-6xl flex-col gap-6 p-6">
-        <Paper className="flex flex-col gap-6 shadow-xl">
+      <div className="flex max-w-6xl flex-col gap-6 py-3">
+        <Paper className="flex flex-col gap-6 p-3 shadow-xl">
           <Card className="grow py-6 text-center shadow-xl">
             <Title>Tribes Ascend Configuration</Title>
           </Card>
@@ -36,7 +36,7 @@ export default function GuideConfig() {
                 <Link href="/static/text/dodges-ini/tribes.ini">
                   <Image
                     src="/static/img/dodge-ini.png"
-                    alt='Dodge"s tribes.ini'
+                    alt='Dodges tribes.ini'
                   />
                 </Link>
 
@@ -49,7 +49,7 @@ export default function GuideConfig() {
                     inner: { fontSize: 24 },
                   }}
                 >
-                  Dodge&quot;s Tribes.ini
+                  Tribes.ini
                 </Button>
                 <Text className="text-xl">
                   This <Code>Tribes.ini</Code> is for people with weaker systems
@@ -60,7 +60,7 @@ export default function GuideConfig() {
                 <Link href="/static/text/dodges-pretty-ini/tribes.ini">
                   <Image
                     src="/static/img/dodge-pretty-ini.png"
-                    alt='Dodge"s pretty tribes.ini'
+                    alt='Pretty tribes.ini'
                   />
                 </Link>
                 <Button
@@ -72,7 +72,7 @@ export default function GuideConfig() {
                     inner: { fontSize: 24 },
                   }}
                 >
-                  Dodge&quot;s &quot;Pretty&quot; Tribes.ini
+                  &quot;Pretty&quot; Tribes.ini
                 </Button>
                 <Text className="text-xl">
                   This <Code>Tribes.ini</Code> is for people with a super-strong
@@ -149,7 +149,7 @@ export default function GuideConfig() {
             </SimpleGrid>
           </Container>
         </Paper>
-        <Paper className="flex flex-col p-6 text-xl shadow-xl">
+        <Paper className="flex flex-col gap-6 shadow-xl p-3">
           <Container size="sm">
             <div>
               <Title order={2}>TribesInput.ini</Title>
@@ -194,7 +194,7 @@ export default function GuideConfig() {
             </div>
           </Container>
         </Paper>
-        <Paper className="flex flex-col p-6 text-xl shadow-xl">
+        <Paper className="flex flex-col gap-6 shadow-xl p-3">
           <Container size="sm">
             <Title order={2}>TAMods</Title>
 

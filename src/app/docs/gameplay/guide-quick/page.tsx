@@ -65,11 +65,12 @@ const tableData = {
 export default function QuickPUGGuide() {
   return (
     <>
-      <div className="flex max-w-6xl flex-col gap-6 p-6">
+    
+      <div className="flex max-w-6xl flex-col gap-6 py-3">
         <Card className="grow px-6 py-6 text-center shadow-xl">
           <Title>Tribes Ascend Quick PUG Guide</Title>
         </Card>
-        <div className="flex flex-row gap-6 shadow-xl">
+        <div className="flex flex-row gap-6 shadow-xl ">
           <Tabs
             color="cyan"
             variant="pills"

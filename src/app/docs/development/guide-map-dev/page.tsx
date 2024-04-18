@@ -16,11 +16,11 @@ import Link from "next/link";
 export default function GuideMapDevelopment() {
   return (
     <>
-      <div className="flex max-w-6xl flex-col gap-6 p-6">
-        <Card className="grow px-3 px-6 py-6 text-center shadow-xl">
+      <div className="flex max-w-6xl flex-col gap-6 py-6">
+        <Card className="grow px-3 py-6 text-center shadow-xl">
           <Title>Map Development Guide</Title>
         </Card>
-        <Paper className="flex flex-col  p-6 shadow-xl">
+        <Paper className="flex flex-col p-6 shadow-xl">
           <Card className="max-w-xl gap-3">
             <Alert>
               If you are interested in map development I recommend joining the
@@ -46,17 +46,17 @@ export default function GuideMapDevelopment() {
           </Text>
           <Text>
             You need to download the{" "}
-            <Link href="https://drive.google.com/file/d/11ADATh4y71bC8PdcbaUk5zDeSsBkOfST/view?usp=sharing">
+            <Link passHref={true} href="https://drive.google.com/file/d/11ADATh4y71bC8PdcbaUk5zDeSsBkOfST/view?usp=sharing">
               TA actor classes
             </Link>
-            {". "}Extract the <Code>TribesGame</Code> folder to
+            . Extract the <Code>TribesGame</Code> folder to
             <Code>\UDK\UDK-2011-01\Development\Src\</Code> and the{" "}
             <Code>TA_BaseAssets.upk & AUD_MUS_CTF.upk</Code> to
             <Code>\UDK\UDK-2011-01\UDKGame\Content\</Code>
           </Text>
           <Text>
             You need to download all the{" "}
-            <Link href="https://drive.google.com/file/d/1u_nItIPxeA79Im8tXgg3Q41RS2iBAT_O/view?usp=sharing">
+            <Link passHref={true} href="https://drive.google.com/file/d/1u_nItIPxeA79Im8tXgg3Q41RS2iBAT_O/view?usp=sharing">
               TA package files
             </Link>
             . Extract these to <Code>\UDK\UDK-2011-01\UDKGame\Content</Code>
@@ -67,72 +67,72 @@ export default function GuideMapDevelopment() {
           </Text>
           <List>
             <ListItem>
-              <Link href="https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/dodge-map-common.zip">
+              <Link passHref={true} href="https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/dodge-map-common.zip">
                 Dodge&apos;s Common Package
               </Link>
             </ListItem>
             <ListItem>
-              <Link href="https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/dodge-map-pack.zip">
+              <Link passHref={true} href="https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/dodge-map-pack.zip">
                 Dodge&apos;s Map Pack
               </Link>
             </ListItem>
             <ListItem>
-              <Link href="https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/dodge-map-pack-2.zip">
+              <Link passHref={true} href="https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/dodge-map-pack-2.zip">
                 Dodge&apos;s Map Pack 2
               </Link>
             </ListItem>
             <ListItem>
-              <Link href="https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/dodge-map-pack-3.zip">
+              <Link passHref={true} href="https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/dodge-map-pack-3.zip">
                 Dodge&apos;s Map Pack 3
               </Link>
             </ListItem>
             <ListItem>
-              <Link href="https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/dodge-map-pack-4.zip">
+              <Link passHref={true} href="https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/dodge-map-pack-4.zip">
                 Dodge&apos;s Map Pack 4
               </Link>
             </ListItem>
             <ListItem>
-              <Link href="https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/dodge-arena-series.zip">
+              <Link passHref={true} href="https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/dodge-arena-series.zip">
                 Dodge&apos;s Arena Series
               </Link>
             </ListItem>
             <ListItem>
-              <Link href="https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/dodge-treacherous-series.zip">
+              <Link passHref={true} href="https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/dodge-treacherous-series.zip">
                 Dodge&apos;s Treacherous Series
               </Link>
             </ListItem>
             <ListItem>
-              <Link href="https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/evil-map-pack.zip">
+              <Link passHref={true} href="https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/evil-map-pack.zip">
                 Evil&apos;s Map Pack
               </Link>
             </ListItem>
             <ListItem>
-              <Link href="https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/evil-map-pack-2.zip">
+              <Link passHref={true} href="https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/evil-map-pack-2.zip">
                 Evil&apos;s Map Pack 2
               </Link>
             </ListItem>
             <ListItem>
-              <Link href="https://tamods-update.s3-ap-southeast-2.amazonaws.com/packages/krogoth-map-pack.zip">
+              <Link passHref={true} href="https://tamods-update.s3-ap-southeast-2.amazonaws.com/packages/krogoth-map-pack.zip">
                 Krogoth&apos;s Map Pack
               </Link>
             </ListItem>
             <ListItem>
-              <Link href="https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/nerve-map-pack.zip">
+              <Link passHref={true} href="https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/nerve-map-pack.zip">
                 Nerve&apos;s Map Pack
               </Link>
             </ListItem>
             <ListItem>
-              <Link href="https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/kali-map-pack.zip">
+              <Link passHref={true} href="https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/kali-map-pack.zip">
                 Kali&apos;s Map Pack
               </Link>
             </ListItem>
             <ListItem>
-              <Link href="https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/cro-map-pack.zip">
+              <Link passHref={true} href="https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/cro-map-pack.zip">
                 Cro&apos;s Map Pack
               </Link>
             </ListItem>
             <ListItem>
-              <Link href="https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/evil-map-common.zip">
+              <Link passHref={true} href="https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/evil-map-common.zip">
                 Evil&apos;s Common Package
               </Link>
             </ListItem>
@@ -192,12 +192,12 @@ export default function GuideMapDevelopment() {
           <Title order={3}> Step 1</Title>
           <List>
             <ListItem>
-              <Link href="https://drive.google.com/file/d/1nZ1McI3DhilrHNxbm5a0KVFPkDy9WfA0/view?usp=sharing">
+              <Link passHref={true} href="https://drive.google.com/file/d/1nZ1McI3DhilrHNxbm5a0KVFPkDy9WfA0/view?usp=sharing">
                 Basic CTF Map Download
               </Link>
             </ListItem>
             <ListItem>
-              <Link href="https://drive.google.com/file/d/1doKK3ycGZhN3tjQJ7khoXQPRP8pQjDZZ/view?usp=sharing">
+              <Link passHref={true} href="https://drive.google.com/file/d/1doKK3ycGZhN3tjQJ7khoXQPRP8pQjDZZ/view?usp=sharing">
                 Basic Arena Map Download
               </Link>
             </ListItem>
@@ -259,7 +259,7 @@ export default function GuideMapDevelopment() {
           <Title order={5}> Step 1</Title>
           <Text>
             Extract the{" "}
-            <Link href="https://drive.google.com/file/d/1u_nItIPxeA79Im8tXgg3Q41RS2iBAT_O/view?usp=sharing">
+            <Link passHref={true} href="https://drive.google.com/file/d/1u_nItIPxeA79Im8tXgg3Q41RS2iBAT_O/view?usp=sharing">
               TA package files
             </Link>{" "}
             to the dev builds <Code>\TribesGame\CookedPC\Maps\</Code>folder.
@@ -308,7 +308,7 @@ export default function GuideMapDevelopment() {
           <Title order={5}> Step 1</Title>
           <Text>
             Extract the{" "}
-            <Link href="https://drive.google.com/file/d/1u_nItIPxeA79Im8tXgg3Q41RS2iBAT_O/view?usp=sharing">
+            <Link passHref={true} href="https://drive.google.com/file/d/1u_nItIPxeA79Im8tXgg3Q41RS2iBAT_O/view?usp=sharing">
               TA package files
             </Link>
             to dev builds <Code>\TribesGame\CookedPC\Maps\</Code>folder.
@@ -349,14 +349,14 @@ export default function GuideMapDevelopment() {
           </Text>
           <Title order={3}> Hosting Custom Map</Title>
           <Text>
-            <Link href="https://github.com/Griffon26/taserver/blob/master/docs/user_manual/hosting_a_game_server">
+            <Link passHref={true} href="https://github.com/Griffon26/taserver/blob/master/docs/user_manual/hosting_a_game_server">
               Host your server
             </Link>
             .
           </Text>
           <Text>
             Extract the{" "}
-            <Link href="https://drive.google.com/file/d/1u_nItIPxeA79Im8tXgg3Q41RS2iBAT_O/view?usp=sharing">
+            <Link passHref={true} href="https://drive.google.com/file/d/1u_nItIPxeA79Im8tXgg3Q41RS2iBAT_O/view?usp=sharing">
               TA package files
             </Link>{" "}
             to the servers <Code>\Tribes\TribesGame\CookedPC\Maps\</Code>folder.
@@ -384,14 +384,14 @@ export default function GuideMapDevelopment() {
           <Text>
             Ex Hi-Rez Studios map developer Katelyn Pitstick has posted some
             information specifically about making Tribes Ascend maps on{" "}
-            <Link href="https://katelyn-mp.com/wp/?cat=8">
+            <Link passHref={true} href="https://katelyn-mp.com/wp/?cat=8">
               Kate&apos;s website
             </Link>
             .
           </Text>
           <Text>
             thenewboston has an old{" "}
-            <Link href="https://youtube.com/playlist?list=PLFF967D7CA020E636">
+            <Link passHref={true} href="https://youtube.com/playlist?list=PLFF967D7CA020E636">
               UDK Tutorial Playlist
             </Link>{" "}
             where he is using an old 2011 build of UDK. Tutorial 36 is where he
@@ -446,7 +446,7 @@ export default function GuideMapDevelopment() {
           <Title order={5}> Step 1</Title>
           <Text>
             Download the latest master
-            <Link href="https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/master-refshadercache.zip">
+            <Link passHref={true} href="https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/master-refshadercache.zip">
               RefShaderCache-PC-D3D-SM3.upk
             </Link>
             , paste it into <Code>\UDK\UDK-2011-01\UDKGame\Content\</Code> If

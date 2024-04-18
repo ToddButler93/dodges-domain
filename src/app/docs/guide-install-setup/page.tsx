@@ -29,7 +29,7 @@ export default function GuideInstallSetup() {
     <>
       <div className="flex max-w-6xl flex-col gap-6 p-6">
         <Paper className="flex flex-col shadow-xl">
-          <Card className="grow px-6 py-6 text-center shadow-xl px-3">
+          <Card className="grow px-6 py-6 text-center shadow-xl">
             <Title>Tribes Ascend Installation</Title>
           </Card>
           <Grid justify="center" align="stretch">
@@ -148,7 +148,7 @@ export default function GuideInstallSetup() {
                         <Alert title="Warning" color="orange">
                           <Text className="pb-3 text-start">
                             You will need the{" "}
-                            <Link href="https://aka.ms/vs/17/release/vc_redist.x86.exe">
+                            <Link passHref={true} href="https://aka.ms/vs/17/release/vc_redist.x86.exe">
                               Microsoft Visual C++ x86 Redistributes
                             </Link>{" "}
                             if you don&apos;t have them already installed.
@@ -229,7 +229,7 @@ export default function GuideInstallSetup() {
                 </Accordion.Control>
                 <Accordion.Panel>
                   <p>
-                    <Link href="https://aka.ms/vs/17/release/vc_redist.x86.exe">
+                    <Link passHref={true} href="https://aka.ms/vs/17/release/vc_redist.x86.exe">
                       Microsoft Visual C++ redistributes
                     </Link>{" "}
                     must be installed.
