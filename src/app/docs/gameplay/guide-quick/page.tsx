@@ -2,7 +2,6 @@
 import Link from "next/link";
 import { Button } from "~/components/ui/button";
 import { Card } from "~/components/ui/card";
-import { Separator } from "~/components/ui/separator";
 import { Table } from "~/components/ui/table";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "~/components/ui/tabs";
 
@@ -55,7 +54,7 @@ export default function QuickPUGGuide() {
   return (
     <>
       <div className="flex flex-col gap-6">
-        <Card className="grow px-6 py-6 text-center shadow-xl">
+        <Card className="grow py-6 text-center shadow-xl">
           <h1>Tribes Ascend Quick PUG Guide</h1>
         </Card>
         <div className="flex flex-row gap-6 shadow-xl ">
