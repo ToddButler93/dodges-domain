@@ -1,21 +1,10 @@
 "use client";
 import Link from "next/link";
-import {
-  Table,
-  Title,
-  Button,
-  Code,
-  List,
-  ListItem,
-  Tabs,
-  TabsTab,
-  TabsList,
-  TabsPanel,
-  Paper,
-  Space,
-  Card,
-  Text,
-} from "@mantine/core";
+import { Button } from "~/components/ui/button";
+import { Card } from "~/components/ui/card";
+import { Separator } from "~/components/ui/separator";
+import { Table } from "~/components/ui/table";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "~/components/ui/tabs";
 
 const tableData = {
   head: ["Term", "Meaning"],
@@ -65,327 +54,302 @@ const tableData = {
 export default function QuickPUGGuide() {
   return (
     <>
-    
-      <div className="flex max-w-6xl flex-col gap-6 py-3">
+      <div className="flex flex-col gap-6">
         <Card className="grow px-6 py-6 text-center shadow-xl">
-          <Title>Tribes Ascend Quick PUG Guide</Title>
+          <h1>Tribes Ascend Quick PUG Guide</h1>
         </Card>
         <div className="flex flex-row gap-6 shadow-xl ">
-          <Tabs
-            color="cyan"
-            variant="pills"
-            radius="xs"
-            orientation="vertical"
-            defaultValue="pugs"
-            className="flex grow flex-row"
-          >
-            <Paper className="grow px-6 py-10 ">
-              <TabsList>
-                <TabsTab value="pugs">PUG Information </TabsTab>
-                <TabsTab value="offense">Offense </TabsTab>
-                <TabsTab value="capping">Capping </TabsTab>
-                <TabsTab value="hof">Heavy on Flag </TabsTab>
-                <TabsTab value="defense">Defense </TabsTab>
-                <TabsTab value="sniping">Sniping </TabsTab>
-                <TabsTab value="standoffs">Stand Offs </TabsTab>
-                <TabsTab value="glossary">Glossary </TabsTab>
-              </TabsList>
-            </Paper>
-            <Space w="md" />
-            <Paper className="max-w-4xl grow px-6 py-6">
-              <TabsPanel value="pugs">
-                <Title>Playing PUGs - 7v7 Format</Title>
-                <div>
-                  <Text className="text-lg">
-                    <Code>Pick-up Games</Code> are a semi-competitive 7v7
-                    format. Pick-up games will use VoIP software such as Mumble
-                    or Discord.
-                  </Text>
-                  <Text className="text-lg">
-                    Each team runs 4 <Code>offense</Code> and 3{" "}
-                    <Code>defense</Code>.
-                  </Text>
-                  <Text className="text-lg">
-                    Generally speaking, the <Code>defense</Code> consists of a
-                    <Code>HOF,</Code> a <Code>light defense</Code>/
-                    <Code>medium defense,</Code> and a <Code>sniper.</Code>
-                  </Text>
-                  <Text className="text-lg">
-                    <Code>Offense</Code> have two recommended setups:
-                  </Text>
-                  <List withPadding listStyleType="disc">
-                    <ListItem>
-                      3 <Code>offense</Code> members and a <Code>capper</Code>{" "}
-                      with one
-                      <Code>offense</Code> member going after the enemy
-                      <Code>Sniper</Code>
-                    </ListItem>
-                    <ListItem>
-                      2 <Code>offense</Code> members and 2 <Code>cappers</Code>
-                    </ListItem>
-                  </List>
-                  <Text className="text-lg">
-                    <Code>Defense</Code> goes <Code>defense</Code> during
-                    <Code>stand-offs</Code> and <Code>offense</Code> goes
-                    <Code>offense</Code> during <Code>stand-offs.</Code>
-                  </Text>
-                  <Title order={3}>Recommendations</Title>
-                  <Text className="text-lg">
+          <Tabs defaultValue="pugs">
+            <TabsList>
+              <TabsTrigger value="pugs">PUG Information </TabsTrigger>
+              <TabsTrigger value="offense">Offense </TabsTrigger>
+              <TabsTrigger value="capping">Capping </TabsTrigger>
+              <TabsTrigger value="hof">Heavy on Flag </TabsTrigger>
+              <TabsTrigger value="defense">Defense </TabsTrigger>
+              <TabsTrigger value="sniping">Sniping </TabsTrigger>
+              <TabsTrigger value="standoffs">Stand Offs </TabsTrigger>
+              <TabsTrigger value="glossary">Glossary </TabsTrigger>
+            </TabsList>
+            <div className="max-w-4xl grow px-6 py-6">
+              <TabsContent value="pugs">
+                <h1>Playing PUGs - 7v7 Format</h1>
+                <div className="flex flex-col gap-3">
+                  <p className="text-lg">
+                    <b>Pick-up Games</b> are a semi-competitive 7v7 format.
+                    Pick-up games will use VoIP software such as Mumble or
+                    Discord.
+                  </p>
+                  <p className="text-lg">
+                    Each team runs 4 <b>offense</b> and 3 <b>defense</b>.
+                  </p>
+                  <p className="text-lg">
+                    Generally speaking, the <b>defense</b> consists of a
+                    <b>HOF,</b> a <b>light defense</b>/<b>medium defense,</b>{" "}
+                    and a <b>sniper.</b>
+                  </p>
+                  <p className="text-lg">
+                    <b>Offense</b> have two recommended setups:
+                  </p>
+                  <ul className="list-disc p-3">
+                    <li>
+                      3 <b>offense</b> members and a <b>capper</b> with one
+                      <b>offense</b> member going after the enemy
+                      <b>Sniper</b>
+                    </li>
+                    <li>
+                      2 <b>offense</b> members and 2 <b>cappers</b>
+                    </li>
+                  </ul>
+                  <p className="text-lg">
+                    <b>Defense</b> goes <b>defense</b> during
+                    <b>stand-offs</b> and <b>offense</b> goes
+                    <b>offense</b> during <b>stand-offs.</b>
+                  </p>
+                  <h3>Recommendations</h3>
+                  <p className="text-lg">
                     These are PUG-specific recommendations to make the game more
                     enjoyable for everyone involved. These are not rules but a
                     list of recommendations to improve the flow and make you a
                     more effective member of your team.
-                  </Text>
-                  <List withPadding listStyleType="disc">
-                    <ListItem>
-                      If both flags are home, if you are an <Code>offense</Code>{" "}
-                      member or a <Code>capper,</Code> there is little to no
-                      gain in killing/shooting enemy <Code>offense.</Code> If
-                      <Code>defense</Code> is struggling, spotting enemy
-                      <Code>capper</Code> is substantially more beneficial.
-                    </ListItem>
-                    <ListItem>
-                      Running 4+ <Code>defense</Code> members generally makes
-                      games slow for both teams.
-                    </ListItem>
-                    <ListItem>
-                      Try to run a <Code>capper</Code> that does not warp.
-                    </ListItem>
-                  </List>
+                  </p>
+                  <ul className="list-disc p-3">
+                    <li>
+                      If both flags are home, if you are an <b>offense</b>{" "}
+                      member or a <b>capper,</b> there is little to no gain in
+                      killing/shooting enemy <b>offense.</b> If
+                      <b>defense</b> is struggling, spotting enemy
+                      <b>capper</b> is substantially more beneficial.
+                    </li>
+                    <li>
+                      Running 4+ <b>defense</b> members generally makes games
+                      slow for both teams.
+                    </li>
+                    <li>
+                      Try to run a <b>capper</b> that does not warp.
+                    </li>
+                  </ul>
                 </div>
-              </TabsPanel>
-              <TabsPanel value="offense">
-                <Title order={2}>Offense</Title>
-                <div>
-                  <Button component={Link} href="/docs/gameplay/guide-offense">
-                    Offense Guide
-                  </Button>
-                  <Title order={3}>Major Responsibilities</Title>
-                  <List withPadding listStyleType="disc">
-                    <ListItem>
-                      Kill the enemy <Code>heavy on flag</Code> and enemy
-                      <Code>light defense</Code> <Code>5 seconds</Code> before
-                      your
-                      <Code>capper</Code> will grab.
-                    </ListItem>
-                    <ListItem>
-                      Put pressure on the enemy <Code>Sniper</Code> to prevent
-                      them from killing your <Code>capper</Code> pre-grab and
-                      post-grab. Generally, only 1 <Code>offense</Code> member
-                      does this only if your team is running 1{" "}
-                      <Code>capper.</Code>
-                    </ListItem>
-                    <ListItem>
-                      <Code>E-Grab</Code> when the <Code>defense</Code> calls
-                      for it.
-                    </ListItem>
-                  </List>
-                  <Title order={3}>Minor Responsibilities</Title>
-                  <List withPadding listStyleType="disc">
-                    <ListItem>
+              </TabsContent>
+              <TabsContent value="offense">
+                <h2>Offense</h2>
+                <div className="flex flex-col gap-3">
+                  {/* <Button>
+                    <Link href="/docs/gameplay/guide-offense">
+                      Offense Guide
+                    </Link>
+                  </Button> */}
+                  <h3>Major Responsibilities</h3>
+                  <ul className="list-disc p-3">
+                    <li>
+                      Kill the enemy <b>heavy on flag</b> and enemy
+                      <b>light defense</b> <b>5 seconds</b> before your
+                      <b>capper</b> will grab.
+                    </li>
+                    <li>
+                      Put pressure on the enemy <b>Sniper</b> to prevent them
+                      from killing your <b>capper</b> pre-grab and post-grab.
+                      Generally, only 1 <b>offense</b> member does this only if
+                      your team is running 1 <b>capper.</b>
+                    </li>
+                    <li>
+                      <b>E-Grab</b> when the <b>defense</b> calls for it.
+                    </li>
+                  </ul>
+                  <h3>Minor Responsibilities</h3>
+                  <ul className="list-disc p-3">
+                    <li>
                       <kbd>K</kbd>-Out and meet your capper after they grab.
-                    </ListItem>
-                    <ListItem>
+                    </li>
+                    <li>
                       Hit the enemy stand at the same time as other
-                      <Code>offense</Code> members, aim for when your
-                      <Code>capper</Code> would be <Code>15 seconds</Code> out.
-                    </ListItem>
-                    <ListItem>
-                      Spot enemy <Code>cappers</Code> and enemy{" "}
-                      <Code>offense.</Code>
-                      This assists your <Code>defense</Code> better than you
-                      shooting the enemy `offense.
-                    </ListItem>
-                    <ListItem>
-                      <Code>Walk</Code> flags with your other{" "}
-                      <Code>offense</Code>
+                      <b>offense</b> members, aim for when your
+                      <b>capper</b> would be <b>15 seconds</b> out.
+                    </li>
+                    <li>
+                      Spot enemy <b>cappers</b> and enemy <b>offense.</b>
+                      This assists your <b>defense</b> better than you shooting
+                      the enemy `offense.
+                    </li>
+                    <li>
+                      <b>Walk</b> flags with your other <b>offense</b>
                       members.
-                    </ListItem>
-                  </List>
+                    </li>
+                  </ul>
                 </div>
-              </TabsPanel>
-              <TabsPanel value="hof">
-                <Title order={2}>Heavy on Flag</Title>
-                <div>
-                  <Button component={Link} href="/docs/gameplay/guide-hof">
-                    Heavy on Flag Guide
-                  </Button>
-                  <Title order={3}>Major Responsibilities</Title>
-                  <List withPadding listStyleType="disc">
-                    <ListItem>
-                      Stop the enemy <Code>capper.</Code>
-                    </ListItem>
-                    <ListItem>
-                      Stop enemy <Code>walks.</Code>
-                    </ListItem>
-                  </List>
-                  <Title order={3}>Minor Responsibilities</Title>
-                  <List withPadding listStyleType="disc">
-                    <ListItem>
-                      Be ready to stop unspotted/out of time grabs.
-                    </ListItem>
-                    <ListItem>
-                      Work with the <Code>light defense</Code> to get kills on
-                      enemy
-                      <Code>offense</Code> without overextending yourself.
-                    </ListItem>
-                    <ListItem>
-                      Only leave the stand during a <Code>stand-off.</Code>
-                    </ListItem>
-                    <ListItem>Avoid being shot if possible.</ListItem>
-                  </List>
+              </TabsContent>
+              <TabsContent value="hof">
+                <h2>Heavy on Flag</h2>
+                <div className="flex flex-col gap-3">
+                  {/* <Button asChild>
+                    <Link href="/docs/gameplay/guide-hof">
+                      Heavy on Flag Guide
+                    </Link>
+                  </Button> */}
+                  <h3>Major Responsibilities</h3>
+                  <ul>
+                    <li>
+                      Stop the enemy <b>capper.</b>
+                    </li>
+                    <li>
+                      Stop enemy <b>walks.</b>
+                    </li>
+                  </ul>
+                  <h3>Minor Responsibilities</h3>
+                  <ul className="list-disc p-3">
+                    <li>Be ready to stop unspotted/out of time grabs.</li>
+                    <li>
+                      Work with the <b>light defense</b> to get kills on enemy
+                      <b>offense</b> without overextending yourself.
+                    </li>
+                    <li>
+                      Only leave the stand during a <b>stand-off.</b>
+                    </li>
+                    <li>Avoid being shot if possible.</li>
+                  </ul>
                 </div>
-              </TabsPanel>
-              <TabsPanel value="defense">
-                <Title order={2}>Light/Medium Defense</Title>
-                <div>
-                  <Button component={Link} href="/docs/gameplay/guide-defense">
-                    Light/Medium Defense Guide
-                  </Button>
-                  <Title order={3}>Major Responsibilities</Title>
-                  <List withPadding listStyleType="disc">
-                    <ListItem>
-                      Kill enemy the <Code>offense</Code> members.
-                    </ListItem>
-                    <ListItem>Return flags.</ListItem>
-                    <ListItem>
-                      Call out for <Code>E-Grabs</Code>
-                    </ListItem>
-                  </List>
-                  <Title order={3}>Minor Responsibilities</Title>
-                  <List withPadding listStyleType="disc">
-                    <ListItem>
-                      Work with the <Code>Sniper</Code>
-                    </ListItem>
-                    <ListItem>
-                      Call out enemy <Code>offense</Code> you are shooting so
-                      the
-                      <Code>Sniper</Code> and <Code>heavy on flag</Code> know
-                      who to shoot.
-                    </ListItem>
-                    <ListItem>
-                      If the enemy <Code>capper</Code> has recently died, assist
-                      any walks your <Code>offense</Code> may be doing or meet
-                      your
-                      <Code>capper.</Code>
-                    </ListItem>
-                  </List>
+              </TabsContent>
+              <TabsContent value="defense">
+                <h2>Light/Medium Defense</h2>
+                <div className="flex flex-col gap-3">
+                  {/* <Button>
+                    <Link href="/docs/gameplay/guide-defense">
+                      Light/Medium Defense Guide
+                    </Link>
+                  </Button> */}
+                  <h3>Major Responsibilities</h3>
+                  <ul className="list-disc p-3">
+                    <li>
+                      Kill enemy the <b>offense</b> members.
+                    </li>
+                    <li>Return flags.</li>
+                    <li>
+                      Call out for <b>E-Grabs</b>
+                    </li>
+                  </ul>
+                  <h3>Minor Responsibilities</h3>
+                  <ul className="list-disc p-3">
+                    <li>
+                      Work with the <b>Sniper</b>
+                    </li>
+                    <li>
+                      Call out enemy <b>offense</b> you are shooting so the
+                      <b>Sniper</b> and <b>heavy on flag</b> know who to shoot.
+                    </li>
+                    <li>
+                      If the enemy <b>capper</b> has recently died, assist any
+                      walks your <b>offense</b> may be doing or meet your
+                      <b>capper.</b>
+                    </li>
+                  </ul>
                 </div>
-              </TabsPanel>
-              <TabsPanel value="sniping">
-                <Title order={2}>Sniper</Title>
-                <div>
-                  <Button component={Link} href="/docs/gameplay/guide-snipe">
-                    Sniper Guide
-                  </Button>
-                  <Title order={3}>Major Responsibilities</Title>
-                  <List withPadding listStyleType="disc">
-                    <ListItem>
-                      Spot/kill the enemy <Code>capper</Code> at all times.
-                    </ListItem>
-                    <ListItem>
+              </TabsContent>
+              <TabsContent value="sniping">
+                <h2>Sniper</h2>
+                <div className="flex flex-col gap-3">
+                  {/* <Button asChild>
+                    <Link href="/docs/gameplay/guide-snipe">Sniper Guide</Link>
+                  </Button> */}
+                  <h3>Major Responsibilities</h3>
+                  <ul className="list-disc p-3">
+                    <li>
+                      Spot/kill the enemy <b>capper</b> at all times.
+                    </li>
+                    <li>
                       Call out a time and direction the enemy cap will be.
-                    </ListItem>
-                    <ListItem>
-                      Call out for <Code>E-Grabs</Code>
-                    </ListItem>
-                    <ListItem>
-                      Snipe the enemy <Code>offense</Code> which your
-                      <Code>light defense</Code> and <Code>heavy on flag</Code>{" "}
-                      are fighting or during any walk attempts.
-                    </ListItem>
-                  </List>
-                  <Title order={3}>Minor Responsibilities</Title>
-                  <List withPadding listStyleType="disc">
-                    <ListItem>
-                      Call out enemy <Code>offense</Code> locations.
-                    </ListItem>
-                    <ListItem>
-                      Assist <Code>heavy on flag</Code> with clearing your base
-                      if over-run after an enemy has grabbed.
-                    </ListItem>
-                    <ListItem>
-                      Avoid enemy <Code>offense</Code> members.
-                    </ListItem>
-                    <ListItem>
-                      Snipe the enemy chaser if your <Code>capper</Code> is out.
-                    </ListItem>
-                  </List>
+                    </li>
+                    <li>
+                      Call out for <b>E-Grabs</b>
+                    </li>
+                    <li>
+                      Snipe the enemy <b>offense</b> which your
+                      <b>light defense</b> and <b>heavy on flag</b> are fighting
+                      or during any walk attempts.
+                    </li>
+                  </ul>
+                  <h3>Minor Responsibilities</h3>
+                  <ul className="list-disc p-3">
+                    <li>
+                      Call out enemy <b>offense</b> locations.
+                    </li>
+                    <li>
+                      Assist <b>heavy on flag</b> with clearing your base if
+                      over-run after an enemy has grabbed.
+                    </li>
+                    <li>
+                      Avoid enemy <b>offense</b> members.
+                    </li>
+                    <li>
+                      Snipe the enemy chaser if your <b>capper</b> is out.
+                    </li>
+                  </ul>
                 </div>
-              </TabsPanel>
-              <TabsPanel value="capping">
-                <Title order={2}>Capper</Title>
-                <Text className="text-lg">
-                  <Button component={Link} href="/docs/gameplay/guide-cap">
-                    Capper Guide
+              </TabsContent>
+              <TabsContent value="capping">
+                <h2>Capper</h2>
+                <p className="text-lg">
+                  <Button>
+                    <Link href="/docs/gameplay/guide-cap">Capper Guide</Link>
                   </Button>
-                </Text>
-                <Title order={3}>Major Responsibilities</Title>
-                <List withPadding listStyleType="disc">
-                  <ListItem>Grab and capture the enemy flag.</ListItem>
-                  <ListItem>
-                    Communicate times on your route for your{" "}
-                    <Code>offense</Code>
+                </p>
+                <h3>Major Responsibilities</h3>
+                <ul className="list-disc p-3">
+                  <li>Grab and capture the enemy flag.</li>
+                  <li>
+                    Communicate times on your route for your <b>offense</b>
                     members.
-                  </ListItem>
-                </List>
-                <Title order={3}>Minor Responsibilities</Title>
-                <List withPadding listStyleType="disc">
-                  <ListItem>
-                    Meet your <Code>offense</Code> if they decide to{" "}
-                    <Code>Walk</Code>
+                  </li>
+                </ul>
+                <h3>Minor Responsibilities</h3>
+                <ul className="list-disc p-3">
+                  <li>
+                    Meet your <b>offense</b> if they decide to <b>Walk</b>
                     the flag.
-                  </ListItem>
-                  <ListItem>
-                    Wait in case your <Code>offense</Code> needs more time to
-                    get to the stand.
-                  </ListItem>
-                </List>
-              </TabsPanel>
-              <TabsPanel value="standoffs">
-                <Title order={2}>Stand-Offs</Title>
-                <List withPadding listStyleType="disc">
-                  <ListItem>
-                    <Code>Offense</Code> stays on <Code>offense.</Code>
-                  </ListItem>
-                  <ListItem>
-                    <Code>Defense</Code> stays on <Code>defense.</Code>
-                  </ListItem>
-                  <ListItem>
+                  </li>
+                  <li>
+                    Wait in case your <b>offense</b> needs more time to get to
+                    the stand.
+                  </li>
+                </ul>
+              </TabsContent>
+              <TabsContent value="standoffs">
+                <h2>Stand-Offs</h2>
+                <ul className="list-disc p-3">
+                  <li>
+                    <b>Offense</b> stays on <b>offense.</b>
+                  </li>
+                  <li>
+                    <b>Defense</b> stays on <b>defense.</b>
+                  </li>
+                  <li>
                     It is more beneficial for your team to promptly go
-                    <Code>offense</Code> while your team has three members
-                    already on
-                    <Code>defense.</Code>
-                  </ListItem>
-                  <ListItem>
-                    <Code>Defense</Code> generally picks the medium class for
+                    <b>offense</b> while your team has three members already on
+                    <b>defense.</b>
+                  </li>
+                  <li>
+                    <b>Defense</b> generally picks the medium class for
                     maneuverability. Having a heavy can be effective as well.
-                  </ListItem>
-                  <ListItem>
-                    Stay near your spawns as <Code>defense.</Code>
-                  </ListItem>
-                  <ListItem>
-                    Various class compositions amongst <Code>offense</Code> each
-                    have their benefits and drawbacks. Running 3+ light classes
-                    on
-                    <Code>offense</Code> can be shut down while a broad spectrum
-                    of classes can be effective.
-                  </ListItem>
-                  <ListItem>
-                    <Code>Offense</Code> should coordinate times for hitting the
-                    enemy
-                    <Code>defense</Code> together. The game timer is effective
-                    at coordinating a time to attack.
-                  </ListItem>
-                </List>
-              </TabsPanel>
-              <TabsPanel value="glossary">
-                <Title id="glossary" order={2}>
-                  Glossary
-                </Title>
-                <Table cellPadding={6} data={tableData} />
-              </TabsPanel>
-            </Paper>
+                  </li>
+                  <li>
+                    Stay near your spawns as <b>defense.</b>
+                  </li>
+                  <li>
+                    Various class compositions amongst <b>offense</b> each have
+                    their benefits and drawbacks. Running 3+ light classes on
+                    <b>offense</b> can be shut down while a broad spectrum of
+                    classes can be effective.
+                  </li>
+                  <li>
+                    <b>Offense</b> should coordinate times for hitting the enemy
+                    <b>defense</b> together. The game timer is effective at
+                    coordinating a time to attack.
+                  </li>
+                </ul>
+              </TabsContent>
+              <TabsContent value="glossary">
+                <h2 id="glossary">Glossary</h2>
+                {/* TODO Table <Table className="p-3" data={tableData} /> */}
+              </TabsContent>
+            </div>
           </Tabs>
         </div>
       </div>
