@@ -3,12 +3,12 @@
 
 import { sql } from "drizzle-orm";
 import {
-  bigint,
   index,
-  mysqlTableCreator,
+  pgTableCreator,
+  serial,
   timestamp,
   varchar,
-} from "drizzle-orm/mysql-core";
+} from "drizzle-orm/pg-core";
 
 /**
  * This is an example of how to use the multi-project schema feature of Drizzle ORM. Use the same
@@ -16,19 +16,19 @@ import {
  *
  * @see https://orm.drizzle.team/docs/goodies#multi-project-schema
  */
-export const mysqlTable = mysqlTableCreator((name) => `dodges-domain_${name}`);
+export const createTable = pgTableCreator((name) => `dodges-domain_${name}`);
 
-export const posts = mysqlTable(
+export const posts = createTable(
   "post",
   {
-    id: bigint("id", { mode: "number" }).primaryKey().autoincrement(),
+    id: serial("id").primaryKey(),
+    name: varchar("name", { length: 256 }),
     createdAt: timestamp("created_at")
       .default(sql`CURRENT_TIMESTAMP`)
       .notNull(),
-    content: varchar("content", { length: 256 }),
-    authorId: varchar("authorId", { length: 256 }),
+    updatedAt: timestamp("updatedAt"),
   },
   (example) => ({
-    nameIndex: index("name_idx").on(example.content),
-  }),
+    nameIndex: index("name_idx").on(example.name),
+  })
 );

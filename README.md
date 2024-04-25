@@ -9,30 +9,26 @@ Tribes Ascend stuff (T3 soon).
 Made using the [T3 Stack](https://create.t3.gg/).
 
 ## Scripts
-
-npm run build - Build site
+"pnpm build" - Build site
 
 ### Dev
 
-npm install
-npm run dev - Live development
-npm run lint - Run linter
+"pnpm dev"
+"pnpm lint"
+"pnpm start"
 
 ### Drizzle
 
-npm run db:push - Drizzle push (mysql db)
-npm run db:studio - Drizzle Studio
+"pnpm db:push" - Drizzle push (mysql db)
+"pnpm db:studio" - Drizzle Studio
 
 ## What's here?
 
 ### Important
 
 - [Next.js](https://nextjs.org) framework.
-- [Clerk](https://clerk.com/) for authentication (future stuff).
 - [Drizzle](https://orm.drizzle.team/) object relation mapping.
-- [tRPC](https://trpc.io) for typesafe APIs.
-
-- [Planetscale](https://planetscale.com/) to be replaced. (hobby tier has been removed).
+- [VercelDB]
 
 ### Pretty stuff
 
@@ -42,4 +38,56 @@ npm run db:studio - Drizzle Studio
 
 ## How do I deploy this?
 
-Follow the deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel).
+Follow the deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+
+## TODO
+
+- [x] Transfer old data
+- [ ] ShadUIify -> swap mantine with ShadUI components
+- - [ ] Resizable
+- - [x] Navigation Menu
+- - [x] Card
+- - [x] HoverCard
+- - [x] Button
+- - [x] dropdown-menu
+- - [x] navigation-menu
+- - [x] Seperator
+- - [ ] Aspect Ratio
+- - [x] Accordion
+- - [x] Alert
+- - [x] Sheet
+- - [ ] Carousel (New)
+- - [ ] Data Table (New)
+- - [ ] Breadcrumb (New)
+- - [ ] Badge (New)
+- [x] Add react Icons
+- [ ] Paragraph & Headings styling
+- [ ] Layouts (create a standard)
+- [x] Migrate to git
+- [ ] Clone live sites color theme with similar tailwind offerings
+- [ ] Add T3 Section
+- - [ ] Different Color Theme
+- - [ ] Gameplay guides
+- - - [ ] Quick short PUG Guide
+- - - [ ] Recommended loadouts
+- - [ ] Recommended Settings
+- - [ ] Maps (Gallery pages)
+- - [ ] Patch History
+- - [ ] External Links
+
+- [ ] Make it deploy (vercel)
+- [ ] Scaffold basic ui with mock data
+- [ ] Tidy up build process
+- [ ] Actually setup a database (vercel postgres)
+- [ ] Attach database to UI
+- [ ] Add authentication (w/ clerk)
+- [ ] Add image/txt upload
+- [ ] "taint" (serverside-only)
+- [ ] Error management (w/ Sentry)
+- [ ] Routing/image page (parrallel route)
+- [ ] Delete button (w/ Server Actions)
+- [ ] Analytics (posthog)
+- [ ] Ratelimiting (upstash)
+
+### Newer processes 
+- [ ] Use "git add -p", review changes, "git status", "git commit

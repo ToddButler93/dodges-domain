@@ -1,70 +1,76 @@
 @tailwind base;
-@tailwind components;
-@tailwind utilities;
+  @tailwind components;
+  @tailwind utilities;
 
-:root {
-  --text-color: #404040; /* Neutral-700*/
-  --primary-color: teal;
-  --body-color: #f5f5f5; /* Neutral-100*/
-  --footer-color: #3f3f46; /* Zinc-700*/
+  @layer base {
+    :root {
+      --background: 0 0% 100%;
+      --foreground: 222.2 84% 4.9%;
 
-  --paper-color:  #f5f5f5; /* Neutral-100*/
-  --paper-color-dark: #1a1b1e;
-  --card-color:  #f5f5f5; /* Neutral-100*/
-  --card-color-dark: #27272a; /* Zinc-800*/
+      --card: 0 0% 100%;
+      --card-foreground: 222.2 84% 4.9%;
 
-  --text-color-dark: #f5f5f5; /* Zinc-50*/
-  --header-color-dark: #27272a; /* Zinc-800*/
-  --body-color-dark: #18181b; /* Zinc-900*/
-  --footer-color-dark: #3f3f46; /* Zinc-700*/
-}
+      --popover: 0 0% 100%;
+      --popover-foreground: 222.2 84% 4.9%;
 
-header {
-  height: rem(60px);
-  padding-left: var(--mantine-spacing-md);
-  padding-right: var(--mantine-spacing-md);
-  background-color: light-dark(var(--primary-color), var(--header-color-dark));
-  color: light-dark(var(--text-color-dark), var(--text-color-dark));
-  .mantine-Button-root {
-    @mixin hover {
-      background-color: light-dark(var(--primary-color), var(--primary-color));
+      --primary: 222.2 47.4% 11.2%;
+      --primary-foreground: 210 40% 98%;
+
+      --secondary: 210 40% 96.1%;
+      --secondary-foreground: 222.2 47.4% 11.2%;
+
+      --muted: 210 40% 96.1%;
+      --muted-foreground: 215.4 16.3% 46.9%;
+
+      --accent: 210 40% 96.1%;
+      --accent-foreground: 222.2 47.4% 11.2%;
+
+      --destructive: 0 84.2% 60.2%;
+      --destructive-foreground: 210 40% 98%;
+
+      --border: 214.3 31.8% 91.4%;
+      --input: 214.3 31.8% 91.4%;
+      --ring: 222.2 84% 4.9%;
+
+      --radius: 0.5rem;
+    }
+
+    .dark {
+      --background: 222.2 84% 4.9%;
+      --foreground: 210 40% 98%;
+
+      --card: 222.2 84% 4.9%;
+      --card-foreground: 210 40% 98%;
+
+      --popover: 222.2 84% 4.9%;
+      --popover-foreground: 210 40% 98%;
+
+      --primary: 210 40% 98%;
+      --primary-foreground: 222.2 47.4% 11.2%;
+
+      --secondary: 217.2 32.6% 17.5%;
+      --secondary-foreground: 210 40% 98%;
+
+      --muted: 217.2 32.6% 17.5%;
+      --muted-foreground: 215 20.2% 65.1%;
+
+      --accent: 217.2 32.6% 17.5%;
+      --accent-foreground: 210 40% 98%;
+
+      --destructive: 0 62.8% 30.6%;
+      --destructive-foreground: 210 40% 98%;
+
+      --border: 217.2 32.6% 17.5%;
+      --input: 217.2 32.6% 17.5%;
+      --ring: 212.7 26.8% 83.9%;
     }
   }
-}
 
-body {
-  background-color: light-dark(var(--body-color), var(--body-color-dark));
-  color: light-dark(var(--text-color), var(--text-color-dark));
-}
-
-footer {
-  @apply bg-zinc-700 text-zinc-100;
-}
-
-
-.mantine-Paper-root {
-  background-color: light-dark(var(--paper-color), var(--paper-color-dark));
-  color: light-dark(var(--text-color), var(--text-color-dark));
-}
-
-.mantine-Card-root {
-  background-color: light-dark(var(--card-color), var(--card-color-dark));
-  color: light-dark(var(--text-color), var(--text-color-dark));
-}
-.mantine-Button-root {
-  background-color: light-dark(var(--primary-color), var(--primary-color));
-  color: light-dark(var(--text-color-dark), var(--text-color-dark));
-}
-.mantine-Button-root:hover {
-  background-color: light-dark(var(--header-color-dark), var(--header-color-dark));
-  color: light-dark(var(--text-color-dark), var(--text-color-dark));
-}
-
-.mantine-Text-root {
-  color: light-dark(var(--text-color), var(--text-color-dark));
-}
-
-.mantine-HoverCard-dropdown {
-  background-color: light-dark(var(--body-color), var(--header-color-dark));
-  color: light-dark(var(--text-color), var(--text-color-dark));
-}
+  @layer base {
+    * {
+      @apply border-border;
+    }
+    body {
+      @apply bg-background text-foreground;
+    }
+  }

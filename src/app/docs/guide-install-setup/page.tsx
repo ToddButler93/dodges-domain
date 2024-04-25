@@ -1,206 +1,157 @@
-"use client";
-
 import Link from "next/link";
-import {
-  Image,
-  Divider,
-  Button,
-  Accordion,
-  Alert,
-  Card,
-  Title,
-  Grid,
-  GridCol,
-  HoverCard,
-  Group,
-  HoverCardDropdown,
-  Text,
-  HoverCardTarget,
-  Paper,
-  ListItem,
-  List,
-  Container,
-} from "@mantine/core";
 import { FaPlus } from "react-icons/fa6";
 
-import classes from "./install.module.css";
+import { Card, CardHeader } from "~/components/ui/card";
+import { Separator } from "~/components/ui/separator";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "~/components/ui/accordion";
+import {
+  HoverCard,
+  HoverCardContent,
+  HoverCardTrigger,
+} from "~/components/ui/hover-card";
+import { Button } from "~/components/ui/button";
+import { Alert } from "~/components/ui/alert";
+
 export default function GuideInstallSetup() {
   return (
     <>
-      <div className="flex max-w-6xl flex-col gap-6 p-6">
-        <Paper className="flex flex-col shadow-xl">
-          <Card className="grow px-6 py-6 text-center shadow-xl">
-            <Title>Tribes Ascend Installation</Title>
-          </Card>
-          <Grid justify="center" align="stretch">
-            <GridCol
-              span={{ base: 12, sm: 5.5 }}
-              className="flex items-center justify-evenly gap-3 p-6"
+      <div className="flex flex-col gap-6">
+        <Card className=" grow justify-center p-6">
+          <h1 className="flex flex-row justify-center">
+            Tribes Ascend Installation
+          </h1>
+        </Card>
+        <div className="flex flex-row justify-evenly gap-3 p-6">
+          <Card className="flex flex-col items-center justify-between gap-3 p-3">
+            <a
+              href="https://store.steampowered.com/app/17080/Tribes_Ascend/"
+              target="_blank"
             >
-              <Card className="flex grow flex-col justify-between gap-3">
-                <a
-                  href="https://store.steampowered.com/app/17080/Tribes_Ascend/"
-                  target="_blank"
-                >
-                  <Image
-                    alt=""
-                    height={200}
-                    src="/static/img/tribes-ascend-logo.png"
-                  />
-                  <Divider />
-                </a>
-                <HoverCard
-                  width={400}
-                  radius="md"
-                  shadow="xl"
-                  withinPortal
-                  openDelay={50}
-                  closeDelay={50}
-                  transitionProps={{ transition: "scale-y" }}
-                >
-                  <HoverCardTarget>
-                    <Button
-                      component="a"
-                      href="steam://install/17080/"
-                      size="xl"
-                      radius="xl"
-                      styles={{
-                        inner: { fontSize: 24 },
-                      }}
-                    >
-                      Install Via Steam
+              <img
+                alt=""
+                height={200}
+                src="/static/img/tribes-ascend-logo.png"
+              />
+            </a>
+            <Separator />
+            <HoverCard
+              openDelay={50}
+              closeDelay={50}
+            >
+              <HoverCardTrigger>
+                <Button asChild>
+                  <a href="steam://install/17080/">Install Via Steam</a>
+                </Button>
+              </HoverCardTrigger>
+              <HoverCardContent className="p-center flex flex-col gap-3">
+                <p>Steam install is recommended.</p>{" "}
+                <div>
+                  <div className="flex flex-row justify-between">
+                    <Button asChild>
+                      <a href="https://f000.backblazeb2.com/file/tribes-zip/Tribes_Ascend_Parting_Gifts.zip">
+                        Manual Download
+                      </a>
                     </Button>
-                  </HoverCardTarget>
-                  <HoverCardDropdown className="flex flex-col gap-3 text-center">
-                    <Text size="sm">Steam install is recommended.</Text>{" "}
-                    <div className={classes.dropdownFooter}>
-                      <div className="flex flex-row justify-between">
-                        <Button
-                          component="a"
-                          target="_blank"
-                          href="https://f000.backblazeb2.com/file/tribes-zip/Tribes_Ascend_Parting_Gifts.zip"
-                          variant="default"
-                        >
-                          Manual Download
-                        </Button>
-                        <Button
-                          component={Link}
-                          href="/docs/linux-install"
-                          variant="default"
-                        >
-                          Using Linux?
-                        </Button>
-                      </div>
-                    </div>
-                  </HoverCardDropdown>
-                </HoverCard>
-              </Card>
-            </GridCol>
-            <GridCol
-              span={{ base: 4, sm: 1 }}
-              className="flex items-center justify-center gap-3"
-            >
-              <FaPlus size={64} />
-            </GridCol>
-            <GridCol
-              span={{ base: 12, sm: 5.5 }}
-              className="flex justify-evenly gap-3 p-6"
-            >
-              <Card className="flex grow flex-col justify-between">
-                <a
-                  href="https://github.com/mcoot/TribesLauncherSharp/releases/latest"
-                  target="_blank"
-                >
-                  <Image
-                    alt=""
-                    src="https://www.tamods.org/assets/images/tamods-logo-83781dca7e008d9db0a74439960ce873.png"
-                  />
-                  <Divider />
-                </a>
 
-                <HoverCard
-                  width={400}
-                  radius="md"
-                  shadow="md"
-                  withinPortal
-                  openDelay={50}
-                  closeDelay={50}
-                  transitionProps={{ transition: "scale-y" }}
-                >
-                  <HoverCardTarget>
-                    <Button
-                      component="a"
-                      href="https://github.com/mcoot/TribesLauncherSharp/releases/latest"
-                      target="_blank"
-                      size="xl"
-                      radius="xl"
-                      styles={{
-                        inner: { fontSize: 24 },
-                      }}
-                    >
-                      Download
+                    <Button asChild>
+                      <a href="/docs/linux-install">Using Linux?</a>
                     </Button>
-                  </HoverCardTarget>
-                  <HoverCardDropdown className="flex flex-col gap-3 text-center">
-                    <Text size="sm">Please extract before launching.</Text>
-                    <div className={classes.dropdownFooter}>
-                      <Group justify="space-between">
-                        <Alert title="Warning" color="orange">
-                          <Text className="pb-3 text-start">
-                            You will need the{" "}
-                            <Link passHref={true} href="https://aka.ms/vs/17/release/vc_redist.x86.exe">
-                              Microsoft Visual C++ x86 Redistributes
-                            </Link>{" "}
-                            if you don&apos;t have them already installed.
-                          </Text>
-                          <Button
-                            component={Link}
-                            href="https://aka.ms/vs/17/release/vc_redist.x86.exe"
-                            variant="default"
-                          >
-                            C++ Redist Download
-                          </Button>
-                        </Alert>
-                      </Group>
-                    </div>
-                  </HoverCardDropdown>
-                </HoverCard>
-              </Card>
-            </GridCol>
-          </Grid>
-        </Paper>
-        <Divider>Extract and Launch the Tribes Launcher</Divider>
-        <Paper className="flex flex-grow justify-center py-6 shadow-xl">
-          <List
-            listStyleType="ordered"
-            className="flex max-w-xl flex-col gap-3 pe-6 text-lg"
-          >
-            <Title className="text-center">Instructions</Title>
-            <ListItem>Launch the Tribes Launcher.</ListItem>
-            <ListItem>
+                  </div>
+                </div>
+              </HoverCardContent>
+            </HoverCard>
+          </Card>
+          <div className="flex items-center justify-center gap-3">
+            <FaPlus size={64} />
+          </div>
+          <Card className="flex flex-col items-center justify-between gap-3 p-3">
+            <Link
+              passHref={true}
+              href="https://github.com/mcoot/TribesLauncherSharp/releases/latest"
+              target="_blank"
+            >
+              <img
+                alt=""
+                src="https://www.tamods.org/assets/images/tamods-logo-83781dca7e008d9db0a74439960ce873.png"
+              />
+            </Link>
+            <Separator />
+
+            <HoverCard
+              openDelay={50}
+              closeDelay={50}
+            >
+              <HoverCardTrigger>
+                <Button asChild>
+                  <a href="https://github.com/mcoot/TribesLauncherSharp/releases/latest">
+                    Download
+                  </a>
+                </Button>
+              </HoverCardTrigger>
+              <HoverCardContent className="p-center flex flex-col gap-3">
+                <p>Please extract before launching.</p>
+                <div>
+                  <div className=" justify-between">
+                    <Alert color="orange">
+                      <p className="p-start pb-3">
+                        You will need the{" "}
+                        <Link
+                          passHref={true}
+                          href="https://aka.ms/vs/17/release/vc_redist.x86.exe"
+                        >
+                          Microsoft Visual C++ x86 Redistributes
+                        </Link>{" "}
+                        if you don&apos;t have them already installed.
+                      </p>
+                      <Button asChild>
+                        <Link
+                          passHref={true}
+                          href="https://aka.ms/vs/17/release/vc_redist.x86.exe"
+                        >
+                          C++ Redist Download
+                        </Link>
+                      </Button>
+                    </Alert>
+                  </div>
+                </div>
+              </HoverCardContent>
+            </HoverCard>
+          </Card>
+        </div>
+        <Separator />
+        <div className="flex flex-grow justify-center">
+          <ul className="flex max-w-2xl flex-col gap-3">
+            <h1>Instructions</h1>
+            <li>Extract and launch the Tribes Launcher.</li>
+            <li>
               Select the Community or PUG for your login server, hit Launch,
               wait for your game to start then hit inject on your launcher to
               enable TA Mods.
-            </ListItem>
-            <ListItem>
+            </li>
+            <li>
               Once injected, the Play Now button will show whether you are in
               OOTB or GOTY mode. There is a button on the main menu to switch.
               You need to be in GOTY mode to play on GOTY servers and OOTB mode
               to play on OOTB servers.
-            </ListItem>
-          </List>
-        </Paper>
-        <Divider />
-        <Paper className="max-w-6xl py-6 shadow-xl">
-          <Container size="sm">
-            <Title ta="center">Troubleshooting</Title>
+            </li>
+          </ul>
+        </div>
+        <Separator />
+        <div className="flex flex-row justify-center p-6">
+          <div className="flex max-w-2xl flex-col justify-center">
+            <h1 className=" content-center">Troubleshooting</h1>
 
-            <Accordion variant="separated">
-              <Accordion.Item value="IDKWHERETRIBESIS">
-                <Accordion.Control>
+            <Accordion type="single" collapsible>
+              <AccordionItem value="IDKWHERETRIBESIS">
+                <AccordionTrigger>
                   Launcher doesn&apos;t know where Tribes is installed?
-                </Accordion.Control>
-                <Accordion.Panel>
+                </AccordionTrigger>
+                <AccordionContent>
                   <p>
                     Usually it&apos;s &quot;C:\Program Files
                     (x86)\Steam\SteamApps\Common\Tribes\Binaries\Win32\TribesAscend.exe&quot;.
@@ -221,26 +172,29 @@ export default function GuideInstallSetup() {
                     ></source>
                     Your browser does not support .webm video.
                   </video>
-                </Accordion.Panel>
-              </Accordion.Item>
-              <Accordion.Item value="IHEARBUTCANTSEE">
-                <Accordion.Control>
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="IHEARBUTCANTSEE">
+                <AccordionTrigger>
                   I hear the inject sound, but nothing about my game changes
-                </Accordion.Control>
-                <Accordion.Panel>
+                </AccordionTrigger>
+                <AccordionContent>
                   <p>
-                    <Link passHref={true} href="https://aka.ms/vs/17/release/vc_redist.x86.exe">
+                    <Link
+                      passHref={true}
+                      href="https://aka.ms/vs/17/release/vc_redist.x86.exe"
+                    >
                       Microsoft Visual C++ redistributes
                     </Link>{" "}
                     must be installed.
                   </p>
-                </Accordion.Panel>
-              </Accordion.Item>
-              <Accordion.Item value="FAILTOJOIN">
-                <Accordion.Control>
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="FAILTOJOIN">
+                <AccordionTrigger>
                   I keep failing to join a server
-                </Accordion.Control>
-                <Accordion.Panel>
+                </AccordionTrigger>
+                <AccordionContent>
                   <p>
                     Probably have the wrong game mode selected for that server,
                     community servers are labelled &quot;OOTB&quot; or
@@ -262,14 +216,14 @@ export default function GuideInstallSetup() {
                     ></source>
                     Your browser does not support .webm video.
                   </video>
-                </Accordion.Panel>
-              </Accordion.Item>
+                </AccordionContent>
+              </AccordionItem>
 
-              <Accordion.Item value="COMMUNITYMAP">
-                <Accordion.Control>
+              <AccordionItem value="COMMUNITYMAP">
+                <AccordionTrigger>
                   Can&apos;t join a server with a community made map
-                </Accordion.Control>
-                <Accordion.Panel>
+                </AccordionTrigger>
+                <AccordionContent>
                   <p>
                     To play on a server hosting a community made map you only
                     need the latest version of the map. In the server browsers
@@ -289,15 +243,15 @@ export default function GuideInstallSetup() {
                     On occasion you will have to contact the owner for the
                     files.
                   </p>
-                </Accordion.Panel>
-              </Accordion.Item>
-              <Accordion.Item value="PACKAGEINSTALLERROR">
-                <Accordion.Control>
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="PACKAGEINSTALLERROR">
+                <AccordionTrigger>
                   I get an error when I start the game after installing packages
-                </Accordion.Control>
-                <Accordion.Panel>
-                  <List listStyleType="ordered">
-                    <ListItem>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <ul>
+                    <li>
                       <p>
                         In your &quot;Tribes Ascend&quot; install folder, go to
                         \TribesGame\CookedPC\Maps\ and delete all files.
@@ -305,8 +259,8 @@ export default function GuideInstallSetup() {
                       <Link href="#launcher-doesnt-know-where-tribes-is-installed">
                         Not sure where Tribes is installed?
                       </Link>
-                    </ListItem>
-                    <ListItem>
+                    </li>
+                    <li>
                       <p>
                         Now, in &quot;Steam&quot;, you will need to verify your
                         files.
@@ -316,12 +270,12 @@ export default function GuideInstallSetup() {
                         &quot;Tribes Ascend&quot; and hit
                         &quot;Properties&quot;.
                       </p>
-                      <Image
+                      <img
                         src="/static/img/install/steam-properties.png"
                         alt=""
-                        h={400}
-                        w="auto"
-                        fit="contain"
+                        height={400}
+                        width="auto"
+                        className="contain-size"
                       />
                       <p>
                         Select the &quot;Local files&quot; tab and click the
@@ -329,66 +283,66 @@ export default function GuideInstallSetup() {
                         This will re-download the missing files you just deleted
                         from the base game via steam.
                       </p>
-                      <Image
+                      <img
                         src="/static/img/install/steam-local-files.png"
                         alt=""
-                        h={200}
-                        w="auto"
-                        fit="contain"
+                        height={200}
+                        width="auto"
+                        className="contain-size"
                       />
-                    </ListItem>
-                    <ListItem>
+                    </li>
+                    <li>
                       <p>
                         Once complete, in your &quot;Tribes Launcher&quot; hit
                         the &quot;Advanced&quot; tab and hit &quot;Reinstall
                         TAMods&quot;. Hit &quot;Yes&quot; on the prompt and then
                         hit &quot;Update&quot; to start the process.
                       </p>
-                      <Image
+                      <img
                         src="/static/img/install/launcher-advanced-tab.png"
                         alt=""
-                        h={200}
-                        w="auto"
-                        fit="contain"
+                        height={200}
+                        width="auto"
+                        className="contain-size"
                       />
                       <p>
                         Now, under the &quot;Packages&quot; Tab you can install
                         the custom packages that were removed earlier. This
                         should just be the custom maps and assets packages.
                       </p>
-                      <Image
+                      <img
                         src="/static/img/install/launcher-packages-tab.png"
                         alt=""
-                        h={200}
-                        w="auto"
-                        fit="contain"
+                        height={200}
+                        width="auto"
+                        className="contain-size"
                       />
-                    </ListItem>
-                  </List>
-                </Accordion.Panel>
-              </Accordion.Item>
-              <Accordion.Item value="IDK">
-                <Accordion.Control>
+                    </li>
+                  </ul>
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="IDK">
+                <AccordionTrigger>
                   I&apos;m having issues not stated here with the launcher
-                </Accordion.Control>
-                <Accordion.Panel>
+                </AccordionTrigger>
+                <AccordionContent>
                   <p>
                     When in doubt, under the &quot;Advanced&quot; tab hit
                     &quot;Reinstall TAMods&quot;. This should allow you to
                     reinstall packages as well.
                   </p>
-                  <Image
+                  <img
                     src="/static/img/install/launcher-advanced-tab.png"
                     alt=""
-                    h={200}
-                    w="auto"
-                    fit="contain"
+                    height={200}
+                    width="auto"
+                    className="contain-size"
                   />
-                </Accordion.Panel>
-              </Accordion.Item>
+                </AccordionContent>
+              </AccordionItem>
             </Accordion>
-          </Container>
-        </Paper>
+          </div>
+        </div>
       </div>
     </>
   );

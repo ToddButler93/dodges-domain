@@ -9,52 +9,42 @@ import {
 } from "~/components/ui/card";
 
 import Image from "next/image";
-import { NavBar } from "~/components/navbar";
 
-export default function HomePage() {
+export default function T3HomePage() {
   return (
     <main className="">
-    <NavBar />
-      <div className="flex min-h-screen w-full flex-col items-center pb-6">
+      <div>
+        <div className="relative">
           <div className="flex max-h-[720px] w-screen items-center overflow-y-clip bg-cover bg-center bg-no-repeat">
-            <video
+            <img
               width="100%"
               height="100%"
-              autoPlay={true}
-              muted
-              loop
-              preload="auto"
-              playsInline
               className="content-center"
-            >
-              <source
-                src="/static/video/kata-ds-bounce.webm"
-                type="video/webm"
-              ></source>
-              Your browser does not support .webm video.
-            </video>
-            <div className="flex flex-col absolute inset-0 px-3 items-center justify-center">
+              src="https://cdn1.epicgames.com/spt-assets/28f7b2fa11de437db22450f7f43b584d/tribes-3-rivals-8j2mp.jpg"
+            />
+            <div className="flex flex-col absolute inset-0 items-center justify-center">
               <div className="flex flex-col gap-6">
-                <Image
+                <img
                   alt=""
-                  src="/static/img/tribes-ascend-logo.png"
+                  src="https://cdn1.epicgames.com/spt-assets/28f7b2fa11de437db22450f7f43b584d/tribes-3-rivals-logo-m9e2d.png"
                   width={500}
                   height={500}
                   style={{ objectFit: "contain" }}
                 />
                 <Button asChild size="lg">
-                  <Link href="/docs/guide-install-setup">
-                    Install Tribes Ascend
+                  <Link href="https://store.steampowered.com/app/2687970/TRIBES_3_Rivals/">
+                    Get Tribes 3: Rivals
                   </Link>
                 </Button>
                 <Button variant="secondary" asChild size="lg">
-                  <Link href="/t3">
-                    Looking for Tribes 3: Rivals?
+                  <Link href="/">
+                    Looking for Tribes: Ascend?
                   </Link>
                 </Button>
               </div>
             </div>
           </div>
+        </div>
         <div className="grid grid-cols-3 gap-6 p-6">
           <Card className="grid-col grid items-center justify-center rounded-md drop-shadow-md">
             <CardHeader>
