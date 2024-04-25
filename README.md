@@ -57,7 +57,8 @@ Follow the deployment guides for [Vercel](https://create.t3.gg/en/deployment/ver
 - - [x] Alert
 - - [x] Sheet
 - - [ ] Carousel (New)
-- - [ ] Data Table (New)
+- - [x] Table
+- - [x] Tabs
 - - [ ] Breadcrumb (New)
 - - [ ] Badge (New)
 - [x] Add react Icons
