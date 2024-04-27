@@ -1,14 +1,16 @@
 import type { Key } from "react";
-import type { ServerInfo } from "~/server/api/routers/loginServers";
-import { api } from "~/trpc/server";
 import { Card } from "./ui/card";
 import { Badge } from "./ui/badge";
+import {
+  type ServerInfo,
+  getCommunityLoginData,
+  getPUGLoginData,
+} from "~/server/api/loginServers";
 
 export default async function ServerBrowserComponent() {
-  const sortedPugServers = await api.pugLoginData.getPUGLoginData.query();
+  const sortedPugServers = await getPUGLoginData();
 
-  const sortedCommunityServers =
-    await api.communityLoginData.getCommunityLoginData.query();
+  const sortedCommunityServers = await getCommunityLoginData();
 
   if (sortedPugServers == null && sortedCommunityServers == null)
     return <div>The PUG login server is currently unavailable.</div>;
