@@ -2,7 +2,7 @@
 
 "use client";
 
-import Link, { LinkProps } from "next/link";
+import Link, { type LinkProps } from "next/link";
 import { usePathname, useSearchParams } from "next/navigation";
 import * as React from "react";
 import { cn } from "~/lib/utils";
@@ -13,7 +13,7 @@ interface Context {
   searchParam: string;
   selected: string;
 }
-const TabsContext = React.createContext<Context>(null as any);
+const TabsContext = React.createContext<Context | null>(null);
 
 export function Tabs(props: {
   children: React.ReactNode;
@@ -29,9 +29,9 @@ export function Tabs(props: {
   searchParam?: string;
 }) {
   const { children, className, searchParam = "tab", ...other } = props;
-  const searchParams = useSearchParams()!;
+  const searchParams = useSearchParams();
 
-  const selected = searchParams.get(searchParam) || props.defaultValue;
+  const selected = searchParams.get(searchParam) ?? props.defaultValue;
 
   const pathname = usePathname();
   const hrefFor: Context["hrefFor"] = React.useCallback(
@@ -47,7 +47,7 @@ export function Tabs(props: {
 
       return pathname + (asString ? "?" + asString : "");
     },
-    [searchParams, props.searchParam],
+    [searchParams, props.defaultValue, pathname, searchParam],
   );
 
   return (
