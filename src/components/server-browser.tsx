@@ -32,7 +32,7 @@ export default async function ServerBrowserComponent() {
                         width={500}
                         height={500}
                         alt=""
-                        src="/static/img/maps/acheron-river.png"
+                        src="/static/img/maps/oce.jpg"
                       />
                     </div>
                     <p>{server.name}</p>
@@ -67,7 +67,7 @@ export default async function ServerBrowserComponent() {
                       width={500}
                       height={500}
                       alt=""
-                      src="/static/img/maps/acheron-river.png"
+                      src="/static/img/maps/oce.jpg"
                     />
                   </div>
                   <p>{server.name}</p>

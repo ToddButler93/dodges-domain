@@ -9,11 +9,6 @@ import { Badge } from "./ui/badge";
 import Image from "next/image";
 
 export default async function MatchHistoryComponent() {
-  const currentUnixTimeSeconds =
-    Math.floor(new Date().getTime()) - 30 * 24 * 60 * 60 * 1000;
-
-  console.log(currentUnixTimeSeconds);
-
   const matchHistory = await getMatchHistory();
 
   if (matchHistory == null)
@@ -30,7 +25,7 @@ export default async function MatchHistoryComponent() {
               {matchHistory.reverse().map((match: MatchInfo, index: Key) => (
                 <Card className="shadow-md" key={index}>
                   <Image
-                    src="/static/img/maps/acheron-river.png"
+                    src="/static/img/maps/oce.jpg"
                     width={500}
                     height={500}
                     className="grow rounded-md p-3"

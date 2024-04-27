@@ -24,8 +24,8 @@ export default function CustomMaps() {
           <Card className="mx-auto max-w-xl">
             <p className=" py-3 text-center text-3xl">Acheron</p>
             <Image
-              width={500}
-              height={500}
+              width={1500}
+              height={1500}
               alt=""
               className="rounded"
               src="/static/img/maps/acheron-spawn.png"
@@ -34,8 +34,8 @@ export default function CustomMaps() {
           <Card className="mx-auto max-w-xl">
             <p className=" py-3 text-center text-3xl">Andromeda</p>
             <Image
-              width={500}
-              height={500}
+              width={1500}
+              height={1500}
               alt=""
               className="rounded"
               src="/static/img/maps/andromeda2.jpg"
@@ -44,8 +44,8 @@ export default function CustomMaps() {
           <Card className="mx-auto max-w-xl">
             <p className=" py-3 text-center text-3xl">Ascent</p>
             <Image
-              width={500}
-              height={500}
+              width={1500}
+              height={1500}
               alt=""
               className="rounded"
               src="/static/img/maps/ascent2.jpg"
@@ -54,8 +54,8 @@ export default function CustomMaps() {
           <Card className="mx-auto max-w-xl">
             <p className=" py-3 text-center text-3xl">Blues</p>
             <Image
-              width={500}
-              height={500}
+              width={1500}
+              height={1500}
               alt=""
               className="rounded"
               src="" // TODO
@@ -64,8 +64,8 @@ export default function CustomMaps() {
           <Card className="mx-auto max-w-xl">
             <p className=" py-3 text-center text-3xl">Crash</p>
             <Image
-              width={500}
-              height={500}
+              width={1500}
+              height={1500}
               alt=""
               className="rounded"
               src="" // TODO
@@ -74,8 +74,8 @@ export default function CustomMaps() {
           <Card className="mx-auto max-w-xl">
             <p className=" py-3 text-center text-3xl">Deserted Valley</p>
             <Image
-              width={500}
-              height={500}
+              width={1500}
+              height={1500}
               alt=""
               className="rounded"
               src="/static/img/maps/deserted-valley-overview.png"
@@ -84,8 +84,8 @@ export default function CustomMaps() {
           <Card className="mx-auto max-w-xl">
             <p className=" py-3 text-center text-3xl">Eclipse</p>
             <Image
-              width={500}
-              height={500}
+              width={1500}
+              height={1500}
               alt=""
               className="rounded"
               src="/static/img/maps/eclipse2.jpg"
@@ -94,8 +94,8 @@ export default function CustomMaps() {
           <Card className="mx-auto max-w-xl">
             <p className=" py-3 text-center text-3xl">Fracture</p>
             <Image
-              width={500}
-              height={500}
+              width={1500}
+              height={1500}
               alt=""
               className="rounded"
               src="/static/img/maps/fra.jpg"
@@ -104,8 +104,8 @@ export default function CustomMaps() {
           <Card className="mx-auto max-w-xl">
             <p className=" py-3 text-center text-3xl">Incidamus</p>
             <Image
-              width={500}
-              height={500}
+              width={1500}
+              height={1500}
               alt=""
               className="rounded"
               src="/static/img/maps/incid.jpg"
@@ -114,8 +114,8 @@ export default function CustomMaps() {
           <Card className="mx-auto max-w-xl">
             <p className=" py-3 text-center text-3xl">Meridian</p>
             <Image
-              width={500}
-              height={500}
+              width={1500}
+              height={1500}
               alt=""
               className="rounded"
               src="" // TOOD
@@ -124,8 +124,8 @@ export default function CustomMaps() {
           <Card className="mx-auto max-w-xl">
             <p className=" py-3 text-center text-3xl">Oceanus</p>
             <Image
-              width={500}
-              height={500}
+              width={1500}
+              height={1500}
               alt=""
               className="rounded"
               src="/static/img/maps/oce.jpg"
@@ -134,8 +134,8 @@ export default function CustomMaps() {
           <Card className="mx-auto max-w-xl">
             <p className=" py-3 text-center text-3xl">Periculo</p>
             <Image
-              width={500}
-              height={500}
+              width={1500}
+              height={1500}
               alt=""
               className="rounded"
               src="/static/img/maps/periculo-features.png"
@@ -144,8 +144,8 @@ export default function CustomMaps() {
           <Card className="mx-auto max-w-xl">
             <p className=" py-3 text-center text-3xl">Phlegethon</p>
             <Image
-              width={500}
-              height={500}
+              width={1500}
+              height={1500}
               alt=""
               className="rounded"
               src="/static/img/maps/phlegathon-overview.png"
@@ -154,8 +154,8 @@ export default function CustomMaps() {
           <Card className="mx-auto max-w-xl">
             <p className=" py-3 text-center text-3xl">Polaris</p>
             <Image
-              width={500}
-              height={500}
+              width={1500}
+              height={1500}
               alt=""
               className="rounded"
               src="/static/img/maps/polaris2.jpg"
@@ -164,8 +164,8 @@ export default function CustomMaps() {
           <Card className="mx-auto max-w-xl">
             <p className=" py-3 text-center text-3xl">Styx</p>
             <Image
-              width={500}
-              height={500}
+              width={1500}
+              height={1500}
               alt=""
               className="rounded"
               src="/static/img/maps/sty.jpg"
@@ -181,8 +181,8 @@ export default function CustomMaps() {
           <Card className="mx-auto max-w-xl">
             <p className=" py-3 text-center text-3xl">Elysian Battleground</p>
             <Image
-              width={500}
-              height={500}
+              width={1500}
+              height={1500}
               alt=""
               className="rounded"
               src="/static/img/maps/eb.jpg"
@@ -191,8 +191,8 @@ export default function CustomMaps() {
           <Card className="mx-auto max-w-xl">
             <p className=" py-3 text-center text-3xl">Ruins</p>
             <Image
-              width={500}
-              height={500}
+              width={1500}
+              height={1500}
               alt=""
               className="rounded"
               src="/static/img/maps/ruins2.jpg"
@@ -209,8 +209,8 @@ export default function CustomMaps() {
           <Card className="mx-auto max-w-xl">
             <p className=" py-3 text-center text-3xl">Broadside</p>
             <Image
-              width={500}
-              height={500}
+              width={1500}
+              height={1500}
               alt=""
               className="rounded"
               src="/static/img/maps/broadside-overview.png"
@@ -219,8 +219,8 @@ export default function CustomMaps() {
           <Card className="mx-auto max-w-xl">
             <p className=" py-3 text-center text-3xl">Air Arena</p>
             <Image
-              width={500}
-              height={500}
+              width={1500}
+              height={1500}
               alt=""
               className="rounded"
               src="" // TODO
@@ -237,8 +237,8 @@ export default function CustomMaps() {
           <Card className="mx-auto max-w-xl">
             <p className=" py-3 text-center text-3xl">Treacherous Pass</p>
             <Image
-              width={500}
-              height={500}
+              width={1500}
+              height={1500}
               alt=""
               className="rounded"
               src="" // TODO
@@ -247,8 +247,8 @@ export default function CustomMaps() {
           <Card className="mx-auto max-w-xl">
             <p className=" py-3 text-center text-3xl">Maze Runner</p>
             <Image
-              width={500}
-              height={500}
+              width={1500}
+              height={1500}
               alt=""
               className="rounded"
               src="" //TODO
