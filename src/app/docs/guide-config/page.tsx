@@ -14,7 +14,7 @@ export default function GuideConfig() {
         <div className="flex flex-col gap-6">
           <div className="flex flex-col gap-6">
             <p>
-              Your <b className=" text-xl">Tribes.ini</b> is the config file for
+              Your <b className="">Tribes.ini</b> is the config file for
               your graphical settings. It is located under{" "}
               <b>Documents\My Games\Tribes Ascend\TribesGame\Config\</b>
             </p>
@@ -58,7 +58,7 @@ export default function GuideConfig() {
             <Separator />
             <div>
               <Alert title="Note" color="teal">
-                <p className="text-start text-xl">
+                <p className="text-start">
                   All ini&quot;s provided are for 1080p resolution. Manually
                   alter this by changing <b>ResX=1920</b> and <b>ResY=1080</b>{" "}
                   to your native monitor resolution. HUD Elements can be toggled
