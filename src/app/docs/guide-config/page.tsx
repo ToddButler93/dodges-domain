@@ -23,9 +23,9 @@ export default function GuideConfig() {
               <Card className="flex flex-col gap-3 p-3 shadow-xl">
                 <Link href="/static/text/dodges-ini/tribes.ini">
                   <Image
-                    width={500}
-                    height={500}
-                    src="/static/img/dodge-ini.png"
+                    width={1500}
+                    height={1500}
+                    src="https://utfs.io/f/b6d64b8a-be70-459e-b652-2d3b6ca560c7-ni4r8u.png"
                     alt="Dodges tribes.ini"
                   />
                 </Link>
@@ -43,9 +43,9 @@ export default function GuideConfig() {
               <Card className="flex flex-col gap-3 p-3 shadow-xl">
                 <Link href="/static/text/dodges-pretty-ini/tribes.ini">
                   <Image
-                    width={500}
-                    height={500}
-                    src="/static/img/dodge-pretty-ini.png"
+                    width={1500}
+                    height={1500}
+                    src="https://utfs.io/f/313600e4-c482-435d-a8db-50fd09ff448e-97snnn.png"
                     alt="Pretty tribes.ini"
                   />
                 </Link>
