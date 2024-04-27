@@ -44,7 +44,6 @@ Follow the deployment guides for [Vercel](https://create.t3.gg/en/deployment/ver
 
 - [x] Transfer old data
 - [ ] ShadUIify -> swap mantine with ShadUI components
-- - [ ] Resizable
 - - [x] Navigation Menu
 - - [x] Card
 - - [x] HoverCard
@@ -52,7 +51,6 @@ Follow the deployment guides for [Vercel](https://create.t3.gg/en/deployment/ver
 - - [x] dropdown-menu
 - - [x] navigation-menu
 - - [x] Seperator
-- - [ ] Aspect Ratio
 - - [x] Accordion
 - - [x] Alert
 - - [x] Sheet
@@ -60,10 +58,10 @@ Follow the deployment guides for [Vercel](https://create.t3.gg/en/deployment/ver
 - - [x] Table
 - - [x] Tabs
 - - [ ] Breadcrumb (New)
-- - [ ] Badge (New)
+- - [x] Badge (New)
 - [x] Add react Icons
-- [ ] Paragraph & Headings styling
-- [ ] Layouts (create a standard)
+- [x] Paragraph & Headings styling
+- [x] Layouts (create a standard)
 - [x] Migrate to git
 - [ ] Clone live sites color theme with similar tailwind offerings
 - [ ] Add T3 Section
