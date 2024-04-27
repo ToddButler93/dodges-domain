@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { FaPlus } from "react-icons/fa6";
 
-import { Card, CardHeader } from "~/components/ui/card";
+import { Card } from "~/components/ui/card";
 import { Separator } from "~/components/ui/separator";
 import {
   Accordion,
@@ -45,20 +45,18 @@ export default function GuideInstallSetup() {
                   <a href="steam://install/17080/">Install Via Steam</a>
                 </Button>
               </HoverCardTrigger>
-              <HoverCardContent className="p-center flex flex-col gap-3">
+              <HoverCardContent className="flex-auto w-full">
                 <p>Steam install is recommended.</p>{" "}
-                <div>
-                  <div className="flex flex-row justify-between">
-                    <Button asChild>
-                      <a href="https://f000.backblazeb2.com/file/tribes-zip/Tribes_Ascend_Parting_Gifts.zip">
-                        Manual Download
-                      </a>
-                    </Button>
+                <div className="flex flex-row justify-between gap-3 p-3">
+                  <Button asChild>
+                    <a href="https://f000.backblazeb2.com/file/tribes-zip/Tribes_Ascend_Parting_Gifts.zip">
+                      Manual Download
+                    </a>
+                  </Button>
 
-                    <Button asChild>
-                      <a href="/docs/linux-install">Using Linux?</a>
-                    </Button>
-                  </div>
+                  <Button asChild>
+                    <a href="/docs/linux-install">Using Linux?</a>
+                  </Button>
                 </div>
               </HoverCardContent>
             </HoverCard>
@@ -243,7 +241,7 @@ export default function GuideInstallSetup() {
                   I get an error when I start the game after installing packages
                 </AccordionTrigger>
                 <AccordionContent>
-                  <ul>
+                  <ul className="list-disc p-3">
                     <li>
                       <p>
                         In your &quot;Tribes Ascend&quot; install folder, go to
