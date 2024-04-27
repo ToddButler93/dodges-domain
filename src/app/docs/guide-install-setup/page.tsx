@@ -77,7 +77,7 @@ export default function GuideInstallSetup() {
 
             <HoverCard openDelay={50} closeDelay={50}>
               <HoverCardTrigger href="https://github.com/mcoot/TribesLauncherSharp/releases/latest">
-                <Button asChild>Download</Button>
+                <Button>Download</Button>
               </HoverCardTrigger>
               <HoverCardContent className="p-center flex flex-col gap-3">
                 <p>Please extract before launching.</p>
@@ -133,7 +133,7 @@ export default function GuideInstallSetup() {
           <div className="flex flex-col justify-center gap-3">
             <Accordion type="single" collapsible>
               <AccordionItem value="IDKWHERETRIBESIS">
-                <AccordionTrigger>
+                <AccordionTrigger className="text-xl">
                   Launcher doesn&apos;t know where Tribes is installed?
                 </AccordionTrigger>
                 <AccordionContent>
@@ -160,7 +160,7 @@ export default function GuideInstallSetup() {
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="IHEARBUTCANTSEE">
-                <AccordionTrigger>
+                <AccordionTrigger className="text-xl">
                   I hear the inject sound, but nothing about my game changes
                 </AccordionTrigger>
                 <AccordionContent>
@@ -176,7 +176,7 @@ export default function GuideInstallSetup() {
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="FAILTOJOIN">
-                <AccordionTrigger>
+                <AccordionTrigger className="text-xl">
                   I keep failing to join a server
                 </AccordionTrigger>
                 <AccordionContent>
@@ -205,7 +205,7 @@ export default function GuideInstallSetup() {
               </AccordionItem>
 
               <AccordionItem value="COMMUNITYMAP">
-                <AccordionTrigger>
+                <AccordionTrigger className="text-xl">
                   Can&apos;t join a server with a community made map
                 </AccordionTrigger>
                 <AccordionContent>
@@ -231,7 +231,7 @@ export default function GuideInstallSetup() {
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="PACKAGEINSTALLERROR">
-                <AccordionTrigger>
+                <AccordionTrigger className="text-xl">
                   I get an error when I start the game after installing packages
                 </AccordionTrigger>
                 <AccordionContent>
@@ -307,7 +307,7 @@ export default function GuideInstallSetup() {
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="IDK">
-                <AccordionTrigger>
+                <AccordionTrigger className="text-xl">
                   I&apos;m having issues not stated here with the launcher
                 </AccordionTrigger>
                 <AccordionContent>
