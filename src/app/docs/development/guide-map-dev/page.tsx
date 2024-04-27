@@ -58,118 +58,146 @@ export default function GuideMapDevelopment() {
             It is recommended to use the latest map file releases to give
             yourself a head start with assets:
           </p>
-          <ul  className="list-disc p-3">
+          <ul className="list-disc p-3">
             <li>
-              <Link
-                passHref={true}
-                href="https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/dodge-map-common.zip"
-              >
-                Dodge&apos;s Common Package
-              </Link>
+              <p>
+                <Link
+                  passHref={true}
+                  href="https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/dodge-map-common.zip"
+                >
+                  Dodge&apos;s Common Package
+                </Link>
+              </p>
             </li>
             <li>
-              <Link
-                passHref={true}
-                href="https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/dodge-map-pack.zip"
-              >
-                Dodge&apos;s Map Pack
-              </Link>
+              <p>
+                <Link
+                  passHref={true}
+                  href="https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/dodge-map-pack.zip"
+                >
+                  Dodge&apos;s Map Pack
+                </Link>
+              </p>
             </li>
             <li>
-              <Link
-                passHref={true}
-                href="https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/dodge-map-pack-2.zip"
-              >
-                Dodge&apos;s Map Pack 2
-              </Link>
+              <p>
+                <Link
+                  passHref={true}
+                  href="https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/dodge-map-pack-2.zip"
+                >
+                  Dodge&apos;s Map Pack 2
+                </Link>
+              </p>
             </li>
             <li>
-              <Link
-                passHref={true}
-                href="https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/dodge-map-pack-3.zip"
-              >
-                Dodge&apos;s Map Pack 3
-              </Link>
+              <p>
+                <Link
+                  passHref={true}
+                  href="https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/dodge-map-pack-3.zip"
+                >
+                  Dodge&apos;s Map Pack 3
+                </Link>
+              </p>
             </li>
             <li>
-              <Link
-                passHref={true}
-                href="https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/dodge-map-pack-4.zip"
-              >
-                Dodge&apos;s Map Pack 4
-              </Link>
+              <p>
+                <Link
+                  passHref={true}
+                  href="https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/dodge-map-pack-4.zip"
+                >
+                  Dodge&apos;s Map Pack 4
+                </Link>
+              </p>
             </li>
             <li>
-              <Link
-                passHref={true}
-                href="https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/dodge-arena-series.zip"
-              >
-                Dodge&apos;s Arena Series
-              </Link>
+              <p>
+                <Link
+                  passHref={true}
+                  href="https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/dodge-arena-series.zip"
+                >
+                  Dodge&apos;s Arena Series
+                </Link>
+              </p>
             </li>
             <li>
-              <Link
-                passHref={true}
-                href="https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/dodge-treacherous-series.zip"
-              >
-                Dodge&apos;s Treacherous Series
-              </Link>
+              <p>
+                <Link
+                  passHref={true}
+                  href="https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/dodge-treacherous-series.zip"
+                >
+                  Dodge&apos;s Treacherous Series
+                </Link>
+              </p>
             </li>
             <li>
-              <Link
-                passHref={true}
-                href="https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/evil-map-pack.zip"
-              >
-                Evil&apos;s Map Pack
-              </Link>
+              <p>
+                <Link
+                  passHref={true}
+                  href="https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/evil-map-pack.zip"
+                >
+                  Evil&apos;s Map Pack
+                </Link>
+              </p>
             </li>
             <li>
-              <Link
-                passHref={true}
-                href="https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/evil-map-pack-2.zip"
-              >
-                Evil&apos;s Map Pack 2
-              </Link>
+              <p>
+                <Link
+                  passHref={true}
+                  href="https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/evil-map-pack-2.zip"
+                >
+                  Evil&apos;s Map Pack 2
+                </Link>
+              </p>
             </li>
             <li>
-              <Link
-                passHref={true}
-                href="https://tamods-update.s3-ap-southeast-2.amazonaws.com/packages/krogoth-map-pack.zip"
-              >
-                Krogoth&apos;s Map Pack
-              </Link>
+              <p>
+                <Link
+                  passHref={true}
+                  href="https://tamods-update.s3-ap-southeast-2.amazonaws.com/packages/krogoth-map-pack.zip"
+                >
+                  Krogoth&apos;s Map Pack
+                </Link>
+              </p>
             </li>
             <li>
-              <Link
-                passHref={true}
-                href="https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/nerve-map-pack.zip"
-              >
-                Nerve&apos;s Map Pack
-              </Link>
+              <p>
+                <Link
+                  passHref={true}
+                  href="https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/nerve-map-pack.zip"
+                >
+                  Nerve&apos;s Map Pack
+                </Link>
+              </p>
             </li>
             <li>
-              <Link
-                passHref={true}
-                href="https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/kali-map-pack.zip"
-              >
-                Kali&apos;s Map Pack
-              </Link>
+              <p>
+                <Link
+                  passHref={true}
+                  href="https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/kali-map-pack.zip"
+                >
+                  Kali&apos;s Map Pack
+                </Link>
+              </p>
             </li>
             <li>
-              <Link
-                passHref={true}
-                href="https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/cro-map-pack.zip"
-              >
-                Cro&apos;s Map Pack
-              </Link>
+              <p>
+                <Link
+                  passHref={true}
+                  href="https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/cro-map-pack.zip"
+                >
+                  Cro&apos;s Map Pack
+                </Link>
+              </p>
             </li>
             <li>
-              <Link
-                passHref={true}
-                href="https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/evil-map-common.zip"
-              >
-                Evil&apos;s Common Package
-              </Link>
+              <p>
+                <Link
+                  passHref={true}
+                  href="https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/evil-map-common.zip"
+                >
+                  Evil&apos;s Common Package
+                </Link>
+              </p>
             </li>
           </ul>
           <p>
@@ -225,22 +253,26 @@ export default function GuideMapDevelopment() {
         <div className="flex flex-col gap-3">
           <h2>Your First Map</h2>
           <h3>Step 1</h3>
-          <ul  className="list-disc p-3">
+          <ul className="list-disc p-3">
             <li>
-              <Link
-                passHref={true}
-                href="https://drive.google.com/file/d/1nZ1McI3DhilrHNxbm5a0KVFPkDy9WfA0/view?usp=sharing"
-              >
-                Basic CTF Map Download
-              </Link>
+              <p>
+                <Link
+                  passHref={true}
+                  href="https://drive.google.com/file/d/1nZ1McI3DhilrHNxbm5a0KVFPkDy9WfA0/view?usp=sharing"
+                >
+                  Basic CTF Map Download
+                </Link>
+              </p>
             </li>
             <li>
-              <Link
-                passHref={true}
-                href="https://drive.google.com/file/d/1doKK3ycGZhN3tjQJ7khoXQPRP8pQjDZZ/view?usp=sharing"
-              >
-                Basic Arena Map Download
-              </Link>
+              <p>
+                <Link
+                  passHref={true}
+                  href="https://drive.google.com/file/d/1doKK3ycGZhN3tjQJ7khoXQPRP8pQjDZZ/view?usp=sharing"
+                >
+                  Basic Arena Map Download
+                </Link>
+              </p>
             </li>
           </ul>
           <p>
@@ -272,10 +304,9 @@ export default function GuideMapDevelopment() {
             Open <b>\UDK\UDK-2011-01\BinariesUnrealFrontend.exe</b>
           </p>
           <p>
-            Select the profile <b>DM-Deck</b>and remove{" "}
-            <b>DM-Deck.udk</b>under <b>Maps to Cook</b> Add your custom map,
-            click Cook and then Cook Packages. Exit Unreal Frontend once
-            completed.
+            Select the profile <b>DM-Deck</b> and remove <b>DM-Deck.udk</b>{" "}
+            under <b>Maps to Cook</b> Add your custom map, click Cook and then
+            Cook Packages. Exit Unreal Frontend once completed.
           </p>
           <p>Now your map should be ready to be tested!</p>
         </div>
@@ -357,7 +388,7 @@ export default function GuideMapDevelopment() {
               href="https://drive.google.com/file/d/1u_nItIPxeA79Im8tXgg3Q41RS2iBAT_O/view?usp=sharing"
             >
               TA package files
-            </Link>
+            </Link>{" "}
             to dev builds <b>\TribesGame\CookedPC\Maps\</b> folder.
           </p>
           <h5>Step 2</h5>
@@ -530,8 +561,8 @@ export default function GuideMapDevelopment() {
           <h5>Step 2</h5>
           <p>
             Using a hex editor, you will see the values{" "}
-            <b>C1 83 2A 9E 25 03 02 00</b>, modify the <b>02</b> in that sequence
-            to <b>00</b>
+            <b>C1 83 2A 9E 25 03 02 00</b>, modify the <b>02</b> in that
+            sequence to <b>00</b>
           </p>
           <h5>Step 3</h5>
           <p>
@@ -547,9 +578,10 @@ export default function GuideMapDevelopment() {
             to properly compile.
           </p>
           <p>
-            Cooking the map with the unedited <b>RefShaderCache-PC-D3D-SM3.upk</b> will
-            fail due to license version checks, the license version is in the
-            file’s header which we edit via our hex editor.
+            Cooking the map with the unedited{" "}
+            <b>RefShaderCache-PC-D3D-SM3.upk</b> will fail due to license
+            version checks, the license version is in the file’s header which we
+            edit via our hex editor.
           </p>
           <h3>Where is UDK Installed?</h3>
           <p>
