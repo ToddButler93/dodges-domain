@@ -5,19 +5,19 @@
   @layer base {
     :root {
       --background: 0 0% 100%;
-      --foreground: 222.2 84% 4.9%;
+      --foreground: 0 0% 27.1%;
 
       --card: 0 0% 100%;
-      --card-foreground: 222.2 84% 4.9%;
+      --card-foreground: 0 0% 27.1%;
 
       --popover: 0 0% 100%;
       --popover-foreground: 222.2 84% 4.9%;
-
-      --primary: 222.2 47.4% 11.2%;
+      
+      --primary: 	174.40 100.00% 29.41%;
       --primary-foreground: 210 40% 98%;
 
       --secondary: 210 40% 96.1%;
-      --secondary-foreground: 222.2 47.4% 11.2%;
+      --secondary-foreground: 0 0% 27.1%;
 
       --muted: 210 40% 96.1%;
       --muted-foreground: 215.4 16.3% 46.9%;
@@ -36,17 +36,17 @@
     }
 
     .dark {
-      --background: 222.2 84% 4.9%;
-      --foreground: 210 40% 98%;
+      --background: 240 11% 11%;
+      --foreground: 0 0% 85.1%;
 
-      --card: 222.2 84% 4.9%;
-      --card-foreground: 210 40% 98%;
+      --card: 240 11% 11%;
+      --card-foreground: 0 0% 85.1%;
 
       --popover: 222.2 84% 4.9%;
       --popover-foreground: 210 40% 98%;
 
-      --primary: 210 40% 98%;
-      --primary-foreground: 222.2 47.4% 11.2%;
+      --primary: 174.40 100.00% 29.41%;
+      --primary-foreground: 0 0% 90%;
 
       --secondary: 217.2 32.6% 17.5%;
       --secondary-foreground: 210 40% 98%;
@@ -72,5 +72,23 @@
     }
     body {
       @apply bg-background text-foreground;
+    }
+    p {
+      @apply max-w-3xl;
+    }
+    h1 {
+      @apply text-5xl leading-tight font-extrabold text-foreground;
+    }
+    h2 {
+      @apply text-4xl leading-tight font-bold text-foreground;
+    }
+    h3 {
+      @apply text-3xl leading-tight font-bold text-foreground;
+    }
+    h4 {
+      @apply text-2xl leading-tight font-bold text-foreground;
+    }
+    h5 {
+      @apply text-xl leading-tight font-bold text-foreground;
     }
   }
