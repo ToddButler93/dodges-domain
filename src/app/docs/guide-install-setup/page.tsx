@@ -26,7 +26,7 @@ export default function GuideInstallSetup() {
             Tribes Ascend Installation
           </h1>
         </Card>
-        <div className="grid grid-row max-md:grid-cols-1 grid-cols-3 justify-evenly">
+        <div className="grid-row grid grid-cols-3 justify-evenly max-md:grid-cols-1">
           <Card className="flex flex-col items-center justify-between gap-3 p-3">
             <Link
               href="https://store.steampowered.com/app/17080/Tribes_Ascend/"
@@ -40,12 +40,10 @@ export default function GuideInstallSetup() {
             </Link>
             <Separator />
             <HoverCard openDelay={50} closeDelay={50}>
-              <HoverCardTrigger>
-                <Button asChild>
-                  <Link href="steam://install/17080/">Install Via Steam</Link>
-                </Button>
+              <HoverCardTrigger href="steam://install/17080/">
+                <Button>Install Via Steam</Button>
               </HoverCardTrigger>
-              <HoverCardContent className="flex-auto w-full">
+              <HoverCardContent className="w-full flex-auto">
                 <p>Steam install is recommended.</p>{" "}
                 <div className="flex flex-row justify-between gap-3 p-3">
                   <Button asChild>
@@ -78,12 +76,8 @@ export default function GuideInstallSetup() {
             <Separator />
 
             <HoverCard openDelay={50} closeDelay={50}>
-              <HoverCardTrigger>
-                <Button asChild>
-                  <Link href="https://github.com/mcoot/TribesLauncherSharp/releases/latest">
-                    Download
-                  </Link>
-                </Button>
+              <HoverCardTrigger href="https://github.com/mcoot/TribesLauncherSharp/releases/latest">
+                <Button asChild>Download</Button>
               </HoverCardTrigger>
               <HoverCardContent className="p-center flex flex-col gap-3">
                 <p>Please extract before launching.</p>
