@@ -1,5 +1,5 @@
+import "server-only";
 import { env } from "~/env";
-import { createTRPCRouter, publicProcedure } from "~/server/api/trpc";
 
 export type Player = {
   user: User;
@@ -42,14 +42,13 @@ async function getData<T>(url: string) {
 
   return res.json() as T;
 }
-export const matchHistoryRouter = createTRPCRouter({
-  getMatches: publicProcedure.query(async () => {
-    const matchHistoryURL = env.MATCH_HISTORY_URL;
-    const currentUnixTimeSeconds =
-      Math.floor(new Date().getTime()) - 30 * 24 * 60 * 60 * 1000;
-    const matches = await getData<MatchInfo[]>(
-      `${matchHistoryURL}${currentUnixTimeSeconds}`,
-    );
-    return matches;
-  }),
-});
+
+export async function getMatchHistory() {
+  const matchHistoryURL = env.MATCH_HISTORY_URL;
+  const currentUnixTimeSeconds =
+    Math.floor(new Date().getTime()) - 60 * 24 * 60 * 60 * 1000;
+  const matches = await getData<MatchInfo[]>(
+    `${matchHistoryURL}${currentUnixTimeSeconds}`,
+  );
+  return matches;
+}

@@ -1,8 +1,8 @@
 import type { Key } from "react";
-import type { MatchInfo, Player } from "~/server/api/routers/matchHistory";
-import { api } from "~/trpc/server";
+import { getMatchHistory, type MatchInfo, type Player } from "~/server/api/matchHistory";
 import { Card } from "./ui/card";
 import { Badge } from "./ui/badge";
+import Image from "next/image";
 
 export default async function MatchHistoryComponent() {
   const currentUnixTimeSeconds =
@@ -10,7 +10,7 @@ export default async function MatchHistoryComponent() {
 
   console.log(currentUnixTimeSeconds);
 
-  const matchHistory = await api.matches.getMatches.query();
+  const matchHistory = await getMatchHistory();
 
   if (matchHistory == null)
     return <div>Match History currently unavailable.</div>;
@@ -25,10 +25,9 @@ export default async function MatchHistoryComponent() {
             <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
               {matchHistory.reverse().map((match: MatchInfo, index: Key) => (
                 <Card className="shadow-md" key={index}>
-                  <img
-                    src="/static/img/maps/acheron-river.png"
-                    className="grow rounded-md p-3"
-                  >
+                  <Image
+                    src="/static/img/maps/acheron-river.png" width={500} height={500}
+                    className="grow rounded-md p-3" alt={""}                  />
                     <div className="grid grid-flow-col justify-between">
                       <>
                         {match.queue.name === "PUGz" ? (
@@ -177,7 +176,6 @@ export default async function MatchHistoryComponent() {
                         )}
                       </>
                     </div>
-                  </img>
                 </Card>
               ))}
             </div>
