@@ -1,4 +1,5 @@
-import MatchHistoryComponent from "../_components/match-history";
+import MatchHistoryComponent from "~/components/match-history";
+
 
 export default function MatchHistory() {
   return (

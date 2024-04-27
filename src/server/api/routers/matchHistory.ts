@@ -1,5 +1,6 @@
+import { env } from "~/env";
 import { createTRPCRouter, publicProcedure } from "~/server/api/trpc";
-import { env } from "~/env.mjs";
+
 export type Player = {
   user: User;
   team: number;
