@@ -11,9 +11,12 @@ import {
   FaFlag,
   FaGamepad,
   FaGun,
+  FaHammer,
+  FaMap,
   FaPlus,
+  FaServer,
 } from "react-icons/fa6";
-import { FaEdit } from "react-icons/fa";
+import { FaEdit, FaHistory } from "react-icons/fa";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -100,13 +103,13 @@ const gameplayMenuData = [
 
 const mapDevelopmentMenuData = [
   {
-    icon: FaGamepad,
+    icon: FaMap,
     title: "Map Development",
     description: "Setting up UDK for Tribes Ascend map development.",
     link: "/docs/development/guide-map-dev",
   },
   {
-    icon: FaGamepad,
+    icon: FaHammer,
     title: "Using UDK",
     description: "How to use UDK to make Tribes Ascend maps.",
     link: "/docs/development/guide-udk-basics",
@@ -115,13 +118,13 @@ const mapDevelopmentMenuData = [
 
 const tribesLiveInfoMenuData = [
   {
-    icon: FaGamepad,
+    icon: FaServer,
     title: "Server Browser",
     description: "Work in Progress",
     link: "/server-browser",
   },
   {
-    icon: FaGamepad,
+    icon: FaHistory,
     title: "Match History",
     description: "Work in Progress",
     link: "/match-history",
@@ -130,21 +133,21 @@ const tribesLiveInfoMenuData = [
 
 const tribesInfoMenuData = [
   {
-    icon: FaGamepad,
+    icon: FaHistory,
     title: "Patch History",
     description: "Patch History for Tribes Ascend.",
     link: "/docs/information/patch-history",
   },
   {
-    icon: FaGamepad,
+    icon: FaGun,
     title: "Weapon Data",
     description: "Weapon Data for Tribes Ascend.",
     link: "/docs/information/weapon-data",
   },
   {
-    icon: FaGamepad,
+    icon: FaServer,
     title: "Game Server Hosting",
-    description: "How to host Tribes Ascend servers, powered by TAServer.",
+    description: "Hosting Tribes Ascend servers.",
     link: "/docs/servers/guide-hosting",
   },
 ];
@@ -222,9 +225,15 @@ export function NavBar() {
                     title={component.title}
                     href={component.link}
                   >
-                    <div className="flex flex-row items-center gap-3">
-                      <component.icon />
-                      {component.description}
+                    <div className="flex flex-row items-center flex-nowrap gap-3 transition-all duration-300 hover:text-teal-500 active:text-teal-500">
+                      <component.icon
+                        color="teal"
+                        className="bg-zinc-800 p-1 w-10 h-10"
+                      />
+                      <div className="flex flex-col">
+                        <p className="text-sm">{component.title}</p>
+                        <p className="text-xs">{component.description}</p>
+                      </div>
                     </div>
                   </ListItem>
                 ))}
@@ -261,9 +270,15 @@ export function NavBar() {
                     title={component.title}
                     href={component.link}
                   >
-                    <div className="flex flex-row items-center gap-3">
-                      <component.icon />
-                      {component.description}
+                    <div className="flex flex-row items-center flex-nowrap gap-3 transition-all duration-300 hover:text-teal-500 active:text-teal-500">
+                      <component.icon
+                        color="teal"
+                        className="bg-zinc-800 p-1 w-10 h-10"
+                      />
+                      <div className="flex flex-col">
+                        <p className="text-sm">{component.title}</p>
+                        <p className="text-xs">{component.description}</p>
+                      </div>
                     </div>
                   </ListItem>
                 ))}
@@ -273,9 +288,15 @@ export function NavBar() {
                     title={component.title}
                     href={component.link}
                   >
-                    <div className="flex flex-row items-center gap-3">
-                      <component.icon />
-                      {component.description}
+                    <div className="flex flex-row items-center flex-nowrap gap-3 transition-all duration-300 hover:text-teal-500 active:text-teal-500">
+                      <component.icon
+                        color="teal"
+                        className="bg-zinc-800 p-1 w-10 h-10"
+                      />
+                      <div className="flex flex-col">
+                        <p className="text-sm">{component.title}</p>
+                        <p className="text-xs">{component.description}</p>
+                      </div>
                     </div>
                   </ListItem>
                 ))}
@@ -300,9 +321,15 @@ export function NavBar() {
                     title={component.title}
                     href={component.link}
                   >
-                    <div className="flex flex-row items-center gap-3">
-                      <component.icon />
-                      {component.description}
+                    <div className="flex flex-row items-center flex-nowrap gap-3 transition-all duration-300 hover:text-teal-500 active:text-teal-500">
+                      <component.icon
+                        color="teal"
+                        className="bg-zinc-800 p-1 w-10 h-10"
+                      />
+                      <div className="flex flex-col">
+                        <p className="text-sm">{component.title}</p>
+                        <p className="text-xs">{component.description}</p>
+                      </div>
                     </div>
                   </ListItem>
                 ))}
@@ -336,9 +363,15 @@ export function NavBar() {
                     title={component.title}
                     href={component.link}
                   >
-                    <div className="flex flex-row items-center gap-3">
-                      <component.icon />
-                      {component.description}
+                    <div className="flex flex-row items-center flex-nowrap gap-3 transition-all duration-300 hover:text-teal-500 active:text-teal-500">
+                      <component.icon
+                        color="teal"
+                        className="bg-zinc-800 p-1 w-10 h-10"
+                      />
+                      <div className="flex flex-col">
+                        <p className="text-sm">{component.title}</p>
+                        <p className="text-xs">{component.description}</p>
+                      </div>
                     </div>
                   </ListItem>
                 ))}
@@ -348,9 +381,15 @@ export function NavBar() {
                     title={component.title}
                     href={component.link}
                   >
-                    <div className="flex flex-row items-center gap-3">
-                      <component.icon />
-                      {component.description}
+                    <div className="flex flex-row items-center flex-nowrap gap-3 transition-all duration-300 hover:text-teal-500 active:text-teal-500">
+                      <component.icon
+                        color="teal"
+                        className="bg-zinc-800 p-1 w-10 h-10"
+                      />
+                      <div className="flex flex-col">
+                        <p className="text-sm">{component.title}</p>
+                        <p className="text-xs">{component.description}</p>
+                      </div>
                     </div>
                   </ListItem>
                 ))}
@@ -497,10 +536,7 @@ const ListItem = React.forwardRef<
           )}
           {...props}
         >
-          <div className="text-sm font-medium leading-none">{title}</div>
-          <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-            {children}
-          </p>
+          {children}
         </a>
       </NavigationMenuLink>
     </li>
