@@ -26,7 +26,7 @@ export default function GuideInstallSetup() {
             Tribes Ascend Installation
           </h1>
         </Card>
-        <div className="flex flex-row justify-evenly gap-3 p-6">
+        <div className="grid grid-row max-md:grid-cols-1 grid-cols-3 justify-evenly">
           <Card className="flex flex-col items-center justify-between gap-3 p-3">
             <Link
               href="https://store.steampowered.com/app/17080/Tribes_Ascend/"
@@ -61,7 +61,7 @@ export default function GuideInstallSetup() {
               </HoverCardContent>
             </HoverCard>
           </Card>
-          <div className="flex items-center justify-center gap-3">
+          <div className="flex items-center justify-center gap-3 p-3">
             <FaPlus size={64} />
           </div>
           <Card className="flex flex-col items-center justify-between gap-3 p-3">
