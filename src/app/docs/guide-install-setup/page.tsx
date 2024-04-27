@@ -16,6 +16,7 @@ import {
 } from "~/components/ui/hover-card";
 import { Button } from "~/components/ui/button";
 import { Alert } from "~/components/ui/alert";
+import Image from "next/image";
 
 export default function GuideInstallSetup() {
   return (
@@ -32,9 +33,10 @@ export default function GuideInstallSetup() {
               href="https://store.steampowered.com/app/17080/Tribes_Ascend/"
               target="_blank"
             >
-              <img
+              <Image
+                width={1500}
                 alt=""
-                height={200}
+                height={1500}
                 src="/static/img/tribes-ascend-logo.png"
               />
             </Link>
@@ -68,7 +70,9 @@ export default function GuideInstallSetup() {
               href="https://github.com/mcoot/TribesLauncherSharp/releases/latest"
               target="_blank"
             >
-              <img
+              <Image
+                width={1500}
+                height={1500}
                 alt=""
                 src="https://www.tamods.org/assets/images/tamods-logo-83781dca7e008d9db0a74439960ce873.png"
               />
@@ -255,12 +259,11 @@ export default function GuideInstallSetup() {
                         &quot;Tribes Ascend&quot; and hit
                         &quot;Properties&quot;.
                       </p>
-                      <img
+                      <Image
                         src="/static/img/install/steam-properties.png"
                         alt=""
                         height={400}
-                        width="auto"
-                        className="contain-size"
+                        width={400}
                       />
                       <p>
                         Select the &quot;Local files&quot; tab and click the
@@ -268,12 +271,11 @@ export default function GuideInstallSetup() {
                         This will re-download the missing files you just deleted
                         from the base game via steam.
                       </p>
-                      <img
+                      <Image
+                        width={500}
+                        height={500}
                         src="/static/img/install/steam-local-files.png"
                         alt=""
-                        height={200}
-                        width="auto"
-                        className="contain-size"
                       />
                     </li>
                     <li>
@@ -283,24 +285,22 @@ export default function GuideInstallSetup() {
                         TAMods&quot;. Hit &quot;Yes&quot; on the prompt and then
                         hit &quot;Update&quot; to start the process.
                       </p>
-                      <img
+                      <Image
+                        width={500}
+                        height={500}
                         src="/static/img/install/launcher-advanced-tab.png"
                         alt=""
-                        height={200}
-                        width="auto"
-                        className="contain-size"
                       />
                       <p>
                         Now, under the &quot;Packages&quot; Tab you can install
                         the custom packages that were removed earlier. This
                         should just be the custom maps and assets packages.
                       </p>
-                      <img
+                      <Image
+                        width={500}
+                        height={500}
                         src="/static/img/install/launcher-packages-tab.png"
                         alt=""
-                        height={200}
-                        width="auto"
-                        className="contain-size"
                       />
                     </li>
                   </ul>
@@ -316,12 +316,11 @@ export default function GuideInstallSetup() {
                     &quot;Reinstall TAMods&quot;. This should allow you to
                     reinstall packages as well.
                   </p>
-                  <img
+                  <Image
+                    width={500}
+                    height={500}
                     src="/static/img/install/launcher-advanced-tab.png"
                     alt=""
-                    height={200}
-                    width="auto"
-                    className="contain-size"
                   />
                 </AccordionContent>
               </AccordionItem>

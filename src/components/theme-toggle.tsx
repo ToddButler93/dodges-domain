@@ -1,4 +1,3 @@
-
 import * as React from "react";
 import { FaMoon, FaSun } from "react-icons/fa6";
 import { useTheme } from "next-themes";
@@ -9,12 +8,12 @@ export function ModeToggle() {
   const { theme, setTheme } = useTheme();
 
   const toggleTheme = () => {
-    setTheme(theme === 'light' ? 'dark' : 'light');
+    setTheme(theme === "light" ? "dark" : "light");
   };
 
   return (
     <Button variant="outline" size="icon" onClick={toggleTheme}>
-      {theme === 'light' ? (
+      {theme === "light" ? (
         <>
           <FaSun className="h-[1.2rem] w-[1.2rem]" />
         </>

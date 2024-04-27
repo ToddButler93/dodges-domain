@@ -43,6 +43,7 @@ import {
   SheetTrigger,
 } from "./ui/sheet";
 import { ScrollArea } from "./ui/scroll-area";
+import Image from "next/image";
 
 const installMenuData = [
   {
@@ -152,52 +153,16 @@ const tribesInfoMenuData = [
   },
 ];
 
-const components: { title: string; href: string; description: string }[] = [
-  {
-    title: "Alert Dialog",
-    href: "/docs/primitives/alert-dialog",
-    description:
-      "A modal dialog that interrupts the user with important content and expects a response.",
-  },
-  {
-    title: "Hover Card",
-    href: "/docs/primitives/hover-card",
-    description:
-      "For sighted users to preview content available behind a link.",
-  },
-  {
-    title: "Progress",
-    href: "/docs/primitives/progress",
-    description:
-      "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
-  },
-  {
-    title: "Scroll-area",
-    href: "/docs/primitives/scroll-area",
-    description: "Visually or semantically separates content.",
-  },
-  {
-    title: "Tabs",
-    href: "/docs/primitives/tabs",
-    description:
-      "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
-  },
-  {
-    title: "Tooltip",
-    href: "/docs/primitives/tooltip",
-    description:
-      "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
-  },
-];
-
 export function NavBar() {
   return (
     // TODO: Header Background/text variables
     <div className="sticky top-0 z-50 flex h-[60px] w-screen justify-between gap-3 bg-zinc-800 px-3">
       <Link href={"/"} className="flex flex-row items-center gap-3 pe-3">
-        <img
-          src="/static/img/blueplate.png"
+        <Image
+          width={500}
+          height={500}
           alt=""
+          src="/static/img/blueplate.png"
           className="h-8 w-8 min-w-8"
         />
         <h3 className="text-nowrap bg-transparent py-3 text-zinc-100  max-xl:hidden">
@@ -225,10 +190,10 @@ export function NavBar() {
                     title={component.title}
                     href={component.link}
                   >
-                    <div className="flex flex-row items-center flex-nowrap gap-3 transition-all duration-300 hover:text-teal-500 active:text-teal-500">
+                    <div className="flex flex-row flex-nowrap items-center gap-3 transition-all duration-300 hover:text-teal-500 active:text-teal-500">
                       <component.icon
                         color="teal"
-                        className="bg-zinc-800 p-1 w-10 h-10"
+                        className="h-10 w-10 bg-zinc-800 p-1"
                       />
                       <div className="flex flex-col">
                         <p className="text-sm">{component.title}</p>
@@ -270,10 +235,10 @@ export function NavBar() {
                     title={component.title}
                     href={component.link}
                   >
-                    <div className="flex flex-row items-center flex-nowrap gap-3 transition-all duration-300 hover:text-teal-500 active:text-teal-500">
+                    <div className="flex flex-row flex-nowrap items-center gap-3 transition-all duration-300 hover:text-teal-500 active:text-teal-500">
                       <component.icon
                         color="teal"
-                        className="bg-zinc-800 p-1 w-10 h-10"
+                        className="h-10 w-10 bg-zinc-800 p-1"
                       />
                       <div className="flex flex-col">
                         <p className="text-sm">{component.title}</p>
@@ -288,10 +253,10 @@ export function NavBar() {
                     title={component.title}
                     href={component.link}
                   >
-                    <div className="flex flex-row items-center flex-nowrap gap-3 transition-all duration-300 hover:text-teal-500 active:text-teal-500">
+                    <div className="flex flex-row flex-nowrap items-center gap-3 transition-all duration-300 hover:text-teal-500 active:text-teal-500">
                       <component.icon
                         color="teal"
-                        className="bg-zinc-800 p-1 w-10 h-10"
+                        className="h-10 w-10 bg-zinc-800 p-1"
                       />
                       <div className="flex flex-col">
                         <p className="text-sm">{component.title}</p>
@@ -321,10 +286,10 @@ export function NavBar() {
                     title={component.title}
                     href={component.link}
                   >
-                    <div className="flex flex-row items-center flex-nowrap gap-3 transition-all duration-300 hover:text-teal-500 active:text-teal-500">
+                    <div className="flex flex-row flex-nowrap items-center gap-3 transition-all duration-300 hover:text-teal-500 active:text-teal-500">
                       <component.icon
                         color="teal"
-                        className="bg-zinc-800 p-1 w-10 h-10"
+                        className="h-10 w-10 bg-zinc-800 p-1"
                       />
                       <div className="flex flex-col">
                         <p className="text-sm">{component.title}</p>
@@ -363,10 +328,10 @@ export function NavBar() {
                     title={component.title}
                     href={component.link}
                   >
-                    <div className="flex flex-row items-center flex-nowrap gap-3 transition-all duration-300 hover:text-teal-500 active:text-teal-500">
+                    <div className="flex flex-row flex-nowrap items-center gap-3 transition-all duration-300 hover:text-teal-500 active:text-teal-500">
                       <component.icon
                         color="teal"
-                        className="bg-zinc-800 p-1 w-10 h-10"
+                        className="h-10 w-10 bg-zinc-800 p-1"
                       />
                       <div className="flex flex-col">
                         <p className="text-sm">{component.title}</p>
@@ -381,10 +346,10 @@ export function NavBar() {
                     title={component.title}
                     href={component.link}
                   >
-                    <div className="flex flex-row items-center flex-nowrap gap-3 transition-all duration-300 hover:text-teal-500 active:text-teal-500">
+                    <div className="flex flex-row flex-nowrap items-center gap-3 transition-all duration-300 hover:text-teal-500 active:text-teal-500">
                       <component.icon
                         color="teal"
-                        className="bg-zinc-800 p-1 w-10 h-10"
+                        className="h-10 w-10 bg-zinc-800 p-1"
                       />
                       <div className="flex flex-col">
                         <p className="text-sm">{component.title}</p>

@@ -6,12 +6,28 @@ await import("./src/env.js");
 
 /** @type {import("next").NextConfig} */
 const config = {
-    typescript: {
-        ignoreBuildErrors: true,
-    },
-    eslint: {
-        ignoreDuringBuilds: true,
-    }
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "www.tamods.org",
+        port: "",
+        pathname: "/assets/images/**",
+      },
+      {
+        protocol: "https",
+        hostname: "cdn1.epicgames.com",
+        port: "",
+        pathname: "/spt-assets/28f7b2fa11de437db22450f7f43b584d/**",
+      },
+    ],
+  },
 };
 
 export default config;

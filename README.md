@@ -9,6 +9,7 @@ Tribes Ascend stuff (T3 soon).
 Made using the [T3 Stack](https://create.t3.gg/).
 
 ## Scripts
+
 "pnpm build" - Build site
 
 ### Dev
@@ -88,5 +89,6 @@ Follow the deployment guides for [Vercel](https://create.t3.gg/en/deployment/ver
 - [ ] Analytics (posthog)
 - [ ] Ratelimiting (upstash)
 
-### Newer processes 
+### Newer processes
+
 - [ ] Use "git add -p", review changes, "git status", "git commit

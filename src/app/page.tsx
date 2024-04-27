@@ -11,7 +11,7 @@ export default function HomePage() {
     <main className="">
       <NavBar />
       <div className="flex min-h-screen w-full flex-col items-center pb-6">
-        <div className="flex relative max-h-[720px] w-screen items-center overflow-y-clip bg-cover bg-center bg-no-repeat">
+        <div className="relative flex max-h-[720px] w-screen items-center overflow-y-clip bg-cover bg-center bg-no-repeat">
           <video
             width="100%"
             height="100%"
@@ -28,7 +28,7 @@ export default function HomePage() {
             ></source>
             Your browser does not support .webm video.
           </video>
-          <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 p-3 parent">
+          <div className="parent absolute inset-0 flex flex-col items-center justify-center gap-3 p-3">
             <Image
               alt=""
               src="/static/img/tribes-ascend-logo.png"
@@ -50,10 +50,12 @@ export default function HomePage() {
             </Button>
           </div>
         </div>
-        <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-3 p-6">
+        <div className="grid gap-3 p-6 sm:grid-cols-1 md:grid-cols-3">
           <Card className="grid-col grid items-center justify-center rounded-md drop-shadow-md">
             <CardHeader>
-              <CardTitle className="text-center text-nowrap">Gameplay Guides</CardTitle>
+              <CardTitle className="text-nowrap text-center">
+                Gameplay Guides
+              </CardTitle>
             </CardHeader>
             <CardContent>
               <Link href="/docs/gameplay/guide-quick">
@@ -76,7 +78,9 @@ export default function HomePage() {
           </Card>
           <Card className="grid-col grid items-center justify-center rounded-md drop-shadow-md">
             <CardHeader>
-              <CardTitle className="text-center text-nowrap">Map Development</CardTitle>
+              <CardTitle className="text-nowrap text-center">
+                Map Development
+              </CardTitle>
             </CardHeader>
             <CardContent>
               <Link href="/docs/development/guide-map-dev">
@@ -93,7 +97,9 @@ export default function HomePage() {
 
           <Card className="grid-col grid items-center justify-center rounded-md drop-shadow-md">
             <CardHeader>
-              <CardTitle className="text-center text-nowrap">Community Maps</CardTitle>
+              <CardTitle className="text-nowrap text-center">
+                Community Maps
+              </CardTitle>
             </CardHeader>
             <CardContent>
               <Link href="/docs/custommaps/">

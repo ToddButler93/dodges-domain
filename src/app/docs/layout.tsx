@@ -10,7 +10,9 @@ export default async function DocsLayout({
     <>
       <NavBar />
       <div className="flex w-full flex-row justify-center">
-        <div className="flex max-w-6xl flex-col justify-center py-6">{children}</div>
+        <div className="flex max-w-6xl flex-col justify-center py-6">
+          {children}
+        </div>
       </div>
     </>
   );

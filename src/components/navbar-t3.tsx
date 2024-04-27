@@ -16,6 +16,7 @@ import {
 } from "./ui/navigation-menu";
 import { Separator } from "./ui/separator";
 import { ModeToggle } from "./theme-toggle";
+import Image from "next/image";
 
 const components: { title: string; href: string; description: string }[] = [
   {
@@ -58,12 +59,18 @@ const components: { title: string; href: string; description: string }[] = [
 export function NavBarT3() {
   return (
     // TODO: Header Background/text variables
-    <div className="flex flex-row bg-inherit sticky top-0 z-50 h-14 w-full justify-between">
-      <Link href={"/"} className="flex flex-row gap-3 p-6 items-center">
-        <img src="/static/img/blueplate.png" alt="" className="h-8 w-8" />
+    <div className="sticky top-0 z-50 flex h-14 w-full flex-row justify-between bg-inherit">
+      <Link href={"/"} className="flex flex-row items-center gap-3 p-6">
+        <Image
+          width={500}
+          height={500}
+          src="/static/img/blueplate.png"
+          alt=""
+          className="h-8 w-8"
+        />
         <h1 className=" invisible md:visible">Dodges Domain</h1>
       </Link>
-      <NavigationMenu className=" invisible sm:visible justify-center">
+      <NavigationMenu className=" invisible justify-center sm:visible">
         <NavigationMenuList>
           <NavigationMenuItem>
             <NavigationMenuTrigger>Getting started</NavigationMenuTrigger>
@@ -132,7 +139,7 @@ export function NavBarT3() {
           </NavigationMenuItem>
         </NavigationMenuList>
       </NavigationMenu>
-      <div className="flex p-6 items-center justify-end">
+      <div className="flex items-center justify-end p-6">
         <ModeToggle />
       </div>
     </div>

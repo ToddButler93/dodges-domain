@@ -1,64 +1,65 @@
 import Link from "next/link";
 import { Card } from "~/components/ui/card";
-import { Table } from "~/components/ui/table";
-
-const tableData = {
-  head: ["Action", "Default Binding "],
-  body: [
-    ["PUG", "Pick-up Game"],
-    [
-      "Change Camera Angle",
-      <>
-        <kbd>RMB</kbd>
-      </>,
-    ],
-    [
-      "Camera Location",
-      <>
-        <kbd>RMB</kbd>+<kbd>W</kbd>
-        <kbd>A</kbd>
-        <kbd>S</kbd>
-        <kbd>D</kbd>
-      </>,
-    ],
-    [
-      "Open Content Browser",
-      <>
-        <kbd>Ctrl</kbd>+<kbd>⇧ Shift</kbd>+<kbd>F</kbd>
-      </>,
-    ],
-    [
-      "Select Actor",
-      <>
-        <kbd>LMB</kbd>
-      </>,
-    ],
-    [
-      "Actor Properties",
-      <>
-        <kbd>F4</kbd>
-      </>,
-    ],
-    [
-      "Use Terrain Tool",
-      <>
-        <kbd>Ctrl</kbd>+<kbd>RMB</kbd>
-      </>,
-    ],
-    [
-      "Adjust Camera Move Speed",
-      <>
-        <kbd>RMB</kbd>+<kbd>Scroll</kbd>
-      </>,
-    ],
-    [
-      "Swap Between Move, Rotate and Scale",
-      <>
-        <kbd>SpaceBar</kbd>
-      </>,
-    ],
-  ],
-};
+//import { Table } from "~/components/ui/table";
+import Image from "next/image";
+// TODO
+// const tableData = {
+//   head: ["Action", "Default Binding "],
+//   body: [
+//     ["PUG", "Pick-up Game"],
+//     [
+//       "Change Camera Angle",
+//       <>
+//         <kbd>RMB</kbd>
+//       </>,
+//     ],
+//     [
+//       "Camera Location",
+//       <>
+//         <kbd>RMB</kbd>+<kbd>W</kbd>
+//         <kbd>A</kbd>
+//         <kbd>S</kbd>
+//         <kbd>D</kbd>
+//       </>,
+//     ],
+//     [
+//       "Open Content Browser",
+//       <>
+//         <kbd>Ctrl</kbd>+<kbd>⇧ Shift</kbd>+<kbd>F</kbd>
+//       </>,
+//     ],
+//     [
+//       "Select Actor",
+//       <>
+//         <kbd>LMB</kbd>
+//       </>,
+//     ],
+//     [
+//       "Actor Properties",
+//       <>
+//         <kbd>F4</kbd>
+//       </>,
+//     ],
+//     [
+//       "Use Terrain Tool",
+//       <>
+//         <kbd>Ctrl</kbd>+<kbd>RMB</kbd>
+//       </>,
+//     ],
+//     [
+//       "Adjust Camera Move Speed",
+//       <>
+//         <kbd>RMB</kbd>+<kbd>Scroll</kbd>
+//       </>,
+//     ],
+//     [
+//       "Swap Between Move, Rotate and Scale",
+//       <>
+//         <kbd>SpaceBar</kbd>
+//       </>,
+//     ],
+//   ],
+// };
 
 export default function GuideUDKBasics() {
   return (
@@ -93,10 +94,11 @@ export default function GuideUDKBasics() {
           </Link>
           <h2> Step 1 - Create Terrain Actor</h2>
           <p>Click Tools, click new Terrain...</p>
-          <img
+          <Image
+            width={1500}
+            height={1500}
             src="/static/img/development/new-terrain.png"
             alt=""
-            className="h-auto w-fit object-contain"
           />
           <p>
             Location is the location of the terrain. For this guide we will
@@ -106,10 +108,11 @@ export default function GuideUDKBasics() {
             Patches is the size of the terrain. For this guide we will put 1024
             for both values.
           </p>
-          <img
+          <Image
+            width={1500}
+            height={1500}
             src="/static/img/development/new-terrain-patches.png"
             alt=""
-            className="h-auto w-fit object-contain"
           />
           <p>Hit finish.</p>
           <p>
@@ -134,10 +137,11 @@ export default function GuideUDKBasics() {
           </p>
           <p>- Set Static Lighting Resolution to 1</p>
           <p>- Set Group to &quot;Terrain&quot;</p>
-          <img
+          <Image
+            width={500}
+            height={500}
             src="/static/img/development/new-terrain-properties.png"
             alt=""
-            className="h-auto w-fit object-contain"
           />
           <p>
             Note: Setting a group to all added actors will make your life a lot
@@ -162,10 +166,11 @@ export default function GuideUDKBasics() {
             <kbd>F</kbd>
           </p>
           <p>Under the Actor Classes Tab use the search to find SkyLight.</p>
-          <img
+          <Image
+            width={1500}
+            height={500}
             src="/static/img/development/lighting-actor-skylight.png"
             alt=""
-            className="h-auto w-fit object-contain"
           />
           <p>Simply drag SkyLight to your scene.</p>
           <Link href="#my-things-have-disapeared">Lost where it went?</Link>
@@ -175,10 +180,11 @@ export default function GuideUDKBasics() {
           <p>- Set Draw Scale to 32</p>
           <p>- Set Brightness to 0.5</p>
           <p>- Set Group to &quot;World&quot;</p>
-          <img
+          <Image
+            width={1500}
+            height={500}
             src="/static/img/development/lighting-skylight-properties.png"
             alt=""
-            className="h-auto w-fit object-contain"
           />
           <h3> Dominant Directional Light</h3>
           <p>
@@ -202,10 +208,11 @@ export default function GuideUDKBasics() {
           <p>- Set Draw Scale to 32</p>
           <p>- Set Brightness to 0.5</p>
           <p>- Set Group to &quot;World&quot;</p>
-          <img
+          <Image
+            width={500}
+            height={500}
             src="/static/img/development/lighting-dominant-direct-properties.png"
             alt=""
-            className="h-auto w-fit object-contain"
           />
           <p>
             To set the direction of the light source you need to adjust the
@@ -227,10 +234,11 @@ export default function GuideUDKBasics() {
             Under the Actor Classes Tab use the search &quot;BloodEagle&quot; to
             find Blood Eagle specific Actor Classes.
           </p>
-          <img
+          <Image
+            width={1500}
+            height={1500}
             src="/static/img/development/actor-class-search.png"
             alt=""
-            className="h-auto w-fit object-contain"
           />
           <h4> Blood Eagle Flag</h4>
           <p>
@@ -311,10 +319,11 @@ export default function GuideUDKBasics() {
             the Actor Properties <kbd>F4</kbd> under Object then the value for
             Name. It should be similar to &quot;TrVehiclePad_0&quot;.
           </p>
-          <img
+          <Image
+            width={1500}
+            height={1500}
             src="/static/img/development/vehiclepad-name.png"
             alt=""
-            className="h-auto w-fit object-contain"
           />
           <p>
             Now that we know this, we need to set our
@@ -330,10 +339,11 @@ export default function GuideUDKBasics() {
             <Link href="#my-things-have-disapeared">Lost where it went?</Link>
           </p>
           <p>- Set m_Vehicle Pad to our TrVehiclePad actors name.</p>
-          <img
+          <Image
+            width={1500}
+            height={1500}
             src="/static/img/development/vehiclestation-set-name.png"
             alt=""
-            className="h-auto w-fit object-contain"
           />
           <p>Once you hit enter the value will altar, this is normal.</p>
           <p>
@@ -341,10 +351,11 @@ export default function GuideUDKBasics() {
             Sword!
           </p>
           <Link href="#step-2---save-level">Save your level.</Link>
-          <img
+          <Image
+            width={1500}
+            height={1500}
             src="/static/img/development/blood-eagle-base.png"
             alt=""
-            className="h-auto w-fit object-contain"
           />
           <h3> Diamond Sword</h3>
           <p>
@@ -446,10 +457,11 @@ export default function GuideUDKBasics() {
             In your Content Browser, go to the Scene Tab. Hit the R Button to
             refresh the actors in this tab.
           </p>
-          <img
+          <Image
+            width={1500}
+            height={1500}
             src="/static/img/development/scene-refresh-button.png"
             alt=""
-            className="h-auto w-fit object-contain"
           />
           <p>Under Filter p type DiamondSword.</p>
           <p>
@@ -462,10 +474,11 @@ export default function GuideUDKBasics() {
             area.
           </p>
           <p>- Set the Group value under Object to DiamondSword.</p>
-          <img
+          <Image
+            width={1500}
+            height={1500}
             src="/static/img/development/properties-multiple-actors.png"
             alt=""
-            className="h-auto w-fit object-contain"
           />
           <p>
             Hit the R button again to refresh the actors and you should see they

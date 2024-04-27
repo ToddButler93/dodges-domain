@@ -1,12 +1,7 @@
 import Link from "next/link";
 
 import { Button } from "~/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardTitle,
-} from "~/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "~/components/ui/card";
 
 import Image from "next/image";
 
@@ -16,15 +11,16 @@ export default function T3HomePage() {
       <div>
         <div className="relative">
           <div className="flex max-h-[720px] w-screen items-center overflow-y-clip bg-cover bg-center bg-no-repeat">
-            <img
-              width="100%"
-              height="100%"
+            <Image
+              width={10000}
+              height={10000}
               className="content-center"
               src="https://cdn1.epicgames.com/spt-assets/28f7b2fa11de437db22450f7f43b584d/tribes-3-rivals-8j2mp.jpg"
+              alt={""}
             />
-            <div className="flex flex-col absolute inset-0 items-center justify-center">
+            <div className="absolute inset-0 flex flex-col items-center justify-center">
               <div className="flex flex-col gap-6">
-                <img
+                <Image
                   alt=""
                   src="https://cdn1.epicgames.com/spt-assets/28f7b2fa11de437db22450f7f43b584d/tribes-3-rivals-logo-m9e2d.png"
                   width={500}
@@ -37,9 +33,7 @@ export default function T3HomePage() {
                   </Link>
                 </Button>
                 <Button variant="secondary" asChild size="lg">
-                  <Link href="/">
-                    Looking for Tribes: Ascend?
-                  </Link>
+                  <Link href="/">Looking for Tribes: Ascend?</Link>
                 </Button>
               </div>
             </div>
