@@ -23,7 +23,7 @@ export default function HomePage() {
             className="content-center"
           >
             <source
-              src="/static/video/kata-ds-bounce.webm"
+              src="https://utfs.io/f/b8660dcd-42d5-457e-8b98-7ecdf8f3dffd-cuncsc.webm"
               type="video/webm"
             ></source>
             Your browser does not support .webm video.
@@ -68,7 +68,7 @@ export default function HomePage() {
                   preload="auto"
                 >
                   <source
-                    src="/static/video/kata-ds-bounce.webm"
+                    src="https://utfs.io/f/b8660dcd-42d5-457e-8b98-7ecdf8f3dffd-cuncsc.webm"
                     type="video/webm"
                   ></source>
                   Your browser does not support .webm video.

@@ -156,7 +156,7 @@ export default function GuideInstallSetup() {
                     className=" h-1/3"
                   >
                     <source
-                      src="/static/video/install-location.webm"
+                      src="https://utfs.io/f/74dfea14-a764-4061-9ff9-4c3c90a9915f-2pmbfd.webm"
                       type="video/webm"
                     ></source>
                     Your browser does not support .webm video.
@@ -200,7 +200,7 @@ export default function GuideInstallSetup() {
                     className="max-h-screen"
                   >
                     <source
-                      src="/static/video/game-mode.webm"
+                      src="https://utfs.io/f/91f248ce-1489-4b2b-a596-aa675e4e0e50-fsg59a.webm"
                       type="video/webm"
                     ></source>
                     Your browser does not support .webm video.
