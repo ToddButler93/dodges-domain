@@ -403,7 +403,7 @@ export function NavBar() {
                         <div className="flex grow flex-row items-center gap-6 rounded p-3 hover:bg-accent">
                           <component.icon className="h-10 w-10 rounded p-2 text-primary dark:bg-zinc-800" />
                           <div className="flex flex-row gap-2">
-                            <b>{component.title}</b>
+                            {component.title}
                           </div>
                         </div>
                       </Link>
@@ -424,7 +424,7 @@ export function NavBar() {
                         <div className="flex grow flex-row items-center gap-6 rounded p-3 hover:bg-accent">
                           <component.icon className="h-10 w-10 rounded p-2 text-primary dark:bg-zinc-800" />
                           <div className="flex flex-row gap-2">
-                            <b>{component.title}</b>
+                            {component.title}
                           </div>
                         </div>
                       </Link>
@@ -445,7 +445,7 @@ export function NavBar() {
                         <div className="flex grow flex-row items-center gap-6 rounded p-3 hover:bg-accent">
                           <component.icon className="h-10 w-10 rounded p-2 text-primary dark:bg-zinc-800" />
                           <div className="flex flex-row gap-2">
-                            <b>{component.title}</b>
+                            {component.title}
                           </div>
                         </div>
                       </Link>
@@ -469,7 +469,7 @@ export function NavBar() {
                         <div className="flex grow flex-row items-center gap-6 rounded p-3 hover:bg-accent">
                           <component.icon className="h-10 w-10 rounded p-2 text-primary dark:bg-zinc-800" />
                           <div className="flex flex-row gap-2">
-                            <b>{component.title}</b>
+                            {component.title}
                           </div>
                         </div>
                       </Link>
