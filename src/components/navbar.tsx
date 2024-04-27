@@ -24,6 +24,7 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
+  navigationMenuTriggerStyle,
 } from "./ui/navigation-menu";
 import { Separator } from "./ui/separator";
 import { ModeToggle } from "./theme-toggle";
@@ -199,14 +200,14 @@ export function NavBar() {
           alt=""
           className="h-8 w-8 min-w-8"
         />
-        <h3 className="text-nowrap bg-transparent py-3 text-zinc-100  max-lg:hidden">
+        <h3 className="text-nowrap bg-transparent py-3 text-zinc-100  max-xl:hidden">
           Dodges Domain
         </h3>
-        <h3 className="text-nowrap bg-transparent py-3 text-zinc-100  md:hidden">
+        <h3 className="text-nowrap bg-transparent py-3 text-zinc-100  lg:hidden">
           Dodges Domain
         </h3>
       </Link>
-      <NavigationMenu className="max-md:hidden">
+      <NavigationMenu className="max-lg:hidden">
         <NavigationMenuList className="text-zinc-100">
           <NavigationMenuItem>
             <NavigationMenuTrigger className="bg-transparent">
@@ -312,6 +313,15 @@ export function NavBar() {
             </NavigationMenuContent>
           </NavigationMenuItem>
           <NavigationMenuItem>
+            <Link href="/docs/custommaps" legacyBehavior passHref>
+              <NavigationMenuLink
+                className={navigationMenuTriggerStyle() + " bg-transparent"}
+              >
+                Community Maps
+              </NavigationMenuLink>
+            </Link>
+          </NavigationMenuItem>
+          <NavigationMenuItem>
             <NavigationMenuTrigger className="bg-transparent">
               Game Information
             </NavigationMenuTrigger>
@@ -354,7 +364,7 @@ export function NavBar() {
       </NavigationMenu>
       <div className="flex items-center gap-3 pe-3">
         <ModeToggle />
-        <div className="flex items-center md:hidden">
+        <div className="flex items-center lg:hidden">
           <Sheet>
             <SheetTrigger asChild>
               <Button
@@ -379,7 +389,7 @@ export function NavBar() {
                     </Button>
                   </SheetDescription>
                 </SheetHeader>
-                <Collapsible className="grid gap-3 pt-6 pe-6">
+                <Collapsible className="grid gap-3 pe-6 pt-6">
                   <CollapsibleTrigger className="flex w-full items-center text-lg font-semibold [&[data-state=open]>svg]:rotate-90">
                     Installation Guides
                     <FaChevronRight className="ml-auto h-5 w-5 transition-all" />
@@ -400,7 +410,7 @@ export function NavBar() {
                     ))}
                   </CollapsibleContent>
                 </Collapsible>
-                <Collapsible className="grid gap-3 pt-6 pe-6">
+                <Collapsible className="grid gap-3 pe-6 pt-6">
                   <CollapsibleTrigger className="flex w-full items-center text-lg font-semibold [&[data-state=open]>svg]:rotate-90">
                     Gameplay Guides
                     <FaChevronRight className="ml-auto h-5 w-5 transition-all" />
@@ -421,7 +431,7 @@ export function NavBar() {
                     ))}
                   </CollapsibleContent>
                 </Collapsible>
-                <Collapsible className="grid gap-3 pt-6 pe-6">
+                <Collapsible className="grid gap-3 pe-6 pt-6">
                   <CollapsibleTrigger className="flex w-full items-center text-lg font-semibold [&[data-state=open]>svg]:rotate-90">
                     Map Development
                     <FaChevronRight className="ml-auto h-5 w-5 transition-all" />
@@ -442,10 +452,10 @@ export function NavBar() {
                     ))}
                   </CollapsibleContent>
                 </Collapsible>
-                <div className="flex w-full items-center gap-3 pt-6 pe-6 text-lg font-semibold">
+                <div className="flex w-full items-center gap-3 pe-6 pt-6 text-lg font-semibold">
                   <Link href="/docs/custommaps">Community Maps</Link>
                 </div>
-                <Collapsible className="grid gap-3 pt-6 pe-6">
+                <Collapsible className="grid gap-3 pe-6 pt-6">
                   <CollapsibleTrigger className="flex w-full items-center text-lg font-semibold [&[data-state=open]>svg]:rotate-90">
                     Tribes Information
                     <FaChevronRight className="ml-auto h-5 w-5 transition-all" />
