@@ -6,13 +6,12 @@ import { Separator } from "~/components/ui/separator";
 export default function GuideCapping() {
   return (
     <>
-      {" "}
       <div className="flex flex-col gap-6 px-3">
         <Card className="grow py-6 text-center shadow-xl">
           <h1>Playing Offense - Tribes Ascend</h1>
         </Card>
 
-        <div className="flex flex-col gap-3 shadow-xl">
+        <div className="flex flex-col gap-3 p-6 shadow-xl">
           <Link href={"/docs/gameplay/guide-quick#glossary"}>Glossary</Link>
           <p>
             Everything you do relies on timing with your <b>Capper</b>. Since
@@ -66,7 +65,7 @@ export default function GuideCapping() {
           </Card>
         </div>
         <Separator />
-        <div className="flex flex-col gap-3 shadow-xl">
+        <div className="flex flex-col gap-3 p-6 shadow-xl">
           <h2> Timing</h2>
           <p>
             Your goal is to kill every enemy near their stand when your{" "}
@@ -122,7 +121,7 @@ export default function GuideCapping() {
           </p>
         </div>
         <Separator />
-        <div className="flex flex-col gap-3 shadow-xl">
+        <div className="flex flex-col gap-3 p-6 shadow-xl">
           <h2> Walks</h2>
           <p>
             A walk is where an <b>Offense</b> member chooses to grab the flag
@@ -159,7 +158,7 @@ export default function GuideCapping() {
           </p>
         </div>
         <Separator />
-        <div className="flex flex-col gap-3 shadow-xl">
+        <div className="flex flex-col gap-3 p-6 shadow-xl">
           <h2> Spotting</h2>
           <p>
             To support your <b>Defense</b> effectively an <b>Offense</b> member
@@ -194,7 +193,7 @@ export default function GuideCapping() {
           </p>
         </div>
         <Separator />
-        <div className="flex flex-col gap-3 shadow-xl">
+        <div className="flex flex-col gap-3 p-6 shadow-xl">
           <h2> Sniper Pressure</h2>
           <p>
             Killing the enemy <b>Sniper</b> before your <b>Capper</b> has
@@ -264,7 +263,7 @@ export default function GuideCapping() {
           </p>
         </div>
         <Separator />
-        <div className="flex flex-col gap-3 shadow-xl">
+        <div className="flex flex-col gap-3 p-6 shadow-xl">
           <h2> Classes</h2>
           <p>
             Most of the time it is best to be a <b>Medium</b> or a <b>Heavy</b>{" "}

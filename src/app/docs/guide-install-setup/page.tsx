@@ -20,8 +20,8 @@ import { Alert } from "~/components/ui/alert";
 export default function GuideInstallSetup() {
   return (
     <>
-      <div className="flex flex-col gap-6">
-        <Card className=" grow justify-center p-6">
+      <div className="flex flex-col gap-6 px-6">
+        <Card className="grow py-6 text-center">
           <h1 className="flex flex-row justify-center">
             Tribes Ascend Installation
           </h1>
@@ -39,10 +39,7 @@ export default function GuideInstallSetup() {
               />
             </a>
             <Separator />
-            <HoverCard
-              openDelay={50}
-              closeDelay={50}
-            >
+            <HoverCard openDelay={50} closeDelay={50}>
               <HoverCardTrigger>
                 <Button asChild>
                   <a href="steam://install/17080/">Install Via Steam</a>
@@ -82,10 +79,7 @@ export default function GuideInstallSetup() {
             </Link>
             <Separator />
 
-            <HoverCard
-              openDelay={50}
-              closeDelay={50}
-            >
+            <HoverCard openDelay={50} closeDelay={50}>
               <HoverCardTrigger>
                 <Button asChild>
                   <a href="https://github.com/mcoot/TribesLauncherSharp/releases/latest">
@@ -124,28 +118,27 @@ export default function GuideInstallSetup() {
           </Card>
         </div>
         <Separator />
-        <div className="flex flex-grow justify-center">
-          <ul className="flex max-w-2xl flex-col gap-3">
-            <h1>Instructions</h1>
-            <li>Extract and launch the Tribes Launcher.</li>
-            <li>
+        <div className="flex flex-grow flex-col">
+          <h1>Instructions</h1>
+          <div className="flex flex-col justify-center gap-3">
+            <p>Extract and launch the Tribes Launcher.</p>
+            <p>
               Select the Community or PUG for your login server, hit Launch,
               wait for your game to start then hit inject on your launcher to
               enable TA Mods.
-            </li>
-            <li>
+            </p>
+            <p>
               Once injected, the Play Now button will show whether you are in
               OOTB or GOTY mode. There is a button on the main menu to switch.
               You need to be in GOTY mode to play on GOTY servers and OOTB mode
               to play on OOTB servers.
-            </li>
-          </ul>
+            </p>
+          </div>
         </div>
         <Separator />
-        <div className="flex flex-row justify-center p-6">
-          <div className="flex max-w-2xl flex-col justify-center">
-            <h1 className=" content-center">Troubleshooting</h1>
-
+        <div className="flex flex-grow flex-col">
+          <h1 className=" content-center">Troubleshooting</h1>
+          <div className="flex flex-col justify-center gap-3">
             <Accordion type="single" collapsible>
               <AccordionItem value="IDKWHERETRIBESIS">
                 <AccordionTrigger>

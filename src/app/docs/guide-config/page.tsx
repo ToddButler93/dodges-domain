@@ -7,13 +7,13 @@ import { Separator } from "~/components/ui/separator";
 export default function GuideConfig() {
   return (
     <>
-      <div className="flex flex-col gap-6">
+      <div className="flex flex-col gap-6 px-6">
+        <Card className="grow py-6 text-center">
+          <h1>Tribes Ascend Configuration</h1>
+        </Card>
         <div className="flex flex-col gap-6">
-          <Card className="grow py-6 text-center shadow-xl">
-            <h1>Tribes Ascend Configuration</h1>
-          </Card>
           <div className="flex flex-col gap-6">
-            <p className="text-xl">
+            <p>
               Your <b className=" text-xl">Tribes.ini</b> is the config file for
               your graphical settings. It is located under{" "}
               <b>Documents\My Games\Tribes Ascend\TribesGame\Config\</b>
@@ -32,7 +32,7 @@ export default function GuideConfig() {
                     Tribes.ini
                   </Link>
                 </Button>
-                <p className="text-xl">
+                <p>
                   This <b>Tribes.ini</b> is for people with weaker systems or
                   who are after a competitive edge.
                 </p>
@@ -49,7 +49,7 @@ export default function GuideConfig() {
                     &quot;Pretty&quot; Tribes.ini
                   </Link>
                 </Button>
-                <p className="text-xl">
+                <p>
                   This <b>Tribes.ini</b> is for people with a super-strong
                   system and prioritize looks over a competitive edge.
                 </p>
@@ -121,7 +121,7 @@ export default function GuideConfig() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-6 p-3 shadow-xl">
+        <div className="flex flex-col gap-3 p-3 shadow-xl">
           <h2>TribesInput.ini</h2>
           <div>
             <Button asChild>
@@ -131,27 +131,27 @@ export default function GuideConfig() {
             </Button>
           </div>
           <Separator></Separator>
-          <p className="text-xl">
+          <p>
             Your <b>TribesInput.ini</b> is the config file for your key
             bindings.
           </p>
-          <p className="text-xl">
+          <p>
             The main thing I&quot;d make sure is that you have
             <b>bEnableMouseSmoothing</b> set to <b>false</b>.
           </p>
-          <p className="text-xl">
+          <p>
             It is located under &quot;Documents\My Games\Tribes
             Ascend\TribesGame\Config\&quot;
           </p>
-          <p className="text-xl">
+          <p>
             A sensitivity of approximately 4.501 at maximum zoom will cause
             issues with mouse input. 5+ sensitivity is recommended.
           </p>
-          <p className="text-xl">
+          <p>
             This is my personal <b>TribesInput.ini</b>. Contains some of the
             autocompletes for official and custom server admins.
           </p>
-          <p className="text-xl">
+          <p>
             You must set this to <b>Read Only</b> otherwise the game will
             overwrite the file.
           </p>
@@ -167,7 +167,7 @@ export default function GuideConfig() {
             </Button>
           </div>
           <Separator></Separator>
-          <p className="text-xl">
+          <p>
             It is recommended to delete the default crosshair and either use the
             Tribes Ascend crosshair or create your own. If you choose to create
             your own I&quot;d recommend disabling the default crosshair within
