@@ -1,152 +1,187 @@
-import {
-  Button,
-  Code,
-  Title,
-  Text,
-  Kbd,
-  ListItem,
-  List,
-  Paper,
-  Card,
-  Alert,
-  Divider,
-} from "@mantine/core";
 import Link from "next/link";
+import { Alert } from "~/components/ui/alert";
+import { Button } from "~/components/ui/button";
+import { Card } from "~/components/ui/card";
+import { Separator } from "~/components/ui/separator";
 
 export default function GuideMapDevelopment() {
   return (
     <>
-      <div className="flex max-w-6xl flex-col gap-6 py-6">
-        <Card className="grow px-3 py-6 text-center shadow-xl">
-          <Title>Map Development Guide</Title>
+      <div className="flex flex-col gap-6 px-3">
+        <Card className="grow py-6 text-center">
+          <h1>Map Development Guide</h1>
         </Card>
-        <Paper className="flex flex-col p-6 shadow-xl">
-          <Card className="max-w-xl gap-3">
-            <Alert>
-              If you are interested in map development I recommend joining the
-              Tribes Ascend Community discord and asking for assistance. We are
-              excited to help out new map makers.
-            </Alert>
-            <Button
-              component={Link}
-              href="https://discord.gg/dd8JgzJ"
-              variant="default"
-            >
-              Tribes Ascend Community Discord
+        <div className="flex flex-col gap-3 p-6">
+          <Alert className="flex flex-col gap-3 p-3">
+            If you are interested in map development I recommend joining the
+            Tribes Ascend Community discord and asking for assistance. We are
+            excited to help out new map makers.
+            <Button>
+              <Link href="https://discord.gg/dd8JgzJ">
+                Tribes Ascend Community Discord
+              </Link>
             </Button>
-          </Card>
-          <Title order={2}>UDK Setup</Title>
-          <Title order={3}> Step 1</Title>
-          <Text>
+          </Alert>
+          <h2>UDK Setup</h2>
+          <h3> Step 1</h3>
+          <p>
             You need to download and install{" "}
             <Link href="http://library.theexiled.pwnageservers.com/file.php?id=2964">
               UDK build 7748 BETA January 2011
             </Link>{" "}
             to create maps for Tribes Ascend.
-          </Text>
-          <Text>
+          </p>
+          <p>
             You need to download the{" "}
-            <Link passHref={true} href="https://drive.google.com/file/d/11ADATh4y71bC8PdcbaUk5zDeSsBkOfST/view?usp=sharing">
+            <Link
+              passHref={true}
+              href="https://drive.google.com/file/d/11ADATh4y71bC8PdcbaUk5zDeSsBkOfST/view?usp=sharing"
+            >
               TA actor classes
             </Link>
-            . Extract the <Code>TribesGame</Code> folder to
-            <Code>\UDK\UDK-2011-01\Development\Src\</Code> and the{" "}
-            <Code>TA_BaseAssets.upk & AUD_MUS_CTF.upk</Code> to
-            <Code>\UDK\UDK-2011-01\UDKGame\Content\</Code>
-          </Text>
-          <Text>
+            . Extract the <b>TribesGame</b> folder to
+            <b>\UDK\UDK-2011-01\Development\Src\</b> and the{" "}
+            <b>TA_BaseAssets.upk & AUD_MUS_CTF.upk</b> to
+            <b>\UDK\UDK-2011-01\UDKGame\Content\</b>
+          </p>
+          <p>
             You need to download all the{" "}
-            <Link passHref={true} href="https://drive.google.com/file/d/1u_nItIPxeA79Im8tXgg3Q41RS2iBAT_O/view?usp=sharing">
+            <Link
+              passHref={true}
+              href="https://drive.google.com/file/d/1u_nItIPxeA79Im8tXgg3Q41RS2iBAT_O/view?usp=sharing"
+            >
               TA package files
             </Link>
-            . Extract these to <Code>\UDK\UDK-2011-01\UDKGame\Content</Code>
-          </Text>
-          <Text>
+            . Extract these to <b>\UDK\UDK-2011-01\UDKGame\Content</b>
+          </p>
+          <p>
             It is recommended to use the latest map file releases to give
             yourself a head start with assets:
-          </Text>
-          <List>
-            <ListItem>
-              <Link passHref={true} href="https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/dodge-map-common.zip">
+          </p>
+          <ul>
+            <li>
+              <Link
+                passHref={true}
+                href="https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/dodge-map-common.zip"
+              >
                 Dodge&apos;s Common Package
               </Link>
-            </ListItem>
-            <ListItem>
-              <Link passHref={true} href="https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/dodge-map-pack.zip">
+            </li>
+            <li>
+              <Link
+                passHref={true}
+                href="https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/dodge-map-pack.zip"
+              >
                 Dodge&apos;s Map Pack
               </Link>
-            </ListItem>
-            <ListItem>
-              <Link passHref={true} href="https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/dodge-map-pack-2.zip">
+            </li>
+            <li>
+              <Link
+                passHref={true}
+                href="https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/dodge-map-pack-2.zip"
+              >
                 Dodge&apos;s Map Pack 2
               </Link>
-            </ListItem>
-            <ListItem>
-              <Link passHref={true} href="https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/dodge-map-pack-3.zip">
+            </li>
+            <li>
+              <Link
+                passHref={true}
+                href="https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/dodge-map-pack-3.zip"
+              >
                 Dodge&apos;s Map Pack 3
               </Link>
-            </ListItem>
-            <ListItem>
-              <Link passHref={true} href="https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/dodge-map-pack-4.zip">
+            </li>
+            <li>
+              <Link
+                passHref={true}
+                href="https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/dodge-map-pack-4.zip"
+              >
                 Dodge&apos;s Map Pack 4
               </Link>
-            </ListItem>
-            <ListItem>
-              <Link passHref={true} href="https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/dodge-arena-series.zip">
+            </li>
+            <li>
+              <Link
+                passHref={true}
+                href="https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/dodge-arena-series.zip"
+              >
                 Dodge&apos;s Arena Series
               </Link>
-            </ListItem>
-            <ListItem>
-              <Link passHref={true} href="https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/dodge-treacherous-series.zip">
+            </li>
+            <li>
+              <Link
+                passHref={true}
+                href="https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/dodge-treacherous-series.zip"
+              >
                 Dodge&apos;s Treacherous Series
               </Link>
-            </ListItem>
-            <ListItem>
-              <Link passHref={true} href="https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/evil-map-pack.zip">
+            </li>
+            <li>
+              <Link
+                passHref={true}
+                href="https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/evil-map-pack.zip"
+              >
                 Evil&apos;s Map Pack
               </Link>
-            </ListItem>
-            <ListItem>
-              <Link passHref={true} href="https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/evil-map-pack-2.zip">
+            </li>
+            <li>
+              <Link
+                passHref={true}
+                href="https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/evil-map-pack-2.zip"
+              >
                 Evil&apos;s Map Pack 2
               </Link>
-            </ListItem>
-            <ListItem>
-              <Link passHref={true} href="https://tamods-update.s3-ap-southeast-2.amazonaws.com/packages/krogoth-map-pack.zip">
+            </li>
+            <li>
+              <Link
+                passHref={true}
+                href="https://tamods-update.s3-ap-southeast-2.amazonaws.com/packages/krogoth-map-pack.zip"
+              >
                 Krogoth&apos;s Map Pack
               </Link>
-            </ListItem>
-            <ListItem>
-              <Link passHref={true} href="https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/nerve-map-pack.zip">
+            </li>
+            <li>
+              <Link
+                passHref={true}
+                href="https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/nerve-map-pack.zip"
+              >
                 Nerve&apos;s Map Pack
               </Link>
-            </ListItem>
-            <ListItem>
-              <Link passHref={true} href="https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/kali-map-pack.zip">
+            </li>
+            <li>
+              <Link
+                passHref={true}
+                href="https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/kali-map-pack.zip"
+              >
                 Kali&apos;s Map Pack
               </Link>
-            </ListItem>
-            <ListItem>
-              <Link passHref={true} href="https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/cro-map-pack.zip">
+            </li>
+            <li>
+              <Link
+                passHref={true}
+                href="https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/cro-map-pack.zip"
+              >
                 Cro&apos;s Map Pack
               </Link>
-            </ListItem>
-            <ListItem>
-              <Link passHref={true} href="https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/evil-map-common.zip">
+            </li>
+            <li>
+              <Link
+                passHref={true}
+                href="https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/evil-map-common.zip"
+              >
                 Evil&apos;s Common Package
               </Link>
-            </ListItem>
-          </List>
-          <Text>
+            </li>
+          </ul>
+          <p>
             These zip files have a directory structure which is
-            <Code>!TRIBESDIR\TribesGame\CookedPC\Maps\</Code>
-          </Text>
-          <Text>
+            <b>!TRIBESDIR\TribesGame\CookedPC\Maps\</b>
+          </p>
+          <p>
             All .upk files will go into your
-            <Code>\UDK\UDK-2011-01\UDKGame\Content\</Code>folder. Where as the
-            maps can go into <Code>\UDK\UDK-2011-01\UDKGame\Content\Maps</Code>
-          </Text>
-          <Text>
+            <b>\UDK\UDK-2011-01\UDKGame\Content\</b>folder. Where as the maps
+            can go into <b>\UDK\UDK-2011-01\UDKGame\Content\Maps</b>
+          </p>
+          <p>
             Note: You will need the Package Files to play and test the map on
             the{" "}
             <Link href="#launching-custom-maps-on-leaked-dev-build">
@@ -158,350 +193,372 @@ export default function GuideMapDevelopment() {
             </Link>
             , it is best to copy these now before you delete the downloaded
             archive.
-          </Text>
-          <Title order={3}> Step 2</Title>
-          <Text>
+          </p>
+          <h3> Step 2</h3>
+          <p>
             After UDK is installed, go to{" "}
-            <Code>\UDK\UDK-2011-01\UDKGame\Config\</Code> and open{" "}
-            <Code>UDKEngine.ini</Code> in a text editor. Search for{" "}
-            <Code>[UnrealEd.EditorEngine]</Code> and at the end of that section
-            on a new line write <Code>ModEditPackages=TribesGame</Code> Save the
-            file and close the editor.
-          </Text>
-          <Title order={3}> Step 3</Title>
-          <Text>
+            <b>\UDK\UDK-2011-01\UDKGame\Config\</b> and open{" "}
+            <b>UDKEngine.ini</b> in a p editor. Search for{" "}
+            <b>[UnrealEd.EditorEngine]</b> and at the end of that section on a
+            new line write <b>ModEditPackages=TribesGame</b> Save the file and
+            close the editor.
+          </p>
+          <h3> Step 3</h3>
+          <p>
             Launch the UDK Editor, when asked to update the outdated scripts hit{" "}
             <strong>yes</strong>. Wait for the success message then close it and
             reopen UDK Editor to get started.
-          </Text>
-          <Title order={2}> Required Knowledge</Title>
-          <Text>
+          </p>
+          <h2> Required Knowledge</h2>
+          <p>
             Do not save over one of the downloaded package files. If you want to
-            add custom textures/meshes to your map you should create a new
-            package file.
-          </Text>
-          <Text>
+            add custom pures/meshes to your map you should create a new package
+            file.
+          </p>
+          <p>
             Map files(.fmap) require specific file naming to work in Tribes
-            Ascend. <Code>TrGameMode-MapName</Code> where the CTF map Arx Novena
-            is named <Code>TrCTF-ArxNovena</Code>
-          </Text>
-        </Paper>
-        <Divider />
-        <Paper className="flex flex-col p-6 shadow-xl">
-          <Title order={2}> Your First Map</Title>
-          <Title order={3}> Step 1</Title>
-          <List>
-            <ListItem>
-              <Link passHref={true} href="https://drive.google.com/file/d/1nZ1McI3DhilrHNxbm5a0KVFPkDy9WfA0/view?usp=sharing">
+            Ascend. <b>TrGameMode-MapName</b> where the CTF map Arx Novena is
+            named <b>TrCTF-ArxNovena</b>
+          </p>
+        </div>
+        <Separator />
+        <div className="flex flex-col gap-3 p-6">
+          <h2> Your First Map</h2>
+          <h3> Step 1</h3>
+          <ul>
+            <li>
+              <Link
+                passHref={true}
+                href="https://drive.google.com/file/d/1nZ1McI3DhilrHNxbm5a0KVFPkDy9WfA0/view?usp=sharing"
+              >
                 Basic CTF Map Download
               </Link>
-            </ListItem>
-            <ListItem>
-              <Link passHref={true} href="https://drive.google.com/file/d/1doKK3ycGZhN3tjQJ7khoXQPRP8pQjDZZ/view?usp=sharing">
+            </li>
+            <li>
+              <Link
+                passHref={true}
+                href="https://drive.google.com/file/d/1doKK3ycGZhN3tjQJ7khoXQPRP8pQjDZZ/view?usp=sharing"
+              >
                 Basic Arena Map Download
               </Link>
-            </ListItem>
-          </List>
-          <Text>
+            </li>
+          </ul>
+          <p>
             These should be placed in{" "}
-            <Code>\UDK\UDK-2011-01\UDKGame\Content\Maps\</Code>
-          </Text>
-          <Text>
+            <b>\UDK\UDK-2011-01\UDKGame\Content\Maps\</b>
+          </p>
+          <p>
             Launch UDK and open the map you wish to edit in your Maps folder.
-          </Text>
-          <Title order={3}> Step 2</Title>
-          <Text>
+          </p>
+          <h3> Step 2</h3>
+          <p>
             Now you are free to do editing however you see fit. I recommend
             modifying the terrain, adding material to the terrain and adding a
             couple of random static meshes from the TA packages within the
             content browser to get yourself familiar with UDK. When you feel
-            like you are ready to test the map out. Hit <Code>Build</Code>then
-            <Code>Build All</Code> Hit File then Save Current Level. Close the
-            UDK Editor and save any asset packages <strong>you</strong> created.
-          </Text>
-          <Title order={3}> Step 3</Title>
-          <Text>
+            like you are ready to test the map out. Hit <b>Build</b>then
+            <b>Build All</b> Hit File then Save Current Level. Close the UDK
+            Editor and save any asset packages <strong>you</strong> created.
+          </p>
+          <h3> Step 3</h3>
+          <p>
             You will need to complete Step 1 of{" "}
             <Link href="#refshadercache-compiler-error">
               the workaround to for the refshadercache
             </Link>{" "}
             before you build and test your map.
-          </Text>
-          <Text>
-            Open <Code>\UDK\UDK-2011-01\BinariesUnrealFrontend.exe</Code>
-          </Text>
-          <Text>
-            Select the profile <Code>DM-Deck</Code>and remove
-            <Code>DM-Deck.udk</Code>under <Code>Maps to Cook</Code> Add your
-            custom map, click Cook and then Cook Packages. Exit Unreal Frontend
-            once completed.
-          </Text>
-          <Text>Now your map should be ready to be tested!</Text>
-        </Paper>
-        <Divider />
-        <Paper className="flex flex-col p-6 shadow-xl">
-          <Title order={2}> Testing Maps</Title>
-          <Title order={3}> Launching Custom Maps on Leaked Dev Build</Title>
-          <Text>
+          </p>
+          <p>
+            Open <b>\UDK\UDK-2011-01\BinariesUnrealFrontend.exe</b>
+          </p>
+          <p>
+            Select the profile <b>DM-Deck</b>and remove
+            <b>DM-Deck.udk</b>under <b>Maps to Cook</b> Add your custom map,
+            click Cook and then Cook Packages. Exit Unreal Frontend once
+            completed.
+          </p>
+          <p>Now your map should be ready to be tested!</p>
+        </div>
+        <Separator />
+        <div className="flex flex-col gap-3 p-6">
+          <h2> Testing Maps</h2>
+          <h3> Launching Custom Maps on Leaked Dev Build</h3>
+          <p>
             You need the{" "}
             <Link href="http://library.theexiled.pwnageservers.com/category.php?id=200">
               leaked dev build
             </Link>{" "}
             of Tribes Ascend.
-          </Text>
-          <Text>
+          </p>
+          <p>
             An easy way to launch the map is with the{" "}
             <Link href="http://library.theexiled.pwnageservers.com/file.php?id=2942">
               dev client launcher
             </Link>
-          </Text>
-          <Title order={4}> Easy way</Title>
-          <Title order={5}> Step 1</Title>
-          <Text>
+          </p>
+          <h4> Easy way</h4>
+          <h5> Step 1</h5>
+          <p>
             Extract the{" "}
-            <Link passHref={true} href="https://drive.google.com/file/d/1u_nItIPxeA79Im8tXgg3Q41RS2iBAT_O/view?usp=sharing">
+            <Link
+              passHref={true}
+              href="https://drive.google.com/file/d/1u_nItIPxeA79Im8tXgg3Q41RS2iBAT_O/view?usp=sharing"
+            >
               TA package files
             </Link>{" "}
-            to the dev builds <Code>\TribesGame\CookedPC\Maps\</Code>folder.
-          </Text>
-          <Title order={5}> Step 2</Title>
-          <Text>
-            Copy <Code>RefShaderCache-PC-D3D-SM3.upk</Code>in
-            <Code>C:\UDK\UDK-2011-01\UDKGame\CookedPC\</Code>and paste it into
-            <Code>\Tribes\TribesGame\CookedPC\</Code>
-          </Text>
-          <Text>
+            to the dev builds <b>\TribesGame\CookedPC\Maps\</b>folder.
+          </p>
+          <h5> Step 2</h5>
+          <p>
+            Copy <b>RefShaderCache-PC-D3D-SM3.upk</b>in
+            <b>C:\UDK\UDK-2011-01\UDKGame\CookedPC\</b>and paste it into
+            <b>\Tribes\TribesGame\CookedPC\</b>
+          </p>
+          <p>
             Copy the uncooked map from
-            <Code>\UDK\UDK-2011-01\UDKGame\Content\Maps\</Code>to
-            <Code>\Tribes\TribesGame\CookedPC\Maps\</Code>
-          </Text>
-          <Text>
+            <b>\UDK\UDK-2011-01\UDKGame\Content\Maps\</b>to
+            <b>\Tribes\TribesGame\CookedPC\Maps\</b>
+          </p>
+          <p>
             Copy any asset packages you&apos;ve created from
-            <Code>\UDK\UDK-2011-01\UDKGame\Content\</Code>to
-            <Code>\Tribes\TribesGame\CookedPC\Maps\</Code>
-          </Text>
-          <Title order={5}> Step 3</Title>
-          <Text>
+            <b>\UDK\UDK-2011-01\UDKGame\Content\</b>to
+            <b>\Tribes\TribesGame\CookedPC\Maps\</b>
+          </p>
+          <h5> Step 3</h5>
+          <p>
             Download and launch the{" "}
             <Link href="http://library.theexiled.pwnageservers.com/file.php?id=2942">
               dev client launcher
             </Link>
-          </Text>
-          <Text>
+          </p>
+          <p>
             Click the Set Path button and set it to the Leaked Dev Build{" "}
-            <Code>TribesAscend.exe</Code>
-          </Text>
-          <Text>Set the game mode to your maps Game Mode.</Text>
-          <Text>
-            In the Map text field, enter your map name, it will not be in the
+            <b>TribesAscend.exe</b>
+          </p>
+          <p>Set the game mode to your maps Game Mode.</p>
+          <p>
+            In the Map p field, enter your map name, it will not be in the
             dropdown.
-          </Text>
-          <Text>Note: TrCTF-BasicMap</Text>
-          <Title order={5}> Step 5</Title>
-          <Text>Click Launch.</Text>
-          <Text>
-            Once the game has launched hit the <Kbd>`</Kbd> key and type
-            <Code>ChangeTeam BloodEagle</Code>for blood eagle spawns or
-            <Code>ChangeTeam DiamondSword</Code>for diamond sword spawns.
-          </Text>
-          <Title order={4}> Hard way</Title>
-          <Title order={5}> Step 1</Title>
-          <Text>
+          </p>
+          <p>Note: TrCTF-BasicMap</p>
+          <h5> Step 5</h5>
+          <p>Click Launch.</p>
+          <p>
+            Once the game has launched hit the <kbd>`</kbd> key and type
+            <b>ChangeTeam BloodEagle</b>for blood eagle spawns or
+            <b>ChangeTeam DiamondSword</b>for diamond sword spawns.
+          </p>
+          <h4> Hard way</h4>
+          <h5> Step 1</h5>
+          <p>
             Extract the{" "}
-            <Link passHref={true} href="https://drive.google.com/file/d/1u_nItIPxeA79Im8tXgg3Q41RS2iBAT_O/view?usp=sharing">
+            <Link
+              passHref={true}
+              href="https://drive.google.com/file/d/1u_nItIPxeA79Im8tXgg3Q41RS2iBAT_O/view?usp=sharing"
+            >
               TA package files
             </Link>
-            to dev builds <Code>\TribesGame\CookedPC\Maps\</Code>folder.
-          </Text>
-          <Title order={5}> Step 2</Title>
-          <Text>
-            Copy <Code>RefShaderCache-PC-D3D-SM3.upk</Code>in
-            <Code>C:\UDK\UDK-2011-01\UDKGame\CookedPC\</Code>and paste it into
-            <Code>\Tribes\TribesGame\CookedPC\</Code>
-          </Text>
-          <Text>
+            to dev builds <b>\TribesGame\CookedPC\Maps\</b>folder.
+          </p>
+          <h5> Step 2</h5>
+          <p>
+            Copy <b>RefShaderCache-PC-D3D-SM3.upk</b>in
+            <b>C:\UDK\UDK-2011-01\UDKGame\CookedPC\</b>and paste it into
+            <b>\Tribes\TribesGame\CookedPC\</b>
+          </p>
+          <p>
             Copy the uncooked map from
-            <Code>\UDK\UDK-2011-01\UDKGame\Content\Maps\</Code>to
-            <Code>\Tribes\TribesGame\CookedPC\Maps\</Code>
-          </Text>
-          <Text>
+            <b>\UDK\UDK-2011-01\UDKGame\Content\Maps\</b>to
+            <b>\Tribes\TribesGame\CookedPC\Maps\</b>
+          </p>
+          <p>
             Copy any asset packages you&apos;ve created from
-            <Code>\UDK\UDK-2011-01\UDKGame\Content\</Code>to
-            <Code>\Tribes\TribesGame\CookedPC\Maps\</Code>
-          </Text>
-          <Title order={5}> Step 3</Title>
-          <Text>
+            <b>\UDK\UDK-2011-01\UDKGame\Content\</b>to
+            <b>\Tribes\TribesGame\CookedPC\Maps\</b>
+          </p>
+          <h5> Step 3</h5>
+          <p>
             Open Command Prompt. CD to the Tribes dev builds
-            <Code>\Binaries\Win32\</Code>Folder and enter
-            <Code>Tribesascend.exe TrGameMode-MapName -seekfreeloading</Code>
-          </Text>
-          <Text>
-            Note: <Code>TrGameMode-MapName</Code>for Arx Novena would be
-            <Code>TrCTF-ArxNovena</Code>
-          </Text>
-          <Title order={5}> Step 4</Title>
-          <Text>Hit Enter.</Text>
-          <Text>
-            Once the game has launched hit the <Kbd>`</Kbd>key and type
-            <Code>ChangeTeam BloodEagle</Code> for blood eagle spawns or
-            <Code>ChangeTeam DiamondSword</Code>for diamond sword spawns.
-            Otherwise, you will spawn as neither team.
-          </Text>
-          <Title order={3}> Hosting Custom Map</Title>
-          <Text>
-            <Link passHref={true} href="https://github.com/Griffon26/taserver/blob/master/docs/user_manual/hosting_a_game_server">
+            <b>\Binaries\Win32\</b>Folder and enter
+            <b>Tribesascend.exe TrGameMode-MapName -seekfreeloading</b>
+          </p>
+          <p>
+            Note: <b>TrGameMode-MapName</b>for Arx Novena would be
+            <b>TrCTF-ArxNovena</b>
+          </p>
+          <h5> Step 4</h5>
+          <p>Hit Enter.</p>
+          <p>
+            Once the game has launched hit the <kbd>`</kbd>key and type
+            <b>ChangeTeam BloodEagle</b> for blood eagle spawns or
+            <b>ChangeTeam DiamondSword</b>for diamond sword spawns. Otherwise,
+            you will spawn as neither team.
+          </p>
+          <h3> Hosting Custom Map</h3>
+          <p>
+            <Link
+              passHref={true}
+              href="https://github.com/Griffon26/taserver/blob/master/docs/user_manual/hosting_a_game_server"
+            >
               Host your server
             </Link>
             .
-          </Text>
-          <Text>
+          </p>
+          <p>
             Extract the{" "}
-            <Link passHref={true} href="https://drive.google.com/file/d/1u_nItIPxeA79Im8tXgg3Q41RS2iBAT_O/view?usp=sharing">
+            <Link
+              passHref={true}
+              href="https://drive.google.com/file/d/1u_nItIPxeA79Im8tXgg3Q41RS2iBAT_O/view?usp=sharing"
+            >
               TA package files
             </Link>{" "}
-            to the servers <Code>\Tribes\TribesGame\CookedPC\Maps\</Code>folder.
-          </Text>
-          <Text>
-            Copy <Code>RefShaderCache-PC-D3D-SM3.upk</Code>in
-            <Code>C:\UDK\UDK-2011-01\UDKGame\CookedPC\</Code>and paste it into
-            <Code>\Tribes\TribesGame\CookedPC\</Code>
-          </Text>
-          <Text>
+            to the servers <b>\Tribes\TribesGame\CookedPC\Maps\</b>folder.
+          </p>
+          <p>
+            Copy <b>RefShaderCache-PC-D3D-SM3.upk</b>in
+            <b>C:\UDK\UDK-2011-01\UDKGame\CookedPC\</b>and paste it into
+            <b>\Tribes\TribesGame\CookedPC\</b>
+          </p>
+          <p>
             Copy the uncooked map from
-            <Code>\UDK\UDK-2011-01\UDKGame\Content\Maps\</Code>to
-            <Code>\Tribes\TribesGame\CookedPC\Maps\</Code>
-          </Text>
-          <Text>
+            <b>\UDK\UDK-2011-01\UDKGame\Content\Maps\</b>to
+            <b>\Tribes\TribesGame\CookedPC\Maps\</b>
+          </p>
+          <p>
             <Link href="/docs/guide-install-setup#playing-custom-maps-on-the-official-game">
               Join your server
             </Link>
             .
-          </Text>
-        </Paper>
-        <Divider />
-        <Paper className="flex flex-col p-6 shadow-xl">
-          <Title order={2}> External Resources</Title>
-          <Text>
+          </p>
+        </div>
+        <Separator />
+        <div className="flex flex-col gap-3 p-6">
+          <h2> External Resources</h2>
+          <p>
             Ex Hi-Rez Studios map developer Katelyn Pitstick has posted some
             information specifically about making Tribes Ascend maps on{" "}
             <Link passHref={true} href="https://katelyn-mp.com/wp/?cat=8">
               Kate&apos;s website
             </Link>
             .
-          </Text>
-          <Text>
+          </p>
+          <p>
             thenewboston has an old{" "}
-            <Link passHref={true} href="https://youtube.com/playlist?list=PLFF967D7CA020E636">
-              UDK Tutorial Playlist
+            <Link
+              passHref={true}
+              href="https://youtube.com/playul?ul=PLFF967D7CA020E636"
+            >
+              UDK Tutorial Playul
             </Link>{" "}
             where he is using an old 2011 build of UDK. Tutorial 36 is where he
             begins work on terrain.
-          </Text>
-          <Text>
+          </p>
+          <p>
             <Link href="http://wiki.theexiled.pwnageservers.com/Tribes:_Ascend/SDK/Working_With_Packages">
               Te-Krogoth&apos;s Working With Packages Guide
             </Link>
             .
-          </Text>
-          <Text>
+          </p>
+          <p>
             <Link href="http://www.reddit.com/user/Khorrin">Khorrin</Link>
             &apos;s
             <Link href="http://wiki.theexiled.pwnageservers.com/Tribes:_Ascend/SDK_Mapping_for_the_Lazy">
               SDK Mapping for the Lazy
             </Link>
             .
-          </Text>
-          <Text>
+          </p>
+          <p>
             <Link href="http://www.reddit.com/user/dMidgard">dMidgard</Link>{" "}
             wrote a{" "}
             <Link href="http://wiki.theexiled.pwnageservers.com/Tribes:_Ascend/SDK_Guide_to_Mapping">
               SDK Guide to Mapping
             </Link>
             .
-          </Text>
-          <Text>
+          </p>
+          <p>
             Te-Krogoth&apos;s{" "}
             <Link href="http://wiki.theexiled.pwnageservers.com/Mapping_for_the_Tribes:_Ascend_SDK">
               Mapping for Tribes: Ascend SDK
             </Link>
             .
-          </Text>
-          <Text>
+          </p>
+          <p>
             Te-Krogoth&apos;s{" "}
             <Link href="http://wiki.theexiled.pwnageservers.com/Tribes:_Ascend/SDK/T1_Heightmaps">
               T1 Heightmaps
             </Link>
             .
-          </Text>
-        </Paper>
-        <Divider />
-        <Paper className="flex flex-col p-6 shadow-xl">
-          <Title order={2}> Troubleshooting</Title>
-          <Title order={3}> RefShaderCache Compiler Error</Title>
-          <Text>
+          </p>
+        </div>
+        <Separator />
+        <div className="flex flex-col gap-3 p-6">
+          <h2> Troubleshooting</h2>
+          <h3> RefShaderCache Compiler Error</h3>
+          <p>
             In the official version of the game, the shader compiler crashes
             when attempting to load a custom map in the game.
-          </Text>
-          <Title order={4}> Workaround (Easy way)</Title>
-          <Title order={5}> Step 1</Title>
-          <Text>
+          </p>
+          <h4> Workaround (Easy way)</h4>
+          <h5> Step 1</h5>
+          <p>
             Download the latest master
-            <Link passHref={true} href="https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/master-refshadercache.zip">
+            <Link
+              passHref={true}
+              href="https://tamods-update.s3.ap-southeast-2.amazonaws.com/packages/master-refshadercache.zip"
+            >
               RefShaderCache-PC-D3D-SM3.upk
             </Link>
-            , paste it into <Code>\UDK\UDK-2011-01\UDKGame\Content\</Code> If
+            , paste it into <b>\UDK\UDK-2011-01\UDKGame\Content\</b> If
             you&apos;ve played on custom maps before, the one from your
-            <Code>\Tribes\TribesGame\CookedPC\</Code>folder should work.
-          </Text>
-          <Title order={5}> Step 2</Title>
-          <Text>
+            <b>\Tribes\TribesGame\CookedPC\</b>folder should work.
+          </p>
+          <h5> Step 2</h5>
+          <p>
             Run UnrealFrontEnd and cook the map. Copy
-            <Code>RefShaderCache-PC-D3D-SM3.upk</Code>in
-            <Code>\UDK\UDK-2011-01\UDKGame\CookedPC\</Code>and paste it into
-            <Code>\Tribes\TribesGame\CookedPC\</Code> This will need to be done
-            every time you wish to test the map.
-          </Text>
-          <Title order={4}> Workaround (Advanced users)</Title>
-          <Title order={5}> Step 1</Title>
-          <Text>
-            Copy the <Code>RefShaderCache-PC-D3D-SM3.upk</Code>in
-            <Code>\Tribes\TribesGame\CookedPC\</Code>and paste it into
-            <Code>\UDK\UDK-2011-01\UDKGame\Content\</Code>
-          </Text>
-          <Title order={5}> Step 2</Title>
-          <Text>
+            <b>RefShaderCache-PC-D3D-SM3.upk</b>in
+            <b>\UDK\UDK-2011-01\UDKGame\CookedPC\</b>and paste it into
+            <b>\Tribes\TribesGame\CookedPC\</b> This will need to be done every
+            time you wish to test the map.
+          </p>
+          <h4> Workaround (Advanced users)</h4>
+          <h5> Step 1</h5>
+          <p>
+            Copy the <b>RefShaderCache-PC-D3D-SM3.upk</b>in
+            <b>\Tribes\TribesGame\CookedPC\</b>and paste it into
+            <b>\UDK\UDK-2011-01\UDKGame\Content\</b>
+          </p>
+          <h5> Step 2</h5>
+          <p>
             Using a hex editor, you will see the values
-            <Code>C1 83 2A 9E 25 03 02 00</Code>, modify the <Code>02</Code>in
-            that sequence to <Code>00</Code>
-          </Text>
-          <Title order={5}> Step 3</Title>
-          <Text>
+            <b>C1 83 2A 9E 25 03 02 00</b>, modify the <b>02</b>in that sequence
+            to <b>00</b>
+          </p>
+          <h5> Step 3</h5>
+          <p>
             Run UnrealFrontEnd and cook the map. Copy
-            <Code>RefShaderCache-PC-D3D-SM3.upk</Code>in
-            <Code>C:\UDK\UDK-2011-01\UDKGame\CookedPC\</Code>and paste it into
-            <Code>\Tribes\TribesGame\CookedPC\</Code> This will need to be done
-            every time you wish to test the map.
-          </Text>
-          <Title order={4}> Reason why this is needed</Title>
-          <Text>
+            <b>RefShaderCache-PC-D3D-SM3.upk</b>in
+            <b>C:\UDK\UDK-2011-01\UDKGame\CookedPC\</b>and paste it into
+            <b>\Tribes\TribesGame\CookedPC\</b> This will need to be done every
+            time you wish to test the map.
+          </p>
+          <h4> Reason why this is needed</h4>
+          <p>
             It looks like the shader compiler is missing some required shaders
             to properly compile.
-          </Text>
-          <Text>
+          </p>
+          <p>
             Cooking the map with the unedited RefShaderCache-PC-D3D-SM3.upk will
             fail due to license version checks, the license version is in the
             file’s header which we edit via our hex editor.
-          </Text>
-          <Title order={3}> Where is UDK Installed?</Title>
-          <Text>
-            By default UDK installs to <Code>C:\UDK\UDK-2011-01\</Code>
-          </Text>
-          <Title order={3}>
-            Texture issues of static meshes from the packages
-          </Title>
-          <Text>
+          </p>
+          <h3> Where is UDK Installed?</h3>
+          <p>
+            By default UDK installs to <b>C:\UDK\UDK-2011-01\</b>
+          </p>
+          <h3>pure issues of static meshes from the packages</h3>
+          <p>
             `You need to copy over the materials for the meshes you are using in
-            your map, otherwise they will show up with a blue and white texture
+            your map, otherwise they will show up with a blue and white pure
             pattern in-game. Find the material the mesh uses by double-clicking
             on the mesh in the content browser and expanding the LOD section.
             Copy the material(s) to your map package and then reassign the
@@ -512,15 +569,15 @@ export default function GuideMapDevelopment() {
             pressing the green arrow in the Properties window of the mesh. If
             you have multiple materials you need to assign, click the plus sign
             to add another material slight in the Properties window.`
-          </Text>
-          <Text>
+          </p>
+          <p>
             This quote is taken from Te-Krogoth&apos;s{" "}
             <Link href="http://wiki.theexiled.pwnageservers.com/Tribes:_Ascend/SDK/Working_With_Packages">
               Working With Packages Guide
             </Link>
             .
-          </Text>
-        </Paper>
+          </p>
+        </div>
       </div>
     </>
   );
