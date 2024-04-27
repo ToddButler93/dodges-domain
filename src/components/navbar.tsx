@@ -22,7 +22,6 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
-  navigationMenuTriggerStyle,
 } from "./ui/navigation-menu";
 import { Separator } from "./ui/separator";
 import { ModeToggle } from "./theme-toggle";
@@ -177,34 +176,36 @@ const components: { title: string; href: string; description: string }[] = [
 export function NavBar() {
   return (
     // TODO: Header Background/text variables
-    <div className="flex justify-between sticky top-0 z-50 h-[60px] w-full px-3 gap-3 bg-slate-950">
-      <Link href={"/"} className="flex flex-row items-center gap-3">
+    <div className="sticky top-0 z-50 flex h-[60px] w-screen justify-between gap-3  bg-zinc-800 px-3">
+      <Link href={"/"} className="flex flex-row items-center gap-3 pe-6">
         <img src="/static/img/blueplate.png" alt="" className="h-8 w-8" />
-        <h1 className="invisible md:visible">Dodges Domain</h1>
+        <h3 className="invisible bg-transparent py-3 text-zinc-100 md:visible">
+          Dodges Domain
+        </h3>
       </Link>
       <NavigationMenu>
-        <NavigationMenuList>
+        <NavigationMenuList className="text-zinc-100">
           <NavigationMenuItem>
-            <NavigationMenuTrigger>Installation</NavigationMenuTrigger>
+            <NavigationMenuTrigger className="bg-transparent text-lg">
+              Installation
+            </NavigationMenuTrigger>
             <NavigationMenuContent>
-              <div className="gap-3">
-                <div className="flex flex-row justify-between p-6">
-                  <h1>Tribes Installation</h1>
-                </div>
+              <div className="flex flex-row justify-between p-6">
+                <h3>Tribes Installation</h3>
               </div>
               <Separator />
               <ul className="grid w-[400px] gap-3 p-6 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
                 {installMenuData.map((component) => (
-                  <div className="flex flex-row items-center gap-3">
-                    <component.icon />
-                    <ListItem
-                      key={component.title}
-                      title={component.title}
-                      href={component.link}
-                    >
+                  <ListItem
+                    key={component.title}
+                    title={component.title}
+                    href={component.link}
+                  >
+                    <div className="flex flex-row items-center gap-3">
+                      <component.icon />
                       {component.description}
-                    </ListItem>
-                  </div>
+                    </div>
+                  </ListItem>
                 ))}
               </ul>
               <Separator />
@@ -222,100 +223,106 @@ export function NavBar() {
             </NavigationMenuContent>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <NavigationMenuTrigger>Gameplay Guides</NavigationMenuTrigger>
+            <NavigationMenuTrigger className="bg-transparent text-lg">
+              Gameplay Guides
+            </NavigationMenuTrigger>
             <NavigationMenuContent>
               <div className="gap-3">
                 <div className="flex flex-row justify-between p-6">
-                  <h1>Gameplay Guides</h1>
+                  <h3>Gameplay Guides</h3>
                 </div>
                 <Separator />
               </div>
               <ul className="grid w-[400px] gap-3 p-6 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
                 {pugMenuData.map((component) => (
-                  <div className="flex flex-row items-center gap-3">
-                    <component.icon />
-                    <ListItem
-                      key={component.title}
-                      title={component.title}
-                      href={component.link}
-                    >
+                  <ListItem
+                    key={component.title}
+                    title={component.title}
+                    href={component.link}
+                  >
+                    <div className="flex flex-row items-center gap-3">
+                      <component.icon />
                       {component.description}
-                    </ListItem>
-                  </div>
+                    </div>
+                  </ListItem>
                 ))}
                 {gameplayMenuData.map((component) => (
-                  <div className="flex flex-row items-center gap-3">
-                    <component.icon />
-                    <ListItem
-                      key={component.title}
-                      title={component.title}
-                      href={component.link}
-                    >
+                  <ListItem
+                    key={component.title}
+                    title={component.title}
+                    href={component.link}
+                  >
+                    <div className="flex flex-row items-center gap-3">
+                      <component.icon />
                       {component.description}
-                    </ListItem>
-                  </div>
+                    </div>
+                  </ListItem>
                 ))}
               </ul>
             </NavigationMenuContent>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <NavigationMenuTrigger>Map Development</NavigationMenuTrigger>
+            <NavigationMenuTrigger className="bg-transparent text-lg">
+              Map Development
+            </NavigationMenuTrigger>
             <NavigationMenuContent>
               <div className="gap-3">
                 <div className="flex flex-row justify-between p-6">
-                  <h1>Map Development</h1>
+                  <h3>Map Development</h3>
                 </div>
                 <Separator />
               </div>
               <ul className="grid w-[400px] gap-3 p-6 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
                 {mapDevelopmentMenuData.map((component) => (
-                  <div className="flex flex-row items-center gap-3">
-                    <component.icon />
-                    <ListItem
-                      key={component.title}
-                      title={component.title}
-                      href={component.link}
-                    >
+                  <ListItem
+                    key={component.title}
+                    title={component.title}
+                    href={component.link}
+                  >
+                    <div className="flex flex-row items-center gap-3">
+                      <component.icon />
                       {component.description}
-                    </ListItem>
-                  </div>
+                    </div>
+                  </ListItem>
                 ))}
               </ul>
             </NavigationMenuContent>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <NavigationMenuTrigger>Game Information</NavigationMenuTrigger>
+            <NavigationMenuTrigger className="bg-transparent text-lg">
+              Game Information
+            </NavigationMenuTrigger>
             <NavigationMenuContent>
               <div className="gap-3">
                 <div className="flex flex-row justify-between p-6">
-                  <h1>Game Information</h1>
+                  <h3>Game Information</h3>
                 </div>
                 <Separator />
               </div>
               <ul className="grid w-[400px] gap-3 p-6 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
                 {tribesLiveInfoMenuData.map((component) => (
-                  <div className="flex flex-row items-center gap-3">
-                    <component.icon />
-                    <ListItem
-                      key={component.title}
-                      title={component.title}
-                      href={component.link}
-                    >
+                  <ListItem
+                    key={component.title}
+                    title={component.title}
+                    href={component.link}
+                  >
+                    <div className="flex flex-row items-center gap-3">
+                      <component.icon />
                       {component.description}
-                    </ListItem>
-                  </div>
+                    </div>
+                  </ListItem>
                 ))}
                 {tribesInfoMenuData.map((component) => (
-                  <div className="flex flex-row items-center gap-3">
-                    <component.icon />
-                    <ListItem
-                      key={component.title}
-                      title={component.title}
-                      href={component.link}
-                    >
+                  <ListItem
+                    key={component.title}
+                    title={component.title}
+                    href={component.link}
+                  >
+                    <div className="flex flex-row items-center gap-3">
+                      <component.icon />
                       {component.description}
-                    </ListItem>
-                  </div>
+                    </div>
+                  </ListItem>
                 ))}
               </ul>
             </NavigationMenuContent>
@@ -334,7 +341,7 @@ const ListItem = React.forwardRef<
   React.ComponentPropsWithoutRef<"a">
 >(({ className, title, children, ...props }, ref) => {
   return (
-    <li>
+    <li key={title}>
       <NavigationMenuLink asChild>
         <a
           ref={ref}
