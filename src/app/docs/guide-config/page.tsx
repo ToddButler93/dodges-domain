@@ -21,7 +21,7 @@ export default function GuideConfig() {
             </p>
             <div className="grid grid-cols-2 gap-3">
               <Card className="flex flex-col gap-3 p-3 shadow-xl">
-                <Link href="/static/text/dodges-ini/tribes.ini">
+                <Link download="tribes.ini" target="_blank" href="https://utfs.io/f/76e0e31f-e135-4dbc-9ee1-c8d641b8cd8b-jk7hvp.ini">
                   <Image
                     width={1500}
                     height={1500}
@@ -31,7 +31,7 @@ export default function GuideConfig() {
                 </Link>
 
                 <Button asChild>
-                  <Link href="/static/text/dodges-ini/tribes.ini">
+                  <Link download="tribes.ini" target="_blank" href="https://utfs.io/f/76e0e31f-e135-4dbc-9ee1-c8d641b8cd8b-jk7hvp.ini">
                     Tribes.ini
                   </Link>
                 </Button>
@@ -41,7 +41,7 @@ export default function GuideConfig() {
                 </p>
               </Card>
               <Card className="flex flex-col gap-3 p-3 shadow-xl">
-                <Link href="/static/text/dodges-pretty-ini/tribes.ini">
+                <Link download="tribes.ini" target="_blank" href="https://utfs.io/f/f5dd26d4-ecc8-41a0-aeec-3e136baf5239-ts4htm.ini">
                   <Image
                     width={1500}
                     height={1500}
@@ -50,7 +50,7 @@ export default function GuideConfig() {
                   />
                 </Link>
                 <Button asChild>
-                  <Link href="/static/text/dodges-pretty-ini/tribes.ini">
+                  <Link download="tribes.ini" target="_blank" href="https://utfs.io/f/f5dd26d4-ecc8-41a0-aeec-3e136baf5239-ts4htm.ini">
                     &quot;Pretty&quot; Tribes.ini
                   </Link>
                 </Button>
@@ -130,7 +130,7 @@ export default function GuideConfig() {
           <h2>TribesInput.ini</h2>
           <div>
             <Button asChild>
-              <Link href="/static/text/dodges-input-ini/tribesinput.ini">
+              <Link download="tribes.ini" target="_blank" href="https://utfs.io/f/ae32c748-fa36-4727-858c-efe42c344b32-gojldb.ini">
                 Dodges TribesInput.ini
               </Link>
             </Button>
@@ -166,7 +166,7 @@ export default function GuideConfig() {
 
           <div>
             <Button asChild>
-              <Link href="/static/text/dodges-config-lua/config.lua">
+              <Link download="tribes.ini" target="_blank" href="https://utfs.io/f/8d1426d4-2bc3-41af-b66b-74876675b56b-rnj6dk.lua">
                 Dodges TAMods Config.lua
               </Link>
             </Button>
