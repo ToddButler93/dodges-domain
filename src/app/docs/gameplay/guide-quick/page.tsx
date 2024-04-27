@@ -130,11 +130,10 @@ export default function QuickPUGGuide() {
             <h2>Offense</h2>
             <div className="flex flex-col gap-3">
               
-            <p>
+            
               <Button>
                 <Link href="/docs/gameplay/guide-offense">Offense Guide</Link>
               </Button>
-            </p>
               <h3>Major Responsibilities</h3>
               <ul className="list-disc p-3">
                 <li>
@@ -281,11 +280,9 @@ export default function QuickPUGGuide() {
           </TabsContent>
           <TabsContent value="capping" className="flex flex-col ps-6 gap-3">
             <h2>Capper</h2>
-            <p>
               <Button>
                 <Link href="/docs/gameplay/guide-cap">Capper Guide</Link>
               </Button>
-            </p>
             <h3>Major Responsibilities</h3>
             <ul className="list-disc p-3">
               <li>Grab and capture the enemy flag.</li>

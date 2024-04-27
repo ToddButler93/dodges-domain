@@ -11,11 +11,9 @@ export default function CustomMaps() {
         <Card className="grow py-6 text-center">
           <h1>Tribes Ascend Quick PUG Guide</h1>
         </Card>
-        <p>
           <Button asChild>
             <Link href="/docs/guide-install-setup">Install Community Maps</Link>
           </Button>
-        </p>
         <Separator />
         <Card className="grow py-6 text-center">
           <h1>CTF</h1>

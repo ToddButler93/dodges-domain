@@ -241,13 +241,13 @@ export function NavBar() {
               <Separator />
               <ul className="flex items-center justify-between gap-3 p-6 ">
                 <Button asChild>
-                  <a href="steam://install/17080/">Steam install</a>
+                  <Link href="steam://install/17080/">Steam install</Link>
                 </Button>
                 <FaPlus />
                 <Button asChild>
-                  <a href="https://github.com/mcoot/TribesLauncherSharp/releases/latest">
+                  <Link href="https://github.com/mcoot/TribesLauncherSharp/releases/latest">
                     Download Tribes Launcher
-                  </a>
+                  </Link>
                 </Button>
               </ul>
             </NavigationMenuContent>

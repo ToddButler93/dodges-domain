@@ -19,20 +19,16 @@ export default function TribesServerHosting() {
             Installs docker and loads the taserver docker image from this
             project on an Ubuntu VM.
           </p>
-          <p>
-            <Button asChild>
-              <Link href="https://raw.githubusercontent.com/chickenbellyfin/taserver-docker/master/README.md">
-                Courtesy of Chicken
-              </Link>
-            </Button>
-          </p>
-          <p>
-            <Button asChild>
-              <Link href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fchickenbellyfin%2Ftaserver-docker%2Fmaster%2Fdeploy%2Fazuredeploy.json">
-                Deploy to Azure
-              </Link>
-            </Button>
-          </p>
+          <Button asChild>
+            <Link href="https://raw.githubusercontent.com/chickenbellyfin/taserver-docker/master/README.md">
+              Courtesy of Chicken
+            </Link>
+          </Button>
+          <Button asChild>
+            <Link href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fchickenbellyfin%2Ftaserver-docker%2Fmaster%2Fdeploy%2Fazuredeploy.json">
+              Deploy to Azure
+            </Link>
+          </Button>
           <h3>Manual Docker Ubuntu</h3>
           <p>
             This will be a basic run down on how to setup TA Server on an
@@ -47,13 +43,11 @@ export default function TribesServerHosting() {
           <p>sudo ufw allow 7777:7877/udp</p>
           <p>sudo ufw allow 9002:9102/udp</p>
           <h4>0.2 Setup Docker</h4>
-          <p>
-            <Button asChild>
-              <Link href="https://docs.docker.com/engine/install/ubuntu/#install-using-the-convenience-script">
-                Install via the convenience script
-              </Link>
-            </Button>
-          </p>
+          <Button asChild>
+            <Link href="https://docs.docker.com/engine/install/ubuntu/#install-using-the-convenience-script">
+              Install via the convenience script
+            </Link>
+          </Button>
           &apos;curl -fsSL https://get.docker.com -o get-docker.sh&apos;
           &apos;sudo sh get-docker.sh&apos;
           <h6>0.3 Setup current user</h6>
@@ -83,15 +77,13 @@ export default function TribesServerHosting() {
           <li>Limited support </li>
           <li>Can be costly </li>{" "}
         </div>
-        <Separator/>
+        <Separator />
         <div className="flex flex-col gap-3 p-6">
           <h2>Option 2: LLamagrab Servers</h2>An easy to grasp server hosting
           solution for community servers.
-          <p>
-            <Button asChild>
-              <Link href="https://llamagrab.net/">Llamagrab.net</Link>
-            </Button>
-          </p>
+          <Button asChild>
+            <Link href="https://llamagrab.net/">Llamagrab.net</Link>
+          </Button>
           <h3>Benefits</h3>
           <li>Easy to grasp </li>
           <li>Possible to ban/kick cheaters</li>
@@ -105,7 +97,7 @@ export default function TribesServerHosting() {
           </li>
           <li>Single login server (Community)</li>{" "}
         </div>
-        <Separator/>
+        <Separator />
         <div className="flex flex-col gap-3 p-6">
           <h2>Option 3: Hirez Official</h2>
           <h3>Benefits</h3>

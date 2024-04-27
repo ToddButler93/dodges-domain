@@ -28,7 +28,7 @@ export default function GuideInstallSetup() {
         </Card>
         <div className="flex flex-row justify-evenly gap-3 p-6">
           <Card className="flex flex-col items-center justify-between gap-3 p-3">
-            <a
+            <Link
               href="https://store.steampowered.com/app/17080/Tribes_Ascend/"
               target="_blank"
             >
@@ -37,25 +37,25 @@ export default function GuideInstallSetup() {
                 height={200}
                 src="/static/img/tribes-ascend-logo.png"
               />
-            </a>
+            </Link>
             <Separator />
             <HoverCard openDelay={50} closeDelay={50}>
               <HoverCardTrigger>
                 <Button asChild>
-                  <a href="steam://install/17080/">Install Via Steam</a>
+                  <Link href="steam://install/17080/">Install Via Steam</Link>
                 </Button>
               </HoverCardTrigger>
               <HoverCardContent className="flex-auto w-full">
                 <p>Steam install is recommended.</p>{" "}
                 <div className="flex flex-row justify-between gap-3 p-3">
                   <Button asChild>
-                    <a href="https://f000.backblazeb2.com/file/tribes-zip/Tribes_Ascend_Parting_Gifts.zip">
+                    <Link href="https://f000.backblazeb2.com/file/tribes-zip/Tribes_Ascend_Parting_Gifts.zip">
                       Manual Download
-                    </a>
+                    </Link>
                   </Button>
 
                   <Button asChild>
-                    <a href="/docs/linux-install">Using Linux?</a>
+                    <Link href="/docs/linux-install">Using Linux?</Link>
                   </Button>
                 </div>
               </HoverCardContent>
@@ -80,9 +80,9 @@ export default function GuideInstallSetup() {
             <HoverCard openDelay={50} closeDelay={50}>
               <HoverCardTrigger>
                 <Button asChild>
-                  <a href="https://github.com/mcoot/TribesLauncherSharp/releases/latest">
+                  <Link href="https://github.com/mcoot/TribesLauncherSharp/releases/latest">
                     Download
-                  </a>
+                  </Link>
                 </Button>
               </HoverCardTrigger>
               <HoverCardContent className="p-center flex flex-col gap-3">
