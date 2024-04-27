@@ -28,7 +28,7 @@ export default function CustomMaps() {
               height={500}
               alt=""
               className="rounded"
-              src="/static/img/maps/acheron-river.png"
+              src="/static/img/maps/acheron-spawn.png"
             />
           </Card>
           <Card className="mx-auto max-w-xl">
@@ -58,7 +58,7 @@ export default function CustomMaps() {
               height={500}
               alt=""
               className="rounded"
-              src="/static/img/maps/blues-v011.jpeg"
+              src="" // TODO
             />
           </Card>
           <Card className="mx-auto max-w-xl">
@@ -68,7 +68,7 @@ export default function CustomMaps() {
               height={500}
               alt=""
               className="rounded"
-              src="/static/img/maps/ascent2.jpg"
+              src="" // TODO
             />
           </Card>
           <Card className="mx-auto max-w-xl">
@@ -118,7 +118,7 @@ export default function CustomMaps() {
               height={500}
               alt=""
               className="rounded"
-              src="/static/img/maps/ascent2.jpg"
+              src="" // TOOD
             />
           </Card>
           <Card className="mx-auto max-w-xl">
@@ -148,7 +148,7 @@ export default function CustomMaps() {
               height={500}
               alt=""
               className="rounded"
-              src="/static/img/maps/phlegathon-river.png"
+              src="/static/img/maps/phlegathon-overview.png"
             />
           </Card>
           <Card className="mx-auto max-w-xl">
@@ -213,7 +213,7 @@ export default function CustomMaps() {
               height={500}
               alt=""
               className="rounded"
-              src="/static/img/maps/ascent2.jpg"
+              src="/static/img/maps/broadside-overview.png"
             />
           </Card>
           <Card className="mx-auto max-w-xl">
@@ -223,7 +223,7 @@ export default function CustomMaps() {
               height={500}
               alt=""
               className="rounded"
-              src="/static/img/maps/ascent2.jpg"
+              src="" // TODO
             />
           </Card>
         </div>
@@ -241,7 +241,7 @@ export default function CustomMaps() {
               height={500}
               alt=""
               className="rounded"
-              src="/static/img/maps/ascent2.jpg"
+              src="" // TODO
             />
           </Card>
           <Card className="mx-auto max-w-xl">
@@ -251,7 +251,7 @@ export default function CustomMaps() {
               height={500}
               alt=""
               className="rounded"
-              src="/static/img/maps/ascent2.jpg"
+              src="" //TODO
             />
           </Card>
         </div>
