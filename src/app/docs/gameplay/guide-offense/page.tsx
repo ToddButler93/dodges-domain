@@ -12,7 +12,7 @@ export default function GuideCapping() {
         </Card>
 
         <div className="flex flex-col gap-3 p-6 shadow-xl">
-          <Link href={"/docs/gameplay/guide-quick#glossary"}>Glossary</Link>
+          <Link href={"/docs/gameplay/guide-quick?tab=glossary"}>Glossary</Link>
           <p>
             Everything you do relies on timing with your <b>Capper</b>. Since
             the <b>Capper</b> looks to move the enemy flag, your goal is to kill

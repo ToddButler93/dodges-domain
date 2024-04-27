@@ -120,7 +120,7 @@ export default function GuideUDKBasics() {
             Right click the terrain and select Actor Properties <Kbd>F4</Kbd>.
             This can be found under View then Actor Properties.
           </Text>
-          <Link href="#glossary">What is an actor in UDK?</Link>
+          <Link href="?tab=glossary">What is an actor in UDK?</Link>
           <Text>
             To confirm a setting, make sure you hit enter after typing/pasting
             in the value.

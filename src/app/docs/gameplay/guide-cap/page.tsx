@@ -104,7 +104,7 @@ export default function GuideCapping() {
         <Separator />
         <div className="flex flex-col p-6 shadow-xl">
           <h2> Communication</h2>
-          <Link href="/docs/gameplay/guide-quick#glossary">Glossary</Link>
+          <Link href="/docs/gameplay/guide-quick?tab=glossary">Glossary</Link>
           Communicating your position and intention allows your teammates to
           clear the enemy defense allowing you to grab or work with you getting
           the flag home. Learning time calls for your routes is incredibly
