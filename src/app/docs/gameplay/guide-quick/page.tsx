@@ -58,7 +58,7 @@ export default function QuickPUGGuide() {
           <h1>Tribes Ascend Quick PUG Guide</h1>
         </Card>
         <Tabs defaultValue="pugs" className="flex flex-row">
-          <TabsList className="flex-col flex py-6 justify-start items-start">
+          <TabsList className="flex-col flex py-6 justify-start items-start dark:bg-zinc-800 dark:text-zinc-100">
             <TabsTrigger value="pugs">PUG Information </TabsTrigger>
             <TabsTrigger value="offense">Offense </TabsTrigger>
             <TabsTrigger value="capping">Capping </TabsTrigger>
@@ -79,7 +79,7 @@ export default function QuickPUGGuide() {
                 Each team runs 4 <b>offense</b> and 3 <b>defense</b>.
               </p>
               <p>
-                Generally speaking, the <b>defense</b> consists of a<b>HOF,</b>{" "}
+                Generally speaking, the <b>defense</b> consists of a <b>HOF,</b>{" "}
                 a <b>light defense</b>/<b>medium defense,</b> and a{" "}
                 <b>sniper.</b>
               </p>
@@ -88,8 +88,8 @@ export default function QuickPUGGuide() {
               </p>
               <ul className="list-disc p-3">
                 <li>
-                  3 <b>offense</b> members and a <b>capper</b> with one
-                  <b>offense</b> member going after the enemy
+                  3 <b>offense</b> members and a <b>capper</b> with one{" "}
+                  <b>offense</b> member going after the enemy{" "}
                   <b>Sniper</b>
                 </li>
                 <li>
@@ -97,8 +97,8 @@ export default function QuickPUGGuide() {
                 </li>
               </ul>
               <p>
-                <b>Defense</b> goes <b>defense</b> during
-                <b>stand-offs</b> and <b>offense</b> goes
+                <b>Defense</b> goes <b>defense</b> during{" "}
+                <b>stand-offs</b> and <b>offense</b> goes{" "}
                 <b>offense</b> during <b>stand-offs.</b>
               </p>
               <h3>Recommendations</h3>
@@ -112,8 +112,8 @@ export default function QuickPUGGuide() {
                 <li>
                   If both flags are home, if you are an <b>offense</b> member or
                   a <b>capper,</b> there is little to no gain in
-                  killing/shooting enemy <b>offense.</b> If
-                  <b>defense</b> is struggling, spotting enemy
+                  killing/shooting enemy <b>offense.</b> If{" "}
+                  <b>defense</b> is struggling, spotting enemy{" "}
                   <b>capper</b> is substantially more beneficial.
                 </li>
                 <li>
@@ -126,14 +126,15 @@ export default function QuickPUGGuide() {
               </ul>
             </div>
           </TabsContent>
-          <TabsContent value="offense" className="flex flex-col gap-3">
+          <TabsContent value="offense" className="flex flex-col ps-6 gap-3">
             <h2>Offense</h2>
             <div className="flex flex-col gap-3">
-              {/* <Button>
-                    <Link href="/docs/gameplay/guide-offense">
-                      Offense Guide
-                    </Link>
-                  </Button> */}
+              
+            <p>
+              <Button>
+                <Link href="/docs/gameplay/guide-offense">Offense Guide</Link>
+              </Button>
+            </p>
               <h3>Major Responsibilities</h3>
               <ul className="list-disc p-3">
                 <li>
@@ -173,7 +174,7 @@ export default function QuickPUGGuide() {
               </ul>
             </div>
           </TabsContent>
-          <TabsContent value="hof" className="flex flex-col gap-3">
+          <TabsContent value="hof" className="flex flex-col ps-6 gap-3">
             <h2>Heavy on Flag</h2>
             <div className="flex flex-col gap-3">
               {/* <Button asChild>
@@ -204,7 +205,7 @@ export default function QuickPUGGuide() {
               </ul>
             </div>
           </TabsContent>
-          <TabsContent value="defense" className="flex flex-col gap-3">
+          <TabsContent value="defense" className="flex flex-col ps-6 gap-3">
             <h2>Light/Medium Defense</h2>
             <div className="flex flex-col gap-3">
               {/* <Button>
@@ -239,7 +240,7 @@ export default function QuickPUGGuide() {
               </ul>
             </div>
           </TabsContent>
-          <TabsContent value="sniping" className="flex flex-col gap-3">
+          <TabsContent value="sniping" className="flex flex-col ps-6 gap-3">
             <h2>Sniper</h2>
             <div className="flex flex-col gap-3">
               {/* <Button asChild>
@@ -278,7 +279,7 @@ export default function QuickPUGGuide() {
               </ul>
             </div>
           </TabsContent>
-          <TabsContent value="capping" className="flex flex-col gap-3">
+          <TabsContent value="capping" className="flex flex-col ps-6 gap-3">
             <h2>Capper</h2>
             <p>
               <Button>
@@ -303,7 +304,7 @@ export default function QuickPUGGuide() {
               </li>
             </ul>
           </TabsContent>
-          <TabsContent value="standoffs" className="flex flex-col gap-3">
+          <TabsContent value="standoffs" className="flex flex-col ps-6 gap-3">
             <h2>Stand-Offs</h2>
             <ul className="list-disc p-3">
               <li>
@@ -337,7 +338,7 @@ export default function QuickPUGGuide() {
               </li>
             </ul>
           </TabsContent>
-          <TabsContent value="glossary">
+          <TabsContent value="glossary" className="flex flex-col ps-6 gap-3">
             <h2 id="glossary">Glossary</h2>
             {/* TODO Table <Table className="p-3" data={tableData} /> */}
           </TabsContent>
