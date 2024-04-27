@@ -50,10 +50,10 @@ export default function HomePage() {
             </Button>
           </div>
         </div>
-        <div className="grid grid-cols-3 gap-6 p-6">
+        <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-3 p-6">
           <Card className="grid-col grid items-center justify-center rounded-md drop-shadow-md">
             <CardHeader>
-              <CardTitle className="text-center">Gameplay Guides</CardTitle>
+              <CardTitle className="text-center text-nowrap">Gameplay Guides</CardTitle>
             </CardHeader>
             <CardContent>
               <Link href="/docs/gameplay/guide-quick">
@@ -76,7 +76,7 @@ export default function HomePage() {
           </Card>
           <Card className="grid-col grid items-center justify-center rounded-md drop-shadow-md">
             <CardHeader>
-              <CardTitle className="text-center">Map Development</CardTitle>
+              <CardTitle className="text-center text-nowrap">Map Development</CardTitle>
             </CardHeader>
             <CardContent>
               <Link href="/docs/development/guide-map-dev">
@@ -93,7 +93,7 @@ export default function HomePage() {
 
           <Card className="grid-col grid items-center justify-center rounded-md drop-shadow-md">
             <CardHeader>
-              <CardTitle className="text-center">Community Maps</CardTitle>
+              <CardTitle className="text-center text-nowrap">Community Maps</CardTitle>
             </CardHeader>
             <CardContent>
               <Link href="/docs/custommaps/">
