@@ -12,10 +12,7 @@ import {
   FaGamepad,
   FaGun,
   FaPlus,
-  FaShield,
-  FaWeightHanging,
 } from "react-icons/fa6";
-import { RxCrosshair1 } from "react-icons/rx";
 import { FaEdit } from "react-icons/fa";
 import {
   NavigationMenu,
@@ -394,8 +391,8 @@ export function NavBar() {
                     Installation Guides
                     <FaChevronRight className="ml-auto h-5 w-5 transition-all" />
                   </CollapsibleTrigger>
-                  <CollapsibleContent>
-                    {installMenuData.map((component) => (
+                  {installMenuData.map((component) => (
+                    <CollapsibleContent key={component.title}>
                       <Link
                         className="flex w-full items-center text-lg font-semibold"
                         href={component.link}
@@ -407,16 +404,16 @@ export function NavBar() {
                           </div>
                         </div>
                       </Link>
-                    ))}
-                  </CollapsibleContent>
+                    </CollapsibleContent>
+                  ))}
                 </Collapsible>
                 <Collapsible className="grid gap-3 pe-6 pt-6">
                   <CollapsibleTrigger className="flex w-full items-center text-lg font-semibold [&[data-state=open]>svg]:rotate-90">
                     Gameplay Guides
                     <FaChevronRight className="ml-auto h-5 w-5 transition-all" />
                   </CollapsibleTrigger>
-                  <CollapsibleContent>
-                    {gameplayMenuData.map((component) => (
+                  {gameplayMenuData.map((component) => (
+                    <CollapsibleContent key={component.title}>
                       <Link
                         className="flex w-full items-center text-lg font-semibold"
                         href={component.link}
@@ -428,16 +425,16 @@ export function NavBar() {
                           </div>
                         </div>
                       </Link>
-                    ))}
-                  </CollapsibleContent>
+                    </CollapsibleContent>
+                  ))}
                 </Collapsible>
                 <Collapsible className="grid gap-3 pe-6 pt-6">
                   <CollapsibleTrigger className="flex w-full items-center text-lg font-semibold [&[data-state=open]>svg]:rotate-90">
                     Map Development
                     <FaChevronRight className="ml-auto h-5 w-5 transition-all" />
                   </CollapsibleTrigger>
-                  <CollapsibleContent>
-                    {mapDevelopmentMenuData.map((component) => (
+                  {mapDevelopmentMenuData.map((component) => (
+                    <CollapsibleContent key={component.title}>
                       <Link
                         className="flex w-full items-center text-lg font-semibold"
                         href={component.link}
@@ -449,8 +446,8 @@ export function NavBar() {
                           </div>
                         </div>
                       </Link>
-                    ))}
-                  </CollapsibleContent>
+                    </CollapsibleContent>
+                  ))}
                 </Collapsible>
                 <div className="flex w-full items-center gap-3 pe-6 pt-6 text-lg font-semibold">
                   <Link href="/docs/custommaps">Community Maps</Link>
@@ -460,8 +457,8 @@ export function NavBar() {
                     Tribes Information
                     <FaChevronRight className="ml-auto h-5 w-5 transition-all" />
                   </CollapsibleTrigger>
-                  <CollapsibleContent>
-                    {tribesInfoMenuData.map((component) => (
+                  {tribesInfoMenuData.map((component) => (
+                    <CollapsibleContent key={component.title}>
                       <Link
                         className="flex w-full items-center text-lg font-semibold"
                         href={component.link}
@@ -473,8 +470,8 @@ export function NavBar() {
                           </div>
                         </div>
                       </Link>
-                    ))}
-                  </CollapsibleContent>
+                    </CollapsibleContent>
+                  ))}
                 </Collapsible>
               </ScrollArea>
             </SheetContent>
