@@ -5,6 +5,8 @@ import Link from "next/link";
 
 import { cn } from "~/lib/utils";
 import {
+  FaBars,
+  FaChevronRight,
   FaDownload,
   FaFlag,
   FaGamepad,
@@ -26,6 +28,20 @@ import {
 import { Separator } from "./ui/separator";
 import { ModeToggle } from "./theme-toggle";
 import { Button } from "./ui/button";
+import {
+  Collapsible,
+  CollapsibleContent,
+  CollapsibleTrigger,
+} from "./ui/collapsible";
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "./ui/sheet";
+import { ScrollArea } from "./ui/scroll-area";
 
 const installMenuData = [
   {
@@ -64,24 +80,24 @@ const gameplayMenuData = [
     description: "[VSAF]",
     link: "/docs/gameplay/guide-cap",
   },
-  {
-    icon: FaWeightHanging,
-    title: "Heavy on Flag",
-    description: "Unavailable - Needs writing.", // [VSDF]
-    link: "", // /docs/gameplay/guide-hof
-  },
-  {
-    icon: FaShield,
-    title: "Defense",
-    description: "Unavailable - Needs writing.", // [VSDB]
-    link: "", // /docs/gameplay/guide-defense
-  },
-  {
-    icon: RxCrosshair1,
-    title: "Sniping",
-    description: "Unavailable - Needs writing.", // [VSDD]
-    link: "", // /docs/gameplay/guide-snipe
-  },
+  // {
+  //   icon: FaWeightHanging,
+  //   title: "Heavy on Flag",
+  //   description: "Unavailable - Needs writing.", // [VSDF]
+  //   link: "", // /docs/gameplay/guide-hof
+  // },
+  // {
+  //   icon: FaShield,
+  //   title: "Defense",
+  //   description: "Unavailable - Needs writing.", // [VSDB]
+  //   link: "", // /docs/gameplay/guide-defense
+  // },
+  // {
+  //   icon: RxCrosshair1,
+  //   title: "Sniping",
+  //   description: "Unavailable - Needs writing.", // [VSDD]
+  //   link: "", // /docs/gameplay/guide-snipe
+  // },
 ];
 
 const mapDevelopmentMenuData = [
@@ -176,17 +192,24 @@ const components: { title: string; href: string; description: string }[] = [
 export function NavBar() {
   return (
     // TODO: Header Background/text variables
-    <div className="sticky top-0 z-50 flex h-[60px] w-screen justify-between gap-3  bg-zinc-800 px-3">
-      <Link href={"/"} className="flex flex-row items-center gap-3 pe-6">
-        <img src="/static/img/blueplate.png" alt="" className="h-8 w-8" />
-        <h3 className="invisible bg-transparent py-3 text-zinc-100 md:visible">
+    <div className="sticky top-0 z-50 flex h-[60px] w-screen justify-between gap-3 bg-zinc-800 px-3">
+      <Link href={"/"} className="flex flex-row items-center gap-3 pe-3">
+        <img
+          src="/static/img/blueplate.png"
+          alt=""
+          className="h-8 w-8 min-w-8"
+        />
+        <h3 className="text-nowrap bg-transparent py-3 text-zinc-100  max-lg:hidden">
+          Dodges Domain
+        </h3>
+        <h3 className="text-nowrap bg-transparent py-3 text-zinc-100  md:hidden">
           Dodges Domain
         </h3>
       </Link>
-      <NavigationMenu>
+      <NavigationMenu className="max-md:hidden">
         <NavigationMenuList className="text-zinc-100">
           <NavigationMenuItem>
-            <NavigationMenuTrigger className="bg-transparent text-lg">
+            <NavigationMenuTrigger className="bg-transparent">
               Installation
             </NavigationMenuTrigger>
             <NavigationMenuContent>
@@ -223,7 +246,7 @@ export function NavBar() {
             </NavigationMenuContent>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <NavigationMenuTrigger className="bg-transparent text-lg">
+            <NavigationMenuTrigger className="bg-transparent">
               Gameplay Guides
             </NavigationMenuTrigger>
             <NavigationMenuContent>
@@ -262,7 +285,7 @@ export function NavBar() {
             </NavigationMenuContent>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <NavigationMenuTrigger className="bg-transparent text-lg">
+            <NavigationMenuTrigger className="bg-transparent">
               Map Development
             </NavigationMenuTrigger>
             <NavigationMenuContent>
@@ -289,7 +312,7 @@ export function NavBar() {
             </NavigationMenuContent>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <NavigationMenuTrigger className="bg-transparent text-lg">
+            <NavigationMenuTrigger className="bg-transparent">
               Game Information
             </NavigationMenuTrigger>
             <NavigationMenuContent>
@@ -329,8 +352,124 @@ export function NavBar() {
           </NavigationMenuItem>
         </NavigationMenuList>
       </NavigationMenu>
-      <div className="flex items-center pe-3">
+      <div className="flex items-center gap-3 pe-3">
         <ModeToggle />
+        <div className="flex items-center md:hidden">
+          <Sheet>
+            <SheetTrigger asChild>
+              <Button
+                className="flex flex-col items-center justify-center"
+                size="icon"
+                variant="outline"
+              >
+                <FaBars className="h-6 w-6" />
+              </Button>
+            </SheetTrigger>
+            <SheetContent side="top">
+              <ScrollArea className="h-[720px]">
+                <SheetHeader>
+                  <SheetTitle>Dodges Domain</SheetTitle>
+                  <SheetDescription>
+                    <Button
+                      className="bg-gradient-to-b from-amber-400 to-red-500 text-zinc-950"
+                      asChild
+                      size="lg"
+                    >
+                      <Link href="/t3">Looking for Tribes 3: Rivals?</Link>
+                    </Button>
+                  </SheetDescription>
+                </SheetHeader>
+                <Collapsible className="grid gap-3 pt-6 pe-6">
+                  <CollapsibleTrigger className="flex w-full items-center text-lg font-semibold [&[data-state=open]>svg]:rotate-90">
+                    Installation Guides
+                    <FaChevronRight className="ml-auto h-5 w-5 transition-all" />
+                  </CollapsibleTrigger>
+                  <CollapsibleContent>
+                    {installMenuData.map((component) => (
+                      <Link
+                        className="flex w-full items-center text-lg font-semibold"
+                        href={component.link}
+                      >
+                        <div className="flex grow flex-row items-center gap-6 rounded p-3 hover:bg-accent">
+                          <component.icon className="h-10 w-10 rounded p-2 text-primary dark:bg-zinc-800" />
+                          <div className="flex flex-row gap-2">
+                            <b>{component.title}</b>
+                          </div>
+                        </div>
+                      </Link>
+                    ))}
+                  </CollapsibleContent>
+                </Collapsible>
+                <Collapsible className="grid gap-3 pt-6 pe-6">
+                  <CollapsibleTrigger className="flex w-full items-center text-lg font-semibold [&[data-state=open]>svg]:rotate-90">
+                    Gameplay Guides
+                    <FaChevronRight className="ml-auto h-5 w-5 transition-all" />
+                  </CollapsibleTrigger>
+                  <CollapsibleContent>
+                    {gameplayMenuData.map((component) => (
+                      <Link
+                        className="flex w-full items-center text-lg font-semibold"
+                        href={component.link}
+                      >
+                        <div className="flex grow flex-row items-center gap-6 rounded p-3 hover:bg-accent">
+                          <component.icon className="h-10 w-10 rounded p-2 text-primary dark:bg-zinc-800" />
+                          <div className="flex flex-row gap-2">
+                            <b>{component.title}</b>
+                          </div>
+                        </div>
+                      </Link>
+                    ))}
+                  </CollapsibleContent>
+                </Collapsible>
+                <Collapsible className="grid gap-3 pt-6 pe-6">
+                  <CollapsibleTrigger className="flex w-full items-center text-lg font-semibold [&[data-state=open]>svg]:rotate-90">
+                    Map Development
+                    <FaChevronRight className="ml-auto h-5 w-5 transition-all" />
+                  </CollapsibleTrigger>
+                  <CollapsibleContent>
+                    {mapDevelopmentMenuData.map((component) => (
+                      <Link
+                        className="flex w-full items-center text-lg font-semibold"
+                        href={component.link}
+                      >
+                        <div className="flex grow flex-row items-center gap-6 rounded p-3 hover:bg-accent">
+                          <component.icon className="h-10 w-10 rounded p-2 text-primary dark:bg-zinc-800" />
+                          <div className="flex flex-row gap-2">
+                            <b>{component.title}</b>
+                          </div>
+                        </div>
+                      </Link>
+                    ))}
+                  </CollapsibleContent>
+                </Collapsible>
+                <div className="flex w-full items-center gap-3 pt-6 pe-6 text-lg font-semibold">
+                  <Link href="/docs/custommaps">Community Maps</Link>
+                </div>
+                <Collapsible className="grid gap-3 pt-6 pe-6">
+                  <CollapsibleTrigger className="flex w-full items-center text-lg font-semibold [&[data-state=open]>svg]:rotate-90">
+                    Tribes Information
+                    <FaChevronRight className="ml-auto h-5 w-5 transition-all" />
+                  </CollapsibleTrigger>
+                  <CollapsibleContent>
+                    {tribesInfoMenuData.map((component) => (
+                      <Link
+                        className="flex w-full items-center text-lg font-semibold"
+                        href={component.link}
+                      >
+                        <div className="flex grow flex-row items-center gap-6 rounded p-3 hover:bg-accent">
+                          <component.icon className="h-10 w-10 rounded p-2 text-primary dark:bg-zinc-800" />
+                          <div className="flex flex-row gap-2">
+                            <b>{component.title}</b>
+                          </div>
+                        </div>
+                      </Link>
+                    ))}
+                  </CollapsibleContent>
+                </Collapsible>
+              </ScrollArea>
+            </SheetContent>
+          </Sheet>
+        </div>
       </div>
     </div>
   );
