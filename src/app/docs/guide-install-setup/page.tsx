@@ -37,7 +37,7 @@ export default function GuideInstallSetup() {
                 width={1500}
                 alt=""
                 height={1500}
-                src="/static/img/tribes-ascend-logo.png"
+                src="https://utfs.io/f/e45e1d6b-5545-4080-ab99-2bdf3235e8c2-sedzba.png"
               />
             </Link>
             <Separator />

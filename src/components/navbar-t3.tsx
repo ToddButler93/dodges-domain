@@ -64,7 +64,7 @@ export function NavBarT3() {
         <Image
           width={500}
           height={500}
-          src="/static/img/blueplate.png"
+          src="https://utfs.io/f/a1dd52b8-5b9e-432d-9a7b-b713f2aaf928-whylmk.png"
           alt=""
           className="h-8 w-8"
         />

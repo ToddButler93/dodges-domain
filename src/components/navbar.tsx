@@ -162,7 +162,7 @@ export function NavBar() {
           width={500}
           height={500}
           alt=""
-          src="/static/img/blueplate.png"
+          src="https://utfs.io/f/a1dd52b8-5b9e-432d-9a7b-b713f2aaf928-whylmk.png"
           className="h-8 w-8 min-w-8"
         />
         <h3 className="text-nowrap bg-transparent py-3 text-zinc-100  max-xl:hidden">

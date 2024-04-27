@@ -31,7 +31,7 @@ export default function HomePage() {
           <div className="parent absolute inset-0 flex flex-col items-center justify-center gap-3 p-3">
             <Image
               alt=""
-              src="/static/img/tribes-ascend-logo.png"
+              src="https://utfs.io/f/e45e1d6b-5545-4080-ab99-2bdf3235e8c2-sedzba.png"
               width={500}
               height={500}
               style={{ objectFit: "contain" }}
