@@ -1,12 +1,7 @@
 import Link from "next/link";
 
 import { Button } from "~/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardTitle,
-} from "~/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "~/components/ui/card";
 
 import Image from "next/image";
 import { NavBar } from "~/components/navbar";
@@ -14,47 +9,47 @@ import { NavBar } from "~/components/navbar";
 export default function HomePage() {
   return (
     <main className="">
-    <NavBar />
+      <NavBar />
       <div className="flex min-h-screen w-full flex-col items-center pb-6">
-          <div className="flex max-h-[720px] w-screen items-center overflow-y-clip bg-cover bg-center bg-no-repeat">
-            <video
-              width="100%"
-              height="100%"
-              autoPlay={true}
-              muted
-              loop
-              preload="auto"
-              playsInline
-              className="content-center"
+        <div className="flex relative max-h-[720px] w-screen items-center overflow-y-clip bg-cover bg-center bg-no-repeat">
+          <video
+            width="100%"
+            height="100%"
+            autoPlay={true}
+            muted
+            loop
+            preload="auto"
+            playsInline
+            className="content-center"
+          >
+            <source
+              src="/static/video/kata-ds-bounce.webm"
+              type="video/webm"
+            ></source>
+            Your browser does not support .webm video.
+          </video>
+          <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 p-3 parent">
+            <Image
+              alt=""
+              src="/static/img/tribes-ascend-logo.png"
+              width={500}
+              height={500}
+              style={{ objectFit: "contain" }}
+            />
+            <Button asChild size="lg">
+              <Link href="/docs/guide-install-setup">
+                Install Tribes Ascend
+              </Link>
+            </Button>
+            <Button
+              className="bg-gradient-to-b from-amber-400 to-red-500 text-zinc-950"
+              asChild
+              size="lg"
             >
-              <source
-                src="/static/video/kata-ds-bounce.webm"
-                type="video/webm"
-              ></source>
-              Your browser does not support .webm video.
-            </video>
-            <div className="flex flex-col absolute inset-0 px-3 items-center justify-center">
-              <div className="flex flex-col gap-6">
-                <Image
-                  alt=""
-                  src="/static/img/tribes-ascend-logo.png"
-                  width={500}
-                  height={500}
-                  style={{ objectFit: "contain" }}
-                />
-                <Button asChild size="lg">
-                  <Link href="/docs/guide-install-setup">
-                    Install Tribes Ascend
-                  </Link>
-                </Button>
-                <Button variant="secondary" asChild size="lg">
-                  <Link href="/t3">
-                    Looking for Tribes 3: Rivals?
-                  </Link>
-                </Button>
-              </div>
-            </div>
+              <Link href="/t3">Looking for Tribes 3: Rivals?</Link>
+            </Button>
           </div>
+        </div>
         <div className="grid grid-cols-3 gap-6 p-6">
           <Card className="grid-col grid items-center justify-center rounded-md drop-shadow-md">
             <CardHeader>
@@ -90,7 +85,7 @@ export default function HomePage() {
                   width={500}
                   height={500}
                   alt=""
-                  className="object-contain"
+                  className=""
                 />
               </Link>
             </CardContent>
