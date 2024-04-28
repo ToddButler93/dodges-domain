@@ -7,6 +7,7 @@ import {
   getPUGLoginData,
 } from "~/server/api/loginServers";
 import Image from "next/image";
+import { mapToImageName } from "~/server/utils/mapFileName";
 
 export default async function ServerBrowserComponent() {
   const sortedPugServers = await getPUGLoginData();
@@ -25,14 +26,14 @@ export default async function ServerBrowserComponent() {
             <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 ">
               {sortedPugServers
                 .filter((server: ServerInfo) => server.name && server.map)
-                .map((server: ServerInfo, index: Key) => (
+                .map(async (server: ServerInfo, index: Key) => (
                   <Card className="shadow" key={index}>
                     <div>
                       <Image
                         width={500}
                         height={500}
                         alt=""
-                        src="/static/img/maps/oce.jpg"
+                        src={await mapToImageName(server.map)}
                       />
                     </div>
                     <p>{server.name}</p>
@@ -60,14 +61,14 @@ export default async function ServerBrowserComponent() {
             <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 "></div>
             {sortedCommunityServers
               .filter((server: ServerInfo) => server.name && server.map)
-              .map((server: ServerInfo, index: Key) => (
+              .map(async (server: ServerInfo, index: Key) => (
                 <Card key={index}>
                   <div>
                     <Image
                       width={500}
                       height={500}
                       alt=""
-                      src="/static/img/maps/oce.jpg"
+                      src={await mapToImageName(server.map)}
                     />
                   </div>
                   <p>{server.name}</p>
