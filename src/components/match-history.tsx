@@ -18,9 +18,11 @@ export default async function MatchHistoryComponent() {
   return (
     <>
       {matchHistory ? (
-        <div className="max-w-8xl flex flex-col gap-6 py-6">
-          <div className="gap-3 p-6 shadow-md">
-            <h1 className="pb-6 text-center">Match History</h1>
+        <div className="flex flex-col gap-6">
+          <div className="flex flex-col gap-3">
+            <Card className="grow p-6 text-center">
+              <h1>Match History</h1>
+            </Card>
             <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
               {matchHistory.reverse().map((match: MatchInfo, index: Key) => (
                 <Card className="shadow-md" key={index}>
