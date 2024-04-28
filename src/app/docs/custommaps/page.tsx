@@ -9,7 +9,7 @@ export default function CustomMaps() {
   return (
     <>
       <div className="flex flex-col gap-6">
-        <Card className="grow py-6 text-center">
+        <Card className="grow p-6 text-center">
           <h1>Community Made Maps</h1>
         </Card>
         <div className="flex justify-center">
@@ -17,7 +17,7 @@ export default function CustomMaps() {
             <Link href="/docs/guide-install-setup">Install Community Maps</Link>
           </Button>
         </div>
-        <Card className="grow py-6 text-center">
+        <Card className="grow p-6 text-center">
           <h1>CTF</h1>
         </Card>
 
@@ -174,7 +174,7 @@ export default function CustomMaps() {
           </Card>
         </div>
         <Separator />
-        <Card className="grow py-6 text-center">
+        <Card className="grow p-6 text-center">
           <h1>Arena</h1>
         </Card>
 
@@ -202,7 +202,7 @@ export default function CustomMaps() {
         </div>
 
         <Separator />
-        <Card className="grow py-6 text-center">
+        <Card className="grow p-6 text-center">
           <h1>CTF Blitz</h1>
         </Card>
 
@@ -230,7 +230,7 @@ export default function CustomMaps() {
         </div>
 
         <Separator />
-        <Card className="grow py-6 text-center">
+        <Card className="grow p-6 text-center">
           <h1>Miscellaneous Maps</h1>
         </Card>
 

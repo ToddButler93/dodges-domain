@@ -22,7 +22,7 @@ export default function GuideInstallSetup() {
   return (
     <>
       <div className="flex flex-col gap-6">
-        <Card className="grow py-6 text-center">
+        <Card className="grow p-6 text-center">
           <h1 className="flex flex-row justify-center">
             Tribes Ascend Installation
           </h1>
@@ -115,7 +115,7 @@ export default function GuideInstallSetup() {
         </div>
         <Separator />
         <div className="flex flex-grow flex-col">
-          <h1>Instructions</h1>
+          <h2>Instructions</h2>
           <div className="flex flex-col justify-center gap-3">
             <p>Extract and launch the Tribes Launcher.</p>
             <p>
@@ -133,7 +133,7 @@ export default function GuideInstallSetup() {
         </div>
         <Separator />
         <div className="flex flex-grow flex-col">
-          <h1 className=" content-center">Troubleshooting</h1>
+          <h3 className=" content-center">Troubleshooting</h3>
           <div className="flex flex-col justify-center gap-3">
             <Accordion type="single" collapsible>
               <AccordionItem value="IDKWHERETRIBESIS">

@@ -78,7 +78,7 @@ export default async function ServerBrowserComponent() {
           </div>
           <Separator />
           <div className="flex flex-col gap-3">
-            <Card className="grow pb-3 pt-6 text-center">
+            <Card className="grow pb-3 p-6 text-center">
               <h1>Community Login Server</h1>
             </Card>
             <div className="grid grid-cols-1 gap-3 transition-all sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">

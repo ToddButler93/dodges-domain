@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Card } from "~/components/ui/card";
 
 export default function LinuxInstallGuide() {
@@ -13,10 +14,10 @@ export default function LinuxInstallGuide() {
             accomplish this than the messy way that I&apos;ve done it. The guide{" "}
             is long but the steps aren&apos;t that complicated, I&apos;m just{" "}
             trying to be thorough.{" "}
-            <p className="italic">
+            <div className="italic">
               These instructions likely won&apos;t work under the steam deck by{" "}
               default{" "}
-            </p>{" "}
+            </div>{" "}
             You&apos;ll need to run the Tribes Launcher under protontricks{" "}
             launcher every time and then use the launcher to launch the game,{" "}
             which is not likely doable under the default user interface or{" "}
@@ -49,8 +50,8 @@ export default function LinuxInstallGuide() {
           </p>
           <ul className="flex list-decimal flex-col gap-3">
             <li>
-              Log into steam and [Install Tribes
-              Ascend](https://store.steampowered.com/app/17080/Tribes_Ascend/).{" "}
+              Log into steam and <Link href="https://store.steampowered.com/app/17080/Tribes_Ascend/">
+                Install Tribes Ascend</Link>.{" "}
               It will be during this step to note the game&apos;s steam id for{" "}
               later: 17080.,
             </li>
@@ -109,7 +110,7 @@ export default function LinuxInstallGuide() {
             </li>
             <li>
               It&apos;s time to grab the most recent release of{" "}
-              [TribesLauncherSharp](https://github.com/mcoot/TribesLauncherSharp/releases){" "}
+              <Link href="https://github.com/mcoot/TribesLauncherSharp/releases">TribesLauncherSharp</Link>{" "}
               and extract its contents directly into the Tribes folder you{" "}
               opened in step 5. Is this specific location important? Not really,{" "}
               but it keeps the launcher in a place you can get to quickly again{" "}

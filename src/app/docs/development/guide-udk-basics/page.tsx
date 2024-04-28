@@ -65,7 +65,7 @@ export default function GuideUDKBasics() {
   return (
     <>
       <div className="flex flex-col gap-6">
-        <Card className="grow py-6 text-center">
+        <Card className="grow p-6 text-center">
           <h1>UDK Basics</h1>
         </Card>
         <div className="flex flex-col gap-3 p-6">

@@ -5,7 +5,7 @@ export default function PatchHistory() {
   return (
     <>
       <div className="flex flex-col gap-6">
-        <Card className="grow py-6 text-center">
+        <Card className="grow p-6 text-center">
           <h1>Patch History</h1>
         </Card>
         <h2>2016</h2>

@@ -6,7 +6,7 @@ export default function GuideCapping() {
   return (
     <>
       <div className="flex flex-col gap-6">
-        <Card className="grow py-6 text-center">
+        <Card className="grow p-6 text-center">
           <h1>Capping - Tribes Ascend</h1>
         </Card>
 

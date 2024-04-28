@@ -165,12 +165,12 @@ export function NavBar() {
           src="https://utfs.io/f/a1dd52b8-5b9e-432d-9a7b-b713f2aaf928-whylmk.png"
           className="h-8 w-8 min-w-8"
         />
-        <h3 className="text-nowrap bg-transparent py-3 text-zinc-100  max-xl:hidden">
+        <h4 className="text-nowrap bg-transparent py-3 text-zinc-100  max-xl:hidden">
           Dodges Domain
-        </h3>
-        <h3 className="text-nowrap bg-transparent py-3 text-zinc-100  lg:hidden">
+        </h4>
+        <h4 className="text-nowrap bg-transparent py-3 text-zinc-100  lg:hidden">
           Dodges Domain
-        </h3>
+        </h4>
       </Link>
       <NavigationMenu className="max-lg:hidden">
         <NavigationMenuList className="text-zinc-100">

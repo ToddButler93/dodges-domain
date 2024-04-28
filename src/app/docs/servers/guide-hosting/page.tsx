@@ -9,7 +9,7 @@ export default function TribesServerHosting() {
   return (
     <>
       <div className="flex flex-col gap-3">
-        <Card className="grow py-6 text-center">
+        <Card className="grow p-6 text-center">
           <h1>Tribes Server Hosting</h1>
         </Card>
         <div className="flex flex-col gap-3">
@@ -48,39 +48,54 @@ export default function TribesServerHosting() {
               Install via the convenience script
             </Link>
           </Button>
-          &apos;curl -fsSL https://get.docker.com -o get-docker.sh&apos;
-          &apos;sudo sh get-docker.sh&apos;
+          <p>
+            &apos;curl -fsSL https://get.docker.com -o get-docker.sh&apos;
+            &apos;sudo sh get-docker.sh&apos;
+          </p>
           <h6>0.3 Setup current user</h6>
-          &apos;sudo usermod -aG docker *username*&apos; Where
-          &apos;_username_&apos; is the name of the user.
+          <p>
+            &apos;sudo usermod -aG docker *username*&apos; Where
+            &apos;*username*&apos; is the name of the user.
+          </p>
           <h6>0.4 Get TA Server Image</h6>
-          &apos;docker pull taserver:latest-maps&apos; &apos;docker tag
-          taserver:latest-maps taserver&apos;
+          <p>
+            &apos;docker pull taserver:latest-maps&apos; &apos;docker tag
+            taserver:latest-maps taserver&apos;
+          </p>
           <h6>0.5 Download Helper Script</h6>
-          &apos;wget -O taserver.sh
-          &quot;https://raw.githubusercontent.com/JigglyJoogins/taserver-deploy/master/docker/taserver.sh&quot;&apos;
-          &apos;chmod +x taserver.sh&apos;
+          <p>
+            &apos;wget -O taserver.sh
+            &quot;https://raw.githubusercontent.com/JigglyJoogins/taserver-deploy/master/docker/taserver.sh&quot;&apos;
+            &apos;chmod +x taserver.sh&apos;
+          </p>
           <h4>0.6 Setup Game Server</h4>
-          To run the game server run the command: &apos;./taserver.sh -d
-          gamesettings -p 0&apos; &apos;-d gamesettings&apos; will be a mounted
-          folder for this particular docker container that lets you alter the
-          game settings of the server. &apos;-p 0&apos; sets the port offset to
-          0. The default ports are 7777 and 7778. A port offset of 2 would use
-          ports 7779 and 7781.
+          <p>
+            To run the game server run the command: &apos;./taserver.sh -d{" "}
+            gamesettings -p 0&apos; &apos;-d gamesettings&apos; will be a
+            mounted folder for this particular docker container that lets you
+            alter the game settings of the server. &apos;-p 0&apos; sets the
+            port offset to 0. The default ports are 7777 and 7778. A port offset
+            of 2 would use ports 7779 and 7781.
+          </p>
           <h3>Benefits</h3>
-          <li>Possible to ban/kick cheaters </li> <li>GOTY/OOTB game types </li>
-          <li>TA Mods Server customization </li>
-          <li>Community or a custom login server</li>
-          <li>No restrictions </li>
+          <ul>
+            <li>Possible to ban/kick cheaters </li>
+            <li>GOTY/OOTB game types </li>
+            <li>TA Mods Server customization </li>
+            <li>Community or a custom login server</li>
+            <li>No restrictions </li>
+          </ul>
           <h3>Limitations</h3>
-          <li>Difficult and slow to setup </li>
-          <li>Limited support </li>
-          <li>Can be costly </li>{" "}
+          <ul>
+            <li>Difficult and slow to setup </li>
+            <li>Limited support </li>
+            <li>Can be costly </li>
+          </ul>
         </div>
         <Separator />
-        <div className="flex flex-col gap-3 p-6">
-          <h2>Option 2: LLamagrab Servers</h2>An easy to grasp server hosting
-          solution for community servers.
+        <div className="flex flex-col gap-3">
+          <h2>Option 2: LLamagrab Servers</h2>
+          An easy to grasp server hosting solution for community servers.
           <Button asChild>
             <Link href="https://llamagrab.net/">Llamagrab.net</Link>
           </Button>
@@ -98,7 +113,7 @@ export default function TribesServerHosting() {
           <li>Single login server (Community)</li>{" "}
         </div>
         <Separator />
-        <div className="flex flex-col gap-3 p-6">
+        <div className="flex flex-col gap-3">
           <h2>Option 3: Hirez Official</h2>
           <h3>Benefits</h3>
           <li>Easy to grasp</li>
@@ -107,7 +122,7 @@ export default function TribesServerHosting() {
           <li>In-game adjustment/setup</li>
           <h3>Limitations</h3>
           <li className="text-red-600">
-            Hi-Rez servers are no longer accessible for the game and this method
+            Hi-Rez servers are no longer accessible for the game and this method{" "}
             is no longer possible.
           </li>
           <li>Unable to prevent cheaters from joining games</li>
