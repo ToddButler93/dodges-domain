@@ -352,7 +352,7 @@ export default function GuideCapping() {
                 Incidamus
               </Link>
               ,{" "}
-              <Link href="/static/routes/jacktheblacks-blues-routes.zip">
+              <Link href="https://utfs.io/f/d6043add-db9d-41b3-9b79-07af61f12768-c0zja3.zip">
                 TAMods routefiles
               </Link>
             </li>
@@ -361,7 +361,7 @@ export default function GuideCapping() {
                 Periculo
               </Link>
               ,{" "}
-              <Link href="/static/routes/jacktheblacks-periculo-routes.zip">
+              <Link href="https://utfs.io/f/39a7de97-4c95-4195-997c-5c30ac5adb09-lxj441.zip">
                 TAMods route files
               </Link>
             </li>
@@ -370,7 +370,7 @@ export default function GuideCapping() {
                 Blues
               </Link>
               ,{" "}
-              <Link href="/static/routes/jacktheblacks-blues-routes.zip">
+              <Link href="https://utfs.io/f/d6043add-db9d-41b3-9b79-07af61f12768-c0zja3.zip">
                 TAMods route files
               </Link>
             </li>
@@ -427,24 +427,24 @@ export default function GuideCapping() {
           <p className="flex flex-col gap-3">
             Arx Novena, Dangerous Crossing, Drydock, Katabatic, Raindance,
             Sunstar, Tartarus.{" "}
-            <Link href="/static/routes/jps-easy-pathfinder-goty-routes.zip">
+            <Link href="https://utfs.io/f/a66b4442-4934-4a8b-8b3e-381dfe5fabc4-952e9f.zip">
               JPs Easy Pathfinder GOTY route files
             </Link>{" "}
             which contain no difficult rockbounces!{" "}
-            <Link href="/static/routes/jps-pathfinder-soldier-goty-routes.zip">
+            <Link href="https://utfs.io/f/f39ec78f-08d3-4881-a958-ee24ce368189-mm4upv.zip">
               JPs Pathfinder and Soldier GOTY route files
             </Link>
           </p>
           <h4> JackTheBlack&apos;s</h4>
           <p>GOTY Pathfinder.</p>
           <p className="flex flex-col gap-3">
-            <Link href="/static/routes/jacktheblacks-incidamus-routes.zip">
+            <Link href="https://utfs.io/f/1149de1b-9ac4-4faa-b874-ef8059e8d3f0-cly92z.zip">
               JackTheBlack&apos;s Incidamus route files
             </Link>
-            <Link href="/static/routes/jacktheblacks-periculo-routes.zip">
+            <Link href="https://utfs.io/f/39a7de97-4c95-4195-997c-5c30ac5adb09-lxj441.zip">
               JackTheBlack&apos;s Periculo route files
             </Link>
-            <Link href="/static/routes/jacktheblacks-blues-routes.zip">
+            <Link href="https://utfs.io/f/d6043add-db9d-41b3-9b79-07af61f12768-c0zja3.zip">
               JackTheBlack&apos;s Blues route files
             </Link>
           </p>
