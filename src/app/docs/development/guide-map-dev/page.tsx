@@ -341,18 +341,18 @@ export default function GuideMapDevelopment() {
           </p>
           <h5>Step 2</h5>
           <p>
-            Copy <b>RefShaderCache-PC-D3D-SM3.upk</b> in
-            <b>C:\UDK\UDK-2011-01\UDKGame\CookedPC\</b> and paste it into
+            Copy <b>RefShaderCache-PC-D3D-SM3.upk</b> in{" "}
+            <b>C:\UDK\UDK-2011-01\UDKGame\CookedPC\</b> and paste it into{" "}
             <b>\Tribes\TribesGame\CookedPC\</b>
           </p>
           <p>
             Copy the uncooked map from
-            <b>\UDK\UDK-2011-01\UDKGame\Content\Maps\</b> to
+            <b>\UDK\UDK-2011-01\UDKGame\Content\Maps\</b> to{" "}
             <b>\Tribes\TribesGame\CookedPC\Maps\</b>
           </p>
           <p>
-            Copy any asset packages you&apos;ve created from
-            <b>\UDK\UDK-2011-01\UDKGame\Content\</b> to
+            Copy any asset packages you&apos;ve created from{" "}
+            <b>\UDK\UDK-2011-01\UDKGame\Content\</b> to{" "}
             <b>\Tribes\TribesGame\CookedPC\Maps\</b>
           </p>
           <h5>Step 3</h5>
@@ -368,15 +368,15 @@ export default function GuideMapDevelopment() {
           </p>
           <p>Set the game mode to your maps Game Mode.</p>
           <p>
-            In the Map p field, enter your map name, it will not be in the
+            In the Map p field, enter your map name, it will not be in the{" "}
             dropdown.
           </p>
           <p>Note: TrCTF-BasicMap</p>
           <h5>Step 5</h5>
           <p>Click Launch.</p>
           <p>
-            Once the game has launched hit the <kbd>`</kbd> key and type
-            <b>ChangeTeam BloodEagle</b> for blood eagle spawns or
+            Once the game has launched hit the <kbd>`</kbd> key and type{" "}
+            <b>ChangeTeam BloodEagle</b> for blood eagle spawns or{" "}
             <b>ChangeTeam DiamondSword</b> for diamond sword spawns.
           </p>
           <h4>Hard way</h4>
@@ -398,31 +398,31 @@ export default function GuideMapDevelopment() {
             <b>\Tribes\TribesGame\CookedPC\</b>
           </p>
           <p>
-            Copy the uncooked map from
-            <b>\UDK\UDK-2011-01\UDKGame\Content\Maps\</b> to
+            Copy the uncooked map from{" "}
+            <b>\UDK\UDK-2011-01\UDKGame\Content\Maps\</b> to{" "}
             <b>\Tribes\TribesGame\CookedPC\Maps\</b>
           </p>
           <p>
-            Copy any asset packages you&apos;ve created from
-            <b>\UDK\UDK-2011-01\UDKGame\Content\</b>to
+            Copy any asset packages you&apos;ve created from{" "}
+            <b>\UDK\UDK-2011-01\UDKGame\Content\</b>to{" "}
             <b>\Tribes\TribesGame\CookedPC\Maps\</b>
           </p>
           <h5>Step 3</h5>
           <p>
-            Open Command Prompt. CD to the Tribes dev builds
-            <b>\Binaries\Win32\</b>Folder and enter
+            Open Command Prompt. CD to the Tribes dev builds{" "}
+            <b>\Binaries\Win32\</b>Folder and enter{" "}
             <b>Tribesascend.exe TrGameMode-MapName -seekfreeloading</b>
           </p>
           <p>
-            Note: <b>TrGameMode-MapName</b>for Arx Novena would be
+            Note: <b>TrGameMode-MapName</b>for Arx Novena would be{" "}
             <b>TrCTF-ArxNovena</b>
           </p>
           <h5>Step 4</h5>
           <p>Hit Enter.</p>
           <p>
-            Once the game has launched hit the <kbd>`</kbd>key and type
-            <b>ChangeTeam BloodEagle</b> for blood eagle spawns or
-            <b>ChangeTeam DiamondSword</b>for diamond sword spawns. Otherwise,
+            Once the game has launched hit the <kbd>`</kbd>key and type{" "}
+            <b>ChangeTeam BloodEagle</b> for blood eagle spawns or{" "}
+            <b>ChangeTeam DiamondSword</b>for diamond sword spawns. Otherwise,{" "}
             you will spawn as neither team.
           </p>
           <h3>Hosting Custom Map</h3>
@@ -526,7 +526,7 @@ export default function GuideMapDevelopment() {
           <h2>Troubleshooting</h2>
           <h3>RefShaderCache Compiler Error</h3>
           <p>
-            In the official version of the game, the shader compiler crashes
+            In the official version of the game, the shader compiler crashes{" "}
             when attempting to load a custom map in the game.
           </p>
           <h4>Workaround (Easy way)</h4>
@@ -539,7 +539,7 @@ export default function GuideMapDevelopment() {
             >
               RefShaderCache-PC-D3D-SM3.upk
             </Link>
-            , paste it into <b>\UDK\UDK-2011-01\UDKGame\Content\</b> If
+            , paste it into <b>\UDK\UDK-2011-01\UDKGame\Content\</b> If{" "}
             you&apos;ve played on custom maps before, the one from your{" "}
             <b>\Tribes\TribesGame\CookedPC\</b> folder should work.
           </p>
@@ -548,7 +548,7 @@ export default function GuideMapDevelopment() {
             Run UnrealFrontEnd and cook the map. Copy{" "}
             <b>RefShaderCache-PC-D3D-SM3.upk</b>in{" "}
             <b>\UDK\UDK-2011-01\UDKGame\CookedPC\</b>and paste it into{" "}
-            <b>\Tribes\TribesGame\CookedPC\</b> This will need to be done every
+            <b>\Tribes\TribesGame\CookedPC\</b> This will need to be done every{" "}
             time you wish to test the map.
           </p>
           <h4>Workaround (Advanced users)</h4>
@@ -561,7 +561,7 @@ export default function GuideMapDevelopment() {
           <h5>Step 2</h5>
           <p>
             Using a hex editor, you will see the values{" "}
-            <b>C1 83 2A 9E 25 03 02 00</b>, modify the <b>02</b> in that
+            <b>C1 83 2A 9E 25 03 02 00</b>, modify the <b>02</b> in that{" "}
             sequence to <b>00</b>
           </p>
           <h5>Step 3</h5>
@@ -569,18 +569,18 @@ export default function GuideMapDevelopment() {
             Run UnrealFrontEnd and cook the map. Copy{" "}
             <b>RefShaderCache-PC-D3D-SM3.upk</b> in{" "}
             <b>C:\UDK\UDK-2011-01\UDKGame\CookedPC\</b> and paste it into{" "}
-            <b>\Tribes\TribesGame\CookedPC\</b> This will need to be done every
+            <b>\Tribes\TribesGame\CookedPC\</b> This will need to be done every{" "}
             time you wish to test the map.
           </p>
           <h4>Reason why this is needed</h4>
           <p>
-            It looks like the shader compiler is missing some required shaders
+            It looks like the shader compiler is missing some required shaders{" "}
             to properly compile.
           </p>
           <p>
             Cooking the map with the unedited{" "}
-            <b>RefShaderCache-PC-D3D-SM3.upk</b> will fail due to license
-            version checks, the license version is in the file’s header which we
+            <b>RefShaderCache-PC-D3D-SM3.upk</b> will fail due to license{" "}
+            version checks, the license version is in the file’s header which we{" "}
             edit via our hex editor.
           </p>
           <h3>Where is UDK Installed?</h3>
@@ -589,17 +589,17 @@ export default function GuideMapDevelopment() {
           </p>
           <h3>Texture issues of static meshes from the packages</h3>
           <p>
-            `You need to copy over the materials for the meshes you are using in
-            your map, otherwise they will show up with a blue and white pure
-            pattern in-game. Find the material the mesh uses by double-clicking
-            on the mesh in the content browser and expanding the LOD section.
-            Copy the material(s) to your map package and then reassign the
-            material to the mesh you are using. Select your mesh in the level
-            editor and press F4 to bring up the properties, and then you will
-            find a material override section. Apply your materials thereby
-            having the material selected in the Content Browser and then
-            pressing the green arrow in the Properties window of the mesh. If
-            you have multiple materials you need to assign, click the plus sign
+            `You need to copy over the materials for the meshes you are using in{" "}
+            your map, otherwise they will show up with a blue and white pure{" "}
+            pattern in-game. Find the material the mesh uses by double-clicking{" "}
+            on the mesh in the content browser and expanding the LOD section.{" "}
+            Copy the material(s) to your map package and then reassign the{" "}
+            material to the mesh you are using. Select your mesh in the level{" "}
+            editor and press F4 to bring up the properties, and then you will{" "}
+            find a material override section. Apply your materials thereby{" "}
+            having the material selected in the Content Browser and then{" "}
+            pressing the green arrow in the Properties window of the mesh. If{" "}
+            you have multiple materials you need to assign, click the plus sign{" "}
             to add another material slight in the Properties window.`
           </p>
           <p>
