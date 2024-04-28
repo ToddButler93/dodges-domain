@@ -461,6 +461,21 @@ export function NavBar() {
                     Tribes Information
                     <FaChevronRight className="ml-auto h-5 w-5 transition-all" />
                   </CollapsibleTrigger>
+                  {tribesLiveInfoMenuData.map((component) => (
+                    <CollapsibleContent key={component.title}>
+                      <Link
+                        className="flex w-full items-center text-lg font-semibold"
+                        href={component.link}
+                      >
+                        <div className="flex grow flex-row items-center gap-6 rounded p-3 hover:bg-accent">
+                          <component.icon className="h-10 w-10 rounded p-2 text-primary dark:bg-zinc-800" />
+                          <div className="flex flex-row gap-2">
+                            {component.title}
+                          </div>
+                        </div>
+                      </Link>
+                    </CollapsibleContent>
+                  ))}
                   {tribesInfoMenuData.map((component) => (
                     <CollapsibleContent key={component.title}>
                       <Link
