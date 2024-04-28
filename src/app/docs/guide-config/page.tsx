@@ -19,7 +19,7 @@ export default function GuideConfig() {
               graphical settings. It is located under{" "}
               <b>Documents\My Games\Tribes Ascend\TribesGame\Config\</b>
             </p>
-            <div className="grid grid-cols-2 gap-3">
+            <div className="grid max-sm:grid-cols-1 grid-cols-2 gap-3">
               <Card className="flex flex-col gap-3 p-3 shadow-xl">
                 <Link
                   download="tribes.ini"
@@ -92,7 +92,7 @@ export default function GuideConfig() {
               </Alert>
             </div>
             <Separator />
-            <div className="grid grid-cols-2 gap-3">
+            <div className="grid max-sm:grid-cols-1 grid-cols-2 gap-3">
               <Card className="flex flex-col gap-3 p-3 shadow-xl">
                 <h3>Required Tweaks</h3>
                 <ul className="list-disc p-3">
