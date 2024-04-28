@@ -80,9 +80,7 @@ const mapImages: MapName = {
   Miasma: { name: "Miasma", link: "" },
 };
 
-export async function mapToImageName(
-  mapName: string,
-): Promise<string> {
+export async function mapToImageName(mapName: string): Promise<string> {
   const mapEntry = mapImages[mapName];
   if (mapEntry) {
     if (mapEntry.link != "") {
