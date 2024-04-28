@@ -59,8 +59,8 @@ export default function QuickPUGGuide() {
           <h1>Tribes Ascend Quick PUG Guide</h1>
         </Card>
         <Suspense>
-          <Tabs defaultValue="pugs" className="flex flex-row">
-            <TabsList className="flex flex-col items-start justify-start py-6 dark:bg-zinc-800 dark:text-zinc-100">
+          <Tabs defaultValue="pugs" className="flex justify-center max-sm:items-center max-sm:flex-col flex-row">
+            <TabsList className="flex flex-col items-start justify-start py-1 dark:bg-zinc-800 dark:text-zinc-100">
               <TabsTrigger value="pugs">PUG Information </TabsTrigger>
               <TabsTrigger value="offense">Offense </TabsTrigger>
               <TabsTrigger value="capping">Capping </TabsTrigger>
