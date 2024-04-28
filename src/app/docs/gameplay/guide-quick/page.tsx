@@ -54,7 +54,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "~/components/ui/tabs";
 export default function QuickPUGGuide() {
   return (
     <>
-      <div className="flex flex-col gap-6 px-6">
+      <div className="flex flex-col gap-6">
         <Card className="grow py-6 text-center">
           <h1>Tribes Ascend Quick PUG Guide</h1>
         </Card>

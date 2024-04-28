@@ -8,11 +8,11 @@ import { Separator } from "~/components/ui/separator";
 export default function TribesServerHosting() {
   return (
     <>
-      <div className="flex flex-col gap-6">
+      <div className="flex flex-col gap-3">
         <Card className="grow py-6 text-center">
           <h1>Tribes Server Hosting</h1>
         </Card>
-        <div className="flex flex-col gap-3 p-6">
+        <div className="flex flex-col gap-3">
           <h2>Option 1: Docker Servers</h2>
           <h3>Azure Setup</h3>
           <p>

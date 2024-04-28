@@ -7,7 +7,7 @@ import { Separator } from "~/components/ui/separator";
 export default function GuideMapDevelopment() {
   return (
     <>
-      <div className="flex flex-col gap-6 px-3">
+      <div className="flex flex-col gap-6">
         <Card className="grow py-6 text-center">
           <h1>Map Development Guide</h1>
         </Card>

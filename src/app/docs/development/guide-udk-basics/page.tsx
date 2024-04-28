@@ -64,7 +64,7 @@ import Image from "next/image";
 export default function GuideUDKBasics() {
   return (
     <>
-      <div className="flex flex-col gap-6 px-3">
+      <div className="flex flex-col gap-6">
         <Card className="grow py-6 text-center">
           <h1>UDK Basics</h1>
         </Card>

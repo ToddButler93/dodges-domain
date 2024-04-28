@@ -8,7 +8,7 @@ import Image from "next/image";
 export default function GuideConfig() {
   return (
     <>
-      <div className="flex flex-col gap-6 px-6">
+      <div className="flex flex-col gap-6">
         <Card className="grow py-6 text-center">
           <h1>Tribes Ascend Configuration</h1>
         </Card>
@@ -78,13 +78,16 @@ export default function GuideConfig() {
             </div>
             <Separator />
             <div>
-              <Alert title="Note" color="teal">
+              <Alert title="Note" className="bg-teal-800 text-zinc-100">
                 <p className="text-start">
                   All ini&quot;s provided are for 1080p resolution. Manually{" "}
                   alter this by changing <b>ResX=1920</b> and <b>ResY=1080</b>{" "}
                   to your native monitor resolution. HUD Elements can be toggled{" "}
                   with the{" "}
-                  <Link href={"#in-game-settings"}>in game settings</Link>.
+                  <Link className="text-teal-200" href={"#in-game-settings"}>
+                    in game settings
+                  </Link>
+                  .
                 </p>
               </Alert>
             </div>

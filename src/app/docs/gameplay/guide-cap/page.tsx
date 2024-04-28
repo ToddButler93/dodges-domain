@@ -6,7 +6,7 @@ export default function GuideCapping() {
   return (
     <>
       <div className="flex flex-col gap-6">
-        <Card className="grow py-6 text-center shadow-xl">
+        <Card className="grow py-6 text-center">
           <h1>Capping - Tribes Ascend</h1>
         </Card>
 
@@ -25,7 +25,7 @@ export default function GuideCapping() {
           ></source>
           Your browser does not support .webm video.
         </video>
-        <div className="flex flex-col p-6 shadow-xl">
+        <div className="flex flex-col shadow-xl">
           <h2> Gaining Speed</h2>
           <h3> Real Basics</h3>
           {/* TODO Move to guide-movement */}

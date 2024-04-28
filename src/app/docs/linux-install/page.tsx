@@ -3,7 +3,7 @@ import { Card } from "~/components/ui/card";
 export default function LinuxInstallGuide() {
   return (
     <>
-      <div className="flex flex-col gap-6 px-3">
+      <div className="flex flex-col gap-6">
         <Card className="grow p-6 text-center shadow-xl">
           <h1>A linux guide written by \\\\</h1>
         </Card>

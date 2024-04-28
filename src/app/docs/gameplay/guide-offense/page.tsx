@@ -6,7 +6,7 @@ import { Separator } from "~/components/ui/separator";
 export default function GuideCapping() {
   return (
     <>
-      <div className="flex flex-col gap-6 px-3">
+      <div className="flex flex-col gap-6">
         <Card className="grow py-6 text-center shadow-xl">
           <h1>Playing Offense - Tribes Ascend</h1>
         </Card>
