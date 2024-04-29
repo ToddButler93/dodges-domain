@@ -8,69 +8,42 @@ import Image from "next/image";
 export default function T3HomePage() {
   return (
     <main className="">
-      <div>
-        <div className="relative">
-          <div className="flex max-h-[720px] w-screen items-center overflow-y-clip bg-cover bg-center bg-no-repeat">
+      <div className="flex min-h-screen w-full flex-col items-center pb-6">
+        <div className="relative flex max-h-[720px] w-screen items-center overflow-y-clip bg-cover bg-center bg-no-repeat">
+          <Image
+            width={10000}
+            height={10000}
+            src="https://cdn1.epicgames.com/spt-assets/28f7b2fa11de437db22450f7f43b584d/tribes-3-rivals-8j2mp.jpg"
+            alt={""}
+          />
+          <div className="parent absolute inset-0 flex flex-col items-center justify-center gap-3 p-16">
             <Image
-              width={10000}
-              height={10000}
-              className="content-center"
-              src="https://cdn1.epicgames.com/spt-assets/28f7b2fa11de437db22450f7f43b584d/tribes-3-rivals-8j2mp.jpg"
-              alt={""}
+              alt=""
+              src="https://cdn1.epicgames.com/spt-assets/28f7b2fa11de437db22450f7f43b584d/tribes-3-rivals-logo-m9e2d.png"
+              width={500}
+              height={500}
+              style={{ objectFit: "contain" }}
             />
-            <div className="absolute inset-0 flex flex-col items-center justify-center">
-              <div className="flex flex-col gap-6">
-                <Image
-                  alt=""
-                  src="https://cdn1.epicgames.com/spt-assets/28f7b2fa11de437db22450f7f43b584d/tribes-3-rivals-logo-m9e2d.png"
-                  width={500}
-                  height={500}
-                  style={{ objectFit: "contain" }}
-                />
-                <Button asChild size="lg">
-                  <Link href="https://store.steampowered.com/app/2687970/TRIBES_3_Rivals/">
-                    Get Tribes 3: Rivals
-                  </Link>
-                </Button>
-                <Button variant="secondary" asChild size="lg">
-                  <Link href="/">Looking for Tribes: Ascend?</Link>
-                </Button>
-              </div>
-            </div>
+            <Button
+              className="bg-gradient-to-b from-teal-400 to-teal-700 p-3"
+              asChild
+              size="lg"
+            >
+              <Link href="/">Looking for Tribes Ascend?</Link>
+            </Button>
           </div>
         </div>
-        <div className="grid grid-cols-3 gap-6 p-6">
+        <div className="grid gap-3 p-6 sm:grid-cols-1 md:grid-cols-3">
           <Card className="grid-col grid items-center justify-center rounded-md drop-shadow-md">
             <CardHeader>
-              <CardTitle className="text-center">Gameplay Guides</CardTitle>
+              <CardTitle className="text-nowrap text-center">
+                Competitive Guide
+              </CardTitle>
             </CardHeader>
             <CardContent>
-              <Link href="/docs/gameplay/guide-quick">
-                <video
-                  width="500px"
-                  height="auto"
-                  autoPlay={true}
-                  muted
-                  loop
-                  preload="auto"
-                >
-                  <source
-                    src="https://utfs.io/f/b8660dcd-42d5-457e-8b98-7ecdf8f3dffd-cuncsc.webm"
-                    type="video/webm"
-                  ></source>
-                  Your browser does not support .webm video.
-                </video>
-              </Link>
-            </CardContent>
-          </Card>
-          <Card className="grid-col grid items-center justify-center rounded-md drop-shadow-md">
-            <CardHeader>
-              <CardTitle className="text-center">Map Development</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <Link href="/docs/development/guide-map-dev">
+              <Link href="/t3/docs/gameplay/guide-quick">
                 <Image
-                  src="/static/img/maps/oce.jpg"
+                  src="https://cdn1.epicgames.com/spt-assets/28f7b2fa11de437db22450f7f43b584d/tribes-3-rivals-8j2mp.jpg"
                   width={500}
                   height={500}
                   alt=""
@@ -79,15 +52,35 @@ export default function T3HomePage() {
               </Link>
             </CardContent>
           </Card>
+          <Card className="grid-col grid items-center justify-center rounded-md drop-shadow-md">
+            <CardHeader>
+              <CardTitle className="text-nowrap text-center">
+                Classes
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <Link href="/docs/development/guide-map-dev">
+                <Image
+                  src="https://cdn1.epicgames.com/spt-assets/28f7b2fa11de437db22450f7f43b584d/tribes-3-rivals-8j2mp.jpg"
+                  width={500}
+                  height={500}
+                  alt=""
+                  className=""
+                />
+              </Link>
+            </CardContent>
+          </Card>
 
           <Card className="grid-col grid items-center justify-center rounded-md drop-shadow-md">
             <CardHeader>
-              <CardTitle className="text-center">Community Maps</CardTitle>
+              <CardTitle className="text-nowrap text-center">
+                Maps
+              </CardTitle>
             </CardHeader>
             <CardContent>
-              <Link href="/docs/custommaps/">
+              <Link href="/t3/docs/maps/">
                 <Image
-                  src="/static/img/maps/acheron-spawn.png"
+                  src="https://cdn1.epicgames.com/spt-assets/28f7b2fa11de437db22450f7f43b584d/tribes-3-rivals-8j2mp.jpg"
                   width={500}
                   height={500}
                   alt=""
