@@ -50,9 +50,11 @@ export default function LinuxInstallGuide() {
           </p>
           <ul className="flex list-decimal flex-col gap-3">
             <li>
-              Log into steam and <Link href="https://store.steampowered.com/app/17080/Tribes_Ascend/">
-                Install Tribes Ascend</Link>.{" "}
-              It will be during this step to note the game&apos;s steam id for{" "}
+              Log into steam and{" "}
+              <Link href="https://store.steampowered.com/app/17080/Tribes_Ascend/">
+                Install Tribes Ascend
+              </Link>
+              . It will be during this step to note the game&apos;s steam id for{" "}
               later: 17080.,
             </li>
             <li>
@@ -110,7 +112,9 @@ export default function LinuxInstallGuide() {
             </li>
             <li>
               It&apos;s time to grab the most recent release of{" "}
-              <Link href="https://github.com/mcoot/TribesLauncherSharp/releases">TribesLauncherSharp</Link>{" "}
+              <Link href="https://github.com/mcoot/TribesLauncherSharp/releases">
+                TribesLauncherSharp
+              </Link>{" "}
               and extract its contents directly into the Tribes folder you{" "}
               opened in step 5. Is this specific location important? Not really,{" "}
               but it keeps the launcher in a place you can get to quickly again{" "}
