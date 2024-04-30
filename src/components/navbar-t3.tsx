@@ -7,7 +7,6 @@ import { cn } from "~/lib/utils";
 import {
   FaBars,
   FaChevronRight,
-  FaGamepad,
   FaGun,
   FaSteam,
 } from "react-icons/fa6";
@@ -90,9 +89,9 @@ const installMenuData = [
 const tribesInfoMenuData = [
   {
     icon: FaHistory,
-    title: "Patch History",
-    description: "Tribes 3: Rivals Patch History",
-    link: "/docs/information/patch-history",
+    title: "Road Map",
+    description: "Early Access Road Map",
+    link: "/t3/docs/information/road-map",
   },
   {
     icon: FaGun,
@@ -105,6 +104,18 @@ const tribesInfoMenuData = [
     title: "Weapons",
     description: "Tribes 3: Rivals Weapon Information",
     link: "/t3/docs/information/weapons",
+  },
+  {
+    icon: FaHistory,
+    title: "Patch History",
+    description: "Tribes 3: Rivals Patch History",
+    link: "/t3/docs/information/patch-history",
+  },
+  {
+    icon: FaHistory,
+    title: "Links",
+    description: "External Resources",
+    link: "/t3/docs/information/links",
   },
 ];
 
@@ -129,6 +140,39 @@ export function NavBarT3() {
       </Link>
       <NavigationMenu className="max-lg:hidden">
         <NavigationMenuList className=" text-zinc-200 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,1)]">
+        <NavigationMenuItem>
+            <NavigationMenuTrigger className="bg-transparent">
+              Game Information
+            </NavigationMenuTrigger>
+            <NavigationMenuContent>
+              <div className="gap-3">
+                <div className="flex flex-row justify-between p-6">
+                  <h3>Game Information</h3>
+                </div>
+                <Separator />
+              </div>
+              <ul className="grid w-[400px] gap-3 p-6 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+                {tribesInfoMenuData.map((component) => (
+                  <ListItem
+                    key={component.title}
+                    title={component.title}
+                    href={component.link}
+                  >
+                    <div className="flex flex-row flex-nowrap items-center gap-3 transition-all duration-300 hover:text-teal-500 active:text-teal-500">
+                      <component.icon
+                        color="teal"
+                        className="h-10 w-10 bg-zinc-800 p-1"
+                      />
+                      <div className="flex flex-col">
+                        <p className="text-sm">{component.title}</p>
+                        <p className="text-xs">{component.description}</p>
+                      </div>
+                    </div>
+                  </ListItem>
+                ))}
+              </ul>
+            </NavigationMenuContent>
+          </NavigationMenuItem>
           <NavigationMenuItem>
             <NavigationMenuTrigger className="bg-transparent">
               Installation
@@ -178,39 +222,6 @@ export function NavBarT3() {
                 Maps
               </NavigationMenuLink>
             </Link>
-          </NavigationMenuItem>
-          <NavigationMenuItem>
-            <NavigationMenuTrigger className="bg-transparent">
-              Game Information
-            </NavigationMenuTrigger>
-            <NavigationMenuContent>
-              <div className="gap-3">
-                <div className="flex flex-row justify-between p-6">
-                  <h3>Game Information</h3>
-                </div>
-                <Separator />
-              </div>
-              <ul className="grid w-[400px] gap-3 p-6 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-                {tribesInfoMenuData.map((component) => (
-                  <ListItem
-                    key={component.title}
-                    title={component.title}
-                    href={component.link}
-                  >
-                    <div className="flex flex-row flex-nowrap items-center gap-3 transition-all duration-300 hover:text-teal-500 active:text-teal-500">
-                      <component.icon
-                        color="teal"
-                        className="h-10 w-10 bg-zinc-800 p-1"
-                      />
-                      <div className="flex flex-col">
-                        <p className="text-sm">{component.title}</p>
-                        <p className="text-xs">{component.description}</p>
-                      </div>
-                    </div>
-                  </ListItem>
-                ))}
-              </ul>
-            </NavigationMenuContent>
           </NavigationMenuItem>
         </NavigationMenuList>
       </NavigationMenu>
