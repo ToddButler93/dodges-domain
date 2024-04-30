@@ -1,6 +1,4 @@
 "use client";
-import Link from "next/link";
-import { Button } from "~/components/ui/button";
 import { Card } from "~/components/ui/card";
 import { Separator } from "~/components/ui/separator";
 import Image from "next/image";
@@ -18,37 +16,7 @@ export default function T3Maps() {
 
         <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           <Card>
-            <p className=" py-3 text-center text-3xl">Acheron</p>
-            <Image
-              width={1500}
-              height={1500}
-              alt=""
-              className="rounded"
-              src="/static/img/maps/acheron-spawn.png"
-            />
-          </Card>
-          <Card>
-            <p className=" py-3 text-center text-3xl">Andromeda</p>
-            <Image
-              width={1500}
-              height={1500}
-              alt=""
-              className="rounded"
-              src="/static/img/maps/andromeda2.jpg"
-            />
-          </Card>
-          <Card>
-            <p className=" py-3 text-center text-3xl">Ascent</p>
-            <Image
-              width={1500}
-              height={1500}
-              alt=""
-              className="rounded"
-              src="/static/img/maps/ascent2.jpg"
-            />
-          </Card>
-          <Card>
-            <p className=" py-3 text-center text-3xl">Blues</p>
+            <h3 className="py-3 text-center">Katabatic</h3>
             <Image
               width={1500}
               height={1500}
@@ -58,7 +26,7 @@ export default function T3Maps() {
             />
           </Card>
           <Card>
-            <p className=" py-3 text-center text-3xl">Crash</p>
+            <h3 className="py-3 text-center">Wavemist</h3>
             <Image
               width={1500}
               height={1500}
@@ -68,170 +36,87 @@ export default function T3Maps() {
             />
           </Card>
           <Card>
-            <p className=" py-3 text-center text-3xl">Deserted Valley</p>
+            <h3 className="py-3 text-center">DryDock</h3>
             <Image
               width={1500}
               height={1500}
               alt=""
               className="rounded"
-              src="/static/img/maps/deserted-valley-overview.png"
+              src="" // TODO
             />
           </Card>
           <Card>
-            <p className=" py-3 text-center text-3xl">Eclipse</p>
+            <h3 className="py-3 text-center">‍Dangerous Crossing</h3>
             <Image
               width={1500}
               height={1500}
               alt=""
               className="rounded"
-              src="/static/img/maps/eclipse2.jpg"
+              src="" // TODO
             />
           </Card>
           <Card>
-            <p className=" py-3 text-center text-3xl">Fracture</p>
+            <h3 className="py-3 text-center">Torment</h3>
             <Image
               width={1500}
               height={1500}
               alt=""
               className="rounded"
-              src="/static/img/maps/fra.jpg"
+              src="" // TODO
             />
           </Card>
           <Card>
-            <p className=" py-3 text-center text-3xl">Incidamus</p>
+            <h3 className="py-3 text-center">Hollow</h3>
             <Image
               width={1500}
               height={1500}
               alt=""
               className="rounded"
-              src="/static/img/maps/incid.jpg"
+              src="" // TODO
             />
           </Card>
           <Card>
-            <p className=" py-3 text-center text-3xl">Meridian</p>
+            <h3 className="py-3 text-center">Raindance</h3>
             <Image
               width={1500}
               height={1500}
               alt=""
               className="rounded"
-              src="" // TOOD
+              src="" // TODO
             />
           </Card>
           <Card>
-            <p className=" py-3 text-center text-3xl">Oceanus</p>
-            <Image
+            <h3 className="py-3 text-center">Moonrise</h3>
+            <p className="text-center">TBA</p>
+            {/* <Image
               width={1500}
               height={1500}
               alt=""
               className="rounded"
-              src="/static/img/maps/oce.jpg"
-            />
+              src="" // TODO
+            /> */}
           </Card>
           <Card>
-            <p className=" py-3 text-center text-3xl">Periculo</p>
-            <Image
+            <h3 className="py-3 text-center">New Map #9</h3>
+            <p className="text-center">TBA</p>
+            {/* <Image
               width={1500}
               height={1500}
               alt=""
               className="rounded"
-              src="/static/img/maps/periculo-features.png"
-            />
-          </Card>
-          <Card>
-            <p className=" py-3 text-center text-3xl">Phlegethon</p>
-            <Image
-              width={1500}
-              height={1500}
-              alt=""
-              className="rounded"
-              src="/static/img/maps/phlegathon-overview.png"
-            />
-          </Card>
-          <Card>
-            <p className=" py-3 text-center text-3xl">Polaris</p>
-            <Image
-              width={1500}
-              height={1500}
-              alt=""
-              className="rounded"
-              src="/static/img/maps/polaris2.jpg"
-            />
-          </Card>
-          <Card>
-            <p className=" py-3 text-center text-3xl">Styx</p>
-            <Image
-              width={1500}
-              height={1500}
-              alt=""
-              className="rounded"
-              src="/static/img/maps/sty.jpg"
-            />
-          </Card>
-        </div>
-        <Separator />
-        <Card className="grow p-6 text-center">
-          <h2>Arena</h2>
-        </Card>
-
-        <div className="grid gap-3 sm:grid-cols-2">
-          <Card>
-            <p className=" py-3 text-center text-3xl">Elysian Battleground</p>
-            <Image
-              width={1500}
-              height={1500}
-              alt=""
-              className="rounded"
-              src="/static/img/maps/eb.jpg"
-            />
-          </Card>
-          <Card>
-            <p className=" py-3 text-center text-3xl">Ruins</p>
-            <Image
-              width={1500}
-              height={1500}
-              alt=""
-              className="rounded"
-              src="/static/img/maps/ruins2.jpg"
-            />
+              src="" // TODO
+            /> */}
           </Card>
         </div>
 
         <Separator />
         <Card className="grow p-6 text-center">
-          <h2>CTF Blitz</h2>
+          <h2>TDM / Honorball</h2>
         </Card>
 
         <div className="grid gap-3 sm:grid-cols-2">
           <Card>
-            <p className=" py-3 text-center text-3xl">Broadside</p>
-            <Image
-              width={1500}
-              height={1500}
-              alt=""
-              className="rounded"
-              src="/static/img/maps/broadside-overview.png"
-            />
-          </Card>
-          <Card>
-            <p className=" py-3 text-center text-3xl">Air Arena</p>
-            <Image
-              width={1500}
-              height={1500}
-              alt=""
-              className="rounded"
-              src="" // TODO
-            />
-          </Card>
-        </div>
-
-        <Separator />
-        <Card className="grow p-6 text-center">
-          <h2>Miscellaneous Maps</h2>
-        </Card>
-
-        <div className="grid gap-3 sm:grid-cols-2">
-          <Card>
-            <p className=" py-3 text-center text-3xl">Treacherous Pass</p>
+            <h3 className="py-3 text-center">Honor Dome</h3>
             <Image
               width={1500}
               height={1500}
@@ -241,13 +126,23 @@ export default function T3Maps() {
             />
           </Card>
           <Card>
-            <p className=" py-3 text-center text-3xl">Maze Runner</p>
+            <h3 className="py-3 text-center">Ice Dome</h3>
             <Image
               width={1500}
               height={1500}
               alt=""
               className="rounded"
-              src="" //TODO
+              src="" // TODO
+            />
+          </Card>
+          <Card>
+            <h3 className="py-3 text-center">Magma Dome</h3>
+            <Image
+              width={1500}
+              height={1500}
+              alt=""
+              className="rounded"
+              src="" // TODO
             />
           </Card>
         </div>
