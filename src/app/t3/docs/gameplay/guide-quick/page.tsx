@@ -51,7 +51,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "~/components/ui/tabs";
 //   ],
 // };
 
-export default function QuickPUGGuide() {
+export default function T3QuickCompGuide() {
   return (
     <>
       <div className="flex flex-col gap-6">
