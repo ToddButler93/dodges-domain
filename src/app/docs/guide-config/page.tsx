@@ -2,7 +2,6 @@ import Link from "next/link";
 import { Alert } from "~/components/ui/alert";
 import { Button } from "~/components/ui/button";
 import { Card } from "~/components/ui/card";
-import { Separator } from "~/components/ui/separator";
 import Image from "next/image";
 
 export default function GuideConfig() {
@@ -76,7 +75,6 @@ export default function GuideConfig() {
                 </p>
               </Card>
             </div>
-            <Separator />
             <div>
               <Alert title="Note" className="bg-teal-800 text-zinc-100">
                 <p className="text-start">
@@ -91,7 +89,6 @@ export default function GuideConfig() {
                 </p>
               </Alert>
             </div>
-            <Separator />
             <div className="grid grid-cols-2 gap-3 max-sm:grid-cols-1">
               <Card className="flex flex-col gap-3 p-3 shadow-xl">
                 <h3>Required Tweaks</h3>
@@ -158,7 +155,6 @@ export default function GuideConfig() {
               </Link>
             </Button>
           </div>
-          <Separator></Separator>
           <p>
             Your <b>TribesInput.ini</b> is the config file for your key{" "}
             bindings.
@@ -198,7 +194,6 @@ export default function GuideConfig() {
               </Link>
             </Button>
           </div>
-          <Separator></Separator>
           <p>
             It is recommended to delete the default crosshair and either use the{" "}
             Tribes Ascend crosshair or create your own. If you choose to create{" "}

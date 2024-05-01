@@ -192,7 +192,7 @@ export function NavBar() {
                     <div className="flex flex-row flex-nowrap items-center gap-3 transition-all duration-300 hover:text-teal-500 active:text-teal-500">
                       <component.icon
                         color="teal"
-                        className="h-10 w-10 dark:bg-zinc-800 p-1"
+                        className="h-10 w-10 p-1 dark:bg-zinc-800"
                       />
                       <div className="flex flex-col">
                         <p className="text-sm">{component.title}</p>
@@ -237,7 +237,7 @@ export function NavBar() {
                     <div className="flex flex-row flex-nowrap items-center gap-3 transition-all duration-300 hover:text-teal-500 active:text-teal-500">
                       <component.icon
                         color="teal"
-                        className="h-10 w-10 dark:bg-zinc-800 p-1"
+                        className="h-10 w-10 p-1 dark:bg-zinc-800"
                       />
                       <div className="flex flex-col">
                         <p className="text-sm">{component.title}</p>
@@ -255,7 +255,7 @@ export function NavBar() {
                     <div className="flex flex-row flex-nowrap items-center gap-3 transition-all duration-300 hover:text-teal-500 active:text-teal-500">
                       <component.icon
                         color="teal"
-                        className="h-10 w-10 dark:bg-zinc-800 p-1"
+                        className="h-10 w-10 p-1 dark:bg-zinc-800"
                       />
                       <div className="flex flex-col">
                         <p className="text-sm">{component.title}</p>
@@ -288,7 +288,7 @@ export function NavBar() {
                     <div className="flex flex-row flex-nowrap items-center gap-3 transition-all duration-300 hover:text-teal-500 active:text-teal-500">
                       <component.icon
                         color="teal"
-                        className="h-10 w-10 dark:bg-zinc-800 p-1"
+                        className="h-10 w-10 p-1 dark:bg-zinc-800"
                       />
                       <div className="flex flex-col">
                         <p className="text-sm">{component.title}</p>
@@ -330,7 +330,7 @@ export function NavBar() {
                     <div className="flex flex-row flex-nowrap items-center gap-3 transition-all duration-300 hover:text-teal-500 active:text-teal-500">
                       <component.icon
                         color="teal"
-                        className="h-10 w-10 dark:bg-zinc-800 p-1"
+                        className="h-10 w-10 p-1 dark:bg-zinc-800"
                       />
                       <div className="flex flex-col">
                         <p className="text-sm">{component.title}</p>
@@ -348,7 +348,7 @@ export function NavBar() {
                     <div className="flex flex-row flex-nowrap items-center gap-3 transition-all duration-300 hover:text-teal-500 active:text-teal-500">
                       <component.icon
                         color="teal"
-                        className="h-10 w-10 dark:bg-zinc-800 p-1"
+                        className="h-10 w-10 p-1 dark:bg-zinc-800"
                       />
                       <div className="flex flex-col">
                         <p className="text-sm">{component.title}</p>

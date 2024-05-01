@@ -3,7 +3,6 @@ import ServerBrowserPUG, {
   ServerBrowserCommunity,
 } from "~/components/server-browser";
 import { Card } from "~/components/ui/card";
-import { Separator } from "~/components/ui/separator";
 
 export default function ServerBrowser() {
   return (
@@ -31,7 +30,6 @@ export default function ServerBrowser() {
             <ServerBrowserPUG />
           </Suspense>
         </div>
-        <Separator />
         <div className="flex flex-col gap-3">
           <Card className="grow p-6 pb-3 text-center">
             <h1>Community Login Server</h1>
