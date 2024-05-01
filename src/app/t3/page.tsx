@@ -54,12 +54,10 @@ export default function T3HomePage() {
           </Card>
           <Card className="grid-col grid items-center justify-center rounded-md drop-shadow-md">
             <CardHeader>
-              <CardTitle className="text-nowrap text-center">
-                Classes
-              </CardTitle>
+              <CardTitle className="text-nowrap text-center">Classes</CardTitle>
             </CardHeader>
             <CardContent>
-              <Link href="/docs/development/guide-map-dev">
+              <Link href="/t3/docs/information/classes">
                 <Image
                   src="https://cdn1.epicgames.com/spt-assets/28f7b2fa11de437db22450f7f43b584d/tribes-3-rivals-8j2mp.jpg"
                   width={500}
@@ -73,9 +71,7 @@ export default function T3HomePage() {
 
           <Card className="grid-col grid items-center justify-center rounded-md drop-shadow-md">
             <CardHeader>
-              <CardTitle className="text-nowrap text-center">
-                Maps
-              </CardTitle>
+              <CardTitle className="text-nowrap text-center">Maps</CardTitle>
             </CardHeader>
             <CardContent>
               <Link href="/t3/docs/maps/">

@@ -380,7 +380,7 @@ export function NavBar() {
                 <SheetHeader>
                   <SheetTitle className="pb-6">Dodges Domain</SheetTitle>
                 </SheetHeader>
-                <div className="flex hover:text-zinc-100 w-full rounded-lg items-center gap-3 p-3 justify-center text-lg font-semibold bg-gradient-to-b from-amber-400 to-red-500 text-zinc-950">
+                <div className="flex w-full items-center justify-center gap-3 rounded-lg bg-gradient-to-b from-amber-400 to-red-500 p-3 text-lg font-semibold text-zinc-950 hover:text-zinc-100">
                   <Link href="/t3">Looking for Tribes 3: Rivals?</Link>
                 </div>
                 <Collapsible className="grid gap-3 pe-6 pt-6">

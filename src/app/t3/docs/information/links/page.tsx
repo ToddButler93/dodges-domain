@@ -11,9 +11,7 @@ export default function T3Links() {
         </Card>
         <div className="flex flex-col gap-3">
           <h2>Official Resources</h2>
-          <Link href="https://www.tribes3rivals.com/">
-            Official Site
-          </Link>
+          <Link href="https://www.tribes3rivals.com/">Official Site</Link>
           <Link href="https://store.steampowered.com/app/2687970/TRIBES_3_Rivals/">
             Steam Page
           </Link>
@@ -22,12 +20,10 @@ export default function T3Links() {
           <Link href="https://twitter.com/Tribes3Rivals">Twitter</Link>
           <Link href="https://www.instagram.com/tribes3rivals/">Instagram</Link>
         </div>
-        <Separator/>
+        <Separator />
         <div className="flex flex-col gap-3">
           <h2>Community Resources</h2>
-          <Link href="https://www.tribes3rivals.com/">
-            Official Site
-          </Link>
+          <Link href="https://www.tribes3rivals.com/">Official Site</Link>
           <Link href="https://www.instagram.com/tribes3rivals/">Instagram</Link>
         </div>
       </div>

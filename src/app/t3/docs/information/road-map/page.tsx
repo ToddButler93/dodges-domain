@@ -11,7 +11,13 @@ export default function T3RoadMap() {
         </Card>
         <div className="flex flex-col gap-3">
           <Link href="/static/img/t3/T3_Roadmap.png">
-          <Image width={10000} height={10000} src="/static/img/t3/T3_Roadmap.png" alt={""}/></Link>
+            <Image
+              width={10000}
+              height={10000}
+              src="/static/img/t3/T3_Roadmap.png"
+              alt={""}
+            />
+          </Link>
         </div>
       </div>
     </>

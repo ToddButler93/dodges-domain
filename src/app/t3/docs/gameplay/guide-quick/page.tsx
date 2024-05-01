@@ -77,16 +77,20 @@ export default function T3QuickCompGuide() {
               <h1>Playing Competitive - 7v7 Format</h1>
               <div className="flex flex-col gap-3">
                 <p>
-                  In <b>Tribes 3: Rivals</b> competitive format is currently 7v7.
-                  To dip your toes into competitive pick-up games happen on community ran
-                  Discords.
+                  In <b>Tribes 3: Rivals</b> competitive format is currently
+                  7v7. To dip your toes into competitive pick-up games happen on
+                  community ran Discords.
                 </p>
-                <ul className="gap-3 flex">
+                <ul className="flex gap-3">
                   <li>
-                    <Button asChild><Link href="discord link ere">T3 Comp Discord</Link></Button>
+                    <Button asChild>
+                      <Link href="discord link ere">T3 Comp Discord</Link>
+                    </Button>
                   </li>
                   <li>
-                    <Button asChild><Link href="discord link ere">T3 AUS PuG HuB</Link></Button>
+                    <Button asChild>
+                      <Link href="discord link ere">T3 AUS PuG HuB</Link>
+                    </Button>
                   </li>
                 </ul>
                 <p>
@@ -130,7 +134,8 @@ export default function T3QuickCompGuide() {
                   <li>
                     If both flags are home, if you are an <b>offense</b> member
                     or a <b>capper,</b> there is little to no gain in
-                    killing/shooting enemy <b>offense.</b> Stealing the job of the <b>defense</b> is not as beneficial.
+                    killing/shooting enemy <b>offense.</b> Stealing the job of
+                    the <b>defense</b> is not as beneficial.
                   </li>
                   <li>
                     Running 4+ <b>defense</b> members generally makes games slow
@@ -204,7 +209,8 @@ export default function T3QuickCompGuide() {
                     <b>offense</b> without overextending yourself.
                   </li>
                   <li>
-                    Stay around the stand area if an enemy <b>capper</b> is coming in.
+                    Stay around the stand area if an enemy <b>capper</b> is
+                    coming in.
                   </li>
                   <li>
                     Sit behind the flag when your <b>capper</b> is coming in.

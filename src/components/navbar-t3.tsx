@@ -4,12 +4,7 @@ import * as React from "react";
 import Link from "next/link";
 
 import { cn } from "~/lib/utils";
-import {
-  FaBars,
-  FaChevronRight,
-  FaGun,
-  FaSteam,
-} from "react-icons/fa6";
+import { FaBars, FaChevronRight, FaGun, FaSteam } from "react-icons/fa6";
 import { FaEdit, FaHistory } from "react-icons/fa";
 import {
   NavigationMenu,
@@ -140,7 +135,7 @@ export function NavBarT3() {
       </Link>
       <NavigationMenu className="max-lg:hidden">
         <NavigationMenuList className=" text-zinc-200 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,1)]">
-        <NavigationMenuItem>
+          <NavigationMenuItem>
             <NavigationMenuTrigger className="bg-transparent">
               Game Information
             </NavigationMenuTrigger>
@@ -268,7 +263,9 @@ export function NavBarT3() {
                   ))}
                 </Collapsible>
                 <div className="flex w-full items-center gap-3 pe-6 pt-6 text-lg font-semibold">
-                  <Link href="t3/docs/gameplay/guide-quick">Competitive Guide</Link>
+                  <Link href="t3/docs/gameplay/guide-quick">
+                    Competitive Guide
+                  </Link>
                 </div>
                 <div className="flex w-full items-center gap-3 pe-6 pt-6 text-lg font-semibold">
                   <Link href="t3/docs/maps">Maps</Link>
