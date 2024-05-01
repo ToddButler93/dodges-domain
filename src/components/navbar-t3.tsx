@@ -263,12 +263,12 @@ export function NavBarT3() {
                   ))}
                 </Collapsible>
                 <div className="flex w-full items-center gap-3 pe-6 pt-6 text-lg font-semibold">
-                  <Link href="t3/docs/gameplay/guide-quick">
+                  <Link href="/t3/docs/gameplay/guide-quick">
                     Competitive Guide
                   </Link>
                 </div>
                 <div className="flex w-full items-center gap-3 pe-6 pt-6 text-lg font-semibold">
-                  <Link href="t3/docs/maps">Maps</Link>
+                  <Link href="/t3/docs/maps">Maps</Link>
                 </div>
                 <Collapsible className="grid gap-3 pe-6 pt-6">
                   <CollapsibleTrigger className="flex w-full items-center text-lg font-semibold [&[data-state=open]>svg]:rotate-90">
