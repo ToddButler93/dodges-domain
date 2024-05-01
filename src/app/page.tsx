@@ -85,7 +85,7 @@ export default function HomePage() {
             <CardContent>
               <Link href="/docs/development/guide-map-dev">
                 <Image
-                  src="/static/img/maps/oce.jpg"
+                  src="https://utfs.io/f/99f42db1-4d19-496a-9168-472d01d6327c-2cr5.jpg"
                   width={500}
                   height={500}
                   alt=""
@@ -104,7 +104,7 @@ export default function HomePage() {
             <CardContent>
               <Link href="/docs/custommaps/">
                 <Image
-                  src="/static/img/maps/acheron-spawn.png"
+                  src="https://utfs.io/f/9e5b51fc-07f1-452b-a12d-f9103787ca25-o0x8sg.png"
                   width={500}
                   height={500}
                   alt=""

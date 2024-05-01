@@ -29,7 +29,7 @@ export default function CustomMaps() {
               height={1500}
               alt=""
               className="rounded"
-              src="/static/img/maps/acheron-spawn.png"
+              src="https://utfs.io/f/9e5b51fc-07f1-452b-a12d-f9103787ca25-o0x8sg.png"
             />
           </Card>
           <Card>
@@ -39,7 +39,7 @@ export default function CustomMaps() {
               height={1500}
               alt=""
               className="rounded"
-              src="/static/img/maps/andromeda2.jpg"
+              src="https://utfs.io/f/b0e2daef-aa74-4700-9bea-d9d3be399687-c0o2y1.jpg"
             />
           </Card>
           <Card>
@@ -49,7 +49,7 @@ export default function CustomMaps() {
               height={1500}
               alt=""
               className="rounded"
-              src="/static/img/maps/ascent2.jpg"
+              src="https://utfs.io/f/517f714f-a7f1-4ad7-8863-72b6b60ee875-bwelpk.jpg"
             />
           </Card>
           <Card>
@@ -79,7 +79,7 @@ export default function CustomMaps() {
               height={1500}
               alt=""
               className="rounded"
-              src="/static/img/maps/deserted-valley-overview.png"
+              src="https://utfs.io/f/9c284427-0812-4dcb-af6f-38d85273d7a5-uclcr2.png"
             />
           </Card>
           <Card>
@@ -89,7 +89,7 @@ export default function CustomMaps() {
               height={1500}
               alt=""
               className="rounded"
-              src="/static/img/maps/eclipse2.jpg"
+              src="https://utfs.io/f/fa141bd2-e4b2-4e07-b3dd-b342472a18b9-d303wr.jpg"
             />
           </Card>
           <Card>
@@ -99,7 +99,7 @@ export default function CustomMaps() {
               height={1500}
               alt=""
               className="rounded"
-              src="/static/img/maps/fra.jpg"
+              src="https://utfs.io/f/d4af37d3-616b-4ad1-ac74-0e696b5b566d-26fp.jpg"
             />
           </Card>
           <Card>
@@ -109,7 +109,7 @@ export default function CustomMaps() {
               height={1500}
               alt=""
               className="rounded"
-              src="/static/img/maps/incid.jpg"
+              src="https://utfs.io/f/29a1f116-4f10-46ab-a68d-5671ccb44300-1nqqux.jpg"
             />
           </Card>
           <Card>
@@ -129,7 +129,7 @@ export default function CustomMaps() {
               height={1500}
               alt=""
               className="rounded"
-              src="/static/img/maps/oce.jpg"
+              src="https://utfs.io/f/99f42db1-4d19-496a-9168-472d01d6327c-2cr5.jpg"
             />
           </Card>
           <Card>
@@ -139,7 +139,7 @@ export default function CustomMaps() {
               height={1500}
               alt=""
               className="rounded"
-              src="/static/img/maps/periculo-features.png"
+              src="https://utfs.io/f/56d30310-a245-40cd-b6d5-93b0eea55410-u33ju1.png"
             />
           </Card>
           <Card>
@@ -149,7 +149,7 @@ export default function CustomMaps() {
               height={1500}
               alt=""
               className="rounded"
-              src="/static/img/maps/phlegathon-overview.png"
+              src="https://utfs.io/f/4e49d81d-5383-46de-8059-418a0bb1b63e-ywd9iw.png"
             />
           </Card>
           <Card>
@@ -159,7 +159,7 @@ export default function CustomMaps() {
               height={1500}
               alt=""
               className="rounded"
-              src="/static/img/maps/polaris2.jpg"
+              src="https://utfs.io/f/1d38c69c-dfba-457d-a432-6b9d0d650185-8xh2kq.jpg"
             />
           </Card>
           <Card>
@@ -169,7 +169,7 @@ export default function CustomMaps() {
               height={1500}
               alt=""
               className="rounded"
-              src="/static/img/maps/sty.jpg"
+              src="https://utfs.io/f/c3d66a27-74f8-402e-8f08-79933be46a43-2g54.jpg"
             />
           </Card>
         </div>
@@ -186,7 +186,7 @@ export default function CustomMaps() {
               height={1500}
               alt=""
               className="rounded"
-              src="/static/img/maps/eb.jpg"
+              src="https://utfs.io/f/fc3d415c-7a82-4bfc-9c49-9776200391df-2hp.jpg"
             />
           </Card>
           <Card>
@@ -196,7 +196,7 @@ export default function CustomMaps() {
               height={1500}
               alt=""
               className="rounded"
-              src="/static/img/maps/ruins2.jpg"
+              src="https://utfs.io/f/938208c1-95d8-4e3a-ab94-6c81b5b68d80-f7ptmh.jpg"
             />
           </Card>
         </div>
@@ -214,7 +214,7 @@ export default function CustomMaps() {
               height={1500}
               alt=""
               className="rounded"
-              src="/static/img/maps/broadside-overview.png"
+              src="https://utfs.io/f/be7be31f-59e9-451c-8c1b-3ac850f999e6-jqvz71.png"
             />
           </Card>
           <Card>

@@ -22,7 +22,7 @@ export default async function MatchHistoryComponent() {
           {matchHistory.reverse().map((match: MatchInfo, index: Key) => (
             <Card className="shadow-md" key={index}>
               <Image
-                src="/static/img/maps/oce.jpg"
+                src="https://utfs.io/f/99f42db1-4d19-496a-9168-472d01d6327c-2cr5.jpg"
                 width={500}
                 height={500}
                 className="grow rounded-md p-3"
