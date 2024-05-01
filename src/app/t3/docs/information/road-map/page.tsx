@@ -10,12 +10,12 @@ export default function T3RoadMap() {
           <h1>Tribes 3 Road Map</h1>
         </Card>
         <div className="flex flex-col gap-3">
-          <Link href="/static/img/t3/T3_Roadmap.png">
+          <Link href="https://utfs.io/f/fc971701-7eed-409a-9981-3c21e108fd8d-3m3flw.png">
             <Image
               width={10000}
               height={10000}
-              src="/static/img/t3/T3_Roadmap.png"
-              alt={""}
+              src="https://utfs.io/f/fc971701-7eed-409a-9981-3c21e108fd8d-3m3flw.png"
+              alt={"Tribes 3 Road Map"}
             />
           </Link>
         </div>
