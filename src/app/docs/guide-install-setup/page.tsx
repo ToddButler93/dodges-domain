@@ -27,108 +27,81 @@ export default function GuideInstallSetup() {
             Tribes Ascend Installation
           </h1>
         </Card>
-        <div className="grid-row grid grid-cols-3 justify-evenly max-md:grid-cols-1">
-          <Card className="flex flex-col items-center justify-between gap-3 p-3">
-            <Link
-              href="https://store.steampowered.com/app/17080/Tribes_Ascend/"
-              target="_blank"
-            >
-              <Image
-                width={1500}
-                alt=""
-                height={1500}
-                src="https://utfs.io/f/e45e1d6b-5545-4080-ab99-2bdf3235e8c2-sedzba.png"
-              />
-            </Link>
-            <Separator />
-            <HoverCard openDelay={50} closeDelay={50}>
-              <HoverCardTrigger href="steam://install/17080/">
-                <Button>Install Via Steam</Button>
-              </HoverCardTrigger>
-              <HoverCardContent className="w-full flex-auto">
-                <p>Steam install is recommended.</p>{" "}
-                <div className="flex flex-row justify-between gap-3 p-3">
-                  <Button asChild>
-                    <Link href="https://f000.backblazeb2.com/file/tribes-zip/Tribes_Ascend_Parting_Gifts.zip">
-                      Manual Download
-                    </Link>
-                  </Button>
+        <Card className="flex flex-col items-center justify-between gap-6 p-3">
+          <Link
+            passHref={true}
+            href="https://github.com/Dylan-B-D/ta-launcher/releases/latest"
+            target="_blank"
+          >
+            <Image
+              width={150}
+              height={150}
+              alt=""
+              src="https://utfs.io/f/46SbhTOA8sVNL6KLn4EYEcJ7qUwa2frl1pIRDez4ObuiMgGX"
+            />
+          </Link>
+          <HoverCard openDelay={50} closeDelay={50}>
+            <HoverCardTrigger href="https://github.com/Dylan-B-D/ta-launcher/releases/download/0.1.3-beta/TA.Launcher.V2_0.1.3_x64_en-US.msi">
+              <Button>Download TA Launcher</Button>
+            </HoverCardTrigger>
+            <HoverCardContent className="p-center flex flex-col gap-3">
+              <Button asChild>
+                <Link href="steam://install/17080/">Steam Install</Link>
+              </Button>
+              <Button asChild>
+                <Link href="https://f000.backblazeb2.com/file/tribes-zip/Tribes_Ascend_Parting_Gifts.zip">
+                  Manual Download
+                </Link>
+              </Button>
 
-                  <Button asChild>
-                    <Link href="/docs/linux-install">Using Linux?</Link>
-                  </Button>
-                </div>
-              </HoverCardContent>
-            </HoverCard>
-          </Card>
-          <div className="flex items-center justify-center gap-3 p-3">
-            <FaPlus size={64} />
-          </div>
-          <Card className="flex flex-col items-center justify-between gap-3 p-3">
-            <Link
-              passHref={true}
-              href="https://github.com/mcoot/TribesLauncherSharp/releases/latest"
-              target="_blank"
-            >
-              <Image
-                width={1500}
-                height={1500}
-                alt=""
-                src="https://www.tamods.org/assets/images/tamods-logo-83781dca7e008d9db0a74439960ce873.png"
-              />
-            </Link>
-            <Separator />
-
-            <HoverCard openDelay={50} closeDelay={50}>
-              <HoverCardTrigger href="https://github.com/mcoot/TribesLauncherSharp/releases/latest">
-                <Button>Download</Button>
-              </HoverCardTrigger>
-              <HoverCardContent className="p-center flex flex-col gap-3">
-                <p>Please extract before launching.</p>
-                <div>
-                  <div className=" justify-between">
-                    <Alert color="orange">
-                      <p className="p-start pb-3">
-                        You will need the{" "}
-                        <Link
-                          passHref={true}
-                          href="https://aka.ms/vs/17/release/vc_redist.x86.exe"
-                        >
-                          Microsoft Visual C++ x86 Redistributes
-                        </Link>{" "}
-                        if you don&apos;t have them already installed.
-                      </p>
-                      <Button asChild>
-                        <Link
-                          passHref={true}
-                          href="https://aka.ms/vs/17/release/vc_redist.x86.exe"
-                        >
-                          C++ Redist Download
-                        </Link>
-                      </Button>
-                    </Alert>
-                  </div>
-                </div>
-              </HoverCardContent>
-            </HoverCard>
-          </Card>
-        </div>
+              <Button asChild>
+                <Link href="/docs/linux-install">Using Linux?</Link>
+              </Button>
+              <Alert color="orange">
+                <p className="p-start pb-3">
+                  You will need the{" "}
+                  <Link
+                    passHref={true}
+                    href="https://aka.ms/vs/17/release/vc_redist.x86.exe"
+                  >
+                    Microsoft Visual C++ x86 Redistributes
+                  </Link>{" "}
+                  if you don&apos;t have them already installed.
+                </p>
+                <Button asChild>
+                  <Link
+                    passHref={true}
+                    href="https://aka.ms/vs/17/release/vc_redist.x86.exe"
+                  >
+                    C++ Redist Download
+                  </Link>
+                </Button>
+              </Alert>
+            </HoverCardContent>
+          </HoverCard>
+        </Card>
         <Separator />
         <div className="flex flex-grow flex-col">
           <h2>Instructions</h2>
           <div className="flex flex-col justify-center gap-3">
-            <p>Extract and launch the Tribes Launcher.</p>
             <p>
-              Select the Community or PUG for your login server, hit Launch,
-              wait for your game to start then hit inject on your launcher to
-              enable TA Mods.
+              Install TA Launcher through the MSI installer. The installer will
+              allow you to start the Launcher.
             </p>
+            <p>Follow the on screen prompts to install Tribes Ascend. </p>
             <p>
-              Once injected, the Play Now button will show whether you are in
-              OOTB or GOTY mode. There is a button on the main menu to switch.
-              You need to be in GOTY mode to play on GOTY servers and OOTB mode
-              to play on OOTB servers.
+              When you get to the Packages step, select the Recommended option.
             </p>
+            <p>It is recommended to leave all Options Default.</p>
+
+            <Alert color="orange">
+              <p>
+                Once injected, the Play Now button will show whether you are in
+                OOTB or GOTY mode. There is a button on the main menu to switch.
+                You need to be in GOTY mode to play on GOTY servers and OOTB
+                mode to play on OOTB servers.
+              </p>
+            </Alert>
           </div>
         </div>
         <Separator />
@@ -219,109 +192,8 @@ export default function GuideInstallSetup() {
                     current state, community made maps come up as Arx Novena.
                   </p>
                   <p>
-                    <Link href="#playing-community-maps">
-                      Follow this section of the guide
-                    </Link>{" "}
-                    to install common community maps here first. Then try{" "}
-                    <Link href="#im-having-issues-not-stated-here-with-the-launcher">
-                      reinstalling TAMods
-                    </Link>{" "}
-                    and the packages.
+                    The files can be obtained through the Packages tab of TA Launcher through the Recommended option.
                   </p>
-                  <p>
-                    On occasion you will have to contact the owner for the
-                    files.
-                  </p>
-                </AccordionContent>
-              </AccordionItem>
-              <AccordionItem value="PACKAGEINSTALLERROR">
-                <AccordionTrigger className="text-xl">
-                  I get an error when I start the game after installing packages
-                </AccordionTrigger>
-                <AccordionContent>
-                  <ul className="list-disc p-3">
-                    <li>
-                      <p>
-                        In your &quot;Tribes Ascend&quot; install folder, go to
-                        \TribesGame\CookedPC\Maps\ and delete all files.
-                      </p>
-                      <Link href="#launcher-doesnt-know-where-tribes-is-installed">
-                        Not sure where Tribes is installed?
-                      </Link>
-                    </li>
-                    <li>
-                      <p>
-                        Now, in &quot;Steam&quot;, you will need to verify your
-                        files.
-                      </p>
-                      <p>
-                        In your games library you need to right click on
-                        &quot;Tribes Ascend&quot; and hit
-                        &quot;Properties&quot;.
-                      </p>
-                      <Image
-                        src="/static/img/install/steam-properties.png"
-                        alt=""
-                        height={400}
-                        width={400}
-                      />
-                      <p>
-                        Select the &quot;Local files&quot; tab and click the
-                        &quot;Verify integrity of game files...&quot; button.
-                        This will re-download the missing files you just deleted
-                        from the base game via steam.
-                      </p>
-                      <Image
-                        width={500}
-                        height={500}
-                        src="/static/img/install/steam-local-files.png"
-                        alt=""
-                      />
-                    </li>
-                    <li>
-                      <p>
-                        Once complete, in your &quot;Tribes Launcher&quot; hit
-                        the &quot;Advanced&quot; tab and hit &quot;Reinstall
-                        TAMods&quot;. Hit &quot;Yes&quot; on the prompt and then
-                        hit &quot;Update&quot; to start the process.
-                      </p>
-                      <Image
-                        width={500}
-                        height={500}
-                        src="/static/img/install/launcher-advanced-tab.png"
-                        alt=""
-                      />
-                      <p>
-                        Now, under the &quot;Packages&quot; Tab you can install
-                        the custom packages that were removed earlier. This
-                        should just be the custom maps and assets packages.
-                      </p>
-                      <Image
-                        width={500}
-                        height={500}
-                        src="/static/img/install/launcher-packages-tab.png"
-                        alt=""
-                      />
-                    </li>
-                  </ul>
-                </AccordionContent>
-              </AccordionItem>
-              <AccordionItem value="IDK">
-                <AccordionTrigger className="text-xl">
-                  I&apos;m having issues not stated here with the launcher
-                </AccordionTrigger>
-                <AccordionContent>
-                  <p>
-                    When in doubt, under the &quot;Advanced&quot; tab hit
-                    &quot;Reinstall TAMods&quot;. This should allow you to
-                    reinstall packages as well.
-                  </p>
-                  <Image
-                    width={500}
-                    height={500}
-                    src="/static/img/install/launcher-advanced-tab.png"
-                    alt=""
-                  />
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
