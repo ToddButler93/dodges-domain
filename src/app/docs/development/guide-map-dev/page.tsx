@@ -226,7 +226,7 @@ export default function GuideMapDevelopment() {
           <p>
             After UDK is installed, go to{" "}
             <b>\UDK\UDK-2011-01\UDKGame\Config\</b> and open{" "}
-            <b>UDKEngine.ini</b> in a p editor. Search for{" "}
+            <b>UDKEngine.ini</b> in a text editor. Search for{" "}
             <b>[UnrealEd.EditorEngine]</b> and at the end of that section on a
             new line write <b>ModEditPackages=TribesGame</b> Save the file and
             close the editor.
@@ -368,7 +368,7 @@ export default function GuideMapDevelopment() {
           </p>
           <p>Set the game mode to your maps Game Mode.</p>
           <p>
-            In the Map p field, enter your map name, it will not be in the{" "}
+            In the Map text field, enter your map name, it will not be in the{" "}
             dropdown.
           </p>
           <p>Note: TrCTF-BasicMap</p>
