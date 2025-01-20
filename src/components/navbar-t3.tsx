@@ -25,6 +25,7 @@ import {
 } from "./ui/collapsible";
 import {
   Sheet,
+  SheetClose,
   SheetContent,
   SheetHeader,
   SheetTitle,
@@ -239,7 +240,9 @@ export function NavBarT3() {
                   <SheetTitle className="pb-6">Dodges Domain</SheetTitle>
                 </SheetHeader>
                 <div className="flex w-full items-center justify-center gap-3 rounded-lg bg-gradient-to-b from-amber-400 to-red-500 p-3 text-lg font-semibold text-zinc-950 hover:text-zinc-950">
-                  <Link href="/">Looking for Tribes Ascend?</Link>
+                  <SheetClose asChild>
+                    <Link href="/">Looking for Tribes Ascend?</Link>
+                  </SheetClose>
                 </div>
                 <Collapsible className="grid gap-3 pe-6 pt-6">
                   <CollapsibleTrigger className="flex w-full items-center text-lg font-semibold [&[data-state=open]>svg]:rotate-90">
@@ -248,27 +251,33 @@ export function NavBarT3() {
                   </CollapsibleTrigger>
                   {installMenuData.map((component) => (
                     <CollapsibleContent key={component.title}>
-                      <Link
-                        className="flex w-full items-center text-lg font-semibold"
-                        href={component.link}
-                      >
-                        <div className="flex grow flex-row items-center gap-6 rounded p-3 hover:bg-accent">
-                          <component.icon className="h-10 w-10 rounded p-2 text-primary dark:bg-zinc-800" />
-                          <div className="flex flex-row gap-2">
-                            {component.title}
+                      <SheetClose asChild>
+                        <Link
+                          className="flex w-full items-center text-lg font-semibold"
+                          href={component.link}
+                        >
+                          <div className="flex grow flex-row items-center gap-6 rounded p-3 hover:bg-accent">
+                            <component.icon className="h-10 w-10 rounded p-2 text-primary dark:bg-zinc-800" />
+                            <div className="flex flex-row gap-2">
+                              {component.title}
+                            </div>
                           </div>
-                        </div>
-                      </Link>
+                        </Link>
+                      </SheetClose>
                     </CollapsibleContent>
                   ))}
                 </Collapsible>
                 <div className="flex w-full items-center gap-3 pe-6 pt-6 text-lg font-semibold">
-                  <Link href="/t3/docs/gameplay/guide-quick">
-                    Competitive Guide
-                  </Link>
+                  <SheetClose asChild>
+                    <Link href="/t3/docs/gameplay/guide-quick">
+                      Competitive Guide
+                    </Link>
+                  </SheetClose>
                 </div>
                 <div className="flex w-full items-center gap-3 pe-6 pt-6 text-lg font-semibold">
-                  <Link href="/t3/docs/maps">Maps</Link>
+                  <SheetClose asChild>
+                    <Link href="/t3/docs/maps">Maps</Link>
+                  </SheetClose>
                 </div>
                 <Collapsible className="grid gap-3 pe-6 pt-6">
                   <CollapsibleTrigger className="flex w-full items-center text-lg font-semibold [&[data-state=open]>svg]:rotate-90">
@@ -277,17 +286,19 @@ export function NavBarT3() {
                   </CollapsibleTrigger>
                   {tribesInfoMenuData.map((component) => (
                     <CollapsibleContent key={component.title}>
-                      <Link
-                        className="flex w-full items-center text-lg font-semibold"
-                        href={component.link}
-                      >
-                        <div className="flex grow flex-row items-center gap-6 rounded p-3 hover:bg-accent">
-                          <component.icon className="h-10 w-10 rounded p-2 text-primary dark:bg-zinc-800" />
-                          <div className="flex flex-row gap-2">
-                            {component.title}
+                      <SheetClose asChild>
+                        <Link
+                          className="flex w-full items-center text-lg font-semibold"
+                          href={component.link}
+                        >
+                          <div className="flex grow flex-row items-center gap-6 rounded p-3 hover:bg-accent">
+                            <component.icon className="h-10 w-10 rounded p-2 text-primary dark:bg-zinc-800" />
+                            <div className="flex flex-row gap-2">
+                              {component.title}
+                            </div>
                           </div>
-                        </div>
-                      </Link>
+                        </Link>
+                      </SheetClose>
                     </CollapsibleContent>
                   ))}
                 </Collapsible>
