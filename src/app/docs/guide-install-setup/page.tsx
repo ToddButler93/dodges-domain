@@ -30,7 +30,7 @@ export default function GuideInstallSetup() {
         <Card className="flex flex-col items-center justify-between gap-6 p-3">
           <Link
             passHref={true}
-            href="https://github.com/Dylan-B-D/ta-launcher/releases/latest"
+            href="https://github.com/Dylan-B-D/ta-launcher/releases/download/0.1.3-beta/TA.Launcher.V2_0.1.3_x64_en-US.msi"
             target="_blank"
           >
             <Image
@@ -57,7 +57,7 @@ export default function GuideInstallSetup() {
               <Button asChild>
                 <Link href="/docs/linux-install">Using Linux?</Link>
               </Button>
-              <Alert color="orange">
+              <Alert className="bg-orange-900 text-zinc-100">
                 <p className="p-start pb-3">
                   You will need the{" "}
                   <Link
@@ -85,22 +85,36 @@ export default function GuideInstallSetup() {
           <h2>Instructions</h2>
           <div className="flex flex-col justify-center gap-3">
             <p>
-              Install TA Launcher through the MSI installer. The installer will
-              allow you to start the Launcher.
+              Use the{" "}
+              <Link
+                passHref={true}
+                href="https://github.com/Dylan-B-D/ta-launcher/releases/download/0.1.3-beta/TA.Launcher.V2_0.1.3_x64_en-US.msi"
+                target="_blank"
+              >
+                MSI installer
+              </Link>{" "}
+              to install TA Launcher.
             </p>
-            <p>Follow the on screen prompts to install Tribes Ascend. </p>
             <p>
-              When you get to the Packages step, select the Recommended option.
+              Follow the on-screen instructions within TA Launcher to download
+              Tribes Ascend.
             </p>
-            <p>It is recommended to leave all Options Default.</p>
-
-            <Alert color="orange">
+            <p>
+              When you get to the Packages step, select the Recommended option
+              for community maps.
+            </p>
+            <Alert className="bg-teal-800 ps-6 text-zinc-100">
               <p>
-                Once injected, the Play Now button will show whether you are in
-                OOTB or GOTY mode. There is a button on the main menu to switch.
-                You need to be in GOTY mode to play on GOTY servers and OOTB
-                mode to play on OOTB servers.
+                The Play Now button will indicate whether you’re in OOTB or GOTY
+                mode.
               </p>
+              <p>
+                Use the button in the main menu to switch game modes as needed:
+              </p>
+              <ul className="list-disc ps-6">
+                <li>GOTY Mode for GOTY servers.</li>
+                <li>OOTB Mode for OOTB servers.</li>
+              </ul>
             </Alert>
           </div>
         </div>
@@ -138,7 +152,7 @@ export default function GuideInstallSetup() {
               </AccordionItem>
               <AccordionItem value="IHEARBUTCANTSEE">
                 <AccordionTrigger className="text-xl">
-                  I hear the inject sound, but nothing about my game changes
+                  I don't see an option to swap game modes
                 </AccordionTrigger>
                 <AccordionContent>
                   <p>
@@ -154,7 +168,7 @@ export default function GuideInstallSetup() {
               </AccordionItem>
               <AccordionItem value="FAILTOJOIN">
                 <AccordionTrigger className="text-xl">
-                  I keep failing to join a server
+                  Unable to join a server
                 </AccordionTrigger>
                 <AccordionContent>
                   <p>
@@ -188,11 +202,12 @@ export default function GuideInstallSetup() {
                 <AccordionContent>
                   <p>
                     To play on a server hosting a community made map you only
-                    need the latest version of the map. In the server browsers
-                    current state, community made maps come up as Arx Novena.
+                    need the latest version of the map. In the server browser,
+                    community made maps will be listed as "Arx Novena".
                   </p>
                   <p>
-                    The files can be obtained through the Packages tab of TA Launcher through the Recommended option.
+                    The files can be obtained through the Packages tab of TA
+                    Launcher by clicking the Recommended option.
                   </p>
                 </AccordionContent>
               </AccordionItem>
