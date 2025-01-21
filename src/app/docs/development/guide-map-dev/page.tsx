@@ -206,7 +206,7 @@ export default function GuideMapDevelopment() {
           </p>
           <p>
             All .upk files will go into your{" "}
-            <b>\UDK\UDK-2011-01\UDKGame\Content\</b>folder. Where as the maps
+            <b>\UDK\UDK-2011-01\UDKGame\Content\</b>{" "}folder. Where as the maps
             can go into <b>\UDK\UDK-2011-01\UDKGame\Content\Maps</b>
           </p>
           <p>
@@ -288,7 +288,7 @@ export default function GuideMapDevelopment() {
             modifying the terrain, adding material to the terrain and adding a
             couple of random static meshes from the TA packages within the
             content browser to get yourself familiar with UDK. When you feel
-            like you are ready to test the map out. Hit <b>Build</b>then{" "}
+            like you are ready to test the map out. Hit <b>Build</b> then{" "}
             <b>Build All</b> Hit File then Save Current Level. Close the UDK
             Editor and save any asset packages <strong>you</strong> created.
           </p>
@@ -420,9 +420,9 @@ export default function GuideMapDevelopment() {
           <h5>Step 4</h5>
           <p>Hit Enter.</p>
           <p>
-            Once the game has launched hit the <kbd>`</kbd>key and type{" "}
+            Once the game has launched hit the <kbd>`</kbd> key and type{" "}
             <b>ChangeTeam BloodEagle</b> for blood eagle spawns or{" "}
-            <b>ChangeTeam DiamondSword</b>for diamond sword spawns. Otherwise,{" "}
+            <b>ChangeTeam DiamondSword</b> for diamond sword spawns. Otherwise,{" "}
             you will spawn as neither team.
           </p>
           <h3>Hosting Custom Map</h3>
@@ -447,12 +447,12 @@ export default function GuideMapDevelopment() {
           </p>
           <p>
             Copy <b>RefShaderCache-PC-D3D-SM3.upk</b> in{" "}
-            <b>C:\UDK\UDK-2011-01\UDKGame\CookedPC\</b>and paste it into{" "}
+            <b>C:\UDK\UDK-2011-01\UDKGame\CookedPC\</b> and paste it into{" "}
             <b>\Tribes\TribesGame\CookedPC\</b>
           </p>
           <p>
             Copy the uncooked map from{" "}
-            <b>\UDK\UDK-2011-01\UDKGame\Content\Maps\</b>to{" "}
+            <b>\UDK\UDK-2011-01\UDKGame\Content\Maps\</b> to{" "}
             <b>\Tribes\TribesGame\CookedPC\Maps\</b>
           </p>
           <p>
@@ -546,16 +546,16 @@ export default function GuideMapDevelopment() {
           <h5>Step 2</h5>
           <p>
             Run UnrealFrontEnd and cook the map. Copy{" "}
-            <b>RefShaderCache-PC-D3D-SM3.upk</b>in{" "}
-            <b>\UDK\UDK-2011-01\UDKGame\CookedPC\</b>and paste it into{" "}
+            <b>RefShaderCache-PC-D3D-SM3.upk</b> in{" "}
+            <b>\UDK\UDK-2011-01\UDKGame\CookedPC\</b> and paste it into{" "}
             <b>\Tribes\TribesGame\CookedPC\</b> This will need to be done every{" "}
             time you wish to test the map.
           </p>
           <h4>Workaround (Advanced users)</h4>
           <h5>Step 1</h5>
           <p>
-            Copy the <b>RefShaderCache-PC-D3D-SM3.upk</b>in{" "}
-            <b>\Tribes\TribesGame\CookedPC\</b>and paste it into{" "}
+            Copy the <b>RefShaderCache-PC-D3D-SM3.upk</b> in{" "}
+            <b>\Tribes\TribesGame\CookedPC\</b> and paste it into{" "}
             <b>\UDK\UDK-2011-01\UDKGame\Content\</b>
           </p>
           <h5>Step 2</h5>
