@@ -9,7 +9,7 @@ export default function GuideConfig() {
     <>
       <div className="flex flex-col gap-6">
         <Card className="grow p-6 text-center">
-          <h1>Tribes Ascend Configuration</h1>
+          <h1>Tribes Ascend Config</h1>
         </Card>
         <div className="flex flex-col gap-6">
           <div className="flex flex-col gap-6">
