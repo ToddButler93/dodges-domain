@@ -446,7 +446,7 @@ function T3Class(props: T3ClassProps) {
           {armor === "Heavy" && <RxTriangleDown />} {/* TODO Add heavy icon */}
           <h3>{name}</h3>
         </div>
-        <div className="flex flex-row">
+        <div className="flex flex-col md:flex-row self-stretch items-start">
           <div className="flex flex-col gap-1">
             <div className="grid grid-cols-2 justify-between ">
               <p>Health:</p>
@@ -567,7 +567,7 @@ function T3Class(props: T3ClassProps) {
 
 function WeaponItem(props: WeaponProps) {
   return (
-    <HoverCard key={props.weapon.name}>
+    <HoverCard openDelay={100} closeDelay={0} key={props.weapon.name}>
       <HoverCardTrigger asChild>
         <Card className="flex flex-col items-center rounded-none bg-zinc-700 p-1 text-zinc-50 hover:bg-blue-800">
           <Image
