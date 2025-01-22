@@ -348,7 +348,7 @@ export default function GuideMapDevelopment() {
             <b>\Tribes\TribesGame\CookedPC\</b>
           </p>
           <p>
-            Copy the uncooked map from
+            Copy the uncooked map from{" "}
             <b>\UDK\UDK-2011-01\UDKGame\Content\Maps\</b> to{" "}
             <b>\Tribes\TribesGame\CookedPC\Maps\</b>
           </p>

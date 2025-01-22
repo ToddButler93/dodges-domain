@@ -120,13 +120,13 @@ const tribesLiveInfoMenuData = [
   {
     icon: FaServer,
     title: "Server Browser",
-    description: "Work in Progress",
+    description: "Community Server Viewer",
     link: "/server-browser",
   },
   {
     icon: FaHistory,
     title: "Match History",
-    description: "Work in Progress",
+    description: "PUG Match History",
     link: "/match-history",
   },
 ];
