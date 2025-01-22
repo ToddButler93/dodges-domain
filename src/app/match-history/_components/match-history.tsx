@@ -4,8 +4,8 @@ import {
   type MatchInfo,
   type Player,
 } from "~/server/api/matchHistory";
-import { Card } from "./ui/card";
-import { Badge } from "./ui/badge";
+import { Card } from "~/components/ui/card";
+import { Badge } from "~/components/ui/badge";
 import Image from "next/image";
 
 export default async function MatchHistoryComponent() {
@@ -28,26 +28,24 @@ export default async function MatchHistoryComponent() {
                 className="grow rounded-md p-3"
                 alt={""}
               />
-              <div className="grid grid-flow-col justify-between">
-                <>
+              <div className="grid grid-flow-col justify-between px-3">
                   {match.queue.name === "PUGz" ? (
-                    <Badge className="text-teal-500">PUG</Badge>
+                    <Badge className="bg-teal-700">PUG</Badge>
                   ) : match.queue.name === "2v2" ? (
-                    <Badge className="text-orange-500">2v2</Badge>
+                    <Badge className="bg-orange-700">2v2</Badge>
                   ) : match.queue.name === "lag2v2" ? (
-                    <Badge className="text-blue-500">Lag 2v2</Badge>
+                    <Badge className="bg-blue-700">Lag 2v2</Badge>
                   ) : match.queue.name === "OvD" ? (
-                    <Badge className="text-purple-500">OvD</Badge>
+                    <Badge className="bg-purple-700">OvD</Badge>
                   ) : (
-                    <Badge className="text-red-500">2v2</Badge>
+                    <Badge className="bg-red-700">2v2</Badge>
                   )}
-                  <Badge className="text-black-500">
+                  <Badge className="dark:bg-zinc-200 bg-zinc-800 dark:text-zinc-800 text-zinc-200">
                     {new Date(match.completionTimestamp).toLocaleString()}
                   </Badge>
-                </>
               </div>
 
-              <div className="grid">
+              <div className="grid pt-3">
                 <>
                   {match.winningTeam !== 0 ? (
                     <>
@@ -59,12 +57,12 @@ export default async function MatchHistoryComponent() {
                                 <p key={index}>
                                   <>
                                     {player.captain === 1 && (
-                                      <strong className=" text-slate-50">
+                                      <strong className=" dark:text-zinc-50">
                                         {player.user.name} (c)
                                       </strong>
                                     )}
                                     {player.captain !== 1 && (
-                                      <span className=" text-slate-50">
+                                      <span className=" dark:text-zinc-50">
                                         {player.user.name}
                                       </span>
                                     )}
@@ -87,12 +85,12 @@ export default async function MatchHistoryComponent() {
                                 <p key={index}>
                                   <>
                                     {player.captain === 1 && (
-                                      <strong className=" text-slate-50">
+                                      <strong className=" dark:text-zinc-50">
                                         {player.user.name} (c)
                                       </strong>
                                     )}
                                     {player.captain !== 1 && (
-                                      <span className=" text-slate-50">
+                                      <span className=" dark:text-zinc-50">
                                         {player.user.name}
                                       </span>
                                     )}
@@ -114,12 +112,12 @@ export default async function MatchHistoryComponent() {
                                 <p key={index}>
                                   <>
                                     {player.captain === 1 && (
-                                      <strong className=" text-slate-50">
+                                      <strong className=" text-zinc-50">
                                         {player.user.name} (c)
                                       </strong>
                                     )}
                                     {player.captain !== 1 && (
-                                      <span className=" text-slate-50">
+                                      <span className=" text-zinc-50">
                                         {player.user.name}
                                       </span>
                                     )}
@@ -142,12 +140,12 @@ export default async function MatchHistoryComponent() {
                                 <p key={index}>
                                   <>
                                     {player.captain === 1 && (
-                                      <strong className=" text-slate-50">
+                                      <strong className=" text-zinc-50">
                                         {player.user.name} (c)
                                       </strong>
                                     )}
                                     {player.captain !== 1 && (
-                                      <span className=" text-slate-50">
+                                      <span className=" text-zinc-50">
                                         {player.user.name}
                                       </span>
                                     )}

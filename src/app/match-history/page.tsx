@@ -1,5 +1,5 @@
 import { Suspense } from "react";
-import MatchHistoryComponent from "~/components/match-history";
+import MatchHistoryComponent from "~/app/match-history/_components/match-history";
 import { Card } from "~/components/ui/card";
 
 export default function MatchHistory() {
@@ -13,7 +13,7 @@ export default function MatchHistory() {
           <Suspense
             fallback={
               <div className="mx-auto grid w-full grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
-                <Card className="shadow-md">
+                <Card className="shadow-md gap-3">
                   <div className="w-[500px] grow rounded-md p-3" />
                 </Card>
                 <Card className="shadow-md">

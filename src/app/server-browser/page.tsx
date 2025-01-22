@@ -1,7 +1,7 @@
 import { Suspense } from "react";
 import ServerBrowserPUG, {
   ServerBrowserCommunity,
-} from "~/components/server-browser";
+} from "~/app/server-browser/_components/server-browser";
 import { Card } from "~/components/ui/card";
 
 export default function ServerBrowser() {

@@ -341,7 +341,7 @@ export default function T3Classes() {
           >
             <TabsList className="flex flex-col items-start justify-start py-1 dark:bg-zinc-800 dark:text-zinc-100">
               <TabsTrigger value="lo">
-                <div className="flex flex-row items-center gap-3">
+                <div className="flex grow max-sm:justify-center flex-row items-center gap-3">
                   <FaGamepad />
                   <div>
                     <h4>Pathfinder</h4>
@@ -350,7 +350,7 @@ export default function T3Classes() {
                 </div>
               </TabsTrigger>
               <TabsTrigger value="ld">
-                <div className="flex grow flex-row items-center gap-3">
+                <div className="flex grow max-sm:justify-center flex-row items-center gap-3">
                   <FaGamepad />
                   <div>
                     <h4>Sentinel</h4>
@@ -359,7 +359,7 @@ export default function T3Classes() {
                 </div>
               </TabsTrigger>
               <TabsTrigger value="mo">
-                <div className="flex flex-row items-center gap-3">
+                <div className="flex grow max-sm:justify-center flex-row items-center gap-3">
                   <FaGamepad />
                   <div>
                     <h4>Raider</h4>
@@ -368,7 +368,7 @@ export default function T3Classes() {
                 </div>
               </TabsTrigger>
               <TabsTrigger value="md">
-                <div className="flex flex-row items-center gap-3">
+                <div className="flex grow max-sm:justify-center flex-row items-center gap-3">
                   <FaGamepad />
                   <div>
                     <h4>Technician</h4>
@@ -377,7 +377,7 @@ export default function T3Classes() {
                 </div>
               </TabsTrigger>
               <TabsTrigger value="ho">
-                <div className="flex flex-row items-center gap-3">
+                <div className="flex grow max-sm:justify-center flex-row items-center gap-3">
                   <FaGamepad />
                   <div>
                     <h4>Doombringer</h4>
@@ -386,7 +386,7 @@ export default function T3Classes() {
                 </div>
               </TabsTrigger>
               <TabsTrigger value="hd">
-                <div className="flex flex-row items-center gap-3">
+                <div className="flex grow max-sm:justify-center flex-row items-center gap-3">
                   <FaGamepad />
                   <div>
                     <h4>Juggernaut</h4>
@@ -446,7 +446,7 @@ function T3Class(props: T3ClassProps) {
           {armor === "Heavy" && <RxTriangleDown />} {/* TODO Add heavy icon */}
           <h3>{name}</h3>
         </div>
-        <div className="flex flex-col md:flex-row self-stretch items-start">
+        <div className="flex flex-col md:flex-row self-stretch items-start gap-3">
           <div className="flex flex-col gap-1">
             <div className="grid grid-cols-2 justify-between ">
               <p>Health:</p>
