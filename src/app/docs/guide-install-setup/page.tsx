@@ -151,7 +151,7 @@ export default function GuideInstallSetup() {
               </AccordionItem>
               <AccordionItem value="IHEARBUTCANTSEE">
                 <AccordionTrigger className="text-xl">
-                  I don't see an option to swap game modes
+                  I don&apos;t see an option to swap game modes
                 </AccordionTrigger>
                 <AccordionContent>
                   <p>
@@ -202,7 +202,7 @@ export default function GuideInstallSetup() {
                   <p>
                     To play on a server hosting a community made map you only
                     need the latest version of the map. In the server browser,
-                    community made maps will be listed as "Arx Novena".
+                    community made maps will be listed as &quot;Arx Novena&quot;.
                   </p>
                   <p>
                     The files can be obtained through the Packages tab of TA
