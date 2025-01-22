@@ -231,7 +231,7 @@ export default function CustomMaps() {
 
         <Separator />
         <Card className="grow p-6 text-center">
-          <h1>Miscellaneous Maps</h1>
+          <h1>Other Maps</h1>
         </Card>
 
         <div className="grid gap-3 sm:grid-cols-2">

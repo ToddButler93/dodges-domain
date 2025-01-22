@@ -9,7 +9,7 @@ export default function GuideMapDevelopment() {
     <>
       <div className="flex flex-col gap-6">
         <Card className="grow p-6 text-center">
-          <h1>Map Development Guide</h1>
+          <h1>Map Dev Guide</h1>
         </Card>
         <div className="flex flex-col gap-3">
           <Alert className="flex flex-col bg-teal-800 p-6 gap-3 text-zinc-100">
@@ -558,7 +558,7 @@ export default function GuideMapDevelopment() {
           <p>
             Copy the <b>RefShaderCache-PC-D3D-SM3.upk</b> in{" "}
             <b>\Tribes\TribesGame\CookedPC\</b> and paste it into{" "}
-            <b>\UDK\UDK-2011-01\UDKGame\Content\</b>
+            <b>C:\UDK\UDK-2011-01\UDKGame\Content\</b>
           </p>
           <h5>Step 2</h5>
           <p>
