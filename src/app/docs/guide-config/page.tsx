@@ -19,7 +19,7 @@ export default function GuideConfig() {
               <b>Documents\My Games\Tribes Ascend\TribesGame\Config\</b>
             </p>
             <div className="grid grid-cols-2 gap-3 max-sm:grid-cols-1">
-              <Card className="flex flex-col gap-3 p-3 shadow-xl">
+              <Card className="flex flex-col gap-3 p-3">
                 <Link
                   download="tribes.ini"
                   target="_blank"
@@ -47,7 +47,7 @@ export default function GuideConfig() {
                   who are after a competitive edge.
                 </p>
               </Card>
-              <Card className="flex flex-col gap-3 p-3 shadow-xl">
+              <Card className="flex flex-col gap-3 p-3">
                 <Link
                   download="tribes.ini"
                   target="_blank"
@@ -90,7 +90,7 @@ export default function GuideConfig() {
               </Alert>
             </div>
             <div className="grid grid-cols-2 gap-3 max-sm:grid-cols-1">
-              <Card className="flex flex-col gap-3 p-3 shadow-xl">
+              <div className="flex flex-col gap-3">
                 <h3>Required Tweaks</h3>
                 <ul className="list-disc p-3">
                   <li>
@@ -107,8 +107,8 @@ export default function GuideConfig() {
                     weapons take up less screen space.
                   </li>
                 </ul>
-              </Card>
-              <Card className="flex flex-col gap-3 p-3 shadow-xl">
+              </div>
+              <div className="flex flex-col gap-3">
                 <h3>Recommended Tweaks</h3>
                 <ul className="list-disc p-3">
                   <li>
@@ -138,11 +138,11 @@ export default function GuideConfig() {
                     systems.
                   </li>
                 </ul>
-              </Card>
+              </div>
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-3 p-3 shadow-xl">
+        <div className="flex flex-col gap-3">
           <h2>TribesInput.ini</h2>
           <div>
             <Button asChild>
@@ -180,7 +180,7 @@ export default function GuideConfig() {
             overwrite the file.
           </p>
         </div>
-        <div className="flex flex-col gap-6 p-3 shadow-xl">
+        <div className="flex flex-col gap-6">
           <h2>TAMods</h2>
 
           <div>

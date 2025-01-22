@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import { Button } from "~/components/ui/button";
 import { Card } from "~/components/ui/card";
 import { Separator } from "~/components/ui/separator";
 
@@ -7,12 +8,16 @@ export default function GuideCapping() {
   return (
     <>
       <div className="flex flex-col gap-6">
-        <Card className="grow p-3 text-center shadow-xl">
+        <Card className="grow p-3 text-center">
           <h1>Playing Offense - Tribes Ascend</h1>
         </Card>
 
-        <div className="flex flex-col gap-3 p-6 shadow-xl">
-          <Link href={"/docs/gameplay/guide-quick?tab=glossary"}>Glossary</Link>
+        <div className="flex flex-col gap-3">
+          <div className="flex">
+            <Button asChild size="lg">
+              <Link href="/docs/gameplay/guide-quick?tab=glossary">Glossary</Link>
+            </Button>
+          </div>
           <p>
             Everything you do relies on timing with your <b>Capper</b>. Since
             the <b>Capper</b> looks to move the enemy flag, your goal is to kill
@@ -24,7 +29,7 @@ export default function GuideCapping() {
             performing/supporting an <b>E-Grab</b> unless your capper will beat
             them.
           </p>
-          <Card className="flex flex-col gap-3 p-3 shadow-xl">
+          <Card className="flex flex-col gap-3 p-3">
             <h4> Major Responsibilities</h4>
             <p>
               - Kill the enemy <b>Heavy on Flag</b> and enemy{" "}
@@ -43,7 +48,7 @@ export default function GuideCapping() {
           </Card>
           <h4> Minor Responsibilities</h4>
 
-          <Card className="flex flex-col gap-3 p-3 shadow-xl">
+          <Card className="flex flex-col gap-3 p-3">
             <p>
               - <kbd>K</kbd> out and meet your <b>Capper</b> after they grab.
             </p>
@@ -65,7 +70,7 @@ export default function GuideCapping() {
           </Card>
         </div>
         <Separator />
-        <div className="flex flex-col gap-3 p-6 shadow-xl">
+        <div className="flex flex-col gap-3">
           <h2> Timing</h2>
           <p>
             Your goal is to kill every enemy near their stand when your{" "}
@@ -121,7 +126,7 @@ export default function GuideCapping() {
           </p>
         </div>
         <Separator />
-        <div className="flex flex-col gap-3 p-6 shadow-xl">
+        <div className="flex flex-col gap-3">
           <h2> Walks</h2>
           <p>
             A walk is where an <b>Offense</b> member chooses to grab the flag
@@ -158,7 +163,7 @@ export default function GuideCapping() {
           </p>
         </div>
         <Separator />
-        <div className="flex flex-col gap-3 p-6 shadow-xl">
+        <div className="flex flex-col gap-3">
           <h2> Spotting</h2>
           <p>
             To support your <b>Defense</b> effectively an <b>Offense</b> member
@@ -193,7 +198,7 @@ export default function GuideCapping() {
           </p>
         </div>
         <Separator />
-        <div className="flex flex-col gap-3 p-6 shadow-xl">
+        <div className="flex flex-col gap-3">
           <h2> Sniper Pressure</h2>
           <p>
             Killing the enemy <b>Sniper</b> before your <b>Capper</b> has
@@ -263,7 +268,7 @@ export default function GuideCapping() {
           </p>
         </div>
         <Separator />
-        <div className="flex flex-col gap-3 p-6 shadow-xl">
+        <div className="flex flex-col gap-3">
           <h2> Classes</h2>
           <p>
             Most of the time it is best to be a <b>Medium</b> or a <b>Heavy</b>{" "}

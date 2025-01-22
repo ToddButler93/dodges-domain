@@ -102,24 +102,27 @@ export default function GuideInstallSetup() {
               When you get to the Packages step, select the Recommended option
               for community maps.
             </p>
-            <Alert className="bg-teal-800 ps-6 text-zinc-100">
+            <Alert className="flex flex-col gap-3 bg-teal-800 p-6 text-zinc-100">
               <p>
                 The Play Now button will indicate whether you’re in OOTB or GOTY
                 mode.
               </p>
-              <p>
-                Use the button in the main menu to switch game modes as needed:
-              </p>
-              <ul className="list-disc ps-6">
-                <li>GOTY Mode for GOTY servers.</li>
-                <li>OOTB Mode for OOTB servers.</li>
-              </ul>
+              <div>
+                <p>
+                  Use the button in the main menu to switch game modes as
+                  needed:
+                </p>
+                <ul className="list-disc ps-6">
+                  <li>GOTY Mode for GOTY servers.</li>
+                  <li>OOTB Mode for OOTB servers.</li>
+                </ul>
+              </div>
             </Alert>
           </div>
         </div>
         <Separator />
         <div className="flex flex-grow flex-col">
-          <h3 className=" content-center">Troubleshooting</h3>
+          <h3 className="content-center">Troubleshooting</h3>
           <div className="flex flex-col justify-center gap-3">
             <Accordion type="single" collapsible>
               <AccordionItem value="IDKWHERETRIBESIS">
@@ -139,7 +142,7 @@ export default function GuideInstallSetup() {
                     muted
                     loop
                     preload="metadata"
-                    className=" h-1/3"
+                    className="h-1/3"
                   >
                     <source
                       src="https://utfs.io/f/74dfea14-a764-4061-9ff9-4c3c90a9915f-2pmbfd.webm"
@@ -202,7 +205,8 @@ export default function GuideInstallSetup() {
                   <p>
                     To play on a server hosting a community made map you only
                     need the latest version of the map. In the server browser,
-                    community made maps will be listed as &quot;Arx Novena&quot;.
+                    community made maps will be listed as &quot;Arx
+                    Novena&quot;.
                   </p>
                   <p>
                     The files can be obtained through the Packages tab of TA

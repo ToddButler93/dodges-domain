@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Card } from "~/components/ui/card";
 //import { Table } from "~/components/ui/table";
 import Image from "next/image";
+import { Button } from "~/components/ui/button";
 // TODO
 // const tableData = {
 //   head: ["Action", "Default Binding "],
@@ -68,7 +69,7 @@ export default function GuideUDKBasics() {
         <Card className="grow p-6 text-center">
           <h1>UDK Basics</h1>
         </Card>
-        <div className="flex flex-col gap-3 p-6">
+        <div className="flex flex-col gap-3">
           <h1>How to use UDK to make Tribes Maps</h1>
           <h2> Starting from Scratch</h2>
           <p>This guide is aimed at people who are new to using UDK 2011.</p>
@@ -119,7 +120,11 @@ export default function GuideUDKBasics() {
             Right click the terrain and select Actor Properties <kbd>F4</kbd>.
             This can be found under View then Actor Properties.
           </p>
-          <Link href="#glossary">What is an actor in UDK?</Link>
+          <div className="flex">
+            <Button asChild size="lg">
+              <Link href="#glossary">What is an actor in UDK?</Link>
+            </Button>
+          </div>
           <p>
             To confirm a setting, make sure you hit enter after typing/pasting
             in the value.

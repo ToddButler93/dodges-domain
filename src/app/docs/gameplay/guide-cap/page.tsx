@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Button } from "~/components/ui/button";
 import { Card } from "~/components/ui/card";
 import { Separator } from "~/components/ui/separator";
 
@@ -25,7 +26,7 @@ export default function GuideCapping() {
           ></source>
           Your browser does not support .webm video.
         </video>
-        <div className="flex flex-col shadow-xl">
+        <div className="flex flex-col gap-3">
           <h2> Gaining Speed</h2>
           <h3> Real Basics</h3>
           {/* TODO Move to guide-movement */}
@@ -102,9 +103,13 @@ export default function GuideCapping() {
           </ul>
         </div>
         <Separator />
-        <div className="flex flex-col p-6 shadow-xl">
+        <div className="flex flex-col gap-3">
           <h2> Communication</h2>
-          <Link href="/docs/gameplay/guide-quick?tab=glossary">Glossary</Link>
+          <div className="flex">
+            <Button asChild size="lg">
+              <Link href="#glossary">Glossary</Link>
+            </Button>
+          </div>
           Communicating your position and intention allows your teammates to
           clear the enemy defense allowing you to grab or work with you getting
           the flag home. Learning time calls for your routes is incredibly
@@ -112,7 +117,7 @@ export default function GuideCapping() {
           make sure your teammates know when to hit the stand or snipe.
         </div>
         <Separator />
-        <div className="flex flex-col p-6 shadow-xl">
+        <div className="flex flex-col gap-3">
           <h2> Returning home</h2>
           <ul className="list-disc p-3">
             <li>
@@ -138,7 +143,7 @@ export default function GuideCapping() {
           </ul>
         </div>
         <Separator />
-        <div className="flex flex-col p-6 shadow-xl">
+        <div className="flex flex-col gap-3">
           <h2> Rock Bounces</h2>
           <video
             width="100%"
@@ -172,7 +177,7 @@ export default function GuideCapping() {
           </ul>
         </div>
         <Separator />
-        <div className="flex flex-col p-6 shadow-xl">
+        <div className="flex flex-col gap-3">
           <h2> Show me some routes</h2>
           <p>
             Many people have pushed out a lot of interesting route videos on
@@ -390,7 +395,7 @@ export default function GuideCapping() {
           </p>
         </div>
         <Separator />
-        <div className="flex flex-col p-6 shadow-xl">
+        <div className="flex flex-col gap-3">
           <h2> TAMods to the rescue</h2>
           <p>
             TAMods has some route libraries that includes routes for most

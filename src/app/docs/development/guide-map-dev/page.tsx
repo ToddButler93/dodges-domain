@@ -12,15 +12,17 @@ export default function GuideMapDevelopment() {
           <h1>Map Development Guide</h1>
         </Card>
         <div className="flex flex-col gap-3">
-          <Alert className="flex flex-col gap-3 p-3">
+          <Alert className="flex flex-col bg-teal-800 p-6 gap-3 text-zinc-100">
             If you are interested in map development I recommend joining the
             Tribes Ascend Community discord and asking for assistance. We are
             excited to help out new map makers.
-            <Button>
-              <Link href="https://discord.gg/dd8JgzJ">
-                Tribes Ascend Community Discord
-              </Link>
-            </Button>
+            <div className="flex">
+              <Button>
+                <Link href="https://discord.gg/dd8JgzJ">
+                  Tribes Ascend Community Discord
+                </Link>
+              </Button>
+            </div>
           </Alert>
           <h2>UDK Setup</h2>
           <h3>Step 1</h3>
@@ -206,7 +208,7 @@ export default function GuideMapDevelopment() {
           </p>
           <p>
             All .upk files will go into your{" "}
-            <b>\UDK\UDK-2011-01\UDKGame\Content\</b>{" "}folder. Where as the maps
+            <b>\UDK\UDK-2011-01\UDKGame\Content\</b> folder. Where as the maps
             can go into <b>\UDK\UDK-2011-01\UDKGame\Content\Maps</b>
           </p>
           <p>
