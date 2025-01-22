@@ -436,8 +436,8 @@ export default function GuideUDKBasics() {
           <p>
             - Set Location <span className="text-red-600"> X</span> = -19000,
             <span className="text-green-600"> Y</span> = 1200 and
-            <span className="text-blue-600"> Z</span> = 0 for now.
-            <strong>Set</strong>Group to &quot;DiamondSword&quot;.
+            <span className="text-blue-600"> Z</span> = 0 for now.{" "}
+            <strong>Set</strong> Group to &quot;DiamondSword&quot;.
           </p>
           <p>
             We need the name of the vehicle pad actor we just added. This is in
