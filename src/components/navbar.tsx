@@ -13,7 +13,6 @@ import {
   FaGun,
   FaHammer,
   FaMap,
-  FaPlus,
   FaServer,
 } from "react-icons/fa6";
 import { FaEdit, FaHistory } from "react-icons/fa";
