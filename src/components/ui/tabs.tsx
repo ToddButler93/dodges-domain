@@ -1,19 +1,17 @@
-// Modified version from: https://github.com/shadcn-ui/ui/issues/414#issuecomment-1772421366
-
 "use client";
 
-import Link, { type LinkProps } from "next/link";
+import Link, { LinkProps } from "next/link";
 import { usePathname, useSearchParams } from "next/navigation";
 import * as React from "react";
-import { cn } from "~/lib/utils";
 
+import { cn } from "~/lib/utils";
 interface Context {
   defaultValue: string;
   hrefFor: (value: string) => LinkProps["href"];
   searchParam: string;
   selected: string;
 }
-const TabsContext = React.createContext<Context | null>(null);
+const TabsContext = React.createContext<Context>(null as any);
 
 export function Tabs(props: {
   children: React.ReactNode;
@@ -29,9 +27,9 @@ export function Tabs(props: {
   searchParam?: string;
 }) {
   const { children, className, searchParam = "tab", ...other } = props;
-  const searchParams = useSearchParams();
+  const searchParams = useSearchParams()!;
 
-  const selected = searchParams.get(searchParam) ?? props.defaultValue;
+  const selected = searchParams.get(searchParam) || props.defaultValue;
 
   const pathname = usePathname();
   const hrefFor: Context["hrefFor"] = React.useCallback(
@@ -47,7 +45,7 @@ export function Tabs(props: {
 
       return pathname + (asString ? "?" + asString : "");
     },
-    [searchParams, props.defaultValue, pathname, searchParam],
+    [searchParams, props.searchParam],
   );
 
   return (
@@ -76,7 +74,7 @@ export function TabsList(props: {
     <div
       {...props}
       className={cn(
-        "inline-flex items-center justify-center rounded-md bg-muted p-1 text-muted-foreground",
+        "flex h-auto flex-col items-center justify-start rounded-md bg-muted p-1 text-muted-foreground",
         props.className,
       )}
     />
@@ -94,7 +92,7 @@ export const TabsTrigger = (props: {
     <Link
       {...props}
       className={cn(
-        "inline-flex items-center justify-center whitespace-nowrap rounded-sm px-3 py-1.5 text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-background data-[state=active]:text-foreground data-[state=active]:shadow-sm",
+        "inline-flex w-full items-center justify-start whitespace-nowrap rounded-sm px-3 py-1.5 text-sm font-medium ring-offset-background transition-all hover:bg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-background data-[state=active]:text-foreground data-[state=active]:shadow-sm",
         props.className,
       )}
       data-state={context.selected === props.value ? "active" : "inactive"}
