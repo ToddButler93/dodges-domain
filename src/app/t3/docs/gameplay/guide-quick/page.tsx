@@ -73,7 +73,7 @@ export default function T3QuickCompGuide() {
               <TabsTrigger value="standoffs">Stand Offs </TabsTrigger>
               <TabsTrigger value="glossary">Glossary </TabsTrigger>
             </TabsList>
-            <TabsContent value="home" className="flex flex-col gap-3 ps-6">
+            <TabsContent value="home" className="flex flex-col gap-3 ps-6 grow">
               <h1>Playing Competitive - 7v7 Format</h1>
               <div className="flex flex-col gap-3">
                 <p>
@@ -144,7 +144,7 @@ export default function T3QuickCompGuide() {
                 </ul>
               </div>
             </TabsContent>
-            <TabsContent value="offense" className="flex flex-col gap-3 ps-6">
+            <TabsContent value="offense" className="flex flex-col gap-3 ps-6 grow">
               <h2>Offense</h2>
               <div className="flex flex-col gap-3">
                 <h3>Major Responsibilities</h3>
@@ -186,7 +186,7 @@ export default function T3QuickCompGuide() {
                 </ul>
               </div>
             </TabsContent>
-            <TabsContent value="hof" className="flex flex-col gap-3 ps-6">
+            <TabsContent value="hof" className="flex flex-col gap-3 ps-6 grow">
               <h2>Heavy on Flag</h2>
               <div className="flex flex-col gap-3">
                 <h3>Major Responsibilities</h3>
@@ -219,7 +219,7 @@ export default function T3QuickCompGuide() {
                 </ul>
               </div>
             </TabsContent>
-            <TabsContent value="defense" className="flex flex-col gap-3 ps-6">
+            <TabsContent value="defense" className="flex flex-col gap-3 ps-6 grow">
               <h2>Medium Defense</h2>
               <div className="flex flex-col gap-3">
                 <h3>Major Responsibilities</h3>
@@ -249,7 +249,7 @@ export default function T3QuickCompGuide() {
                 </ul>
               </div>
             </TabsContent>
-            <TabsContent value="chasing" className="flex flex-col gap-3 ps-6">
+            <TabsContent value="chasing" className="flex flex-col gap-3 ps-6 grow">
               <h2>Chaser</h2>
               <div className="flex flex-col gap-3">
                 <h3>Major Responsibilities</h3>
@@ -285,7 +285,7 @@ export default function T3QuickCompGuide() {
                 </ul>
               </div>
             </TabsContent>
-            <TabsContent value="capping" className="flex flex-col gap-3 ps-6">
+            <TabsContent value="capping" className="flex flex-col gap-3 ps-6 grow">
               <h2>Capper</h2>
               <Button>
                 <Link href="/docs/gameplay/guide-cap">Capper Guide</Link>
@@ -310,7 +310,7 @@ export default function T3QuickCompGuide() {
                 </li>
               </ul>
             </TabsContent>
-            <TabsContent value="standoffs" className="flex flex-col gap-3 ps-6">
+            <TabsContent value="standoffs" className="flex flex-col gap-3 ps-6 grow">
               <h2>Stand-Offs</h2>
               <ul className="list-disc p-3">
                 <li>
@@ -344,7 +344,7 @@ export default function T3QuickCompGuide() {
                 </li>
               </ul>
             </TabsContent>
-            <TabsContent value="glossary" className="flex flex-col gap-3 ps-6">
+            <TabsContent value="glossary" className="flex flex-col gap-3 ps-6 grow">
               <h2 id="glossary">Glossary</h2>
               {/* TODO Table <Table className="p-3" data={tableData} /> */}
             </TabsContent>
