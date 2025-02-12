@@ -20,7 +20,7 @@ Made using the [T3 Stack](https://create.t3.gg/).
 
 ### Drizzle
 
-"pnpm db:push" - Drizzle push (mysql db)
+"pnpm db:push" - Drizzle push (vercelPostgres)
 "pnpm db:studio" - Drizzle Studio
 
 ## What's here?
@@ -65,9 +65,9 @@ Follow the deployment guides for [Vercel](https://create.t3.gg/en/deployment/ver
 - [x] Paragraph & Headings styling
 - [x] Layouts (create a standard)
 - [x] Migrate to git
-- [ ] Clone live sites color theme with similar tailwind offerings
+- [x] Clone live sites color theme with similar tailwind offerings
 - [x] Add T3 Section
-- - [ ] Different Color Theme
+- - [x] Different Color Theme
 - - [x] Gameplay guides
 - - - [ ] Quick short PUG Guide
 - - - - [ ] Recommended loadouts
