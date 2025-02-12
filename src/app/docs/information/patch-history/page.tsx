@@ -1,3 +1,4 @@
+import { Alert } from "~/components/ui/alert";
 import { Card } from "~/components/ui/card";
 import { Separator } from "~/components/ui/separator";
 
@@ -8,6 +9,12 @@ export default function PatchHistory() {
         <Card className="grow p-6 text-center">
           <h1>Patch History</h1>
         </Card>
+        <Alert className="bg-orange-900 text-zinc-100">
+          <p>
+            This page is in development and may contain format/text errors and
+            broken links.
+          </p>
+        </Alert>
         <h2>2016</h2>
         <h3>Tribes: Ascend Version 1.4.2913.0 (Parting Gifts)</h3>
         2016/9/28
