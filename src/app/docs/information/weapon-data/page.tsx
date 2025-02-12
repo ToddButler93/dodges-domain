@@ -1,6 +1,7 @@
 import { parseWeapons } from "~/server/api/taWeapons";
 import { WeaponsTable } from "./_components/weapon-table";
 import { Card } from "~/components/ui/card";
+import { Alert } from "~/components/ui/alert";
 
 export default function WeaponData() {
   // Example usage with the provided JSON data
@@ -7587,8 +7588,13 @@ export default function WeaponData() {
     <>
       <div className="flex flex-col gap-3">
         <Card className="grow p-6 text-center">
-          <h1>Tribes Ascend Weapons</h1>
+          <h1>Out of the Blue Weapons</h1>
         </Card>
+        <Alert className="bg-orange-900 text-zinc-100">
+          <p>
+            This page is in development and may contain format/data errors.
+          </p>
+        </Alert>
         <WeaponsTable weapons={processedWeapons} />
       </div>
     </>
