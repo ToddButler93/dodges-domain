@@ -96,12 +96,6 @@ const tribesInfoMenuData = [
     link: "/t3/docs/information/classes",
   },
   {
-    icon: FaGun,
-    title: "Weapons",
-    description: "Tribes 3: Rivals Weapon Information",
-    link: "/t3/docs/information/weapons",
-  },
-  {
     icon: FaHistory,
     title: "Patch History",
     description: "Tribes 3: Rivals Patch History",
