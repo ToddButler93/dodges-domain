@@ -10,7 +10,7 @@ export default async function DocsLayout({
     <>
       <NavBar />
       <div className="flex w-full flex-row justify-center px-3">
-        <div className="flex max-w-6xl flex-col justify-center p-6">
+        <div className="flex max-w-6xl flex-col justify-center p-6 grow">
           {children}
         </div>
       </div>

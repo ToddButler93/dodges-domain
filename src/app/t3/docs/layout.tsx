@@ -7,7 +7,7 @@ export default async function DocsLayout({
   return (
     <>
       <div className="flex w-full flex-row justify-center">
-        <div className="flex max-w-6xl flex-col justify-center p-6">
+        <div className="flex max-w-6xl flex-col justify-center p-6 grow">
           {children}
         </div>
       </div>

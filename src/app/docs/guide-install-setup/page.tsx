@@ -20,7 +20,7 @@ import Image from "next/image";
 export default function GuideInstallSetup() {
   return (
     <>
-      <div className="flex flex-col gap-6">
+      <div className="flex flex-col gap-6 grow">
         <Card className="grow p-6 text-center">
           <h1 className="flex flex-row justify-center">
             Tribes Ascend Installation
