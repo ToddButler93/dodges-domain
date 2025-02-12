@@ -1,11 +1,18 @@
 import React from "react";
-import { TAWeapon, TAWeaponHitscan, TAWeaponSnipeBXT, TAWeaponThrown, TAStickyWeapon, TAWeaponExplosive, TAWeaponProjectile } from "~/server/api/taWeapons";
+import type {
+  TAWeapon,
+  TAWeaponHitscan,
+  TAWeaponSnipeBXT,
+  TAWeaponThrown,
+  TAStickyWeapon,
+  TAWeaponExplosive,
+  TAWeaponProjectile,
+} from "~/server/api/taWeapons";
 import { ScrollArea, ScrollBar } from "~/components/ui/scroll-area";
 
 import {
   Table,
   TableBody,
-  TableCaption,
   TableCell,
   TableHead,
   TableHeader,
@@ -13,14 +20,22 @@ import {
 } from "~/components/ui/table";
 
 interface WeaponsTableProps {
-  weapons: (TAWeapon | TAWeaponHitscan | TAWeaponSnipeBXT | TAWeaponThrown | TAStickyWeapon | TAWeaponExplosive | TAWeaponProjectile)[];
+  weapons: (
+    | TAWeapon
+    | TAWeaponHitscan
+    | TAWeaponSnipeBXT
+    | TAWeaponThrown
+    | TAStickyWeapon
+    | TAWeaponExplosive
+    | TAWeaponProjectile
+  )[];
 }
 
 export const WeaponsTable: React.FC<WeaponsTableProps> = ({ weapons }) => {
   return (
     // TODO: Fix width on small screens 'max-w-xl'
     // Look into DataTable instead of Table
-    <ScrollArea className="max-w-xl whitespace-nowrap rounded-md border">
+    <ScrollArea className="max-w-screen whitespace-nowrap rounded-md border">
       <div className="flex w-max space-x-4">
         <Table className="w-full table-auto border-collapse text-sm">
           <TableHeader>
@@ -62,9 +77,11 @@ export const WeaponsTable: React.FC<WeaponsTableProps> = ({ weapons }) => {
                 </TableCell>
                 <TableCell className="border px-4 py-2 text-center">
                   {weapon.damage && weapon.damage !== 0
-                    ? (
-                        ("directHitMultiplier" in weapon ? ((weapon.directHitMultiplier ?? 1) * weapon.damage).toFixed(0): "")
-                      )
+                    ? "directHitMultiplier" in weapon
+                      ? (
+                          (weapon.directHitMultiplier ?? 1) * weapon.damage
+                        ).toFixed(0)
+                      : ""
                     : ""}
                 </TableCell>
                 <TableCell className="border px-4 py-2 text-center">
@@ -74,10 +91,15 @@ export const WeaponsTable: React.FC<WeaponsTableProps> = ({ weapons }) => {
                   {weapon.reloadTime !== 0 ? weapon.reloadTime.toFixed(2) : ""}
                 </TableCell>
                 <TableCell className="border px-4 py-2 text-center">
-                  {"collisionSize" in weapon ? (weapon.collisionSize ?? ""): ""}
+                  {"collisionSize" in weapon
+                    ? (weapon.collisionSize ?? "")
+                    : ""}
                 </TableCell>
                 <TableCell className="border px-4 py-2 text-center">
-                  {"projectileInheritance" in weapon ? ((weapon.projectileInheritance ?? 0) * 100).toFixed(0): ""}%
+                  {"projectileInheritance" in weapon
+                    ? ((weapon.projectileInheritance ?? 0) * 100).toFixed(0)
+                    : ""}
+                  %
                 </TableCell>
                 <TableCell className="border px-4 py-2 text-center">
                   {"projectileSpeed" in weapon ? weapon.projectileSpeed : "N/A"}
@@ -90,6 +112,7 @@ export const WeaponsTable: React.FC<WeaponsTableProps> = ({ weapons }) => {
           </TableBody>
         </Table>
       </div>
+      <ScrollBar orientation="vertical" />
       <ScrollBar orientation="horizontal" />
     </ScrollArea>
   );
