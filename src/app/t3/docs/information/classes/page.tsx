@@ -49,7 +49,7 @@ type Weapon = {
 interface WeaponProps {
   weapon: Weapon;
 }
-
+// Light Weapons
 const lightSpinfusor: Weapon = {
   image: "/static/img/BE-Light-Spinfusor.jpg",
   name: "Light Spinfusor",
@@ -155,7 +155,8 @@ const impactNitron: Weapon = {
   fireRate: 0,
   reloadLength: 0,
   magazineSize: 0,
-  description: "",
+  description:
+    "Creates a powerful knockback effect upon impact that does low damage and forces flag drops",
 };
 const blinkPack: Weapon = {
   image: "/static/img/BE-Light-Spinfusor.jpg",
@@ -186,6 +187,130 @@ const stealthPack: Weapon = {
   magazineSize: 0,
   description: "Activate for temporary invisibility",
 };
+// Medium Weapons
+const spinfusor: Weapon = {
+  image: "/static/img/BE-Light-Spinfusor.jpg",
+  name: "Spinfusor",
+  damage: "700",
+  fireRate: 0.46,
+  reloadLength: 1.25,
+  magazineSize: 1,
+  description:
+    "The most popular weapon used in the Wilderzone, it shoots a fast moving explosive disk",
+};
+const thumper: Weapon = {
+  image: "/static/img/BE-Light-Spinfusor.jpg",
+  name: "Thumper",
+  damage: "700",
+  fireRate: 0.46,
+  reloadLength: 1.45,
+  magazineSize: 1,
+  description: "Fires an arcing projectile that explodes on impact",
+};
+const plasmaGun: Weapon = {
+  image: "/static/img/BE-Light-Spinfusor.jpg",
+  name: "Plasma Gun",
+  damage: "350",
+  fireRate: 0.5,
+  reloadLength: 1.8,
+  magazineSize: 6,
+  description: "Fires balls of energy that explode on contact",
+};
+const chainGun: Weapon = {
+  image: "/static/img/BE-Light-Spinfusor.jpg",
+  name: "Chain Gun",
+  damage: "50",
+  fireRate: 0.12,
+  reloadLength: 0,
+  magazineSize: 250,
+  description: "Large magazine fully automatic weapon",
+};
+const grenadeLauncher: Weapon = {
+  image: "/static/img/BE-Light-Spinfusor.jpg",
+  name: "Grenade Launcher",
+  damage: "450",
+  fireRate: 0.6,
+  reloadLength: 1.8,
+  magazineSize: 4,
+  description: "Fires explosive grenades that are detonated off of a timed fuse",
+};
+const novaColt: Weapon = {
+  image: "/static/img/BE-Light-Spinfusor.jpg",
+  name: "Nova Colt",
+  damage: "210",
+  fireRate: 0.6,
+  reloadLength: 2.5,
+  magazineSize: 6,
+  description: "Precision weapon with a good rate of fire",
+};
+const stickyGrenade: Weapon = {
+  image: "/static/img/BE-Light-Spinfusor.jpg",
+  name: "Sticky Grenade",
+  damage: "",
+  fireRate: 0,
+  reloadLength: 0,
+  magazineSize: 0,
+  description: "Explosive device that sticks to enemies and surfaces, doing large amounts of damage to base installations",
+};
+const empGrenade: Weapon = {
+  image: "/static/img/BE-Light-Spinfusor.jpg",
+  name: "EMP Grenade",
+  damage: "",
+  fireRate: 0,
+  reloadLength: 0,
+  magazineSize: 0,
+  description: "A grenade that deals high damage to base installations, and low damage to players, draining their energy for a short time",
+};
+const apGrenade: Weapon = {
+  image: "/static/img/BE-Light-Spinfusor.jpg",
+  name: "AP Grenade",
+  damage: "",
+  fireRate: 0,
+  reloadLength: 0,
+  magazineSize: 0,
+  description: "Causes a large explosion after a brief fuse time that does high damage against players",
+};
+const lightTurret: Weapon = {
+  image: "/static/img/BE-Light-Spinfusor.jpg",
+  name: "Light Turret",
+  damage: "",
+  fireRate: 0,
+  reloadLength: 0,
+  magazineSize: 0,
+  description: "Deploy a turret to defend an area with rapid energy-draining shots",
+};
+const shieldPack: Weapon = {
+  image: "/static/img/BE-Light-Spinfusor.jpg",
+  name: "Shield Pack",
+  damage: "",
+  fireRate: 0,
+  reloadLength: 0,
+  magazineSize: 0,
+  description: "A shield that absorbs damage and lowers your max energy while active",
+};
+const phasePack: Weapon = {
+  image: "/static/img/BE-Light-Spinfusor.jpg",
+  name: "Phase Pack",
+  damage: "",
+  fireRate: 0,
+  reloadLength: 0,
+  magazineSize: 0,
+  description: "Become immune to damage but unable to shoot for a short time",
+};
+// TODO:
+// Heavy
+// Heavy Spinfusor
+// Heavy Bolt Launcher
+// Stormslicer
+// Fusion Mortar
+// Gladiator
+// Frag Grenade
+// Mine
+// Mag-Lev Disc
+// Dome Shield
+// Heavy Shield Pack
+// Regen Station
+// Force Field
 
 const pathfinderClassData: T3Class = {
   name: "Pathfinder (Light Offense)",
@@ -205,7 +330,7 @@ const pathfinderClassData: T3Class = {
   ],
   weapons1: [lightSpinfusor, boltLauncher],
   weapons2: [lightChaingun, phaseRifle],
-  weapons3: [sparrowPistol, shocklance, shotgun],
+  weapons3: [sparrowPistol, shotgun, shocklance],
   belts: [explosiveNitron, chaffGrenade, smokeGrenade],
   packs: [blinkPack, thrustPack, stealthPack],
 };
@@ -230,14 +355,14 @@ const sentinalClassData: T3Class = {
   ],
   weapons1: [lightSpinfusor, boltLauncher],
   weapons2: [lightChaingun, phaseRifle],
-  weapons3: [sparrowPistol, shocklance, shotgun],
-  belts: [impactNitron, explosiveNitron, chaffGrenade],
-  packs: [blinkPack, thrustPack, stealthPack],
+  weapons3: [sparrowPistol, shotgun, shocklance],
+  belts: [impactNitron, explosiveNitron, smokeGrenade],
+  packs: [blinkPack, thrustPack],
 };
 const raiderClassData: T3Class = {
   name: "Raider (Medium Offense)",
   armor: "Medium",
-  health: 1500,
+  health: 1600,
   energy: 100,
   speed: 2,
   mass: 2,
@@ -250,11 +375,11 @@ const raiderClassData: T3Class = {
     "20% Increase to your throw power when throwing a flag",
     "Deal 25% bonus damage to base assets",
   ],
-  weapons1: [lightSpinfusor, boltLauncher],
-  weapons2: [lightChaingun, phaseRifle],
-  weapons3: [sparrowPistol, shocklance, shotgun],
-  belts: [impactNitron, explosiveNitron, chaffGrenade],
-  packs: [blinkPack, thrustPack, stealthPack],
+  weapons1: [spinfusor, thumper, plasmaGun],
+  weapons2: [chainGun, grenadeLauncher, novaColt],
+  weapons3: [sparrowPistol, shotgun, shocklance],
+  belts: [stickyGrenade, apGrenade],
+  packs: [shieldPack, phasePack],
 };
 const technicianClassData: T3Class = {
   name: "Technician (Medium Defense)",
@@ -273,11 +398,11 @@ const technicianClassData: T3Class = {
     "While within 125 meters of your base:",
     "Gain additional vertical thrust and jet control",
   ],
-  weapons1: [lightSpinfusor, boltLauncher],
-  weapons2: [lightChaingun, phaseRifle],
-  weapons3: [sparrowPistol, shocklance, shotgun],
-  belts: [impactNitron, explosiveNitron, chaffGrenade],
-  packs: [blinkPack, thrustPack, stealthPack],
+  weapons1: [spinfusor, thumper, plasmaGun],
+  weapons2: [chainGun, grenadeLauncher, novaColt],
+  weapons3: [sparrowPistol, shotgun, shocklance],
+  belts: [empGrenade, apGrenade],
+  packs: [lightTurret, shieldPack, phasePack],
 };
 const doombringerClassData: T3Class = {
   name: "Doombringer (Heavy Offense)",
@@ -341,7 +466,7 @@ export default function T3Classes() {
           >
             <TabsList className="flex flex-col items-start justify-start py-1 dark:bg-zinc-800 dark:text-zinc-100">
               <TabsTrigger value="lo">
-                <div className="flex grow max-sm:justify-center flex-row items-center gap-3">
+                <div className="flex grow flex-row items-center gap-3 max-sm:justify-center">
                   <FaGamepad />
                   <div>
                     <h4>Pathfinder</h4>
@@ -350,7 +475,7 @@ export default function T3Classes() {
                 </div>
               </TabsTrigger>
               <TabsTrigger value="ld">
-                <div className="flex grow max-sm:justify-center flex-row items-center gap-3">
+                <div className="flex grow flex-row items-center gap-3 max-sm:justify-center">
                   <FaGamepad />
                   <div>
                     <h4>Sentinel</h4>
@@ -359,7 +484,7 @@ export default function T3Classes() {
                 </div>
               </TabsTrigger>
               <TabsTrigger value="mo">
-                <div className="flex grow max-sm:justify-center flex-row items-center gap-3">
+                <div className="flex grow flex-row items-center gap-3 max-sm:justify-center">
                   <FaGamepad />
                   <div>
                     <h4>Raider</h4>
@@ -368,7 +493,7 @@ export default function T3Classes() {
                 </div>
               </TabsTrigger>
               <TabsTrigger value="md">
-                <div className="flex grow max-sm:justify-center flex-row items-center gap-3">
+                <div className="flex grow flex-row items-center gap-3 max-sm:justify-center">
                   <FaGamepad />
                   <div>
                     <h4>Technician</h4>
@@ -377,7 +502,7 @@ export default function T3Classes() {
                 </div>
               </TabsTrigger>
               <TabsTrigger value="ho">
-                <div className="flex grow max-sm:justify-center flex-row items-center gap-3">
+                <div className="flex grow flex-row items-center gap-3 max-sm:justify-center">
                   <FaGamepad />
                   <div>
                     <h4>Doombringer</h4>
@@ -386,7 +511,7 @@ export default function T3Classes() {
                 </div>
               </TabsTrigger>
               <TabsTrigger value="hd">
-                <div className="flex grow max-sm:justify-center flex-row items-center gap-3">
+                <div className="flex grow flex-row items-center gap-3 max-sm:justify-center">
                   <FaGamepad />
                   <div>
                     <h4>Juggernaut</h4>
@@ -446,9 +571,9 @@ function T3Class(props: T3ClassProps) {
           {armor === "Heavy" && <RxTriangleDown />} {/* TODO Add heavy icon */}
           <h3>{name}</h3>
         </div>
-        <div className="flex flex-col md:flex-row self-stretch items-start gap-3">
+        <div className="flex flex-col items-start gap-3 self-stretch md:flex-row">
           <div className="flex flex-col gap-1">
-            <div className="grid grid-cols-2 justify-between ">
+            <div className="grid grid-cols-2 justify-between">
               <p>Health:</p>
               <div className="flex flex-row items-center gap-1">
                 <BiPlusMedical />
@@ -495,10 +620,10 @@ function T3Class(props: T3ClassProps) {
             <h4 className="bg-blue-800 bg-opacity-90 px-3 text-zinc-50">
               Weapon 1
             </h4>
-            <div className="gap-2 bg-blue-950  bg-opacity-40" />
+            <div className="gap-2 bg-blue-950 bg-opacity-40" />
           </div>
           <Separator className="bg-blue-800" />
-          <div className="grid grid-cols-4 gap-2 pt-1 max-md:grid-cols-2 ">
+          <div className="grid grid-cols-4 gap-2 pt-1 max-md:grid-cols-2">
             {weapons1.map((component) => (
               <WeaponItem key={component.name} weapon={component} />
             ))}
@@ -509,7 +634,7 @@ function T3Class(props: T3ClassProps) {
             <h4 className="bg-blue-800 bg-opacity-90 px-3 text-zinc-50">
               Weapon 2
             </h4>
-            <div className="gap-2 bg-blue-950  bg-opacity-40" />
+            <div className="gap-2 bg-blue-950 bg-opacity-40" />
           </div>
           <Separator className="bg-blue-800" />
           <div className="grid grid-cols-4 gap-2 pt-1 max-md:grid-cols-2">
@@ -523,7 +648,7 @@ function T3Class(props: T3ClassProps) {
             <h4 className="bg-blue-800 bg-opacity-90 px-3 text-zinc-50">
               Weapon 3
             </h4>
-            <div className="gap-2 bg-blue-950  bg-opacity-40" />
+            <div className="gap-2 bg-blue-950 bg-opacity-40" />
           </div>
           <Separator className="bg-blue-800" />
           <div className="grid grid-cols-4 gap-2 pt-1 max-md:grid-cols-2">
@@ -537,7 +662,7 @@ function T3Class(props: T3ClassProps) {
             <h4 className="bg-blue-800 bg-opacity-90 px-3 text-zinc-50">
               Belt
             </h4>
-            <div className="gap-2 bg-blue-950  bg-opacity-40" />
+            <div className="gap-2 bg-blue-950 bg-opacity-40" />
           </div>
           <Separator className="bg-blue-800" />
           <div className="grid grid-cols-4 gap-2 pt-1 max-md:grid-cols-2">
@@ -551,7 +676,7 @@ function T3Class(props: T3ClassProps) {
             <h4 className="bg-blue-800 bg-opacity-90 px-3 text-zinc-50">
               Pack
             </h4>
-            <div className="gap-2 bg-blue-950  bg-opacity-40" />
+            <div className="gap-2 bg-blue-950 bg-opacity-40" />
           </div>
           <Separator className="bg-blue-800" />
           <div className="grid grid-cols-4 gap-2 pt-1 max-md:grid-cols-2">
