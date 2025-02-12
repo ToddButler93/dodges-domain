@@ -1,9 +1,10 @@
-"use client";
-
 import Link from "next/link";
+import { Alert } from "~/components/ui/alert";
 import { Button } from "~/components/ui/button";
 import { Card } from "~/components/ui/card";
 import { Separator } from "~/components/ui/separator";
+import Code from "./_components/code";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "~/components/ui/accordion";
 
 export default function TribesServerHosting() {
   return (
@@ -13,88 +14,180 @@ export default function TribesServerHosting() {
           <h1>Tribes Server Hosting</h1>
         </Card>
         <div className="flex flex-col gap-3">
-          <h2>Option 1: Docker Servers</h2>
-          <h3>Azure Setup</h3>
-          <p>
-            Installs docker and loads the taserver docker image from this
-            project on an Ubuntu VM.
-          </p>
+          <h2>Ubuntu Server Setup</h2>
           <Button asChild>
-            <Link href="https://raw.githubusercontent.com/chickenbellyfin/taserver-docker/master/README.md">
-              Courtesy of Chicken
+            <Link href={"https://github.com/JigglyJoogins/tribes-vm"}>
+              Server management Repo
             </Link>
           </Button>
           <Button asChild>
-            <Link href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fchickenbellyfin%2Ftaserver-docker%2Fmaster%2Fdeploy%2Fazuredeploy.json">
-              Deploy to Azure
+            <Link
+              href={"https://hub.docker.com/r/chickenbellyfin/taserver/tags"}
+            >
+              Dockerhub ‘latestmaps’ image
             </Link>
           </Button>
-          <h3>Manual Docker Ubuntu</h3>
-          <p>
-            This will be a basic run down on how to setup TA Server on an
-            Ubunutu Server.
-          </p>
-          <h3>Step 0: Prerequisites</h3>
-          <h4>0.1 Setup ubuntu</h4>
-          <p>TCP/UDP Ports that need opening: 7777-7877</p>
-          <p> UDP ports that need opening: 9002-9102 </p>
-          <h5>Using UFW</h5>
-          <p>sudo ufw allow 7777:7877/tcp</p>
-          <p>sudo ufw allow 7777:7877/udp</p>
-          <p>sudo ufw allow 9002:9102/udp</p>
-          <h4>0.2 Setup Docker</h4>
           <Button asChild>
-            <Link href="https://docs.docker.com/engine/install/ubuntu/#install-using-the-convenience-script">
-              Install via the convenience script
+            <Link
+              href={"#Step 2: Setup TAServer"}
+            >
+              Skip Initial Setup
             </Link>
           </Button>
+          <h3>Game Server Setup</h3>
           <p>
-            &apos;curl -fsSL https://get.docker.com -o get-docker.sh&apos;
-            &apos;sudo sh get-docker.sh&apos;
+            This will be a basic run down on how to setup TA Server on an Ubuntu
+            Server.
           </p>
-          <h6>0.3 Setup current user</h6>
+          <h4>Step 0: Setup Ubuntu</h4>
+          <Alert className="bg-teal-800 p-6 text-zinc-100">
+            This guide assumes you have just created a new Ubuntu Server VM.
+          </Alert>
+          <h5>Update ubuntu</h5>
+          <Code>
+            <p>sudo apt-get update</p>
+            <p>sudo apt-get upgrade</p>
+          </Code>
+          <h5>Install nano (Dodge’s preferred editor)</h5>
+          <Code>
+            <p>sudo apt-get -y install nano</p>
+          </Code>
+          <Code>
+            <p>sudo apt-get -y install unzip</p>
+          </Code>
+          <h5>Step 0.1: Setup Firewall</h5>
+          Using UFW:
+          <Code>
+            <p>sudo ufw allow 22/tcp</p>
+            <p>sudo ufw status</p>
+          </Code>
+          For TAServer the TCP/UDP Ports will need opening:
+          <p>7777-7878</p> <p>9002-9102</p>
+          <Code>
+            <p>sudo ufw enable</p>
+            <p>sudo ufw allow 7777:7878/tcp</p>
+            <p>sudo ufw allow 7777:7878/udp</p>
+            <p>sudo ufw allow 9002:9102/tcp</p>
+            <p>sudo ufw allow 9002:9102/udp</p>
+          </Code>
+          <h5>Step 0.2: Create User</h5>
+          <Code>
+            <p>adduser tribesuser</p>
+          </Code>
+          <p>Enter a password</p>
+          <p>Repeat password</p>
+          <Code>
+            <p>sudo usermod -aG sudo tribesuser</p>
+            <p>sudo -l -U tribesuser</p>
+          </Code>
+          Very that user has admin privileges.
+          <Code>
+            <p>sudo reboot</p>
+          </Code>
+          Connect as tribesuser@ip Secure root user (disable login)
+          <Code>
+            <p>sudo passwd -l root</p>
+          </Code>
           <p>
-            &apos;sudo usermod -aG docker *username*&apos; Where
-            &apos;*username*&apos; is the name of the user.
+            Setup fail2ban to ban clients with large amounts of authentication
+            errors.
           </p>
-          <h6>0.4 Get TA Server Image</h6>
-          <p>
-            &apos;docker pull taserver:latest-maps&apos; &apos;docker tag
-            taserver:latest-maps taserver&apos;
-          </p>
-          <h6>0.5 Download Helper Script</h6>
-          <p>
-            &apos;wget -O taserver.sh
-            &quot;https://raw.githubusercontent.com/JigglyJoogins/taserver-deploy/master/docker/taserver.sh&quot;&apos;
-            &apos;chmod +x taserver.sh&apos;
-          </p>
-          <h4>0.6 Setup Game Server</h4>
-          <p>
-            To run the game server run the command: &apos;./taserver.sh -d{" "}
-            gamesettings -p 0&apos; &apos;-d gamesettings&apos; will be a
-            mounted folder for this particular docker container that lets you
-            alter the game settings of the server. &apos;-p 0&apos; sets the
-            port offset to 0. The default ports are 7777 and 7778. A port offset
-            of 2 would use ports 7779 and 7781.
-          </p>
-          <h3>Benefits</h3>
-          <ul>
-            <li>Possible to ban/kick cheaters </li>
-            <li>GOTY/OOTB game types </li>
-            <li>TA Mods Server customization </li>
-            <li>Community or a custom login server</li>
-            <li>No restrictions </li>
-          </ul>
-          <h3>Limitations</h3>
-          <ul>
-            <li>Difficult and slow to setup </li>
-            <li>Limited support </li>
-            <li>Can be costly </li>
-          </ul>
+          <h4>Setup Fail2Ban</h4>
+          <Code>
+            <p>sudo apt install fail2ban</p>
+            <p>sudo systemctl status fail2ban</p>
+          </Code>
+          <Code>
+            <p>sudo cp /etc/fail2ban/fail2ban.&#123;conf,local&#125;</p>
+            <p>sudo cp /etc/fail2ban/jail.&#123;conf,local&#125;</p>
+            <p>sudo nano /etc/fail2ban/fail2ban.local</p>
+          </Code>
+          <p>Set:</p>
+          <Code>
+            <p>loglevel = INFO</p>
+            <p>logtarget = /var/log/fail2ban.log</p>
+          </Code>
+          <p>Save & exit.</p>
+          <Code>
+            <p>sudo nano /etc/fail2ban/jail.local</p>
+          </Code>
+          <p>Set:</p>
+          <Code>
+            <p>ban time = 10m</p>
+            <p>findtime = 10m</p>
+            <p>maxretry = 5</p>
+            <p>backend = systemd</p>
+          </Code>
+          Save & exit.
+          <Code>
+            <p>sudo systemctl restart fail2ban</p>
+            <p>sudo systemctl status fail2ban</p>
+          </Code>
+          <h5>Step 1: Setup Docker</h5>
+          <p>Install via the convenience script.</p>
+          <Code>
+            <p>curl -fsSL https://get.docker.com -o get-docker.sh</p>
+            <p>sudo sh ./get-docker.sh</p>
+          </Code>
+          <p>Setup current user.</p>
+          <Code>
+            <p>sudo usermod -a -G docker $USER</p>
+          </Code>
+          <p>Logout and reconnect.</p>
+          <Code>
+            <p>logout</p>
+          </Code>
+          <h4>Step 2: Setup TAServer</h4>
+          <p>Get the TA Server image.</p>
+          <Code>
+            <p>docker pull chickenbellyfin/taserver:latest-maps</p>
+            <p>docker tag chickenbellyfin/taserver:latest-maps taserver</p>
+          </Code>
+          <h4>Step 3: Download Helper Script</h4>
+          <Code>
+            <p>
+              wget -O update.sh
+              &quot;&#60;https://raw.githubusercontent.com/JigglyJoogins/tribes-vm/master/update.sh&#62;&quot;
+            </p>
+            <p>chmod +x update.sh</p>
+            <p>./update.sh</p>
+          </Code>
+          If setup is for Australian servers use this instead:
+          <Code>
+            <p>./update.sh -a</p>
+          </Code>
+          Update new maps:
+          <Code>
+            <p>./grab_latest_maps.sh</p>
+          </Code>
+          <h4>Step 4: Launch The Game Server</h4>
+          ### To run the game server run the command:
+          <Code>
+            <p>./launchservers.sh</p>
+          </Code>
+          To add the experimental lag compensation run the command:
+          <Code>
+            <p>./lagcomp.sh</p>
+          </Code>
         </div>
-        <Separator />
-        <div className="flex flex-col gap-3">
-          <h2>Option 2: LLamagrab Servers</h2>
+        <Separator /><div className="flex flex-grow flex-col">
+          
+        <Card className="grow p-6 text-center">
+          <h1>Unavailable Options</h1>
+        </Card>
+          <div className="flex flex-col justify-center gap-3">
+            <Accordion type="single" collapsible>
+              <AccordionItem value="llamagrab">
+                <AccordionTrigger className="text-xl">
+                  Llamagrab
+                </AccordionTrigger>
+                <AccordionContent>
+
+                <div className="flex flex-col gap-3">
+          <h2>Llamagrab Servers</h2>
+          <Alert className="bg-red-900 text-zinc-100">
+            <p>Llamagrab is currntly offline.</p>
+          </Alert>
           An easy to grasp server hosting solution for community servers.
           <Button asChild>
             <Link href="https://llamagrab.net/">Llamagrab.net</Link>
@@ -112,23 +205,33 @@ export default function TribesServerHosting() {
           </li>
           <li>Single login server (Community)</li>{" "}
         </div>
-        <Separator />
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="hirez">
+                <AccordionTrigger className="text-xl">
+                  Hi-Rez Official
+                </AccordionTrigger>
+                <AccordionContent>
         <div className="flex flex-col gap-3">
-          <h2>Option 3: Hirez Official</h2>
+          <h2>Hirez Official</h2>
+          <Alert className="bg-red-900 text-zinc-100">
+            <p>Hi-Rez servers are offline.</p>
+          </Alert>
           <h3>Benefits</h3>
           <li>Easy to grasp</li>
           <li>Free</li>
           <li>Fast</li>
           <li>In-game adjustment/setup</li>
           <h3>Limitations</h3>
-          <li className="text-red-600">
-            Hi-Rez servers are no longer accessible for the game and this method{" "}
-            is no longer possible.
-          </li>
           <li>Unable to prevent cheaters from joining games</li>
           <li>Locked to OOTB game type</li>
           <li>Single login server (Hirez Official)</li>
           <li>Limited customization</li>
+        </div>
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
+          </div>
         </div>
       </div>
     </>
