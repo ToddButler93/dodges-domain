@@ -8,6 +8,12 @@ Tribes stuff.
 
 Made using the [T3 Stack](https://create.t3.gg/).
 
+## Podman
+
+"podman build -t dodges-domain ."
+
+"podman run -d --rm -v ./.env:/app/.env --network=host --name dodges-domain dodges-domain"
+
 ## Scripts
 
 "pnpm build" - Build site
